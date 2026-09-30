@@ -1,0 +1,50 @@
+# Obsidian Vault
+# Ignore high-churn UI/workspace state that changes on every document switch
+**/.obsidian/workspace.json
+**/.obsidian/workspace-mobile.json
+**/.obsidian/cache/
+.trash/
+
+# Digitizer Intermediate Page Renders & Manifests (from slide-digitizer / handnote-digitizer)
+# (Cropped diagrams and frames are kept; raw full-page extraction renders are ignored)
+**/*_Pages/
+**/pdf/pages/
+**/manifest.json
+
+# Pipeline & Temporary Files
+**/temp_audio.*
+**/progress.json
+**/*.tmp
+**/*.part
+**/*.bak
+*.swp
+*.swo
+*~
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE & Editor Settings
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Python & Environment
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# Local Agent / Scratch Files
+.agents/
+.gemini/
+scratch/
+writing_guideline.md
