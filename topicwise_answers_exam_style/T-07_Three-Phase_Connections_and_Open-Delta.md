@@ -128,7 +128,7 @@ $$\boxed{\text{Total load with closed-Δ} = 75 \text{ kVA}}$$
 **(a) Explain what happens to a 3-phase Δ-Δ transformer bank when one transformer is damaged. Show 3-phase power can still be served. Also prove the capacity reduces to 57.7%. [08, CO1]**
 
 ![The open-Delta (or V-V) connection schematic](../SlidesByMaam/diagrams/L-11_ECE-2107_p16_fig01.jpg)
-![Open-Delta (V-V) Connection Circuit and Phasor Diagram](../Books/diagrams/VK_Mehta_Fig_7_52.jpeg)
+![Open-Delta (V-V) Connection Circuit and Phasor Diagram](../Books/VK_Mehta/diagrams/VK_Mehta_Fig_7_52.jpeg)
 
 **Event:** One transformer (say $T_{CA}$) in the Δ-Δ bank fails.
 

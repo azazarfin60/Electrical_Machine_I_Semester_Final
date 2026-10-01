@@ -40,9 +40,9 @@ To alleviate these issues, several starting methods are used:
 - **Rotor Resistance Starter:** For wound-rotor (slip-ring) motors only; inserts external rheostats to simultaneously limit current and boost starting torque.
 - **Electronic Soft Starter:** Uses back-to-back thyristors with phase-angle firing control to ramp up voltage smoothly without electrical or mechanical transients.
 
-![Star-delta starter connections](../Books/diagrams/ch35_p23_fig35_21.jpg)
+![Star-delta starter connections](../Books/Theraja/Ch-35/diagrams/ch35_p23_fig35_21.jpg)
 
-![Auto-transformer starter connections](../Books/diagrams/ch35_p20_fig35_19.jpg)
+![Auto-transformer starter connections](../Books/Theraja/Ch-35/diagrams/ch35_p20_fig35_19.jpg)
 
 ---
 
@@ -99,7 +99,7 @@ $$x^2 I_{DOL} = \frac{1}{3} I_{DOL}$$
 $$x^2 = \frac{1}{3}$$
 $$x = \frac{1}{\sqrt{3}} = 0.57735 \approx \boxed{57.7\%}$$
 
-![Comparison of Direct-switching and Auto-transformer / Star-Delta starter](../Books/diagrams/ch35_p20_fig35_20.jpg)
+![Comparison of Direct-switching and Auto-transformer / Star-Delta starter](../Books/Theraja/Ch-35/diagrams/ch35_p20_fig35_20.jpg)
 
 **Physical Conclusion:** A Star-Delta starter reduces voltage and line current by exactly the same amount as an auto-transformer starter set to a **57.7% voltage tapping ratio**.
 

@@ -1,8 +1,8 @@
 # ECE 2207 — Electrical Machines I: Previous Year Question Analysis
 
-> **Papers Analyzed:** 7 years — [2017](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/PrevYearQuestions/2017.md), [2018](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/PrevYearQuestions/2018.md), [2019](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/PrevYearQuestions/2019.md), [2020](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/PrevYearQuestions/2020.md), [2021](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/PrevYearQuestions/2021.md), [2023](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/PrevYearQuestions/2023.md), [2024](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/PrevYearQuestions/2024.md)
+> **Papers Analyzed:** 7 years — [2017](PrevYearQuestions/2017.md), [2018](PrevYearQuestions/2018.md), [2019](PrevYearQuestions/2019.md), [2020](PrevYearQuestions/2020.md), [2021](PrevYearQuestions/2021.md), [2023](PrevYearQuestions/2023.md), [2024](PrevYearQuestions/2024.md)
 > **Missing:** 2022 paper not available
-> **Syllabus:** [Syllabus.md](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/Syllabus.md)
+> **Syllabus:** [Syllabus.md](Syllabus.md)
 
 ---
 
@@ -150,18 +150,18 @@ These numerical problems were repeated with **identical or near-identical data**
 
 | Problem | Appearances | Data |
 |:---|:---|:---|
-| **OC/SC test → parameters of 20 kVA, 2400/240V transformer** | [2018](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/PrevYearQuestions/2018.md) Q2, [2021](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/PrevYearQuestions/2021.md) Q2 | V=72V, W=275-300W, I=rated; regulation at 0.8 lag |
-| **No-load test: 220V/110V, 0.5A, 30W → magnetizing & loss current** | [2020](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/PrevYearQuestions/2020.md) Q2d, [2024](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/PrevYearQuestions/2024.md) Q3c | Identical data — 220V, 110V, 0.5A, 30W |
-| **Scott connection: 3300V→440V, 33 KVA** | [2018](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/PrevYearQuestions/2018.md) Q4b, [2024](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/PrevYearQuestions/2024.md) Q4c | Identical: 440V, 33KVA, 3300V supply |
-| **Circle diagram: 415V, 29.84 kW, delta motor** | [2017](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/PrevYearQuestions/2017.md) Q3b, [2019](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/PrevYearQuestions/2019.md) Q6a | Identical: NL(415V, 21A, 1250W), BR(100V, 45A, 2730W) |
+| **OC/SC test → parameters of 20 kVA, 2400/240V transformer** | [2018](PrevYearQuestions/2018.md) Q2, [2021](PrevYearQuestions/2021.md) Q2 | V=72V, W=275-300W, I=rated; regulation at 0.8 lag |
+| **No-load test: 220V/110V, 0.5A, 30W → magnetizing & loss current** | [2020](PrevYearQuestions/2020.md) Q2d, [2024](PrevYearQuestions/2024.md) Q3c | Identical data — 220V, 110V, 0.5A, 30W |
+| **Scott connection: 3300V→440V, 33 KVA** | [2018](PrevYearQuestions/2018.md) Q4b, [2024](PrevYearQuestions/2024.md) Q4c | Identical: 440V, 33KVA, 3300V supply |
+| **Circle diagram: 415V, 29.84 kW, delta motor** | [2017](PrevYearQuestions/2017.md) Q3b, [2019](PrevYearQuestions/2019.md) Q6a | Identical: NL(415V, 21A, 1250W), BR(100V, 45A, 2730W) |
 
 ### 5.2 Induction Motor Numericals
 
 | Problem | Appearances | Data |
 |:---|:---|:---|
-| **8-pole, 50Hz, 2% slip → Tmax/Tf ratio + speed at Tmax** | [2017](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/PrevYearQuestions/2017.md) Q2d, [2019](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/PrevYearQuestions/2019.md) Q8c | Identical: R₂=0.001Ω, X₂=0.005Ω |
-| **8-pole, 50Hz, 4% slip → Tmax/Tf ratio** | [2024](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/PrevYearQuestions/2024.md) Q7c | Variant: R₂=0.01Ω, X₂=0.1Ω (same ratio!) |
-| **IM as IG: 440V, 4-pole, 1470rpm, 30kW, 40A, pf=85%** | [2018](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/PrevYearQuestions/2018.md) Q5c, [2024](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/PrevYearQuestions/2024.md) Q8c | Identical data in both papers |
+| **8-pole, 50Hz, 2% slip → Tmax/Tf ratio + speed at Tmax** | [2017](PrevYearQuestions/2017.md) Q2d, [2019](PrevYearQuestions/2019.md) Q8c | Identical: R₂=0.001Ω, X₂=0.005Ω |
+| **8-pole, 50Hz, 4% slip → Tmax/Tf ratio** | [2024](PrevYearQuestions/2024.md) Q7c | Variant: R₂=0.01Ω, X₂=0.1Ω (same ratio!) |
+| **IM as IG: 440V, 4-pole, 1470rpm, 30kW, 40A, pf=85%** | [2018](PrevYearQuestions/2018.md) Q5c, [2024](PrevYearQuestions/2024.md) Q8c | Identical data in both papers |
 
 > [!TIP]
 > **The examiner clearly recycles numerical data.** If you solve every unique numerical from these 7 papers (≈20 distinct problems), you will almost certainly encounter something identical or trivially similar in your exam.
@@ -211,7 +211,7 @@ pie title IM Sub-topic Marks Weight (Averaged Across 7 Papers)
 | **DFRT is evergreen** | Double field revolving theory appeared in 5 out of 7 papers. Only missing in '17 and '24. |
 | **OC/SC test is guaranteed** | Appeared in ALL 7 papers. The single most certain question in the exam. |
 | **Auto-transformer** | Appeared in '20 and '23. Was not asked in '17, '18, '19, '21, '24. Could be due for a return. |
-| **Vector groups / Dyn notation** | Only '19 and '21. Niche but specifically in the [syllabus](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/Syllabus.md). |
+| **Vector groups / Dyn notation** | Only '19 and '21. Niche but specifically in the [syllabus](Syllabus.md). |
 | **Crawling & Cogging** | Only '23. New addition — may return in future papers. |
 | **SC test on HV side — why?** | Only '24. Short-answer conceptual question — new pattern. |
 
@@ -226,7 +226,7 @@ pie title IM Sub-topic Marks Weight (Averaged Across 7 Papers)
 
 ---
 
-## 8. Coverage Gap Analysis vs. [Syllabus](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/Syllabus.md)
+## 8. Coverage Gap Analysis vs. [Syllabus](Syllabus.md)
 
 | Syllabus Topic | Exam Coverage | Risk |
 |:---|:---|:---|
@@ -320,26 +320,26 @@ pie title IM Sub-topic Marks Weight (Averaged Across 7 Papers)
 
 | # | Problem Type | Source (Example) |
 |:---|:---|:---|
-| 1 | OC/SC test → R₀, X₀, R_eq, X_eq, Z_eq, efficiency, regulation | [2024 Q2c](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/PrevYearQuestions/2024.md) |
-| 2 | No-load current → magnetizing & loss components | [2024 Q3c](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/PrevYearQuestions/2024.md) |
-| 3 | No-load current decomposition (with load given, find I₀ by phasor subtraction) | [2023 Q1c](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/PrevYearQuestions/2023.md) |
-| 4 | Transformer efficiency at full/half load, unity & 0.8 lag | [2019 Q2c](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/PrevYearQuestions/2019.md) |
-| 5 | All-day efficiency with variable load schedule | [2023 Q3b](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/PrevYearQuestions/2023.md) |
-| 6 | Primary current with step-down transformer under load (phasor addition) | [2020 Q1d](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/PrevYearQuestions/2020.md) |
-| 7 | Open-Δ: max load on two transformers vs. closed Δ with three | [2020 Q4c](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/PrevYearQuestions/2020.md) |
-| 8 | Scott connection: coil ratings + KVA | [2024 Q4c](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/PrevYearQuestions/2024.md) |
-| 9 | 3-φ secondary voltage with impedance and regulation | [2023 Q4c](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/PrevYearQuestions/2023.md) |
-| 10 | Y-Δ transformer bank: KVA/phase, coil voltages and currents | [2018 Q3b](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/PrevYearQuestions/2018.md) |
-| 11 | IM slip, speed, frequency from given poles/supply | [2019 Q5c](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/PrevYearQuestions/2019.md) |
-| 12 | Tmax/Tf ratio + speed at Tmax | [2024 Q7c](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/PrevYearQuestions/2024.md) |
-| 13 | Rotor current at given slip + slip at Tmax | [2024 Q6c](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/PrevYearQuestions/2024.md) |
-| 14 | Rotor power input → slip, speed, Cu losses, mechanical power | [2020 Q6d](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/PrevYearQuestions/2020.md) |
-| 15 | Circle diagram from test data → IL, slip, η, pf, Tmax | [2021 Q8c](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/PrevYearQuestions/2021.md) |
-| 16 | Star-delta starter: starting torque / full-load torque ratio | [2023 Q7b](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/PrevYearQuestions/2023.md) |
-| 17 | Capacitor value for max starting torque (1-φ IM) | [2021 Q7c](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/PrevYearQuestions/2021.md) |
-| 18 | IM as IG: capacitance per phase + engine speed | [2024 Q8c](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/PrevYearQuestions/2024.md) |
-| 19 | External resistance for speed reduction at constant torque (slip-ring IM) | [2021 Q4c](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/PrevYearQuestions/2021.md) |
-| 20 | Developed torque at full load, max torque, speed at max torque | [2018 Q6c](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/PrevYearQuestions/2018.md) |
+| 1 | OC/SC test → R₀, X₀, R_eq, X_eq, Z_eq, efficiency, regulation | [2024 Q2c](PrevYearQuestions/2024.md) |
+| 2 | No-load current → magnetizing & loss components | [2024 Q3c](PrevYearQuestions/2024.md) |
+| 3 | No-load current decomposition (with load given, find I₀ by phasor subtraction) | [2023 Q1c](PrevYearQuestions/2023.md) |
+| 4 | Transformer efficiency at full/half load, unity & 0.8 lag | [2019 Q2c](PrevYearQuestions/2019.md) |
+| 5 | All-day efficiency with variable load schedule | [2023 Q3b](PrevYearQuestions/2023.md) |
+| 6 | Primary current with step-down transformer under load (phasor addition) | [2020 Q1d](PrevYearQuestions/2020.md) |
+| 7 | Open-Δ: max load on two transformers vs. closed Δ with three | [2020 Q4c](PrevYearQuestions/2020.md) |
+| 8 | Scott connection: coil ratings + KVA | [2024 Q4c](PrevYearQuestions/2024.md) |
+| 9 | 3-φ secondary voltage with impedance and regulation | [2023 Q4c](PrevYearQuestions/2023.md) |
+| 10 | Y-Δ transformer bank: KVA/phase, coil voltages and currents | [2018 Q3b](PrevYearQuestions/2018.md) |
+| 11 | IM slip, speed, frequency from given poles/supply | [2019 Q5c](PrevYearQuestions/2019.md) |
+| 12 | Tmax/Tf ratio + speed at Tmax | [2024 Q7c](PrevYearQuestions/2024.md) |
+| 13 | Rotor current at given slip + slip at Tmax | [2024 Q6c](PrevYearQuestions/2024.md) |
+| 14 | Rotor power input → slip, speed, Cu losses, mechanical power | [2020 Q6d](PrevYearQuestions/2020.md) |
+| 15 | Circle diagram from test data → IL, slip, η, pf, Tmax | [2021 Q8c](PrevYearQuestions/2021.md) |
+| 16 | Star-delta starter: starting torque / full-load torque ratio | [2023 Q7b](PrevYearQuestions/2023.md) |
+| 17 | Capacitor value for max starting torque (1-φ IM) | [2021 Q7c](PrevYearQuestions/2021.md) |
+| 18 | IM as IG: capacitance per phase + engine speed | [2024 Q8c](PrevYearQuestions/2024.md) |
+| 19 | External resistance for speed reduction at constant torque (slip-ring IM) | [2021 Q4c](PrevYearQuestions/2021.md) |
+| 20 | Developed torque at full load, max torque, speed at max torque | [2018 Q6c](PrevYearQuestions/2018.md) |
 
 ---
 

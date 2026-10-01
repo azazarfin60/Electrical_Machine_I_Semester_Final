@@ -67,12 +67,12 @@ $$\sqrt{2}\pi = 1.41421 \times 3.14159 = 4.44288 \approx 4.44$$
 
 $$\boxed{E_1 = 4.44 f N_1\Phi_m}$$
 
-![Sinusoidal flux waveform and induced EMF lagging by 90 degrees](../Books/diagrams/Ch-32_p07_fig13.jpg)
+![Sinusoidal flux waveform and induced EMF lagging by 90 degrees](../Books/Theraja/Ch-32/diagrams/Ch-32_p07_fig13.jpg)
 
 **For the secondary:** The identical flux $\Phi(t)$ threads through all $N_2$ secondary turns (no leakage assumed). By the same derivation:
 $$\boxed{E_2 = 4.44 f N_2\Phi_m}$$
 
-![Transformer mutual induction principle](../Books/diagrams/Ch-32_p02_principle.jpg)
+![Transformer mutual induction principle](../Books/Theraja/Ch-32/diagrams/Ch-32_p02_principle.jpg)
 
 #### Alternative derivation using average EMF
 
@@ -152,9 +152,9 @@ $$N_1 I_1' = N_2 I_2 \implies I_1' = \frac{N_2}{N_1}I_2 = \frac{I_2}{a}$$
 
 For an ideal transformer: $V_1 I_1 = V_2 I_2$. Power in = Power out. The transformer simply changes the voltage/current ratio while conserving power.
 
-![Basic working principle of ideal two-winding transformer](../Books/diagrams/Ch-32_p02_fig01.jpg)
+![Basic working principle of ideal two-winding transformer](../Books/Theraja/Ch-32/diagrams/Ch-32_p02_fig01.jpg)
 
-![Ideal transformer on load with primary and secondary currents and voltages](../Books/diagrams/VK_Mehta_Fig_7_01.jpeg)
+![Ideal transformer on load with primary and secondary currents and voltages](../Books/VK_Mehta/diagrams/VK_Mehta_Fig_7_01.jpeg)
 
 ---
 

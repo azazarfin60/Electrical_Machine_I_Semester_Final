@@ -11,10 +11,10 @@
 
 | Chapter | Document Title | PDF Pages | File Size | Figures | Target Link |
 |:---:|:---|:---:|:---:|:---:|:---|
-| **Ch 7** | **Transformer** | 129–186 (58 pp) | 62.9 KB | 56 | [VK_Mehta_Ch07_Transformer.md](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/Books/VK_Mehta_Ch07_Transformer.md) |
-| **Ch 8** | **Three Phase Induction Motors** | 187–232 (46 pp) | 42.5 KB | 36 | [VK_Mehta_Ch08_Three_Phase_Induction_Motors.md](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/Books/VK_Mehta_Ch08_Three_Phase_Induction_Motors.md) |
-| **Ch 9** | **Single-Phase Motors** | 233–258 (26 pp) | 27.9 KB | 25 | [VK_Mehta_Ch09_Single_Phase_Motors.md](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/Books/VK_Mehta_Ch09_Single_Phase_Motors.md) |
-| **Index** | **Master Index & Formula Map** | — | — | — | [VK_Mehta_ECE2207_Index.md](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/Books/VK_Mehta_ECE2207_Index.md) |
+| **Ch 7** | **Transformer** | 129–186 (58 pp) | 62.9 KB | 56 | [VK_Mehta_Ch07_Transformer.md](VK_Mehta_Ch07_Transformer.md) |
+| **Ch 8** | **Three Phase Induction Motors** | 187–232 (46 pp) | 42.5 KB | 36 | [VK_Mehta_Ch08_Three_Phase_Induction_Motors.md](VK_Mehta_Ch08_Three_Phase_Induction_Motors.md) |
+| **Ch 9** | **Single-Phase Motors** | 233–258 (26 pp) | 27.9 KB | 25 | [VK_Mehta_Ch09_Single_Phase_Motors.md](VK_Mehta_Ch09_Single_Phase_Motors.md) |
+| **Index** | **Master Index & Formula Map** | — | — | — | [VK_Mehta_ECE2207_Index.md](VK_Mehta_ECE2207_Index.md) |
 
 ---
 
@@ -176,20 +176,20 @@ ECE 2207: Electrical Machine-I
 
 | Year & Question | Topic Tested | V.K. Mehta Chapter & Section |
 |:---|:---|:---|
-| **2023 Q1(a)** | EMF equation & transformation ratio derivation | [Ch 7, Sec 7.3–7.4](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/Books/VK_Mehta_Ch07_Transformer.md#73-emf-equation-of-a-transformer) |
-| **2023 Q1(b)** | Transformer equivalent circuit parameter determination from OC & SC tests | [Ch 7, Sec 7.18–7.19](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/Books/VK_Mehta_Ch07_Transformer.md#718-open-circuit-or-no-load-test) |
-| **2023 Q2(a)** | Voltage regulation derivation for lagging & leading power factors | [Ch 7, Sec 7.15–7.16](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/Books/VK_Mehta_Ch07_Transformer.md#715-approximate-voltage-drop-in-a-transformer) |
-| **2023 Q2(b)** | Maximum efficiency condition & output kVA at $\eta_{max}$ | [Ch 7, Sec 7.27–7.28](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/Books/VK_Mehta_Ch07_Transformer.md#727-condition-for-maximum-efficiency) |
-| **2023 Q3(a)** | Autotransformer copper saving proof ($W_a = (1-K)W_o$) | [Ch 7, Sec 7.34–7.35](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/Books/VK_Mehta_Ch07_Transformer.md#735-saving-of-copper-in-autotransformer) |
-| **2023 Q3(b)** | Open-Delta (V-V) connection & 57.7% capacity derivation | [Ch 7, Sec 7.45–7.46](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/Books/VK_Mehta_Ch07_Transformer.md#745-open-delta-or-v-v-connection) |
-| **2022 Q5(a)** | Rotating Magnetic Field proof ($1.5 \Phi_m$ constant magnitude) | [Ch 8, Sec 8.3–8.4](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/Books/VK_Mehta_Ch08_Three_Phase_Induction_Motors.md#83-rotating-magnetic-field-due-to-3-phase-currents) |
-| **2022 Q5(b)** | Torque-slip characteristic and breakdown torque derivation ($R_2 = s X_2$) | [Ch 8, Sec 8.16–8.18](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/Books/VK_Mehta_Ch08_Three_Phase_Induction_Motors.md#816-torque-under-running-conditions) |
-| **2022 Q6(a)** | Power stages ratio ($P_2 : P_{cu} : P_m = 1 : s : 1-s$) derivation | [Ch 8, Sec 8.24–8.27](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/Books/VK_Mehta_Ch08_Three_Phase_Induction_Motors.md#824-power-stages-in-an-induction-motor) |
-| **2022 Q6(b)** | Starting torque comparison: DOL vs Star-Delta vs Autotransformer | [Ch 8, Sec 8.36](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/Books/VK_Mehta_Ch08_Three_Phase_Induction_Motors.md#836-methods-of-starting-squirrel-cage-motors) |
-| **2021 Q7(a)** | Double-Field Revolving Theory and why single-phase motor is not self-starting | [Ch 9, Sec 9.2–9.3](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/Books/VK_Mehta_Ch09_Single_Phase_Motors.md#93-double-field-revolving-theory) |
-| **2021 Q7(b)** | Shaded-pole motor working principle (flux shifting mechanism) | [Ch 9, Sec 9.9](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/Books/VK_Mehta_Ch09_Single_Phase_Motors.md#99-shaded-pole-motor) |
-| **2021 Q8(a)** | Equivalent circuit of single-phase induction motor based on DFRT | [Ch 9, Sec 9.10](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/Books/VK_Mehta_Ch09_Single_Phase_Motors.md#910-equivalent-circuit-of-single-phase-induction-motor) |
-| **2021 Q8(b)** | Universal Motor & Repulsion Motor operation | [Ch 9, Sec 9.11–9.12](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/Books/VK_Mehta_Ch09_Single_Phase_Motors.md#911-ac-series-motor-or-universal-motor) |
+| **2023 Q1(a)** | EMF equation & transformation ratio derivation | [Ch 7, Sec 7.3–7.4](VK_Mehta_Ch07_Transformer.md#73-emf-equation-of-a-transformer) |
+| **2023 Q1(b)** | Transformer equivalent circuit parameter determination from OC & SC tests | [Ch 7, Sec 7.18–7.19](VK_Mehta_Ch07_Transformer.md#718-open-circuit-or-no-load-test) |
+| **2023 Q2(a)** | Voltage regulation derivation for lagging & leading power factors | [Ch 7, Sec 7.15–7.16](VK_Mehta_Ch07_Transformer.md#715-approximate-voltage-drop-in-a-transformer) |
+| **2023 Q2(b)** | Maximum efficiency condition & output kVA at $\eta_{max}$ | [Ch 7, Sec 7.27–7.28](VK_Mehta_Ch07_Transformer.md#727-condition-for-maximum-efficiency) |
+| **2023 Q3(a)** | Autotransformer copper saving proof ($W_a = (1-K)W_o$) | [Ch 7, Sec 7.34–7.35](VK_Mehta_Ch07_Transformer.md#735-saving-of-copper-in-autotransformer) |
+| **2023 Q3(b)** | Open-Delta (V-V) connection & 57.7% capacity derivation | [Ch 7, Sec 7.45–7.46](VK_Mehta_Ch07_Transformer.md#745-open-delta-or-v-v-connection) |
+| **2022 Q5(a)** | Rotating Magnetic Field proof ($1.5 \Phi_m$ constant magnitude) | [Ch 8, Sec 8.3–8.4](VK_Mehta_Ch08_Three_Phase_Induction_Motors.md#83-rotating-magnetic-field-due-to-3-phase-currents) |
+| **2022 Q5(b)** | Torque-slip characteristic and breakdown torque derivation ($R_2 = s X_2$) | [Ch 8, Sec 8.16–8.18](VK_Mehta_Ch08_Three_Phase_Induction_Motors.md#816-torque-under-running-conditions) |
+| **2022 Q6(a)** | Power stages ratio ($P_2 : P_{cu} : P_m = 1 : s : 1-s$) derivation | [Ch 8, Sec 8.24–8.27](VK_Mehta_Ch08_Three_Phase_Induction_Motors.md#824-power-stages-in-an-induction-motor) |
+| **2022 Q6(b)** | Starting torque comparison: DOL vs Star-Delta vs Autotransformer | [Ch 8, Sec 8.36](VK_Mehta_Ch08_Three_Phase_Induction_Motors.md#836-methods-of-starting-squirrel-cage-motors) |
+| **2021 Q7(a)** | Double-Field Revolving Theory and why single-phase motor is not self-starting | [Ch 9, Sec 9.2–9.3](VK_Mehta_Ch09_Single_Phase_Motors.md#93-double-field-revolving-theory) |
+| **2021 Q7(b)** | Shaded-pole motor working principle (flux shifting mechanism) | [Ch 9, Sec 9.9](VK_Mehta_Ch09_Single_Phase_Motors.md#99-shaded-pole-motor) |
+| **2021 Q8(a)** | Equivalent circuit of single-phase induction motor based on DFRT | [Ch 9, Sec 9.10](VK_Mehta_Ch09_Single_Phase_Motors.md#910-equivalent-circuit-of-single-phase-induction-motor) |
+| **2021 Q8(b)** | Universal Motor & Repulsion Motor operation | [Ch 9, Sec 9.11–9.12](VK_Mehta_Ch09_Single_Phase_Motors.md#911-ac-series-motor-or-universal-motor) |
 
 ---
 *Created for ECE 2207 — Academic Session 2026*

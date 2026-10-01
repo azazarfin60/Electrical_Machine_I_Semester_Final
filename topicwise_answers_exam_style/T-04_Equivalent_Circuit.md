@@ -91,7 +91,7 @@ Shunt branch ($R_c \| jX_m$) connected across $V_1$.
 For simplicity, combine series elements:
 $$R_{01} = R_1 + R_2', \quad X_{01} = X_1 + X_2'$$
 
-![Approximate equivalent circuit of transformer referred to primary](../Books/diagrams/Ch-32_p29_fig40.jpg)
+![Approximate equivalent circuit of transformer referred to primary](../Books/Theraja/Ch-32/diagrams/Ch-32_p29_fig40.jpg)
 
 ---
 
@@ -141,7 +141,7 @@ Series branch: $R_{01} = R_1 + R_2'$, $X_{01} = X_1 + X_2'$ (total series impeda
 
 Shunt branch: $R_c \| jX_m$ (at primary terminals: approximate circuit).
 
-![Exact and approximate equivalent circuit referred to primary](../Books/diagrams/Ch-32_p29_fig40.jpg)
+![Exact and approximate equivalent circuit referred to primary](../Books/Theraja/Ch-32/diagrams/Ch-32_p29_fig40.jpg)
 
 In the approximate equivalent circuit, the shunt branch is moved to the primary input terminals (before $R_1$, $X_1$). This simplifies calculation without significant error for most power transformers.
 

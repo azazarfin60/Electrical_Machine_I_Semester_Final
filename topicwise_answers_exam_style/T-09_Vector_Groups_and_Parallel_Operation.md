@@ -38,8 +38,8 @@ Two transformers can only be paralleled if their secondary voltages are exactly 
 
 **(a) Conditions for parallel operation of two 3-phase transformers. [04]**
 
-![Parallel operation of transformers and terminal polarity](../Books/diagrams/Ch-32_p79_fig68.jpg)
-![Equivalent circuit of two transformers operating in parallel](../Books/diagrams/Ch-32_p81_fig71.jpg)
+![Parallel operation of transformers and terminal polarity](../Books/Theraja/Ch-32/diagrams/Ch-32_p79_fig68.jpg)
+![Equivalent circuit of two transformers operating in parallel](../Books/Theraja/Ch-32/diagrams/Ch-32_p81_fig71.jpg)
 
 1. **Same voltage ratio:** Primary and secondary rated voltages must be equal. Otherwise a circulating current flows in the secondary loop even at no load.
 

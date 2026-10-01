@@ -55,7 +55,7 @@ $$P_{\text{output}} = \sqrt{3} \times 415 \times I_L \times \cos\phi \implies \t
 $$T_{\max} = \frac{3}{2\pi N_s} \times \frac{E_2^2}{2X_2}$$
 Read from circle diagram: the maximum torque line is the longest vertical intercept below the no-load line.
 
-![Construction of Circle Diagram for Induction Motor](../Books/diagrams/ch35_p06_fig35_09.jpg)
+![Construction of Circle Diagram for Induction Motor](../Books/Theraja/Ch-35/diagrams/ch35_p06_fig35_09.jpg)
 
 ---
 
@@ -102,7 +102,7 @@ Rated output $= 5.6$ kW.
 
 **(iv) Maximum power:** Longest intercept below the output line ≈ 8.2 kW (estimated from circle diagram geometry).
 
-![Circle diagram for induction motor showing operating point and output line](../Books/diagrams/ch35_p08_fig35_11.jpg)
+![Circle diagram for induction motor showing operating point and output line](../Books/Theraja/Ch-35/diagrams/ch35_p08_fig35_11.jpg)
 
 ---
 
@@ -117,7 +117,7 @@ Rated output $= 5.6$ kW.
 
 **No-load test:** Motor runs at no-load (no shaft load). Rated voltage applied. Measure $V_0$, $I_0$, $P_0$. The no-load power $P_0$ = stator iron loss + friction and windage loss + small stator copper loss. Determines shunt branch parameters ($R_c$, $X_m$) and friction/windage losses.
 
-![No-load test circuit and separation of losses](../Books/diagrams/ch35_p03_fig35_07_08.jpg)
+![No-load test circuit and separation of losses](../Books/Theraja/Ch-35/diagrams/ch35_p03_fig35_07_08.jpg)
 
 ---
 
@@ -166,7 +166,7 @@ Maximum torque corresponds to the longest vertical distance from the circle to t
 
 $T_{\max}$ in synchronous watts $\approx$ read from circle diagram.
 
-![Circle diagram showing Maximum Quantities and torque line](../Books/diagrams/ch35_p08_fig35_10.jpg)
+![Circle diagram showing Maximum Quantities and torque line](../Books/Theraja/Ch-35/diagrams/ch35_p08_fig35_10.jpg)
 
 ---
 

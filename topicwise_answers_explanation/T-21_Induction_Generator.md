@@ -23,7 +23,7 @@ At slip $s < 0$ (rotor spinning faster than synchronous speed), the torque rever
 
 An induction generator still needs reactive (magnetizing) current to maintain its magnetic field. In grid-connected mode, the grid supplies reactive power. In islanded mode (no grid), capacitors must supply the reactive power.
 
-![Self-excited induction generator circuit with terminal capacitors](../Books/diagrams/Ch-34_p34_fig31.jpg)
+![Self-excited induction generator circuit with terminal capacitors](../Books/Theraja/Ch-34/diagrams/Ch-34_p34_fig31.jpg)
 
 The capacitor bank must supply exactly the reactive power that the motor would have drawn at the same operating point.
 
@@ -45,7 +45,7 @@ $s_{gen} = -s_{motor}$
 
 $N_{gen} = N_s(1 - s_{gen}) = N_s(1 + s_{motor})$
 
-![Induction generator torque-slip curve in generating region (slip < 0)](../Books/diagrams/Ch-34_p33_fig30.jpg)
+![Induction generator torque-slip curve in generating region (slip < 0)](../Books/Theraja/Ch-34/diagrams/Ch-34_p33_fig30.jpg)
 
 ---
 

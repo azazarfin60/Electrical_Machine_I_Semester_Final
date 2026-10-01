@@ -65,7 +65,7 @@ Wound-rotor (slip-ring) induction motors can have external resistance added thro
 - **For speed control:** Different values of external resistance shift the operating slip and thus the speed, for a given load torque.
 - **The max torque available** is always the same regardless of how much resistance is inserted.
 
-![Torque-slip characteristics of 3-phase induction motor with varying rotor resistance](../Books/diagrams/Ch-34_p29_fig22.jpg)
+![Torque-slip characteristics of 3-phase induction motor with varying rotor resistance](../Books/Theraja/Ch-34/diagrams/Ch-34_p29_fig22.jpg)
 
 ---
 
@@ -111,7 +111,7 @@ $$\frac{T_f}{T_{\max}} = \frac{2as_f X_2^2}{X_2^2(a^2 + s_f^2)} = \boxed{\frac{2
 
 *(Proved)*
 
-![Torque-slip curve showing stable and unstable operating regions](../Books/diagrams/Ch-34_p22_fig21.jpg)
+![Torque-slip curve showing stable and unstable operating regions](../Books/Theraja/Ch-34/diagrams/Ch-34_p22_fig21.jpg)
 
 ---
 
@@ -145,7 +145,7 @@ $$T_{\max,2} \propto \frac{V^2/f_2^2}{2 \times 2\pi f_2 L_2} = \frac{V^2}{4\pi f
 
 Variable frequency drives always change voltage proportionally with frequency ($V/f = $ constant). This keeps $E_2/f = $ constant, and therefore $E_2/X_2 = $ constant. Maximum torque remains constant at all speeds.
 
-![Complete torque-speed and torque-slip curve across motoring, generating, and braking regions](../Books/diagrams/Ch-34_p34_fig32.jpg)
+![Complete torque-speed and torque-slip curve across motoring, generating, and braking regions](../Books/Theraja/Ch-34/diagrams/Ch-34_p34_fig32.jpg)
 
 ---
 

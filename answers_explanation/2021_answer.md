@@ -16,7 +16,7 @@
 
 #### Q1(a): Physical Meaning of Ideal Transformer Assumptions
 
-![Core and windings of an ideal transformer](../Books/diagrams/Ch-32_p07_fig13.jpg)
+![Core and windings of an ideal transformer](../Books/Theraja/Ch-32/diagrams/Ch-32_p07_fig13.jpg)
 
 An "ideal transformer" is an idealized mathematical model that isolates the pure electromagnetic transformation mechanism from parasitic non-idealities:
 1. **Zero Winding Resistance ($R_1 = R_2 = 0$)**: Coils are assumed to be wound with hypothetical perfect conductors (zero resistivity). This eliminates all $I^2R$ copper losses and internal ohmic voltage drops.
@@ -64,7 +64,7 @@ An "ideal transformer" is an idealized mathematical model that isolates the pure
 
 #### Q2(a): Complete Phasor Diagram of a Practical Transformer
 
-![Complete vector diagrams of transformer](../Books/diagrams/Ch-32_p21_fig29.jpg)
+![Complete vector diagrams of transformer](../Books/Theraja/Ch-32/diagrams/Ch-32_p21_fig29.jpg)
 
 #### Physical Walkthrough of Phasor Evolution:
 1. **Magnetic Core Reference**: Core flux $\vec{\Phi}_m$ is drawn horizontal (0°).
@@ -147,7 +147,7 @@ In a 3-phase system, third harmonic currents are zero-sequence: they are complet
 
 #### Q3(c): Complete Torque-Speed Characteristic of an Induction Motor
 
-![Torque-Speed characteristics](../Books/diagrams/Chapman_Ch07_p202_torque_speed_r2_comp.jpg)
+![Torque-Speed characteristics](../Books/Chapman/diagrams/Chapman_Ch07_p202_torque_speed_r2_comp.jpg)
 
 The induction machine operates in three distinct operational regions depending on rotor speed $N$ and slip $s = \frac{N_s - N}{N_s}$:
 1. **Motoring Region ($0 < N < N_s$, $0 < s < 1$)**:
@@ -242,7 +242,7 @@ Notice that $T_{st,\max}$ equals the absolute maximum running breakdown torque $
 
 #### Q5(c): Rotating Magnetic Field Produced by a 2-Phase Supply
 
-![Resultant 3-phase flux](../Books/diagrams/Ch-34_p10_fig14.jpg)
+![Resultant 3-phase flux](../Books/Theraja/Ch-34/diagrams/Ch-34_p10_fig14.jpg)
 
 #### Setup:
 Consider two stator windings placed 90° apart in space (Phase A along X-axis, Phase B along Y-axis), energized by balanced 2-phase currents 90° apart in time:
@@ -318,8 +318,8 @@ $$\text{Percentage Increase in Cu Loss} = (1.2346 - 1) \times 100\% = \mathbf{23
 
 #### Q7(a): Double-Field Revolving Theory of 1-Phase IM
 
-![Resolution of alternating flux into two oppositely rotating fields](../Books/diagrams/VK_Mehta_Fig_9_03.jpeg)
-![Torque-speed characteristic under double-field revolving theory showing zero starting torque](../Books/diagrams/VK_Mehta_Fig_9_04.jpeg)
+![Resolution of alternating flux into two oppositely rotating fields](../Books/VK_Mehta/diagrams/VK_Mehta_Fig_9_03.jpeg)
+![Torque-speed characteristic under double-field revolving theory showing zero starting torque](../Books/VK_Mehta/diagrams/VK_Mehta_Fig_9_04.jpeg)
 
 > See full details in [IM-03: Single-Phase Induction Motor: Double Revolving Field Theory](2018_2024_answer.md#im-03-single-phase-induction-motor-double-revolving-field-theory).
 
@@ -400,7 +400,7 @@ If a 4-pole, 50 Hz motor ($N_s = 1500\text{ rpm} \implies \omega_s = 157.08\text
 
 #### Q8(c): Induction Motor Circle Diagram Analysis
 
-![Construction of Circle Diagram](../Books/diagrams/ch35_p06_fig35_09.jpg)
+![Construction of Circle Diagram](../Books/Theraja/Ch-35/diagrams/ch35_p06_fig35_09.jpg)
 
 #### First-Principles Theory of the Circle Diagram:
 As the mechanical load on an induction motor varies from no-load to standstill, the equivalent circuit impedance traces a circular locus in the complex current plane (Heyland circle).

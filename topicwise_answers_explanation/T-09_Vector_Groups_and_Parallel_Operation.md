@@ -22,7 +22,7 @@ In power substations, multiple smaller transformers are operated in parallel rat
 2. **Efficiency optimization:** During light-load hours (such as late night), one or more units can be switched off to avoid paying constant iron losses on all units.
 3. **System expansion:** Substation capacity can grow incrementally with urban load growth by adding parallel units without replacing existing infrastructure.
 
-![Parallel operation of transformers and terminal polarity](../Books/diagrams/Ch-32_p79_fig68.jpg)
+![Parallel operation of transformers and terminal polarity](../Books/Theraja/Ch-32/diagrams/Ch-32_p79_fig68.jpg)
 
 #### Essential conditions for parallel operation
 
@@ -52,7 +52,7 @@ To connect two three-phase transformers in parallel without dangerous circulatin
 5. **Same vector group and zero relative phase displacement:**
    - Three-phase transformer connections (like Star-Delta) introduce an inherent 30° phase shift between primary and secondary line voltages. Paralleled transformers must produce secondary line voltages that are in exact time phase.
 
-![Equivalent circuit of two transformers operating in parallel](../Books/diagrams/Ch-32_p81_fig71.jpg)
+![Equivalent circuit of two transformers operating in parallel](../Books/Theraja/Ch-32/diagrams/Ch-32_p81_fig71.jpg)
 
 ---
 

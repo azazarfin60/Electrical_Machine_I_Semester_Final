@@ -114,7 +114,7 @@ The phase B flux direction is reversed in the core. This means $-\Phi_B$ flows i
 
 The outer yokes (carrying only one phase each) need only $\Phi_m$ cross-section. The middle limb can also be reduced because its flux is balanced by the reversed winding MMF. Net result: less core material for the same power rating.
 
-![Core-type and shell-type transformer magnetic circuits](../Books/diagrams/Ch-32_p02_fig02.jpg)
+![Core-type and shell-type transformer magnetic circuits](../Books/Theraja/Ch-32/diagrams/Ch-32_p02_fig02.jpg)
 
 ---
 
@@ -140,7 +140,7 @@ where $t$ is the thickness of the conducting path. The critical point: power los
 
 Cut the core into thin sheets (laminations) insulated from each other by a thin oxide layer or varnish coating. Now each lamination is a separate conducting path with a much smaller cross-section.
 
-![Stepped core cross section and laminations](../Books/diagrams/Ch-32_p05_fig10.jpg)
+![Stepped core cross section and laminations](../Books/Theraja/Ch-32/diagrams/Ch-32_p05_fig10.jpg)
 
 The eddy current in each lamination is confined to within one sheet of thickness $t_{\text{lam}}$. Since $P_e \propto t^2$, if you replace one thick sheet of thickness $T$ with $n$ laminations each of thickness $T/n$:
 

@@ -54,7 +54,7 @@ $$\frac{S_{\text{open}}}{S_{\text{closed}}} = \frac{\sqrt{3}S}{3S} = \frac{1}{\s
 
 ![V-V or open delta transformer connection schematic](../SlidesByMaam/diagrams/L-11_ECE-2107_p16_fig01.jpg)
 
-![Phasor diagram of open delta V-V connection under balanced load](../Books/diagrams/VK_Mehta_Fig_7_52.jpeg)
+![Phasor diagram of open delta V-V connection under balanced load](../Books/VK_Mehta/diagrams/VK_Mehta_Fig_7_52.jpeg)
 
 #### Utilization factor
 

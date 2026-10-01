@@ -65,7 +65,7 @@ A V-curve shows the relationship between armature current $I_a$ and field curren
 - Below unity pf (underexcited): $I_a$ increases and lags voltage (lagging pf).
 - Above unity pf (overexcited): $I_a$ increases and leads voltage (leading pf, acts as capacitor bank).
 
-![V-curves of synchronous motor showing armature current vs field current for no-load, half-load, and full-load](../Books/diagrams/synchronous_motor_v_curves.png)
+![V-curves of synchronous motor showing armature current vs field current for no-load, half-load, and full-load](../Books/Chapman/diagrams/synchronous_motor_v_curves.png)
 
 ---
 

@@ -249,7 +249,7 @@ $$\frac{S_{\text{open}}}{S_{\text{closed}}} = \frac{\sqrt{3}\,S}{3S} = \frac{1}{
 
 **(a) Explain Scott connection with necessary diagrams. [04]**
 
-![Scott Connection Wiring Diagram](../Books/diagrams/VK_Mehta_Fig_7_53.jpeg)
+![Scott Connection Wiring Diagram](../Books/VK_Mehta/diagrams/VK_Mehta_Fig_7_53.jpeg)
 
 The Scott (or T-T) connection converts a 3-phase supply into a 2-phase supply (or vice versa) using two single-phase transformers.
 
@@ -401,7 +401,7 @@ The engine must drive the rotor at 1530 rpm to generate at 50 Hz.
 
 **(a) What is single phasing? Explain its effect on a 3-phase induction motor. [04]**
 
-![Single-phasing delta motor](../Books/diagrams/ch35_p53_fig35_58.jpg)
+![Single-phasing delta motor](../Books/Theraja/Ch-35/diagrams/ch35_p53_fig35_58.jpg)
 
 **Single phasing:** One of the three supply phases is lost while the motor is running. This can happen due to a blown fuse, a broken supply wire, or a faulty contactor contact.
 
@@ -423,7 +423,7 @@ The engine must drive the rotor at 1530 rpm to generate at 50 Hz.
 
 **(b) For a 3-phase IM, prove that the magnitude of resultant flux is constant and equal to $1.5\Phi_m$. [03]**
 
-![Resultant 3-phase flux](../Books/diagrams/Ch-34_p10_fig14.jpg)
+![Resultant 3-phase flux](../Books/Theraja/Ch-34/diagrams/Ch-34_p10_fig14.jpg)
 
 Three pulsating fluxes (120° apart in space):
 $$\Phi_R = \Phi_m\sin\omega t, \quad \Phi_Y = \Phi_m\sin(\omega t - 120°), \quad \Phi_B = \Phi_m\sin(\omega t + 120°)$$
@@ -480,7 +480,7 @@ $$N_{mT} = N_s(1 - s_{mT}) = 1000(1 - 0.1412) = \boxed{858.8 \text{ rpm}}$$
 
 **(a) Briefly discuss star-delta starter for 3-phase squirrel cage IM. [04]**
 
-![Star-delta starter connections](../Books/diagrams/ch35_p23_fig35_21.jpg)
+![Star-delta starter connections](../Books/Theraja/Ch-35/diagrams/ch35_p23_fig35_21.jpg)
 
 A star-delta (Y-Δ) starter reduces the starting voltage applied to the motor. Here is how it works:
 
@@ -498,7 +498,7 @@ A star-delta (Y-Δ) starter reduces the starting voltage applied to the motor. H
 
 **(b) Circle diagram for 5.6 kW, 400V, 3-φ, 4-pole, 50 Hz slip-ring IM. No-load: 400V, 6A, $\cos\phi_0 = 0.087$. Blocked rotor: 100V, 12A, 720W. Stator turns/rotor turns $= 2.62$. $R_{1} = 0.67\,\Omega/\text{phase}$, $R_2 = 0.185\,\Omega/\text{phase}$. Find: (i) full load current, (ii) slip, (iii) pf, (iv) max power. [08]**
 
-![Construction of Circle Diagram](../Books/diagrams/ch35_p06_fig35_09.jpg)
+![Construction of Circle Diagram](../Books/Theraja/Ch-35/diagrams/ch35_p06_fig35_09.jpg)
 
 **Scale to full voltage (Blocked rotor data):**
 
@@ -571,7 +571,7 @@ The first term ($+\omega$) represents a forward rotating field (same direction a
 
 For maximum starting torque, the main and auxiliary winding currents must be 90° apart in time.
 
-![Split-Phase Induction Motor Circuit and Phasor Diagram](../Books/diagrams/VK_Mehta_Fig_9_13.jpeg)
+![Split-Phase Induction Motor Circuit and Phasor Diagram](../Books/VK_Mehta/diagrams/VK_Mehta_Fig_9_13.jpeg)
 
 For maximum torque, auxiliary winding impedance angle $\phi_a = 90° - \phi_m$.
 

@@ -14,7 +14,7 @@
 
 ### Q1(a): Transformer Definition and Variable Identification
 
-![Schematic diagram of single-phase transformer connected to sinusoidal source on primary and load on secondary with all labeled variables](../Books/diagrams/VK_Mehta_Fig_7_01.jpeg)
+![Schematic diagram of single-phase transformer connected to sinusoidal source on primary and load on secondary with all labeled variables](../Books/VK_Mehta/diagrams/VK_Mehta_Fig_7_01.jpeg)
 
 #### What is a transformer physically?
 A transformer is a static, stationary electromagnetic machine that transfers AC electrical energy between two or more electrically isolated circuits through magnetic flux linkage. It operates strictly at constant frequency ($f_1 = f_2$), converting alternating voltage and current levels inversely: stepping up voltage while stepping down current, or vice versa, such that apparent power ($S = V I$) is conserved.
@@ -32,7 +32,7 @@ A transformer is a static, stationary electromagnetic machine that transfers AC 
 
 ### Q1(b): Proof of the Transformer EMF Equation
 
-![Core and windings of an ideal transformer](../Books/diagrams/Ch-32_p07_fig13.jpg)
+![Core and windings of an ideal transformer](../Books/Theraja/Ch-32/diagrams/Ch-32_p07_fig13.jpg)
 
 > For the comprehensive derivation, physical picture, and design implications see [T-01: EMF Equation: $E = 4.44 f N \Phi_m$](2018_2024_answer.md#t-01-emf-equation-e--444-f-n-phi_m-full-derivation-and-intuition).
 
@@ -130,7 +130,7 @@ The per-phase equivalent circuit referred to the secondary consists of:
 
 ### Q3(a): Voltage Regulation Derivation and Phasor Diagrams
 
-![Complete vector diagrams of transformer](../Books/diagrams/Ch-32_p21_fig29.jpg)
+![Complete vector diagrams of transformer](../Books/Theraja/Ch-32/diagrams/Ch-32_p21_fig29.jpg)
 
 #### Physical Meaning of Voltage Regulation:
 When an electrical load is connected to a transformer, current $I_2$ flows through the windings. Because windings possess resistance $R_{02}$ and leakage reactance $X_{02}$, internal voltage drops occur:
@@ -297,7 +297,7 @@ $$\frac{T_{\max}}{T_{FL}} = \frac{1}{0.24615} = \mathbf{4.06 \approx 4.07}$$
 
 ### Q6(a): Power Ratio Derivation and Power Flow Diagram
 
-![Induction motor power flow diagram showing air-gap, copper, and mechanical stages](../Books/diagrams/Ch-34_p39_fig38.jpg)
+![Induction motor power flow diagram showing air-gap, copper, and mechanical stages](../Books/Theraja/Ch-34/diagrams/Ch-34_p39_fig38.jpg)
 
 > For comprehensive derivation and power tree see [IM-01: Air-Gap Power Ratios](2018_2024_answer.md#im-01-air-gap-power-ratios-p_g--p_rcu--p_m--1--s--1-s).
 
@@ -401,7 +401,7 @@ $$\eta_{\text{rotor}} = \frac{(1-s) P_g}{P_g} = \boxed{1 - s}$$
 
 ### Q8(a): Single-Phase IM Operation and Double Revolving Field Theory
 
-![Resolution of alternating flux into two oppositely rotating fields](../Books/diagrams/VK_Mehta_Fig_9_03.jpeg)
+![Resolution of alternating flux into two oppositely rotating fields](../Books/VK_Mehta/diagrams/VK_Mehta_Fig_9_03.jpeg)
 
 > For full mathematical formulation and torque-speed curve see [IM-03: Single-Phase Induction Motor: Double Revolving Field Theory](2018_2024_answer.md#im-03-single-phase-induction-motor-double-revolving-field-theory).
 
@@ -427,7 +427,7 @@ $$\eta_{\text{rotor}} = \frac{(1-s) P_g}{P_g} = \boxed{1 - s}$$
 
 #### 1. Capacitor-Start Induction Motor
 
-![Capacitor-Start Induction Motor Circuit and Phasor Diagram](../Books/diagrams/VK_Mehta_Fig_9_14.jpeg)
+![Capacitor-Start Induction Motor Circuit and Phasor Diagram](../Books/VK_Mehta/diagrams/VK_Mehta_Fig_9_14.jpeg)
 
 ##### Operating Mechanism:
 - The stator is wound with two windings displaced by 90° in space: the **Main Winding** and an **Auxiliary (Starting) Winding**.
@@ -443,7 +443,7 @@ $$\eta_{\text{rotor}} = \frac{(1-s) P_g}{P_g} = \boxed{1 - s}$$
 
 #### 2. Shaded-Pole Induction Motor
 
-![Shaded-Pole Motor Construction and Action](../Books/diagrams/VK_Mehta_Fig_9_17.jpeg)
+![Shaded-Pole Motor Construction and Action](../Books/VK_Mehta/diagrams/VK_Mehta_Fig_9_17.jpeg)
 
 ##### Operating Mechanism:
 - The shaded-pole motor uses salient (projecting) pole construction. About one-third of each pole face is physically slotted and wrapped with a heavy, closed single-turn copper band called a **shading ring**.

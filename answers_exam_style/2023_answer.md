@@ -19,7 +19,7 @@
 
 **Schematic:**
 
-![Schematic diagram of single-phase transformer connected to sinusoidal source on primary and load on secondary with all labeled variables](../Books/diagrams/VK_Mehta_Fig_7_01.jpeg)
+![Schematic diagram of single-phase transformer connected to sinusoidal source on primary and load on secondary with all labeled variables](../Books/VK_Mehta/diagrams/VK_Mehta_Fig_7_01.jpeg)
 
 **Variable Identification:**
 
@@ -170,7 +170,7 @@ $$\text{VR\%} \approx \frac{I_2(R_{01}\cos\phi - X_{01}\sin\phi)}{V_{2,\text{rat
 
 **Phasor diagrams:**
 
-![Complete vector diagrams of transformer](../Books/diagrams/Ch-32_p21_fig29.jpg)
+![Complete vector diagrams of transformer](../Books/Theraja/Ch-32/diagrams/Ch-32_p21_fig29.jpg)
 > 
 > **Lagging pf:** $V_2$ reference. $I_2$ lags $V_2$ by $\phi$. $V_1 = V_2 + I_2R_{01}\angle0° + I_2X_{01}\angle90°$. $|V_1| > |V_2|$. VR > 0.
 >
@@ -320,7 +320,7 @@ $$\boxed{P_g : P_{r,Cu} : P_m = 1 : s : (1-s)}$$
 
 **Power flow diagram:**
 
-![Induction motor power flow diagram showing air-gap, copper, and mechanical stages](../Books/diagrams/Ch-34_p39_fig38.jpg)
+![Induction motor power flow diagram showing air-gap, copper, and mechanical stages](../Books/Theraja/Ch-34/diagrams/Ch-34_p39_fig38.jpg)
 
 ---
 

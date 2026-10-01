@@ -10,24 +10,24 @@ This directory contains faithful, word-for-word digitizations of all four Class 
 
 | CT No. | Date | Topic Domain | Topics Tested | Marks | Full Solution File |
 | :---: | :---: | :---| :---| :---: | :---|
-| **CT-01** | 19/07/2026 | Induction Motor | 3-$\phi$ RMF synchronous speed proof, IM operating principle | 20 | [CT_01.md](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/CT_Questions/CT_01.md) |
-| **CT-02** | 03/08/2026 | Induction Motor | Max torque independence from $R_2$, Blocked rotor test | 20 | [CT_02.md](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/CT_Questions/CT_02.md) |
-| **CT-03** | 26/08/2026 | Transformer | 1-$\phi$ transformer schematic & variables, EMF equation proof | 20 | [CT_03.md](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/CT_Questions/CT_03.md) |
-| **CT-04** | 09/09/2026 | Transformer | Leakage flux effect, Phasor diagram of R-L loaded ideal transformer | 20 | [CT_04.md](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/CT_Questions/CT_04.md) |
+| **CT-01** | 19/07/2026 | Induction Motor | 3-$\phi$ RMF synchronous speed proof, IM operating principle | 20 | [CT_01.md](CT_01.md) |
+| **CT-02** | 03/08/2026 | Induction Motor | Max torque independence from $R_2$, Blocked rotor test | 20 | [CT_02.md](CT_02.md) |
+| **CT-03** | 26/08/2026 | Transformer | 1-$\phi$ transformer schematic & variables, EMF equation proof | 20 | [CT_03.md](CT_03.md) |
+| **CT-04** | 09/09/2026 | Transformer | Leakage flux effect, Phasor diagram of R-L loaded ideal transformer | 20 | [CT_04.md](CT_04.md) |
 
 ---
 
 ## 2. Complete Question Listing
 
-### [CT-01](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/CT_Questions/CT_01.md) (Held on 19/07/2026)
+### [CT-01](CT_01.md) (Held on 19/07/2026)
 - **Q1.** Suppose that 3-$\phi$ supply is given to an induction motor (IM). Prove that the resulting flux at stator will rotate at synchronous speed. **[10 Marks, CO1, PO1]**
 - **Q2.** Explain the basic operating principle of an induction motor. **[10 Marks, CO1, PO1]**
 
-### [CT-02](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/CT_Questions/CT_02.md) (Held on 03/08/2026)
+### [CT-02](CT_02.md) (Held on 03/08/2026)
 - **Q1.** Justify the following: "The value of rotor resistance does not alter the value of the maximum torque but only the value of slip at which it occurs." **[10 Marks, CO1, PO1]**
 - **Q2.** Explain the blocked rotor test of an induction motor. Also enlist the necessities of performing this test. **[10 Marks, CO1, PO1]**
 
-### [CT-03](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/CT_Questions/CT_03.md) (Held on 26/08/2026)
+### [CT-03](CT_03.md) (Held on 26/08/2026)
 - **Q1.** Schematically represent a single-phase transformer assuming the primary winding is connected to a sinusoidal voltage source, while the secondary winding is connected to a load. Also identify and label the variables associated with the primary and secondary sides of the transformer in the schematic. **[10 Marks, CO1, PO1]**
 - **Q2.** Consider an ideal single-phase transformer operating under the following assumptions:
   - The permeability of the core is constant over the range of transformer operation, and hence the reluctance of the core is constant.
@@ -36,7 +36,7 @@ This directory contains faithful, word-for-word digitizations of all four Class 
   $$E_1 = 4.44 f N_1 \Phi_m \quad \text{and} \quad E_2 = 4.44 f N_2 \Phi_m$$
   Variables having their usual meanings. **[10 Marks, CO1, PO1]**
 
-### [CT-04](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/CT_Questions/CT_04.md) (Held on 09/09/2026)
+### [CT-04](CT_04.md) (Held on 09/09/2026)
 - **Q1.** With the help of schematic representation, explain the effect of leakage flux on the transformer operation. **[10 Marks, CO1, PO1]**
 - **Q2.** Draw the phasor diagram of a R-L loaded ideal transformer. Also describe each step while drawing. **[10 Marks, CO1, PO1]**
 
@@ -81,8 +81,8 @@ CT_Questions/
 
 ## 5. Related Vault Resources
 
-- **Full Exam Analysis & Heatmap:** [ECE_2207_Question_Analysis.md](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/ECE_2207_Question_Analysis.md)
-- **Previous Semester Finals:** [PrevYearQuestions/README.md](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/PrevYearQuestions/README.md)
-- **Classroom Notes:** [ClassNoteByRaidah/00_Index_and_Topic_Map.md](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/ClassNoteByRaidah/00_Index_and_Topic_Map.md)
-- **Teacher Lecture Slides:** [SlidesByMaam/map.md](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/map.md)
-- **Course Syllabus:** [Syllabus.md](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/Syllabus.md)
+- **Full Exam Analysis & Heatmap:** [ECE_2207_Question_Analysis.md](../ECE_2207_Question_Analysis.md)
+- **Previous Semester Finals:** [PrevYearQuestions/README.md](../PrevYearQuestions/README.md)
+- **Classroom Notes:** [ClassNoteByRaidah/00_Index_and_Topic_Map.md](../ClassNoteByRaidah/00_Index_and_Topic_Map.md)
+- **Teacher Lecture Slides:** [SlidesByMaam/map.md](../SlidesByMaam/map.md)
+- **Course Syllabus:** [Syllabus.md](../Syllabus.md)

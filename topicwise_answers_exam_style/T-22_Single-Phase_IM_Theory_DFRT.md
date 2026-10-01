@@ -31,7 +31,7 @@ This pulsating field decomposes into two counter-rotating RMFs of equal magnitud
 
 $$\Phi = \underbrace{\frac{\Phi_m}{2}\sin(\omega t - \theta)}_{\text{Forward field}} + \underbrace{\frac{\Phi_m}{2}\sin(\omega t + \theta)}_{\text{Backward field}}$$
 
-![Resolution of Alternating Flux into Two Oppositely Rotating Fluxes](../Books/diagrams/VK_Mehta_Fig_9_03.jpeg)
+![Resolution of Alternating Flux into Two Oppositely Rotating Fluxes](../Books/VK_Mehta/diagrams/VK_Mehta_Fig_9_03.jpeg)
 
 Each produces a torque on the squirrel-cage rotor:
 - Forward field produces $T_f$ (positive)
@@ -44,7 +44,7 @@ Each produces a torque on the squirrel-cage rotor:
 - Slip for backward field: $s_b = (N_s + N)/N_s = 2 - s_f$ (close to 2)
 - $T_f > T_b$ → motor continues running in the pushed direction.
 
-![Torque-Speed Characteristic Under Double-Field Revolving Theory showing zero net starting torque](../Books/diagrams/VK_Mehta_Fig_9_04.jpeg)
+![Torque-Speed Characteristic Under Double-Field Revolving Theory showing zero net starting torque](../Books/VK_Mehta/diagrams/VK_Mehta_Fig_9_04.jpeg)
 
 **Conclusion:** Zero starting torque → not self-starting. The motor needs a starting mechanism.
 

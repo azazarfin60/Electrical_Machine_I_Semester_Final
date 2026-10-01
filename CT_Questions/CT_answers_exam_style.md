@@ -68,7 +68,7 @@ $$s = \frac{N_s - N}{N_s}, \qquad f_r = sf$$
 
 ### Q1. Justify: Maximum torque is independent of R₂. [10 Marks]
 
-![Torque-Speed characteristics](../Books/diagrams/Chapman_Ch07_p202_torque_speed_r2_comp.jpg)
+![Torque-Speed characteristics](../Books/Chapman/diagrams/Chapman_Ch07_p202_torque_speed_r2_comp.jpg)
 
 **Torque equation:**
 $$T = \frac{k \cdot s E_2^2 R_2}{R_2^2 + s^2 X_2^2}, \qquad k = \frac{3}{2\pi N_s}$$
@@ -130,7 +130,7 @@ $$R_2' = R_{01} - R_1, \qquad X_1 \approx X_2' = \frac{X_{01}}{2}$$
 
 ### Q1. Schematic of a 1-φ transformer with variables labeled. [10 Marks]
 
-![Schematic representation of a 1-phase transformer connected to a sinusoidal source on primary and load on secondary with all labeled variables](../Books/diagrams/VK_Mehta_Fig_7_01.jpeg)
+![Schematic representation of a 1-phase transformer connected to a sinusoidal source on primary and load on secondary with all labeled variables](../Books/VK_Mehta/diagrams/VK_Mehta_Fig_7_01.jpeg)
 
 **Primary variables:**
 | Symbol | Meaning |
@@ -218,7 +218,7 @@ Multiply by turns: $E_1 = 4.44fN_1\Phi_m$, $E_2 = 4.44fN_2\Phi_m$ *(Same result)
 
 ### Q2. Phasor diagram of an R-L loaded ideal transformer: step by step. [10 Marks]
 
-![Core and windings of an ideal transformer](../Books/diagrams/Ch-32_p07_fig13.jpg)
+![Core and windings of an ideal transformer](../Books/Theraja/Ch-32/diagrams/Ch-32_p07_fig13.jpg)
 
 **Ideal transformer assumptions:** $R_1 = R_2 = X_1 = X_2 = 0$, $I_0 = 0$, so $V_2 = E_2$ and $V_1 = -E_1$.
 
@@ -245,7 +245,7 @@ No drops. $\vec{V}_1 = -\vec{E}_1$ (vertically upward, +Y axis).
 Angle between $\vec{V}_1$ and $\vec{I}_1$ equals $\theta_1 = \theta_2$. Same pf on both sides.
 
 **Phasor summary:**
-![Transformer on-load phasor diagram](../Books/diagrams/Ch-32_p26_fig35.jpg)
+![Transformer on-load phasor diagram](../Books/Theraja/Ch-32/diagrams/Ch-32_p26_fig35.jpg)
 
 | Phasor | Angle |
 |:---:|:---:|

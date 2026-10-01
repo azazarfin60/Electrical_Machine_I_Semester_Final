@@ -108,7 +108,7 @@ The digitized handwritten notes align with the corresponding typed lecture slide
 | **Lecture 05** | [`L-05_ECE-2107.md`](../SlidesByMaam/L-05_ECE-2107.md) | Class 07, 08 | Rotor torque equations, $T_{max}$, torque-slip characteristics |
 | **Lecture 06** | [`L-06_ECE-2107.md`](../SlidesByMaam/L-06_ECE-2107.md) | Class 09 | Motor testing: No-load, blocked rotor & DC resistance |
 | **Lecture 07** | [`L-07_ECE-2107.md`](../SlidesByMaam/L-07_ECE-2107.md) | Class 10, 11 | Power flow stages, efficiency, inrush current & starting |
-| **Lecture 08** | [`L-08_ECE-2207.md`](../SlidesByMaam/L-08_ECE-2207.md) | Class 12 | Speed control, electric braking (plugging), induction generator |
+| **Lecture 08** | [`L-08_ECE-2207.md`](../SlidesByMaam/L-08_ECE-2107.md) | Class 12 | Speed control, electric braking (plugging), induction generator |
 | **Lecture 09** | [`L-09_ECE-2107.md`](../SlidesByMaam/L-09_ECE-2107.md) | Class 13, 14 | Transformer principles, leakage reactance, parameter shifting |
 | **Lecture 10** | [`L-10_ECE-2107.md`](../SlidesByMaam/L-10_ECE-2107.md) | Class 15, 16 | Voltage regulation, 3-phase transformers, 3rd harmonics |
 | **Lecture 11** | [`L-11_ECE-2107.md`](../SlidesByMaam/L-11_ECE-2107.md) | Class 17, 18 | V-V open delta, Scott-T connection, Vector groups |

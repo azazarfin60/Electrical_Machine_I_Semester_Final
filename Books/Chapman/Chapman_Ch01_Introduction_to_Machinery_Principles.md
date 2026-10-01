@@ -334,7 +334,7 @@ A core with three legs is shown in Figure P1-10. Its depth is $8\text{ cm}$, and
 
 The magnetization curve for this core is shown below:
 
-![Figure 1-10c: Magnetization curve B vs H](diagrams/Chapman_Ch01_p16_fig1-10c_BH.jpg)
+![Figure 1-10c: Magnetization curve B vs H](diagrams/Chapman_Ch01_p19_fig1-10c_BH.jpg)
 
 **(a)** A flux density of $0.5\text{ T}$ in the central core corresponds to a total flux of:
 

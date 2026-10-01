@@ -46,7 +46,7 @@ When $I_a$ and $I_m$ are 90° apart in time and their physical windings are 90°
 
 The auxiliary winding is wound with finer wire (fewer turns, high resistance, low reactance), while the main winding has thick wire deeply embedded in slots (low resistance, high reactance).
 
-![Split-Phase Induction Motor Circuit and Phasor Diagram](../Books/diagrams/VK_Mehta_Fig_9_13.jpeg)
+![Split-Phase Induction Motor Circuit and Phasor Diagram](../Books/VK_Mehta/diagrams/VK_Mehta_Fig_9_13.jpeg)
 
 - Main current $\vec{I}_m$ is highly inductive and lags applied voltage $\vec{V}$ by a large angle $\phi_m \approx 70°–80°$.
 - Auxiliary current $\vec{I}_a$ is mostly resistive and lags $\vec{V}$ by a smaller angle $\phi_a \approx 30°–40°$.
@@ -61,7 +61,7 @@ The auxiliary winding is wound with finer wire (fewer turns, high resistance, lo
 
 Instead of relying on resistance to reduce lag, a high-capacitance AC electrolytic capacitor is placed in series with the auxiliary winding.
 
-![Capacitor-Start Induction Motor Circuit and Phasor Diagram](../Books/diagrams/VK_Mehta_Fig_9_14.jpeg)
+![Capacitor-Start Induction Motor Circuit and Phasor Diagram](../Books/VK_Mehta/diagrams/VK_Mehta_Fig_9_14.jpeg)
 
 The capacitive reactance $X_C = \frac{1}{\omega C}$ overcomes the auxiliary winding inductive reactance ($X_C > X_a$), causing the net auxiliary impedance to be capacitive.
 - Main current $\vec{I}_m$ lags voltage $\vec{V}$ by $\phi_m \approx 70°–80°$.
@@ -91,7 +91,7 @@ This design combines the high starting torque of a capacitor-start motor with th
 - **Starting:** Both the starting capacitor $C_{st}$ (large electrolytic capacitor, $\sim 200–300\,\mu\text{F}$) and running capacitor $C_{run}$ (small continuous-rated paper capacitor, $\sim 20–40\,\mu\text{F}$) operate in parallel. Total capacitance is large, giving $\alpha \approx 90°$ and huge starting torque.
 - **Running:** At 75% speed, the centrifugal switch disconnects $C_{st}$, leaving $C_{run}$ permanently in circuit. This optimizes running power factor, efficiency, and quietness.
 
-![Capacitor-Start Capacitor-Run Motor Circuit](../Books/diagrams/VK_Mehta_Fig_9_16.jpeg)
+![Capacitor-Start Capacitor-Run Motor Circuit](../Books/VK_Mehta/diagrams/VK_Mehta_Fig_9_16.jpeg)
 
 ---
 
@@ -99,7 +99,7 @@ This design combines the high starting torque of a capacitor-start motor with th
 
 The simplest, cheapest single-phase motor. It has salient stator poles, each fitted with a copper ring (shading coil) covering about one-third of the pole face.
 
-![Shaded-Pole Motor Construction and Action](../Books/diagrams/VK_Mehta_Fig_9_17.jpeg)
+![Shaded-Pole Motor Construction and Action](../Books/VK_Mehta/diagrams/VK_Mehta_Fig_9_17.jpeg)
 
 #### The sweeping flux mechanism:
 

@@ -31,7 +31,7 @@ Two-phase: two windings at 90°, two currents at 90° in time. Resultant magnitu
 
 Three-phase: three windings at 120°, three currents at 120° in time. Resultant magnitude $1.5\Phi_m$ (constant). Smooth rotation. Three-phase is preferred industrially because the winding copper is more efficiently used (each winding is active most of the cycle) and the phase arrangement gives balanced current draw from the supply.
 
-![Three-phase stator current waveforms and rotating magnetic field flux vectors](../Books/diagrams/Ch-34_p09_fig11.jpg)
+![Three-phase stator current waveforms and rotating magnetic field flux vectors](../Books/Theraja/Ch-34/diagrams/Ch-34_p09_fig11.jpg)
 
 ---
 
@@ -69,7 +69,7 @@ A capacitor bank connected at the motor terminals draws **leading** reactive cur
 
 The capacitor does not change the motor's internal operation: it still has the same slip, speed, and torque. It simply eliminates the need for the supply to provide magnetizing current, because the capacitor provides it locally.
 
-![Power factor improvement of induction motor using static capacitor bank](../Books/diagrams/ch35_p47_fig35_43.jpg)
+![Power factor improvement of induction motor using static capacitor bank](../Books/Theraja/Ch-35/diagrams/ch35_p47_fig35_43.jpg)
 
 ---
 

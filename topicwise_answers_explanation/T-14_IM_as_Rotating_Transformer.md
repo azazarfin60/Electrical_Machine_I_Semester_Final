@@ -28,7 +28,7 @@ Beyond simplicity, the squirrel-cage IM has these specific advantages:
 - **Air gap sensitivity:** Unlike transformers (which have a very thin effective magnetic gap through the iron core), an IM has a physical air gap (0.3–1.5 mm). This air gap requires much more magnetizing current than a comparable transformer, contributing to the poor no-load power factor (typically 0.1–0.3).
 - **Hazardous starting conditions:** Without a starter, motors above ~4 kW draw 6–8 times rated current from the supply at the instant of starting.
 
-![Induction motor as a generalized rotating transformer showing stator primary, air gap, and short-circuited rotor secondary](../Books/diagrams/Ch-34_p58_fig45.jpg)
+![Induction motor as a generalized rotating transformer showing stator primary, air gap, and short-circuited rotor secondary](../Books/Theraja/Ch-34/diagrams/Ch-34_p58_fig45.jpg)
 
 ---
 

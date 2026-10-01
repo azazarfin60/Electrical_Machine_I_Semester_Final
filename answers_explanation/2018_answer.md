@@ -203,7 +203,7 @@ $$S_{\text{each}} = \frac{S_{\text{total}}}{3} = \frac{10{,}000}{3} = \mathbf{33
 
 #### Q4(a): Scott (T-T) Connection for 3-Phase to 2-Phase Transformation
 
-![Scott Connection Wiring Diagram](../Books/diagrams/VK_Mehta_Fig_7_53.jpeg)
+![Scott Connection Wiring Diagram](../Books/VK_Mehta/diagrams/VK_Mehta_Fig_7_53.jpeg)
 
 - **Main Transformer**: Primary connected between lines A and B ($V_{AB}$), center-tapped at $D$.
 - **Teaser Transformer**: Primary connected between line C and center-tap $D$. Its turns are tapped at $\frac{\sqrt{3}}{2} \approx 86.6\%$ of the main transformer turns.
@@ -276,8 +276,8 @@ $$S_{\text{each}} = \frac{S_{\text{total}}}{3} = \frac{10{,}000}{3} = \mathbf{33
 
 #### Q5(c): Self-Excited Induction Generator (Capacitance and Engine Speed)
 
-![Self-excited induction generator circuit with terminal capacitors](../Books/diagrams/Ch-34_p34_fig31.jpg)
-![Induction generator torque-slip curve in generating region (slip < 0)](../Books/diagrams/Ch-34_p33_fig30.jpg)
+![Self-excited induction generator circuit with terminal capacitors](../Books/Theraja/Ch-34/diagrams/Ch-34_p34_fig31.jpg)
+![Induction generator torque-slip curve in generating region (slip < 0)](../Books/Theraja/Ch-34/diagrams/Ch-34_p33_fig30.jpg)
 
 #### Given Data:
 - Rating: $440\text{ V}, 4\text{-Pole}, 50\text{ Hz}, 30\text{ kW}, I_L = 40\text{ A}, \cos\phi = 0.85$
@@ -308,7 +308,7 @@ An induction generator cannot self-excite without external reactive VARs to buil
 
 #### Q6(a): Single-Phasing in 3-Phase Induction Motors
 
-![Single-phasing delta motor](../Books/diagrams/ch35_p53_fig35_58.jpg)
+![Single-phasing delta motor](../Books/Theraja/Ch-35/diagrams/ch35_p53_fig35_58.jpg)
 
 - **What Happens at Standstill (Attempting to Start)**:
   If one supply line is broken before starting, the motor receives only single-phase power. It develops zero starting torque ($T_{st} = 0$). The motor will not rotate, drawing extreme locked-rotor current and humming loudly until thermal fuses blow.
@@ -322,7 +322,7 @@ An induction generator cannot self-excite without external reactive VARs to buil
 
 #### Q6(b): Proof: Resultant Flux of 3-Phase Induction Motor is Constant ($1.5\Phi_m$)
 
-![Resultant 3-phase flux](../Books/diagrams/Ch-34_p10_fig14.jpg)
+![Resultant 3-phase flux](../Books/Theraja/Ch-34/diagrams/Ch-34_p10_fig14.jpg)
 
 $$\Phi_R = \Phi_m \sin\omega t, \quad \Phi_Y = \Phi_m \sin(\omega t - 120°), \quad \Phi_B = \Phi_m \sin(\omega t + 120°)$$
 Resolving along orthogonal spatial axes:
@@ -355,7 +355,7 @@ $$s_{mT} = \frac{R_2}{X_2} = \frac{0.12}{0.85} = 0.1412 \implies N_{mT} = 1000 \
 
 #### Q7(a): Star-Delta Starter Operation and Trade-Offs
 
-![Star-delta starter connections](../Books/diagrams/ch35_p23_fig35_21.jpg)
+![Star-delta starter connections](../Books/Theraja/Ch-35/diagrams/ch35_p23_fig35_21.jpg)
 
 - **Mechanism**:
   - *Starting (Star)*: Phase voltage is reduced to $V_\phi = \frac{V_L}{\sqrt{3}}$. Line starting current is reduced to $I_{st,\text{star}} = \frac{1}{3} I_{st,\text{delta}}$, and starting torque drops to $T_{st,\text{star}} = \frac{1}{3} T_{st,\text{delta}}$.
@@ -366,7 +366,7 @@ $$s_{mT} = \frac{R_2}{X_2} = \frac{0.12}{0.85} = 0.1412 \implies N_{mT} = 1000 \
 
 #### Q7(b): Circle Diagram Graphical Analysis (5.6 kW Slip-Ring IM)
 
-![Construction of Circle Diagram](../Books/diagrams/ch35_p06_fig35_09.jpg)
+![Construction of Circle Diagram](../Books/Theraja/Ch-35/diagrams/ch35_p06_fig35_09.jpg)
 
 - **Scaled SC Current at Rated 400 V**: $I_{sc} = 12 \times \frac{400}{100} = 48\text{ A}$.
 - **Loss Separation**: Stator copper loss is calculated from measured $R_1$, dividing the vertical short-circuit line into stator Cu loss and rotor Cu loss segments.
@@ -392,7 +392,7 @@ $$s_{mT} = \frac{R_2}{X_2} = \frac{0.12}{0.85} = 0.1412 \implies N_{mT} = 1000 \
 
 #### Q8(b): Resistor Split-Phase Motor Starting Condition
 
-![Split-Phase Induction Motor Circuit and Phasor Diagram](../Books/diagrams/VK_Mehta_Fig_9_13.jpeg)
+![Split-Phase Induction Motor Circuit and Phasor Diagram](../Books/VK_Mehta/diagrams/VK_Mehta_Fig_9_13.jpeg)
 
 In a resistance split-phase motor, the auxiliary winding is wound with finer wire (high resistance, low reactance), while the main winding has thick wire (low resistance, high reactance).
 - For maximum starting torque, the two currents must be in temporal quadrature ($\phi_m - \phi_a = 90°$).

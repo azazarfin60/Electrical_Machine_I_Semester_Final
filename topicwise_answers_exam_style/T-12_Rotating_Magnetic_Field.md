@@ -26,7 +26,7 @@
 5. Rotor spins in the direction of RMF (Lenz's Law: to reduce relative motion).
 6. Motor always runs at $N < N_s$ (slip $s > 0$), otherwise torque = 0.
 
-![3-Phase Supply Stator connection creating rotating magnetic field](../Books/diagrams/Ch-34_p09_fig11.jpg)
+![3-Phase Supply Stator connection creating rotating magnetic field](../Books/Theraja/Ch-34/diagrams/Ch-34_p09_fig11.jpg)
 
 ---
 
@@ -69,8 +69,8 @@ Note: Magnitude is $\Phi_m$ (not $1.5\Phi_m$) because 2-phase has only 2 phases,
 
 **(a) A 3-phase IM is connected to a balanced 3-phase supply. Prove that the resultant flux produced by the stator currents is constant in magnitude ($= 1.5\Phi_m$) and rotates at synchronous speed. [08, CO2]**
 
-![Three-phase sinusoidal flux waveforms and spatial flux axes](../Books/diagrams/Ch-34_p09_fig12_13.jpg)
-![Vector diagrams of resultant 3-phase flux at four instants showing rotation](../Books/diagrams/Ch-34_p10_fig14.jpg)
+![Three-phase sinusoidal flux waveforms and spatial flux axes](../Books/Theraja/Ch-34/diagrams/Ch-34_p09_fig12_13.jpg)
+![Vector diagrams of resultant 3-phase flux at four instants showing rotation](../Books/Theraja/Ch-34/diagrams/Ch-34_p10_fig14.jpg)
 
 **Setup:** Stator windings 120° apart in space. Balanced 3-phase supply:
 $$\Phi_R = \Phi_m\sin\omega t, \quad \Phi_Y = \Phi_m\sin(\omega t - 120°), \quad \Phi_B = \Phi_m\sin(\omega t + 120°)$$

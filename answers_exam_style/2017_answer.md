@@ -16,7 +16,7 @@
 
 **(a) Why is the induction motor called a rotating transformer? [03]**
 
-![Induction motor as a generalized rotating transformer showing stator primary, air gap, and short-circuited rotor secondary](../Books/diagrams/Ch-34_p58_fig45.jpg)
+![Induction motor as a generalized rotating transformer showing stator primary, air gap, and short-circuited rotor secondary](../Books/Theraja/Ch-34/diagrams/Ch-34_p58_fig45.jpg)
 
 **Analogy:**
 An induction motor operates on the same principle of mutual electromagnetic induction as a 2-winding static transformer:
@@ -179,7 +179,7 @@ Since stator voltage drop is small, the shunt branch can be shifted to the input
 
 **(b) Circle diagram problem: 415V, 29.84 kW, 50 Hz, delta-connected motor. No-load: 415V, 21A, 1250W. Locked rotor: 100V, 45A, 2730W. [09]**
 
-![Construction of Circle Diagram](../Books/diagrams/ch35_p06_fig35_09.jpg)
+![Construction of Circle Diagram](../Books/Theraja/Ch-35/diagrams/ch35_p06_fig35_09.jpg)
 
 **Step 1: No-load data (referred to full voltage):**
 
@@ -277,7 +277,7 @@ A transformer is a static electromagnetic device. It transfers electrical energy
 
 **(b) Explain the operating principle of an ideal transformer. [04]**
 
-![Core and windings of an ideal transformer](../Books/diagrams/Ch-32_p07_fig13.jpg)
+![Core and windings of an ideal transformer](../Books/Theraja/Ch-32/diagrams/Ch-32_p07_fig13.jpg)
 
 An ideal transformer has no resistance, no leakage flux, and no core losses.
 
@@ -324,7 +324,7 @@ $$\eta = \frac{12500 \times 0.8}{12500 \times 0.8 + 350 + 100} = \frac{10000}{10
 
 **(a) Draw the full-load phasor diagram of a single-phase transformer. [03]**
 
-![Complete vector diagrams of transformer with resistance and leakage reactance](../Books/diagrams/Ch-32_p21_fig29.jpg)
+![Complete vector diagrams of transformer with resistance and leakage reactance](../Books/Theraja/Ch-32/diagrams/Ch-32_p21_fig29.jpg)
 
 ---
 

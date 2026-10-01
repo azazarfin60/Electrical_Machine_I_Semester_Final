@@ -156,7 +156,7 @@ $$T = \frac{k s E_2^2 R_2}{R_2^2 + s^2 X_2^2}$$
 - For $s > s_{mT}$: torque decreases (denominator grows faster).
 - At $s = 1$ (standstill): $T = T_{st}$ (starting torque, usually 1.5–2 × full-load torque for typical motors).
 
-![Complete Torque-Speed Characteristic showing starting, breakdown, and full-load operating points](../Books/diagrams/Ch-34_p29_fig22.jpg)
+![Complete Torque-Speed Characteristic showing starting, breakdown, and full-load operating points](../Books/Theraja/Ch-34/diagrams/Ch-34_p29_fig22.jpg)
 
 **The motor operates stably only in the region $0 < s < s_{mT}$** (positive slope of T-s curve). In this region, if load increases, speed drops (slip increases), torque increases to meet the load: a stable equilibrium. In the region $s > s_{mT}$, the motor is unstable and will stall.
 
@@ -167,7 +167,7 @@ $$T = \frac{k s E_2^2 R_2}{R_2^2 + s^2 X_2^2}$$
 
 **(c) Draw the complete torque-speed curve of an induction motor. [03]**
 
-![Complete Torque-Speed Curve of 3-Phase Induction Machine over Motoring, Generating, and Braking regions](../Books/diagrams/Ch-34_p34_fig32.jpg)
+![Complete Torque-Speed Curve of 3-Phase Induction Machine over Motoring, Generating, and Braking regions](../Books/Theraja/Ch-34/diagrams/Ch-34_p34_fig32.jpg)
 
 **Key regions and points:**
 - **Motoring region ($0 < N < N_s$, $0 < s < 1$):**
@@ -400,7 +400,7 @@ From $s_{mT} = R_2/X_2$ and $T_{\max} = kE_2^2/(2X_2)$:
 2. $T_{\max}$ remains unchanged (no $R_2$ in the formula).
 3. The starting torque $T_{st}$ increases as $R_2$ increases (up to the point $R_2 = X_2$, at which $T_{st} = T_{\max}$).
 
-![Family of torque-slip curves for varying rotor resistance showing constant Tmax shifting toward lower speeds](../Books/diagrams/Ch-34_p22_fig21.jpg)
+![Family of torque-slip curves for varying rotor resistance showing constant Tmax shifting toward lower speeds](../Books/Theraja/Ch-34/diagrams/Ch-34_p22_fig21.jpg)
 
 **Practical use:** By selecting appropriate external resistance, the wound-rotor motor can develop maximum torque at any desired speed. This is used for step-speed control and smooth starting of heavy loads.
 

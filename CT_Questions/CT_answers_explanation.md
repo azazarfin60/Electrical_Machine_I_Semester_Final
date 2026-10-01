@@ -100,7 +100,7 @@ $$N_s = \frac{120f}{P} \text{ rpm}$$
 3. The rotation is smooth and continuous, not jerky.
 *(Proved)*
 
-> **Source:** [Books/Ch-34_01_Construction_and_RMF.md](../Books/Theraja/Ch-34/Ch-34_01_Construction_and_RMF.md) · [ClassNoteByRaidah/Class_04.md](../ClassNoteByRaidah/Class_04.md) · [SlidesByMaam/L-01_ECE-2207.md](../SlidesByMaam/L-01_ECE-2207.md)
+> **Source:** [Books/Ch-34_01_Construction_and_RMF.md](../Books/Theraja/Ch-34/Ch-34_01_Construction_and_RMF.md) · [ClassNoteByRaidah/Class_04.md](../ClassNoteByRaidah/Class_04_Rotating_Magnetic_Field_RMF_Proof.md) · [SlidesByMaam/L-01_ECE-2207.md](../SlidesByMaam/L-01_ECE-2207.md)
 > **Semester final appearances:** 2024 Q5a, 2023 Q5c, 2021 Q5c, 2018 Q6b, 2017 Q1b: appears in 6 out of 7 papers.
 
 ---
@@ -159,7 +159,7 @@ At full load: $s \approx 0.02$ to $0.05$, so $f_r \approx 1$ to $2.5$ Hz (very s
 
 This low rotor frequency at running speed means the rotor reactance $X_{2s} = sX_2$ is also very small, allowing large rotor current even with small rotor resistance.
 
-> **Source:** [Books/Ch-34_01_Construction_and_RMF.md](../Books/Theraja/Ch-34/Ch-34_01_Construction_and_RMF.md) · [ClassNoteByRaidah/Class_03.md](../ClassNoteByRaidah/Class_03.md) and [Class_06.md](../ClassNoteByRaidah/Class_06.md)
+> **Source:** [Books/Ch-34_01_Construction_and_RMF.md](../Books/Theraja/Ch-34/Ch-34_01_Construction_and_RMF.md) · [ClassNoteByRaidah/Class_03.md](../ClassNoteByRaidah/Class_03_Induction_Motor_Basics_and_Stator_Rotor.md) and [Class_06.md](../ClassNoteByRaidah/Class_06_Slip_Rotor_Frequency_and_Transformer_Analogy.md)
 > **Semester final appearances:** 2019 Q5a, 2020 Q5b: a fundamental question that appears in various forms across all years.
 
 ---
@@ -232,7 +232,7 @@ A useful special case: if you insert external resistance such that total $R_2 = 
 2. Value of max torque: $T_{\max} = kE_2^2/(2X_2)$: independent of $R_2$.
 *(Justified)*
 
-> **Source:** [Books/Ch-34_02_Torque_and_Characteristics.md](../Books/Theraja/Ch-34/Ch-34_02_Torque_and_Characteristics.md) · [ClassNoteByRaidah/Class_08.md](../ClassNoteByRaidah/Class_08.md)
+> **Source:** [Books/Ch-34_02_Torque_and_Characteristics.md](../Books/Theraja/Ch-34/Ch-34_02_Torque_and_Characteristics.md) · [ClassNoteByRaidah/Class_08.md](../ClassNoteByRaidah/Class_08_Maximum_Torque_and_Torque_Slip_Curve.md)
 > **Semester final appearances:** 2024 Q7b (Tmax derivation), 2017 Q2b (related), CT-02 solutions above are the teacher's expected model answer.
 
 ---
@@ -326,7 +326,7 @@ $$X_1 = X_2' = \frac{X_{01}}{2}$$
 
 5. **Circle diagram construction:** The circle diagram needs the short-circuit current $I_{sc}$ and power factor $\cos\phi_{sc}$ at rated voltage. Both come from the blocked rotor test.
 
-> **Source:** [Books/Ch-35/01_Circle_Diagram_and_Testing.md](../Books/Theraja/Ch-35/01_Circle_Diagram_and_Testing.md) · [Books/Ch-34_03_Power_Stages_and_Torque.md](../Books/Theraja/Ch-34/Ch-34_03_Power_Stages_and_Torque.md) · [ClassNoteByRaidah/Class_09.md](../ClassNoteByRaidah/Class_09.md)
+> **Source:** [Books/Ch-35/01_Circle_Diagram_and_Testing.md](../Books/Theraja/Ch-35/01_Circle_Diagram_and_Testing.md) · [Books/Ch-34_03_Power_Stages_and_Torque.md](../Books/Theraja/Ch-34/Ch-34_03_Power_Stages_and_Torque.md) · [ClassNoteByRaidah/Class_09.md](../ClassNoteByRaidah/Class_09_Induction_Motor_Testing.md)
 > **Semester final appearances:** 2023 Q7a, 2020 Q7b, 2019 Q7a, 2018 Q7b
 
 ---
@@ -340,7 +340,7 @@ Draw a clear, labeled schematic showing a single-phase transformer connected to 
 
 #### Physical Schematic
 
-![Schematic representation of a 1-phase transformer connected to a sinusoidal source on primary and load on secondary with all labeled variables](../Books/diagrams/VK_Mehta_Fig_7_01.jpeg)
+![Schematic representation of a 1-phase transformer connected to a sinusoidal source on primary and load on secondary with all labeled variables](../Books/VK_Mehta/diagrams/VK_Mehta_Fig_7_01.jpeg)
 
 #### Primary Side: Complete Variable List
 
@@ -388,7 +388,7 @@ For an ideal transformer: $V_1/V_2 = N_1/N_2 = I_2/I_1 = 1/K$
 
 The induced EMF lags the mutual flux by 90°. The applied voltage $V_1$ is nearly equal and opposite to $E_1$ (in an ideal transformer, exactly opposite).
 
-> **Source:** [Books/Ch-32_01_Construction_and_Principles.md](../Books/Theraja/Ch-32/Ch-32_01_Construction_and_Principles.md) · [ClassNoteByRaidah/Class_13.md](../ClassNoteByRaidah/Class_13.md) · [SlidesByMaam/L-02_ECE-2207.md](../SlidesByMaam/L-02_ECE-2207.md)
+> **Source:** [Books/Ch-32_01_Construction_and_Principles.md](../Books/Theraja/Ch-32/Ch-32_01_Construction_and_Principles.md) · [ClassNoteByRaidah/Class_13.md](../ClassNoteByRaidah/Class_13_Transformer_Principles_and_Construction.md) · [SlidesByMaam/L-02_ECE-2207.md](../SlidesByMaam/L-02_ECE-2207.md)
 > **Semester final appearances:** 2024 Q1b asks for transformer excitation schematic (same concept), CT-03 Q1 is the teacher's standard template for this.
 
 ---
@@ -464,7 +464,7 @@ $$E_1 = 4.44 f N_1 \Phi_m, \qquad E_2 = 4.44 f N_2 \Phi_m$$
 
 If you want higher secondary voltage, you need more secondary turns $N_2$. If supply frequency drops (say from 50 Hz to 25 Hz) but the same voltage is applied, the core flux $\Phi_m$ must increase by 2× to maintain EMF balance: which can push the core into saturation. This is why transformers are designed for a specific frequency.
 
-> **Source:** [Books/Ch-32_01_Construction_and_Principles.md](../Books/Theraja/Ch-32/Ch-32_01_Construction_and_Principles.md) · [ClassNoteByRaidah/Class_13.md](../ClassNoteByRaidah/Class_13.md) · [SlidesByMaam/L-02_ECE-2207.md](../SlidesByMaam/L-02_ECE-2207.md)
+> **Source:** [Books/Ch-32_01_Construction_and_Principles.md](../Books/Theraja/Ch-32/Ch-32_01_Construction_and_Principles.md) · [ClassNoteByRaidah/Class_13.md](../ClassNoteByRaidah/Class_13_Transformer_Principles_and_Construction.md) · [SlidesByMaam/L-02_ECE-2207.md](../SlidesByMaam/L-02_ECE-2207.md)
 > **Semester final appearances:** 2023 Q1a, 2021 Q1b, 2019 Q1b: appears in 4 out of 7 papers.
 
 ---
@@ -539,14 +539,14 @@ $$I_{fault} = \frac{V_1}{Z_{01}} = \frac{V_1}{\sqrt{R_{01}^2 + X_{01}^2}}$$
 
 Without leakage reactance, fault current would be catastrophically large. The reactances protect the transformer mechanically and thermally.
 
-> **Source:** [Books/Ch-32_02_Equivalent_Circuit_and_Drop.md](../Books/Theraja/Ch-32/Ch-32_02_Equivalent_Circuit_and_Drop.md) · [ClassNoteByRaidah/Class_13.md](../ClassNoteByRaidah/Class_13.md) · [ClassNoteByRaidah/Class_14.md](../ClassNoteByRaidah/Class_14.md)
+> **Source:** [Books/Ch-32_02_Equivalent_Circuit_and_Drop.md](../Books/Theraja/Ch-32/Ch-32_02_Equivalent_Circuit_and_Drop.md) · [ClassNoteByRaidah/Class_13.md](../ClassNoteByRaidah/Class_13_Transformer_Principles_and_Construction.md) · [ClassNoteByRaidah/Class_14.md](../ClassNoteByRaidah/Class_14_Equivalent_Circuit_and_Parameter_Shifting.md)
 > **Semester final appearances:** 2024 Q2a (equivalent circuit derivation), 2020 Q1b: leakage reactance is embedded in every equivalent circuit question.
 
 ---
 
 ### Q2. Draw the phasor diagram of an R-L loaded ideal transformer, step by step. [10 Marks]
 
-![Core and windings of an ideal transformer](../Books/diagrams/Ch-32_p07_fig13.jpg)
+![Core and windings of an ideal transformer](../Books/Theraja/Ch-32/diagrams/Ch-32_p07_fig13.jpg)
 
 #### What an Ideal Transformer Assumes
 
@@ -616,7 +616,7 @@ So the primary power factor equals the load power factor. This makes physical se
 
 #### Complete Phasor Diagram
 
-![Transformer on-load phasor diagram](../Books/diagrams/Ch-32_p26_fig35.jpg)
+![Transformer on-load phasor diagram](../Books/Theraja/Ch-32/diagrams/Ch-32_p26_fig35.jpg)
 
 #### Phasor Angle Summary Table
 
@@ -636,7 +636,7 @@ Note: $\theta_1 = \theta_2$ (primary and load power factor angles are equal for 
 - The transformation ratio $K = N_2/N_1$ scales voltages ($V_1/V_2 = N_1/N_2$) and currents ($I_1/I_2 = N_2/N_1$) but not the power factor.
 - All of $\vec{V}_1$ is the counter-EMF $-\vec{E}_1$. There is no resistive or reactive drop in an ideal transformer.
 
-> **Source:** [Books/Ch-32_01_Construction_and_Principles.md](../Books/Theraja/Ch-32/Ch-32_01_Construction_and_Principles.md) · [ClassNoteByRaidah/Class_14.md](../ClassNoteByRaidah/Class_14.md) · [SlidesByMaam/L-06_ECE-2107.md](../SlidesByMaam/L-06_ECE-2107.md)
+> **Source:** [Books/Ch-32_01_Construction_and_Principles.md](../Books/Theraja/Ch-32/Ch-32_01_Construction_and_Principles.md) · [ClassNoteByRaidah/Class_14.md](../ClassNoteByRaidah/Class_14_Equivalent_Circuit_and_Parameter_Shifting.md) · [SlidesByMaam/L-06_ECE-2107.md](../SlidesByMaam/L-06_ECE-2107.md)
 > **Semester final appearances:** 2024 Q2b, 2021 Q2a, 2018 Q1c: appears in 3 out of 7 papers. High-priority question.
 
 ---

@@ -40,8 +40,8 @@ $$Q_\text{phase} = \frac{V_\text{phase}^2}{X_C} \implies X_C = \frac{V^2}{Q_\tex
 
 $$C = \frac{1}{2\pi f X_C} = \frac{1}{2\pi \times 50 \times 36.11} = \frac{1}{11344} = \boxed{88.2\,\mu\text{F per phase}}$$
 
-![Self-excited induction generator with delta capacitor bank supplying isolated load](../Books/diagrams/Ch-34_p33_fig30.jpg)
-![Delta capacitor bank supplying reactive power to induction generator](../Books/diagrams/Ch-34_p34_fig31.jpg)
+![Self-excited induction generator with delta capacitor bank supplying isolated load](../Books/Theraja/Ch-34/diagrams/Ch-34_p33_fig30.jpg)
+![Delta capacitor bank supplying reactive power to induction generator](../Books/Theraja/Ch-34/diagrams/Ch-34_p34_fig31.jpg)
 
 **(ii) Engine speed for 50 Hz generation:**
 

@@ -35,7 +35,7 @@ where $\alpha$ is the spatial angle. The first term rotates forward (counter-clo
 
 At any instant, the two counter-rotating phasors add up to give the original pulsating field along the axis.
 
-![Double revolving field theory decomposition of pulsating stator flux into forward and backward rotating vectors](../Books/diagrams/VK_Mehta_Fig_9_03.jpeg)
+![Double revolving field theory decomposition of pulsating stator flux into forward and backward rotating vectors](../Books/VK_Mehta/diagrams/VK_Mehta_Fig_9_03.jpeg)
 
 #### Effect on the rotor: at standstill
 
@@ -89,7 +89,7 @@ $$T_b(2-s) = \frac{k_1(2-s)}{R_2^2 + (2-s)^2X_2^2} \cdot R_2$$
 
 At $s = 1$: these two are equal. At $s < 1$ (forward rotation): $T_f > T_b$ in typical motors.
 
-![Torque-speed characteristic of 1-phase induction motor based on double revolving field theory](../Books/diagrams/VK_Mehta_Fig_9_04.jpeg)
+![Torque-speed characteristic of 1-phase induction motor based on double revolving field theory](../Books/VK_Mehta/diagrams/VK_Mehta_Fig_9_04.jpeg)
 
 ---
 

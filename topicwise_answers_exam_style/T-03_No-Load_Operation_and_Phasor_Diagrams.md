@@ -16,7 +16,7 @@
 
 **(a) Draw the full-load phasor diagram of a single-phase transformer. [03]**
 
-![Full-load phasor diagram of a single-phase transformer with resistance and leakage reactance](../Books/diagrams/Ch-32_p21_fig29.jpg)
+![Full-load phasor diagram of a single-phase transformer with resistance and leakage reactance](../Books/Theraja/Ch-32/diagrams/Ch-32_p21_fig29.jpg)
 
 **Phasor diagram features:**
 - $\vec{\Phi}_m$ as reference (horizontal)
@@ -80,7 +80,7 @@ When primary voltage $V_1$ is applied with secondary open ($I_2 = 0$):
 
 $$I_0 = \sqrt{I_c^2 + I_m^2}, \qquad \cos\phi_0 = \frac{I_c}{I_0} = \frac{P_0}{V_1 I_0}$$
 
-![Transformer on no-load and its vector diagram](../Books/diagrams/Ch-32_p12_fig16.jpg)
+![Transformer on no-load and its vector diagram](../Books/Theraja/Ch-32/diagrams/Ch-32_p12_fig16.jpg)
 
 ---
 
@@ -116,7 +116,7 @@ $$\cos\phi_1 = \frac{44.5}{57.33} = \boxed{0.776 \text{ lagging}}$$
 
 **(a) Draw the phasor diagram of transformer considering winding resistance and leakage reactance. [04]**
 
-![Complete phasor diagram of transformer with resistance and leakage reactance drops](../Books/diagrams/Ch-32_p21_fig29.jpg)
+![Complete phasor diagram of transformer with resistance and leakage reactance drops](../Books/Theraja/Ch-32/diagrams/Ch-32_p21_fig29.jpg)
 
 **Phasor diagram step by step:**
 > 1. **Reference:** $\vec{\Phi}_m$ horizontal (+X axis).
@@ -151,7 +151,7 @@ $$E_1 = 4.44fN_1\Phi_m \approx V_1, \qquad E_2 = 4.44fN_2\Phi_m = V_2 \text{ (op
 
 **Phasor diagram (no-load):**
 
-![No-load phasor diagram of single-phase transformer](../Books/diagrams/Ch-32_p12_fig16.jpg)
+![No-load phasor diagram of single-phase transformer](../Books/Theraja/Ch-32/diagrams/Ch-32_p12_fig16.jpg)
 
 - Reference $\vec{\Phi}_m$ horizontal (+X axis).
 - $\vec{E}_1$ and $\vec{E}_2$ pointing downward (lagging $\Phi_m$ by 90°).
@@ -172,7 +172,7 @@ Key relationships:
 
 **(a) Draw the phasor diagram of a R-L loaded ideal transformer, stating each step. [06, CO1]**
 
-![Phasor diagram of transformer on inductive lagging load](../Books/diagrams/Ch-32_p15_fig18.jpg)
+![Phasor diagram of transformer on inductive lagging load](../Books/Theraja/Ch-32/diagrams/Ch-32_p15_fig18.jpg)
 
 **Ideal transformer assumptions:** $R_1 = R_2 = X_1 = X_2 = 0$, $I_0 = 0$, so $V_2 = E_2$ and $V_1 = -E_1$.
 

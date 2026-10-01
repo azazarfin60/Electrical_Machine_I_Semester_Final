@@ -38,8 +38,8 @@ By dividing a 35 mm solid core block into 100 laminations of $0.35\text{ mm}$ th
 
 #### Q1(c): Working of a Transformer Under No-Load
 
-![No-load test circuit](../Books/diagrams/Ch-32_p32_fig43.jpg)
-![Vector diagram of transformer on no-load](../Books/diagrams/Ch-32_p12_fig16.jpg)
+![No-load test circuit](../Books/Theraja/Ch-32/diagrams/Ch-32_p32_fig43.jpg)
+![Vector diagram of transformer on no-load](../Books/Theraja/Ch-32/diagrams/Ch-32_p12_fig16.jpg)
 
 When the secondary winding is open-circuited ($I_2 = 0$), the primary acts as an iron-cored inductor:
 1. Primary draws a small no-load current $I_0$ (2% to 6% of rated current).
@@ -94,8 +94,8 @@ Resolving into active (in-phase with $V_1$) and reactive (quadrature, lagging $V
 
 #### Q2(b): Copper Saving Proof in an Autotransformer
 
-![Step-down and step-up autotransformer circuit schematics](../Books/diagrams/Ch-32_p73_fig60.jpg)
-![Currents and voltages distribution in an autotransformer](../Books/diagrams/Ch-32_p74_fig61.jpg)
+![Step-down and step-up autotransformer circuit schematics](../Books/Theraja/Ch-32/diagrams/Ch-32_p73_fig60.jpg)
+![Currents and voltages distribution in an autotransformer](../Books/Theraja/Ch-32/diagrams/Ch-32_p74_fig61.jpg)
 
 In any electromagnetic coil, the weight of copper required is proportional to the product of turns and rated current (total ampere-turns):
 $$\text{Weight of copper } W \propto N I$$
@@ -294,7 +294,7 @@ $$\mathbf{V}_1 = \mathbf{V}_2' + \mathbf{I}_2'(R_{01} + jX_{01})$$
 
 #### Q4(b): Service Continuity with One Burnt Transformer (Open-Delta 57.7% Proof)
 
-![Open-Delta (V-V) Connection Circuit and Phasor Diagram](../Books/diagrams/VK_Mehta_Fig_7_52.jpeg)
+![Open-Delta (V-V) Connection Circuit and Phasor Diagram](../Books/VK_Mehta/diagrams/VK_Mehta_Fig_7_52.jpeg)
 
 > See full proof and vector diagram in [T-04: Open-Delta Connection: Why 57.7% and When to Use It](2018_2024_answer.md#t-04-open-delta-connection-why-577-and-when-to-use-it).
 
@@ -341,7 +341,7 @@ AC Motors are broadly classified into two grand families:
 
 #### Q5(b): Why Asynchronous Motor is Treated as a Rotating Transformer
 
-![Induction motor as a generalized rotating transformer showing stator primary, air gap, and short-circuited rotor secondary](../Books/diagrams/Ch-34_p58_fig45.jpg)
+![Induction motor as a generalized rotating transformer showing stator primary, air gap, and short-circuited rotor secondary](../Books/Theraja/Ch-34/diagrams/Ch-34_p58_fig45.jpg)
 
 - **Primary**: The stator winding acts as the primary, drawing electrical energy from the AC line.
 - **Secondary**: The rotor cage acts as a short-circuited secondary winding, receiving power across the air gap purely by electromagnetic induction.
@@ -374,7 +374,7 @@ To reverse the direction of rotation of a 3-phase induction motor, **interchange
 
 #### Q6(b): Induction Motor Power Equations and Impact of Voltage Sags
 
-![Approximate Equivalent Circuit of Induction Motor](../Books/diagrams/VK_Mehta_Fig_8_29.jpeg)
+![Approximate Equivalent Circuit of Induction Motor](../Books/VK_Mehta/diagrams/VK_Mehta_Fig_8_29.jpeg)
 
 - Air gap power: $P_g = 3 I_2^2 \frac{R_2}{s}$
 - Rotor copper loss: $P_{r,Cu} = 3 I_2^2 R_2 = s P_g$
@@ -424,7 +424,7 @@ In a synchronous motor, the stator RMF rotates at synchronous speed $N_s$ (e.g.,
 
 #### Q7(a): Star-Delta Starting of 3-Phase Induction Motors
 
-![Star-delta starter connections](../Books/diagrams/ch35_p23_fig35_21.jpg)
+![Star-delta starter connections](../Books/Theraja/Ch-35/diagrams/ch35_p23_fig35_21.jpg)
 
 - **Starting Phase (Star Connection)**:
   Winding phase voltage is throttled down: $V_{\phi} = \frac{V_L}{\sqrt{3}}$.
@@ -476,7 +476,7 @@ $$\boxed{T_{\max} \propto V^2}$$
 
 #### Q8(b): Torque-Slip Characteristics and Stable Operating Zone
 
-![Torque-Speed characteristics](../Books/diagrams/Chapman_Ch07_p202_torque_speed_r2_comp.jpg)
+![Torque-Speed characteristics](../Books/Chapman/diagrams/Chapman_Ch07_p202_torque_speed_r2_comp.jpg)
 
 The torque-slip curve exhibits two distinct behavioral regions:
 1. **Stable Operating Zone ($0 \le s \le s_{mT}$)**:
@@ -489,8 +489,8 @@ The torque-slip curve exhibits two distinct behavioral regions:
 
 #### Q8(c): Double-Field Revolving Theory of 1-Phase IM
 
-![Resolution of alternating flux into two oppositely rotating fields](../Books/diagrams/VK_Mehta_Fig_9_03.jpeg)
-![Torque-speed characteristic under double-field revolving theory showing zero starting torque](../Books/diagrams/VK_Mehta_Fig_9_04.jpeg)
+![Resolution of alternating flux into two oppositely rotating fields](../Books/VK_Mehta/diagrams/VK_Mehta_Fig_9_03.jpeg)
+![Torque-speed characteristic under double-field revolving theory showing zero starting torque](../Books/VK_Mehta/diagrams/VK_Mehta_Fig_9_04.jpeg)
 
 > See full details in [IM-03: Single-Phase Induction Motor: Double Revolving Field Theory](2018_2024_answer.md#im-03-single-phase-induction-motor-double-revolving-field-theory).
 

@@ -26,7 +26,7 @@
 | Secondary | Fixed (static) | Rotating |
 | Secondary current | Load current | Rotor current (produces torque) |
 
-![Induction motor as a generalized rotating transformer showing stator primary, air gap, and short-circuited rotor secondary](../Books/diagrams/Ch-34_p58_fig45.jpg)
+![Induction motor as a generalized rotating transformer showing stator primary, air gap, and short-circuited rotor secondary](../Books/Theraja/Ch-34/diagrams/Ch-34_p58_fig45.jpg)
 
 The IM is called a rotating transformer because power transfers from stator to rotor by electromagnetic induction, just like in a transformer. The main difference: the rotor rotates.
 

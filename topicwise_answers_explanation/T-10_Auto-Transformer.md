@@ -36,9 +36,9 @@ Total copper in auto-transformer $\propto 2(1-k)S$. For ordinary transformer $\p
 
 $$\frac{W_{auto}}{W_{ordinary}} = 1-k, \quad \text{Copper saved} = kS \times (\text{reference copper})$$
 
-![Step-down and step-up autotransformer circuit schematics](../Books/diagrams/Ch-32_p73_fig60.jpg)
+![Step-down and step-up autotransformer circuit schematics](../Books/Theraja/Ch-32/diagrams/Ch-32_p73_fig60.jpg)
 
-![Currents and voltages distribution in an autotransformer](../Books/diagrams/Ch-32_p74_fig61.jpg)
+![Currents and voltages distribution in an autotransformer](../Books/Theraja/Ch-32/diagrams/Ch-32_p74_fig61.jpg)
 
 **When is auto-transformer best used?** When $k$ is close to 1 (small voltage step). For $k = 0.9$ (e.g., 415V/380V), copper saved is 90%. For $k = 0.5$ (220V/110V), only 50% saved: still worthwhile. For $k = 0.1$ (large ratio), only 10% saved: not economical.
 

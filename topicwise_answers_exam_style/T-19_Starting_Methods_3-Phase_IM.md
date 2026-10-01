@@ -29,8 +29,8 @@
 4. **Soft starter (electronic):** Thyristor-based gradual voltage ramp-up. Smooth starting, no current surge.
 5. **Variable frequency drive (VFD):** Controls both voltage and frequency. Best control, most expensive.
 
-![Star-delta starter connections](../Books/diagrams/ch35_p23_fig35_21.jpg)
-![Auto-transformer starter connections](../Books/diagrams/ch35_p20_fig35_19.jpg)
+![Star-delta starter connections](../Books/Theraja/Ch-35/diagrams/ch35_p23_fig35_21.jpg)
+![Auto-transformer starter connections](../Books/Theraja/Ch-35/diagrams/ch35_p20_fig35_19.jpg)
 
 ---
 
@@ -67,7 +67,7 @@ Here: $x^2 = 1/3 \implies x = 1/\sqrt{3} = 0.577 \approx 58\%$
 
 $$\boxed{\text{Star-delta starter} \equiv \text{Auto-transformer starter with ratio } \frac{1}{\sqrt{3}} = 57.7\%}$$
 
-![Comparison of Direct-switching and Auto-transformer / Star-Delta starter](../Books/diagrams/ch35_p20_fig35_20.jpg)
+![Comparison of Direct-switching and Auto-transformer / Star-Delta starter](../Books/Theraja/Ch-35/diagrams/ch35_p20_fig35_20.jpg)
 
 *(Proved)*
 

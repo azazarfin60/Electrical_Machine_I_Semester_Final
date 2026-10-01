@@ -50,7 +50,7 @@ For maximum starting torque, the two currents should be 90° apart in time. This
 
 For maximum starting torque, the main and auxiliary winding currents must be 90° apart in time.
 
-![Split-Phase Induction Motor Circuit and Phasor Diagram](../Books/diagrams/VK_Mehta_Fig_9_13.jpeg)
+![Split-Phase Induction Motor Circuit and Phasor Diagram](../Books/VK_Mehta/diagrams/VK_Mehta_Fig_9_13.jpeg)
 
 **Phasor relationships:**
 - $\vec{I}_m$ lags $V$ by $\phi_m$
@@ -137,7 +137,7 @@ Once the motor reaches about 75% of synchronous speed, a centrifugal switch open
 
 **Starting torque:** $\approx 200$–400% of full-load torque.
 
-![Capacitor-Start Induction Motor Circuit and Phasor Diagram](../Books/diagrams/VK_Mehta_Fig_9_14.jpeg)
+![Capacitor-Start Induction Motor Circuit and Phasor Diagram](../Books/VK_Mehta/diagrams/VK_Mehta_Fig_9_14.jpeg)
 
 ---
 
@@ -146,7 +146,7 @@ Once the motor reaches about 75% of synchronous speed, a centrifugal switch open
 
 **(b) How does a capacitor-start-and-run single-phase IM operate? [04]**
 
-![Capacitor-Start Capacitor-Run Motor Circuit](../Books/diagrams/VK_Mehta_Fig_9_16.jpeg)
+![Capacitor-Start Capacitor-Run Motor Circuit](../Books/VK_Mehta/diagrams/VK_Mehta_Fig_9_16.jpeg)
 
 A capacitor-start-and-run (or two-value capacitor) motor has:
 - Main winding (M): always connected to supply.
@@ -254,7 +254,7 @@ This motor has:
 
 **Type 2: Shaded-Pole Motor:**
 
-![Shaded-Pole Motor Construction and Action](../Books/diagrams/VK_Mehta_Fig_9_17.jpeg)
+![Shaded-Pole Motor Construction and Action](../Books/VK_Mehta/diagrams/VK_Mehta_Fig_9_17.jpeg)
 
 This is the simplest single-phase induction motor. It has:
 - Salient poles (projecting poles like a DC machine).

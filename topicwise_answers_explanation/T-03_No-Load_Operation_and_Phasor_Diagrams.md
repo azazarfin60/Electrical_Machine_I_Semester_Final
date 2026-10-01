@@ -35,7 +35,7 @@ $$I_1 = I_0 + \frac{N_2}{N_1} I_2 = I_0 + I_2'$$
 
 As $I_2$ increases (more load), $I_1$ increases proportionally (larger primary current from the supply).
 
-![Transformer under load condition with flux and currents](../Books/diagrams/Ch-32_p12_fig16.jpg)
+![Transformer under load condition with flux and currents](../Books/Theraja/Ch-32/diagrams/Ch-32_p12_fig16.jpg)
 
 **Energy flow:** The increased primary current brings in more energy from the supply to match the energy delivered to the load. The transformer doesn't generate energy: it regulates primary current to always match the secondary load.
 
@@ -61,7 +61,7 @@ But it is not quite simple, because the inductance $L_1$ is strongly coupled to 
 
 The total no-load current is the phasor sum: $I_0 = I_c - jI_m$ (taking $V_1$ as reference, $I_c$ is in phase, $I_m$ lags by 90°).
 
-![No load transformer circuit with magnetizing and core loss components](../Books/diagrams/Ch-32_p21_fig29.jpg)
+![No load transformer circuit with magnetizing and core loss components](../Books/Theraja/Ch-32/diagrams/Ch-32_p21_fig29.jpg)
 
 #### The phasor diagram at no-load: step by step
 
@@ -79,7 +79,7 @@ The total no-load current is the phasor sum: $I_0 = I_c - jI_m$ (taking $V_1$ as
 
 7. Secondary: $\vec{E}_2 = \vec{E}_1 \times (N_2/N_1)$. Since secondary is open, $V_2 = E_2$.
 
-![Transformer no load phasor diagram](../Books/diagrams/Ch-32_p29_fig39.jpg)
+![Transformer no load phasor diagram](../Books/Theraja/Ch-32/diagrams/Ch-32_p29_fig39.jpg)
 
 **Important observation:** The secondary open-circuit voltage $V_2 = E_2 = 4.44 f N_2 \Phi_m$ is in phase with $E_1$ and hence lags the primary applied voltage $V_1$ by 180°. This is expected: the secondary and primary EMFs are both induced by the same core flux and are in the same direction relative to their respective winding directions (but since the secondary winding direction is defined from the output terminal, conventionally $V_2$ is taken as positive when it drives current into a load, which gives it the right polarity).
 
@@ -138,7 +138,7 @@ For an inductive load with lagging power factor $\cos\phi_2$, the secondary curr
    - The line joining the origin to the endpoint of $j\vec{I}_1 X_1$ represents the applied primary voltage $\vec{V}_1$.
    - The angle between $\vec{V}_1$ and $\vec{I}_1$ is the primary operating phase angle $\phi_1$, giving input power factor $\cos\phi_1$ (lagging).
 
-> **Sources:** [Books/Ch-32_02_Phasor_and_Equivalent_Circuit.md](../Books/Theraja/Ch-32/Ch-32_02_Phasor_and_Equivalent_Circuit.md) · [ClassNoteByRaidah/Class_14.md](../ClassNoteByRaidah/Class_14_Transformer_Equivalent_Circuit_and_Phasor.md) · [SlidesByMaam/L-02_ECE-2207.md](../SlidesByMaam/L-02_ECE-2207.md)
+> **Sources:** [Books/Ch-32_02_Phasor_and_Equivalent_Circuit.md](../Books/Theraja/Ch-32/Ch-32_02_Equivalent_Circuit_and_Drop.md) · [ClassNoteByRaidah/Class_14.md](../ClassNoteByRaidah/Class_14_Equivalent_Circuit_and_Parameter_Shifting.md) · [SlidesByMaam/L-02_ECE-2207.md](../SlidesByMaam/L-02_ECE-2207.md)
 
 ---
 

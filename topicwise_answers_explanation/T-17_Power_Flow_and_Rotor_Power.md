@@ -50,9 +50,9 @@ $$\frac{P_m}{P_g} = \frac{I_2^2 R_2(1-s)/s}{I_2^2 R_2/s} = (1-s)$$
 Therefore:
 $$\boxed{P_g : P_{Cu} : P_m = 1 : s : (1-s)}$$
 
-![Induction motor power flow diagram showing air-gap, copper, and mechanical stages](../Books/diagrams/Ch-34_p39_fig38.jpg)
+![Induction motor power flow diagram showing air-gap, copper, and mechanical stages](../Books/Theraja/Ch-34/diagrams/Ch-34_p39_fig38.jpg)
 
-![Power stages block diagram of 3-phase induction motor](../Books/diagrams/Ch-34_p38_power_stages_block.jpg)
+![Power stages block diagram of 3-phase induction motor](../Books/Theraja/Ch-34/diagrams/Ch-34_p38_power_stages_block.jpg)
 
 #### Physical intuition
 

@@ -24,7 +24,7 @@ Typical lamination thickness: 0.3–0.5 mm for power frequency (50/60 Hz) transf
 
 **(b) Derive the equivalent circuit of a single-phase two-winding transformer. [04]**
 
-![Exact Equivalent Circuit of Transformer](../Books/diagrams/VK_Mehta_Fig_7_19.jpeg)
+![Exact Equivalent Circuit of Transformer](../Books/VK_Mehta/diagrams/VK_Mehta_Fig_7_19.jpeg)
 
 **Step 1: Ideal transformer with no losses, no leakage:**
 $$\frac{V_1}{V_2} = \frac{N_1}{N_2} = a, \qquad I_1 = \frac{I_2}{a}$$
@@ -49,7 +49,7 @@ Shunt branch ($R_c \| jX_m$) connected across $V_1$.
 For simplicity, combine series elements:
 $$R_{01} = R_1 + R_2', \quad X_{01} = X_1 + X_2'$$
 
-![Approximate Equivalent Circuit with Shunt Branch at Input](../Books/diagrams/VK_Mehta_Fig_7_21.jpeg)
+![Approximate Equivalent Circuit with Shunt Branch at Input](../Books/VK_Mehta/diagrams/VK_Mehta_Fig_7_21.jpeg)
 
 ---
 
@@ -67,7 +67,7 @@ When primary voltage $V_1$ is applied with secondary open ($I_2 = 0$):
 
 $$I_0 = \sqrt{I_c^2 + I_m^2}, \qquad \cos\phi_0 = \frac{I_c}{I_0} = \frac{P_0}{V_1 I_0}$$
 
-![No-load test circuit](../Books/diagrams/Ch-32_p32_fig43.jpg)
+![No-load test circuit](../Books/Theraja/Ch-32/diagrams/Ch-32_p32_fig43.jpg)
 
 ---
 
@@ -248,7 +248,7 @@ Since $I_0$ is small and the primary voltage drop $I_0(R_1+jX_1)$ is negligible,
 
 **(b) 3-phase supply continuity with one burnt phase. Open-delta 57.7% proof. [05]**
 
-![Open-Delta (V-V) Connection Circuit and Phasor Diagram](../Books/diagrams/VK_Mehta_Fig_7_52.jpeg)
+![Open-Delta (V-V) Connection Circuit and Phasor Diagram](../Books/VK_Mehta/diagrams/VK_Mehta_Fig_7_52.jpeg)
 
 **Yes: continuity is possible** using the **open-delta (V-V) connection**.
 
@@ -310,7 +310,7 @@ $$\boxed{\text{Total load with closed-Δ} = 75 \text{ kVA}}$$
 
 **(b) Why is an asynchronous motor treated as a rotating transformer? [04]**
 
-![Induction motor as a generalized rotating transformer showing stator primary, air gap, and short-circuited rotor secondary](../Books/diagrams/Ch-34_p58_fig45.jpg)
+![Induction motor as a generalized rotating transformer showing stator primary, air gap, and short-circuited rotor secondary](../Books/Theraja/Ch-34/diagrams/Ch-34_p58_fig45.jpg)
 
 | Feature | Transformer | Induction Motor (Asynchronous Motor) |
 |:---|:---|:---|
@@ -371,7 +371,7 @@ This reverses the phase sequence (A-B-C → B-A-C), which reverses the direction
 
 **(b) Starting from equivalent circuit, derive power equations of an induction motor. [04]**
 
-![Approximate Equivalent Circuit of Induction Motor](../Books/diagrams/VK_Mehta_Fig_8_29.jpeg)
+![Approximate Equivalent Circuit of Induction Motor](../Books/VK_Mehta/diagrams/VK_Mehta_Fig_8_29.jpeg)
 
 From the equivalent circuit, per-phase power flow:
 
@@ -521,7 +521,7 @@ At standstill: $s = 1$. At synchronous speed: $s = 0$ (never reached in practice
 
 **(b) Derive torque-slip characteristics of 3-phase IM and explain. [03]**
 
-![Torque-Speed characteristics](../Books/diagrams/Chapman_Ch07_p202_torque_speed_r2_comp.jpg)
+![Torque-Speed characteristics](../Books/Chapman/diagrams/Chapman_Ch07_p202_torque_speed_r2_comp.jpg)
 
 Torque equation:
 $$T = \frac{k s E_2^2 R_2}{R_2^2 + s^2 X_2^2}$$
@@ -540,7 +540,7 @@ $$T = \frac{k s E_2^2 R_2}{R_2^2 + s^2 X_2^2}$$
 
 **(c) Explain the double-field revolving theory for single-phase IM. [04]**
 
-![Resolution of alternating flux into two oppositely rotating fields](../Books/diagrams/VK_Mehta_Fig_9_03.jpeg)
+![Resolution of alternating flux into two oppositely rotating fields](../Books/VK_Mehta/diagrams/VK_Mehta_Fig_9_03.jpeg)
 
 A single-phase stator winding carries alternating current $i = I_m\sin\omega t$. It creates a pulsating magnetic flux along one fixed axis:
 $$\Phi = \Phi_m\sin\omega t$$
@@ -565,7 +565,7 @@ Slip for backward field $s_b = (N_s + N)/N_s = (2 - s)$.
 
 **When running (given a push):** At $s < 1$: $s_f < s_b$, so $T_f > T_b$. Net torque $> 0$ in forward direction. Motor continues to run.
 
-![Torque-speed characteristic under double-field revolving theory showing zero starting torque](../Books/diagrams/VK_Mehta_Fig_9_04.jpeg)
+![Torque-speed characteristic under double-field revolving theory showing zero starting torque](../Books/VK_Mehta/diagrams/VK_Mehta_Fig_9_04.jpeg)
 
 **Conclusion:** A single-phase IM has zero starting torque. It needs an auxiliary starting arrangement.
 

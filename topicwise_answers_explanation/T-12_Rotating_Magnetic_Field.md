@@ -56,11 +56,11 @@ The mathematics showed: at every instant, the vector sum has constant magnitude 
 
 Verify: At $\omega t = 90°$: $\Phi_R = \Phi_m$, $\Phi_Y = -\Phi_m/2$, $\Phi_B = -\Phi_m/2$. Vector sum: $\Phi_m + (-\Phi_m/2)e^{j120°} + (-\Phi_m/2)e^{-j120°} = \Phi_m + (-\Phi_m/2)(e^{j120°} + e^{-j120°}) = \Phi_m - \Phi_m \times 2 \times (-1/2)/2$... simplifying: $\Phi_m - (-\Phi_m/2) = 1.5\Phi_m$ (along the R-phase axis). ✓
 
-![Three-phase stator current waveforms and rotating magnetic field flux vectors](../Books/diagrams/Ch-34_p09_fig11.jpg)
+![Three-phase stator current waveforms and rotating magnetic field flux vectors](../Books/Theraja/Ch-34/diagrams/Ch-34_p09_fig11.jpg)
 
-![Phasor vector addition of 3-phase fluxes at omega t = 0 and omega t = 60 degrees](../Books/diagrams/Ch-34_p09_fig12_13.jpg)
+![Phasor vector addition of 3-phase fluxes at omega t = 0 and omega t = 60 degrees](../Books/Theraja/Ch-34/diagrams/Ch-34_p09_fig12_13.jpg)
 
-![Phasor vector addition of 3-phase fluxes at omega t = 120 and omega t = 180 degrees](../Books/diagrams/Ch-34_p10_fig14.jpg)
+![Phasor vector addition of 3-phase fluxes at omega t = 120 and omega t = 180 degrees](../Books/Theraja/Ch-34/diagrams/Ch-34_p10_fig14.jpg)
 
 ---
 

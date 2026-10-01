@@ -16,7 +16,7 @@
 
 #### Q1(a): Why is an Induction Motor Called a "Rotating Transformer"?
 
-![Induction motor as a generalized rotating transformer showing stator primary, air gap, and short-circuited rotor secondary](../Books/diagrams/Ch-34_p58_fig45.jpg)
+![Induction motor as a generalized rotating transformer showing stator primary, air gap, and short-circuited rotor secondary](../Books/Theraja/Ch-34/diagrams/Ch-34_p58_fig45.jpg)
 
 #### The Physical Analogy:
 A conventional static transformer transfers energy between two electrically isolated circuits via mutual electromagnetic induction through a stationary magnetic core.
@@ -32,7 +32,7 @@ The 3-phase induction motor operates on the exact same fundamental mechanism acr
 
 #### Q1(b): Proof That 3-Phase Stator Windings Produce a Uniformly Rotating Flux
 
-![Resultant 3-phase flux](../Books/diagrams/Ch-34_p10_fig14.jpg)
+![Resultant 3-phase flux](../Books/Theraja/Ch-34/diagrams/Ch-34_p10_fig14.jpg)
 
 #### Setup:
 Three identical stator coils displaced 120° apart in space around the cylindrical stator periphery carry balanced 3-phase currents displaced 120° apart in time:
@@ -82,7 +82,7 @@ Taking the R-phase spatial axis as horizontal (+X axis):
 
 #### Q2(a): Torque-Slip Characteristic and the Impact of Rotor Resistance
 
-![Torque-Speed characteristics](../Books/diagrams/Chapman_Ch07_p202_torque_speed_r2_comp.jpg)
+![Torque-Speed characteristics](../Books/Chapman/diagrams/Chapman_Ch07_p202_torque_speed_r2_comp.jpg)
 
 The torque equation of an induction motor is:
 $$T = \frac{k s E_2^2 R_2}{R_2^2 + s^2 X_2^2}$$
@@ -161,7 +161,7 @@ where $a = \frac{R_2}{X_2} = s_{mT}$. *(Proved)*
 
 #### Q3(c): Circle Diagram Construction and Practical Significance
 
-![Construction of Circle Diagram](../Books/diagrams/ch35_p06_fig35_09.jpg)
+![Construction of Circle Diagram](../Books/Theraja/Ch-35/diagrams/ch35_p06_fig35_09.jpg)
 
 The circle diagram is a graphical circle locus representing the locus of the stator current phasor as slip varies from $0 \to 1 \to \infty$.
 - **Test Data Required**:
@@ -229,7 +229,7 @@ A static electromagnetic apparatus that transforms AC electrical energy between 
 
 #### Q5(b): Operating Principle of an Ideal Transformer
 
-![Core and windings of an ideal transformer](../Books/diagrams/Ch-32_p07_fig13.jpg)
+![Core and windings of an ideal transformer](../Books/Theraja/Ch-32/diagrams/Ch-32_p07_fig13.jpg)
 
 An ideal transformer assumes zero winding resistances, zero leakage flux, zero core losses, and infinite core permeability:
 1. Applied AC voltage $v_1(t)$ establishes alternating core flux $\Phi(t) = \Phi_m \sin\omega t$.
@@ -271,7 +271,7 @@ An ideal transformer assumes zero winding resistances, zero leakage flux, zero c
 
 #### Q6(a): Complete Full-Load Phasor Diagram
 
-![Complete vector diagrams of transformer with resistance and leakage reactance](../Books/diagrams/Ch-32_p21_fig29.jpg)
+![Complete vector diagrams of transformer with resistance and leakage reactance](../Books/Theraja/Ch-32/diagrams/Ch-32_p21_fig29.jpg)
 
 Shows core flux $\vec{\Phi}$ reference, induced EMFs $\vec{E}_1, \vec{E}_2$ lagging by 90°, secondary load drop triangle $\vec{V}_2 + \vec{I}_2 R_2 + j \vec{I}_2 X_2 = \vec{E}_2$, and primary voltage equation $\vec{V}_1 = -\vec{E}_1 + \vec{I}_1 R_1 + j \vec{I}_1 X_1$.
 

@@ -39,7 +39,7 @@ For a slip-ring induction motor, external resistance is added to the rotor circu
 
 Disadvantage: Power $= s \times P_{\text{air gap}}$ is wasted in the external resistors. Efficiency drops. Used where step-speed control and good starting torque are needed (e.g., cranes, hoists).
 
-![Rotor rheostat circuit for speed control and starting](../Books/diagrams/ch35_p28_fig35_22.jpg)
+![Rotor rheostat circuit for speed control and starting](../Books/Theraja/Ch-35/diagrams/ch35_p28_fig35_22.jpg)
 
 ---
 
@@ -48,8 +48,8 @@ Disadvantage: Power $= s \times P_{\text{air gap}}$ is wasted in the external re
 
 **(a) Short notes on: (i) Regenerative braking (ii) Dynamic braking (iii) Plugging [03]**
 
-![Operating modes of induction machine: Motoring, Generating, and Braking](../Books/diagrams/Ch-34_p34_fig32.jpg)
-![Power flow diagram during plugging (braking)](../Books/diagrams/Ch-34_p32_fig27.jpg)
+![Operating modes of induction machine: Motoring, Generating, and Braking](../Books/Theraja/Ch-34/diagrams/Ch-34_p34_fig32.jpg)
+![Power flow diagram during plugging (braking)](../Books/Theraja/Ch-34/diagrams/Ch-34_p32_fig27.jpg)
 
 **(i) Regenerative braking:** The motor speed exceeds synchronous speed ($N > N_s$), making slip negative. The machine acts as an induction generator, feeding power back to the supply. Smooth, energy-efficient, but only possible above synchronous speed. Used in cranes (lowering heavy loads) and electric trains on downhill sections.
 

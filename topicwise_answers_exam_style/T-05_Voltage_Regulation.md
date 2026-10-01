@@ -38,8 +38,8 @@ $$\text{VR\%} \approx \frac{I_2(R_{01}\cos\phi - X_{01}\sin\phi)}{V_{2,\text{rat
 
 **Phasor diagrams for Voltage Regulation:**
 
-![Phasor diagram for approximate voltage drop derivation on lagging load](../Books/diagrams/Ch-32_p26_fig35.jpg)
-![Voltage drop phasor diagrams at (a) Unity power factor and (b) Leading power factor](../Books/diagrams/Ch-32_p26_fig36.jpg)
+![Phasor diagram for approximate voltage drop derivation on lagging load](../Books/Theraja/Ch-32/diagrams/Ch-32_p26_fig35.jpg)
+![Voltage drop phasor diagrams at (a) Unity power factor and (b) Leading power factor](../Books/Theraja/Ch-32/diagrams/Ch-32_p26_fig36.jpg)
 
 - **Lagging pf:** $V_2$ reference. $I_2$ lags $V_2$ by $\phi$. $V_1' = V_2 + I_2R_{02}\cos\phi + I_2X_{02}\sin\phi$. Here $|V_1'| > |V_2|$, so VR > 0.
 - **Unity pf:** $I_2$ in phase with $V_2$. Drop is primarily $I_2R_{02}$. Small positive VR.

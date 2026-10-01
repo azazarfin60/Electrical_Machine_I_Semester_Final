@@ -20,7 +20,7 @@ $$a = \frac{N_1}{N_2} = \frac{E_1}{E_2} = \frac{V_1}{V_2} = \frac{I_2}{I_1}$$
 
 $$R_{01} = R_1 + a^2 R_2, \qquad X_{01} = X_1 + a^2 X_2, \qquad Z_{01} = \sqrt{R_{01}^2 + X_{01}^2}$$
 
-- [T-03: Transformer Equivalent Circuit](T-03_Transformer_Equivalent_Circuit.md)
+- [T-04: Equivalent Circuit](T-04_Equivalent_Circuit.md)
 
 ### Voltage Regulation
 
@@ -28,7 +28,7 @@ $$\%\text{VR} = \frac{E_2 - V_2}{V_2} \times 100 \approx \frac{I_2(R_{02}\cos\ph
 
 (+ for lagging, - for leading)
 
-- [T-04: Voltage Regulation](T-04_Voltage_Regulation.md)
+- [T-05: Voltage Regulation](T-05_Voltage_Regulation.md)
 
 ### Condition for Zero VR
 
@@ -44,7 +44,7 @@ where $x$ = fraction of full load, $S$ = VA rating, $P_i$ = iron loss, $P_{Cu}$ 
 
 $$P_i = x^2 P_{Cu} \implies x = \sqrt{\frac{P_i}{P_{Cu}}}$$
 
-- [T-05: Transformer Efficiency](T-05_Transformer_Efficiency.md)
+- [T-06c: Efficiency](T-06c_Efficiency.md)
 
 ### OC Test (Gives $R_c$, $X_m$, $P_i$)
 
@@ -56,13 +56,13 @@ $$R_c = V_1/I_c, \quad X_m = V_1/I_m, \quad P_i = P_0$$
 
 $$Z_{01} = V_{sc}/I_{sc}, \quad R_{01} = P_{sc}/I_{sc}^2, \quad X_{01} = \sqrt{Z_{01}^2 - R_{01}^2}$$
 
-- [T-06: OC & SC Tests](T-06_OC_SC_Tests.md)
+- [T-06a: OC Test](T-06a_OC_Test.md) | [T-06b: SC Test](T-06b_SC_Test.md)
 
 ### Parallel Operation (Load Sharing)
 
 $$S_A = S \cdot \frac{Z_B}{Z_A + Z_B}, \qquad S_B = S \cdot \frac{Z_A}{Z_A + Z_B}$$
 
-- [T-08: Parallel Operation](T-08_Parallel_Operation.md)
+- [T-09: Vector Groups & Parallel Operation](T-09_Vector_Groups.md)
 
 ### Auto-Transformer Savings
 
@@ -70,7 +70,7 @@ $$\text{Saving} = \left(1 - \frac{1}{a}\right) \times 100\%$$
 
 $$\text{VA}_{\text{induction}} = \left(1 - \frac{1}{a}\right) \times \text{VA}_{\text{conduction}}$$
 
-- [T-09: Auto-Transformer](T-09_Auto_Transformer.md)
+- [T-10: Auto-Transformer](T-10_Auto_Transformer.md)
 
 ### 3-Phase Transformer Connections
 
@@ -81,7 +81,7 @@ $$\text{VA}_{\text{induction}} = \left(1 - \frac{1}{a}\right) \times \text{VA}_{
 | Y-$\Delta$ | $V_L/(a\sqrt{3})$ | -30° |
 | $\Delta$-Y | $V_L\sqrt{3}/a$ | +30° |
 
-- [T-10: Three-Phase Transformers](T-10_Three_Phase_Transformers.md)
+- [T-07a: Three-Phase Connections](T-07a_3Phase_Connections.md)
 
 ### Scott Connection
 
@@ -93,7 +93,7 @@ $$V_{\text{main}} = V \times (N_2/N_1)$$
 
 $$S_{\text{open-}\Delta} = \frac{1}{\sqrt{3}} \times S_{\text{closed-}\Delta} = 57.7\% \text{ of V-V}$$
 
-- [T-11: Miscellaneous Transformer Topics](T-11_Miscellaneous_Transformer.md)
+- [T-07b: Open-Delta](T-07b_Open_Delta.md) | [T-08: Scott Connection](T-08_Scott_Connection.md)
 
 ---
 

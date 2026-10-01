@@ -14,7 +14,7 @@
 
 **(a) What are the characteristics of an ideal transformer? [03]**
 
-![Core and windings of an ideal transformer](../Books/diagrams/Ch-32_p07_fig13.jpg)
+![Core and windings of an ideal transformer](../Books/Theraja/Ch-32/diagrams/Ch-32_p07_fig13.jpg)
 
 An ideal transformer has the following assumptions:
 
@@ -83,7 +83,7 @@ $$\Phi_m = \frac{E_1}{4.44 f N_1} = \frac{3000}{4.44 \times 50 \times 500} = \fr
 
 **(a) Draw the phasor diagram of transformer considering winding resistance and leakage reactance. [04]**
 
-![Complete vector diagrams of transformer](../Books/diagrams/Ch-32_p21_fig29.jpg)
+![Complete vector diagrams of transformer](../Books/Theraja/Ch-32/diagrams/Ch-32_p21_fig29.jpg)
 > 1. **Reference:** $\vec{\Phi}_m$ horizontal (+X axis).
 > 2. **Induced EMFs:** $\vec{E}_1$ and $\vec{E}_2$ pointing downward (lag $\Phi_m$ by 90°).
 > 3. **Secondary terminal voltage:** $\vec{V}_2 = \vec{E}_2 - \vec{I}_2 R_2 - j\vec{I}_2 X_2$ (draw from tip of $E_2$, subtract drops).
@@ -196,7 +196,7 @@ $$S_{open-\Delta} = \sqrt{3} \times S_{\text{single transformer}} = 0.577 \times
 
 **(c) Draw the complete torque-speed curve of an induction motor. [03]**
 
-![Torque-Speed characteristics](../Books/diagrams/Chapman_Ch07_p202_torque_speed_r2_comp.jpg)
+![Torque-Speed characteristics](../Books/Chapman/diagrams/Chapman_Ch07_p202_torque_speed_r2_comp.jpg)
 > - At $N = 0$ (s = 1): Starting torque $T_{st}$ (positive, typically 1.5-2x full-load torque).
 > - Torque increases as speed increases from 0, reaching maximum $T_{\max}$ (pull-out torque) at speed $N_{mT} = N_s(1 - R_2/X_2)$.
 > - After $T_{\max}$, torque decreases rapidly as speed approaches $N_s$.
@@ -419,7 +419,7 @@ At full load with $s = 0.04$: $\eta_{\text{rotor}} = 96\%$.
 
 **(a) Explain the double-field revolving theory of single-phase IM. [04]**
 
-![Resolution of alternating flux into two oppositely rotating fields](../Books/diagrams/VK_Mehta_Fig_9_03.jpeg)
+![Resolution of alternating flux into two oppositely rotating fields](../Books/VK_Mehta/diagrams/VK_Mehta_Fig_9_03.jpeg)
 
 A single-phase stator current $i = I_m\sin\omega t$ creates a pulsating flux:
 $$\Phi = \Phi_m\sin\omega t$$
@@ -445,7 +445,7 @@ At any angle $\theta$, the pulsating field equals:
 - $T_f > T_b$ (forward torque dominates)
 - Motor continues to accelerate and maintains running.
 
-![Torque-speed characteristic under double-field revolving theory showing zero starting torque](../Books/diagrams/VK_Mehta_Fig_9_04.jpeg)
+![Torque-speed characteristic under double-field revolving theory showing zero starting torque](../Books/VK_Mehta/diagrams/VK_Mehta_Fig_9_04.jpeg)
 
 ---
 
@@ -535,7 +535,7 @@ In clock notation: 12 = 0°, 1 = 30°, 5 = 150°. So Dyn5 means the secondary st
 
 **(c) Circle diagram: 3-φ, 14.92 kW, 400V, 6-pole IM. No-load: 400V, 11A, pf = 0.2. SC: 100V, 25A, pf = 0.4. Rotor Cu loss at standstill = half total Cu loss. Find from diagram: (i) line current, slip, efficiency, pf at full load; (ii) max torque. [06]**
 
-![Construction of Circle Diagram](../Books/diagrams/ch35_p06_fig35_09.jpg)
+![Construction of Circle Diagram](../Books/Theraja/Ch-35/diagrams/ch35_p06_fig35_09.jpg)
 
 **No-load data:**
 $I_0 = 11$ A, $\cos\phi_0 = 0.2$, $\phi_0 = 78.46°$

@@ -2,9 +2,9 @@
 
 > **Purpose:** Single reference for writing boss notes and sorting exam questions.
 > **Sources cross-referenced:**
-> - [Syllabus.md](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/Syllabus.md)
-> - [SlidesByMaam/map.md](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/map.md) (L-01 to L-11)
-> - [ECE_2207_Question_Analysis.md](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/ECE_2207_Question_Analysis.md) (7 years: 2017–2024)
+> - [Syllabus.md](Syllabus.md)
+> - [SlidesByMaam/map.md](SlidesByMaam/map.md) (L-01 to L-11)
+> - [ECE_2207_Question_Analysis.md](ECE_2207_Question_Analysis.md) (7 years: 2017–2024)
 
 ---
 

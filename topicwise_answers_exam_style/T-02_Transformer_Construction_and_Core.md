@@ -26,7 +26,7 @@ If the middle phase (B) is wound in the **reverse** direction: effectively $\Phi
 
 **Economy:** The two outer yokes carry only the flux from one outer phase each. Only the middle limb must carry the combined flux. With reverse winding, the mutual cancellation reduces peak yoke flux. Less core material is needed for the same performance.
 
-![Shell-type transformer core structure and coils](../Books/diagrams/Ch-32_p05_fig10.jpg)
+![Shell-type transformer core structure and coils](../Books/Theraja/Ch-32/diagrams/Ch-32_p05_fig10.jpg)
 
 ---
 
@@ -39,7 +39,7 @@ The iron core sits in an alternating magnetic field. This induces EMFs in the co
 
 Laminating the core (cutting it into thin sheets insulated from each other) breaks the low-resistance path for eddy currents. Each lamination has high resistance across its thickness. So eddy currents are confined to each thin sheet. Since power loss $\propto t^2$ (lamination thickness), thin laminations drastically reduce eddy current losses.
 
-![Core laminations assembled in staggered joints to reduce eddy current loss](../Books/diagrams/Ch-32_p02_fig02.jpg)
+![Core laminations assembled in staggered joints to reduce eddy current loss](../Books/Theraja/Ch-32/diagrams/Ch-32_p02_fig02.jpg)
 
 Typical lamination thickness: 0.3–0.5 mm for power frequency (50/60 Hz) transformers.
 

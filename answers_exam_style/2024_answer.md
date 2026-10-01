@@ -15,7 +15,7 @@
 
 **Schematic:**
 
-![Schematic representation of a 1-phase transformer connected to a sinusoidal source on primary and load on secondary with all labeled variables](../Books/diagrams/VK_Mehta_Fig_7_01.jpeg)
+![Schematic representation of a 1-phase transformer connected to a sinusoidal source on primary and load on secondary with all labeled variables](../Books/VK_Mehta/diagrams/VK_Mehta_Fig_7_01.jpeg)
 
 **Primary side variables:**
 
@@ -64,7 +64,7 @@ $$E_1 = 4.44fN_1\Phi_m \approx V_1, \qquad E_2 = 4.44fN_2\Phi_m = V_2 \text{ (op
 
 **Phasor diagram (no-load):**
 
-![Vector diagram of transformer on no-load](../Books/diagrams/Ch-32_p12_fig16.jpg)
+![Vector diagram of transformer on no-load](../Books/Theraja/Ch-32/diagrams/Ch-32_p12_fig16.jpg)
 
 Key relationships:
 - $V_1 \approx E_1$ (small $I_0R_1$ drop neglected for ideal core)
@@ -77,7 +77,7 @@ Key relationships:
 
 **(a) Draw the phasor diagram of a R-L loaded ideal transformer, stating each step. [06, CO1]**
 
-![Phasor diagram of transformer on load: (a) Unity p.f., (b) Lagging p.f. (R-L load), (c) Lagging p.f. with I0 negligible](../Books/diagrams/Ch-32_p15_fig18.jpg)
+![Phasor diagram of transformer on load: (a) Unity p.f., (b) Lagging p.f. (R-L load), (c) Lagging p.f. with I0 negligible](../Books/Theraja/Ch-32/diagrams/Ch-32_p15_fig18.jpg)
 
 **Ideal transformer assumptions:** $R_1 = R_2 = X_1 = X_2 = 0$, $I_0 = 0$, so $V_2 = E_2$ and $V_1 = -E_1$.
 
@@ -247,7 +247,7 @@ $$N_2 = \frac{E_2}{4.44 f \Phi_m} = \frac{400}{0.666} = \boxed{600 \text{ turns}
 
 **(c) Obtain the equivalent circuit of a transformer referred to the primary side. [03, CO1]**
 
-![Exact Equivalent Circuit of Transformer](../Books/diagrams/VK_Mehta_Fig_7_19.jpeg)
+![Exact Equivalent Circuit of Transformer](../Books/VK_Mehta/diagrams/VK_Mehta_Fig_7_19.jpeg)
 
 **Referring secondary to primary:**
 
@@ -427,7 +427,7 @@ From $s_{mT} = R_2/X_2$ and $T_{\max} = kE_2^2/(2X_2)$:
 2. $T_{\max}$ remains unchanged (no $R_2$ in the formula).
 3. The starting torque $T_{st}$ increases as $R_2$ increases (up to the point $R_2 = X_2$, at which $T_{st} = T_{\max}$).
 
-![Torque-Speed characteristics](../Books/diagrams/Chapman_Ch07_p202_torque_speed_r2_comp.jpg)
+![Torque-Speed characteristics](../Books/Chapman/diagrams/Chapman_Ch07_p202_torque_speed_r2_comp.jpg)
 
 **Practical use:** By selecting appropriate external resistance, the wound-rotor motor can develop maximum torque at any desired speed. This is used for step-speed control and smooth starting of heavy loads.
 

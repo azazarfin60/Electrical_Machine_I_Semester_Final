@@ -19,7 +19,7 @@
 
 Mechanical friction brakes (brake shoes/pads) suffer from severe wear, generate heat and toxic dust, and cannot be modulated smoothly. Electric braking uses the electromagnetic fields inside the machine to convert the kinetic energy of the rotating mass into electrical energy (either dissipated safely or regenerated back to the grid), bringing the motor to a swift, controlled stop.
 
-![Operating modes of induction machine: Motoring, Generating, and Braking](../Books/diagrams/Ch-34_p34_fig32.jpg)
+![Operating modes of induction machine: Motoring, Generating, and Braking](../Books/Theraja/Ch-34/diagrams/Ch-34_p34_fig32.jpg)
 
 #### The three primary electric braking methods
 
@@ -47,7 +47,7 @@ Mechanical friction brakes (brake shoes/pads) suffer from severe wear, generate 
 - **Energy dissipation:** As shown in the power flow diagram, the motor absorbs electrical power from the supply while simultaneously absorbing mechanical kinetic energy from the shaft: both are converted to heat inside the rotor windings.
 - **Anti-reversal switch:** A centrifugal zero-speed switch must instantly disconnect the supply at the exact moment speed reaches zero, otherwise the motor will immediately accelerate in the reverse direction.
 
-![Power flow diagram during plugging (braking)](../Books/diagrams/Ch-34_p32_fig27.jpg)
+![Power flow diagram during plugging (braking)](../Books/Theraja/Ch-34/diagrams/Ch-34_p32_fig27.jpg)
 
 ---
 
@@ -66,7 +66,7 @@ Induction motor speed can be controlled by altering three parameters:
    - **Stator voltage control:** Lowering stator voltage weakens the air gap flux, reducing developed torque ($T \propto V^2$). For a fixed load torque, the motor must increase its slip to maintain torque equilibrium, running slower. Very inefficient because reduced speed means high slip losses ($s P_g$).
    - **Rotor resistance control:** Applicable exclusively to wound-rotor (slip-ring) induction motors. External 3-phase rheostats are inserted into the rotor circuit through carbon brushes and slip rings.
 
-![Rotor rheostat circuit for speed control and starting](../Books/diagrams/ch35_p28_fig35_22.jpg)
+![Rotor rheostat circuit for speed control and starting](../Books/Theraja/Ch-35/diagrams/ch35_p28_fig35_22.jpg)
 
 ---
 

@@ -14,7 +14,7 @@
 
 ### Q1(a): Transformer Schematic and Physical Meaning of Variables
 
-![Schematic representation of a 1-phase transformer connected to a sinusoidal source on primary and load on secondary with all labeled variables](../Books/diagrams/VK_Mehta_Fig_7_01.jpeg)
+![Schematic representation of a 1-phase transformer connected to a sinusoidal source on primary and load on secondary with all labeled variables](../Books/VK_Mehta/diagrams/VK_Mehta_Fig_7_01.jpeg)
 
 #### What each variable represents physically
 
@@ -33,7 +33,7 @@ A transformer is fundamentally two electric circuits coupled through a common ma
 
 ### Q1(b): No-Load Operation of a 1-Phase Transformer
 
-![Vector diagram of transformer on no-load](../Books/diagrams/Ch-32_p12_fig16.jpg)
+![Vector diagram of transformer on no-load](../Books/Theraja/Ch-32/diagrams/Ch-32_p12_fig16.jpg)
 
 #### What happens physically before the load is connected
 
@@ -67,7 +67,7 @@ Because $I_m \gg I_c$ in iron-core transformers, $I_0$ lags $V_1$ by a large ang
 
 ### Q2(a): Phasor Diagram of R-L Loaded Ideal Transformer
 
-![Phasor diagram of transformer on load: (a) Unity p.f., (b) Lagging p.f. (R-L load), (c) Lagging p.f. with I0 negligible](../Books/diagrams/Ch-32_p15_fig18.jpg)
+![Phasor diagram of transformer on load: (a) Unity p.f., (b) Lagging p.f. (R-L load), (c) Lagging p.f. with I0 negligible](../Books/Theraja/Ch-32/diagrams/Ch-32_p15_fig18.jpg)
 
 #### Physical story of how a transformer reacts to an inductive load
 
@@ -207,7 +207,7 @@ $$\text{VR\%} = \frac{\Delta V_1}{V_1} \times 100 = \frac{55.18}{2000} \times 10
 
 ### Q4(a): Derivation of the Transformer EMF Equation
 
-![Core and windings of an ideal transformer](../Books/diagrams/Ch-32_p07_fig13.jpg)
+![Core and windings of an ideal transformer](../Books/Theraja/Ch-32/diagrams/Ch-32_p07_fig13.jpg)
 
 > For the comprehensive derivation, physical picture, and design implications see [T-01: EMF Equation: $E = 4.44 f N \Phi_m$](2018_2024_answer.md#t-01-emf-equation-e--444-f-n-phi_m-full-derivation-and-intuition).
 
@@ -245,7 +245,7 @@ $$\text{VR\%} = \frac{\Delta V_1}{V_1} \times 100 = \frac{55.18}{2000} \times 10
 
 ### Q4(c): Equivalent Circuit Referred to Primary Side
 
-![Exact Equivalent Circuit of Transformer](../Books/diagrams/VK_Mehta_Fig_7_19.jpeg)
+![Exact Equivalent Circuit of Transformer](../Books/VK_Mehta/diagrams/VK_Mehta_Fig_7_19.jpeg)
 
 > See detailed circuit transformation steps in [2020 Explanation: Q1(a)](2020_answer.md#q1a-exact-equivalent-circuit-of-a-transformer-from-first-principles).
 
@@ -269,7 +269,7 @@ A transformer contains two galvanically isolated circuits separated by an air-ga
 
 ### Q5(a): Rotating Magnetic Field (RMF) Proof and Physical Meaning
 
-![Resultant 3-phase flux](../Books/diagrams/Ch-34_p10_fig14.jpg)
+![Resultant 3-phase flux](../Books/Theraja/Ch-34/diagrams/Ch-34_p10_fig14.jpg)
 
 #### The physical magic of RMF
 
@@ -411,7 +411,7 @@ $$T_{FL} = \frac{k \cdot s \cdot E_2^2 \cdot R_2}{R_2^2 + s^2 X_2^2} = \frac{0.0
 
 ### Q7(b): Effect of Rotor Resistance on Torque-Speed Characteristic
 
-![Torque-Speed characteristics](../Books/diagrams/Chapman_Ch07_p202_torque_speed_r2_comp.jpg)
+![Torque-Speed characteristics](../Books/Chapman/diagrams/Chapman_Ch07_p202_torque_speed_r2_comp.jpg)
 
 #### The engineering tradeoff: Starting vs Running
 
@@ -434,7 +434,7 @@ The torque-speed curve demonstrates one of the most critical compromises in elec
 
 ### Q8(a): Single-Phase Induction Motor and Double Revolving Field Theory
 
-![Resolution of alternating flux into two oppositely rotating fields](../Books/diagrams/VK_Mehta_Fig_9_03.jpeg)
+![Resolution of alternating flux into two oppositely rotating fields](../Books/VK_Mehta/diagrams/VK_Mehta_Fig_9_03.jpeg)
 
 > For full mathematical formulation see [IM-03: Single-Phase Induction Motor: Double Revolving Field Theory](2018_2024_answer.md#im-03-single-phase-induction-motor-double-revolving-field-theory).
 
@@ -462,7 +462,7 @@ To make a single-phase induction motor self-starting, we must artificially conve
 
 #### 1. Capacitor-Start, Capacitor-Run Motor (Two-Value Capacitor Motor)
 
-![Capacitor-Start Capacitor-Run Motor](../Books/diagrams/VK_Mehta_Fig_9_16.jpeg)
+![Capacitor-Start Capacitor-Run Motor](../Books/VK_Mehta/diagrams/VK_Mehta_Fig_9_16.jpeg)
 
 ##### Physical Mechanism:
 This motor uses two stator windings placed 90° apart in space: the **Main Winding** (heavy gauge, many turns, high inductance) and the **Auxiliary Winding** (finer wire, fewer turns) in series with capacitors.
@@ -477,7 +477,7 @@ This motor uses two stator windings placed 90° apart in space: the **Main Windi
 
 #### 2. Shaded-Pole Motor
 
-![Shaded-Pole Motor Construction and Action](../Books/diagrams/VK_Mehta_Fig_9_17.jpeg)
+![Shaded-Pole Motor Construction and Action](../Books/VK_Mehta/diagrams/VK_Mehta_Fig_9_17.jpeg)
 
 ##### Physical Mechanism:
 The shaded-pole motor is the simplest, most rugged, and cheapest of all single-phase motors. It requires no auxiliary winding, no capacitors, and no centrifugal switch.

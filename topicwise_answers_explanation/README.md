@@ -13,7 +13,7 @@ See [`Topic_Subtopic_Master_List.md`](../Topic_Subtopic_Master_List.md) for the 
 | T-05 | Voltage Regulation | [T-05](T-05_Voltage_Regulation.md) |
 | T-06 | OC/SC Tests, Efficiency & Losses | [T-06](T-06_OC-SC_Tests_Efficiency_and_Losses.md) |
 | T-07 | Three-Phase Connections & Open-Delta | [T-07](T-07_Three-Phase_Connections_and_Open-Delta.md) |
-| T-08 | Scott (T-T) Connection | [T-08](T-08_Scott_Connection.md) |
+| T-08 | Scott (T-T) Connection | [T-08](T-08_Scott_T-T_Connection.md) |
 | T-09 | Vector Groups & Parallel Operation | [T-09](T-09_Vector_Groups_and_Parallel_Operation.md) |
 | T-10 | Auto-Transformer | [T-10](T-10_Auto-Transformer.md) |
 | T-11 | Miscellaneous Transformer Topics | [T-11](T-11_Miscellaneous_Transformer_Topics.md) |
@@ -24,7 +24,7 @@ See [`Topic_Subtopic_Master_List.md`](../Topic_Subtopic_Master_List.md) for the 
 | T-16 | Torque Equations & Characteristics | [T-16](T-16_Torque_Equations_and_Characteristics.md) |
 | T-17 | Power Flow & Rotor Power | [T-17](T-17_Power_Flow_and_Rotor_Power.md) |
 | T-18 | IM Testing & Circle Diagram | [T-18](T-18_IM_Testing_and_Circle_Diagram.md) |
-| T-19 | Starting Methods (3-φ IM) | [T-19](T-19_Starting_Methods_3Phase_IM.md) |
+| T-19 | Starting Methods (3-φ IM) | [T-19](T-19_Starting_Methods_3-Phase_IM.md) |
 | T-20 | Speed Control & Braking | [T-20](T-20_Speed_Control_and_Braking.md) |
 | T-21 | Induction Generator | [T-21](T-21_Induction_Generator.md) |
 | T-22 | Single-Phase IM Theory (DFRT) | [T-22](T-22_Single-Phase_IM_Theory_DFRT.md) |

@@ -25,7 +25,7 @@ Common physical causes include:
 - A broken overhead supply wire or loose screw terminal.
 - An open circuit in one phase of the motor stator winding.
 
-![3-Phase Supply Stator connection showing three phase winding supply](../Books/diagrams/Ch-34_p09_fig11.jpg)
+![3-Phase Supply Stator connection showing three phase winding supply](../Books/Theraja/Ch-34/diagrams/Ch-34_p09_fig11.jpg)
 
 #### Symmetrical component analysis: positive and negative sequence fields
 

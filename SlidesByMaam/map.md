@@ -8,24 +8,24 @@
 
 | Lecture Tag | Machine Domain | File Link | Primary Lecture Theme | Slides | Key Highlights |
 | :--- | :--- | :--- | :--- | :---: | :--- |
-| **L-01** | Foundations | [`L-01_ECE-2207.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-01_ECE-2207.md) | Magnetic Fields & Machine Principles | 11 | Field generation, Biot-Savart, Transformer/Motor/Generator action, Fleming's rules |
-| **L-02** | Induction Motor | [`L-02_ECE-2207.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-02_ECE-2207.md) | Rotating Magnetic Field (RMF) | 14 | AC vs DC motors, 2-$\phi$ RMF ($F_m$), 3-$\phi$ RMF ($1.5 F_m$), flux revolving theory |
-| **L-03** | Induction Motor | [`L-03_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-03_ECE-2107.md) | Slip, Vector Diagram & Equivalent Circuit | 20 | Synchronous speed $N_s$, slip $s$, rotor frequency $f_r$, transformer model, exact circuit |
-| **L-04** | Induction Motor | [`L-04_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-04_ECE-2107.md) | Torque Equations & Characteristics | 17 | Starting torque, running torque, max torque condition ($s_{max} = R_2/X_2$), torque-speed curve |
-| **L-05** | Induction Motor | [`L-05_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-05_ECE-2107.md) | Parameter Determination & Tests | 15 | No-load test, Blocked-rotor test, DC stator test, loss separation, worked 40-hp problem |
-| **L-06** | Induction Motor | [`L-06_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-06_ECE-2107.md) | Power Flow & Starting Methods | 20 | Power stages ($P_g : P_{cu} : P_{dev} = 1 : s : 1-s$), synchronous watt, DOL, Auto-transformer, Star-Delta, Rotor rheostat |
-| **L-07** | Induction Motor | [`L-07_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-07_ECE-2107.md) | Speed Control, Braking, 1-$\phi$ IM & Circle Diagram | 24 | Speed control methods, dynamic/DC/capacitor braking, plugging, induction generator, 1-$\phi$ split-phase/capacitor motors, circle diagram |
-| **L-08** | Transformer | [`L-08_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-08_ECE-2107.md) | Fundamentals & Principle of Action | 14 | Transformer action, efficiency, DC transient behavior, AC sinusoidal derivation ($E = 4.44 f N \Phi_m$) |
-| **L-09** | Transformer | [`L-09_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-09_ECE-2107.md) | Construction & Phasor Diagrams | 13 | Core vs Shell type, no-load phasor ($I_0, I_\mu, I_w$), loaded phasor (unity, lagging, leading pf) |
-| **L-10** | Transformer | [`L-10_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-10_ECE-2107.md) | Equivalent Circuit, Regulation & Tests | 19 | Leakage reactance, impedance referring ($K^2$), exact/approximate circuits, voltage regulation, OC test, SC test |
-| **L-11** | Transformer | [`L-11_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-11_ECE-2107.md) | 3-$\phi$ Transformers, Scott-T & Vector Groups | 29 | 3-$\phi$ connections (Y-Y, Y-$\Delta$, $\Delta$-Y, $\Delta$-$\Delta$), 3rd harmonic issues, Open-$\Delta$ (57.7%), Scott-T 3-$\phi$ to 2-$\phi$, Vector groups (Dyn11) |
+| **L-01** | Foundations | [`L-01_ECE-2207.md`](L-01_ECE-2207.md) | Magnetic Fields & Machine Principles | 11 | Field generation, Biot-Savart, Transformer/Motor/Generator action, Fleming's rules |
+| **L-02** | Induction Motor | [`L-02_ECE-2207.md`](L-02_ECE-2207.md) | Rotating Magnetic Field (RMF) | 14 | AC vs DC motors, 2-$\phi$ RMF ($F_m$), 3-$\phi$ RMF ($1.5 F_m$), flux revolving theory |
+| **L-03** | Induction Motor | [`L-03_ECE-2107.md`](L-03_ECE-2107.md) | Slip, Vector Diagram & Equivalent Circuit | 20 | Synchronous speed $N_s$, slip $s$, rotor frequency $f_r$, transformer model, exact circuit |
+| **L-04** | Induction Motor | [`L-04_ECE-2107.md`](L-04_ECE-2107.md) | Torque Equations & Characteristics | 17 | Starting torque, running torque, max torque condition ($s_{max} = R_2/X_2$), torque-speed curve |
+| **L-05** | Induction Motor | [`L-05_ECE-2107.md`](L-05_ECE-2107.md) | Parameter Determination & Tests | 15 | No-load test, Blocked-rotor test, DC stator test, loss separation, worked 40-hp problem |
+| **L-06** | Induction Motor | [`L-06_ECE-2107.md`](L-06_ECE-2107.md) | Power Flow & Starting Methods | 20 | Power stages ($P_g : P_{cu} : P_{dev} = 1 : s : 1-s$), synchronous watt, DOL, Auto-transformer, Star-Delta, Rotor rheostat |
+| **L-07** | Induction Motor | [`L-07_ECE-2107.md`](L-07_ECE-2107.md) | Speed Control, Braking, 1-$\phi$ IM & Circle Diagram | 24 | Speed control methods, dynamic/DC/capacitor braking, plugging, induction generator, 1-$\phi$ split-phase/capacitor motors, circle diagram |
+| **L-08** | Transformer | [`L-08_ECE-2107.md`](L-08_ECE-2107.md) | Fundamentals & Principle of Action | 14 | Transformer action, efficiency, DC transient behavior, AC sinusoidal derivation ($E = 4.44 f N \Phi_m$) |
+| **L-09** | Transformer | [`L-09_ECE-2107.md`](L-09_ECE-2107.md) | Construction & Phasor Diagrams | 13 | Core vs Shell type, no-load phasor ($I_0, I_\mu, I_w$), loaded phasor (unity, lagging, leading pf) |
+| **L-10** | Transformer | [`L-10_ECE-2107.md`](L-10_ECE-2107.md) | Equivalent Circuit, Regulation & Tests | 19 | Leakage reactance, impedance referring ($K^2$), exact/approximate circuits, voltage regulation, OC test, SC test |
+| **L-11** | Transformer | [`L-11_ECE-2107.md`](L-11_ECE-2107.md) | 3-$\phi$ Transformers, Scott-T & Vector Groups | 29 | 3-$\phi$ connections (Y-Y, Y-$\Delta$, $\Delta$-Y, $\Delta$-$\Delta$), 3rd harmonic issues, Open-$\Delta$ (57.7%), Scott-T 3-$\phi$ to 2-$\phi$, Vector groups (Dyn11) |
 
 ---
 
 ## 2. Granular Slide-by-Slide Syllabus & Topic Mapping
 
 ### [L-01] Fundamentals of Electrical Machines & Magnetic Fields
-* **Primary File**: [`L-01_ECE-2207.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-01_ECE-2207.md)
+* **Primary File**: [`L-01_ECE-2207.md`](L-01_ECE-2207.md)
 * **Core Machine Family**: Electromechanical Foundations
 * **Total Slides**: 11
 * **Slide Breakdown**:
@@ -46,7 +46,7 @@
 ---
 
 ### [L-02] Induction Motor Fundamentals & Rotating Magnetic Field (RMF)
-* **Primary File**: [`L-02_ECE-2207.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-02_ECE-2207.md)
+* **Primary File**: [`L-02_ECE-2207.md`](L-02_ECE-2207.md)
 * **Core Machine Family**: 3-Phase Induction Motors (Part 1)
 * **Total Slides**: 14
 * **Slide Breakdown**:
@@ -76,7 +76,7 @@
 ---
 
 ### [L-03] Induction Motor Principles, Slip, Vector Diagram & Equivalent Circuit
-* **Primary File**: [`L-03_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-03_ECE-2107.md)
+* **Primary File**: [`L-03_ECE-2107.md`](L-03_ECE-2107.md)
 * **Core Machine Family**: 3-Phase Induction Motors (Part 2)
 * **Total Slides**: 20
 * **Slide Breakdown**:
@@ -107,7 +107,7 @@
 ---
 
 ### [L-04] Induction Motor Torque Equations, Maximum Torque & Characteristics
-* **Primary File**: [`L-04_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-04_ECE-2107.md)
+* **Primary File**: [`L-04_ECE-2107.md`](L-04_ECE-2107.md)
 * **Core Machine Family**: 3-Phase Induction Motors (Part 3)
 * **Total Slides**: 17
 * **Slide Breakdown**:
@@ -141,7 +141,7 @@
 ---
 
 ### [L-05] Induction Motor Parameter Determination & Testing
-* **Primary File**: [`L-05_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-05_ECE-2107.md)
+* **Primary File**: [`L-05_ECE-2107.md`](L-05_ECE-2107.md)
 * **Core Machine Family**: 3-Phase Induction Motors (Part 4)
 * **Total Slides**: 15
 * **Slide Breakdown**:
@@ -178,7 +178,7 @@
 ---
 
 ### [L-06] Power Stages, Torque & Starting Methods of Induction Motors
-* **Primary File**: [`L-06_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-06_ECE-2107.md)
+* **Primary File**: [`L-06_ECE-2107.md`](L-06_ECE-2107.md)
 * **Core Machine Family**: 3-Phase Induction Motors (Part 5)
 * **Total Slides**: 20
 * **Slide Breakdown**:
@@ -225,7 +225,7 @@
 ---
 
 ### [L-07] Speed Control, Electric Braking, Induction Generator, 1-$\phi$ Motors & Circle Diagram
-* **Primary File**: [`L-07_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-07_ECE-2107.md)
+* **Primary File**: [`L-07_ECE-2107.md`](L-07_ECE-2107.md)
 * **Core Machine Family**: 3-Phase & 1-Phase Induction Machines (Part 6)
 * **Total Slides**: 24
 * **Slide Breakdown**:
@@ -262,7 +262,7 @@
 ---
 
 ### [L-08] Transformer Fundamentals, Energy Transfer & Principles of Action
-* **Primary File**: [`L-08_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-08_ECE-2107.md)
+* **Primary File**: [`L-08_ECE-2107.md`](L-08_ECE-2107.md)
 * **Core Machine Family**: Transformers (Part 1)
 * **Total Slides**: 14
 * **Slide Breakdown**:
@@ -290,7 +290,7 @@
 ---
 
 ### [L-09] Transformer Construction & Phasor Diagrams
-* **Primary File**: [`L-09_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-09_ECE-2107.md)
+* **Primary File**: [`L-09_ECE-2107.md`](L-09_ECE-2107.md)
 * **Core Machine Family**: Transformers (Part 2)
 * **Total Slides**: 13
 * **Slide Breakdown**:
@@ -323,7 +323,7 @@
 ---
 
 ### [L-10] Transformer Leakage Reactance, Equivalent Circuit, Voltage Regulation & Testing
-* **Primary File**: [`L-10_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-10_ECE-2107.md)
+* **Primary File**: [`L-10_ECE-2107.md`](L-10_ECE-2107.md)
 * **Core Machine Family**: Transformers (Part 3)
 * **Total Slides**: 19
 * **Slide Breakdown**:
@@ -369,7 +369,7 @@
 ---
 
 ### [L-11] 3-Phase Transformers, Connections, Two-Transformer Schemes, Scott-T & Vector Groups
-* **Primary File**: [`L-11_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-11_ECE-2107.md)
+* **Primary File**: [`L-11_ECE-2107.md`](L-11_ECE-2107.md)
 * **Core Machine Family**: 3-Phase Transformers (Part 4)
 * **Total Slides**: 29
 * **Slide Breakdown**:
@@ -488,12 +488,12 @@
 
 | Machine | Test Name | Purpose / Parameters Determined | Slides |
 | :--- | :--- | :--- | :--- |
-| **Induction Motor** | **No-Load Test** | Determines magnetizing reactance $X_M$, core loss resistance $R_c$, and separates friction & windage losses $P_{f\&w}$. | [L-05: S04–S08](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-05_ECE-2107.md#L45-L105) |
-| **Induction Motor** | **Blocked-Rotor Test** | Determines total equivalent resistance $R_{BR} = R_1 + R_2$ and equivalent leakage reactance $X_{BR}' = X_1 + X_2$. | [L-05: S09–S11](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-05_ECE-2107.md#L107-L148) |
-| **Induction Motor** | **DC Stator Resistance Test** | Measures ohmic stator resistance $R_1$ for Wye ($R_{DC}/2$) and Delta ($1.5 R_{DC}$) connections. | [L-05: S12–S14](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-05_ECE-2107.md#L150-L178) |
-| **Induction Motor** | **Circle Diagram Test** | Uses No-load and Blocked-rotor test points to plot circle diagram for graphical determination of slip, torque, power, and losses. | [L-07: S22–S24](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-07_ECE-2107.md#L205-L232) |
-| **Transformer** | **Open-Circuit (OC) Test** | Conducted on LV side with HV open. Determines core/iron loss $P_i$, magnetizing reactance $X_0$, and core-loss resistance $R_0$. | [L-10: S17](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-10_ECE-2107.md#L201-L215) |
-| **Transformer** | **Short-Circuit (SC) Test** | Conducted on HV side with LV shorted. Determines full-load copper loss $P_{cu}$, equivalent resistance $R_{01}$, and leakage reactance $X_{01}$. | [L-10: S18](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-10_ECE-2107.md#L217-L232) |
+| **Induction Motor** | **No-Load Test** | Determines magnetizing reactance $X_M$, core loss resistance $R_c$, and separates friction & windage losses $P_{f\&w}$. | [L-05: S04–S08](L-05_ECE-2107.md#L45-L105) |
+| **Induction Motor** | **Blocked-Rotor Test** | Determines total equivalent resistance $R_{BR} = R_1 + R_2$ and equivalent leakage reactance $X_{BR}' = X_1 + X_2$. | [L-05: S09–S11](L-05_ECE-2107.md#L107-L148) |
+| **Induction Motor** | **DC Stator Resistance Test** | Measures ohmic stator resistance $R_1$ for Wye ($R_{DC}/2$) and Delta ($1.5 R_{DC}$) connections. | [L-05: S12–S14](L-05_ECE-2107.md#L150-L178) |
+| **Induction Motor** | **Circle Diagram Test** | Uses No-load and Blocked-rotor test points to plot circle diagram for graphical determination of slip, torque, power, and losses. | [L-07: S22–S24](L-07_ECE-2107.md#L205-L232) |
+| **Transformer** | **Open-Circuit (OC) Test** | Conducted on LV side with HV open. Determines core/iron loss $P_i$, magnetizing reactance $X_0$, and core-loss resistance $R_0$. | [L-10: S17](L-10_ECE-2107.md#L201-L215) |
+| **Transformer** | **Short-Circuit (SC) Test** | Conducted on HV side with LV shorted. Determines full-load copper loss $P_{cu}$, equivalent resistance $R_{01}$, and leakage reactance $X_{01}$. | [L-10: S18](L-10_ECE-2107.md#L217-L232) |
 
 ---
 
@@ -517,57 +517,57 @@
 
 ## 6. Master Alphabetical Cross-Reference Index (A–Z)
 
-* **Air-gap Power ($P_g$)**: [`L-06_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-06_ECE-2107.md#L40-L65) (Slides 4–5)
-* **Auto-Transformer Starter**: [`L-06_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-06_ECE-2107.md#L160-L195) (Slides 15–17)
-* **Blocked-Rotor Test**: [`L-05_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-05_ECE-2107.md#L107-L148) (Slides 9–11, 15)
-* **Braking (Dynamic, DC Injection, Capacitor, Plugging)**: [`L-07_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-07_ECE-2107.md#L50-L88) (Slides 6–9)
-* **Capacitor-Start / Capacitor-Run Motors**: [`L-07_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-07_ECE-2107.md#L170-L203) (Slides 19–21)
-* **Circle Diagram**: [`L-07_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-07_ECE-2107.md#L205-L232) (Slides 22–24)
-* **Clock Representation of Vector Groups**: [`L-11_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-11_ECE-2107.md#L265-L310) (Slides 26–29)
-* **Core Type vs Shell Type Transformer**: [`L-09_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-09_ECE-2107.md#L30-L45) (Slide 3)
-* **DC Injection Braking**: [`L-07_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-07_ECE-2107.md#L60-L70) (Slide 7)
-* **DC Test for Stator Resistance**: [`L-05_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-05_ECE-2107.md#L150-L178) (Slides 12–14, 15)
-* **Delta-Delta ($\Delta$-$\Delta$) Connection**: [`L-11_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-11_ECE-2107.md#L150-L165) (Slide 14)
-* **Delta-Wye ($\Delta$-Y) Connection**: [`L-11_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-11_ECE-2107.md#L135-L148) (Slide 13)
-* **Direct-On-Line (DOL) Starting**: [`L-06_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-06_ECE-2107.md#L125-L140) (Slide 12)
-* **Double Revolving Field Theory**: [`L-07_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-07_ECE-2107.md#L140-L160) (Slide 16)
-* **Dyn11 Vector Group**: [`L-11_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-11_ECE-2107.md#L295-L315) (Slide 29)
-* **Efficiency of Transformer**: [`L-08_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-08_ECE-2107.md#L75-L88) (Slide 8)
-* **EMF Equation of Transformer**: [`L-08_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-08_ECE-2107.md#L135-L160) (Slide 14)
-* **Equivalent Circuit (Induction Motor)**: [`L-03_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-03_ECE-2107.md#L135-L210) (Slides 13–20)
-* **Equivalent Circuit (Transformer)**: [`L-10_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-10_ECE-2107.md#L100-L160) (Slides 9–13)
-* **Faraday's Law of Induction**: [`L-01_ECE-2207.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-01_ECE-2207.md#L80-L95) (Slide 9), [`L-08_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-08_ECE-2107.md)
-* **Fleming's Left-Hand & Right-Hand Rules**: [`L-01_ECE-2207.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-01_ECE-2207.md#L97-L125) (Slides 10–11)
-* **Floating Neutral / Third Harmonics in Y-Y**: [`L-11_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-11_ECE-2107.md#L80-L105) (Slides 8–9)
-* **Flux Revolving Theory**: [`L-02_ECE-2207.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-02_ECE-2207.md#L80-L95) (Slide 8)
-* **Induction Generator (Grid & Self-Excited)**: [`L-07_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-07_ECE-2107.md#L90-L125) (Slides 10–12)
-* **Leakage Reactance & Leakage Flux**: [`L-10_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-10_ECE-2107.md#L30-L85) (Slides 3–7)
-* **Maximum Starting Torque Condition ($R_2 = X_2$)**: [`L-04_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-04_ECE-2107.md#L70-L95) (Slide 6)
-* **Maximum Running Torque Condition ($s = R_2/X_2$)**: [`L-04_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-04_ECE-2107.md#L140-L175) (Slides 12–14)
-* **No-Load Phasor Diagram (Transformer)**: [`L-09_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-09_ECE-2107.md#L50-L95) (Slides 5–8)
-* **No-Load Test (Induction Motor)**: [`L-05_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-05_ECE-2107.md#L45-L105) (Slides 4–8)
-* **Open-Circuit (OC) Test (Transformer)**: [`L-10_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-10_ECE-2107.md#L201-L215) (Slide 17)
-* **Open-$\Delta$ (or V-V) Connection (57.7%)**: [`L-11_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-11_ECE-2107.md#L170-L210) (Slides 16–19)
-* **Open-Wye Open-Delta Connection**: [`L-11_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-11_ECE-2107.md#L215-L225) (Slide 20)
-* **Phasor Diagram with Winding Leakage**: [`L-10_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-10_ECE-2107.md#L165-L185) (Slides 14–15)
-* **Plugging of Induction Motor**: [`L-07_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-07_ECE-2107.md#L80-L90) (Slide 9)
-* **Power Flow & Division ($P_g : P_{cu} : P_{dev}$)**: [`L-06_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-06_ECE-2107.md#L40-L75) (Slides 4–5)
-* **Pull-Out / Breakdown Torque**: [`L-04_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-04_ECE-2107.md#L160-L190) (Slides 14–16)
-* **Rotor Rheostat Starter**: [`L-06_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-06_ECE-2107.md#L215-L235) (Slides 19–20)
-* **Rotating Magnetic Field (2-Phase & 3-Phase)**: [`L-02_ECE-2207.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-02_ECE-2207.md#L90-L155) (Slides 9–14)
-* **Scott-T Connection (3-$\phi$ to 2-$\phi$)**: [`L-11_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-11_ECE-2107.md#L230-L260) (Slides 21–23)
-* **Short-Circuit (SC) Test (Transformer)**: [`L-10_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-10_ECE-2107.md#L217-L232) (Slide 18)
-* **Single-Phase Induction Motor**: [`L-07_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-07_ECE-2107.md#L135-L203) (Slides 15–21)
-* **Slip & Slip Speed**: [`L-03_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-03_ECE-2107.md#L60-L85) (Slides 6–7)
-* **Speed Control Methods (Induction Motor)**: [`L-07_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-07_ECE-2107.md#L30-L48) (Slides 3–5)
-* **Split-Phase Machine**: [`L-07_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-07_ECE-2107.md#L165-L185) (Slide 18)
-* **Star-Delta Starter**: [`L-06_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-06_ECE-2107.md#L198-L214) (Slide 18)
-* **Synchronous Speed ($N_s = 120f/P$)**: [`L-03_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-03_ECE-2107.md#L30-L45) (Slide 3)
-* **Synchronous Watt**: [`L-06_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-06_ECE-2107.md#L105-L120) (Slide 10)
-* **Three-Phase T-Connection**: [`L-11_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-11_ECE-2107.md#L260-L268) (Slide 24)
-* **Torque-Slip & Torque-Speed Curves**: [`L-04_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-04_ECE-2107.md#L170-L205) (Slides 15–17)
-* **Transient DC Input on Transformer**: [`L-08_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-08_ECE-2107.md#L90-L130) (Slides 9–12)
-* **Vector Groups (Clock Method)**: [`L-11_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-11_ECE-2107.md#L265-L315) (Slides 25–29)
-* **Voltage Regulation of Transformer**: [`L-10_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-10_ECE-2107.md#L185-L200) (Slide 16)
-* **Wye-Delta (Y-$\Delta$) Connection**: [`L-11_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-11_ECE-2107.md#L110-L132) (Slides 11–12)
-* **Wye-Wye (Y-Y) Connection**: [`L-11_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-11_ECE-2107.md#L70-L108) (Slides 7–10)
+* **Air-gap Power ($P_g$)**: [`L-06_ECE-2107.md`](L-06_ECE-2107.md#L40-L65) (Slides 4–5)
+* **Auto-Transformer Starter**: [`L-06_ECE-2107.md`](L-06_ECE-2107.md#L160-L195) (Slides 15–17)
+* **Blocked-Rotor Test**: [`L-05_ECE-2107.md`](L-05_ECE-2107.md#L107-L148) (Slides 9–11, 15)
+* **Braking (Dynamic, DC Injection, Capacitor, Plugging)**: [`L-07_ECE-2107.md`](L-07_ECE-2107.md#L50-L88) (Slides 6–9)
+* **Capacitor-Start / Capacitor-Run Motors**: [`L-07_ECE-2107.md`](L-07_ECE-2107.md#L170-L203) (Slides 19–21)
+* **Circle Diagram**: [`L-07_ECE-2107.md`](L-07_ECE-2107.md#L205-L232) (Slides 22–24)
+* **Clock Representation of Vector Groups**: [`L-11_ECE-2107.md`](L-11_ECE-2107.md#L265-L310) (Slides 26–29)
+* **Core Type vs Shell Type Transformer**: [`L-09_ECE-2107.md`](L-09_ECE-2107.md#L30-L45) (Slide 3)
+* **DC Injection Braking**: [`L-07_ECE-2107.md`](L-07_ECE-2107.md#L60-L70) (Slide 7)
+* **DC Test for Stator Resistance**: [`L-05_ECE-2107.md`](L-05_ECE-2107.md#L150-L178) (Slides 12–14, 15)
+* **Delta-Delta ($\Delta$-$\Delta$) Connection**: [`L-11_ECE-2107.md`](L-11_ECE-2107.md#L150-L165) (Slide 14)
+* **Delta-Wye ($\Delta$-Y) Connection**: [`L-11_ECE-2107.md`](L-11_ECE-2107.md#L135-L148) (Slide 13)
+* **Direct-On-Line (DOL) Starting**: [`L-06_ECE-2107.md`](L-06_ECE-2107.md#L125-L140) (Slide 12)
+* **Double Revolving Field Theory**: [`L-07_ECE-2107.md`](L-07_ECE-2107.md#L140-L160) (Slide 16)
+* **Dyn11 Vector Group**: [`L-11_ECE-2107.md`](L-11_ECE-2107.md#L295-L315) (Slide 29)
+* **Efficiency of Transformer**: [`L-08_ECE-2107.md`](L-08_ECE-2107.md#L75-L88) (Slide 8)
+* **EMF Equation of Transformer**: [`L-08_ECE-2107.md`](L-08_ECE-2107.md#L135-L160) (Slide 14)
+* **Equivalent Circuit (Induction Motor)**: [`L-03_ECE-2107.md`](L-03_ECE-2107.md#L135-L210) (Slides 13–20)
+* **Equivalent Circuit (Transformer)**: [`L-10_ECE-2107.md`](L-10_ECE-2107.md#L100-L160) (Slides 9–13)
+* **Faraday's Law of Induction**: [`L-01_ECE-2207.md`](L-01_ECE-2207.md#L80-L95) (Slide 9), [`L-08_ECE-2107.md`](L-08_ECE-2107.md)
+* **Fleming's Left-Hand & Right-Hand Rules**: [`L-01_ECE-2207.md`](L-01_ECE-2207.md#L97-L125) (Slides 10–11)
+* **Floating Neutral / Third Harmonics in Y-Y**: [`L-11_ECE-2107.md`](L-11_ECE-2107.md#L80-L105) (Slides 8–9)
+* **Flux Revolving Theory**: [`L-02_ECE-2207.md`](L-02_ECE-2207.md#L80-L95) (Slide 8)
+* **Induction Generator (Grid & Self-Excited)**: [`L-07_ECE-2107.md`](L-07_ECE-2107.md#L90-L125) (Slides 10–12)
+* **Leakage Reactance & Leakage Flux**: [`L-10_ECE-2107.md`](L-10_ECE-2107.md#L30-L85) (Slides 3–7)
+* **Maximum Starting Torque Condition ($R_2 = X_2$)**: [`L-04_ECE-2107.md`](L-04_ECE-2107.md#L70-L95) (Slide 6)
+* **Maximum Running Torque Condition ($s = R_2/X_2$)**: [`L-04_ECE-2107.md`](L-04_ECE-2107.md#L140-L175) (Slides 12–14)
+* **No-Load Phasor Diagram (Transformer)**: [`L-09_ECE-2107.md`](L-09_ECE-2107.md#L50-L95) (Slides 5–8)
+* **No-Load Test (Induction Motor)**: [`L-05_ECE-2107.md`](L-05_ECE-2107.md#L45-L105) (Slides 4–8)
+* **Open-Circuit (OC) Test (Transformer)**: [`L-10_ECE-2107.md`](L-10_ECE-2107.md#L201-L215) (Slide 17)
+* **Open-$\Delta$ (or V-V) Connection (57.7%)**: [`L-11_ECE-2107.md`](L-11_ECE-2107.md#L170-L210) (Slides 16–19)
+* **Open-Wye Open-Delta Connection**: [`L-11_ECE-2107.md`](L-11_ECE-2107.md#L215-L225) (Slide 20)
+* **Phasor Diagram with Winding Leakage**: [`L-10_ECE-2107.md`](L-10_ECE-2107.md#L165-L185) (Slides 14–15)
+* **Plugging of Induction Motor**: [`L-07_ECE-2107.md`](L-07_ECE-2107.md#L80-L90) (Slide 9)
+* **Power Flow & Division ($P_g : P_{cu} : P_{dev}$)**: [`L-06_ECE-2107.md`](L-06_ECE-2107.md#L40-L75) (Slides 4–5)
+* **Pull-Out / Breakdown Torque**: [`L-04_ECE-2107.md`](L-04_ECE-2107.md#L160-L190) (Slides 14–16)
+* **Rotor Rheostat Starter**: [`L-06_ECE-2107.md`](L-06_ECE-2107.md#L215-L235) (Slides 19–20)
+* **Rotating Magnetic Field (2-Phase & 3-Phase)**: [`L-02_ECE-2207.md`](L-02_ECE-2207.md#L90-L155) (Slides 9–14)
+* **Scott-T Connection (3-$\phi$ to 2-$\phi$)**: [`L-11_ECE-2107.md`](L-11_ECE-2107.md#L230-L260) (Slides 21–23)
+* **Short-Circuit (SC) Test (Transformer)**: [`L-10_ECE-2107.md`](L-10_ECE-2107.md#L217-L232) (Slide 18)
+* **Single-Phase Induction Motor**: [`L-07_ECE-2107.md`](L-07_ECE-2107.md#L135-L203) (Slides 15–21)
+* **Slip & Slip Speed**: [`L-03_ECE-2107.md`](L-03_ECE-2107.md#L60-L85) (Slides 6–7)
+* **Speed Control Methods (Induction Motor)**: [`L-07_ECE-2107.md`](L-07_ECE-2107.md#L30-L48) (Slides 3–5)
+* **Split-Phase Machine**: [`L-07_ECE-2107.md`](L-07_ECE-2107.md#L165-L185) (Slide 18)
+* **Star-Delta Starter**: [`L-06_ECE-2107.md`](L-06_ECE-2107.md#L198-L214) (Slide 18)
+* **Synchronous Speed ($N_s = 120f/P$)**: [`L-03_ECE-2107.md`](L-03_ECE-2107.md#L30-L45) (Slide 3)
+* **Synchronous Watt**: [`L-06_ECE-2107.md`](L-06_ECE-2107.md#L105-L120) (Slide 10)
+* **Three-Phase T-Connection**: [`L-11_ECE-2107.md`](L-11_ECE-2107.md#L260-L268) (Slide 24)
+* **Torque-Slip & Torque-Speed Curves**: [`L-04_ECE-2107.md`](L-04_ECE-2107.md#L170-L205) (Slides 15–17)
+* **Transient DC Input on Transformer**: [`L-08_ECE-2107.md`](L-08_ECE-2107.md#L90-L130) (Slides 9–12)
+* **Vector Groups (Clock Method)**: [`L-11_ECE-2107.md`](L-11_ECE-2107.md#L265-L315) (Slides 25–29)
+* **Voltage Regulation of Transformer**: [`L-10_ECE-2107.md`](L-10_ECE-2107.md#L185-L200) (Slide 16)
+* **Wye-Delta (Y-$\Delta$) Connection**: [`L-11_ECE-2107.md`](L-11_ECE-2107.md#L110-L132) (Slides 11–12)
+* **Wye-Wye (Y-Y) Connection**: [`L-11_ECE-2107.md`](L-11_ECE-2107.md#L70-L108) (Slides 7–10)

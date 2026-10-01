@@ -46,7 +46,7 @@ Two types: Potential Transformer (PT) for voltage measurement, Current Transform
 **Potential Transformer (PT):**
 A step-down transformer. Primary is connected to the high-voltage circuit. Secondary (usually rated 110V) is connected to the voltmeter or relay. The high-voltage side is insulated to withstand the line voltage. Actual voltage $= $ voltmeter reading $\times$ PT ratio. The secondary must never be short-circuited (unlike CT).
 
-![Potential Transformer (P.T.) connection across high-voltage AC line](../Books/diagrams/VK_Mehta_Fig_7_56.jpeg)
+![Potential Transformer (P.T.) connection across high-voltage AC line](../Books/VK_Mehta/diagrams/VK_Mehta_Fig_7_56.jpeg)
 
 ---
 
@@ -94,7 +94,7 @@ When a transformer is first energized, a large transient current called inrush c
 - Distribution transformer (consumer supply)
 - Instrument transformer (CT, PT for measurement)
 
-![Step-up and step-down transformer transmission and distribution](../Books/diagrams/Ch-32_p01_transformer.jpg)
+![Step-up and step-down transformer transmission and distribution](../Books/Theraja/Ch-32/diagrams/Ch-32_p01_transformer.jpg)
 
 ---
 

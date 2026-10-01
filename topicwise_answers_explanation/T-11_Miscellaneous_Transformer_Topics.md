@@ -35,9 +35,9 @@ $B_m = \Phi_m / A$ where $A$ is core area. Since $\Phi_m \propto V/f$:
 
 The transformer is designed to operate with $B_m$ just below saturation (~1.5 T for silicon steel). Operating it at overvoltage or underfrequency pushes it into saturation.
 
-![Transformer core B-H hysteresis loop and saturation curve](../Books/diagrams/VK_Mehta_Fig_7_56.jpeg)
+![Transformer core B-H hysteresis loop and saturation curve](../Books/VK_Mehta/diagrams/VK_Mehta_Fig_7_56.jpeg)
 
-![Cutaway physical construction view of transformer](../Books/diagrams/Ch-32_p01_transformer.jpg)
+![Cutaway physical construction view of transformer](../Books/Theraja/Ch-32/diagrams/Ch-32_p01_transformer.jpg)
 
 ---
 

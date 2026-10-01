@@ -28,7 +28,7 @@
 | Short-circuit current | Limited by leakage | Higher (less impedance) |
 | Application | Power transmission, isolation needed | Starters, lab variacs, close-ratio power |
 
-![Auto-transformer connections (Step-down and Step-up)](../Books/diagrams/Ch-32_p73_fig60.jpg)
+![Auto-transformer connections (Step-down and Step-up)](../Books/Theraja/Ch-32/diagrams/Ch-32_p73_fig60.jpg)
 
 ---
 
@@ -37,7 +37,7 @@
 
 **(b) Prove: copper saved in auto-transformer = $(1-k)$ times that in ordinary transformer. [04]**
 
-![Auto-transformer winding currents and copper distribution](../Books/diagrams/Ch-32_p74_fig61.jpg)
+![Auto-transformer winding currents and copper distribution](../Books/Theraja/Ch-32/diagrams/Ch-32_p74_fig61.jpg)
 
 For a two-winding transformer of rating $VA$, secondary voltage $V_2$, secondary current $I_2$:
 - Total copper used $\propto$ total conductor volume $\propto N_1 I_1 + N_2 I_2$

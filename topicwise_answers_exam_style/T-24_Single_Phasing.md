@@ -22,7 +22,7 @@
 
 1. **Unbalanced supply:** Only two phases now feed the stator. The magnetic field becomes pulsating and unbalanced instead of uniformly rotating.
 
-![3-Phase Supply Stator connection showing three phase winding supply](../Books/diagrams/Ch-34_p09_fig11.jpg)
+![3-Phase Supply Stator connection showing three phase winding supply](../Books/Theraja/Ch-34/diagrams/Ch-34_p09_fig11.jpg)
 
 2. **Higher current in remaining phases:** To maintain the same torque, current in the two active phases increases by 1.5–2 times normal. This causes overheating in the active stator windings.
 

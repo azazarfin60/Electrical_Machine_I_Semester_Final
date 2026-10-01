@@ -41,7 +41,7 @@ $$P_{out} = P_m - P_{friction+windage}$$
 
 **Summary ratios:** $P_g : P_{r,Cu} : P_m = 1 : s : (1-s)$
 
-![Comprehensive Power Flow diagram of an Induction Motor](../Books/diagrams/Ch-34_p39_fig38.jpg)
+![Comprehensive Power Flow diagram of an Induction Motor](../Books/Theraja/Ch-34/diagrams/Ch-34_p39_fig38.jpg)
 
 ---
 
@@ -159,7 +159,7 @@ $$P_m = P_g - P_{r,Cu} = P_g - sP_g = (1-s)P_g$$
 **Ratio:**
 $$P_m : P_{r,Cu} : P_g = (1-s)P_g : sP_g : P_g = \boxed{(1-s) : s : 1}$$
 
-![Power Stages block diagram of an Induction Motor](../Books/diagrams/Ch-34_p38_power_stages_block.jpg)
+![Power Stages block diagram of an Induction Motor](../Books/Theraja/Ch-34/diagrams/Ch-34_p38_power_stages_block.jpg)
 
 *(Proved)*
 

@@ -25,7 +25,7 @@ The secondary current $I_2$ lags behind $V_2$. When you multiply the current by 
 
 Net effect: Large voltage drop from $E_2$ to $V_2$. High VR%. The secondary voltage decreases significantly under load.
 
-![Transformer voltage regulation phasor diagram showing impedance triangle and projection on terminal voltage](../Books/diagrams/Ch-32_p26_fig35.jpg)
+![Transformer voltage regulation phasor diagram showing impedance triangle and projection on terminal voltage](../Books/Theraja/Ch-32/diagrams/Ch-32_p26_fig35.jpg)
 
 **Unity pf load:**
 
@@ -35,7 +35,7 @@ $I_2$ is in phase with $V_2$. Reactive drop is 90° ahead of $I_2$, which means 
 
 $I_2$ leads $V_2$. Now the reactive drop $jI_2 X_2$ is in a direction that actually adds voltage in phase with $E_2$. The secondary terminal voltage can actually be **higher** at full load than at no-load. VR% is negative. This is called voltage regulation improvement or boost.
 
-![Voltage regulation phasor diagram under leading power factor conditions](../Books/diagrams/Ch-32_p26_fig36.jpg)
+![Voltage regulation phasor diagram under leading power factor conditions](../Books/Theraja/Ch-32/diagrams/Ch-32_p26_fig36.jpg)
 
 Capacitor banks on transmission lines exploit this exact principle: capacitive loads raise the voltage profile along the line.
 

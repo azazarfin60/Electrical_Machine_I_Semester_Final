@@ -36,7 +36,7 @@ A transformer is a static electromagnetic device. It transfers electrical energy
 **Ideal Transformer Operating Principle:**
 An ideal transformer has no resistance, no leakage flux, and no core losses.
 
-![Ideal transformer core, windings, and no-load operation](../Books/diagrams/Ch-32_p07_fig13.jpg)
+![Ideal transformer core, windings, and no-load operation](../Books/Theraja/Ch-32/diagrams/Ch-32_p07_fig13.jpg)
 
 When AC voltage $v_1$ is applied to the primary ($N_1$ turns), an alternating current $i_0$ flows. This creates an alternating mutual flux $\Phi$ in the core.
 
@@ -64,7 +64,7 @@ $$\frac{I_1}{I_2} = \frac{V_2}{V_1} = \frac{N_2}{N_1}$$
 
 **Energy transfer mechanism:** AC voltage applied to the primary winding drives a current that creates an alternating magnetic flux in the iron core. By Faraday's Law, this alternating flux induces an EMF in the secondary winding. If a load is connected, current flows and energy is delivered to the load.
 
-![Principle of Transformer and mutual flux](../Books/diagrams/Ch-32_p02_principle.jpg)
+![Principle of Transformer and mutual flux](../Books/Theraja/Ch-32/diagrams/Ch-32_p02_principle.jpg)
 
 | Feature | Primary Winding | Secondary Winding |
 |:---|:---|:---|
@@ -124,7 +124,7 @@ $$\Phi_m = \frac{E_1}{4.44 f N_1} = \frac{3000}{4.44 \times 50 \times 500} = \fr
 
 **Schematic:**
 
-![Schematic representation of a 1-phase transformer connected to a sinusoidal source on primary and load on secondary with all labeled variables](../Books/diagrams/VK_Mehta_Fig_7_01.jpeg)
+![Schematic representation of a 1-phase transformer connected to a sinusoidal source on primary and load on secondary with all labeled variables](../Books/VK_Mehta/diagrams/VK_Mehta_Fig_7_01.jpeg)
 
 **Variable Identification:**
 
@@ -152,7 +152,7 @@ $$\Phi_m = \frac{E_1}{4.44 f N_1} = \frac{3000}{4.44 \times 50 \times 500} = \fr
 
 **Schematic:**
 
-![Schematic representation of a 1-phase transformer connected to a sinusoidal source on primary and load on secondary with all labeled variables](../Books/diagrams/VK_Mehta_Fig_7_01.jpeg)
+![Schematic representation of a 1-phase transformer connected to a sinusoidal source on primary and load on secondary with all labeled variables](../Books/VK_Mehta/diagrams/VK_Mehta_Fig_7_01.jpeg)
 
 **Primary side variables:**
 

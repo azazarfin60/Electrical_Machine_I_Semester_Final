@@ -16,7 +16,7 @@
 
 #### Q1(a): Transformer Energy Transfer and Winding Classification
 
-![Schematic diagram of single-phase transformer connected to sinusoidal source on primary and load on secondary with all labeled variables](../Books/diagrams/VK_Mehta_Fig_7_01.jpeg)
+![Schematic diagram of single-phase transformer connected to sinusoidal source on primary and load on secondary with all labeled variables](../Books/VK_Mehta/diagrams/VK_Mehta_Fig_7_01.jpeg)
 
 - **Definition**: A static electromagnetic device that transfers alternating electrical energy between two or more electrically isolated circuits through mutual magnetic flux linkage, at constant frequency.
 - **Energy Transfer Mechanism**: When primary voltage $v_1(t)$ is applied, it drives an alternating primary current that establishes an oscillating magnetic flux in the laminated iron core. By Faraday's Law of Induction, this core flux cuts the secondary winding, inducing secondary EMF $e_2(t)$. When an external load is connected, secondary current flows, delivering electrical power to the load across the magnetic medium without any conductive contact.
@@ -80,7 +80,7 @@ $$\Phi_m \approx \frac{V_1}{4.44 f N_1}$$
 
 #### Q2(b): Voltage Regulation for Lagging, Unity, and Leading Loads
 
-![Complete vector diagrams of transformer](../Books/diagrams/Ch-32_p21_fig29.jpg)
+![Complete vector diagrams of transformer](../Books/Theraja/Ch-32/diagrams/Ch-32_p21_fig29.jpg)
 
 $$\text{VR\%} \approx \frac{I_2 (R_{02}\cos\phi_2 \pm X_{02}\sin\phi_2)}{V_{2,\text{rated}}} \times 100\%$$
 
@@ -241,7 +241,7 @@ The Scott connection uses two single-phase transformers to interconnect 3-phase 
 
 #### Q5(b): Why Induction Motor is Called a Rotating Transformer
 
-![Induction motor as a generalized rotating transformer showing stator primary, air gap, and short-circuited rotor secondary](../Books/diagrams/Ch-34_p58_fig45.jpg)
+![Induction motor as a generalized rotating transformer showing stator primary, air gap, and short-circuited rotor secondary](../Books/Theraja/Ch-34/diagrams/Ch-34_p58_fig45.jpg)
 
 - **The Analogy**:
   - The stator acts as the transformer primary, receiving AC power from the grid.
@@ -271,7 +271,7 @@ The Scott connection uses two single-phase transformers to interconnect 3-phase 
 
 #### Q6(a): Circle Diagram Analysis (415V, 29.84 kW Delta IM)
 
-![Construction of Circle Diagram](../Books/diagrams/ch35_p06_fig35_09.jpg)
+![Construction of Circle Diagram](../Books/Theraja/Ch-35/diagrams/ch35_p06_fig35_09.jpg)
 
 #### Test Data Scaling:
 - **No-Load Test ($V_L = 415\text{ V}, I_0 = 21\text{ A}, W_0 = 1250\text{ W}$)**:

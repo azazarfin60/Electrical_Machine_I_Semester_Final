@@ -36,7 +36,7 @@ This test lets us measure the series parameters of the motor equivalent circuit 
 8. **Do not keep the test running for more than 30–60 seconds.** Rated current is flowing through windings with a stationary rotor: all power is being converted to heat. The windings will overheat quickly.
 9. Reduce variac to zero and disconnect supply.
 
-![Blocked rotor test circuit connection on 3-phase induction motor](../Books/diagrams/ch35_p06_fig35_09.jpg)
+![Blocked rotor test circuit connection on 3-phase induction motor](../Books/Theraja/Ch-35/diagrams/ch35_p06_fig35_09.jpg)
 
 #### Why low voltage means negligible core loss
 
@@ -78,7 +78,7 @@ Separate stator and rotor components:
    $$T_{start} \propto \frac{I_{start}^2 \cdot R_2'}{N_s}$$
 5. **Circle diagram construction:** The short-circuit current magnitude ($I_{sc,\text{full voltage}}$) and power factor ($\cos\phi_{sc}$) define the circle diagram's short-circuit point.
 
-![Induction motor circle diagram construction and torque line](../Books/diagrams/ch35_p08_fig35_11.jpg)
+![Induction motor circle diagram construction and torque line](../Books/Theraja/Ch-35/diagrams/ch35_p08_fig35_11.jpg)
 
 
 ---
