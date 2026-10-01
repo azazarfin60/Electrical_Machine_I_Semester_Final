@@ -15,7 +15,7 @@
 | **L-05** | Induction Motor | [`L-05_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-05_ECE-2107.md) | Parameter Determination & Tests | 15 | No-load test, Blocked-rotor test, DC stator test, loss separation, worked 40-hp problem |
 | **L-06** | Induction Motor | [`L-06_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-06_ECE-2107.md) | Power Flow & Starting Methods | 20 | Power stages ($P_g : P_{cu} : P_{dev} = 1 : s : 1-s$), synchronous watt, DOL, Auto-transformer, Star-Delta, Rotor rheostat |
 | **L-07** | Induction Motor | [`L-07_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-07_ECE-2107.md) | Speed Control, Braking, 1-$\phi$ IM & Circle Diagram | 24 | Speed control methods, dynamic/DC/capacitor braking, plugging, induction generator, 1-$\phi$ split-phase/capacitor motors, circle diagram |
-| **L-08** | Transformer | [`L-08_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-08_ECE-2107.md) | Fundamentals & Principle of Action | 14 | Transformer action, efficiency, DC transient behavior, AC sinusoidal derivation ($E = 4.44 f N \Phi_m$) *(Alias: `L-08_ECE-2207.md`)* |
+| **L-08** | Transformer | [`L-08_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-08_ECE-2107.md) | Fundamentals & Principle of Action | 14 | Transformer action, efficiency, DC transient behavior, AC sinusoidal derivation ($E = 4.44 f N \Phi_m$) |
 | **L-09** | Transformer | [`L-09_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-09_ECE-2107.md) | Construction & Phasor Diagrams | 13 | Core vs Shell type, no-load phasor ($I_0, I_\mu, I_w$), loaded phasor (unity, lagging, leading pf) |
 | **L-10** | Transformer | [`L-10_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-10_ECE-2107.md) | Equivalent Circuit, Regulation & Tests | 19 | Leakage reactance, impedance referring ($K^2$), exact/approximate circuits, voltage regulation, OC test, SC test |
 | **L-11** | Transformer | [`L-11_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-11_ECE-2107.md) | 3-$\phi$ Transformers, Scott-T & Vector Groups | 29 | 3-$\phi$ connections (Y-Y, Y-$\Delta$, $\Delta$-Y, $\Delta$-$\Delta$), 3rd harmonic issues, Open-$\Delta$ (57.7%), Scott-T 3-$\phi$ to 2-$\phi$, Vector groups (Dyn11) |
@@ -262,7 +262,7 @@
 ---
 
 ### [L-08] Transformer Fundamentals, Energy Transfer & Principles of Action
-* **Primary File**: [`L-08_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-08_ECE-2107.md) *(Duplicate Alias: `L-08_ECE-2207.md`)*
+* **Primary File**: [`L-08_ECE-2107.md`](file:///home/azaz/AntigravityxStudy/SemesterFinal_2_2/ECE_2207/SlidesByMaam/L-08_ECE-2107.md)
 * **Core Machine Family**: Transformers (Part 1)
 * **Total Slides**: 14
 * **Slide Breakdown**:

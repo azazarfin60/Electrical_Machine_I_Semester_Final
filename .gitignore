@@ -1,8 +1,6 @@
 # Obsidian Vault
-# Ignore high-churn UI/workspace state that changes on every document switch
-**/.obsidian/workspace.json
-**/.obsidian/workspace-mobile.json
-**/.obsidian/cache/
+# Ignore all .obsidian/ config dirs (workspace state, themes, cache — not content)
+**/.obsidian/
 .trash/
 
 # Digitizer Intermediate Page Renders & Manifests (from slide-digitizer / handnote-digitizer)
@@ -48,3 +46,17 @@ env/
 .gemini/
 scratch/
 writing_guideline.md
+AGENTS.md
+.agentsignore
+
+# LaTeX Build Artifacts (circuit diagram sources and intermediate outputs)
+**/*.aux
+**/*.log
+**/*.tex
+**/diagrams/*.pdf
+
+# Intermediate Diagram Render Artifacts
+**/*_raw-*.png
+
+# Copyrighted Source Textbook PDFs (never push to GitHub)
+Books/**/*.pdf
