@@ -1,3 +1,7 @@
+[← 2023 Answer](2023_answer.md) | [🏠 Index](README.md) | *(end)*
+
+---
+
 # ECE 2207: 2024 Semester Final: Exam Style Answers
 **RUET · ECE Dept · 2nd Year Even Semester (Session 2023-24)**
 **Course Code:** ECE 2207 | **Full Marks:** 60 | **Time:** 3 Hours
@@ -505,4 +509,7 @@ The rotor (squirrel-cage) follows this sweeping field from unshaded → shaded, 
 ---
 
 *Source:* [PrevYearQuestions/2024.md](../PrevYearQuestions/2024.md)
-*Writing guideline:* [writing_guideline.md](../.agents/rules/writing_style.md)
+
+---
+
+[← 2023 Answer](2023_answer.md) | [🏠 Index](README.md) | *(end)*

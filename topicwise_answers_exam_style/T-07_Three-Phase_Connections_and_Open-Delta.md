@@ -1,3 +1,7 @@
+[← T-06: OC/SC Tests & Efficiency](T-06_OC-SC_Tests_Efficiency_and_Losses.md) | [🏠 Index](README.md) | [T-08: Scott T-T Connection →](T-08_Scott_T-T_Connection.md)
+
+---
+
 # T-07: Three-Phase Connections & Open-Delta
 
 **ECE 2207 — Exam-Style Answers (Sorted by Topic)**
@@ -154,3 +158,6 @@ $$\frac{S_{\text{open}}}{S_{\text{closed}}} = \frac{\sqrt{3}S}{3S} = \frac{1}{\s
 
 **Utilization factor of each transformer** in open-Δ: The transformer is rated $S = VI$ kVA but works at power factor $\cos 30° = 0.866$, delivering only $0.866 S$ kW. So the utilization is 86.6% instead of 100%.
 
+---
+
+[← T-06: OC/SC Tests & Efficiency](T-06_OC-SC_Tests_Efficiency_and_Losses.md) | [🏠 Index](README.md) | [T-08: Scott T-T Connection →](T-08_Scott_T-T_Connection.md)

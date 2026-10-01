@@ -1,3 +1,7 @@
+[← T-20: Speed Control & Braking](T-20_Speed_Control_and_Braking.md) | [🏠 Index](README.md) | [T-22: 1-Phase IM Theory (DFRT) →](T-22_Single-Phase_IM_Theory_DFRT.md)
+
+---
+
 # T-21: Induction Generator
 
 **ECE 2207 — Exam-Style Answers (Sorted by Topic)**
@@ -50,3 +54,6 @@ $$N_{\text{rotor}} = N_s(1 - s_{\text{gen}}) = 1500(1 - (-0.02)) = 1500 \times 1
 
 The engine must drive the rotor at 1530 rpm to generate at 50 Hz.
 
+---
+
+[← T-20: Speed Control & Braking](T-20_Speed_Control_and_Braking.md) | [🏠 Index](README.md) | [T-22: 1-Phase IM Theory (DFRT) →](T-22_Single-Phase_IM_Theory_DFRT.md)

@@ -1,3 +1,7 @@
+[← T-16: Torque Equations & Curves](T-16_Torque_Equations_and_Characteristics.md) | [🏠 Index](README.md) | [T-18: Testing & Circle Diagram →](T-18_IM_Testing_and_Circle_Diagram.md)
+
+---
+
 # T-17: Power Flow & Rotor Power
 
 **ECE 2207 — Explanation Answers (Sorted by Topic)**
@@ -100,6 +104,6 @@ $$\frac{P_{Cu,\text{new}}}{P_{Cu,\text{old}}} = \frac{s_2}{s_1} = 1.2346$$
 
 **Why this matters:** A 10% voltage sag (common during grid disturbances) causes nearly 25% more copper losses. The motor overheats. Repeated voltage sags cause premature insulation failure. This is why voltage-sensitive motors (pumps, compressors) need to be protected with under-voltage relays.
 
-
 ---
 
+[← T-16: Torque Equations & Curves](T-16_Torque_Equations_and_Characteristics.md) | [🏠 Index](README.md) | [T-18: Testing & Circle Diagram →](T-18_IM_Testing_and_Circle_Diagram.md)

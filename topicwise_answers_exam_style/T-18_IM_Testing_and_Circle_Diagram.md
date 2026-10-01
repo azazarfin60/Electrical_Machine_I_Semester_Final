@@ -1,3 +1,7 @@
+[← T-17: Power Flow & Rotor Power](T-17_Power_Flow_and_Rotor_Power.md) | [🏠 Index](README.md) | [T-19: 3-Phase Starting Methods →](T-19_Starting_Methods_3-Phase_IM.md)
+
+---
+
 # T-18: IM Testing & Circle Diagram
 
 **ECE 2207 — Exam-Style Answers (Sorted by Topic)**
@@ -212,3 +216,6 @@ Measure stator resistance $R_1$ using a DC source. Then rotor resistance referre
 
 ![Complete Equivalent Circuit](diagrams/im_step5_exact_equivalent_circuit.png)
 
+---
+
+[← T-17: Power Flow & Rotor Power](T-17_Power_Flow_and_Rotor_Power.md) | [🏠 Index](README.md) | [T-19: 3-Phase Starting Methods →](T-19_Starting_Methods_3-Phase_IM.md)

@@ -1,3 +1,7 @@
+[← T-22: 1-Phase IM Theory (DFRT)](T-22_Single-Phase_IM_Theory_DFRT.md) | [🏠 Index](README.md) | [T-24: Single Phasing →](T-24_Single_Phasing.md)
+
+---
+
 # T-23: Single-Phase IM Starting Methods
 
 **ECE 2207 — Exam-Style Answers (Sorted by Topic)**
@@ -273,3 +277,4 @@ The rotor (squirrel-cage) follows this sweeping field from unshaded → shaded, 
 
 ---
 
+[← T-22: 1-Phase IM Theory (DFRT)](T-22_Single-Phase_IM_Theory_DFRT.md) | [🏠 Index](README.md) | [T-24: Single Phasing →](T-24_Single_Phasing.md)

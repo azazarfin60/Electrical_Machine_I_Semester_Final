@@ -1,3 +1,7 @@
+[← T-01: Fundamentals & EMF](T-01_Transformer_Fundamentals_and_EMF_Equation.md) | [🏠 Index](README.md) | [T-03: No-Load & Phasors →](T-03_No-Load_Operation_and_Phasor_Diagrams.md)
+
+---
+
 # T-02: Transformer Construction & Core
 
 **ECE 2207 — Exam-Style Answers (Sorted by Topic)**
@@ -68,3 +72,6 @@ Typical lamination thickness: 0.3–0.5 mm for power frequency (50/60 Hz) transf
 
 4. **Fault current limiting (beneficial):** Short circuit fault current is limited by $X_{01} = X_1 + X_2'$.
 
+---
+
+[← T-01: Fundamentals & EMF](T-01_Transformer_Fundamentals_and_EMF_Equation.md) | [🏠 Index](README.md) | [T-03: No-Load & Phasors →](T-03_No-Load_Operation_and_Phasor_Diagrams.md)

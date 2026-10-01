@@ -1,3 +1,7 @@
+[← T-18: Testing & Circle Diagram](T-18_IM_Testing_and_Circle_Diagram.md) | [🏠 Index](README.md) | [T-20: Speed Control & Braking →](T-20_Speed_Control_and_Braking.md)
+
+---
+
 # T-19: Starting Methods (3-Phase IM)
 
 **ECE 2207 — Explanation Answers (Sorted by Topic)**
@@ -100,3 +104,5 @@ $$x = \frac{1}{\sqrt{3}} = 0.57735 \approx \boxed{57.7\%}$$
 **Physical Conclusion:** A Star-Delta starter reduces voltage and line current by exactly the same amount as an auto-transformer starter set to a **57.7% voltage tapping ratio**.
 
 ---
+
+[← T-18: Testing & Circle Diagram](T-18_IM_Testing_and_Circle_Diagram.md) | [🏠 Index](README.md) | [T-20: Speed Control & Braking →](T-20_Speed_Control_and_Braking.md)

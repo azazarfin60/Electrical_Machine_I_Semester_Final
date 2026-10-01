@@ -1,3 +1,7 @@
+[← T-11: Misc Transformer Topics](T-11_Miscellaneous_Transformer_Topics.md) | [🏠 Index](README.md) | [T-13: Slip & Sync Speed →](T-13_Slip_Synchronous_Speed_and_Basics.md)
+
+---
+
 # T-12: Rotating Magnetic Field
 
 **ECE 2207 — Exam-Style Answers (Sorted by Topic)**
@@ -101,3 +105,6 @@ $$\frac{d\theta}{dt} = \omega = 2\pi f \implies N_s = \frac{120f}{P} \text{ rpm}
 
 **Conclusion:** Resultant flux = $1.5\Phi_m$ (constant magnitude), rotating at synchronous speed $N_s$. *(Proved)*
 
+---
+
+[← T-11: Misc Transformer Topics](T-11_Miscellaneous_Transformer_Topics.md) | [🏠 Index](README.md) | [T-13: Slip & Sync Speed →](T-13_Slip_Synchronous_Speed_and_Basics.md)

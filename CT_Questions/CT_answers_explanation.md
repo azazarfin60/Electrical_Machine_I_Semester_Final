@@ -1,3 +1,7 @@
+[← CT Exam Answers](CT_answers_exam_style.md) | [🏠 Index](README.md) | *(end)*
+
+---
+
 # ECE 2207: Electrical Machines I
 ## CT Questions: All Answers: Explained Style
 **Department:** ECE, RUET | **Session:** 2023-24
@@ -638,4 +642,7 @@ Note: $\theta_1 = \theta_2$ (primary and load power factor angles are equal for 
 ---
 
 *Source questions:* [CT_01.md](CT_01.md) · [CT_02.md](CT_02.md) · [CT_03.md](CT_03.md) · [CT_04.md](CT_04.md)
-*Writing guideline applied:* [../writing_guideline.md](../writing_guideline.md)
+
+---
+
+[← CT Exam Answers](CT_answers_exam_style.md) | [🏠 Index](README.md) | *(end)*

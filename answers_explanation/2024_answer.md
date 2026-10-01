@@ -1,3 +1,7 @@
+[← 2023 Answer](2023_answer.md) | [🏠 Index](README.md) | [2018–2024 Repeated Questions →](2018_2024_answer.md)
+
+---
+
 # ECE 2207: 2024 Semester Final: Explanation Style Answers
 **RUET · ECE Dept · 2nd Year Even Semester (Session 2023-24)**
 
@@ -493,4 +497,7 @@ The shaded-pole motor is the simplest, most rugged, and cheapest of all single-p
 ---
 
 *Source:* [PrevYearQuestions/2024.md](../PrevYearQuestions/2024.md)
-*Writing guideline:* [writing_guideline.md](../.agents/rules/writing_style.md)
+
+---
+
+[← 2023 Answer](2023_answer.md) | [🏠 Index](README.md) | [2018–2024 Repeated Questions →](2018_2024_answer.md)

@@ -1,3 +1,7 @@
+[← T-23: 1-Phase Starting Methods](T-23_Single-Phase_IM_Starting_Methods.md) | [🏠 Index](README.md) | [T-25: Misc Induction Motor Topics →](T-25_Miscellaneous_IM_Topics.md)
+
+---
+
 # T-24: Single Phasing
 
 **ECE 2207 — Explanation Answers (Sorted by Topic)**
@@ -73,3 +77,5 @@ Because standard three-phase thermal bimetallic overload relays may respond too 
 3. **Phase-failure monitoring in motor protection circuit breakers (MPCBs):** Modern MPCBs have differential trip mechanisms that accelerate tripping when phase currents are unbalanced.
 
 ---
+
+[← T-23: 1-Phase Starting Methods](T-23_Single-Phase_IM_Starting_Methods.md) | [🏠 Index](README.md) | [T-25: Misc Induction Motor Topics →](T-25_Miscellaneous_IM_Topics.md)

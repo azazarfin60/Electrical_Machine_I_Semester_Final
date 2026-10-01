@@ -1,3 +1,7 @@
+[← 2017 Answer](2017_answer.md) | [🏠 Index](README.md) | [2019 Answer →](2019_answer.md)
+
+---
+
 # ECE 2207: 2018 Semester Final: Exam Style Answers
 **RUET · ECE Dept · 2nd Year Odd Semester 2018**
 **Full Marks:** 72 · **Time:** 3 Hours · **Attempt any 6 (3 from each section)**
@@ -610,4 +614,7 @@ $$C = \frac{1}{2\pi f X_C} = \frac{1}{2\pi \times 50 \times 72.65} = \frac{1}{22
 ---
 
 *Source:* [PrevYearQuestions/2018.md](../PrevYearQuestions/2018.md)
-*Writing guideline:* [writing_guideline.md](../.agents/rules/writing_style.md)
+
+---
+
+[← 2017 Answer](2017_answer.md) | [🏠 Index](README.md) | [2019 Answer →](2019_answer.md)

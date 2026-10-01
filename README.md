@@ -68,6 +68,19 @@ The examiner recycles data. These **identical** problems appeared across papers:
 
 ## Repo Navigation
 
+### 🏆 Boss Notes — Your One-Stop Exam Prep
+
+> **This is what you should read.** Everything else in this repo is source material. The boss notes are the final, distilled output.
+
+**32 exam-optimized study notes** covering every topic in the syllabus — built from all the textbooks, slides, class notes, YouTube lectures, and 7 years of past papers. Each note has clear explanations, derivations, diagrams, and the most likely exam questions with solutions.
+
+| | |
+|:--|:--|
+| 📖 **[Boss Notes Index](boss_notes/00_Index.md)** | Full topic list with priority tags, study plans, and exam predictions |
+| 🌱 **[T-00: Start Here](boss_notes/T-00_Core_Fundamentals.md)** | Gentle warm-up on the fundamentals before diving into course topics |
+| 📋 **[Formula Sheet](boss_notes/99_Master_Formula_Sheet.md)** | Every formula in one page for last-minute revision |
+| 📂 **[boss_notes/](boss_notes/README.md)** | All 32 notes + diagrams |
+
 ### 📋 Indexes & Guides
 
 | File | What It Does |
@@ -80,21 +93,21 @@ The examiner recycles data. These **identical** problems appeared across papers:
 
 | Directory | Contents | Count |
 |:----------|:---------|:-----:|
-| [`Books/`](Books/) | Digitized textbooks — Theraja (Ch-32, 34, 35), Chapman (Ch-1, 2, 4, 7, 10), V.K. Mehta (Ch-7, 8, 9). Each has a topic index. | 20+ files |
-| [`SlidesByMaam/`](SlidesByMaam/) | Faculty lecture slides (L-01 to L-11) + [`map.md`](SlidesByMaam/map.md) with slide-by-slide breakdown | 11 lectures |
-| [`ClassNoteByRaidah/`](ClassNoteByRaidah/) | Digitized handwritten class notes showing teacher emphasis + [`00_Index_and_Topic_Map.md`](ClassNoteByRaidah/00_Index_and_Topic_Map.md) | 18 classes |
-| [`Ankit_Goyal_YT_Playlist/`](Ankit_Goyal_YT_Playlist/) | 85 YouTube lectures (GATE-style) with keyframes + [`yt_guide.md`](Ankit_Goyal_YT_Playlist/yt_guide.md) for topic lookup | 85 lectures |
+| [`Books/`](Books/README.md) | Digitized textbooks — Theraja (Ch-32, 34, 35), Chapman (Ch-1, 2, 4, 7, 10), V.K. Mehta (Ch-7, 8, 9). Each has a topic index. | 20+ files |
+| [`SlidesByMaam/`](SlidesByMaam/map.md) | Faculty lecture slides (L-01 to L-11) + [`map.md`](SlidesByMaam/map.md) with slide-by-slide breakdown | 11 lectures |
+| [`ClassNoteByRaidah/`](ClassNoteByRaidah/00_Index_and_Topic_Map.md) | Digitized handwritten class notes showing teacher emphasis + [`00_Index_and_Topic_Map.md`](ClassNoteByRaidah/00_Index_and_Topic_Map.md) | 18 classes |
+| [`Ankit_Goyal_YT_Playlist/`](Ankit_Goyal_YT_Playlist/yt_guide.md) | 85 YouTube lectures (GATE-style) with keyframes + [`yt_guide.md`](Ankit_Goyal_YT_Playlist/yt_guide.md) for topic lookup | 85 lectures |
 
 ### 📝 Exam Papers & Answers
 
 | Directory | Contents |
 |:----------|:---------|
-| [`PrevYearQuestions/`](PrevYearQuestions/) | 7 past papers (2017–2024, missing 2022) — verbatim question transcripts |
-| [`answers_exam_style/`](answers_exam_style/) | Year-wise model answers — exam-ready format (concise, step-by-step, mark-aligned) |
-| [`answers_explanation/`](answers_explanation/) | Year-wise detailed explanations — teaches the *why* behind every step |
-| [`topicwise_answers_exam_style/`](topicwise_answers_exam_style/) | 25 topic files (T-01 to T-25) — all past questions on a topic grouped with exam-style answers |
-| [`topicwise_answers_explanation/`](topicwise_answers_explanation/) | 25 topic files (T-01 to T-25) — same grouping but with deep explanations |
-| [`CT_Questions/`](CT_Questions/) | 4 class tests (CT-01 to CT-04) from Session 2023-24 with solutions |
+| [`PrevYearQuestions/`](PrevYearQuestions/README.md) | 7 past papers (2017–2024, missing 2022) — verbatim question transcripts |
+| [`answers_exam_style/`](answers_exam_style/README.md) | Year-wise model answers — exam-ready format (concise, step-by-step, mark-aligned) |
+| [`answers_explanation/`](answers_explanation/README.md) | Year-wise detailed explanations — teaches the *why* behind every step |
+| [`topicwise_answers_exam_style/`](topicwise_answers_exam_style/README.md) | 25 topic files (T-01 to T-25) — all past questions on a topic grouped with exam-style answers |
+| [`topicwise_answers_explanation/`](topicwise_answers_explanation/README.md) | 25 topic files (T-01 to T-25) — same grouping but with deep explanations |
+| [`CT_Questions/`](CT_Questions/README.md) | 4 class tests (CT-01 to CT-04) from Session 2023-24 with solutions |
 
 ### Quick Lookup — "Where Do I Find…?"
 

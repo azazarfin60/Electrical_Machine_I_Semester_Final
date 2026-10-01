@@ -1,3 +1,7 @@
+[← T-03: No-Load & Phasors](T-03_No-Load_Operation_and_Phasor_Diagrams.md) | [🏠 Index](README.md) | [T-05: Voltage Regulation →](T-05_Voltage_Regulation.md)
+
+---
+
 # T-04: Equivalent Circuit
 
 **ECE 2207 — Explanation Answers (Sorted by Topic)**
@@ -172,3 +176,5 @@ Referred back to secondary side:
 $$V_2 = \frac{V_2'}{a} = \frac{200}{0.5} = \boxed{400\text{ V}}$$
 
 ---
+
+[← T-03: No-Load & Phasors](T-03_No-Load_Operation_and_Phasor_Diagrams.md) | [🏠 Index](README.md) | [T-05: Voltage Regulation →](T-05_Voltage_Regulation.md)

@@ -1,3 +1,7 @@
+*(start)* | [🏠 Index](README.md) | [2018 Answer →](2018_answer.md)
+
+---
+
 # ECE 2207: 2017 Semester Final: Exam Style Answers
 **RUET · ECE Dept · 2nd Year Odd Semester 2017**
 **Full Marks:** 72 · **Time:** 3 Hours · **Attempt any 6 (3 from each section)**
@@ -497,4 +501,7 @@ $$V_{2,\text{actual}} = |V_2'| \times (N_2/N_1) = 200 \times 2 = 400 \text{ V}$$
 ---
 
 *Source:* [PrevYearQuestions/2017.md](../PrevYearQuestions/2017.md)
-*Writing guideline:* [writing_guideline.md](../.agents/rules/writing_style.md)
+
+---
+
+*(start)* | [🏠 Index](README.md) | [2018 Answer →](2018_answer.md)

@@ -1,3 +1,7 @@
+[← T-21: Induction Generator](T-21_Induction_Generator.md) | [🏠 Index](README.md) | [T-23: 1-Phase Starting Methods →](T-23_Single-Phase_IM_Starting_Methods.md)
+
+---
+
 # T-22: Single-Phase IM Theory (DFRT)
 
 **ECE 2207 — Explanation Answers (Sorted by Topic)**
@@ -89,3 +93,4 @@ At $s = 1$: these two are equal. At $s < 1$ (forward rotation): $T_f > T_b$ in t
 
 ---
 
+[← T-21: Induction Generator](T-21_Induction_Generator.md) | [🏠 Index](README.md) | [T-23: 1-Phase Starting Methods →](T-23_Single-Phase_IM_Starting_Methods.md)

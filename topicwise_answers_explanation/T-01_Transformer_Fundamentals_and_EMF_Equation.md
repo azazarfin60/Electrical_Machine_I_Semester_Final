@@ -1,3 +1,7 @@
+*(start)* | [🏠 Index](README.md) | [T-02: Construction & Core →](T-02_Transformer_Construction_and_Core.md)
+
+---
+
 # T-01: Transformer Fundamentals & EMF Equation
 
 **ECE 2207 — Explanation Answers (Sorted by Topic)**
@@ -152,6 +156,6 @@ For an ideal transformer: $V_1 I_1 = V_2 I_2$. Power in = Power out. The transfo
 
 ![Ideal transformer on load with primary and secondary currents and voltages](../Books/diagrams/VK_Mehta_Fig_7_01.jpeg)
 
-
 ---
 
+*(start)* | [🏠 Index](README.md) | [T-02: Construction & Core →](T-02_Transformer_Construction_and_Core.md)

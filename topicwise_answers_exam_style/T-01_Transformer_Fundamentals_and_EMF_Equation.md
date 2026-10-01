@@ -1,3 +1,7 @@
+*(start)* | [🏠 Index](README.md) | [T-02: Construction & Core →](T-02_Transformer_Construction_and_Core.md)
+
+---
+
 # T-01: Transformer Fundamentals & EMF Equation
 
 **ECE 2207 — Exam-Style Answers (Sorted by Topic)**
@@ -230,3 +234,6 @@ $$N_2 = \frac{E_2}{4.44 f \Phi_m} = \frac{400}{0.666} = \boxed{600 \text{ turns}
 
 **Check:** $N_1/N_2 = 9910/600 = 16.52 \approx 6600/400 = 16.5$ ✓
 
+---
+
+*(start)* | [🏠 Index](README.md) | [T-02: Construction & Core →](T-02_Transformer_Construction_and_Core.md)

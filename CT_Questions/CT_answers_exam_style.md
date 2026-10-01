@@ -1,3 +1,7 @@
+[← CT-04](CT_04.md) | [🏠 Index](README.md) | [CT Explanations →](CT_answers_explanation.md)
+
+---
+
 # ECE 2207: Electrical Machines I
 ## CT Questions: All Answers: Exam Style
 **Department:** ECE, RUET | **Session:** 2023-24
@@ -254,3 +258,7 @@ Angle between $\vec{V}_1$ and $\vec{I}_1$ equals $\theta_1 = \theta_2$. Same pf 
 ---
 
 *Source questions:* [CT_01.md](CT_01.md) · [CT_02.md](CT_02.md) · [CT_03.md](CT_03.md) · [CT_04.md](CT_04.md)
+
+---
+
+[← CT-04](CT_04.md) | [🏠 Index](README.md) | [CT Explanations →](CT_answers_explanation.md)

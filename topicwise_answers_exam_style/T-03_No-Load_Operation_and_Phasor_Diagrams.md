@@ -1,3 +1,7 @@
+[← T-02: Construction & Core](T-02_Transformer_Construction_and_Core.md) | [🏠 Index](README.md) | [T-04: Equivalent Circuit →](T-04_Equivalent_Circuit.md)
+
+---
+
 # T-03: No-Load Operation & Phasor Diagrams
 
 **ECE 2207 — Exam-Style Answers (Sorted by Topic)**
@@ -198,3 +202,6 @@ For R-L load: secondary current lags secondary voltage by $\theta_2 = \tan^{-1}(
 | $\vec{I}_2$ | $-90° - \theta_2$ |
 | $\vec{I}_1$ | $+90° - \theta_1$ |
 
+---
+
+[← T-02: Construction & Core](T-02_Transformer_Construction_and_Core.md) | [🏠 Index](README.md) | [T-04: Equivalent Circuit →](T-04_Equivalent_Circuit.md)

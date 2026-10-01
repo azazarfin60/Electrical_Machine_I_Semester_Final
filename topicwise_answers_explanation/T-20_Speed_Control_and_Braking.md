@@ -1,3 +1,7 @@
+[← T-19: 3-Phase Starting Methods](T-19_Starting_Methods_3-Phase_IM.md) | [🏠 Index](README.md) | [T-21: Induction Generator →](T-21_Induction_Generator.md)
+
+---
+
 # T-20: Speed Control & Braking
 
 **ECE 2207 — Explanation Answers (Sorted by Topic)**
@@ -104,3 +108,5 @@ $$R_{ext} = 0.90 - 0.30 = \boxed{0.60\,\Omega/\text{phase}}$$
 **Physical insight:** To reduce speed by a factor that triples the slip (from 4% to 12%) under constant load torque, the total rotor circuit resistance must also triple (from $0.30\,\Omega$ to $0.90\,\Omega$). An external rheostat of $0.60\,\Omega/\text{phase}$ must be added.
 
 ---
+
+[← T-19: 3-Phase Starting Methods](T-19_Starting_Methods_3-Phase_IM.md) | [🏠 Index](README.md) | [T-21: Induction Generator →](T-21_Induction_Generator.md)

@@ -1,3 +1,7 @@
+[← T-13: Slip & Sync Speed](T-13_Slip_Synchronous_Speed_and_Basics.md) | [🏠 Index](README.md) | [T-15: IM Equivalent Circuit →](T-15_IM_Equivalent_Circuit.md)
+
+---
+
 # T-14: IM as Rotating Transformer
 
 **ECE 2207 — Exam-Style Answers (Sorted by Topic)**
@@ -39,3 +43,6 @@ The IM is called a rotating transformer because power transfers from stator to r
 - Starting current is high (6–8 times rated)
 - Speed drops with load (not constant-speed like synchronous motor)
 
+---
+
+[← T-13: Slip & Sync Speed](T-13_Slip_Synchronous_Speed_and_Basics.md) | [🏠 Index](README.md) | [T-15: IM Equivalent Circuit →](T-15_IM_Equivalent_Circuit.md)

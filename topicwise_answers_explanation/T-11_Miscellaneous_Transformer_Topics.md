@@ -1,3 +1,7 @@
+[← T-10: Auto-Transformer](T-10_Auto-Transformer.md) | [🏠 Index](README.md) | [T-12: Rotating Magnetic Field →](T-12_Rotating_Magnetic_Field.md)
+
+---
+
 # T-11: Miscellaneous Transformer Topics
 
 **ECE 2207 — Explanation Answers (Sorted by Topic)**
@@ -37,3 +41,4 @@ The transformer is designed to operate with $B_m$ just below saturation (~1.5 T 
 
 ---
 
+[← T-10: Auto-Transformer](T-10_Auto-Transformer.md) | [🏠 Index](README.md) | [T-12: Rotating Magnetic Field →](T-12_Rotating_Magnetic_Field.md)

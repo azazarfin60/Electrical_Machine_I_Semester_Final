@@ -1,3 +1,7 @@
+[← T-24: Single Phasing](T-24_Single_Phasing.md) | [🏠 Index](README.md) | *(end)*
+
+---
+
 # T-25: Miscellaneous IM Topics
 
 **ECE 2207 — Explanation Answers (Sorted by Topic)**
@@ -69,3 +73,4 @@ The capacitor does not change the motor's internal operation: it still has the s
 
 ---
 
+[← T-24: Single Phasing](T-24_Single_Phasing.md) | [🏠 Index](README.md) | *(end)*

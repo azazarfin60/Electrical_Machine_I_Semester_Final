@@ -1,3 +1,7 @@
+[← T-15: IM Equivalent Circuit](T-15_IM_Equivalent_Circuit.md) | [🏠 Index](README.md) | [T-17: Power Flow & Rotor Power →](T-17_Power_Flow_and_Rotor_Power.md)
+
+---
+
 # T-16: Torque Equations & Characteristics
 
 **ECE 2207 — Exam-Style Answers (Sorted by Topic)**
@@ -400,3 +404,6 @@ From $s_{mT} = R_2/X_2$ and $T_{\max} = kE_2^2/(2X_2)$:
 
 **Practical use:** By selecting appropriate external resistance, the wound-rotor motor can develop maximum torque at any desired speed. This is used for step-speed control and smooth starting of heavy loads.
 
+---
+
+[← T-15: IM Equivalent Circuit](T-15_IM_Equivalent_Circuit.md) | [🏠 Index](README.md) | [T-17: Power Flow & Rotor Power →](T-17_Power_Flow_and_Rotor_Power.md)

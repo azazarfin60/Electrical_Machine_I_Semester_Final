@@ -1,3 +1,7 @@
+[← 2018 Answer](2018_answer.md) | [🏠 Index](README.md) | [2020 Answer →](2020_answer.md)
+
+---
+
 # ECE 2207: 2019 Semester Final: Exam Style Answers
 **RUET · ECE Dept · 2nd Year Odd Semester 2019**
 **Full Marks:** 72 · **Time:** 3 Hours · **Attempt any 6 (3 from each section)**
@@ -475,4 +479,7 @@ $$N_{mT} = 750(1 - 0.2) = \boxed{600 \text{ rpm}}$$
 ---
 
 *Source:* [PrevYearQuestions/2019.md](../PrevYearQuestions/2019.md)
-*Writing guideline:* [writing_guideline.md](../.agents/rules/writing_style.md)
+
+---
+
+[← 2018 Answer](2018_answer.md) | [🏠 Index](README.md) | [2020 Answer →](2020_answer.md)

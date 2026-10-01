@@ -1,3 +1,7 @@
+[← 2021 Answer](2021_answer.md) | [🏠 Index](README.md) | [2024 Answer →](2024_answer.md)
+
+---
+
 # ECE 2207: 2023 Semester Final: Explanation Style Answers
 **RUET · ECE Dept · 2nd Year Even Semester (Session 2022-23)**
 
@@ -453,4 +457,7 @@ $$\eta_{\text{rotor}} = \frac{(1-s) P_g}{P_g} = \boxed{1 - s}$$
 ---
 
 *Source:* [PrevYearQuestions/2023.md](../PrevYearQuestions/2023.md)
-*Writing guideline:* [writing_guideline.md](../.agents/rules/writing_style.md)
+
+---
+
+[← 2021 Answer](2021_answer.md) | [🏠 Index](README.md) | [2024 Answer →](2024_answer.md)

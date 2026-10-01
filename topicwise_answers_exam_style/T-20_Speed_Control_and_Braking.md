@@ -1,3 +1,7 @@
+[← T-19: 3-Phase Starting Methods](T-19_Starting_Methods_3-Phase_IM.md) | [🏠 Index](README.md) | [T-21: Induction Generator →](T-21_Induction_Generator.md)
+
+---
+
 # T-20: Speed Control & Braking
 
 **ECE 2207 — Exam-Style Answers (Sorted by Topic)**
@@ -123,3 +127,6 @@ $$R_{ext} = 0.90 - 0.30 = \boxed{0.60\,\Omega/\text{phase}}$$
 
 ## SECTION - B (Induction Motors: Q5 to Q8)
 
+---
+
+[← T-19: 3-Phase Starting Methods](T-19_Starting_Methods_3-Phase_IM.md) | [🏠 Index](README.md) | [T-21: Induction Generator →](T-21_Induction_Generator.md)

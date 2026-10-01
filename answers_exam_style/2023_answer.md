@@ -1,3 +1,7 @@
+[← 2021 Answer](2021_answer.md) | [🏠 Index](README.md) | [2024 Answer →](2024_answer.md)
+
+---
+
 # ECE 2207: 2023 Semester Final: Exam Style Answers
 **RUET · ECE Dept · 2nd Year Even Semester (Session 2022-23)**
 **Course Code:** ECE 2207 | **Full Marks:** 60 | **Time:** 3 Hours
@@ -464,4 +468,7 @@ The non-uniform, time-shifted flux produces a weak rotating effect across the po
 ---
 
 *Source:* [PrevYearQuestions/2023.md](../PrevYearQuestions/2023.md)
-*Writing guideline:* [writing_guideline.md](../.agents/rules/writing_style.md)
+
+---
+
+[← 2021 Answer](2021_answer.md) | [🏠 Index](README.md) | [2024 Answer →](2024_answer.md)

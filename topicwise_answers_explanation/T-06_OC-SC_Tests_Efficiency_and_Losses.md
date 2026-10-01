@@ -1,3 +1,7 @@
+[← T-05: Voltage Regulation](T-05_Voltage_Regulation.md) | [🏠 Index](README.md) | [T-07: 3-Phase & Open-Delta →](T-07_Three-Phase_Connections_and_Open-Delta.md)
+
+---
+
 # T-06: OC-SC Tests, Efficiency & Losses
 
 **ECE 2207 — Explanation Answers (Sorted by Topic)**
@@ -188,3 +192,4 @@ The key insight: **efficiency and VR are calculated analytically using the measu
 
 ---
 
+[← T-05: Voltage Regulation](T-05_Voltage_Regulation.md) | [🏠 Index](README.md) | [T-07: 3-Phase & Open-Delta →](T-07_Three-Phase_Connections_and_Open-Delta.md)

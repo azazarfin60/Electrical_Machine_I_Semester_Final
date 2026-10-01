@@ -1,3 +1,7 @@
+[← 2019 Answer](2019_answer.md) | [🏠 Index](README.md) | [2021 Answer →](2021_answer.md)
+
+---
+
 # ECE 2207: 2020 Semester Final: Explanation Style Answers
 **RUET · ECE Dept · 2nd Year Odd Semester 2020**
 
@@ -505,4 +509,7 @@ A **V-curve** plots stator armature current $I_a$ versus rotor field excitation 
 ---
 
 *Source:* [PrevYearQuestions/2020.md](../PrevYearQuestions/2020.md)
-*Writing guideline:* [writing_guideline.md](../.agents/rules/writing_style.md)
+
+---
+
+[← 2019 Answer](2019_answer.md) | [🏠 Index](README.md) | [2021 Answer →](2021_answer.md)

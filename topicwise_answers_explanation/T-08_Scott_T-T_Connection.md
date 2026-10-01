@@ -1,3 +1,7 @@
+[← T-07: 3-Phase & Open-Delta](T-07_Three-Phase_Connections_and_Open-Delta.md) | [🏠 Index](README.md) | [T-09: Vector Groups & Parallel →](T-09_Vector_Groups_and_Parallel_Operation.md)
+
+---
+
 # T-08: Scott (T-T) Connection
 
 **ECE 2207 — Explanation Answers (Sorted by Topic)**
@@ -105,3 +109,5 @@ $$\text{kVA}_{\text{teaser}} = V_{1,\text{teaser}} \times I_{1,\text{teaser}} = 
 **Conclusion:** Both transformers operate at identical apparent power ratings ($16.5\text{ kVA}$ each), perfectly sharing the total $33\text{ kVA}$ load.
 
 ---
+
+[← T-07: 3-Phase & Open-Delta](T-07_Three-Phase_Connections_and_Open-Delta.md) | [🏠 Index](README.md) | [T-09: Vector Groups & Parallel →](T-09_Vector_Groups_and_Parallel_Operation.md)

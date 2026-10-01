@@ -1,3 +1,7 @@
+[← T-23: 1-Phase Starting Methods](T-23_Single-Phase_IM_Starting_Methods.md) | [🏠 Index](README.md) | [T-25: Misc Induction Motor Topics →](T-25_Miscellaneous_IM_Topics.md)
+
+---
+
 # T-24: Single Phasing
 
 **ECE 2207 — Exam-Style Answers (Sorted by Topic)**
@@ -30,3 +34,6 @@
 
 **Protection:** Use negative-sequence relays or single-phase preventers to detect and trip on single phasing.
 
+---
+
+[← T-23: 1-Phase Starting Methods](T-23_Single-Phase_IM_Starting_Methods.md) | [🏠 Index](README.md) | [T-25: Misc Induction Motor Topics →](T-25_Miscellaneous_IM_Topics.md)

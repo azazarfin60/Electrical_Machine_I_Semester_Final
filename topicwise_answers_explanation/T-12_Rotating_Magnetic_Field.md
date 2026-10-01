@@ -1,3 +1,7 @@
+[← T-11: Misc Transformer Topics](T-11_Miscellaneous_Transformer_Topics.md) | [🏠 Index](README.md) | [T-13: Slip & Sync Speed →](T-13_Slip_Synchronous_Speed_and_Basics.md)
+
+---
+
 # T-12: Rotating Magnetic Field
 
 **ECE 2207 — Explanation Answers (Sorted by Topic)**
@@ -60,3 +64,4 @@ Verify: At $\omega t = 90°$: $\Phi_R = \Phi_m$, $\Phi_Y = -\Phi_m/2$, $\Phi_B =
 
 ---
 
+[← T-11: Misc Transformer Topics](T-11_Miscellaneous_Transformer_Topics.md) | [🏠 Index](README.md) | [T-13: Slip & Sync Speed →](T-13_Slip_Synchronous_Speed_and_Basics.md)

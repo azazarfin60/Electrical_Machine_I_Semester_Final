@@ -1,3 +1,7 @@
+[← 2018 Answer](2018_answer.md) | [🏠 Index](README.md) | [2020 Answer →](2020_answer.md)
+
+---
+
 # ECE 2207: 2019 Semester Final: Explanation Style Answers
 **RUET · ECE Dept · 2nd Year Odd Semester 2019**
 
@@ -389,4 +393,7 @@ $$\frac{T_{\max}}{T_{FL}} = \frac{1}{0.1980} = \mathbf{5.05}$$
 ---
 
 *Source:* [PrevYearQuestions/2019.md](../PrevYearQuestions/2019.md)
-*Writing guideline:* [writing_guideline.md](../.agents/rules/writing_style.md)
+
+---
+
+[← 2018 Answer](2018_answer.md) | [🏠 Index](README.md) | [2020 Answer →](2020_answer.md)

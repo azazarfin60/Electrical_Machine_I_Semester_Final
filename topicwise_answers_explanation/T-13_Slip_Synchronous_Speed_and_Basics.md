@@ -1,3 +1,7 @@
+[← T-12: Rotating Magnetic Field](T-12_Rotating_Magnetic_Field.md) | [🏠 Index](README.md) | [T-14: IM as Rotating Transformer →](T-14_IM_as_Rotating_Transformer.md)
+
+---
+
 # T-13: Slip, Synchronous Speed & Basics
 
 **ECE 2207 — Explanation Answers (Sorted by Topic)**
@@ -52,6 +56,6 @@ In practice, an induction motor under load runs at 940–980 rpm (for a 1000 rpm
 
 **The negative slip case:** If an external engine drives the rotor above 1000 rpm, slip becomes negative, the machine acts as an induction generator and feeds power back to the grid. This is used in wind turbines.
 
-
 ---
 
+[← T-12: Rotating Magnetic Field](T-12_Rotating_Magnetic_Field.md) | [🏠 Index](README.md) | [T-14: IM as Rotating Transformer →](T-14_IM_as_Rotating_Transformer.md)

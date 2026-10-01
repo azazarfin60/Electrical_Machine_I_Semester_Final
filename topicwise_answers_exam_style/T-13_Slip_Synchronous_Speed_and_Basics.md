@@ -1,3 +1,7 @@
+[← T-12: Rotating Magnetic Field](T-12_Rotating_Magnetic_Field.md) | [🏠 Index](README.md) | [T-14: IM as Rotating Transformer →](T-14_IM_as_Rotating_Transformer.md)
+
+---
+
 # T-13: Slip, Synchronous Speed & Basics
 
 **ECE 2207 — Exam-Style Answers (Sorted by Topic)**
@@ -78,3 +82,6 @@ This is the speed at which the rotor bars cut the rotating field, determining th
 
 ![Induction motor working principle showing stator RMF cutting rotor conductors](../ClassNoteByRaidah/diagrams/class05_fig01_im_working_principle.jpg)
 
+---
+
+[← T-12: Rotating Magnetic Field](T-12_Rotating_Magnetic_Field.md) | [🏠 Index](README.md) | [T-14: IM as Rotating Transformer →](T-14_IM_as_Rotating_Transformer.md)

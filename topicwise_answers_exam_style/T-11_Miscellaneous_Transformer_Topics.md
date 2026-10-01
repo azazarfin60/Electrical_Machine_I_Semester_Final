@@ -1,3 +1,7 @@
+[← T-10: Auto-Transformer](T-10_Auto-Transformer.md) | [🏠 Index](README.md) | [T-12: Rotating Magnetic Field →](T-12_Rotating_Magnetic_Field.md)
+
+---
+
 # T-11: Miscellaneous Transformer Topics
 
 **ECE 2207 — Exam-Style Answers (Sorted by Topic)**
@@ -118,3 +122,6 @@ Transformer losses are:
 
 The total loss, and hence temperature rise and efficiency, depend on voltage and current: not on the power factor of the load. Since different loads connected to the same transformer have different power factors, the transformer can handle a given $V \times I$ product regardless of whether the load is resistive, inductive, or capacitive. So its rating is expressed in volt-amperes (VA or kVA), not in watts (kW).
 
+---
+
+[← T-10: Auto-Transformer](T-10_Auto-Transformer.md) | [🏠 Index](README.md) | [T-12: Rotating Magnetic Field →](T-12_Rotating_Magnetic_Field.md)

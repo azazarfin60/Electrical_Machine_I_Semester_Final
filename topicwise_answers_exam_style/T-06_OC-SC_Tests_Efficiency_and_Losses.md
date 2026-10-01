@@ -1,3 +1,7 @@
+[← T-05: Voltage Regulation](T-05_Voltage_Regulation.md) | [🏠 Index](README.md) | [T-07: 3-Phase & Open-Delta →](T-07_Three-Phase_Connections_and_Open-Delta.md)
+
+---
+
 # T-06: OC-SC Tests, Efficiency & Losses
 
 **ECE 2207 — Exam-Style Answers (Sorted by Topic)**
@@ -543,3 +547,6 @@ $$= \frac{10(3.0 \times 0.8 + 5.196 \times 0.6)}{2000} \times 100 = \frac{10(2.4
 
 $$= \frac{10 \times 5.518}{2000} \times 100 = \frac{55.18}{2000} \times 100 = \boxed{2.76\%}$$
 
+---
+
+[← T-05: Voltage Regulation](T-05_Voltage_Regulation.md) | [🏠 Index](README.md) | [T-07: 3-Phase & Open-Delta →](T-07_Three-Phase_Connections_and_Open-Delta.md)

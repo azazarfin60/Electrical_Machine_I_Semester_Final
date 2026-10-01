@@ -1,3 +1,7 @@
+[← T-07: 3-Phase & Open-Delta](T-07_Three-Phase_Connections_and_Open-Delta.md) | [🏠 Index](README.md) | [T-09: Vector Groups & Parallel →](T-09_Vector_Groups_and_Parallel_Operation.md)
+
+---
+
 # T-08: Scott (T-T) Connection
 
 **ECE 2207 — Exam-Style Answers (Sorted by Topic)**
@@ -76,3 +80,6 @@ Yes. This is done using the **Scott (T-T) connection**.
 
 **Reverse (2-phase to 3-phase):** Connect the two-phase supply to the secondaries and the 3-phase supply comes from the primaries: the same transformation works in reverse because transformers are reciprocal devices.
 
+---
+
+[← T-07: 3-Phase & Open-Delta](T-07_Three-Phase_Connections_and_Open-Delta.md) | [🏠 Index](README.md) | [T-09: Vector Groups & Parallel →](T-09_Vector_Groups_and_Parallel_Operation.md)

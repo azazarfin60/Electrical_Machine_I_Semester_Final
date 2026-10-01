@@ -1,3 +1,7 @@
+[← T-04: Equivalent Circuit](T-04_Equivalent_Circuit.md) | [🏠 Index](README.md) | [T-06: OC/SC Tests & Efficiency →](T-06_OC-SC_Tests_Efficiency_and_Losses.md)
+
+---
+
 # T-05: Voltage Regulation
 
 **ECE 2207 — Exam-Style Answers (Sorted by Topic)**
@@ -67,3 +71,6 @@ $$= \frac{15.15(6.336 + 18.93)}{3300} \times 100 = \frac{15.15 \times 25.266}{33
 
 $$= \frac{382.78}{3300} \times 100 = \boxed{11.6\%}$$
 
+---
+
+[← T-04: Equivalent Circuit](T-04_Equivalent_Circuit.md) | [🏠 Index](README.md) | [T-06: OC/SC Tests & Efficiency →](T-06_OC-SC_Tests_Efficiency_and_Losses.md)

@@ -1,3 +1,7 @@
+[← 2020 Answer](2020_answer.md) | [🏠 Index](README.md) | [2023 Answer →](2023_answer.md)
+
+---
+
 # ECE 2207: 2021 Semester Final: Explanation Style Answers
 **RUET · ECE Dept · 2nd Year Odd Semester 2021**
 
@@ -416,4 +420,7 @@ As the mechanical load on an induction motor varies from no-load to standstill, 
 ---
 
 *Source:* [PrevYearQuestions/2021.md](../PrevYearQuestions/2021.md)
-*Writing guideline:* [writing_guideline.md](../.agents/rules/writing_style.md)
+
+---
+
+[← 2020 Answer](2020_answer.md) | [🏠 Index](README.md) | [2023 Answer →](2023_answer.md)

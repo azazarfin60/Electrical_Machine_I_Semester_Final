@@ -1,3 +1,7 @@
+[← T-04: Equivalent Circuit](T-04_Equivalent_Circuit.md) | [🏠 Index](README.md) | [T-06: OC/SC Tests & Efficiency →](T-06_OC-SC_Tests_Efficiency_and_Losses.md)
+
+---
+
 # T-05: Voltage Regulation
 
 **ECE 2207 — Explanation Answers (Sorted by Topic)**
@@ -37,3 +41,4 @@ Capacitor banks on transmission lines exploit this exact principle: capacitive l
 
 ---
 
+[← T-04: Equivalent Circuit](T-04_Equivalent_Circuit.md) | [🏠 Index](README.md) | [T-06: OC/SC Tests & Efficiency →](T-06_OC-SC_Tests_Efficiency_and_Losses.md)

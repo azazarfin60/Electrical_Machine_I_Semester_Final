@@ -1,3 +1,7 @@
+[← T-18: Testing & Circle Diagram](T-18_IM_Testing_and_Circle_Diagram.md) | [🏠 Index](README.md) | [T-20: Speed Control & Braking →](T-20_Speed_Control_and_Braking.md)
+
+---
+
 # T-19: Starting Methods (3-Phase IM)
 
 **ECE 2207 — Exam-Style Answers (Sorted by Topic)**
@@ -67,3 +71,6 @@ $$\boxed{\text{Star-delta starter} \equiv \text{Auto-transformer starter with ra
 
 *(Proved)*
 
+---
+
+[← T-18: Testing & Circle Diagram](T-18_IM_Testing_and_Circle_Diagram.md) | [🏠 Index](README.md) | [T-20: Speed Control & Braking →](T-20_Speed_Control_and_Braking.md)

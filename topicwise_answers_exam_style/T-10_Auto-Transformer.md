@@ -1,3 +1,7 @@
+[← T-09: Vector Groups & Parallel](T-09_Vector_Groups_and_Parallel_Operation.md) | [🏠 Index](README.md) | [T-11: Misc Transformer Topics →](T-11_Miscellaneous_Transformer_Topics.md)
+
+---
+
 # T-10: Auto-Transformer
 
 **ECE 2207 — Exam-Style Answers (Sorted by Topic)**
@@ -74,3 +78,6 @@ Or equivalently: copper in auto-transformer is $(1-k)$ fraction of ordinary tran
 5. **Voltage stabilizers:** Automatic voltage regulators for small consumers.
 6. **Fluorescent lamp ballasts and dimmers:** Voltage adjustment.
 
+---
+
+[← T-09: Vector Groups & Parallel](T-09_Vector_Groups_and_Parallel_Operation.md) | [🏠 Index](README.md) | [T-11: Misc Transformer Topics →](T-11_Miscellaneous_Transformer_Topics.md)

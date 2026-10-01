@@ -1,3 +1,7 @@
+[← T-06: OC/SC Tests & Efficiency](T-06_OC-SC_Tests_Efficiency_and_Losses.md) | [🏠 Index](README.md) | [T-08: Scott T-T Connection →](T-08_Scott_T-T_Connection.md)
+
+---
+
 # T-07: Three-Phase Connections & Open-Delta
 
 **ECE 2207 — Explanation Answers (Sorted by Topic)**
@@ -101,3 +105,4 @@ The phase-to-neutral voltage (line-to-neutral voltage) contains third harmonic c
 
 ---
 
+[← T-06: OC/SC Tests & Efficiency](T-06_OC-SC_Tests_Efficiency_and_Losses.md) | [🏠 Index](README.md) | [T-08: Scott T-T Connection →](T-08_Scott_T-T_Connection.md)

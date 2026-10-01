@@ -1,3 +1,7 @@
+[← T-08: Scott T-T Connection](T-08_Scott_T-T_Connection.md) | [🏠 Index](README.md) | [T-10: Auto-Transformer →](T-10_Auto-Transformer.md)
+
+---
+
 # T-09: Vector Groups & Parallel Operation
 
 **ECE 2207 — Explanation Answers (Sorted by Topic)**
@@ -119,3 +123,5 @@ Because the loop impedance is only the internal winding leakage impedances ($Z_A
 This is equivalent to a severe symmetrical short circuit. Therefore, **direct parallel operation is impossible**.
 
 ---
+
+[← T-08: Scott T-T Connection](T-08_Scott_T-T_Connection.md) | [🏠 Index](README.md) | [T-10: Auto-Transformer →](T-10_Auto-Transformer.md)

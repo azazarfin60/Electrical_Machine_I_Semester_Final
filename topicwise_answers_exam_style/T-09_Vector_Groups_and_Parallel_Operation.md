@@ -1,3 +1,7 @@
+[← T-08: Scott T-T Connection](T-08_Scott_T-T_Connection.md) | [🏠 Index](README.md) | [T-10: Auto-Transformer →](T-10_Auto-Transformer.md)
+
+---
+
 # T-09: Vector Groups & Parallel Operation
 
 **ECE 2207 — Exam-Style Answers (Sorted by Topic)**
@@ -70,3 +74,6 @@ Two transformers can only be paralleled if their secondary voltages are exactly 
 
 In clock notation: 12 = 0°, 1 = 30°, 5 = 150°. So Dyn5 means the secondary star voltage phasor points to "5 o'clock" relative to the primary delta voltage phasor at "12 o'clock."
 
+---
+
+[← T-08: Scott T-T Connection](T-08_Scott_T-T_Connection.md) | [🏠 Index](README.md) | [T-10: Auto-Transformer →](T-10_Auto-Transformer.md)

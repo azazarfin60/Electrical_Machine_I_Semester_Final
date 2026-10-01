@@ -1,3 +1,7 @@
+[← T-22: 1-Phase IM Theory (DFRT)](T-22_Single-Phase_IM_Theory_DFRT.md) | [🏠 Index](README.md) | [T-24: Single Phasing →](T-24_Single_Phasing.md)
+
+---
+
 # T-23: Single-Phase IM Starting Methods
 
 **ECE 2207 — Explanation Answers (Sorted by Topic)**
@@ -147,3 +151,5 @@ $$X_C = 11.55 + 3.5 = 15.05\,\Omega$$
 $$C = \frac{1}{2\pi f X_C} = \frac{1}{2\pi \times 50 \times 15.05} = \frac{1}{4728} \approx 2.115 \times 10^{-4}\text{ F} = \boxed{211.5\,\mu\text{F}}$$
 
 ---
+
+[← T-22: 1-Phase IM Theory (DFRT)](T-22_Single-Phase_IM_Theory_DFRT.md) | [🏠 Index](README.md) | [T-24: Single Phasing →](T-24_Single_Phasing.md)

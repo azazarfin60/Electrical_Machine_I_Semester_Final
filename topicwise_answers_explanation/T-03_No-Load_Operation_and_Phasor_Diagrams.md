@@ -1,3 +1,7 @@
+[← T-02: Construction & Core](T-02_Transformer_Construction_and_Core.md) | [🏠 Index](README.md) | [T-04: Equivalent Circuit →](T-04_Equivalent_Circuit.md)
+
+---
+
 # T-03: No-Load Operation & Phasor Diagrams
 
 **ECE 2207 — Explanation Answers (Sorted by Topic)**
@@ -138,4 +142,4 @@ For an inductive load with lagging power factor $\cos\phi_2$, the secondary curr
 
 ---
 
-
+[← T-02: Construction & Core](T-02_Transformer_Construction_and_Core.md) | [🏠 Index](README.md) | [T-04: Equivalent Circuit →](T-04_Equivalent_Circuit.md)

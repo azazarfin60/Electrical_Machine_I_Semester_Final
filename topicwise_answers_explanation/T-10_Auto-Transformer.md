@@ -1,3 +1,7 @@
+[← T-09: Vector Groups & Parallel](T-09_Vector_Groups_and_Parallel_Operation.md) | [🏠 Index](README.md) | [T-11: Misc Transformer Topics →](T-11_Miscellaneous_Transformer_Topics.md)
+
+---
+
 # T-10: Auto-Transformer
 
 **ECE 2207 — Explanation Answers (Sorted by Topic)**
@@ -42,3 +46,6 @@ $$\frac{W_{auto}}{W_{ordinary}} = 1-k, \quad \text{Copper saved} = kS \times (\t
 
 ## Induction Motor Topics
 
+---
+
+[← T-09: Vector Groups & Parallel](T-09_Vector_Groups_and_Parallel_Operation.md) | [🏠 Index](README.md) | [T-11: Misc Transformer Topics →](T-11_Miscellaneous_Transformer_Topics.md)

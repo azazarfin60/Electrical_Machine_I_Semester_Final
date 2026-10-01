@@ -1,3 +1,7 @@
+*(start)* | [🏠 Index](README.md) | [2018 Answer →](2018_answer.md)
+
+---
+
 # ECE 2207: 2017 Semester Final: Explanation Style Answers
 **RUET · ECE Dept · 2nd Year Odd Semester 2017**
 
@@ -399,4 +403,7 @@ $$\frac{\Phi_{m,50}}{\Phi_{m,60}} = \frac{60}{50} = \mathbf{1.20}$$
 ---
 
 *Source:* [PrevYearQuestions/2017.md](../PrevYearQuestions/2017.md)
-*Writing guideline:* [writing_guideline.md](../.agents/rules/writing_style.md)
+
+---
+
+*(start)* | [🏠 Index](README.md) | [2018 Answer →](2018_answer.md)

@@ -1,3 +1,7 @@
+[← T-03: No-Load & Phasors](T-03_No-Load_Operation_and_Phasor_Diagrams.md) | [🏠 Index](README.md) | [T-05: Voltage Regulation →](T-05_Voltage_Regulation.md)
+
+---
+
 # T-04: Equivalent Circuit
 
 **ECE 2207 — Exam-Style Answers (Sorted by Topic)**
@@ -141,3 +145,6 @@ Shunt branch: $R_c \| jX_m$ (at primary terminals: approximate circuit).
 
 In the approximate equivalent circuit, the shunt branch is moved to the primary input terminals (before $R_1$, $X_1$). This simplifies calculation without significant error for most power transformers.
 
+---
+
+[← T-03: No-Load & Phasors](T-03_No-Load_Operation_and_Phasor_Diagrams.md) | [🏠 Index](README.md) | [T-05: Voltage Regulation →](T-05_Voltage_Regulation.md)

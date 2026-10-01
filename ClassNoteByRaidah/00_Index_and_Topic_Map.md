@@ -17,7 +17,7 @@ total_extracted_diagrams: 35
 > **Class Notes Author**: Raidah (Roll: 2310035)  
 > **Semester**: 2-2 Semester Final Preparation  
 > **Source Documents**: `Machine Classnote - 2310035.pdf` (32 scans / 61 notebook pages)  
-> **Slide Repository**: [`../SlidesByMaam/`](../SlidesByMaam/)
+> **Slide Repository**: [`../SlidesByMaam/`](../SlidesByMaam/map.md)
 
 ---
 

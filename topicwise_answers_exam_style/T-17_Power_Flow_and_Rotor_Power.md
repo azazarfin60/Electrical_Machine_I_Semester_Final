@@ -1,3 +1,7 @@
+[← T-16: Torque Equations & Curves](T-16_Torque_Equations_and_Characteristics.md) | [🏠 Index](README.md) | [T-18: Testing & Circle Diagram →](T-18_IM_Testing_and_Circle_Diagram.md)
+
+---
+
 # T-17: Power Flow & Rotor Power
 
 **ECE 2207 — Exam-Style Answers (Sorted by Topic)**
@@ -159,3 +163,6 @@ $$P_m : P_{r,Cu} : P_g = (1-s)P_g : sP_g : P_g = \boxed{(1-s) : s : 1}$$
 
 *(Proved)*
 
+---
+
+[← T-16: Torque Equations & Curves](T-16_Torque_Equations_and_Characteristics.md) | [🏠 Index](README.md) | [T-18: Testing & Circle Diagram →](T-18_IM_Testing_and_Circle_Diagram.md)

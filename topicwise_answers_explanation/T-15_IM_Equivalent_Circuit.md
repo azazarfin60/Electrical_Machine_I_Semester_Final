@@ -1,3 +1,7 @@
+[← T-14: IM as Rotating Transformer](T-14_IM_as_Rotating_Transformer.md) | [🏠 Index](README.md) | [T-16: Torque Equations & Curves →](T-16_Torque_Equations_and_Characteristics.md)
+
+---
+
 # T-15: IM Equivalent Circuit
 
 **ECE 2207 — Explanation Answers (Sorted by Topic)**
@@ -103,3 +107,5 @@ Under normal load conditions, the stator impedance drop $I_1(R_1 + jX_1)$ is neg
 This complete per-phase model enables exact calculation of stator current, power factor, electromagnetic torque, developed power, and efficiency across the entire speed range.
 
 ---
+
+[← T-14: IM as Rotating Transformer](T-14_IM_as_Rotating_Transformer.md) | [🏠 Index](README.md) | [T-16: Torque Equations & Curves →](T-16_Torque_Equations_and_Characteristics.md)

@@ -1,3 +1,7 @@
+[← 2019 Answer](2019_answer.md) | [🏠 Index](README.md) | [2021 Answer →](2021_answer.md)
+
+---
+
 # ECE 2207: 2020 Semester Final: Exam Style Answers
 **RUET · ECE Dept · 2nd Year Odd Semester 2020**
 **Full Marks:** 72 · **Time:** 3 Hours · **Attempt any 6 (3 from each section)**
@@ -585,4 +589,7 @@ A V-curve shows the relationship between armature current $I_a$ and field curren
 ---
 
 *Source:* [PrevYearQuestions/2020.md](../PrevYearQuestions/2020.md)
-*Writing guideline:* [writing_guideline.md](../.agents/rules/writing_style.md)
+
+---
+
+[← 2019 Answer](2019_answer.md) | [🏠 Index](README.md) | [2021 Answer →](2021_answer.md)

@@ -1,3 +1,7 @@
+[← T-24: Single Phasing](T-24_Single_Phasing.md) | [🏠 Index](README.md) | *(end)*
+
+---
+
 # T-25: Miscellaneous IM Topics
 
 **ECE 2207 — Exam-Style Answers (Sorted by Topic)**
@@ -103,3 +107,6 @@ At light load, the motor draws mostly magnetizing current (reactive). The workin
 4. **Synchronous condenser:** A synchronous motor running at no-load (overexcited) supplies reactive power to the system.
 5. **Variable frequency drive (VFD):** Reduces voltage at light load, which reduces flux and reduces magnetizing current. Improves efficiency and pf at light loads.
 
+---
+
+[← T-24: Single Phasing](T-24_Single_Phasing.md) | [🏠 Index](README.md) | *(end)*

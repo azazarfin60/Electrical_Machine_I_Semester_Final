@@ -1,3 +1,7 @@
+[← T-21: Induction Generator](T-21_Induction_Generator.md) | [🏠 Index](README.md) | [T-23: 1-Phase Starting Methods →](T-23_Single-Phase_IM_Starting_Methods.md)
+
+---
+
 # T-22: Single-Phase IM Theory (DFRT)
 
 **ECE 2207 — Exam-Style Answers (Sorted by Topic)**
@@ -44,3 +48,6 @@ Each produces a torque on the squirrel-cage rotor:
 
 **Conclusion:** Zero starting torque → not self-starting. The motor needs a starting mechanism.
 
+---
+
+[← T-21: Induction Generator](T-21_Induction_Generator.md) | [🏠 Index](README.md) | [T-23: 1-Phase Starting Methods →](T-23_Single-Phase_IM_Starting_Methods.md)

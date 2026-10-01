@@ -1,3 +1,7 @@
+[← T-14: IM as Rotating Transformer](T-14_IM_as_Rotating_Transformer.md) | [🏠 Index](README.md) | [T-16: Torque Equations & Curves →](T-16_Torque_Equations_and_Characteristics.md)
+
+---
+
 # T-15: IM Equivalent Circuit
 
 **ECE 2207 — Exam-Style Answers (Sorted by Topic)**
@@ -42,4 +46,6 @@ $$R_2' = a^2R_2, \quad X_2' = a^2X_2, \quad R_L' = R_2'\left(\frac{1-s}{s}\right
 Since stator voltage drop is small, the shunt branch can be shifted to the input terminals.
 ![Step 6: Approximate per-phase equivalent circuit](diagrams/im_step6_approximate_circuit.png)
 
+---
 
+[← T-14: IM as Rotating Transformer](T-14_IM_as_Rotating_Transformer.md) | [🏠 Index](README.md) | [T-16: Torque Equations & Curves →](T-16_Torque_Equations_and_Characteristics.md)

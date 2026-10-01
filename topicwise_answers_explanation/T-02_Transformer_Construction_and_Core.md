@@ -1,3 +1,7 @@
+[← T-01: Fundamentals & EMF](T-01_Transformer_Fundamentals_and_EMF_Equation.md) | [🏠 Index](README.md) | [T-03: No-Load & Phasors →](T-03_No-Load_Operation_and_Phasor_Diagrams.md)
+
+---
+
 # T-02: Transformer Construction & Core
 
 **ECE 2207 — Explanation Answers (Sorted by Topic)**
@@ -148,3 +152,4 @@ The eddy current loss drops by a factor of $n$ (number of laminations). Using 10
 
 ---
 
+[← T-01: Fundamentals & EMF](T-01_Transformer_Fundamentals_and_EMF_Equation.md) | [🏠 Index](README.md) | [T-03: No-Load & Phasors →](T-03_No-Load_Operation_and_Phasor_Diagrams.md)

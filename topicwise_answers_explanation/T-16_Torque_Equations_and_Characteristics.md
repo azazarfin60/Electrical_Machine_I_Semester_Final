@@ -1,3 +1,7 @@
+[← T-15: IM Equivalent Circuit](T-15_IM_Equivalent_Circuit.md) | [🏠 Index](README.md) | [T-17: Power Flow & Rotor Power →](T-17_Power_Flow_and_Rotor_Power.md)
+
+---
+
 # T-16: Torque Equations & Characteristics
 
 **ECE 2207 — Explanation Answers (Sorted by Topic)**
@@ -145,3 +149,4 @@ Variable frequency drives always change voltage proportionally with frequency ($
 
 ---
 
+[← T-15: IM Equivalent Circuit](T-15_IM_Equivalent_Circuit.md) | [🏠 Index](README.md) | [T-17: Power Flow & Rotor Power →](T-17_Power_Flow_and_Rotor_Power.md)

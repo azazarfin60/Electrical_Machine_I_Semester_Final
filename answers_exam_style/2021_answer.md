@@ -1,3 +1,7 @@
+[← 2020 Answer](2020_answer.md) | [🏠 Index](README.md) | [2023 Answer →](2023_answer.md)
+
+---
+
 # ECE 2207: 2021 Semester Final: Exam Style Answers
 **RUET · ECE Dept · 2nd Year Odd Semester 2021**
 **Full Marks:** 72 · **Time:** 3 Hours · **Attempt any 6 (3 from each section)**
@@ -577,4 +581,7 @@ $T_{\max}$ in synchronous watts $\approx$ read from circle diagram.
 ---
 
 *Source:* [PrevYearQuestions/2021.md](../PrevYearQuestions/2021.md)
-*Writing guideline:* [writing_guideline.md](../.agents/rules/writing_style.md)
+
+---
+
+[← 2020 Answer](2020_answer.md) | [🏠 Index](README.md) | [2023 Answer →](2023_answer.md)

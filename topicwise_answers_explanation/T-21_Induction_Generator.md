@@ -1,3 +1,7 @@
+[← T-20: Speed Control & Braking](T-20_Speed_Control_and_Braking.md) | [🏠 Index](README.md) | [T-22: 1-Phase IM Theory (DFRT) →](T-22_Single-Phase_IM_Theory_DFRT.md)
+
+---
+
 # T-21: Induction Generator
 
 **ECE 2207 — Explanation Answers (Sorted by Topic)**
@@ -45,3 +49,4 @@ $N_{gen} = N_s(1 - s_{gen}) = N_s(1 + s_{motor})$
 
 ---
 
+[← T-20: Speed Control & Braking](T-20_Speed_Control_and_Braking.md) | [🏠 Index](README.md) | [T-22: 1-Phase IM Theory (DFRT) →](T-22_Single-Phase_IM_Theory_DFRT.md)

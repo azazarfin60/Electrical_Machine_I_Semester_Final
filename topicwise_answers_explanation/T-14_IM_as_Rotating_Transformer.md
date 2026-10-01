@@ -1,3 +1,7 @@
+[← T-13: Slip & Sync Speed](T-13_Slip_Synchronous_Speed_and_Basics.md) | [🏠 Index](README.md) | [T-15: IM Equivalent Circuit →](T-15_IM_Equivalent_Circuit.md)
+
+---
+
 # T-14: IM as Rotating Transformer
 
 **ECE 2207 — Explanation Answers (Sorted by Topic)**
@@ -28,3 +32,4 @@ Beyond simplicity, the squirrel-cage IM has these specific advantages:
 
 ---
 
+[← T-13: Slip & Sync Speed](T-13_Slip_Synchronous_Speed_and_Basics.md) | [🏠 Index](README.md) | [T-15: IM Equivalent Circuit →](T-15_IM_Equivalent_Circuit.md)
