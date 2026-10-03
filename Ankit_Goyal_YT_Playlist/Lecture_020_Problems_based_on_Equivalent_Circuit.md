@@ -87,25 +87,31 @@ Calculate the turns ratio:
 $$a = \frac{N_1}{N_2} = \frac{250}{2500} = \frac{1}{10} = 0.1$$
 
 Now refer the secondary load impedance $Z_L$ to the primary side:
-$$\begin{aligned}
+$$
+\begin{aligned}
 Z_L' &= a^2 Z_L \\
 &= (0.1)^2 (380 + j 230) \\
 &= 3.8 + j 2.3\ \Omega
-\end{aligned}$$
+\end{aligned}
+$$
 
 The load branch connects in series with the transformer equivalent series impedance $Z_{01} = R_{01} + j X_{01}$. Combine these impedances into the total series impedance $Z_{\text{series}}$:
-$$\begin{aligned}
+$$
+\begin{aligned}
 Z_{\text{series}} &= (R_{01} + R_L') + j (X_{01} + X_L') \\
 &= (0.2 + 3.8) + j (0.7 + 2.3) \\
 &= 4.0 + j 3.0\ \Omega
-\end{aligned}$$
+\end{aligned}
+$$
 
 Convert this rectangular impedance into polar form:
-$$\begin{aligned}
+$$
+\begin{aligned}
 |Z_{\text{series}}| &= \sqrt{4.0^2 + 3.0^2} = 5.0\ \Omega \\
 \theta_{\text{series}} &= \tan^{-1}\left(\frac{3.0}{4.0}\right) = 36.87^\circ \\
 Z_{\text{series}} &= 5.0 \angle 36.87^\circ\ \Omega
-\end{aligned}$$
+\end{aligned}
+$$
 
 ### Calculating Reflected Current and Terminal Voltage
 
@@ -113,11 +119,13 @@ Set the supply voltage as the reference phasor:
 $$\mathbf{V}_1 = 250 \angle 0^\circ\text{ V}$$
 
 The reflected secondary current $I_1'$ flows through the series branch:
-$$\begin{aligned}
+$$
+\begin{aligned}
 \mathbf{I}_1' &= \frac{\mathbf{V}_1}{Z_{\text{series}}} \\
 &= \frac{250 \angle 0^\circ}{5.0 \angle 36.87^\circ} \\
 &= 50 \angle -36.87^\circ\text{ A}
-\end{aligned}$$
+\end{aligned}
+$$
 
 In rectangular form:
 $$\mathbf{I}_1' = 50 \cos(36.87^\circ) - j 50 \sin(36.87^\circ) = 40 - j 30\text{ A}$$
@@ -134,11 +142,13 @@ Calculate the referred secondary terminal voltage magnitude:
 $$V_2' = |\mathbf{I}_1'| \cdot |Z_L'| = 50 \times 4.4419 = 222.09\text{ V}$$
 
 Now transfer this voltage back to the secondary winding:
-$$\begin{aligned}
+$$
+\begin{aligned}
 V_2 &= \frac{V_2'}{a} \\
 &= \frac{222.09}{0.1} \\
 &= 2220.9\text{ V}
-\end{aligned}$$
+\end{aligned}
+$$
 
 > [!success] Secondary Terminal Voltage
 > The actual terminal voltage delivered to the load on the high-voltage side is:
@@ -175,30 +185,36 @@ From the previous section:
 $$\mathbf{I}_1' = 50 \angle -36.87^\circ\text{ A} = 40 - j 30\text{ A}$$
 
 Now add the rectangular components:
-$$\begin{aligned}
+$$
+\begin{aligned}
 \mathbf{I}_1 &= (0.5 - j 1.0) + (40 - j 30) \\
 &= (0.5 + 40) - j (1.0 + 30) \\
 &= 40.5 - j 31.0\text{ A}
-\end{aligned}$$
+\end{aligned}
+$$
 
 ![Primary Current Vector Calculation](frames/020/frame_0025_10m14s.jpg)
 
 ### Primary Current Magnitude and Operating Power Factor
 
 Convert the total primary current phasor into polar form. Compute its magnitude:
-$$\begin{aligned}
+$$
+\begin{aligned}
 |\mathbf{I}_1| &= \sqrt{(40.5)^2 + (-31.0)^2} \\
 &= \sqrt{1640.25 + 961.0} \\
 &= \sqrt{2601.25} \\
 &\approx 51.002\text{ A}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Compute the phase angle of the primary current relative to the input voltage:
-$$\begin{aligned}
+$$
+\begin{aligned}
 \theta_1 &= -\tan^{-1}\left(\frac{31.0}{40.5}\right) \\
 &= -\tan^{-1}(0.7654) \\
 &\approx -37.43^\circ
-\end{aligned}$$
+\end{aligned}
+$$
 
 Because the current lags the supply voltage, the operating power factor is lagging:
 $$\text{pf}_1 = \cos(\theta_1) = \cos(-37.43^\circ) \approx 0.794\text{ lagging}$$
@@ -276,20 +292,24 @@ Both secondary windings connect across the same load resistor $R_L = 10\ \Omega$
 $$V_{s1} = V_{s2} = V$$
 
 Because the transformers are ideal, the primary voltages are determined directly by their turns ratios:
-$$\begin{aligned}
+$$
+\begin{aligned}
 V_{p1} &= a_1 V_{s1} = 4V \\
 V_{p2} &= a_2 V_{s2} = 2V
-\end{aligned}$$
+\end{aligned}
+$$
 
 The dot polarities are aligned. As the source loop traverses both primary windings in series, the voltages add:
 $$V_{p1} + V_{p2} = V_{\text{source}}$$
 
 Substitute the voltage relations into this loop equation:
-$$\begin{aligned}
+$$
+\begin{aligned}
 4V + 2V &= 120 \\
 6V &= 120 \\
 V &= 20\text{ V}
-\end{aligned}$$
+\end{aligned}
+$$
 
 The secondary terminal voltage across the load resistor is $V_L = 20\text{ V}$.
 
@@ -307,10 +327,12 @@ The source voltage is purely resistive because the load is a pure resistor:
 $$P_{\text{in}} = V_{\text{source}} I_1$$
 
 Solve directly for the source current $I_1$:
-$$\begin{aligned}
+$$
+\begin{aligned}
 120 \times I_1 &= 40 \\
 I_1 &= \frac{40}{120} = \frac{1}{3}\text{ A}
-\end{aligned}$$
+\end{aligned}
+$$
 
 > [!success] Source Current and Load Power
 > The load voltage is $V_L = 20\text{ V}$. The power delivered to the load is $P_L = 40\text{ W}$.
@@ -362,20 +384,24 @@ Express the secondary load impedance in rectangular coordinates. The branch impe
 $$Z = 2 \angle 36.86^\circ\ \Omega$$
 
 Resolve this into real and imaginary parts:
-$$\begin{aligned}
+$$
+\begin{aligned}
 R_L &= 2 \cos(36.86^\circ) = 2 \times 0.8 = 1.6\ \Omega \\
 X_L &= 2 \sin(36.86^\circ) = 2 \times 0.6 = 1.2\ \Omega
-\end{aligned}$$
+\end{aligned}
+$$
 
 The total secondary load impedance including the series capacitor is:
 $$Z_L = R_L + j (X_L - X_C) = 1.6 + j (1.2 - X_C)\ \Omega$$
 
 Now refer this load impedance across the ideal transformer to the primary side:
-$$\begin{aligned}
+$$
+\begin{aligned}
 Z_L' &= a^2 Z_L \\
 &= a^2 \left[1.6 + j (1.2 - X_C)\right] \\
 &= 1.6 a^2 + j a^2 (1.2 - X_C)
-\end{aligned}$$
+\end{aligned}
+$$
 
 Here $a = N_1 / N_2$ is the turns ratio.
 
@@ -424,10 +450,12 @@ Divide both sides by $6.25$:
 $$1.2 - X_C = -\frac{17.3205}{6.25} = -2.7713$$
 
 Solve directly for the capacitive reactance $X_C$:
-$$\begin{aligned}
+$$
+\begin{aligned}
 X_C &= 1.2 + 2.7713 \\
 &\approx 3.971\ \Omega
-\end{aligned}$$
+\end{aligned}
+$$
 
 > [!success] Required Capacitive Reactance
 > The variable series capacitor on the secondary must provide a reactance of:
@@ -455,11 +483,13 @@ $$\mathbf{I}_1 = \frac{\mathbf{V}_S}{R_{\text{total}}} = \frac{20 \angle 0^\circ
 ### Maximum Power Delivered to the Load
 
 The maximum active power delivered to the load transfers across the reflected load resistance $R_L' = 10\ \Omega$:
-$$\begin{aligned}
+$$
+\begin{aligned}
 P_{\max} &= |\mathbf{I}_1|^2 R_L' \\
 &= (1.0)^2 \times 10 \\
 &= 10\text{ W}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Alternatively, using the standard maximum power transfer formula:
 $$P_{\max} = \frac{|\mathbf{V}_S|^2}{4 R_S} = \frac{20^2}{4 \times 10} = \frac{400}{40} = 10\text{ W}$$
@@ -474,11 +504,13 @@ Find the secondary current using the turns ratio:
 $$I_2 = a I_1 = 2.5 \times 1.0 = 2.5\text{ A}$$
 
 Now calculate the secondary terminal voltage across the load branch $Z$:
-$$\begin{aligned}
+$$
+\begin{aligned}
 \mathbf{V}_L &= \mathbf{I}_2 Z \\
 &= (2.5 \angle 0^\circ)(2 \angle 36.86^\circ) \\
 &= 5.0 \angle 36.86^\circ\text{ V}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Alternatively, calculate the referred load voltage on the primary side:
 $$\mathbf{V}_L' = \mathbf{I}_1 Z' = 1.0 \angle 0^\circ \times \left(a^2 \times 2 \angle 36.86^\circ\right) = 12.5 \angle 36.86^\circ\text{ V}$$
@@ -519,27 +551,33 @@ A short-circuit test evaluates the series winding resistance and leakage reactan
 Rated current is specified on the low-voltage winding. So referring all circuit elements to the low-voltage side avoids extra current calculations.
 
 The turns ratio is $a = 6$. Transfer the high-voltage resistance and reactance to the low-voltage winding by dividing by $a^2 = 36$:
-$$\begin{aligned}
+$$
+\begin{aligned}
 R_1' &= \frac{R_1}{a^2} = \frac{0.9}{36} = 0.025\ \Omega \\
 X_1' &= \frac{X_1}{a^2} = \frac{5.0}{36} \approx 0.1389\ \Omega
-\end{aligned}$$
+\end{aligned}
+$$
 
 Combine the primary and secondary parameters into total equivalent parameters referred to the low-voltage side:
-$$\begin{aligned}
+$$
+\begin{aligned}
 R_{02} &= R_2 + R_1' = 0.03 + 0.025 = 0.055\ \Omega \\
 X_{02} &= X_2 + X_1' = 0.13 + 0.1389 = 0.2689\ \Omega
-\end{aligned}$$
+\end{aligned}
+$$
 
 The total equivalent series impedance referred to the low-voltage winding is:
 $$Z_{02} = R_{02} + j X_{02} = 0.055 + j 0.2689\ \Omega$$
 
 Compute the impedance magnitude and angle:
-$$\begin{aligned}
+$$
+\begin{aligned}
 |Z_{02}| &= \sqrt{0.055^2 + 0.2689^2} \\
 &= \sqrt{0.003025 + 0.072307} \\
 &= \sqrt{0.075332} \approx 0.27447\ \Omega \\
 \theta_{\text{sc}} &= \tan^{-1}\left(\frac{0.2689}{0.055}\right) = \tan^{-1}(4.889) \approx 78.43^\circ
-\end{aligned}$$
+\end{aligned}
+$$
 
 ### Calculating the Primary Supply Voltage
 
@@ -547,21 +585,25 @@ Take the rated secondary short-circuit current as the reference phasor:
 $$\mathbf{I}_2 = 200 \angle 0^\circ\text{ A}$$
 
 The primary applied voltage referred to the secondary winding is $V_1'$:
-$$\begin{aligned}
+$$
+\begin{aligned}
 \mathbf{V}_1' &= \mathbf{I}_2 Z_{02} \\
 &= (200 \angle 0^\circ)(0.27447 \angle 78.43^\circ) \\
 &= 54.89 \angle 78.43^\circ\text{ V}
-\end{aligned}$$
+\end{aligned}
+$$
 
 In rectangular coordinates:
 $$\mathbf{V}_1' = 200 \times (0.055 + j 0.2689) = 11.0 + j 53.78\text{ V}$$
 
 Now transfer this voltage back to the high-voltage primary winding using the turns ratio:
-$$\begin{aligned}
+$$
+\begin{aligned}
 \mathbf{V}_1 &= a \mathbf{V}_1' \\
 &= 6 \times 54.89 \angle 78.43^\circ \\
 &= 329.34 \angle 78.43^\circ\text{ V}
-\end{aligned}$$
+\end{aligned}
+$$
 
 ![Applied Voltage Derivation on Whiteboard](frames/020/frame_0077_33m15s.jpg)
 
@@ -576,10 +618,12 @@ _(34:21 - 39:11)_
 ### Short-Circuit Operating Power Factor
 
 In a transformer short-circuit test, the voltage and current angles determine the operating power factor. From the low-voltage derivation in the previous section:
-$$\begin{aligned}
+$$
+\begin{aligned}
 \mathbf{V}_1' &= 54.89 \angle 78.43^\circ\text{ V} \\
 \mathbf{I}_2 &= 200 \angle 0^\circ\text{ A}
-\end{aligned}$$
+\end{aligned}
+$$
 
 The phase angle between the applied voltage and the current is $\theta_{\text{sc}} = 78.43^\circ$.
 
@@ -599,27 +643,33 @@ $$\text{pf}_{\text{sc}} = \frac{R_{02}}{|Z_{02}|} = \frac{0.055}{0.2745} \approx
 Students often ask if referring the entire network to the high-voltage (HV) side yields identical results. We verify this directly.
 
 Transfer the low-voltage parameters to the high-voltage primary winding using $a^2 = 6^2 = 36$:
-$$\begin{aligned}
+$$
+\begin{aligned}
 R_2' &= a^2 R_2 = 36 \times 0.03 = 1.08\ \Omega \\
 X_2' &= a^2 X_2 = 36 \times 0.13 = 4.68\ \Omega
-\end{aligned}$$
+\end{aligned}
+$$
 
 Add the primary winding parameters $R_1 = 0.9\ \Omega$ and $X_1 = 5.0\ \Omega$:
-$$\begin{aligned}
+$$
+\begin{aligned}
 R_{01} &= R_1 + R_2' = 0.9 + 1.08 = 1.98\ \Omega \\
 X_{01} &= X_1 + X_2' = 5.0 + 4.68 = 9.68\ \Omega
-\end{aligned}$$
+\end{aligned}
+$$
 
 The total equivalent series impedance referred to the high-voltage side is:
 $$Z_{01} = 1.98 + j 9.68\ \Omega$$
 
 Compute the magnitude and angle of $Z_{01}$:
-$$\begin{aligned}
+$$
+\begin{aligned}
 |Z_{01}| &= \sqrt{(1.98)^2 + (9.68)^2} \\
 &= \sqrt{3.9204 + 93.7024} \\
 &= \sqrt{97.6228} \approx 9.8804\ \Omega \\
 \theta_{\text{sc}} &= \tan^{-1}\left(\frac{9.68}{1.98}\right) \approx 78.43^\circ
-\end{aligned}$$
+\end{aligned}
+$$
 
 ![HV Side Solution Comparison](frames/020/frame_0089_37m29s.jpg)
 
@@ -629,12 +679,14 @@ A common error is multiplying the secondary current by the turns ratio instead o
 $$I_1 = \frac{I_2}{a} = \frac{200}{6} = 33.333\text{ A}$$
 
 Now compute the applied voltage on the high-voltage side:
-$$\begin{aligned}
+$$
+\begin{aligned}
 V_1 &= I_1 |Z_{01}| \\
 &= \left(\frac{200}{6}\right) \times 9.8804 \\
 &= 33.333 \times 9.8804 \\
 &\approx 329.34\text{ V}
-\end{aligned}$$
+\end{aligned}
+$$
 
 The power factor is:
 $$\cos(\theta_{\text{sc}}) = \frac{R_{01}}{|Z_{01}|} = \frac{1.98}{9.8804} \approx 0.2004\text{ lagging}$$
@@ -690,20 +742,24 @@ Form the total series impedance:
 $$Z_{\text{series}} = R_{\text{total}} + j X_{\text{total}} = 6.12 + j 5.14\ \Omega$$
 
 Convert this impedance into polar form:
-$$\begin{aligned}
+$$
+\begin{aligned}
 |Z_{\text{series}}| &= \sqrt{(6.12)^2 + (5.14)^2} \\
 &= \sqrt{37.4544 + 26.4196} \\
 &= \sqrt{63.874} \approx 7.992\ \Omega \\
 \theta_{\text{series}} &= \tan^{-1}\left(\frac{5.14}{6.12}\right) \approx 40.03^\circ \\
 Z_{\text{series}} &\approx 7.992 \angle 40.03^\circ\ \Omega
-\end{aligned}$$
+\end{aligned}
+$$
 
 With the primary supply voltage taken as reference ($\mathbf{V}_1 = 200 \angle 0^\circ\text{ V}$), compute the reflected load current $\mathbf{I}_1'$:
-$$\begin{aligned}
+$$
+\begin{aligned}
 \mathbf{I}_1' &= \frac{\mathbf{V}_1}{Z_{\text{series}}} \\
 &= \frac{200 \angle 0^\circ}{7.992 \angle 40.03^\circ} \\
 &\approx 25.024 \angle -40.03^\circ\text{ A}
-\end{aligned}$$
+\end{aligned}
+$$
 
 In rectangular coordinates:
 $$\mathbf{I}_1' = 25.024 \cos(-40.03^\circ) + j 25.024 \sin(-40.03^\circ) \approx 19.16 - j 16.09\text{ A}$$
@@ -716,25 +772,31 @@ The terminal voltage across the load referred to the primary is $\mathbf{V}_2'$:
 $$\mathbf{V}_2' = \mathbf{I}_1' Z_L'$$
 
 Represent the referred load impedance in polar coordinates:
-$$\begin{aligned}
+$$
+\begin{aligned}
 |Z_L'| &= \sqrt{(5.96)^2 + (4.44)^2} = \sqrt{35.5216 + 19.7136} = \sqrt{55.2352} \approx 7.432\ \Omega \\
 \theta_L &= \tan^{-1}\left(\frac{4.44}{5.96}\right) \approx 36.68^\circ \\
 Z_L' &= 7.432 \angle 36.68^\circ\ \Omega
-\end{aligned}$$
+\end{aligned}
+$$
 
 Multiply the current by the load impedance:
-$$\begin{aligned}
+$$
+\begin{aligned}
 \mathbf{V}_2' &= (25.024 \angle -40.03^\circ)(7.432 \angle 36.68^\circ) \\
 &= 185.98 \angle (-40.03^\circ + 36.68^\circ) \\
 &= 185.98 \angle -3.35^\circ\text{ V}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Because the transformer steps up the voltage by a ratio of $N_2 / N_1 = 10$, the actual secondary terminal voltage is:
-$$\begin{aligned}
+$$
+\begin{aligned}
 V_2 &= \left(\frac{N_2}{N_1}\right) V_2' \\
 &= 10 \times 185.98 \\
 &= 1859.8\text{ V}
-\end{aligned}$$
+\end{aligned}
+$$
 
 > [!success] Secondary Terminal Voltage
 > The actual terminal voltage delivered to the high-voltage load is:
@@ -765,25 +827,31 @@ The total primary current is the phasor sum of the load component and the exciti
 $$\mathbf{I}_1 = \mathbf{I}_1' + \mathbf{I}_0$$
 
 Express $\mathbf{I}_1'$ in rectangular coordinates:
-$$\begin{aligned}
+$$
+\begin{aligned}
 \mathbf{I}_1' &= 25.024 \cos(-40.03^\circ) + j 25.024 \sin(-40.03^\circ) \\
 &\approx 19.161 - j 16.094\text{ A}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Now add the exciting current:
-$$\begin{aligned}
+$$
+\begin{aligned}
 \mathbf{I}_1 &= (19.161 - j 16.094) + (0.5 - j 0.8658) \\
 &= (19.161 + 0.5) - j (16.094 + 0.8658) \\
 &= 19.661 - j 16.960\text{ A}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Convert the primary current into polar form:
-$$\begin{aligned}
+$$
+\begin{aligned}
 |\mathbf{I}_1| &= \sqrt{(19.661)^2 + (-16.960)^2} \\
 &= \sqrt{386.554 + 287.642} \\
 &= \sqrt{674.196} \approx 25.965\text{ A} \\
 \theta_1 &= -\tan^{-1}\left(\frac{16.960}{19.661}\right) = -\tan^{-1}(0.8626) \approx -40.78^\circ
-\end{aligned}$$
+\end{aligned}
+$$
 
 The total primary input current is:
 $$\mathbf{I}_1 = 25.965 \angle -40.78^\circ\text{ A}$$
@@ -797,12 +865,14 @@ $$\mathbf{I}_1 = 25.965 \angle -40.78^\circ\text{ A}$$
 ### Active Power Output and System Losses
 
 Active power delivered to the load can be evaluated directly on the primary side. Active power is consumed entirely by the referred load resistance $R_L' = 5.96\ \Omega$:
-$$\begin{aligned}
+$$
+\begin{aligned}
 P_{\text{out}} &= |\mathbf{I}_1'|^2 R_L' \\
 &= (25.024)^2 \times 5.96 \\
 &= 626.20 \times 5.96 \\
 &\approx 3732.16\text{ W}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Now calculate the internal power losses:
 1. Winding copper loss in series resistance $R_{01} = 0.16\ \Omega$:
@@ -814,22 +884,26 @@ Sum both losses to obtain the total power loss:
 $$P_{\text{loss}} = P_{\text{cu}} + P_{\text{core}} = 100.19 + 100.0 = 200.19\text{ W}$$
 
 Compute total real input power supplied by the source:
-$$\begin{aligned}
+$$
+\begin{aligned}
 P_{\text{in}} &= P_{\text{out}} + P_{\text{loss}} \\
 &= 3732.16 + 200.19 \\
 &= 3932.35\text{ W}
-\end{aligned}$$
+\end{aligned}
+$$
 
 ![Efficiency Evaluation](frames/020/frame_0115_49m25s.jpg)
 
 ### Operating Efficiency Calculation
 
 Compute the percentage efficiency of the transformer:
-$$\begin{aligned}
+$$
+\begin{aligned}
 \eta &= \frac{P_{\text{out}}}{P_{\text{in}}} \times 100\% \\
 &= \frac{3732.16}{3932.35} \times 100\% \\
 &\approx 94.91\%
-\end{aligned}$$
+\end{aligned}
+$$
 
 > [!success] Transformer Efficiency
 > Under the specified inductive load condition, the operating efficiency is:
@@ -892,16 +966,20 @@ Now apply Kirchhoff's Voltage Law (KVL) around the equivalent circuit loop:
 $$\mathbf{V}_1 = \mathbf{V}_2' + \mathbf{I}_1' (R_{01} + j X_{01})$$
 
 Substitute the expressions into the loop equation:
-$$\begin{aligned}
+$$
+\begin{aligned}
 \mathbf{V}_1 &= V_2' \angle 0^\circ + I_1' (0.8 - j 0.6)(R_{01} + j X_{01}) \\
 &= V_2' + I_1' \left[(0.8 R_{01} + 0.6 X_{01}) + j (0.8 X_{01} - 0.6 R_{01})\right]
-\end{aligned}$$
+\end{aligned}
+$$
 
 Separate this phasor equation into real and imaginary parts:
-$$\begin{aligned}
+$$
+\begin{aligned}
 \text{Re}(\mathbf{V}_1) &= V_2' + I_1' (0.8 R_{01} + 0.6 X_{01}) \\
 \text{Im}(\mathbf{V}_1) &= I_1' (0.8 X_{01} - 0.6 R_{01})
-\end{aligned}$$
+\end{aligned}
+$$
 
 The magnitude of the primary supply voltage is known: $|\mathbf{V}_1| = 200\text{ V}$. Therefore:
 $$|\mathbf{V}_1|^2 = \left[\text{Re}(\mathbf{V}_1)\right]^2 + \left[\text{Im}(\mathbf{V}_1)\right]^2 = 200^2$$
@@ -914,10 +992,12 @@ _(55:34 - 60:47)_
 ### Numerical Formulation for the Step-Up Transformer
 
 Consider the single-phase step-up transformer with a $1:2$ turns ratio ($a = N_1 / N_2 = 0.5$). The primary supply voltage magnitude is $V_1 = 200\text{ V}$. Internal series parameters referred to the low-voltage primary side are:
-$$\begin{aligned}
+$$
+\begin{aligned}
 R_{01} &= 0.15\ \Omega \\
 X_{01} &= 0.37\ \Omega
-\end{aligned}$$
+\end{aligned}
+$$
 
 The high-voltage secondary delivers a rated load current of $I_2 = 10\text{ A}$ at a lagging power factor of $\cos\phi_2 = 0.80$.
 
@@ -932,21 +1012,25 @@ Set the referred secondary terminal voltage as the reference phasor:
 $$\mathbf{V}_2' = V_2' \angle 0^\circ$$
 
 Because the load power factor is $0.80$ lagging ($\phi_2 = 36.87^\circ$), the reflected current phasor is:
-$$\begin{aligned}
+$$
+\begin{aligned}
 \mathbf{I}_1' &= 20 \angle -36.87^\circ\text{ A} \\
 &= 20 \cos(36.87^\circ) - j 20 \sin(36.87^\circ) \\
 &= 16.0 - j 12.0\text{ A}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Compute the internal voltage drop across the transformer series winding impedance:
 $$\Delta \mathbf{V} = \mathbf{I}_1' (R_{01} + j X_{01}) = (16.0 - j 12.0)(0.15 + j 0.37)$$
 
 Expand this complex multiplication:
-$$\begin{aligned}
+$$
+\begin{aligned}
 \Delta \mathbf{V} &= \left[16.0(0.15) - (-12.0)(0.37)\right] + j \left[16.0(0.37) + (-12.0)(0.15)\right] \\
 &= (2.40 + 4.44) + j (5.92 - 1.80) \\
 &= 6.84 + j 4.12\text{ V}
-\end{aligned}$$
+\end{aligned}
+$$
 
 ![Voltage Drop Derivation on Whiteboard](frames/020/frame_0166_58m38s.jpg)
 
@@ -971,11 +1055,13 @@ Subtract $6.84$ to find the referred terminal voltage magnitude:
 $$V_2' = 199.9575 - 6.84 \approx 193.12\text{ V}$$
 
 Now transfer this referred voltage to the high-voltage secondary winding:
-$$\begin{aligned}
+$$
+\begin{aligned}
 V_2 &= \frac{V_2'}{a} \\
 &= \frac{193.12}{0.5} \\
 &\approx 386.24\text{ V}
-\end{aligned}$$
+\end{aligned}
+$$
 
 > [!success] Secondary Terminal Voltage
 > Under rated load current at $0.8$ lagging power factor:
@@ -1025,11 +1111,13 @@ The voltage phase angle is $\theta_V = 1.18^\circ$. The current phase angle is $
 $$\phi_1 = \theta_V - \theta_I = 1.18^\circ - (-37.78^\circ) = 38.96^\circ$$
 
 Compute the input power:
-$$\begin{aligned}
+$$
+\begin{aligned}
 P_{\text{in}} &= 200 \times 20.67 \times \cos(38.96^\circ) \\
 &= 4134 \times 0.7776 \\
 &\approx 3214.53\text{ W}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Now determine internal losses in the transformer:
 1. Series winding copper loss:
@@ -1048,11 +1136,13 @@ Subtract internal losses from input power to obtain the power delivered to the s
 $$P_L = P_{\text{in}} - P_{\text{loss}} = 3214.53 - 126.67 = 3087.86\text{ W}$$
 
 Verify this result directly from secondary terminal quantities:
-$$\begin{aligned}
+$$
+\begin{aligned}
 P_L &= V_2 I_2 \cos\phi_2 \\
 &= 386 \times 10 \times 0.80 \\
 &= 3088\text{ W}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Both calculations agree within numerical rounding.
 
@@ -1109,18 +1199,22 @@ In ohmic calculations, winding resistance and reactance depend on which side the
 ### Derivation in Per-Unit
 
 Convert the percentage values into per-unit values:
-$$\begin{aligned}
+$$
+\begin{aligned}
 R_{\text{pu}} &= \frac{3\%}{100} = 0.03\text{ pu} \\
 X_{\text{pu}} &= \frac{4\%}{100} = 0.04\text{ pu}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Compute the total equivalent per-unit impedance magnitude:
-$$\begin{aligned}
+$$
+\begin{aligned}
 |Z_{\text{pu}}| &= \sqrt{R_{\text{pu}}^2 + X_{\text{pu}}^2} \\
 &= \sqrt{(0.03)^2 + (0.04)^2} \\
 &= \sqrt{0.0009 + 0.0016} \\
 &= \sqrt{0.0025} = 0.05\text{ pu}
-\end{aligned}$$
+\end{aligned}
+$$
 
 During a short-circuit test at rated current, the test current in per-unit is unity:
 $$I_{\text{sc, pu}} = 1.0\text{ pu}$$
@@ -1129,11 +1223,13 @@ The required applied voltage in per-unit is:
 $$V_{\text{sc, pu}} = I_{\text{sc, pu}} |Z_{\text{pu}}| = 1.0 \times 0.05 = 0.05\text{ pu}$$
 
 To find the actual physical voltage on the high-voltage side, multiply by the HV base voltage:
-$$\begin{aligned}
+$$
+\begin{aligned}
 V_{\text{sc}} &= V_{\text{sc, pu}} \times V_{\text{base, HV}} \\
 &= 0.05 \times 440\text{ V} \\
 &= 22\text{ V}
-\end{aligned}$$
+\end{aligned}
+$$
 
 > [!success] Required Short-Circuit Voltage
 > The applied voltage required on the high-voltage winding is:
@@ -1171,11 +1267,13 @@ Because the voltage across $R_c$ and the current through it are in phase:
 $$P_c = V_1 I_w$$
 
 Solve directly for the core loss current component:
-$$\begin{aligned}
+$$
+\begin{aligned}
 I_w &= \frac{P_c}{V_1} \\
 &= \frac{360}{2200} \\
 &\approx 0.1636\text{ A}
-\end{aligned}$$
+\end{aligned}
+$$
 
 ![Whiteboard Calculation of Core Loss Current](frames/020/frame_0213_71m56s.jpg)
 
@@ -1190,13 +1288,15 @@ Apply the Pythagorean theorem to their scalar magnitudes:
 $$I_0^2 = I_w^2 + I_\mu^2$$
 
 Rearrange to solve for the magnetizing current component:
-$$\begin{aligned}
+$$
+\begin{aligned}
 I_\mu &= \sqrt{I_0^2 - I_w^2} \\
 &= \sqrt{(0.5)^2 - (0.1636)^2} \\
 &= \sqrt{0.2500 - 0.02677} \\
 &= \sqrt{0.22323} \\
 &\approx 0.4725\text{ A} \approx 0.472\text{ A}
-\end{aligned}$$
+\end{aligned}
+$$
 
 > [!success] Exciting Current Components
 > The two components of the exciting current are:

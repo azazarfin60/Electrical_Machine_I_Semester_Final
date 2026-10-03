@@ -143,10 +143,12 @@ The two cages are:
 
 The parallel cages obey the parameter relationships:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 X_{\text{inner}} &\gg X_{\text{outer}} \\
 R_{\text{outer}} &\gg R_{\text{inner}}
-\end{aligned}$$
+\end{aligned}
+$$
 
 - **At Starting ($s = 1$, $f_r = 50\text{ Hz}$)**: Leakage reactance dominates cage impedances ($X \gg R$). Because $X_{\text{inner}} \gg X_{\text{outer}}$, the inner cage presents a very high impedance. Most starting current is forced through the outer cage ($I_{\text{outer}} \gg I_{\text{inner}}$). The high resistance of the outer cage produces high starting torque and limits starting inrush current.
 - **Under Normal Running ($s \ll 1$, $f_r \approx 1\text{ to } 3\text{ Hz}$)**: Leakage reactances become negligible ($s X_2' \approx 0$). Branch currents divide inversely with resistance ($I \propto 1/R$). Because $R_{\text{inner}} \ll R_{\text{outer}}$, almost all rotor current transfers to the inner cage ($I_{\text{inner}} \gg I_{\text{outer}}$).
@@ -191,10 +193,12 @@ Let:
 
 The branch impedances referred to the stator are:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 Z_{\text{inner}} &= \frac{R_2'}{s} + j X_2' \\
 Z_{\text{outer}} &= \frac{R_3'}{s} + j X_3'
-\end{aligned}$$
+\end{aligned}
+$$
 
 The total effective rotor impedance is the parallel combination:
 

@@ -85,10 +85,12 @@ Machine Losses
 
 This is one of the most critical exam derivations in Induction Motor theory:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \text{Rotor Input Power } (P_2) &= \frac{2\pi N_s}{60} \cdot T \\
 \text{Mechanical Power Developed } (P_m) &= \frac{2\pi N_r}{60} \cdot T
-\end{aligned}$$
+\end{aligned}
+$$
 
 Dividing $P_m$ by $P_2$:
 $$\frac{P_m}{P_2} = \frac{N_r}{N_s} = \frac{N_s(1 - s)}{N_s} = 1 - s$$

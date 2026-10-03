@@ -620,10 +620,12 @@ In a practical transformer, the mutual core flux depends on the power factor:
 - At leading power factor, the leakage impedance drop boosts the induced EMF $E_1$. The core flux $\Phi_m$ increases.
 
 Core losses consist of hysteresis loss and eddy current loss:
-$$\begin{aligned}
+$$
+\begin{aligned}
 P_h &= k_h B_m^2 f \\
 P_e &= k_e B_m^2 f^2
-\end{aligned}$$
+\end{aligned}
+$$
 
 Here, the Steinmetz exponent is taken as $2$. The total core loss is directly proportional to the square of peak flux density:
 $$P_c = P_h + P_e \propto B_m^2 \propto \Phi_m^2$$
@@ -660,10 +662,12 @@ We now solve the three-winding transformer problem introduced in the previous se
 ### Winding Voltage Calculations
 
 First, determine the voltages across the secondary and tertiary windings using the turns ratios:
-$$\begin{aligned}
+$$
+\begin{aligned}
 V_2 &= \left(\frac{N_2}{N_1}\right) V_1 = \frac{1}{4} \times 16 = 4\text{ V} \\
 V_3 &= \left(\frac{N_3}{N_1}\right) V_1 = \frac{2}{4} \times 16 = 8\text{ V}
-\end{aligned}$$
+\end{aligned}
+$$
 
 ![Voltages across secondary and tertiary windings](frames/030/frame_0078_59m01s.jpg)
 
@@ -673,10 +677,12 @@ Because no internal losses are specified, total input power equals total output 
 $$P_1 = P_2 + P_3$$
 
 Compute the power dissipated in each resistive load:
-$$\begin{aligned}
+$$
+\begin{aligned}
 P_2 &= \frac{V_2^2}{R_2} = \frac{4^2}{30} = \frac{16}{30} \approx 0.533\text{ W} \\
 P_3 &= \frac{V_3^2}{R_3} = \frac{8^2}{15} = \frac{64}{15} = \frac{128}{30} \approx 4.267\text{ W}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Sum the load powers to find the primary input power:
 $$P_1 = \frac{16}{30} + \frac{128}{30} = \frac{144}{30} = 4.8\text{ W}$$
@@ -692,10 +698,12 @@ $$4.8 = 16 \times I_1 \times 1 \implies I_1 = \frac{4.8}{16} = 0.3\text{ A}$$
 ### Method 2: Impedance Referral
 
 Alternatively, refer both secondary and tertiary load resistances back to the primary winding. The referral rule scales resistance by the square of the turns ratio:
-$$\begin{aligned}
+$$
+\begin{aligned}
 R_2' &= R_2 \left(\frac{N_1}{N_2}\right)^2 = 30 \times \left(\frac{4}{1}\right)^2 = 30 \times 16 = 480\,\Omega \\
 R_3' &= R_3 \left(\frac{N_1}{N_3}\right)^2 = 15 \times \left(\frac{4}{2}\right)^2 = 15 \times 4 = 60\,\Omega
-\end{aligned}$$
+\end{aligned}
+$$
 
 Both referred resistors appear in parallel across the primary supply voltage $V_1 = 16\text{ V}$.
 
@@ -713,10 +721,12 @@ $$I_1 = \frac{V_1}{R_{\text{eq}}} = \frac{16}{53.33} = 0.3\text{ A}$$
 ### Method 3: MMF Balancing
 
 A third method balances ampere-turns across the core. First, determine the currents in windings 2 and 3:
-$$\begin{aligned}
+$$
+\begin{aligned}
 I_2 &= \frac{V_2}{R_2} = \frac{4}{30}\text{ A} \\
 I_3 &= \frac{V_3}{R_3} = \frac{8}{15}\text{ A}
-\end{aligned}$$
+\end{aligned}
+$$
 
 ![Method 3: Ampere-turn balance derivation](frames/030/frame_0083_62m28s.jpg)
 

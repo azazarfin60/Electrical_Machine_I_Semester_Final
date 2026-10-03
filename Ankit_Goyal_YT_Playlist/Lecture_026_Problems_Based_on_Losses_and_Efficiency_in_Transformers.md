@@ -132,11 +132,13 @@ The efficiency is $98\%$, so $\eta = 0.98$:
 $$0.98 = \frac{20}{20 + P_i + P_{\text{cu,fl}}}$$
 
 Rearranging gives the total losses at full load:
-$$\begin{aligned}
+$$
+\begin{aligned}
 P_i + P_{\text{cu,fl}} &= \frac{20}{0.98} - 20 \\
 &= \frac{20(1 - 0.98)}{0.98} \\
 &= \frac{0.40}{0.98} = \frac{20}{49}\text{ kW}
-\end{aligned}$$
+\end{aligned}
+$$
 
 This provides our first equation:
 $$P_i + P_{\text{cu,fl}} = \frac{20}{49}\text{ kW} \approx 408.16\text{ W}$$
@@ -151,11 +153,13 @@ Simplify the terms in the numerator and denominator:
 $$0.98 = \frac{10}{10 + P_i + 0.25 P_{\text{cu,fl}}}$$
 
 Rearranging gives the losses at half load:
-$$\begin{aligned}
+$$
+\begin{aligned}
 P_i + 0.25 P_{\text{cu,fl}} &= \frac{10}{0.98} - 10 \\
 &= \frac{10(1 - 0.98)}{0.98} \\
 &= \frac{0.20}{0.98} = \frac{10}{49}\text{ kW} \approx 204.08\text{ W}
-\end{aligned}$$
+\end{aligned}
+$$
 
 ### Solving for Individual Losses
 
@@ -180,10 +184,12 @@ _(09:50 - 14:43)_
 ### Per-Unit Equivalent Resistance Calculation
 
 From the simultaneous equations solved earlier, the numerical loss values are:
-$$\begin{aligned}
+$$
+\begin{aligned}
 P_{\text{cu,fl}} &= \frac{40}{147}\text{ kW} \approx 272.11\text{ W} \\
 P_i &= \frac{20}{147}\text{ kW} \approx 136.05\text{ W}
-\end{aligned}$$
+\end{aligned}
+$$
 
 ![Per unit equivalent resistance calculation](frames/026/frame_0026_11m19s.jpg)
 
@@ -274,10 +280,12 @@ Sum the output energy across all intervals:
 $$E_{\text{out,total}} = 18 + 10 + 42 + 0 = 70\text{ kWh}$$
 
 Sum the energy consumed by copper losses in the windings:
-$$\begin{aligned}
+$$
+\begin{aligned}
 E_{\text{cu,total}} &= 0.600 + 0.125 + \frac{11.2}{9} \\
 &= 0.725 + 1.2444 = 1.9694\text{ kWh}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Core loss occurs as long as the transformer remains connected to the supply.
 Because the transformer stays energized for the entire 24 hours:
@@ -398,11 +406,13 @@ Substitute these values into the efficiency relation:
 $$0.985 = \frac{80}{80 + P_i + (1)^2 P_{\text{cu,fl}}}$$
 
 Rearranging gives the total losses at full load:
-$$\begin{aligned}
+$$
+\begin{aligned}
 P_i + P_{\text{cu,fl}} &= \frac{80}{0.985} - 80 \\
 &= \frac{80(1 - 0.985)}{0.985} \\
 &= \frac{1.20}{0.985} \approx 1.21827\text{ kW} = 1218.27\text{ W}
-\end{aligned}$$
+\end{aligned}
+$$
 
 This yields our first equation:
 $$P_i + P_{\text{cu,fl}} = 1218.27\text{ W} \quad \text{--- (1)}$$
@@ -422,11 +432,13 @@ Substitute these values into the efficiency relation:
 $$0.99 = \frac{50}{50 + P_i + (0.5)^2 P_{\text{cu,fl}}}$$
 
 Rearranging gives the losses at half load:
-$$\begin{aligned}
+$$
+\begin{aligned}
 P_i + 0.25 P_{\text{cu,fl}} &= \frac{50}{0.99} - 50 \\
 &= \frac{50(1 - 0.99)}{0.99} \\
 &= \frac{0.50}{0.99} \approx 0.50505\text{ kW} = 505.05\text{ W}
-\end{aligned}$$
+\end{aligned}
+$$
 
 This yields our second equation:
 $$P_i + 0.25 P_{\text{cu,fl}} = 505.05\text{ W} \quad \text{--- (2)}$$
@@ -534,10 +546,12 @@ Substitute $K_2$ into equation (2) to find $K_1$:
 $$K_1 = 0.92 - 25(0.0072) = 0.92 - 0.18 = 0.74\text{ W/Hz}$$
 
 So the separated loss expressions are:
-$$\begin{aligned}
+$$
+\begin{aligned}
 P_h(f) &= 0.74 f \\
 P_e(f) &= 0.0072 f^2
-\end{aligned}$$
+\end{aligned}
+$$
 
 ### Core Loss Separation at Specified Frequencies
 
@@ -546,25 +560,31 @@ Now calculate the individual loss components at $50\text{ Hz}$, $60\text{ Hz}$, 
 ![Table of separated core losses across frequencies](frames/026/frame_0083_38m30s.jpg)
 
 For $50\text{ Hz}$:
-$$\begin{aligned}
+$$
+\begin{aligned}
 P_h(50) &= 0.74 \times 50 = 37.0\text{ W} \\
 P_e(50) &= 0.0072 \times 50^2 = 18.0\text{ W} \\
 P_i(50) &= 37.0 + 18.0 = 55.0\text{ W}
-\end{aligned}$$
+\end{aligned}
+$$
 
 For $60\text{ Hz}$:
-$$\begin{aligned}
+$$
+\begin{aligned}
 P_h(60) &= 0.74 \times 60 = 44.4\text{ W} \\
 P_e(60) &= 0.0072 \times 60^2 = 25.92\text{ W} \\
 P_i(60) &= 44.4 + 25.92 = 70.32\text{ W}
-\end{aligned}$$
+\end{aligned}
+$$
 
 For $25\text{ Hz}$:
-$$\begin{aligned}
+$$
+\begin{aligned}
 P_h(25) &= 0.74 \times 25 = 18.5\text{ W} \\
 P_e(25) &= 0.0072 \times 25^2 = 4.5\text{ W} \\
 P_i(25) &= 18.5 + 4.5 = 23.0\text{ W}
-\end{aligned}$$
+\end{aligned}
+$$
 
 | Frequency (Hz) | Hysteresis Loss $P_h$ (W) | Eddy Current Loss $P_e$ (W) | Total Core Loss $P_i$ (W) |
 | :---: | :---: | :---: | :---: |
@@ -676,11 +696,13 @@ Integrate this expression with respect to time to find the flux:
 $$\phi(t) = -\frac{1}{N} \int v(t)\,dt = -\frac{1}{250} \int \left[200\sin(\omega t) - 50\sin(3\omega t)\right] dt$$
 
 Carrying out the integration term by term:
-$$\begin{aligned}
+$$
+\begin{aligned}
 \phi(t) &= \frac{1}{250} \left[\frac{200}{\omega}\cos(\omega t) - \frac{50}{3\omega}\cos(3\omega t)\right] \\
 &= \frac{200}{250\omega}\cos(\omega t) - \frac{50}{750\omega}\cos(3\omega t) \\
 &= \frac{0.8}{\omega}\cos(\omega t) - \frac{1}{15\omega}\cos(3\omega t)
-\end{aligned}$$
+\end{aligned}
+$$
 
 This completes the first part of the problem.
 
@@ -1005,10 +1027,12 @@ $$W_2 = 25\text{ W}$$
 
 In the $40\text{ Hz}$ open-circuit test, voltage is $160\text{ V}$ on the HV side.
 Compare the $V/f$ ratios:
-$$\begin{aligned}
+$$
+\begin{aligned}
 \text{Initial ratio}: \quad \frac{V_1}{f_1} &= \frac{200\text{ V}}{50\text{ Hz}} = 4.0\text{ V/Hz} \\
 \text{New ratio}: \quad \frac{V_2}{f_2} &= \frac{160\text{ V}}{40\text{ Hz}} = 4.0\text{ V/Hz}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Because the $V/f$ ratio is constant, the peak core flux density $B_m$ is constant.
 Under constant flux density, scale the individual loss components with frequency:
@@ -1032,10 +1056,12 @@ _(71:07 - 74:56)_
 ### Conclusion of Problem 15
 
 In the previous section, the individual loss components at $40\text{ Hz}$ were derived:
-$$\begin{aligned}
+$$
+\begin{aligned}
 P_{h2} &= 10 \times \left(\frac{40}{50}\right) = 8.0\text{ W} \\
 P_{e2} &= 10 \times \left(\frac{40}{50}\right)^2 = 6.4\text{ W}
-\end{aligned}$$
+\end{aligned}
+$$
 
 ![Problem 15 wattmeter readings summary](frames/026/frame_0153_71m53s.jpg)
 

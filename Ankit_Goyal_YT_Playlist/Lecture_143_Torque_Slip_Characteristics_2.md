@@ -126,12 +126,14 @@ $$\omega_s = \frac{4 \pi f}{P} = \frac{4 \pi \times 50}{4} = 50 \pi\text{ rad/s}
 
 Substitute these quantities into the torque equation:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 T_{\text{max}} &= \frac{3}{2 (50 \pi)} \frac{(400 / \sqrt{3})^2}{16 / \pi} \\
 &= \frac{3}{100 \pi} \times \frac{160000 / 3}{16 / \pi} \\
 &= \frac{160000}{100 \times 16} \\
 &= 100\text{ N}\cdot\text{m}
-\end{aligned}$$
+\end{aligned}
+$$
 
 > [!success] Result: Problem 2
 > The maximum developed torque is $100\text{ N}\cdot\text{m}$. Notice that the factor $\pi$ cancels out neatly.
@@ -268,12 +270,14 @@ $$T_{\text{max}} \propto \frac{V^2}{\omega_s X_2} \propto \frac{V^2}{f^2} = \lef
 
 Computing the ratio of new to original breakdown torque:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \frac{T_{\text{max}2}}{T_{\text{max}1}} &= \left(\frac{V_2}{V_1}\right)^2 \times \left(\frac{f_1}{f_2}\right)^2 \\
 &= \left(\frac{3}{4}\right)^2 \times (2)^2 \\
 &= \frac{9}{16} \times 4 \\
 &= \frac{9}{4} = 2.25
-\end{aligned}$$
+\end{aligned}
+$$
 
 > [!success] Result: Problem 5
 > Slip at maximum torque doubles ($s_{mT2} = 2 s_{mT1}$), and maximum torque increases to $2.25$ times its original value.
@@ -329,13 +333,15 @@ $$\omega_s = \frac{4 \pi f}{P} = \frac{4 \pi \times 60}{8} = 30 \pi \approx 94.2
 
 With phase voltage $V_1 = \frac{208}{\sqrt{3}}\text{ V}$ and rotor reactance $x_2 = 0.08\,\Omega$:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 T_{\text{max}} &= \frac{3}{2 \omega_s} \frac{V_1^2}{x_2} \\
 &= \frac{3}{2 \times 30 \pi} \times \frac{(208 / \sqrt{3})^2}{0.08} \\
 &= \frac{1}{20 \pi} \times \frac{43264 / 3 \times 3}{0.08} \\
 &= \frac{43264}{20 \pi \times 0.08} \\
 &= \frac{43264}{1.6 \pi} \approx 2869.03\text{ N}\cdot\text{m}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Because $2869.03\text{ N}\cdot\text{m} \neq 1346.4\text{ N}\cdot\text{m}$, Statement 3 is false.
 
@@ -369,19 +375,23 @@ $$\frac{2}{s_{mT} + \frac{1}{s_{mT}}} = \frac{2 s_{mT}}{s_{mT}^2 + 1} = \frac{3}
 
 Cross-multiply and arrange as a quadratic equation:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 8 s_{mT} &= 3 (s_{mT}^2 + 1) \\
 3 s_{mT}^2 - 8 s_{mT} + 3 &= 0
-\end{aligned}$$
+\end{aligned}
+$$
 
 Solve using the quadratic formula:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 s_{mT} &= \frac{-(-8) \pm \sqrt{(-8)^2 - 4(3)(3)}}{2(3)} \\
 &= \frac{8 \pm \sqrt{64 - 36}}{6} \\
 &= \frac{8 \pm \sqrt{28}}{6} \\
 &= \frac{8 \pm 5.2915}{6}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Evaluating the two mathematical roots:
 
@@ -435,10 +445,12 @@ $$P_g = P_{\text{in}} - P_{cu1} = 35\text{ kW} - 1.2\text{ kW} = 33.8\text{ kW} 
 
 Developed gross electromagnetic torque can be evaluated using two identical expressions:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 T_{\text{dev}} &= \frac{P_g}{\omega_s} \\
 &= \frac{P_{\text{dev}}}{\omega_r}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Because $P_{\text{dev}} = (1 - s) P_g$ and $\omega_r = (1 - s) \omega_s$, the factor $(1 - s)$ cancels out completely:
 
@@ -538,10 +550,12 @@ $$\frac{10}{s} = \frac{1}{s^2} + 9$$
 
 Multiply the entire equation by $s^2$:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 10 s &= 1 + 9 s^2 \\
 9 s^2 - 10 s + 1 &= 0
-\end{aligned}$$
+\end{aligned}
+$$
 
 Factor this quadratic equation:
 
@@ -625,11 +639,13 @@ $$s_{mT} = 1 \implies \frac{R_2}{X_2(f)} = 1 \implies X_2(f) = R_2$$
 
 Substitute the frequency-dependent reactance into this condition:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 2 R_2 \left(\frac{f}{50}\right) &= R_2 \\
 \frac{2 f}{50} &= 1 \\
 f &= \frac{50}{2} = 25\text{ Hz}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Reducing the supply frequency to 25 Hz reduces standstill reactance until it equals rotor resistance. This places maximum torque right at starting.
 
@@ -700,12 +716,14 @@ $$\left(\frac{R_2}{s}\right)^2 + X_2^2 = (3.333)^2 + 2^2 = 11.111 + 4 = 15.111\,
 
 Substituting the known parameters:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 T_{FL} &= \frac{3}{\omega_s} \times \frac{(141.92)^2 \times 3.333}{15.111} \\
 &= \frac{3}{\omega_s} \times \frac{20141.29 \times 3.333}{15.111} \\
 &= \frac{3}{\omega_s} \times 4442.54 \\
 &= 140.68\text{ N}\cdot\text{m}
-\end{aligned}$$
+\end{aligned}
+$$
 
 > [!success] Result: Problem 14
 > The full-load developed electromagnetic torque is $140.68\text{ N}\cdot\text{m}$.

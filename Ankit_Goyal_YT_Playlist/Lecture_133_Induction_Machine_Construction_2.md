@@ -299,10 +299,12 @@ $$f_r = \frac{P}{2} f_m = \frac{P}{120} (N_s - N_r)$$
 
 Now multiply and divide by the stator supply frequency $f = \frac{P N_s}{120}$:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 f_r &= \left(\frac{N_s - N_r}{N_s}\right) \left(\frac{P N_s}{120}\right) \\
 &= s f
-\end{aligned}$$
+\end{aligned}
+$$
 
 > [!success] Rotor Induced Frequency
 > The electrical frequency of EMF and current induced in the rotor is directly proportional to slip:
@@ -365,11 +367,13 @@ Apply this kinematic principle to the induction motor:
 
 The speed of the rotor magnetic field relative to the stator (ground) is the sum of the two speeds:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 N_{\text{RMF,rotor w.r.t. stator}} &= N_r + s N_s \\
 &= N_r + (N_s - N_r) \\
 &= N_s
-\end{aligned}$$
+\end{aligned}
+$$
 
 ![Mathematical proof that rotor field speed w.r.t. stator is Ns](frames/133/frame_0049_39m28s.jpg)
 

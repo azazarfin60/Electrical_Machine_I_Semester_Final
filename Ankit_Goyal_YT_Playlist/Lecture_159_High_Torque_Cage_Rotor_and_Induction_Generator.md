@@ -80,12 +80,14 @@ First, compute the synchronous mechanical angular speed:
 $$\omega_{sm} = \frac{4 \pi \times 50}{4} = 50 \pi \approx 157.08\text{ rad/s}$$
 
 Now compute the torque developed by the outer cage at $s = 1$:
-$$\begin{aligned}
+$$
+\begin{aligned}
 T_{\text{outer}} &= \frac{3}{157.08} \times \frac{(230)^2 \times 0.3}{(0.3)^2 + (0.15)^2} \\
 &= \frac{3 \times 52900 \times 0.3}{157.08 \times (0.09 + 0.0225)} \\
 &= \frac{47610}{157.08 \times 0.1125} \\
 &= 106.98\text{ N}\cdot\text{m}
-\end{aligned}$$
+\end{aligned}
+$$
 
 The outer cage provides the dominant component of starting torque.
 
@@ -95,22 +97,26 @@ _(05:37 - 10:31)_
 ### Total Gross Torque at Standstill
 
 Continuing from the previous analysis, the torque of the inner cage at standstill ($s = 1$) is evaluated with parameters $R_i = 0.06\,\Omega$, $X_i = 0.6\,\Omega$, and $V_2 = 230\text{ V/phase}$:
-$$\begin{aligned}
+$$
+\begin{aligned}
 T_{\text{inner}} &= \frac{3}{\omega_{sm}} \frac{V_2^2 R_i}{R_i^2 + X_i^2} \\
 &= \frac{3}{157.08} \times \frac{(230)^2 \times 0.06}{(0.06)^2 + (0.6)^2} \\
 &= \frac{3 \times 52900 \times 0.06}{157.08 \times (0.0036 + 0.36)} \\
 &= \frac{9522}{157.08 \times 0.3636} \\
 &= 29.715\text{ N}\cdot\text{m}
-\end{aligned}$$
+\end{aligned}
+$$
 
 ![Calculation of inner cage torque and total gross torque on whiteboard](frames/159/frame_0019_06m48s.jpg)
 
 The total standstill torque is the sum of both contributions:
-$$\begin{aligned}
+$$
+\begin{aligned}
 T_{\text{total, st}} &= T_{\text{outer}} + T_{\text{inner}} \\
 &= 106.98 + 29.715 \\
 &= 136.69\text{ N}\cdot\text{m}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Notice that the outer cage contributes $106.98 / 136.69 \approx 78.3\%$ of the total starting torque. This confirms that the outer cage dominates at starting.
 
@@ -131,21 +137,25 @@ $$\frac{R_i}{s} = 0.06 \times 30 = 1.8\,\Omega$$
 ![Derivation of running torques showing inner cage dominance](frames/159/frame_0024_09m52s.jpg)
 
 Now calculate the running torque produced by each cage:
-$$\begin{aligned}
+$$
+\begin{aligned}
 T_{\text{outer, run}} &= \frac{3}{\omega_{sm}} \frac{V_2^2 (R_o / s)}{(R_o / s)^2 + X_o^2} \\
 &= \frac{3}{157.08} \times \frac{(400)^2 \times 9.0}{(9.0)^2 + (0.15)^2} \\
 &= \frac{3 \times 160000 \times 9.0}{157.08 \times (81 + 0.0225)} \\
 &= 11.317\text{ N}\cdot\text{m}
-\end{aligned}$$
+\end{aligned}
+$$
 
 For the inner cage:
-$$\begin{aligned}
+$$
+\begin{aligned}
 T_{\text{inner, run}} &= \frac{3}{\omega_{sm}} \frac{V_2^2 (R_i / s)}{(R_i / s)^2 + X_i^2} \\
 &= \frac{3}{157.08} \times \frac{(400)^2 \times 1.8}{(1.8)^2 + (0.6)^2} \\
 &= \frac{3 \times 160000 \times 1.8}{157.08 \times (3.24 + 0.36)} \\
 &= \frac{864000}{157.08 \times 3.60} \\
 &= 50.04\text{ N}\cdot\text{m}
-\end{aligned}$$
+\end{aligned}
+$$
 
 The total torque under running conditions is:
 $$T_{\text{total, run}} = T_{\text{outer, run}} + T_{\text{inner, run}} = 11.317 + 50.04 = 61.36\text{ N}\cdot\text{m}$$
@@ -158,12 +168,14 @@ When a star-delta starter is employed, the voltage applied across each stator ph
 $$T_{\text{st(Y-\Delta)}} = \frac{1}{3} T_{\text{st(DOL)}}$$
 
 If the motor starts from the $400\text{ V}$ supply using a star-delta starter, we can scale the starting torque from the $230\text{ V}$ direct-on-line baseline:
-$$\begin{aligned}
+$$
+\begin{aligned}
 T_{\text{st(Y-\Delta)}} &= \frac{1}{3} \times T_{\text{st}}(230\text{ V}) \times \left(\frac{400}{230}\right)^2 \\
 &= \frac{1}{3} \times 136.69 \times (1.7391)^2 \\
 &= \frac{1}{3} \times 136.69 \times 3.0246 \\
 &= 137.8\text{ N}\cdot\text{m}
-\end{aligned}$$
+\end{aligned}
+$$
 
 > [!success] Dual-Cage Operating Principle
 > At starting, leakage reactance dominates over resistance. Current flows predominantly through the low-reactance outer cage, delivering high starting torque. At normal operating speed, slip is very small, so $R/s$ dominates over reactance. Current shifts naturally into the low-resistance inner cage, providing high running efficiency.
@@ -203,11 +215,13 @@ $$Z_o^2 = R_o^2 + X_o^2 = (0.06)^2 + (0.2)^2 = 36 \times 10^{-4} + 0.04 = 0.0436
 ![Step by step solution showing outer cage producing 25 times torque](frames/159/frame_0033_14m05s.jpg)
 
 Substitute these into the torque ratio formula:
-$$\begin{aligned}
+$$
+\begin{aligned}
 \frac{T_{\text{outer}}}{T_{\text{inner}}} &= 3 \times \frac{0.3604}{0.0436} \\
 &= 3 \times 8.266 \\
 &\approx 24.8 \approx 25
-\end{aligned}$$
+\end{aligned}
+$$
 
 > [!success] Key Takeaway
 > At starting, the outer cage produces approximately 25 times the torque of the inner cage. The outer cage provides nearly all the starting effort, while the inner cage carries almost no starting load.
@@ -269,14 +283,16 @@ $$\frac{N_{r1}}{N_{r2}} = \frac{N_s (1 - s_1)}{N_s (1 - s_2)} = \frac{1 - s_1}{1
 ![Solving simultaneous slip equations on whiteboard](frames/159/frame_0044_18m08s.jpg)
 
 Substitute $s_1 = 2.25 \, s_2$ into the ratio equation:
-$$\begin{aligned}
+$$
+\begin{aligned}
 \frac{1 - 2.25 \, s_2}{1 - s_2} &= 1.043 \\
 1 - 2.25 \, s_2 &= 1.043 (1 - s_2) \\
 1 - 2.25 \, s_2 &= 1.043 - 1.043 \, s_2 \\
 1 - 1.043 &= (2.25 - 1.043) \, s_2 \\
 -0.043 &= 1.207 \, s_2 \\
 s_2 &= -\frac{0.043}{1.207} \approx -0.03562
-\end{aligned}$$
+\end{aligned}
+$$
 
 Now compute $s_1$:
 $$s_1 = 2.25 \times (-0.03562) = -0.08014 \approx -0.08$$
@@ -284,19 +300,23 @@ $$s_1 = 2.25 \times (-0.03562) = -0.08014 \approx -0.08$$
 Both slips are negative, which confirms induction generator operation above synchronous speed.
 
 Now compute the rotor speeds:
-$$\begin{aligned}
+$$
+\begin{aligned}
 N_{r1} &= N_s (1 - s_1) \\
 &= 750 \times (1 - (-0.08014)) \\
 &= 750 \times 1.08014 \\
 &= 810.11\text{ rpm}
-\end{aligned}$$
+\end{aligned}
+$$
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 N_{r2} &= N_s (1 - s_2) \\
 &= 750 \times (1 - (-0.03562)) \\
 &= 750 \times 1.03562 \\
 &= 776.72\text{ rpm}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Check the ratio:
 $$\frac{810.11}{776.72} \approx 1.04299 \approx 1.043$$
@@ -350,12 +370,14 @@ $$Z_{i,\text{run}}^2 = (R_i / s)^2 + X_i^2 = (2.0)^2 + (0.3)^2 = 4.0 + 0.09 = 4.
 ![Running torque calculation showing inner cage dominance](frames/159/frame_0055_23m33s.jpg)
 
 Substitute these into the torque ratio formula:
-$$\begin{aligned}
+$$
+\begin{aligned}
 \frac{T_{\text{outer}}}{T_{\text{inner}}} &= \left(\frac{R_o / s}{R_i / s}\right) \times \left(\frac{Z_{i,\text{run}}^2}{Z_{o,\text{run}}^2}\right) \\
 &= \left(\frac{0.6}{2.0}\right) \times \left(\frac{4.09}{0.52}\right) \\
 &= 0.3 \times 7.865 \\
 &\approx 0.5185
-\end{aligned}$$
+\end{aligned}
+$$
 
 Because $\frac{T_{\text{outer}}}{T_{\text{inner}}} = 0.5185 < 1$, the inner cage produces nearly twice the torque of the outer cage.
 
@@ -459,11 +481,13 @@ Compute the operating slip:
 $$s = \frac{N_s - N_r}{N_s} = \frac{750 - 800}{750} = -\frac{50}{750} = -\frac{1}{15} \approx -0.0667$$
 
 Now calculate the total 3-phase rotor copper loss:
-$$\begin{aligned}
+$$
+\begin{aligned}
 P_{\text{Cu, rotor}} &= |s| P_g \\
 &= \frac{1}{15} \times 9000\text{ W} \\
 &= 600\text{ W}
-\end{aligned}$$
+\end{aligned}
+$$
 
 ![Standstill slip-ring phase voltage conversion and resistance formula](frames/159/frame_0086_33m53s.jpg)
 
@@ -477,14 +501,16 @@ With stator impedance and rotor leakage reactance neglected, the 3-phase air-gap
 $$P_g = 3 \frac{E_2^2}{R_2 / |s|}$$
 
 Substitute the known values into this equation:
-$$\begin{aligned}
+$$
+\begin{aligned}
 9000 &= 3 \times \frac{\left(\frac{260}{\sqrt{3}}\right)^2}{\frac{R_2}{1/15}} \\
 9000 &= 3 \times \frac{\frac{(260)^2}{3}}{15 R_2} \\
 9000 &= \frac{(260)^2}{15 R_2} \\
 9000 &= \frac{67600}{15 R_2} \\
 15 R_2 &= \frac{67600}{9000} \approx 7.511 \\
 R_2 &= \frac{7.511}{15} \approx 0.5007 \approx 0.5\,\Omega/\text{phase}
-\end{aligned}$$
+\end{aligned}
+$$
 
 > [!success] Calculated Machine Constants
 > 1. Rotor copper loss = $600\text{ W}$.
@@ -514,12 +540,14 @@ The air-gap power with external resistance inserted is:
 $$P_g' = 3 \frac{E_2^2}{(R_2 + R_{\text{ext}}) / |s|}$$
 
 Substitute the known parameters ($P_g' = 4000\text{ W}$, $E_2 = 260 / \sqrt{3}\text{ V}$, $|s| = 1/15$):
-$$\begin{aligned}
+$$
+\begin{aligned}
 4000 &= 3 \times \frac{\frac{(260)^2}{3}}{15 (R_2 + R_{\text{ext}})} \\
 4000 &= \frac{67600}{15 (R_2 + R_{\text{ext}})} \\
 15 (R_2 + R_{\text{ext}}) &= \frac{67600}{4000} = 16.90 \\
 R_2 + R_{\text{ext}} &= \frac{16.90}{15} \approx 1.1266\,\Omega
-\end{aligned}$$
+\end{aligned}
+$$
 
 Using $R_2 = 0.5\,\Omega$:
 $$R_{\text{ext}} = 1.1266 - 0.5 = 0.6266\,\Omega/\text{phase}$$

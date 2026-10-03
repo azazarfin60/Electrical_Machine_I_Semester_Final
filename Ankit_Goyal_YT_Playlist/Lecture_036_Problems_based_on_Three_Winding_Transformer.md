@@ -114,12 +114,14 @@ $$I_P = \frac{N_S}{N_P} I_S + \frac{N_T}{N_P} I_T$$
 
 Substituting the given turns ratios $N_S/N_P = 2/10 = 0.2$ and $N_T/N_P = 1/10 = 0.1$:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 I_P &= 0.2 (45 \angle -36.87^\circ) + 0.1 (50 \angle -45^\circ) \\
 &= 9 (0.8 - j0.6) + 5 (0.7071 - j0.7071) \\
 &= (7.2 - j5.4) + (3.5355 - j3.5355) \\
 &= 10.7355 - j8.9355\text{ A}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Converting the rectangular phasor to polar form gives the current magnitude and phase angle:
 
@@ -428,11 +430,13 @@ The per-phase equivalent impedance consists of two components in series: the ups
 
 Adding resistance and reactance separately yields the total equivalent impedance:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 R_{\text{eq}} &= 4 + \frac{20}{3} = \frac{32}{3} \approx 10.667\,\Omega \\
 X_{\text{eq}} &= 6 + 12 = 18\,\Omega \\
 Z_{\text{eq}} &= 10.667 + j18\,\Omega
-\end{aligned}$$
+\end{aligned}
+$$
 
 ![Voltage Drop Derivation on Whiteboard](frames/036/frame_0125_33m44s.jpg)
 
@@ -448,11 +452,13 @@ $$\Delta V \approx I_P (R_{\text{eq}} \cos\phi + X_{\text{eq}} \sin\phi)$$
 
 Evaluating the numerical voltage drop across the series impedance:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \Delta V &\approx 26.243 (10.667 \times 0.8 + 18 \times 0.6) \\
 &= 26.243 (8.533 + 10.800) \\
 &= 26.243 \times 19.333 \approx 507.35\text{ V}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Adding this drop to the transformer terminal phase voltage yields the sending-end phase voltage:
 
@@ -556,20 +562,24 @@ Consider the following system setup:
 
 We write the complex power consumed by each load:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 S_{\text{secondary}} &= 400 \angle 0^\circ = 400 + j0\text{ kVA} \\
 S_{\text{tertiary}} &= 200 \angle 53.13^\circ = 200(0.6 + j0.8) = 120 + j160\text{ kVA}
-\end{aligned}$$
+\end{aligned}
+$$
 
 ![Phasor Power Derivation](frames/036/frame_0155_43m49s.jpg)
 
 Adding the real and reactive components:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 S_{\text{total}} &= S_{\text{secondary}} + S_{\text{tertiary}} \\
 &= (400 + 120) + j160 \\
 &= 520 + j160\text{ kVA}
-\end{aligned}$$
+\end{aligned}
+$$
 
 The magnitude of this resultant apparent power is:
 
@@ -671,11 +681,13 @@ $$S_3 = 300(0.6 + j0.8) = 180 + j240\text{ kVA}$$
 
 Adding the two complex loads gives the total power supplied by the mains:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 S_{\text{total}} &= S_2 + S_3 \\
 &= (720 + 180) + j(540 + 240) \\
 &= 900 + j780\text{ kVA}
-\end{aligned}$$
+\end{aligned}
+$$
 
 The magnitude of this combined apparent power is:
 

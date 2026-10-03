@@ -45,10 +45,12 @@ The flow of electrical and mechanical power in an induction motor follows defini
 
 ![Induction motor power flow](frames/153/frame_0006_03m49s.jpg)
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 P_{\text{in}} &= P_g + P_{\text{stator loss}} \\
 P_g : P_{cu} : P_{\text{mech}} &= 1 : s : (1 - s)
-\end{aligned}$$
+\end{aligned}
+$$
 
 From these proportions, air gap power relates to developed mechanical power by:
 
@@ -143,11 +145,13 @@ The initial rotor circuit parameters are:
 
 Apply the impedance constancy criterion:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \frac{R_2}{s_1} &= \frac{R_2 + R_{\text{ext}}}{s_2} \\
 \frac{0.25}{0.019} &= \frac{2.25}{s_2} \\
 s_2 &= 0.019 \times \frac{2.25}{0.25} = 0.019 \times 9 = 0.171
-\end{aligned}$$
+\end{aligned}
+$$
 
 So the new operating slip increases by a factor of 9 to $17.1\%$.
 
@@ -171,10 +175,12 @@ $$P_{g1} = P_{g2} = P_g = \text{constant}$$
 
 The developed mechanical powers for the two operating conditions relate directly to slip:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 P_{m1} &= (1 - s_1) P_g \\
 P_{m2} &= (1 - s_2) P_g
-\end{aligned}$$
+\end{aligned}
+$$
 
 Taking their ratio eliminates the unknown air gap power:
 
@@ -335,10 +341,12 @@ $$250 = \frac{3}{78.54} \frac{(92.38)^2 x}{x^2 + (0.4)^2} = 325.9 \frac{x}{x^2 +
 
 Rearranging into standard quadratic form:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 250 (x^2 + 0.16) &= 325.9 x \\
 x^2 - 1.304 x + 0.16 &= 0
-\end{aligned}$$
+\end{aligned}
+$$
 
 Using the quadratic formula to solve for $x$:
 

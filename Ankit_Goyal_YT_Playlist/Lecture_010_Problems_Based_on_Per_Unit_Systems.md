@@ -78,11 +78,13 @@ $$S_{\text{base}} = \sqrt{3} V_{\text{base, L}} I_{\text{base}}$$
 
 Rearranging gives the base line voltage:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 V_{\text{base, L}} &= \frac{S_{\text{base}}}{\sqrt{3} I_{\text{base}}} \\
 &= \frac{100 \times 10^6}{\sqrt{3} \times 437.38} \\
 &= 132000\text{ V} = 132\text{ kV}
-\end{aligned}$$
+\end{aligned}
+$$
 
 ![Problem 1 whiteboard solution](frames/010/frame_0025_07m45s.jpg)
 
@@ -110,12 +112,14 @@ $$Z_{\text{pu, new}} = Z_{\text{pu, old}} \left(\frac{S_{\text{base, new}}}{S_{\
 
 Substitute the given numerical ratings:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 Z_{\text{pu, new}} &= 0.2 \times \left(\frac{200}{100}\right) \times \left(\frac{11}{22}\right)^2 \\
 &= 0.2 \times 2 \times \left(\frac{1}{2}\right)^2 \\
 &= 0.4 \times \frac{1}{4} \\
 &= 0.1\text{ pu}
-\end{aligned}$$
+\end{aligned}
+$$
 
 > [!success] Problem 2 Result
 > The new per-unit impedance of the transmission line is $0.1\text{ pu}$.
@@ -149,11 +153,13 @@ $$Z_{\text{base}} = \frac{V_{\text{base}}^2}{S_{\text{base}}}$$
 
 On the high-voltage side, the base voltage is $400\text{ kV}$. The base power is $250\text{ MVA}$.
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 Z_{\text{base, HV}} &= \frac{(400\text{ kV})^2}{250\text{ MVA}} \\
 &= \frac{160000}{250} \\
 &= 640\ \Omega
-\end{aligned}$$
+\end{aligned}
+$$
 
 Now compute actual ohmic reactance on the high-voltage side:
 
@@ -187,21 +193,25 @@ $$Z_{\text{pu, new}} = Z_{\text{pu, old}} \left(\frac{V_{\text{base, old}}}{V_{\
 
 Substitute the known parameters into the expression:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 0.0609 &= 0.4 \times \left(\frac{13.2}{V_{\text{base, new}}}\right)^2 \times \left(\frac{5}{30}\right) \\
 0.0609 &= \frac{0.4}{6} \times \frac{13.2^2}{V_{\text{base, new}}^2}
-\end{aligned}$$
+\end{aligned}
+$$
 
 ![Problem 4 numerical substitution](frames/010/frame_0037_17m11s.jpg)
 
 Rearrange to solve for $V_{\text{base, new}}$:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 V_{\text{base, new}}^2 &= \frac{0.4 \times (13.2)^2}{6 \times 0.0609} \\
 &= \frac{0.4 \times 174.24}{0.3654} \\
 &= 190.7389 \\
 V_{\text{base, new}} &= \sqrt{190.7389} = 13.81\text{ kV}
-\end{aligned}$$
+\end{aligned}
+$$
 
 > [!success] Problem 4 Result
 > The new base voltage is $13.81\text{ kV}$. This confirms Option B.
@@ -243,11 +253,13 @@ $$Z_{\text{base, LV}}(\Delta) = \frac{3 V_{\text{base, LV}}^2}{S_{\text{base}}}$
 
 Substitute the base values:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 Z_{\text{base, LV}}(\Delta) &= \frac{3 \times (23.52)^2}{100} \\
 &= \frac{3 \times 553.19}{100} \\
 &= 16.60\ \Omega
-\end{aligned}$$
+\end{aligned}
+$$
 
 ![Problem 5 base calculation and per-unit solution](frames/010/frame_0044_22m49s.jpg)
 
@@ -271,11 +283,13 @@ $$Z_{\text{base}} = \frac{V_{\text{base}}^2}{S_{\text{base}}}$$
 
 Substitute the generator ratings:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 Z_{\text{base}} &= \frac{(22\text{ kV})^2}{500\text{ MVA}} \\
 &= \frac{484}{500} \\
 &= 0.968\ \Omega
-\end{aligned}$$
+\end{aligned}
+$$
 
 Compute actual reactance by multiplying per-unit reactance by base impedance:
 
@@ -309,11 +323,13 @@ $$Z_{\text{base, LV}}(\Delta) = \frac{3 V_{\text{base, LV}}^2}{S_{\text{base}}}$
 
 Substitute $V_{\text{base, LV}} = 33\text{ kV}$ and $S_{\text{base}} = 20\text{ MVA}$:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 Z_{\text{base, LV}}(\Delta) &= \frac{3 \times (33)^2}{20} \\
 &= \frac{3 \times 1089}{20} \\
 &= 163.35\ \Omega
-\end{aligned}$$
+\end{aligned}
+$$
 
 ![Problem 7 delta base impedance and ohmic reactance](frames/010/frame_0049_27m09s.jpg)
 
@@ -338,19 +354,23 @@ $$X_{\text{LV}}(\Omega) = 0.12 \times 163.35\ \Omega = 19.602\ \Omega \approx 19
 
 The primary winding is connected in delta with ratings $11\text{ kV}$ and $100\text{ kVA} = 0.1\text{ MVA}$. Calculate the primary delta base impedance:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 Z_{\text{base}}(\Delta) &= \frac{3 \times (11\text{ kV})^2}{0.1\text{ MVA}} \\
 &= \frac{3 \times 121}{0.1} \\
 &= 3630\ \Omega
-\end{aligned}$$
+\end{aligned}
+$$
 
 Multiply per-unit impedance by this base impedance:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 Z(\Omega) &= Z_{\text{pu}} \times Z_{\text{base}}(\Delta) \\
 &= (0.02 + j0.07) \times 3630 \\
 &= (72.6 + j254.1)\ \Omega
-\end{aligned}$$
+\end{aligned}
+$$
 
 > [!success] Problem 8 Result
 > The primary phase impedance is $(72.6 + j254.1)\ \Omega$. This confirms Option D.
@@ -373,11 +393,13 @@ $$Z_{\text{pu, new}} = Z_{\text{pu, old}} \left(\frac{S_{\text{base, new}}}{S_{\
 
 Here $S_{\text{base, new}} / S_{\text{base, old}} = 2$ and $V_{\text{base, old}} / V_{\text{base, new}} = 1/2$. Substitute these ratios:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 Z_{\text{pu, new}} &= x \times 2 \times \left(\frac{1}{2}\right)^2 \\
 &= x \times 2 \times \frac{1}{4} \\
 &= 0.5x
-\end{aligned}$$
+\end{aligned}
+$$
 
 > [!success] Problem 9 Result
 > The new per-unit impedance is $0.5x$. This confirms Option A.
@@ -415,12 +437,14 @@ $$Z_{\text{base, G}} = \frac{11^2}{30}, \quad Z_{\text{base, T}} = \frac{33^2}{1
 
 Compute the ratio:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \frac{Z_{\text{pu, T}}}{Z_{\text{pu, G}}} &= \frac{\frac{11^2}{30}}{\frac{33^2}{15}} \\
 &= \left(\frac{11}{33}\right)^2 \times \left(\frac{15}{30}\right) \\
 &= \left(\frac{1}{3}\right)^2 \times \frac{1}{2} \\
 &= \frac{1}{9} \times \frac{1}{2} = \frac{1}{18}
-\end{aligned}$$
+\end{aligned}
+$$
 
 > [!success] Problem 10 Result
 > The ratio of per-unit impedances is $1 : 18$. This confirms Option D.
@@ -443,12 +467,14 @@ $$Z_{\text{pu, new}} = Z_{\text{pu, old}} \left(\frac{S_{\text{base, new}}}{S_{\
 
 Here $S_{\text{base, new}} / S_{\text{base, old}} = 1/2$ and $V_{\text{base, old}} / V_{\text{base, new}} = 2$.
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 Z_{\text{pu, new}} &= 0.15 \times \left(\frac{1}{2}\right) \times (2)^2 \\
 &= 0.15 \times \frac{1}{2} \times 4 \\
 &= 0.15 \times 2 \\
 &= 0.30\text{ pu}
-\end{aligned}$$
+\end{aligned}
+$$
 
 > [!success] Problem 11 Result
 > The new per-unit impedance is $0.30\text{ pu}$. This confirms Option C.
@@ -475,19 +501,23 @@ The transformer rating is $100\text{ kVA}$ and $1100/230\text{ V}$. The base pow
 
 Calculate base impedance on the low-voltage side:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 Z_{\text{base, LV}} &= \frac{V_{\text{base, LV}}^2}{S_{\text{base}}} \\
 &= \frac{230^2}{100 \times 10^3} \\
 &= \frac{52900}{100000} \\
 &= 0.529\ \Omega
-\end{aligned}$$
+\end{aligned}
+$$
 
 Divide the ohmic impedance by the base impedance:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 z_{\text{pu, LV}} &= \frac{0.006 + j0.01}{0.529} \\
 &= (0.01134 + j0.0189)\text{ pu}
-\end{aligned}$$
+\end{aligned}
+$$
 
 ![Low-voltage winding per-unit calculation](frames/010/frame_0067_42m54s.jpg)
 
@@ -502,21 +532,25 @@ $$z_{\text{HV}} = (0.1 + j0.4)\ \Omega$$
 
 The base voltage on the high-voltage side is $1100\text{ V}$. Calculate the high-voltage base impedance:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 Z_{\text{base, HV}} &= \frac{V_{\text{base, HV}}^2}{S_{\text{base}}} \\
 &= \frac{1100^2}{100 \times 10^3} \\
 &= \frac{1210000}{100000} \\
 &= 12.1\ \Omega
-\end{aligned}$$
+\end{aligned}
+$$
 
 ![High-voltage winding per-unit calculation](frames/010/frame_0068_43m33s.jpg)
 
 Divide the high-voltage winding ohmic impedance by its base impedance:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 z_{\text{pu, HV}} &= \frac{0.1 + j0.4}{12.1} \\
 &= (0.00826 + j0.03305)\text{ pu}
-\end{aligned}$$
+\end{aligned}
+$$
 
 > [!success] High-Voltage Winding Per-Unit Result
 > The per-unit impedance of the high-voltage winding is $(0.00826 + j0.03305)\text{ pu}$.
@@ -534,11 +568,13 @@ $$Z_{\text{pu, eq}} = z_{\text{pu, LV}} + z_{\text{pu, HV}}$$
 
 Add the real and imaginary parts from the individual winding calculations:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 Z_{\text{pu, eq}} &= (0.01134 + j0.0189) + (0.00826 + j0.03305) \\
 &= (0.01134 + 0.00826) + j(0.0189 + 0.03305) \\
 &= (0.0196 + j0.05195)\text{ pu}
-\end{aligned}$$
+\end{aligned}
+$$
 
 ![Total per-unit equivalent impedance summation](frames/010/frame_0070_45m25s.jpg)
 
@@ -553,21 +589,25 @@ We recover actual ohmic values by multiplying the total per-unit impedance by th
 
 For the high-voltage side:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 Z_{\text{HV}} &= Z_{\text{pu, eq}} \times Z_{\text{base, HV}} \\
 &= (0.0196 + j0.05195) \times 12.1\ \Omega \\
 &= (0.237 + j0.6285)\ \Omega
-\end{aligned}$$
+\end{aligned}
+$$
 
 ![Equivalent ohmic impedance referred to high-voltage and low-voltage sides](frames/010/frame_0072_47m54s.jpg)
 
 For the low-voltage side:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 Z_{\text{LV}} &= Z_{\text{pu, eq}} \times Z_{\text{base, LV}} \\
 &= (0.0196 + j0.05195) \times 0.529\ \Omega \\
 &= (0.01036 + j0.02748)\ \Omega
-\end{aligned}$$
+\end{aligned}
+$$
 
 > [!success] Equivalent Ohmic Values
 > The total equivalent impedance referred to the high-voltage side is $(0.237 + j0.6285)\ \Omega$. Referred to the low-voltage side, it is $(0.01036 + j0.02748)\ \Omega$.

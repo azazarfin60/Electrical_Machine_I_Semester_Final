@@ -504,12 +504,14 @@ $$A_n = 36\text{ cm}^2 = 36 \times 10^{-4}\text{ m}^2$$
 
 Substitute into the EMF equation for the primary winding:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 V_1 &= 4.44 f N_1 B_m A_n \\
 &= 4.44 \times 50 \times 1250 \times (\sqrt{2} \times 1.4) \times (36 \times 10^{-4}) \\
 &\approx 277500 \times (7.1276 \times 10^{-3}) \\
 &\approx 1978\text{ V}
-\end{aligned}$$
+\end{aligned}
+$$
 
 This calculated value represents the rated RMS primary voltage.
 
@@ -545,11 +547,13 @@ $$\mathcal{R} = \frac{l}{\mu_0 \mu_r A_n}$$
 
 Substitute the parameters into the equation:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \mathcal{R} &= \frac{15}{(4\pi \times 10^{-7}) \times 8000 \times (36 \times 10^{-4})} \\
 &= \frac{15}{3.6191 \times 10^{-4}} \\
 &\approx 41446.6\text{ AT/Wb}
-\end{aligned}$$
+\end{aligned}
+$$
 
 ### Determining Magnetizing Current via Hopkinson's Law
 
@@ -573,12 +577,14 @@ $$\Phi_{\text{rms}} = B_{\text{rms}} A_n = 1.4 \times (36 \times 10^{-4}) = 5.04
 
 Now apply Hopkinson's law with $N_1 = 1250\text{ turns}$:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 I_{m,\text{rms}} &= \frac{\Phi_{\text{rms}} \mathcal{R}}{N_1} \\
 &= \frac{(5.04 \times 10^{-3}\text{ Wb}) \times 41446.6\text{ AT/Wb}}{1250} \\
 &= \frac{208.89}{1250} \\
 &\approx 0.1671\text{ A}
-\end{aligned}$$
+\end{aligned}
+$$
 
 ### Alternative Method: Magnetizing Reactance
 
@@ -614,20 +620,24 @@ Magnetic reluctance was calculated as $\mathcal{R} = 41446.6\text{ AT/Wb}$.
 
 We compute the primary magnetizing inductance:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 L_{m1} &= \frac{N_1^2}{\mathcal{R}} \\
 &= \frac{1250^2}{41446.6} \\
 &\approx 37.70\text{ H}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Referred to the secondary winding with $N_2 = 125\text{ turns}$:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 L_{m2} &= \frac{N_2^2}{\mathcal{R}} \\
 &= \frac{125^2}{41446.6} \\
 &= \frac{L_{m1}}{a^2} \\
 &\approx 0.3770\text{ H}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Here $a = N_1 / N_2 = 10$ is the transformation ratio.
 
@@ -639,19 +649,23 @@ At supply frequency $f = 50\text{ Hz}$, the angular frequency is $\omega = 2\pi 
 
 The primary magnetizing susceptance is:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 B_{m1} &= \frac{1}{\omega L_{m1}} \\
 &= \frac{1}{100\pi \times 37.70} \\
 &\approx 8.443 \times 10^{-5}\text{ S} = 84.43\ \mu\text{S}
-\end{aligned}$$
+\end{aligned}
+$$
 
 The secondary magnetizing susceptance is:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 B_{m2} &= \frac{1}{\omega L_{m2}} \\
 &= \frac{1}{100\pi \times 0.3770} \\
 &\approx 8.443 \times 10^{-3}\text{ S} = 8.443\text{ mS}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Notice that secondary susceptance is larger by a factor of $a^2 = 100$.
 
@@ -661,27 +675,33 @@ Now consider operating this transformer on a $60\text{ Hz}$ supply with unchange
 
 The permissible primary voltage scales linearly with frequency:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 V_1(60\text{ Hz}) &= V_1(50\text{ Hz}) \times \left(\frac{60}{50}\right) \\
 &= 1978 \times 1.2 \\
 &\approx 2373.6\text{ V}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Core inductance depends purely on turns and core geometry. It does not change with frequency. 
 
 However, the operating frequency changes to $\omega = 2\pi \times 60 = 120\pi\text{ rad/s}$. The magnetizing reactance increases by $20\%$. So susceptance decreases:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 B_{m1}(60\text{ Hz}) &= \frac{1}{120\pi \times 37.70} \\
 &\approx 7.036 \times 10^{-5}\text{ S} = 70.36\ \mu\text{S}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Referred to the secondary:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 B_{m2}(60\text{ Hz}) &= \frac{1}{120\pi \times 0.3770} \\
 &\approx 7.036 \times 10^{-3}\text{ S} = 7.036\text{ mS}
-\end{aligned}$$
+\end{aligned}
+$$
 
 ![Frequency scaling equations for voltage and susceptance on whiteboard](frames/013/frame_0075_44m32s.jpg)
 
@@ -773,19 +793,23 @@ $$\omega = 2\pi \times 50 = 100\pi \approx 314.16\text{ rad/s}$$
 
 Now calculate the amplitude of the fundamental flux component:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \Phi_{m1} &= \frac{400}{500 \times 100\pi} \\
 &= \frac{0.8}{100\pi} \\
 &\approx 2.546 \times 10^{-3}\text{ Wb} = 2.546\text{ mWb}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Next, evaluate the third harmonic flux amplitude with angular frequency $3\omega = 300\pi\text{ rad/s}$:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \Phi_{m3} &= \frac{100}{500 \times 300\pi} \\
 &= \frac{0.2}{300\pi} \\
 &\approx 0.2122 \times 10^{-3}\text{ Wb} = 0.2122\text{ mWb}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Combining these components gives the complete time-domain flux expression:
 
@@ -809,18 +833,22 @@ Many students calculate $\sqrt{\Phi_{m1}^2 + \Phi_{m3}^2}$ and call it peak flux
 
 Orthogonal Fourier components combine via root-sum-squares only for RMS values:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \Phi_{\text{rms}} &= \sqrt{\frac{\Phi_{m1}^2}{2} + \frac{\Phi_{m3}^2}{2}} \\
 &= \sqrt{\Phi_{\text{rms},1}^2 + \Phi_{\text{rms},3}^2}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Using the amplitudes derived earlier ($\Phi_{m1} = 2.546\text{ mWb}$ and $\Phi_{m3} = 0.2122\text{ mWb}$):
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \Phi_{\text{rms}} &= \sqrt{\frac{2.546^2 + 0.2122^2}{2}} \\
 &= \sqrt{\frac{6.4821 + 0.0450}{2}} \\
 &\approx 1.807\text{ mWb}
-\end{aligned}$$
+\end{aligned}
+$$
 
 ![Whiteboard rule emphasizing that crest factor sqrt(2) fails for non-sinusoidal waves](frames/013/frame_0085_53m06s.jpg)
 
@@ -882,11 +910,13 @@ $$\cos(\omega t) = 0 \implies \omega t = 90^\circ, 270^\circ$$
 
 Substitute $\omega t = 90^\circ$ into the flux function:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \phi_{\text{peak}} &= 2.546\sin(90^\circ) + 0.2122\sin(270^\circ) \\
 &= 2.546(1) + 0.2122(-1) \\
 &= 2.334\text{ mWb}
-\end{aligned}$$
+\end{aligned}
+$$
 
 ![Presentation of square core transformer problem with stacking factor](frames/013/frame_0089_55m26s.jpg)
 
@@ -920,11 +950,13 @@ $$A_{\text{gross}} = 20 \times 20 = 400\text{ cm}^2 = 0.04\text{ m}^2$$
 
 The active magnetic iron cross section is:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 A_n &= k_s A_{\text{gross}} \\
 &= 0.9 \times 400 \\
 &= 360\text{ cm}^2 = 0.036\text{ m}^2
-\end{aligned}$$
+\end{aligned}
+$$
 
 ![Board calculation determining net iron area and low voltage turns](frames/013/frame_0091_56m52s.jpg)
 
@@ -938,12 +970,14 @@ $$V_{\text{LV}} = 4.44 f N_{\text{LV}} B_m A_n$$
 
 Rearrange to solve for the low-voltage turns:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 N_{\text{LV}} &= \frac{V_{\text{LV}}}{4.44 f B_m A_n} \\
 &= \frac{200}{4.44 \times 50 \times 1.0 \times 0.036} \\
 &= \frac{200}{7.992} \\
 &\approx 25.025\text{ turns}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Rounding to the nearest whole integer gives:
 
@@ -980,10 +1014,12 @@ $$\text{Core depth} = 120\text{ cm} = 1.20\text{ m}$$
 
 The gross cross section of the central limb is:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 A_{\text{central}} &= 0.34 \times 1.20 \\
 &= 0.408\text{ m}^2
-\end{aligned}$$
+\end{aligned}
+$$
 
 ![Diagram showing central limb flux orientation and cross section](frames/013/frame_0096_60m44s.jpg)
 
@@ -1004,11 +1040,13 @@ The transformer operates at $f = 25\text{ Hz}$ with $B_m = 1.2\text{ Wb/m}^2$.
 
 Calculate the EMF per turn:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 E_{\text{turn}} &= 4.44 f B_m A_n \\
 &= 4.44 \times 25 \times 1.2 \times 0.4080 \\
 &\approx 190.21\text{ V/turn}
-\end{aligned}$$
+\end{aligned}
+$$
 
 The rated winding voltages are $V_{\text{HV}} = 20000\text{ V}$ and $V_{\text{LV}} = 4000\text{ V}$.
 
@@ -1058,10 +1096,12 @@ We calculate turns per section for Arrangement A:
 
 $$\text{LV turns per section} = \frac{24}{3} = 8\text{ turns/section}$$
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 N_{\text{HV}} &= 5 \times 24 = 120\text{ turns} \\
 \text{HV turns per section} &= \frac{120}{2} = 60\text{ turns/section}
-\end{aligned}$$
+\end{aligned}
+$$
 
 > [!success] Result: Arrangement A
 > Total turns are $N_{\text{LV}} = 24$ ($8\text{ turns/section}$) and $N_{\text{HV}} = 120$ ($60\text{ turns/section}$).
@@ -1116,11 +1156,13 @@ $$E_{\text{turn}} = 4.44 f B_m A_n$$
 
 Solve for net iron area $A_n$:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 A_n &= \frac{E_{\text{turn}}}{4.44 f B_m} \\
 &= \frac{15}{4.44 \times 50 \times 1.1} \\
 &\approx 0.06198\text{ m}^2
-\end{aligned}$$
+\end{aligned}
+$$
 
 ![Board calculation showing square core dimensions and circumscribing circle diameter](frames/013/frame_0110_72m02s.jpg)
 
@@ -1132,11 +1174,13 @@ $$A_n = a^2 \implies a = \sqrt{0.06198} \approx 0.24896\text{ m} \approx 24.90\t
 
 Circular coils circumscribe the square core. The inner diameter of the coil matches the diagonal of the square:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 d &= \sqrt{a^2 + a^2} = \sqrt{2} a \\
 &= \sqrt{2} \times 0.24896 \\
 &\approx 0.3521\text{ m} = 35.21\text{ cm}
-\end{aligned}$$
+\end{aligned}
+$$
 
 #### Step 3: Winding Turn Calculations
 
@@ -1160,12 +1204,14 @@ $$V_{\text{ph,HV}} = \frac{V_{\text{line,HV}}}{\sqrt{3}} = \frac{10000}{\sqrt{3}
 
 Use the per-phase voltage ratio:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 N_{\text{HV}} &= N_{\text{LV}} \times \left(\frac{V_{\text{ph,HV}}}{V_{\text{ph,LV}}}\right) \\
 &= 34 \times \left(\frac{10000 / \sqrt{3}}{500}\right) \\
 &= 34 \times \frac{20}{\sqrt{3}} \\
 &\approx 392.6\text{ turns}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Rounding to an even integer yields:
 

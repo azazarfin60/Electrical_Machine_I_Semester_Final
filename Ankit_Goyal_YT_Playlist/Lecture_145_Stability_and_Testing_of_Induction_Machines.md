@@ -85,12 +85,14 @@ _(05:44 - 10:39)_
 
 To compute full-load efficiency, scale the blocked-rotor copper losses to the rated current of $20\text{ A}$:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 P_{\text{cu, FL}} &= P_{\text{br}} \times \left(\frac{I_{\text{FL}}}{I_{\text{br}}}\right)^2 \\
 &= 762 \times \left(\frac{20}{15}\right)^2 \\
 &= 762 \times \frac{400}{225} \\
 &= 1354.67\text{ W}
-\end{aligned}$$
+\end{aligned}
+$$
 
 ![Calculation of full-load copper loss and input power](frames/145/frame_0016_06m10s.jpg)
 
@@ -98,11 +100,13 @@ The motor delivers its rated mechanical shaft power at full load:
 $$P_{\text{out}} = 10\text{ kW} = 10{,}000\text{ W}$$
 
 Total input power at full load equals the output power plus all losses:
-$$\begin{aligned}
+$$
+\begin{aligned}
 P_{\text{in}} &= P_{\text{out}} + P_0 + P_{\text{cu, FL}} \\
 &= 10{,}000 + 1002 + 1354.67 \\
 &= 12{,}356.67\text{ W}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Compute the full-load efficiency:
 
@@ -157,12 +161,14 @@ $$I_{\text{ph, sc}} = \frac{I_{L, \text{sc}}}{\sqrt{3}} = \frac{12}{\sqrt{3}}\te
 
 Compute the magnitude of the per-phase blocked-rotor impedance:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 Z_{\text{br}} &= \frac{V_{\text{ph}}}{I_{\text{ph, sc}}} \\
 &= \frac{250}{12/\sqrt{3}} \\
 &= \frac{250\sqrt{3}}{12} \\
 &= 36.084\ \Omega
-\end{aligned}$$
+\end{aligned}
+$$
 
 Using the given power factor $\cos\phi_{\text{sc}} = 0.6$ lagging:
 
@@ -170,10 +176,12 @@ $$\sin\phi_{\text{sc}} = \sqrt{1 - 0.6^2} = 0.8$$
 
 Resolve $Z_{\text{br}}$ into its resistive and reactive components:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 R_{01} &= R_1 + R'_2 = Z_{\text{br}} \cos\phi_{\text{sc}} = 36.084 \times 0.6 = 21.65\ \Omega \\
 X_{01} &= X_1 + X'_2 = Z_{\text{br}} \sin\phi_{\text{sc}} = 36.084 \times 0.8 = 28.87\ \Omega
-\end{aligned}$$
+\end{aligned}
+$$
 
 ![Equivalent resistance and reactance written on the slide](frames/145/frame_0034_12m27s.jpg)
 
@@ -267,11 +275,13 @@ The power factor remains unchanged at $\cos\phi_{\text{st}} = 0.6$ lagging.
 
 Compute total active input power at standstill under rated voltage:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 P_{\text{in, st}} &= \sqrt{3} V_L I_{\text{st}} \cos\phi_{\text{st}} \\
 &= \sqrt{3} \times 500 \times 24 \times 0.6 \\
 &= 12{,}470.77\text{ W}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Because stator core loss is negligible at starting and stator resistance $R_1$ is neglected, stator losses are zero. All active input power crosses the air gap into the rotor:
 
@@ -416,10 +426,12 @@ For star connection:
 - Three-phase power: $P_{\text{br}} = 2100\text{ W}$
 
 1. **Equivalent Resistance:**
-   $$\begin{aligned}
+   $$
+   \begin{aligned}
    R_{\text{eq}} &= R_1 + R'_2 = \frac{P_{\text{br}}}{3 I_{\text{ph, br}}^2} \\
    &= \frac{2100}{3 \times 15^2} = \frac{2100}{675} \approx 3.111\ \Omega
-   \end{aligned}$$
+   \end{aligned}
+   $$
    Since $R_1 = R'_2$:
    $$R_1 = R'_2 = \frac{3.111}{2} = 1.556\ \Omega$$
 

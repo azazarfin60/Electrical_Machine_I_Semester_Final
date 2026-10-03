@@ -105,10 +105,12 @@ So $E_2$ does not need a separate node. It merges directly with $E_1$ across the
 
 Next, reflect the secondary series winding resistance $R_2$ and leakage reactance $X_2$:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 R_2' &= R_2 \left(\frac{N_1}{N_2}\right)^2 \\
 X_2' &= X_2 \left(\frac{N_1}{N_2}\right)^2
-\end{aligned}$$
+\end{aligned}
+$$
 
 Now consider the secondary load current $I_2$. Its reflected value on the primary is:
 
@@ -123,11 +125,13 @@ $$V_2' = V_2 \left(\frac{N_1}{N_2}\right)$$
 > [!success] Exact Primary-Referred T-Circuit
 > The resulting circuit forms a continuous T-network. The series elements $R_1 + j X_1$ and $R_2' + j X_2'$ form the horizontal arms. The shunt exciting branch $R_c \parallel j X_m$ forms the vertical center leg. The ideal transformer is completely eliminated.
 > 
-> $$\begin{aligned}
+> $$
+> \begin{aligned}
 > \mathbf{I}_1 &= \mathbf{I}_0 + \mathbf{I}_1' \\
 > \mathbf{E}_1 &= \mathbf{V}_1 - \mathbf{I}_1 (R_1 + j X_1) \\
 > \mathbf{V}_2' &= \mathbf{E}_1 - \mathbf{I}_1' (R_2' + j X_2')
-> \end{aligned}$$
+> \end{aligned}
+> $$
 
 ### Advantage of the Primary-Referred Model
 
@@ -149,16 +153,20 @@ When transferring from primary to secondary, the referral ratio is $(N_2/N_1)$. 
 1. **Supply Voltage**:
    $$V_1' = V_1 \left(\frac{N_2}{N_1}\right)$$
 2. **Primary Winding Resistance and Reactance**:
-   $$\begin{aligned}
+   $$
+   \begin{aligned}
    R_1' &= R_1 \left(\frac{N_2}{N_1}\right)^2 \\
    X_1' &= X_1 \left(\frac{N_2}{N_1}\right)^2
-   \end{aligned}$$
+   \end{aligned}
+   $$
 3. **Shunt Exciting Branch**:
    The parallel core branch was originally located on the primary side. It must also be referred to the secondary:
-   $$\begin{aligned}
+   $$
+   \begin{aligned}
    R_c' &= R_c \left(\frac{N_2}{N_1}\right)^2 \\
    X_m' &= X_m \left(\frac{N_2}{N_1}\right)^2
-   \end{aligned}$$
+   \end{aligned}
+   $$
 4. **Primary Currents**:
    Currents scale with the inverse ratio $(N_1/N_2)$. The referred total primary current is denoted $I_1''$:
    $$I_1'' = I_1 \left(\frac{N_1}{N_2}\right)$$
@@ -224,11 +232,13 @@ Consider shifting the exciting shunt branch $R_c \parallel j X_m$ from the inter
 
 When the shunt branch moves to the left, no element branches off between $R_1 + j X_1$ and $R_2' + j X_2'$. These two series impedances now sit directly in series. Because they are in series, they add directly:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 R_{01} &= R_1 + R_2' = R_1 + R_2 \left(\frac{N_1}{N_2}\right)^2 \\
 X_{01} &= X_1 + X_2' = X_1 + X_2 \left(\frac{N_1}{N_2}\right)^2 \\
 Z_{01} &= R_{01} + j X_{01}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Here $R_{01}$ represents the total winding resistance referred to the primary. $X_{01}$ represents the total leakage reactance referred to the primary.
 
@@ -378,15 +388,19 @@ In a single-phase transformer rated at $S\text{ kVA}$ with voltages $V_1 / V_2$,
 2. **Base Voltages**:
    $$V_{1,\text{base}} = V_1, \quad V_{2,\text{base}} = V_2$$
 3. **Base Currents**:
-   $$\begin{aligned}
+   $$
+   \begin{aligned}
    I_{1,\text{base}} &= \frac{S}{V_{1,\text{base}}} = \frac{S}{V_1} \\
    I_{2,\text{base}} &= \frac{S}{V_{2,\text{base}}} = \frac{S}{V_2}
-   \end{aligned}$$
+   \end{aligned}
+   $$
 4. **Base Impedances**:
-   $$\begin{aligned}
+   $$
+   \begin{aligned}
    Z_{1,\text{base}} &= \frac{V_{1,\text{base}}}{I_{1,\text{base}}} = \frac{V_1^2}{S} \\
    Z_{2,\text{base}} &= \frac{V_{2,\text{base}}}{I_{2,\text{base}}} = \frac{V_2^2}{S}
-   \end{aligned}$$
+   \end{aligned}
+   $$
 
 ![Derivation of base impedance and relationship with turns ratio](frames/019/frame_0048_38m32s.jpg)
 
@@ -407,11 +421,13 @@ $$Z_{2,\text{base}} = Z_{1,\text{base}} \left(\frac{N_2}{N_1}\right)^2$$
 > [!success] Base Value Referral Rule
 > All base quantities on the two sides of a transformer link directly through the turns ratio:
 > 
-> $$\begin{aligned}
+> $$
+> \begin{aligned}
 > V_{2,\text{base}} &= V_{1,\text{base}} \left(\frac{N_2}{N_1}\right) \\
 > I_{2,\text{base}} &= I_{1,\text{base}} \left(\frac{N_1}{N_2}\right) \\
 > Z_{2,\text{base}} &= Z_{1,\text{base}} \left(\frac{N_2}{N_1}\right)^2
-> \end{aligned}$$
+> \end{aligned}
+> $$
 
 ### Normalizing Referred Impedance to Per-Unit
 
@@ -446,10 +462,12 @@ $$Z_{02,\text{pu}} = \frac{Z_{02}}{Z_{2,\text{base}}}$$
 
 Substitute the ohmic expression for $Z_{02}$ and the base impedance relationship:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 Z_{02} &= Z_2 + Z_1 \left(\frac{N_2}{N_1}\right)^2 \\
 Z_{2,\text{base}} &= Z_{1,\text{base}} \left(\frac{N_2}{N_1}\right)^2
-\end{aligned}$$
+\end{aligned}
+$$
 
 Substitute these into the per-unit formula:
 
@@ -480,10 +498,12 @@ $$Z_{02,\text{pu}} = \frac{Z_{01}}{Z_{1,\text{base}}} = Z_{01,\text{pu}}$$
 
 This result is a major reason why power systems use the per-unit system. In actual ohms, transformer impedance changes depending on which side you observe:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 Z_{01} &\neq Z_{02} \\
 Z_{02} &= Z_{01} \left(\frac{N_2}{N_1}\right)^2
-\end{aligned}$$
+\end{aligned}
+$$
 
 An engineer working in ohms must always track referral sides and turns ratio squares. In per-unit, that distinction disappears completely. A transformer labeled with $5\%$ leakage impedance has $0.05\text{ pu}$ impedance whether viewed from the high-voltage side or the low-voltage side.
 
@@ -491,10 +511,12 @@ An engineer working in ohms must always track referral sides and turns ratio squ
 
 This invariance applies to resistance and reactance separately:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 R_{01,\text{pu}} &= R_{02,\text{pu}} = R_{\text{eq, pu}} \\
 X_{01,\text{pu}} &= X_{02,\text{pu}} = X_{\text{eq, pu}}
-\end{aligned}$$
+\end{aligned}
+$$
 
 ## Complete Per-Unit Equivalent Circuit and Global Invariance
 _(47:35 - 52:01)_
@@ -510,15 +532,19 @@ First, take the circuit drawn on the primary side:
 2. **Primary Current**:
    $$I_{1,\text{pu}} = \frac{I_1}{I_{1,\text{base}}}$$
 3. **Core Resistance and Magnetizing Reactance**:
-   $$\begin{aligned}
+   $$
+   \begin{aligned}
    R_{c,\text{pu}} &= \frac{R_c}{Z_{1,\text{base}}} \\
    X_{m,\text{pu}} &= \frac{X_m}{Z_{1,\text{base}}}
-   \end{aligned}$$
+   \end{aligned}
+   $$
 4. **Series Impedance and Load Voltage**:
-   $$\begin{aligned}
+   $$
+   \begin{aligned}
    Z_{\text{eq, pu}} &= \frac{Z_{01}}{Z_{1,\text{base}}} \\
    V_{2,\text{pu}}' &= \frac{V_2'}{V_{1,\text{base}}}
-   \end{aligned}$$
+   \end{aligned}
+   $$
 
 ![Comparison of primary and secondary per-unit circuits on whiteboard](frames/019/frame_0066_50m59s.jpg)
 
@@ -541,13 +567,15 @@ Every branch produces the exact same numerical per-unit value.
 > [!success] Global Invariance of the Per-Unit Network
 > It does not matter on which side the equivalent circuit is drawn. The complete per-unit network is identical on both sides of the transformer.
 > 
-> $$\begin{aligned}
+> $$
+> \begin{aligned}
 > V_{\text{in, pu}} &= V_{1,\text{pu}} \\
 > R_{c,\text{pu}} &= R_{c,\text{pu}}' \\
 > X_{m,\text{pu}} &= X_{m,\text{pu}}' \\
 > Z_{\text{eq, pu}} &= Z_{01,\text{pu}} = Z_{02,\text{pu}} \\
 > V_{\text{out, pu}} &= V_{2,\text{pu}}
-> \end{aligned}$$
+> \end{aligned}
+> $$
 
 ### System-Wide Power Engineering Invariance
 
@@ -610,12 +638,14 @@ $$Z_L' = Z_L \left(\frac{N_L}{N_H}\right)^2 = Z_L \left(\frac{V_L}{V_H}\right)^2
 
 Substitute the given numerical values:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 Z_L' &= (380 + j 230) \left(\frac{250}{2500}\right)^2 \\
 &= (380 + j 230) \left(\frac{1}{10}\right)^2 \\
 &= (380 + j 230) \times \frac{1}{100} \\
 &= 3.8 + j 2.3\ \Omega
-\end{aligned}$$
+\end{aligned}
+$$
 
 The reflected load resistance is $R_L' = 3.8\ \Omega$. The reflected load reactance is $X_L' = 2.3\ \Omega$.
 All circuit elements now sit on the primary LT side.
@@ -632,12 +662,14 @@ The total series winding impedance of the transformer on the LT side is $Z_{\tex
 
 The total impedance of the series branch including the load is:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 Z_{\text{series, total}} &= Z_{\text{eq, LT}} + Z_L' \\
 &= (0.2 + j 0.7) + (3.8 + j 2.3) \\
 &= (0.2 + 3.8) + j (0.7 + 2.3) \\
 &= 4.0 + j 3.0\ \Omega
-\end{aligned}$$
+\end{aligned}
+$$
 
 The magnitude of this total series branch impedance is:
 
@@ -714,19 +746,23 @@ $$\mathbf{I}_0 = \mathbf{I}_w + \mathbf{I}_\mu = (0.5 - j 1.0)\text{ A}$$
 
 Now sum the branch currents to find total primary input current:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \mathbf{I}_1 &= \mathbf{I}_0 + \mathbf{I}_1' \\
 &= (0.5 - j 1.0) + (40.0 - j 30.0) \\
 &= (0.5 + 40.0) - j (1.0 + 30.0) \\
 &= 40.5 - j 31.0\text{ A}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Calculate the magnitude and phase angle of $\mathbf{I}_1$:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 |\mathbf{I}_1| &= \sqrt{40.5^2 + (-31.0)^2} = \sqrt{1640.25 + 961.0} = \sqrt{2601.25} \approx 51.0\text{ A} \\
 \theta_1 &= \tan^{-1}\left(\frac{-31.0}{40.5}\right) \approx -37.44^\circ
-\end{aligned}$$
+\end{aligned}
+$$
 
 $$\mathbf{I}_1 \approx 51.0 \angle -37.44^\circ\text{ A}$$
 
@@ -751,20 +787,24 @@ Real power is dissipated only in resistive elements. Reactive elements consume z
 
 The power consumed in any element remains invariant when referred across windings. Therefore, compute load power directly on the primary side using reflected load resistance $R_L' = 3.8\ \Omega$:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 P_{\text{out}} &= (I_1')^2 R_L' \\
 &= (50)^2 \times 3.8 \\
 &= 2500 \times 3.8 \\
 &= 9500\text{ W}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Next, compute active input power from terminal quantities:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 P_{\text{in}} &= V_1 I_1 \cos\theta_1 \\
 &= 250 \times 51.0 \times 0.794 \\
 &\approx 10123.5\text{ W}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Alternatively, calculate input power by summing output power and losses:
 - Core loss: $P_c = V_1^2 / R_c = 250^2 / 500 = 62500 / 500 = 125\text{ W}$.

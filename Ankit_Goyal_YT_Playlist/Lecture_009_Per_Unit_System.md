@@ -109,10 +109,12 @@ By universal convention in power engineering, the two independently chosen base 
 
 For example, consider an alternator rated at $11\text{ kV}$ and $100\text{ MVA}$. We select:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 S_{\text{base}} &= 100\text{ MVA} \\
 V_{\text{base}} &= 11\text{ kV}
-\end{aligned}$$
+\end{aligned}
+$$
 
 From these two known inputs, we derive base current $I_{\text{base}}$ and base impedance $Z_{\text{base}}$.
 
@@ -139,11 +141,13 @@ $$I_{\text{base}} = \frac{S_{\text{base}}}{V_{\text{base}}}$$
 
 Base impedance is defined by Ohm's law as base voltage divided by base current:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 Z_{\text{base}} &= \frac{V_{\text{base}}}{I_{\text{base}}} \\
 &= \frac{V_{\text{base}}}{S_{\text{base}} / V_{\text{base}}} \\
 &= \frac{V_{\text{base}}^2}{S_{\text{base}}}
-\end{aligned}$$
+\end{aligned}
+$$
 
 > [!success] Result: Single-Phase Base Formulas
 > From independent selections $V_{\text{base}}$ and $S_{\text{base}}$, the derived base quantities are:
@@ -231,12 +235,14 @@ $$Z_{\text{base}} = \frac{V_{\text{base, ph}}}{I_{\text{base, ph}}}$$
 
 Substitute the star expressions for phase voltage and phase current:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 Z_{\text{base}} &= \frac{V_{\text{base}} / \sqrt{3}}{I_{\text{base}}} \\
 &= \frac{V_{\text{base}} / \sqrt{3}}{S_{\text{base}} / (\sqrt{3} V_{\text{base}})} \\
 &= \frac{V_{\text{base}}}{\sqrt{3}} \cdot \frac{\sqrt{3} V_{\text{base}}}{S_{\text{base}}} \\
 &= \frac{V_{\text{base}}^2}{S_{\text{base}}}
-\end{aligned}$$
+\end{aligned}
+$$
 
 ![Star connection base impedance derivation](frames/009/frame_0025_21m08s.jpg)
 
@@ -255,10 +261,12 @@ $$V_{\text{ph, pu}} = \frac{V_{\text{ph}} \angle \delta}{V_{\text{base, ph}}}$$
 
 Substitute $V_{\text{base, ph}} = V_{\text{base}} / \sqrt{3}$:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 V_{\text{ph, pu}} &= \frac{V_{\text{ph}} \angle \delta}{V_{\text{base}} / \sqrt{3}} \\
 &= \frac{\sqrt{3} V_{\text{ph}}}{V_{\text{base}}} \angle \delta
-\end{aligned}$$
+\end{aligned}
+$$
 
 In a balanced system, $\sqrt{3} V_{\text{ph}}$ equals the actual line-to-line voltage $V_L$:
 
@@ -292,12 +300,14 @@ $$S_{\text{base}} = \sqrt{3} V_{\text{base}} I_{\text{base}}$$
 
 To find per-unit apparent power, divide actual power by base power:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 S_{\text{pu}} &= \frac{S}{S_{\text{base}}} \\
 &= \frac{\sqrt{3} V_L I_L}{\sqrt{3} V_{\text{base}} I_{\text{base}}} \\
 &= \left(\frac{V_L}{V_{\text{base}}}\right) \left(\frac{I_L}{I_{\text{base}}}\right) \\
 &= V_{L, \text{pu}} I_{L, \text{pu}}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Since per-unit line values equal per-unit phase values:
 
@@ -309,11 +319,13 @@ The factors $\sqrt{3}$ and $3$ vanish completely.
 
 > [!success] Result: Power Equations in Per-Unit
 > In per-unit representation, power equations take the exact same mathematical form regardless of phase count:
-> $$\begin{aligned}
+> $$
+> \begin{aligned}
 > S_{\text{pu}} &= V_{\text{pu}} I_{\text{pu}} \\
 > P_{\text{pu}} &= V_{\text{pu}} I_{\text{pu}} \cos\phi \\
 > Q_{\text{pu}} &= V_{\text{pu}} I_{\text{pu}} \sin\phi
-> \end{aligned}$$
+> \end{aligned}
+> $$
 > There is no factor of $\sqrt{3}$ or $3$. The per-unit power formula is identical for single-phase and three-phase circuits.
 
 Subscripts for line or phase are unnecessary because both have the same per-unit value.
@@ -381,17 +393,21 @@ $$Z_{\text{base}} = \frac{V_{\text{base, ph}}}{I_{\text{base, ph}}}$$
 
 In delta, $V_{\text{base, ph}} = V_{\text{base}}$ and $I_{\text{base, ph}} = I_{\text{base}} / \sqrt{3}$. Substitute these expressions:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 Z_{\text{base, } \Delta} &= \frac{V_{\text{base}}}{I_{\text{base}} / \sqrt{3}} \\
 &= \frac{\sqrt{3} V_{\text{base}}}{I_{\text{base}}}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Now substitute $I_{\text{base}} = S_{\text{base}} / (\sqrt{3} V_{\text{base}})$:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 Z_{\text{base, } \Delta} &= \frac{\sqrt{3} V_{\text{base}}}{S_{\text{base}} / (\sqrt{3} V_{\text{base}})} \\
 &= \frac{3 V_{\text{base}}^2}{S_{\text{base}}}
-\end{aligned}$$
+\end{aligned}
+$$
 
 ![Delta base impedance relationship with star base impedance](frames/009/frame_0039_32m59s.jpg)
 
@@ -474,10 +490,12 @@ $$Z_{\text{pu, new}} = Z_{\text{pu, old}} \left(\frac{Z_{\text{base, old}}}{Z_{\
 
 Now substitute the expressions for $Z_{\text{base, old}}$ and $Z_{\text{base, new}}$:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 Z_{\text{pu, new}} &= Z_{\text{pu, old}} \cdot \frac{V_{\text{base, old}}^2 / S_{\text{base, old}}}{V_{\text{base, new}}^2 / S_{\text{base, new}}} \\
 &= Z_{\text{pu, old}} \left(\frac{V_{\text{base, old}}}{V_{\text{base, new}}}\right)^2 \left(\frac{S_{\text{base, new}}}{S_{\text{base, old}}}\right)
-\end{aligned}$$
+\end{aligned}
+$$
 
 For delta connections, the factor of $3$ in numerator and denominator cancels out. So the same formula holds for star and delta systems.
 
@@ -536,21 +554,25 @@ In power systems, transmission lines are always modeled as balanced star-connect
 
 First, compute the base impedance of the line:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 Z_{\text{base}} &= \frac{V_{\text{base}}^2}{S_{\text{base}}} \\
 &= \frac{(132 \times 10^3\text{ V})^2}{10 \times 10^6\text{ VA}} \\
 &= \frac{132^2 \times 10^6}{10 \times 10^6} \\
 &= \frac{17424}{10} = 1742.4\ \Omega
-\end{aligned}$$
+\end{aligned}
+$$
 
 Next, divide the actual ohmic impedance by this base impedance:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 Z_{\text{pu}} &= \frac{Z_{\text{actual}}}{Z_{\text{base}}} \\
 &= \frac{6 + j80}{1742.4} \\
 &= \frac{6}{1742.4} + j \frac{80}{1742.4} \\
 &= (0.0034 + j0.0459)\text{ pu}
-\end{aligned}$$
+\end{aligned}
+$$
 
 ![Worked Example 2 transmission line per-unit impedance](frames/009/frame_0056_46m45s.jpg)
 

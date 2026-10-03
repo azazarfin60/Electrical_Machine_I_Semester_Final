@@ -47,7 +47,7 @@ This lecture focuses on solving numerical problems on starting methods for squir
 ### Condition for Maximum Torque at Starting
 In an induction motor, maximum electromagnetic torque develops when the rotor resistance per phase equals the rotor leakage reactance per phase. The slip at maximum torque {mT}$ is given by:
 
-1968071s_{mT} = rac{R_2}{X_2}1968071
+1968071s_{mT} = \frac{R_2}{X_2}1968071
 
 When maximum torque is required at starting, the motor operates at standstill where rotor slip  = 1$. Equating {mT} = 1$ yields:
 
@@ -62,33 +62,33 @@ The rotor speed corresponding to maximum torque is known as the stalling speed o
 Let us examine the first numerical problem.
 
 > [!example] Problem 1 (Part 1)
-> An 8-pole, 0	ext{ Hz}$ three-phase induction motor has a rotor resistance of bash.07\ \Omega$ per phase. Its stalling speed is 50	ext{ rpm}$. Determine the standstill rotor leakage reactance per phase.
+> An 8-pole, 0\text{ Hz}$ three-phase induction motor has a rotor resistance of bash.07\ \Omega$ per phase. Its stalling speed is 50\text{ rpm}$. Determine the standstill rotor leakage reactance per phase.
 
 First, compute the synchronous speed of the rotating magnetic field:
 
-1968071N_s = rac{120 f}{P} = rac{120 	imes 50}{8} = 750	ext{ rpm}1968071
+1968071N_s = \frac{120 f}{P} = \frac{120 \times 50}{8} = 750\text{ rpm}1968071
 
 The stalling speed corresponds to the speed at maximum torque:
 
-1968071N_{mT} = 550	ext{ rpm}1968071
+1968071N_{mT} = 550\text{ rpm}1968071
 
 Compute the slip at maximum torque:
 
-1968071egin{aligned}
-s_{mT} &= rac{N_s - N_{mT}}{N_s} \
-&= rac{750 - 550}{750} \
-&= rac{200}{750} = rac{4}{15} pprox 0.2667
+1968071\begin{aligned}
+s_{mT} &= \frac{N_s - N_{mT}}{N_s} \
+&= \frac{750 - 550}{750} \
+&= \frac{200}{750} = \frac{4}{15} \approx 0.2667
 \end{aligned}1968071
 
 Using the condition for maximum torque, express standstill rotor reactance $:
 
-1968071s_{mT} = rac{R_2}{X_2} \implies X_2 = rac{R_2}{s_{mT}}1968071
+1968071s_{mT} = \frac{R_2}{X_2} \implies X_2 = \frac{R_2}{s_{mT}}1968071
 
 Substitute the given rotor resistance  = 0.07\ \Omega$:
 
-1968071egin{aligned}
-X_2 &= rac{0.07}{4/15} \
-&= rac{0.07 	imes 15}{4} \
+1968071\begin{aligned}
+X_2 &= \frac{0.07}{4/15} \
+&= \frac{0.07 \times 15}{4} \
 &= 0.2625\ \Omega
 \end{aligned}1968071
 
@@ -709,12 +709,12 @@ The ratio of phase voltage at starting to phase voltage during normal running is
 
 ## Summary and Key Takeaways
 
-- Maximum torque develops at starting when rotor resistance equals standstill reactance: {mT} = rac{R_2}{X_2} = 1$.
-- To obtain peak torque at standstill in wound-rotor motors, the required series external resistance is {	ext{ext}} = X_2 - R_2$.
-- When calculating feeder voltage drops with delta windings, transform the delta load to an equivalent star circuit with branch impedance $rac{Z_{	ext{br}}}{3}$.
+- Maximum torque develops at starting when rotor resistance equals standstill reactance: {mT} = \frac{R_2}{X_2} = 1$.
+- To obtain peak torque at standstill in wound-rotor motors, the required series external resistance is {\text{ext}} = X_2 - R_2$.
+- When calculating feeder voltage drops with delta windings, transform the delta load to an equivalent star circuit with branch impedance $\frac{Z_{\text{br}}}{3}$.
 - Paralleling an identical feeder halves the line resistance, yielding a significantly higher percentage torque increase in delta starting than in star starting.
-- Neglecting stator impedance, starting current scales as $rac{V}{f}$ and starting torque scales as $rac{V^2}{f^3}$.
-- Under constant $rac{V}{f}$ speed control, slip at breakdown torque satisfies {mT} \propto rac{1}{f}$, allowing peak torque at standstill by lowering supply frequency.
-- In auto-transformer starting with tapping factor $, motor current scales as  I_{	ext{sc}}$, line current drawn from supply scales as ^2 I_{	ext{sc}}$, and torque scales as ^2 T_{	ext{st, DOL}}$.
-- In star-delta starting, applied winding phase voltage drops by $rac{1}{\sqrt{3}}$, while line current and starting torque drop by $rac{1}{3}$.
+- Neglecting stator impedance, starting current scales as $\frac{V}{f}$ and starting torque scales as $\frac{V^2}{f^3}$.
+- Under constant $\frac{V}{f}$ speed control, slip at breakdown torque satisfies {mT} \propto \frac{1}{f}$, allowing peak torque at standstill by lowering supply frequency.
+- In auto-transformer starting with tapping factor $, motor current scales as  I_{\text{sc}}$, line current drawn from supply scales as ^2 I_{\text{sc}}$, and torque scales as ^2 T_{\text{st, DOL}}$.
+- In star-delta starting, applied winding phase voltage drops by $\frac{1}{\sqrt{3}}$, while line current and starting torque drop by $\frac{1}{3}$.
 

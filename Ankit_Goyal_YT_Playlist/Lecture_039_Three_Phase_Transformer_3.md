@@ -241,10 +241,12 @@ In a star connection, line voltage relates to phase voltage by a factor of $\sqr
 $$V_L = \sqrt{3} V_{ph}$$
 
 Taking the ratio of high voltage to low voltage line voltages gives:
-$$\begin{aligned}
+$$
+\begin{aligned}
 \frac{V_{L(HV)}}{V_{L(LV)}} &= \frac{\sqrt{3} V_{ph(HV)}}{\sqrt{3} V_{ph(LV)}} \\
 &= \frac{V_{ph(HV)}}{V_{ph(LV)}}
-\end{aligned}$$
+\end{aligned}
+$$
 
 The ratio of phase voltages always equals the turns ratio:
 $$\frac{V_{ph(HV)}}{V_{ph(LV)}} = \frac{N_H}{N_L}$$
@@ -529,10 +531,12 @@ On the LV side, star connection gives:
 $$V_{L(LV)} = \sqrt{3} V_{ph(LV)}$$
 
 Take the ratio of line voltages:
-$$\begin{aligned}
+$$
+\begin{aligned}
 \frac{V_{L(HV)}}{V_{L(LV)}} &= \frac{V_{ph(HV)}}{\sqrt{3} V_{ph(LV)}} \\
 &= \frac{N_H}{\sqrt{3} N_L}
-\end{aligned}$$
+\end{aligned}
+$$
 
 > [!success] Result
 > In a delta-star connection, the line voltage ratio does not equal the turns ratio:

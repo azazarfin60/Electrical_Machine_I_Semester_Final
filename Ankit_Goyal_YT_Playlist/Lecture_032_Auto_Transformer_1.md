@@ -209,10 +209,12 @@ Recall the definition of transformation ratio:
 $$a_{\text{auto}} = \frac{V_H}{V_L} \implies V_L = \frac{V_H}{a_{\text{auto}}}$$
 
 Substitute this expression into the induced power equation:
-$$\begin{aligned}
+$$
+\begin{aligned}
 S_{\text{ind}} &= \left(V_H - \frac{V_H}{a_{\text{auto}}}\right) I_H \\
 &= V_H I_H \left(1 - \frac{1}{a_{\text{auto}}}\right)
-\end{aligned}$$
+\end{aligned}
+$$
 
 Because $V_H I_H = S_{\text{auto}}$, this simplifies to:
 $$S_{\text{ind}} = S_{\text{auto}} \left(1 - \frac{1}{a_{\text{auto}}}\right)$$
@@ -228,10 +230,12 @@ Express the high-voltage current in terms of low-voltage current:
 $$I_H = \frac{I_L}{a_{\text{auto}}}$$
 
 Substitute $I_H$ into the expression:
-$$\begin{aligned}
+$$
+\begin{aligned}
 S_{\text{ind}} &= V_L \left(I_L - \frac{I_L}{a_{\text{auto}}}\right) \\
 &= V_L I_L \left(1 - \frac{1}{a_{\text{auto}}}\right)
-\end{aligned}$$
+\end{aligned}
+$$
 
 Because $V_L I_L = S_{\text{auto}}$, this yields:
 $$S_{\text{ind}} = S_{\text{auto}} \left(1 - \frac{1}{a_{\text{auto}}}\right)$$
@@ -304,11 +308,13 @@ Now add the conducted apparent power and the induced apparent power:
 $$S_{\text{total}} = S_{\text{cond}} + S_{\text{ind}}$$
 
 Substitute the derived expressions:
-$$\begin{aligned}
+$$
+\begin{aligned}
 S_{\text{total}} &= \frac{S_{\text{auto}}}{a_{\text{auto}}} + S_{\text{auto}}\left(1 - \frac{1}{a_{\text{auto}}}\right) \\
 &= S_{\text{auto}}\left(\frac{1}{a_{\text{auto}}} + 1 - \frac{1}{a_{\text{auto}}}\right) \\
 &= S_{\text{auto}}
-\end{aligned}$$
+\end{aligned}
+$$
 
 The sum of conducted and induced power equals the total autotransformer rating.
 
@@ -375,11 +381,13 @@ Calculate it alternatively from the common winding BC:
 $$S_{\text{trans}} = V_{BC} I_{BC} = V_L (I_L - I_H)$$
 
 Substitute $V_L = V_H / a_{\text{auto}}$ into the series winding expression:
-$$\begin{aligned}
+$$
+\begin{aligned}
 S_{\text{trans}} &= \left(V_H - \frac{V_H}{a_{\text{auto}}}\right) I_H \\
 &= V_H I_H \left(1 - \frac{1}{a_{\text{auto}}}\right) \\
 &= S_{\text{auto}} \left(1 - \frac{1}{a_{\text{auto}}}\right)
-\end{aligned}$$
+\end{aligned}
+$$
 
 > [!success] Result
 > The transformed apparent power in a step-up autotransformer is:

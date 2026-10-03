@@ -129,10 +129,12 @@ Hence, $\mathbf{V}_1$ leads the mutual flux $\mathbf{\Phi}_m$ by $90^\circ$. Bec
 
 With an angle of $90^\circ$ between applied voltage $\mathbf{V}_1$ and magnetizing current $\mathbf{I}_\mu$, we evaluate the power components drawn by $I_\mu$:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 P_\mu &= V_1 I_\mu \cos(90^\circ) = 0 \\
 Q_\mu &= V_1 I_\mu \sin(90^\circ) = V_1 I_\mu
-\end{aligned}$$
+\end{aligned}
+$$
 
 The active power consumed by magnetizing current is zero. The reactive power is nonzero and equals $V_1 I_\mu$.
 
@@ -175,10 +177,12 @@ An ammeter placed in the primary circuit measures this resultant magnitude $I_0$
 
 Let $\phi_0$ be the phase angle between the applied voltage $\mathbf{V}_1$ and the no-load current $\mathbf{I}_0$. Resolving $\mathbf{I}_0$ into orthogonal components yields:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 I_w &= I_0 \cos\phi_0 \\
 I_\mu &= I_0 \sin\phi_0
-\end{aligned}$$
+\end{aligned}
+$$
 
 ![Components of no-load current](frames/017/frame_0024_18m02s.jpg)
 
@@ -228,10 +232,12 @@ Rated full-load current is the nominal current drawn by the transformer at rated
 
 Relative to rated full-load current $I_{\text{rated}}$, the two no-load current components have typical values:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 I_\mu &\approx 4\% \text{ to } 6\% \text{ of } I_{\text{rated}} \\
 I_w &\approx 1\% \text{ to } 2\% \text{ of } I_{\text{rated}}
-\end{aligned}$$
+\end{aligned}
+$$
 
 ![Full-load current benchmark definition](frames/017/frame_0031_24m15s.jpg)
 
@@ -267,10 +273,12 @@ Here, the parallel branch consists of:
 
 The branch currents are given by Ohm's law:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 I_w &= \frac{V_1}{R_c} \\
 I_\mu &= \frac{V_1}{X_m}
-\end{aligned}$$
+\end{aligned}
+$$
 
 The total no-load current entering the parallel exciting branch is:
 
@@ -411,12 +419,14 @@ $$I_w = I_0 \cos\phi_0 = 0.606 \times 0.3 \approx 0.1818\text{ A}$$
 
 Next, we calculate the reactive magnetizing component using the right-triangle relation:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 I_\mu &= \sqrt{I_0^2 - I_w^2} \\
 &= \sqrt{(0.606)^2 - (0.1818)^2} \\
 &= \sqrt{0.3672 - 0.03305} \\
 &\approx 0.577\text{ A}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Alternatively, using the trigonometric identity:
 

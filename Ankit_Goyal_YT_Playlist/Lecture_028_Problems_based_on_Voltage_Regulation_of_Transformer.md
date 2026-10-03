@@ -64,21 +64,25 @@ In Test 2, the current is $1.0\text{ pu}$. This means the test runs at full rate
 
 The open-circuit test yields the core loss or iron loss $P_i$. Since the parameters are in per-unit, we compute the real power directly:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 P_i &= V_{oc} I_{oc} \cos\phi_{oc} \\
 &= 1.0 \times 0.06 \times 0.2 \\
 &= 0.012\text{ pu}
-\end{aligned}$$
+\end{aligned}
+$$
 
 The power factor is a dimensionless ratio. So it does not take per-unit notation. 
 
 The short-circuit test gives the series copper loss. Because the current is at rated value ($I = 1.0\text{ pu}$), this measurement represents the full-load copper loss $P_{cu,fl}$:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 P_{cu,fl} &= V_{sc} I_{sc} \cos\phi_{sc} \\
 &= 0.08 \times 1.0 \times 0.3 \\
 &= 0.024\text{ pu}
-\end{aligned}$$
+\end{aligned}
+$$
 
 > [!success] Result
 > The transformer parameters extracted from the test data are:
@@ -97,20 +101,24 @@ At full load, the loading fraction is $x = 1$. The rated apparent power in per-u
 
 First, consider unity power factor with $\cos\phi = 1.0$. The efficiency expression in per-unit is:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \eta &= \frac{x S \cos\phi}{x S \cos\phi + P_i + x^2 P_{cu,fl}} \times 100\% \\
 &= \frac{1 \times 1 \times 1.0}{1 \times 1 \times 1.0 + 0.012 + (1)^2 \times 0.024} \times 100\% \\
 &= \frac{1}{1.036} \times 100\% \\
 &= 96.525\%
-\end{aligned}$$
+\end{aligned}
+$$
 
 Next, consider a load power factor of 0.8 lagging at full load. The active power output becomes $1 \times 0.8 = 0.8\text{ pu}$. The losses remain unchanged because the current is still at rated value:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \eta &= \frac{1 \times 0.8}{0.8 + 0.012 + 0.024} \times 100\% \\
 &= \frac{0.8}{0.836} \times 100\% \\
 &= 95.693\%
-\end{aligned}$$
+\end{aligned}
+$$
 
 Efficiency drops at lower power factor. The output decreases while internal losses stay the same.
 
@@ -120,10 +128,12 @@ Efficiency drops at lower power factor. The output decreases while internal loss
 
 Voltage regulation can be computed using the per-unit impedance angle $\theta$. From the short-circuit test data:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 Z_{\text{pu}} &= \frac{V_{sc}}{I_{sc}} = \frac{0.08}{1.0} = 0.08\text{ pu} \\
 \cos\theta &= 0.3 \implies \theta = \cos^{-1}(0.3) = 72.54^\circ
-\end{aligned}$$
+\end{aligned}
+$$
 
 The alternative voltage regulation formula is:
 
@@ -133,20 +143,24 @@ The minus sign applies to lagging loads. The plus sign applies to leading loads.
 
 At unity power factor, $\phi = 0^\circ$:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 VR &= 1 \times 0.08 \times \cos(72.54^\circ - 0^\circ) \\
 &= 0.08 \times 0.3 \\
 &= 0.024\text{ pu} = 2.4\%
-\end{aligned}$$
+\end{aligned}
+$$
 
 At 0.8 lagging power factor, $\phi = \cos^{-1}(0.8) = 36.87^\circ$:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 VR &= 1 \times 0.08 \times \cos(72.54^\circ - 36.87^\circ) \\
 &= 0.08 \times \cos(35.67^\circ) \\
 &= 0.08 \times 0.8124 \\
 &= 0.06498\text{ pu} = 6.498\%
-\end{aligned}$$
+\end{aligned}
+$$
 
 > [!success] Result
 > At full load:
@@ -168,18 +182,22 @@ $$VR = x(R_{\text{pu}} \cos\phi + X_{\text{pu}} \sin\phi)$$
 
 From the per-unit impedance triangle:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 R_{\text{pu}} &= Z_{\text{pu}} \cos\theta \\
 X_{\text{pu}} &= Z_{\text{pu}} \sin\theta
-\end{aligned}$$
+\end{aligned}
+$$
 
 Substitute these into the regulation formula:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 VR &= x \left(Z_{\text{pu}} \cos\theta \cos\phi + Z_{\text{pu}} \sin\theta \sin\phi\right) \\
 &= x Z_{\text{pu}} (\cos\theta \cos\phi + \sin\theta \sin\phi) \\
 &= x Z_{\text{pu}} \cos(\theta - \phi)
-\end{aligned}$$
+\end{aligned}
+$$
 
 For leading power factor, the reactive drop reverses sign:
 
@@ -216,10 +234,12 @@ $$Z_{\text{line}} = 0.6 + j1\,\Omega/\text{phase}$$
 
 This line impedance is in series with the secondary load. The transformer itself has leakage impedances on both windings:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 Z_{HV} &= 400 + j1600\,\Omega/\text{phase} \\
 Z_{LV} &= 0.3 + j1\,\Omega/\text{phase}
-\end{aligned}$$
+\end{aligned}
+$$
 
 We transfer all impedances to the low-voltage secondary side. This creates a single equivalent series loop per phase.
 
@@ -259,11 +279,13 @@ We now calculate the total loop impedance referred to the low-voltage side. Then
 
 The transformer high-voltage winding impedance is referred to the low-voltage side:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 Z_1' &= Z_{HV} \left(\frac{N_2}{N_1}\right)^2 \\
 &= (400 + j1600) \times (0.0227)^2 \\
 &= 0.2066 + j0.8264\,\Omega/\text{phase}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Add the low-voltage winding impedance $Z_2 = 0.3 + j1\,\Omega$:
 
@@ -271,11 +293,13 @@ $$Z_{02,\text{tr}} = (0.3 + 0.2066) + j(1 + 0.8264) = 0.5066 + j1.8264\,\Omega$$
 
 Now include the connecting feeder line impedance $Z_{\text{line}} = 0.6 + j1\,\Omega$:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 Z_{\text{total}} &= Z_{02,\text{tr}} + Z_{\text{line}} \\
 &= (0.5066 + 0.6) + j(1.8264 + 1.0) \\
 &= 1.1066 + j2.8264\,\Omega/\text{phase}
-\end{aligned}$$
+\end{aligned}
+$$
 
 ![Whiteboard showing impedance referral and secondary voltage phasor calculation](frames/028/frame_0055_20m52s.jpg)
 
@@ -297,7 +321,8 @@ $$\bar{I}_L = 17.32\angle -36.87^\circ\text{ A}$$
 
 Apply Kirchhoff's Voltage Law to find the required secondary winding phase voltage:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \bar{V}_2 &= V_{\text{load,ph}} + \bar{I}_L Z_{\text{total}} \\
 &= 230.94\angle 0^\circ + (17.32\angle -36.87^\circ)(1.1066 + j2.8264) \\
 &= 230.94 + (17.32\angle -36.87^\circ)(3.035\angle 68.62^\circ) \\
@@ -305,7 +330,8 @@ $$\begin{aligned}
 &= 230.94 + 44.70 + j27.66 \\
 &= 275.64 + j27.66 \\
 &= 277.03\angle 5.73^\circ\text{ V}
-\end{aligned}$$
+\end{aligned}
+$$
 
 The required secondary line-to-line voltage is:
 
@@ -348,20 +374,24 @@ $$x = \frac{\text{Actual kVA}}{\text{Rated kVA}} = \frac{80}{100} = 0.8$$
 
 For a lagging power factor of $0.85$:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \cos\phi &= 0.85 \\
 \sin\phi &= \sqrt{1 - (0.85)^2} = 0.5268
-\end{aligned}$$
+\end{aligned}
+$$
 
 Compute the voltage regulation:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 VR &= x (R_{\text{pu}} \cos\phi + X_{\text{pu}} \sin\phi) \\
 &= 0.8 \times (0.02 \times 0.85 + 0.05 \times 0.5268) \\
 &= 0.8 \times (0.017 + 0.02634) \\
 &= 0.8 \times 0.04334 \\
 &= 0.03467\text{ pu} = 3.47\%
-\end{aligned}$$
+\end{aligned}
+$$
 
 ![Worked example on voltage regulation with fractional loading factor](frames/028/frame_0064_25m26s.jpg)
 
@@ -401,13 +431,15 @@ The transformer per-unit parameters are $R_{\text{pu}} = 0.0075$ and $X_{\text{p
 
 Calculate the per-unit voltage drop:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 VR &= x (R_{\text{pu}} \cos\phi + X_{\text{pu}} \sin\phi) \\
 &= 1.25 \times (0.0075 \times 0.8 + 0.09 \times 0.6) \\
 &= 1.25 \times (0.0060 + 0.0540) \\
 &= 1.25 \times 0.0600 \\
 &= 0.075\text{ pu} = 7.5\%
-\end{aligned}$$
+\end{aligned}
+$$
 
 The load voltage must be maintained at rated value ($V_L = 1.0\text{ pu}$). Using the definition of voltage regulation:
 
@@ -448,12 +480,14 @@ $$R_{sc} = \frac{P_{sc}}{I_{sc}^2} = \frac{436}{(10)^2} = 4.36\,\Omega$$
 
 Compute the equivalent leakage reactance:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 X_{sc} &= \sqrt{Z_{sc}^2 - R_{sc}^2} \\
 &= \sqrt{10^2 - (4.36)^2} \\
 &= \sqrt{100 - 19.01} \\
 &= \sqrt{80.99} = 9.0\,\Omega
-\end{aligned}$$
+\end{aligned}
+$$
 
 ![Whiteboard showing short circuit impedance extraction and HV applied voltage calculation](frames/028/frame_0088_36m05s.jpg)
 
@@ -475,21 +509,25 @@ The load power factor is $0.8$ lagging ($\cos\phi = 0.8, \sin\phi = 0.6$).
 
 Compute the scalar voltage drop on the high-voltage side:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \Delta V_1 &= I_{1,fl}(R_{sc} \cos\phi + X_{sc} \sin\phi) \\
 &= 15.15 \times (4.36 \times 0.8 + 9.0 \times 0.6) \\
 &= 15.15 \times (3.488 + 5.400) \\
 &= 15.15 \times 8.888 \\
 &= 134.66\text{ V}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Add this internal drop to the referred load voltage:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 V_1 &\approx V_2' + \Delta V_1 \\
 &= 6600 + 134.66 \\
 &= 6734.66\text{ V}
-\end{aligned}$$
+\end{aligned}
+$$
 
 > [!success] Result
 > The required applied voltage on the primary high-voltage terminals is:
@@ -508,10 +546,12 @@ $$\Delta V = I(R \cos\phi \pm X \sin\phi)$$
 
 This formula gives the voltage drop directly in volts. When divided by rated voltage, the expression becomes:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \frac{\Delta V}{V_{\text{rated}}} &= \left(\frac{I R}{V_{\text{rated}}}\right)\cos\phi \pm \left(\frac{I X}{V_{\text{rated}}}\right)\sin\phi \\
 &= R_{\text{pu}} \cos\phi \pm X_{\text{pu}} \sin\phi = VR
-\end{aligned}$$
+\end{aligned}
+$$
 
 Therefore, the approximate formula does not require per-unit conversion. You can work directly in volts and ohms or in per-unit. Both methods yield identical results.
 
@@ -556,21 +596,25 @@ The phase turns ratio is $a = N_{HV} / N_{LV} = \sqrt{3}$.
 
 Transfer the low-voltage winding impedance to the high-voltage side:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 Z_{LV}' &= Z_{LV} \times a^2 \\
 &= (0.5 + j6.5) \times (\sqrt{3})^2 \\
 &= (0.5 + j6.5) \times 3 \\
 &= 1.5 + j19.5\,\Omega/\text{phase}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Add the high-voltage winding impedance and the line impedance:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 Z_{\text{total}} &= Z_{LV}' + Z_{HV} + Z_{\text{line}} \\
 &= (1.5 + j19.5) + (1.5 + j20) + (10 + j6) \\
 &= (1.5 + 1.5 + 10) + j(19.5 + 20 + 6) \\
 &= 13 + j45.5\,\Omega/\text{phase}
-\end{aligned}$$
+\end{aligned}
+$$
 
 ![HV-referred impedance summation and secondary voltage calculation](frames/028/frame_0121_46m47s.jpg)
 
@@ -588,13 +632,15 @@ $$V_{\text{load,ph}} = \frac{33{,}000}{\sqrt{3}} = 19{,}052.56\text{ V}$$
 
 Compute the scalar voltage drop per phase:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \Delta V &= I_{HV}(R_{\text{total}} \cos\phi + X_{\text{total}} \sin\phi) \\
 &= 32.80 \times (13 \times 0.8 + 45.5 \times 0.6) \\
 &= 32.80 \times (10.4 + 27.3) \\
 &= 32.80 \times 37.7 \\
 &= 1236.56\text{ V}
-\end{aligned}$$
+\end{aligned}
+$$
 
 The required secondary induced phase voltage is:
 
@@ -674,11 +720,13 @@ The secondary terminal voltage under load is $V_{FL} = 0.4\text{ kV}$.
 
 Compute the required no-load secondary voltage:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 V_{NL} &= V_{FL}(1 + VR) \\
 &= 0.4 \times (1 + 0.012) \\
 &= 0.4048\text{ kV}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Now apply the transformer voltage ratio using the unitary method. At no load:
 
@@ -686,10 +734,12 @@ $$\frac{V_1}{6.6\text{ kV}} = \frac{V_{NL}}{0.4\text{ kV}} = \frac{0.4048}{0.4} 
 
 Calculate the primary terminal voltage:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 V_1 &= 6.6 \times 1.012 \\
 &= 6.6792\text{ kV}
-\end{aligned}$$
+\end{aligned}
+$$
 
 > [!success] Result
 > The primary terminal voltage is:
@@ -718,34 +768,42 @@ We now analyze a comprehensive three-phase transformer problem. Converting all t
 
 Choose the three-phase ratings as base values:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 S_{\text{base}} &= 50\text{ kVA} = 50{,}000\text{ VA} \\
 V_{\text{base,LV}} &= 400\text{ V} \quad (\text{line-to-line}) \\
 V_{\text{base,HV}} &= 6600\text{ V} \quad (\text{line-to-line})
-\end{aligned}$$
+\end{aligned}
+$$
 
 Calculate the base line currents on both sides:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 I_{\text{base,LV}} &= \frac{S_{\text{base}}}{\sqrt{3} V_{\text{base,LV}}} = \frac{50{,}000}{\sqrt{3} \times 400} = 72.17\text{ A} \\
 I_{\text{base,HV}} &= \frac{S_{\text{base}}}{\sqrt{3} V_{\text{base,HV}}} = \frac{50{,}000}{\sqrt{3} \times 6600} = 4.37\text{ A}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Now convert the open-circuit test data to per-unit:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 V_{oc,\text{pu}} &= \frac{400}{400} = 1.0\text{ pu} \\
 I_{0,\text{pu}} &= \frac{4.21}{72.17} = 0.0583\text{ pu} \\
 P_{oc,\text{pu}} &= \frac{520}{50{,}000} = 0.0104\text{ pu}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Next convert the short-circuit test data to per-unit:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 V_{sc,\text{pu}} &= \frac{340}{6600} = 0.0515\text{ pu} \\
 I_{sc,\text{pu}} &= \frac{4.35}{4.37} = 0.9945\text{ pu} \approx 1.0\text{ pu} \\
 P_{sc,\text{pu}} &= \frac{610}{50{,}000} = 0.0122\text{ pu}
-\end{aligned}$$
+\end{aligned}
+$$
 
 ![Whiteboard showing base selections and per-unit conversion of test data](frames/028/frame_0151_57m43s.jpg)
 
@@ -771,19 +829,23 @@ $$I_w = \frac{P_{oc,\text{pu}}}{V_{oc,\text{pu}}} = \frac{0.0104}{1.0} = 0.0104\
 
 The magnetizing component of current is:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 I_\mu &= \sqrt{I_0^2 - I_w^2} \\
 &= \sqrt{(0.0583)^2 - (0.0104)^2} \\
 &= \sqrt{0.003399 - 0.000108} \\
 &= \sqrt{0.003291} = 0.0574\text{ pu}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Calculate the shunt branch resistance and reactance:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 R_c &= \frac{V_{oc,\text{pu}}}{I_w} = \frac{1.0}{0.0104} = 96.15\text{ pu} \\
 X_m &= \frac{V_{oc,\text{pu}}}{I_\mu} = \frac{1.0}{0.0574} = 17.42\text{ pu}
-\end{aligned}$$
+\end{aligned}
+$$
 
 ### Series Branch Per-Unit Parameters
 
@@ -801,12 +863,14 @@ $$R_{\text{pu}} = \frac{P_{sc,\text{pu}}}{I_{sc,\text{pu}}^2} = \frac{0.0122}{(1
 
 Calculate the equivalent leakage reactance:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 X_{\text{pu}} &= \sqrt{Z_{\text{pu}}^2 - R_{\text{pu}}^2} \\
 &= \sqrt{(0.0515)^2 - (0.0122)^2} \\
 &= \sqrt{0.002652 - 0.000149} \\
 &= \sqrt{0.002503} = 0.050\text{ pu}
-\end{aligned}$$
+\end{aligned}
+$$
 
 ![Whiteboard showing derivation of shunt, series parameters, and efficiency](frames/028/frame_0166_64m32s.jpg)
 
@@ -814,21 +878,25 @@ X_{\text{pu}} &= \sqrt{Z_{\text{pu}}^2 - R_{\text{pu}}^2} \\
 
 At full load with $0.8$ lagging power factor ($x = 1$, $\cos\phi = 0.8$):
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \eta &= \frac{x \cos\phi}{x \cos\phi + P_i + x^2 P_{cu,fl}} \times 100\% \\
 &= \frac{1 \times 0.8}{1 \times 0.8 + 0.0104 + 0.0122} \times 100\% \\
 &= \frac{0.8}{0.8226} \times 100\% \\
 &= 97.252\%
-\end{aligned}$$
+\end{aligned}
+$$
 
 Compute the full-load voltage regulation:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 VR &= R_{\text{pu}} \cos\phi + X_{\text{pu}} \sin\phi \\
 &= 0.0122 \times 0.8 + 0.050 \times 0.6 \\
 &= 0.00976 + 0.03000 \\
 &= 0.03976\text{ pu} = 3.976\%
-\end{aligned}$$
+\end{aligned}
+$$
 
 ### Maximum Efficiency Load Condition
 

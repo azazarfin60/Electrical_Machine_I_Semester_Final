@@ -147,20 +147,24 @@ The angular supply frequency at $50\text{ Hz}$ is:
 $$\omega = 2\pi f = 2\pi \times 50 = 100\pi \approx 314.16\text{ rad/s}$$
 
 For the primary high-voltage winding:
-$$\begin{aligned}
+$$
+\begin{aligned}
 Z_{s1} &= R_1 + j \omega L_1 \\
 &= 10 + j(100\pi \times 0.04) \\
 &= 10 + j 12.566\,\Omega
-\end{aligned}$$
+\end{aligned}
+$$
 
 ![Calculation of primary and secondary self-impedances](frames/031/frame_0016_08m49s.jpg)
 
 For the secondary low-voltage winding:
-$$\begin{aligned}
+$$
+\begin{aligned}
 Z_{s2} &= R_2 + j \omega L_2 \\
 &= 0.1 + j(100\pi \times 0.4 \times 10^{-3}) \\
 &= 0.1 + j 0.1256\,\Omega
-\end{aligned}$$
+\end{aligned}
+$$
 
 > [!success] Result
 > The winding self-impedances are:
@@ -258,10 +262,12 @@ We apply voltage division to find the load terminal voltage:
 $$V_L = E_2 \frac{Z_L}{Z_{02} + Z_L}$$
 
 We calculate the impedance magnitudes:
-$$\begin{aligned}
+$$
+\begin{aligned}
 |Z_L| &= \sqrt{5^2 + 5^2} = \sqrt{50} \approx 7.071\,\Omega \\
 |Z_{\text{total}}| &= \sqrt{5.2^2 + 5.25132^2} = \sqrt{27.04 + 27.576} \approx 7.390\,\Omega
-\end{aligned}$$
+\end{aligned}
+$$
 
 Substitute these values to obtain the terminal voltage magnitude:
 $$|V_L| = 230 \times \frac{7.071}{7.390} = 220.06\text{ V}$$
@@ -473,11 +479,13 @@ Substitute the given branch values:
 $$\Sigma = 10 \times 5 + 5 \times 15 + 15 \times 10 = 50 + 75 + 150 = 275$$
 
 Each delta branch inductance equals the common numerator $\Sigma$ divided by the opposite star branch:
-$$\begin{aligned}
+$$
+\begin{aligned}
 L_1 &= \frac{\Sigma}{L_b} = \frac{275}{5} = 55\text{ mH} \\
 L_2 &= \frac{\Sigma}{L_c} = \frac{275}{15} \approx 18.33\text{ mH} \\
 L_3 &= \frac{\Sigma}{L_a} = \frac{275}{10} = 27.5\text{ mH}
-\end{aligned}$$
+\end{aligned}
+$$
 
 ![Transformation from T-network to pi-network](frames/031/frame_0077_37m42s.jpg)
 
@@ -595,10 +603,12 @@ Rearranging this relationship yields the secondary current derivative in terms o
 $$\frac{di_2}{dt} = -\frac{M}{L_2} \frac{di_1}{dt}$$
 
 Now substitute this derivative into the primary voltage expression:
-$$\begin{aligned}
+$$
+\begin{aligned}
 v_1 &= L_1 \frac{di_1}{dt} + M \left(-\frac{M}{L_2} \frac{di_1}{dt}\right) \\
 &= \left(L_1 - \frac{M^2}{L_2}\right) \frac{di_1}{dt}
-\end{aligned}$$
+\end{aligned}
+$$
 
 From this voltage relation, the equivalent short-circuit inductance seen from primary terminals is:
 $$L_{\text{sc}} = L_1 - \frac{M^2}{L_2}$$

@@ -83,7 +83,8 @@ Electric Braking Techniques
 
 ![Induction motor vs induction generator comparison](diagrams/class12_fig02_motor_vs_generator.jpg)
 
-$$\begin{array}{|l|c|c|}
+$$
+\begin{array}{|l|c|c|}
 \hline
 \textbf{Property} & \textbf{Induction Motor (IM)} & \textbf{Induction Generator (IG)} \\
 \hline
@@ -93,7 +94,8 @@ $$\begin{array}{|l|c|c|}
 \text{Reactive Power } (Q) & \text{Absorbs reactive power} & \textbf{Must absorb reactive power!} \\
 \text{Prime Mover} & \text{None (produces mechanical drive)} & \text{Required (Wind turbine, Hydro engine)} \\
 \hline
-\end{array}$$
+\end{array}
+$$
 
 > [!IMPORTANT]
 > **Crucial IG Requirement: External Reactive Power**

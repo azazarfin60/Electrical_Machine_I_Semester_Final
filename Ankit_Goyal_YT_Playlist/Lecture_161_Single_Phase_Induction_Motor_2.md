@@ -96,10 +96,12 @@ Both windings are connected across supply voltage $V_1$.
 
 The current in the main winding is:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 I_m &= \frac{V_1}{R_m + j X_m} \\
 &= \frac{V_1}{Z_m} \angle -\phi_m
-\end{aligned}$$
+\end{aligned}
+$$
 
 where:
 
@@ -107,10 +109,12 @@ $$\phi_m = \tan^{-1}\left(\frac{X_m}{R_m}\right)$$
 
 The current in the auxiliary winding is:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 I_a &= \frac{V_1}{R_a + j X_a} \\
 &= \frac{V_1}{Z_a} \angle -\phi_a
-\end{aligned}$$
+\end{aligned}
+$$
 
 where:
 
@@ -139,17 +143,21 @@ Let the space coordinate $\theta$ be measured along the stator circumference. Th
 
 The pulsating MMF produced by the main winding is:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 F_m(\theta, t) &= F_{m,\text{peak}} \cos\theta \cos(\omega t - \phi_m) \\
 &= \frac{F_{m,\text{peak}}}{2} \left[ \cos(\theta - \omega t + \phi_m) + \cos(\theta + \omega t - \phi_m) \right]
-\end{aligned}$$
+\end{aligned}
+$$
 
 The pulsating MMF produced by the auxiliary winding is:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 F_a(\theta, t) &= F_{a,\text{peak}} \cos(\theta + 90^\circ) \cos(\omega t - \phi_a) \\
 &= -F_{a,\text{peak}} \sin\theta \cos(\omega t - \phi_a)
-\end{aligned}$$
+\end{aligned}
+$$
 
 Using trigonometric product-to-sum identities, $F_a$ also splits into two revolving components:
 
@@ -434,10 +442,12 @@ $$T_{\text{start}} \propto \frac{V_1^2}{Z_m R_a} \sin(\phi_m + \phi_a) \cos\phi_
 
 Using the trigonometric identity $\sin A \cos B = \frac{1}{2}[\sin(A + B) + \sin(A - B)]$:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \sin(\phi_m + \phi_a) \cos\phi_a &= \frac{1}{2}\left[\sin((\phi_m + \phi_a) + \phi_a) + \sin((\phi_m + \phi_a) - \phi_a)\right] \\
 &= \frac{1}{2}\left[\sin(\phi_m + 2\phi_a) + \sin\phi_m\right]
-\end{aligned}$$
+\end{aligned}
+$$
 
 Substitute this back into the torque expression:
 
@@ -499,10 +509,12 @@ _(44:13 - 49:10)_
 Consider a single-phase induction motor where the main winding axis points along $+x$ and the auxiliary winding axis points along $+y$.
 
 The winding currents are:
-$$\begin{aligned}
+$$
+\begin{aligned}
 i_m(t) &= I_{m,\text{peak}} \sin(\omega t - \phi_m) \\
 i_a(t) &= I_{a,\text{peak}} \sin(\omega t - \phi_a)
-\end{aligned}$$
+\end{aligned}
+$$
 
 Typically $\phi_m > \phi_a$, meaning auxiliary current $I_a$ is leading relative to main winding current $I_m$.
 
@@ -510,19 +522,23 @@ Typically $\phi_m > \phi_a$, meaning auxiliary current $I_a$ is leading relative
 
 #### Instant 1: $\omega t = \phi_a$
 Substitute $\omega t = \phi_a$:
-$$\begin{aligned}
+$$
+\begin{aligned}
 i_a &= I_{a,\text{peak}} \sin(\phi_a - \phi_a) = 0 \\
 i_m &= I_{m,\text{peak}} \sin(\phi_a - \phi_m) < 0 \quad (\text{since } \phi_a < \phi_m)
-\end{aligned}$$
+\end{aligned}
+$$
 
 Since $i_a = 0$ and $i_m < 0$, the resultant flux vector $\Phi_{\text{net}}$ lies along the negative main winding axis (pointing horizontally left).
 
 #### Instant 2: $\omega t = \phi_m$ (chronologically later than $\phi_a$)
 Substitute $\omega t = \phi_m$:
-$$\begin{aligned}
+$$
+\begin{aligned}
 i_m &= I_{m,\text{peak}} \sin(\phi_m - \phi_m) = 0 \\
 i_a &= I_{a,\text{peak}} \sin(\phi_m - \phi_a) > 0 \quad (\text{since } \phi_m > \phi_a)
-\end{aligned}$$
+\end{aligned}
+$$
 
 Now $i_m = 0$ and $i_a > 0$. The resultant flux vector $\Phi_{\text{net}}$ lies along the positive auxiliary winding axis (pointing vertically upward).
 

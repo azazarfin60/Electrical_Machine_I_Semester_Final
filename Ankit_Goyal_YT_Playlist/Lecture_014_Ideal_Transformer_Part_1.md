@@ -188,11 +188,13 @@ $$\mathcal{R} = \frac{l}{\mu A}$$
 
 Magnetic flux equals MMF divided by reluctance:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \phi(t) &= \frac{\mathcal{F}(t)}{\mathcal{R}} \\
 &= \frac{N_1 I_{\mu m}}{\mathcal{R}} \sin(\omega t) \\
 &= \frac{F_m}{\mathcal{R}} \sin(\omega t)
-\end{aligned}$$
+\end{aligned}
+$$
 
 We define the maximum flux $\Phi_m$ as:
 
@@ -305,10 +307,12 @@ $$\phi(t) = \Phi_m \sin(\omega t)$$
 
 The induced EMF in a coil of $N$ turns is:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 e(t) &= -N \frac{d}{dt}\left[\Phi_m \sin(\omega t)\right] \\
 &= -N \omega \Phi_m \cos(\omega t)
-\end{aligned}$$
+\end{aligned}
+$$
 
 Using trigonometric identities, $-\cos\theta = \sin(\theta - 90^\circ)$. We rewrite the expression as:
 
@@ -324,11 +328,13 @@ Here, $\omega = 2 \pi f$, where $f$ represents the supply frequency in Hertz.
 
 For any sinusoidal waveform, the root-mean-square (RMS) value equals the peak value divided by $\sqrt{2}$:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 E_{\text{rms}} &= \frac{E_m}{\sqrt{2}} \\
 &= \frac{2 \pi}{\sqrt{2}} f N \Phi_m \\
 &= \sqrt{2} \pi f N \Phi_m
-\end{aligned}$$
+\end{aligned}
+$$
 
 Evaluating the constant factor:
 
@@ -374,11 +380,13 @@ $$e(t) = +N \frac{d\phi}{dt}$$
 
 Substitute the sinusoidal flux $\phi(t) = \Phi_m \sin(\omega t)$:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 e(t) &= N \frac{d}{dt}\left[\Phi_m \sin(\omega t)\right] \\
 &= N \omega \Phi_m \cos(\omega t) \\
 &= N \omega \Phi_m \sin\left(\omega t + \frac{\pi}{2}\right)
-\end{aligned}$$
+\end{aligned}
+$$
 
 Here, the induced EMF has a phase angle of $+90^\circ$. Thus, the induced EMF leads the core flux by $90^\circ$.
 
@@ -730,11 +738,13 @@ $$\frac{E}{N} = 4.44 f \Phi_m = 4.44 f B_m A_n$$
 
 Substitute the known parameters into the expression:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 13 &= 4.44 \times 50 \times 1.4 \times A_n \\
 13 &= 310.8 \times A_n \\
 A_n &= \frac{13}{310.8} \approx 0.04183\text{ m}^2
-\end{aligned}$$
+\end{aligned}
+$$
 
 Converting to square centimeters:
 

@@ -67,17 +67,21 @@ $$s = \frac{N_s - N_r}{N_s}$$
 
 Rearranging for the rotor speed $N_r$:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 s N_s &= N_s - N_r \\
 N_r &= N_s (1 - s)
-\end{aligned}$$
+\end{aligned}
+$$
 
 Substitute the given slip $s = 1.5$:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 N_r &= N_s (1 - 1.5) \\
 &= -0.5 N_s
-\end{aligned}$$
+\end{aligned}
+$$
 
 > [!success] Result
 > The rotor rotates in the opposite direction to the rotating magnetic field at 0.5 times synchronous speed. The correct option is **(C)**.
@@ -116,12 +120,14 @@ $$N_s = \frac{120 f}{P} = \frac{120 \times 50}{8} = 750\text{ rpm}$$
 
 The rotor mechanical speed is:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 N_r &= N_s (1 - s) \\
 &= 750 \times (1 - 0.03) \\
 &= 750 \times 0.97 \\
 &= 727.5\text{ rpm}
-\end{aligned}$$
+\end{aligned}
+$$
 
 > [!success] Result
 > The operating slip is **0.03** (or 3%), and the motor runs at **727.5 rpm**.
@@ -156,18 +162,22 @@ $$N_s = \frac{120 f}{P} = \frac{120 \times 50}{4} = 1500\text{ rpm}$$
 
 The forward slip in the direction of rotation is:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 s_f &= \frac{N_s - N_r}{N_s} \\
 &= \frac{1500 - 1425}{1500} \\
 &= \frac{75}{1500} = 0.05
-\end{aligned}$$
+\end{aligned}
+$$
 
 The backward slip in the opposite direction is:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 s_b &= 2 - s_f \\
 &= 2 - 0.05 = 1.95
-\end{aligned}$$
+\end{aligned}
+$$
 
 > [!success] Result
 > The forward slip is **0.05** and the backward slip is **1.95**.
@@ -186,11 +196,13 @@ $$N_s = \frac{120 f}{P} = \frac{120 \times 50}{8} = 750\text{ rpm}$$
 
 Compute fractional slip:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 s &= \frac{N_s - N_r}{N_s} \\
 &= \frac{750 - 720}{750} \\
 &= \frac{30}{750} = \frac{1}{25} = 0.04
-\end{aligned}$$
+\end{aligned}
+$$
 
 The frequency of the rotor currents is:
 
@@ -242,11 +254,13 @@ $$N_r + s N_s = N_s$$
 
 Solving for mechanical rotor speed:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 N_r &= N_s (1 - s) \\
 &= 1500 \times (1 - 0.2) \\
 &= 1500 \times 0.8 = 1200\text{ rpm}
-\end{aligned}$$
+\end{aligned}
+$$
 
 > [!success] Result
 > To develop steady torque, the rotor must run at **1200 rpm**.
@@ -299,11 +313,13 @@ $$F_m = N_{\text{ph}} I_m = 100 \times 5 = 500\text{ AT}$$
 
 In a balanced 3-phase winding, three pulsating MMFs displaced by $120^\circ$ in space and time combine to produce a single rotating MMF wave. The peak amplitude of this resultant wave is:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 F_{\text{resultant}} &= \frac{3}{2} F_m \\
 &= 1.5 \times 500 \\
 &= 750\text{ AT}
-\end{aligned}$$
+\end{aligned}
+$$
 
 > [!success] Result
 > The amplitude of the resultant air gap rotating MMF wave is **750 ampere-turns (AT)**.
@@ -338,11 +354,13 @@ In stationary space, the rotor magnetic field and the stator magnetic field rota
 
 To convert this rotational speed into mechanical angular velocity ($\text{rad/s}$):
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \omega_m &= \frac{2\pi N_s}{60} \\
 &= \frac{2\pi \times 1500}{60} \\
 &= 50\pi \approx 157.08\text{ rad/s}
-\end{aligned}$$
+\end{aligned}
+$$
 
 > [!success] Result
 > The speed of the rotor field with respect to the stator is **$50\pi\text{ rad/s}$** (or **$157.08\text{ rad/s}$**).
@@ -386,13 +404,15 @@ $$N_{\text{slip}} = N_s - N_r = 1000 - 950 = 50\text{ rpm}$$
 
 The speed of the rotor rotating magnetic field relative to the rotor structure is:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 N_{\text{field w.r.t. rotor}} &= \frac{120 f_r}{P} \\
 &= \frac{120 (s f)}{P} \\
 &= s N_s \\
 &= N_s - N_r \\
 &= 1000 - 950 = 50\text{ rpm}
-\end{aligned}$$
+\end{aligned}
+$$
 
 > [!success] Result
 > The speed of the rotor magnetic field with respect to the rotor core is **50 rpm**.
@@ -483,11 +503,13 @@ $$N_s = \frac{120 f}{P} = \frac{120 \times 50}{4} = 1500\text{ rpm}$$
 
 The mechanical rotor speed at $s = -0.01$ is:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 N_r &= N_s (1 - s) \\
 &= 1500 \times [1 - (-0.01)] \\
 &= 1500 \times 1.01 = 1515\text{ rpm}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Because $N_r > N_s$, the machine operates in the induction generator region (supersynchronous speed).
 
@@ -497,10 +519,12 @@ Because $N_r > N_s$, the machine operates in the induction generator region (sup
 
 2. **Rotor field speed with respect to rotor core**:
    The relative speed between the rotor field and rotor core is:
-   $$\begin{aligned}
+   $$
+   \begin{aligned}
    N_{\text{field w.r.t. rotor}} &= s N_s \\
    &= -0.01 \times 1500 = -15\text{ rpm}
-   \end{aligned}$$
+   \end{aligned}
+   $$
    The magnitude is $15\text{ rpm}$. The negative sign indicates that relative to the physical rotor structure, the rotor flux wave moves backward at 15 rpm.
 
 Adding the mechanical rotor speed and the relative field speed yields the speed in space:
@@ -569,23 +593,27 @@ $$N_s = \frac{120 f}{P} = \frac{120 \times 60}{4} = 1800\text{ rpm}$$
 
 The rotor speed in the forward direction is:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 N_r &= N_s (1 - s) \\
 &= 1800 \times (1 - 0.05) \\
 &= 1800 \times 0.95 = 1710\text{ rpm}
-\end{aligned}$$
+\end{aligned}
+$$
 
 The backward rotating field travels in the opposite direction at $-N_s = -1800\text{ rpm}$. 
 
 The slip relative to the backward field is:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 s_b &= \frac{(-N_s) - N_r}{-N_s} \\
 &= \frac{N_s + N_r}{N_s} \\
 &= 1 + \frac{N_r}{N_s} \\
 &= 1 + (1 - s) \\
 &= 2 - s
-\end{aligned}$$
+\end{aligned}
+$$
 
 Substitute the forward slip $s = 0.05$:
 

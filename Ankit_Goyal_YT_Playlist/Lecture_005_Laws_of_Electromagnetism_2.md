@@ -88,11 +88,13 @@ $$e(t) = N \left|\frac{d\phi}{dt}\right|$$
 
 Substitute $N = 100$ and the flux expression:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 e(t) &= 100 \times \frac{d}{dt}[0.05 \sin(377 t)] \\
 &= 100 \times [0.05 \times 377 \cos(377 t)] \\
 &= 1885 \cos(377 t) \text{ V}
-\end{aligned}$$
+\end{aligned}
+$$
 
 > [!success] Terminal Voltage Result
 > The induced voltage across terminals $A\text{-}B$ is:
@@ -573,10 +575,12 @@ $$(\vec{v} \times \vec{B}) \cdot d\vec{l} = |\vec{v} \times \vec{B}| dl \cos(30^
 
 Substitute $\cos(30^\circ) = \frac{\sqrt{3}}{2}$ and integrate over length $L = 1\text{ m}$:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 e &= 2.5 \left(\frac{\sqrt{3}}{2}\right) \int_0^1 dl \\
 &= 1.25 \sqrt{3} \approx 2.165 \text{ V}
-\end{aligned}$$
+\end{aligned}
+$$
 
 > [!success] Motional Voltage Result
 > The induced voltage is:

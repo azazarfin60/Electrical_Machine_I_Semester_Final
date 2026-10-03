@@ -68,10 +68,12 @@ For a two-phase system ($n = 2$), the formula would suggest $360^\circ / 2 = 180
 Can we create a two-phase system by taking two lines of a three-phase supply?
 
 In a balanced three-phase system, phases A and B have a mutual phase displacement of $120^\circ$:
-$$\begin{aligned}
+$$
+\begin{aligned}
 V_A &= V \angle 0^\circ \\
 V_B &= V \angle -120^\circ
-\end{aligned}$$
+\end{aligned}
+$$
 
 Directly using these two phases gives a $120^\circ$ shift rather than the required $90^\circ$. This violates the balancing condition of a two-phase system. A special transformation network is required to synthesize the $90^\circ$ phase shift.
 
@@ -111,29 +113,35 @@ Each transformer has an isolated secondary winding. The two secondaries supply t
 To analyze the operation, we construct the phasor diagram of the three-phase supply.
 
 Take phase voltage $V_{AN}$ as the reference along the vertical axis:
-$$\begin{aligned}
+$$
+\begin{aligned}
 V_{AN} &= V_{ph} \angle 90^\circ \\
 V_{BN} &= V_{ph} \angle -30^\circ \\
 V_{CN} &= V_{ph} \angle -150^\circ
-\end{aligned}$$
+\end{aligned}
+$$
 
 ![Phasor diagram of the balanced three-phase supply voltages](frames/045/frame_0016_11m29s.jpg)
 
 From these phase voltages, find the line voltages:
-$$\begin{aligned}
+$$
+\begin{aligned}
 V_{AB} &= V_{AN} - V_{BN} \\
 V_{BC} &= V_{BN} - V_{CN} \\
 V_{CA} &= V_{CN} - V_{AN}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Line voltage $V_{BC}$ lies along the horizontal reference axis:
 $$V_{BC} = V_L \angle 0^\circ$$
 
 The other two line voltages are:
-$$\begin{aligned}
+$$
+\begin{aligned}
 V_{AB} &= V_L \angle 120^\circ \\
 V_{CA} &= V_L \angle -120^\circ
-\end{aligned}$$
+\end{aligned}
+$$
 
 This establishes the voltage framework across the transformer terminals.
 
@@ -154,16 +162,20 @@ Now apply Kirchhoff's Voltage Law to find the voltage $V_{AD}$ across the teaser
 $$V_{AD} = V_{AB} + V_{BD}$$
 
 Express both phasors in rectangular form:
-$$\begin{aligned}
+$$
+\begin{aligned}
 V_{AB} &= V_L \left(\cos 120^\circ + j \sin 120^\circ\right) = V_L \left(-\frac{1}{2} + j\frac{\sqrt{3}}{2}\right) \\
 V_{BD} &= \frac{V_L}{2} + j0
-\end{aligned}$$
+\end{aligned}
+$$
 
 Summing these two expressions:
-$$\begin{aligned}
+$$
+\begin{aligned}
 V_{AD} &= V_L \left(-\frac{1}{2} + j\frac{\sqrt{3}}{2}\right) + \frac{V_L}{2} \\
 &= j\frac{\sqrt{3}}{2}V_L = 0.866 V_L \angle 90^\circ
-\end{aligned}$$
+\end{aligned}
+$$
 
 ![Phasor alignment showing teaser leading main voltage by 90 degrees](frames/045/frame_0020_14m48s.jpg)
 
@@ -275,16 +287,20 @@ The voltage from D to N is the reverse of $V_{ND}$:
 $$V_{DN} = -V_{ND} = -\frac{1}{3} V_{AD}$$
 
 Substitute $V_{BD} = \frac{V_L}{2}\angle 0^\circ$ and $V_{AD} = j\frac{\sqrt{3}}{2}V_L$:
-$$\begin{aligned}
+$$
+\begin{aligned}
 V_{BN} &= \frac{V_L}{2} - j\frac{1}{3}\left(\frac{\sqrt{3}}{2}V_L\right) \\
 &= \frac{V_L}{2}\left(1 - j\frac{1}{\sqrt{3}}\right)
-\end{aligned}$$
+\end{aligned}
+$$
 
 Compute magnitude and phase:
-$$\begin{aligned}
+$$
+\begin{aligned}
 |V_{BN}| &= \frac{V_L}{2}\sqrt{1^2 + \left(-\frac{1}{\sqrt{3}}\right)^2} = \frac{V_L}{2}\sqrt{\frac{4}{3}} = \frac{V_L}{\sqrt{3}} \\
 \angle V_{BN} &= \tan^{-1}\left(-\frac{1}{\sqrt{3}}\right) = -30^\circ
-\end{aligned}$$
+\end{aligned}
+$$
 
 Thus $V_{BN} = \frac{V_L}{\sqrt{3}}\angle -30^\circ$.
 
@@ -294,16 +310,20 @@ Trace the voltage from terminal C to neutral N:
 $$V_{CN} = V_{CD} + V_{DN}$$
 
 Here $V_{CD} = -V_{BD} = -\frac{V_L}{2}$:
-$$\begin{aligned}
+$$
+\begin{aligned}
 V_{CN} &= -\frac{V_L}{2} - j\frac{1}{3}\left(\frac{\sqrt{3}}{2}V_L\right) \\
 &= -\frac{V_L}{2}\left(1 + j\frac{1}{\sqrt{3}}\right)
-\end{aligned}$$
+\end{aligned}
+$$
 
 Compute magnitude and phase:
-$$\begin{aligned}
+$$
+\begin{aligned}
 |V_{CN}| &= \frac{V_L}{2}\sqrt{1^2 + \left(\frac{1}{\sqrt{3}}\right)^2} = \frac{V_L}{\sqrt{3}} \\
 \angle V_{CN} &= 180^\circ + \tan^{-1}\left(\frac{1}{\sqrt{3}}\right) = 180^\circ + 30^\circ = 210^\circ \equiv -150^\circ
-\end{aligned}$$
+\end{aligned}
+$$
 
 Thus $V_{CN} = \frac{V_L}{\sqrt{3}}\angle -150^\circ$.
 
@@ -361,11 +381,13 @@ $$I_C = -I_{BC} - \frac{I_A}{2}$$
 
 > [!success] Result: Primary Line Currents
 > The three primary line currents are related to the secondary loads by:
-> $$\begin{aligned}
+> $$
+> \begin{aligned}
 > I_A &= 1.155\left(\frac{N_2}{N_1}\right) I_{2\text{teaser}} \\
 > I_B &= I_{BC} - \frac{I_A}{2} \\
 > I_C &= -I_{BC} - \frac{I_A}{2}
-> \end{aligned}$$
+> \end{aligned}
+> $$
 
 ## MMF Balancing in the Main Transformer and Loading Overview
 _(35:12 - 41:32)_
@@ -419,10 +441,12 @@ Before analyzing phasor diagrams under load, review the core governing relations
 Consider Case 1 with balanced unity power factor (resistive) loading.
 
 Secondary load currents are in phase with their respective secondary voltages:
-$$\begin{aligned}
+$$
+\begin{aligned}
 I_{2\text{teaser}} &= I_2 \angle 90^\circ \\
 I_{2\text{main}} &= I_2 \angle 0^\circ
-\end{aligned}$$
+\end{aligned}
+$$
 
 Because the load is balanced, both secondary currents have equal magnitude $I_2$.
 
@@ -448,32 +472,40 @@ $$\frac{I_A}{2} = \frac{1}{\sqrt{3}}\left(\frac{N_2}{N_1}\right) I_2 \angle 90^\
 ![Analytical summation for line current I_B](frames/045/frame_0056_43m22s.jpg)
 
 Now evaluate line current $I_B$:
-$$\begin{aligned}
+$$
+\begin{aligned}
 I_B &= I_{BC} - \frac{I_A}{2} \\
 &= \left(\frac{N_2}{N_1}\right) I_2 \angle 0^\circ - \frac{1}{\sqrt{3}}\left(\frac{N_2}{N_1}\right) I_2 \angle 90^\circ \\
 &= \left(\frac{N_2}{N_1}\right) I_2 \left(1 - j\frac{1}{\sqrt{3}}\right)
-\end{aligned}$$
+\end{aligned}
+$$
 
 Calculate the magnitude and phase of $I_B$:
-$$\begin{aligned}
+$$
+\begin{aligned}
 |I_B| &= \left(\frac{N_2}{N_1}\right) I_2 \sqrt{1^2 + \left(-\frac{1}{\sqrt{3}}\right)^2} = \frac{2}{\sqrt{3}}\left(\frac{N_2}{N_1}\right) I_2 \\
 \angle I_B &= \tan^{-1}\left(-\frac{1}{\sqrt{3}}\right) = -30^\circ
-\end{aligned}$$
+\end{aligned}
+$$
 
 Thus $I_B = \frac{2}{\sqrt{3}}\left(\frac{N_2}{N_1}\right) I_2 \angle -30^\circ$.
 
 Next evaluate line current $I_C$:
-$$\begin{aligned}
+$$
+\begin{aligned}
 I_C &= -I_{BC} - \frac{I_A}{2} \\
 &= -\left(\frac{N_2}{N_1}\right) I_2 \angle 0^\circ - \frac{1}{\sqrt{3}}\left(\frac{N_2}{N_1}\right) I_2 \angle 90^\circ \\
 &= \left(\frac{N_2}{N_1}\right) I_2 \left(-1 - j\frac{1}{\sqrt{3}}\right)
-\end{aligned}$$
+\end{aligned}
+$$
 
 Calculate the magnitude and phase of $I_C$:
-$$\begin{aligned}
+$$
+\begin{aligned}
 |I_C| &= \left(\frac{N_2}{N_1}\right) I_2 \sqrt{(-1)^2 + \left(-\frac{1}{\sqrt{3}}\right)^2} = \frac{2}{\sqrt{3}}\left(\frac{N_2}{N_1}\right) I_2 \\
 \angle I_C &= -180^\circ + 30^\circ = -150^\circ
-\end{aligned}$$
+\end{aligned}
+$$
 
 Thus $I_C = \frac{2}{\sqrt{3}}\left(\frac{N_2}{N_1}\right) I_2 \angle -150^\circ$.
 
@@ -482,21 +514,25 @@ Thus $I_C = \frac{2}{\sqrt{3}}\left(\frac{N_2}{N_1}\right) I_2 \angle -150^\circ
 ### Proof of Primary System Balancing
 
 Compare the three primary line currents:
-$$\begin{aligned}
+$$
+\begin{aligned}
 I_A &= \frac{2}{\sqrt{3}}\left(\frac{N_2}{N_1}\right) I_2 \angle 90^\circ \\
 I_B &= \frac{2}{\sqrt{3}}\left(\frac{N_2}{N_1}\right) I_2 \angle -30^\circ \\
 I_C &= \frac{2}{\sqrt{3}}\left(\frac{N_2}{N_1}\right) I_2 \angle -150^\circ
-\end{aligned}$$
+\end{aligned}
+$$
 
 All three line currents have identical magnitudes:
 $$|I_A| = |I_B| = |I_C| = 1.155\left(\frac{N_2}{N_1}\right) I_2$$
 
 The phase differences between adjacent line currents are:
-$$\begin{aligned}
+$$
+\begin{aligned}
 \angle I_A - \angle I_B &= 90^\circ - (-30^\circ) = 120^\circ \\
 \angle I_B - \angle I_C &= -30^\circ - (-150^\circ) = 120^\circ \\
 \angle I_C - \angle I_A &= -150^\circ - 90^\circ = -240^\circ \equiv 120^\circ
-\end{aligned}$$
+\end{aligned}
+$$
 
 > [!success] Result
 > When a balanced two-phase load is connected to the secondary, the Scott connection draws perfectly balanced three-phase currents from the supply.
@@ -543,16 +579,20 @@ Examine the phase angle between the voltage across each winding section and the 
 Now consider a balanced secondary load with a lagging power factor of $\cos \phi$.
 
 Both secondary currents lag their respective secondary voltages by phase angle $\phi$:
-$$\begin{aligned}
+$$
+\begin{aligned}
 I_{2\text{teaser}} &= I_2 \angle(90^\circ - \phi) \\
 I_{2\text{main}} &= I_2 \angle(-\phi)
-\end{aligned}$$
+\end{aligned}
+$$
 
 Reflected primary currents also lag their respective primary voltages by $\phi$:
-$$\begin{aligned}
+$$
+\begin{aligned}
 I_A &= 1.155\left(\frac{N_2}{N_1}\right) I_2 \angle(90^\circ - \phi) \\
 I_{BC} &= \left(\frac{N_2}{N_1}\right) I_2 \angle(-\phi)
-\end{aligned}$$
+\end{aligned}
+$$
 
 Line current $I_B$ is computed from $I_{BC} - I_A / 2$. Line current $I_C$ is computed from $-I_{BC} - I_A / 2$.
 
@@ -595,10 +635,12 @@ $$\text{PF}_{CD} = \cos(30^\circ - \phi) \text{ (leading for } \phi < 30^\circ)$
 In industrial practice, two-phase loads are often unequal in magnitude and power factor.
 
 Let the secondary loads draw:
-$$\begin{aligned}
+$$
+\begin{aligned}
 I_{2\text{teaser}} &= I_{2\text{T}} \angle(90^\circ - \phi_1) \\
 I_{2\text{main}} &= I_{2\text{M}} \angle(-\phi_2)
-\end{aligned}$$
+\end{aligned}
+$$
 
 Follow this systematic procedure to calculate three-phase primary currents:
 1. Refer the teaser secondary current to terminal A:
@@ -606,10 +648,12 @@ $$I_A = \left(\frac{N_2}{0.866 N_1}\right) I_{2\text{teaser}}$$
 2. Refer the main secondary current to find mesh current $I_{BC}$:
 $$I_{BC} = \left(\frac{N_2}{N_1}\right) I_{2\text{main}}$$
 3. Compute the remaining line currents algebraically:
-$$\begin{aligned}
+$$
+\begin{aligned}
 I_B &= I_{BC} - \frac{I_A}{2} \\
 I_C &= -I_{BC} - \frac{I_A}{2}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Under unbalanced loading, primary line currents $I_A, I_B, I_C$ become unequal in magnitude and phase.
 
@@ -675,11 +719,13 @@ _(62:44 - 67:44)_
 ### Primary VA Rating of the Main Transformer
 
 Multiply the primary voltage rating by the required primary current rating:
-$$\begin{aligned}
+$$
+\begin{aligned}
 S_{1\text{main}} &= V_{1\text{main}} \cdot I_{1\text{main, rated}} \\
 &= \left[\left(\frac{N_1}{N_2}\right) V_2\right] \left[\frac{2}{\sqrt{3}}\left(\frac{N_2}{N_1}\right) I_2\right] \\
 &= \frac{2}{\sqrt{3}} V_2 I_2 \approx 1.155 V_2 I_2
-\end{aligned}$$
+\end{aligned}
+$$
 
 The secondary rating of the main transformer is $V_2 I_2$. The primary rating is $1.155 V_2 I_2$.
 
@@ -690,11 +736,13 @@ The apparent power transmitted through the core is identical on both sides. But 
 ### Average VA Rating of the Main Transformer
 
 When primary and secondary winding ratings differ, the transformer rating is the arithmetic average:
-$$\begin{aligned}
+$$
+\begin{aligned}
 S_{\text{main, rated}} &= \frac{S_{1\text{main}} + S_{2\text{main}}}{2} \\
 &= \frac{1.155 V_2 I_2 + V_2 I_2}{2} \\
 &= 1.0775 V_2 I_2 \approx 1.078 V_2 I_2
-\end{aligned}$$
+\end{aligned}
+$$
 
 The teaser transformer has matching ratings on primary and secondary:
 $$S_{\text{teaser, rated}} = V_2 I_2$$

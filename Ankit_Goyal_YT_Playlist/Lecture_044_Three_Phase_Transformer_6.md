@@ -374,10 +374,12 @@ $$\frac{V_{LP}}{V_{LS}} = \frac{2}{3}\left(\frac{N_P}{N_S}\right) \approx 0.667\
 So the ratio of primary line voltage to secondary line voltage is higher in delta-zigzag star.
 
 Inverting these ratios gives the secondary-to-primary voltage transfer:
-$$\begin{aligned}
+$$
+\begin{aligned}
 \left(\frac{V_{LS}}{V_{LP}}\right)_{D\text{y}} &= \sqrt{3}\left(\frac{N_S}{N_P}\right) \approx 1.732\left(\frac{N_S}{N_P}\right) \\
 \left(\frac{V_{LS}}{V_{LP}}\right)_{D\text{z}} &= \frac{3}{2}\left(\frac{N_S}{N_P}\right) = 1.5\left(\frac{N_S}{N_P}\right)
-\end{aligned}$$
+\end{aligned}
+$$
 
 For the same applied primary line voltage, delta-star yields a higher secondary line voltage than delta-zigzag star.
 
@@ -390,10 +392,12 @@ Why does the zigzag connection produce less secondary voltage? In standard delta
 In delta-zigzag star, each phase winding splits into two equal halves. Each half has $N_S / 2$ turns. One half comes from phase A. The other half comes from phase B in reverse polarity. 
 
 These two component voltages have a $60^\circ$ phase difference:
-$$\begin{aligned}
+$$
+\begin{aligned}
 V_{ph,s} &= \frac{V_s}{2}\angle 0^\circ + \frac{V_s}{2}\angle -60^\circ \\
 &= \frac{\sqrt{3}}{2} V_s \approx 0.866\,V_s
-\end{aligned}$$
+\end{aligned}
+$$
 
 The sum of two vectors is maximum when they are collinear. Adding out-of-phase vectors reduces the resultant magnitude. Joining half-windings from different phases therefore lowers the output voltage.
 
@@ -466,11 +470,13 @@ On a clock face, 12 o'clock represents the reference. A $30^\circ$ clockwise lag
 ### Analytical Expression of Secondary Phase Voltage
 
 We can prove the $-30^\circ$ phase shift mathematically. Let the primary phase voltages be:
-$$\begin{aligned}
+$$
+\begin{aligned}
 V_{AN} &= V\angle 0^\circ \\
 V_{BN} &= V\angle -120^\circ \\
 V_{CN} &= V\angle 120^\circ
-\end{aligned}$$
+\end{aligned}
+$$
 
 Each secondary half-winding has $N_S / 2$ turns. Secondary phase A voltage is the sum of voltages across $C_2\text{-}C_1$ and $A_3\text{-}A_4$:
 $$V_{an} = V_{C2C1} + V_{A3A4}$$
@@ -492,10 +498,12 @@ _(51:34 - 57:46)_
 ### Evaluation of Secondary Phase Voltage
 
 Convert the polar terms into rectangular coordinates:
-$$\begin{aligned}
+$$
+\begin{aligned}
 1\angle -60^\circ &= \cos(-60^\circ) + j\sin(-60^\circ) = \frac{1}{2} - j\frac{\sqrt{3}}{2} \\
 1\angle 0^\circ &= 1 + j0
-\end{aligned}$$
+\end{aligned}
+$$
 
 Add these two complex numbers:
 $$1\angle -60^\circ + 1\angle 0^\circ = \left(1 + \frac{1}{2}\right) - j\frac{\sqrt{3}}{2} = \frac{3}{2} - j\frac{\sqrt{3}}{2}$$

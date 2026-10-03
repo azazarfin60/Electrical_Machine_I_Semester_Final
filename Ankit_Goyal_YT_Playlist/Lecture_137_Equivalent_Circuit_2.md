@@ -198,21 +198,25 @@ The answer lies in the observer frame of reference:
 With both stator and rotor circuits operating at line frequency $f$, we can join them across an ideal transformer with turns ratio $a = N_{e1} / N_{e2}$.
 
 Referring all rotor quantities to the stator winding:
-$$\begin{aligned}
+$$
+\begin{aligned}
 R_2' &= a^2 R_2 = \left(\frac{N_{e1}}{N_{e2}}\right)^2 R_2 \\
 X_2' &= a^2 X_2 = \left(\frac{N_{e1}}{N_{e2}}\right)^2 X_2 \\
 I_2' &= \frac{I_2}{a} = \left(\frac{N_{e2}}{N_{e1}}\right) I_2
-\end{aligned}$$
+\end{aligned}
+$$
 
 ![Complete equivalent circuit referred to stator](frames/137/frame_0033_26m17s.jpg)
 
 > [!success] Result: Complete Equivalent Circuit Equations
 > The complete per-phase loop equations viewed from the stator terminals are:
-> $$\begin{aligned}
+> $$
+> \begin{aligned}
 > \vec{V}_1 &= \vec{I}_1 (R_1 + j X_1) + \vec{E}_1 \\
 > \vec{E}_1 &= \vec{I}_2' \left(\frac{R_2'}{s} + j X_2'\right) \\
 > \vec{I}_1 &= \vec{I}_1' + \vec{I}_0
-> \end{aligned}$$
+> \end{aligned}
+> $$
 
 ### Why Rotor Core Losses Are Ignored
 

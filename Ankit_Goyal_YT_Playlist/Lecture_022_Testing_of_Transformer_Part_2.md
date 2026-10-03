@@ -99,11 +99,13 @@ $$X_{01} = \sqrt{Z_{01}^2 - R_{01}^2} = \sqrt{13^2 - 5^2} = 12\ \Omega$$
 
 #### 3. Referring Series Parameters to the Low-Voltage Side
 Transfer the HV series parameters to the LV side by dividing by $a^2 = 10^2 = 100$:
-$$\begin{aligned}
+$$
+\begin{aligned}
 R_{02} &= \frac{R_{01}}{a^2} = \frac{5}{100} = 0.05\ \Omega \\
 X_{02} &= \frac{X_{01}}{a^2} = \frac{12}{100} = 0.12\ \Omega \\
 Z_{02} &= \frac{Z_{01}}{a^2} = \frac{13}{100} = 0.13\ \Omega
-\end{aligned}$$
+\end{aligned}
+$$
 
 ![Approximate Equivalent Circuit Referred to the Low-Voltage Side](frames/022/frame_0010_06m25s.jpg)
 
@@ -120,18 +122,22 @@ Instead of referring computed circuit parameters, we can refer the raw test data
 Transformers transform voltages and currents according to their turns ratio. But power remains conserved across windings.
 
 To refer short-circuit test data from HV to LV:
-$$\begin{aligned}
+$$
+\begin{aligned}
 V_{\text{sc,LV}} &= V_{\text{sc,HV}} \left(\frac{N_{\text{LV}}}{N_{\text{HV}}}\right) = 104 \times \frac{250}{2500} = 10.4\text{ V} \\
 I_{\text{sc,LV}} &= I_{\text{sc,HV}} \left(\frac{N_{\text{HV}}}{N_{\text{LV}}}\right) = 8 \times \frac{2500}{250} = 80\text{ A} \\
 W_{\text{sc,LV}} &= W_{\text{sc,HV}} = 320\text{ W}
-\end{aligned}$$
+\end{aligned}
+$$
 
 We can calculate series parameters directly from these referred measurements:
-$$\begin{aligned}
+$$
+\begin{aligned}
 R_{02} &= \frac{W_{\text{sc,LV}}}{I_{\text{sc,LV}}^2} = \frac{320}{80^2} = 0.05\ \Omega \\
 Z_{02} &= \frac{V_{\text{sc,LV}}}{I_{\text{sc,LV}}} = \frac{10.4}{80} = 0.13\ \Omega \\
 X_{02} &= \sqrt{0.13^2 - 0.05^2} = 0.12\ \Omega
-\end{aligned}$$
+\end{aligned}
+$$
 Both methods produce identical equivalent circuit values.
 
 ## Principles of the Polarity Test and Circulating Currents in Parallel Operation
@@ -265,10 +271,12 @@ The voltmeter reading directly dictates where to mark dots:
 ![Summary of Voltmeter Readings and Polarity Determination](frames/022/frame_0028_22m07s.jpg)
 
 > [!success] Summary of Polarity Test Results
-> $$\begin{aligned}
+> $$
+> \begin{aligned}
 > \text{Subtractive Polarity}: V &= V_1 - V_2 < V_1 \implies \text{Like terminals connected (Dots on same side)} \\
 > \text{Additive Polarity}: V &= V_1 + V_2 > V_1 \implies \text{Unlike terminals connected (Dots on opposite sides)}
-> \end{aligned}$$
+> \end{aligned}
+> $$
 
 ### Practical Significance in Power Engineering
 
@@ -479,11 +487,13 @@ In a conventional load test on two $50\text{ MVA}$ transformers, supplying $100\
 
 > [!success] Power Loss Extraction in Sumpner's Test
 > Total power drawn from both supplies equals total transformer losses:
-> $$\begin{aligned}
+> $$
+> \begin{aligned}
 > \text{Core loss per transformer}: P_{\text{core}} &= \frac{W_1}{2} \\
 > \text{Full-load copper loss per transformer}: P_{\text{cu,fl}} &= \frac{W_2}{2} \\
 > \text{Total power drawn}: P_{\text{total}} &= W_1 + W_2 = 2 P_{\text{core}} + 2 P_{\text{cu,fl}}
-> \end{aligned}$$
+> \end{aligned}
+> $$
 
 ## Temperature Rise Estimation, Primary Current Asymmetry, and Efficiency Calculation
 _(44:18 - 48:30)_
@@ -537,10 +547,12 @@ The test yields two wattmeter readings:
 - Secondary wattmeter reading: $W_2$
 
 For each individual transformer:
-$$\begin{aligned}
+$$
+\begin{aligned}
 P_{\text{core}} &= \frac{W_1}{2} \\
 P_{\text{cu,fl}} &= \frac{W_2}{2}
-\end{aligned}$$
+\end{aligned}
+$$
 
 At any fractional load $x$ and load power factor $\cos\theta$, calculate efficiency as:
 $$\eta = \frac{x S_{\text{rated}} \cos\theta}{x S_{\text{rated}} \cos\theta + P_{\text{core}} + x^2 P_{\text{cu,fl}}} \times 100\%$$

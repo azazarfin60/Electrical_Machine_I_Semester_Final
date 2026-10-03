@@ -87,10 +87,12 @@ $$x = 0.75$$
 
 Then find the loss distribution for one transformer from the wattmeter readings:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 P_i &= \frac{5.0\text{ kW}}{2} = 2.5\text{ kW} \\
 P_{\text{cu,fl}} &= \frac{7.5\text{ kW}}{2} = 3.75\text{ kW}
-\end{aligned}$$
+\end{aligned}
+$$
 
 With the losses known, the output power and individual efficiency follow directly.
 
@@ -201,10 +203,12 @@ Rounding to three decimal places yields $0.384\text{ lag}$, which is Option (a).
 
 You can also solve this problem by calculating the explicit series parameters:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 Z_{01} &= \frac{V_{\text{sc}}}{I_{\text{sc}}} = \frac{104}{8} = 13\ \Omega \\
 R_{01} &= \frac{W_{\text{sc}}}{I_{\text{sc}}^2} = \frac{320}{8^2} = \frac{320}{64} = 5\ \Omega
-\end{aligned}$$
+\end{aligned}
+$$
 
 The reactance is:
 
@@ -263,10 +267,12 @@ The test ammeter reads $4\text{ A}$, which is less than rated current.
 
 However, winding resistance $R$ and leakage reactance $X$ do not depend on the test current level. They remain constant because magnetic materials in leakage flux paths remain linear. You can compute them directly from test readings:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 Z_{01} &= \frac{V_{\text{sc}}}{I_{\text{sc}}} = \frac{60\text{ V}}{4\text{ A}} = 15\ \Omega \\
 R_{01} &= \frac{W_{\text{sc}}}{I_{\text{sc}}^2} = \frac{100\text{ W}}{4^2\text{ A}^2} = \frac{100}{16} = 6.25\ \Omega
-\end{aligned}$$
+\end{aligned}
+$$
 
 Now compute the equivalent leakage reactance referred to the HV side:
 
@@ -311,7 +317,8 @@ $$V_1 = V_2' + I_1 (R_{01} + j X_{01})$$
 
 Substitute the known phasor quantities into this expression:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 V_1 &= 2000 \angle 0^\circ + (5 \angle -36.87^\circ)(6.25 + j 13.6358) \\
 &= 2000 + 5(0.8 - j 0.6)(6.25 + j 13.6358) \\
 &= 2000 + 5[(0.8 \times 6.25 + 0.6 \times 13.6358) + j(0.8 \times 13.6358 - 0.6 \times 6.25)] \\
@@ -319,7 +326,8 @@ V_1 &= 2000 \angle 0^\circ + (5 \angle -36.87^\circ)(6.25 + j 13.6358) \\
 &= 2000 + 5(13.1815 + j 7.1586) \\
 &= 2000 + 65.9075 + j 35.7930 \\
 &= 2065.9075 + j 35.7930\text{ V}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Calculate the magnitude of the applied voltage:
 
@@ -392,10 +400,12 @@ $$\frac{N_{\text{LV}}}{N_{\text{HV}}} = \frac{200}{400} = \frac{1}{2}$$
 
 Transform the test voltage and current using the winding ratio:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 V_{\text{sc,LV}} &= V_{\text{sc,HV}} \times \left(\frac{N_{\text{LV}}}{N_{\text{HV}}}\right) = 15 \times \frac{1}{2} = 7.5\text{ V} \\
 I_{\text{sc,LV}} &= I_{\text{sc,HV}} \times \left(\frac{N_{\text{HV}}}{N_{\text{LV}}}\right) = 10 \times 2 = 20\text{ A}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Power represents physical heat dissipation and is invariant to referral:
 
@@ -516,10 +526,12 @@ $$400 \angle \delta = V_2 \angle 0^\circ + I_2 (R_{02} + j X_{02})$$
 
 Substitute the known series parameters $R_{02} = 0.6\ \Omega$ and $X_{02} = 1.3747\ \Omega$:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 400 \angle \delta &= V_2 + 10(0.6 + j 1.3747) \\
 &= (V_2 + 6) + j 13.747
-\end{aligned}$$
+\end{aligned}
+$$
 
 Equate the squared magnitudes on both sides:
 
@@ -576,12 +588,14 @@ $$\Delta V = I_2 (R_{02} \cos\phi + X_{02} \sin\phi)$$
 
 Substitute the known values with $\cos\phi = 0.8$ and $\sin\phi = 0.6$:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \Delta V &= 10 (0.6 \times 0.8 + 1.3747 \times 0.6) \\
 &= 10 (0.48 + 0.8248) \\
 &= 10 \times 1.3048 \\
 &= 13.0482\text{ V} \approx 13.05\text{ V}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Subtract this internal drop from the no-load secondary terminal voltage $400\text{ V}$:
 
@@ -597,12 +611,14 @@ $$\Delta V = I_2 (R_{02} \cos\phi - X_{02} \sin\phi)$$
 
 Substitute the parameters:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \Delta V &= 10 (0.6 \times 0.8 - 1.3747 \times 0.6) \\
 &= 10 (0.48 - 0.8248) \\
 &= 10 (-0.3448) \\
 &= -3.4482\text{ V} \approx -3.45\text{ V}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Subtract this negative drop from the no-load voltage:
 
@@ -671,10 +687,12 @@ The short-circuit test data is given on the high-voltage side: $V_{\text{sc}} = 
 
 Refer the raw meter readings directly to the low-voltage side using turns ratio $N_{\text{LV}} / N_{\text{HV}} = 200 / 1000 = 1/5$:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 V_{\text{sc,LV}} &= 50\text{ V} \times \frac{200}{1000} = 10\text{ V} \\
 I_{\text{sc,LV}} &= 5\text{ A} \times \frac{1000}{200} = 25\text{ A}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Power dissipation is invariant across windings, so $P_{\text{sc,LV}} = 110\text{ W}$.
 
@@ -731,10 +749,12 @@ $$\frac{V_{L,\text{HV}}}{V_{L,\text{LV}}} = \frac{10000\text{ V}}{500\text{ V}} 
 
 Refer the line readings directly to the high-voltage side:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 V_{L,\text{HV}} &= 500\text{ V} \times \frac{10000}{500} = 10000\text{ V} \\
 I_{L,\text{HV}} &= 10\text{ A} \times \frac{500}{10000} = 0.5\text{ A}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Total three-phase core loss remains invariant to referral:
 
@@ -1013,11 +1033,13 @@ The short-circuit test must operate at rated current to measure rated copper los
 
 The tests link directly to specific parts of the equivalent circuit:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \text{Open-Circuit Test (LV side)} &\implies P_i, \quad R_c = \frac{V_0^2}{P_0}, \quad X_m = \frac{V_0}{I_\mu} \\
 \text{Short-Circuit Test (HV side)} &\implies P_{\text{cu,fl}}, \quad R_{\text{eq}} = \frac{P_{\text{sc}}}{I_{\text{sc}}^2}, \quad X_{\text{eq}} = \sqrt{Z_{\text{sc}}^2 - R_{\text{eq}}^2} \\
 \text{Sumpner's Test} &\implies P_i = \frac{W_1}{2}, \quad P_{\text{cu,fl}} = \frac{W_2}{2} \quad (\text{simultaneous thermal loading})
-\end{aligned}$$
+\end{aligned}
+$$
 
 When transferring test data across windings, voltage scales with the turns ratio $N_1/N_2$. Current scales inversely with $N_2/N_1$. Active power remains invariant.
 

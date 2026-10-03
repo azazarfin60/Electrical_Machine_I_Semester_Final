@@ -160,10 +160,12 @@ Consider balanced three-phase currents flowing in the windings:
 $$i_a(t) + i_b(t) + i_c(t) = 0$$
 
 All three limbs have an identical number of turns $N$. Multiplying the balanced currents by $N$ gives the magnetomotive forces (MMF):
-$$\begin{aligned}
+$$
+\begin{aligned}
 N i_a(t) + N i_b(t) + N i_c(t) &= 0 \\
 F_a(t) + F_b(t) + F_c(t) &= 0
-\end{aligned}$$
+\end{aligned}
+$$
 
 Because the core is geometrically symmetric at $120^\circ$, all three limbs have the same magnetic reluctance $\mathcal{R}$. Dividing the MMF equation by the common reluctance $\mathcal{R}$ yields:
 $$\frac{F_a}{\mathcal{R}} + \frac{F_b}{\mathcal{R}} + \frac{F_c}{\mathcal{R}} = 0$$
@@ -278,12 +280,14 @@ Flux leaves limb A and flows through top yoke $S_1$. At the central limb junctio
    $$S_{\text{right}} = S_5 + S_6 + S_7 = S + S + S = 3S$$
 
 The two return paths combine at the bottom of the central limb and return through bottom yoke $S_3$. Therefore, the total equivalent reluctance for Phase A is:
-$$\begin{aligned}
+$$
+\begin{aligned}
 S_{\text{eq},A} &= S_2 + (S_1 + S_3) + (S_4 \parallel S_{\text{right}}) \\
 &= S + 2S + (S \parallel 3S) \\
 &= 3S + \frac{S \times 3S}{S + 3S} \\
 &= 3S + 0.75S = 3.75S
-\end{aligned}$$
+\end{aligned}
+$$
 
 By symmetry, the other outer limb (Phase C) sees the exact same reluctance:
 $$S_{\text{eq},C} = 3.75S$$
@@ -301,11 +305,13 @@ Flux leaves the top of the central limb and splits equally between two symmetric
    $$S_{\text{right}} = S_5 + S_6 + S_7 = 3S$$
 
 These two loops are in parallel with each other, and in series with limb segment $S_4$:
-$$\begin{aligned}
+$$
+\begin{aligned}
 S_{\text{eq},B} &= S_4 + (S_{\text{left}} \parallel S_{\text{right}}) \\
 &= S + (3S \parallel 3S) \\
 &= S + \frac{3S}{2} = 2.5S
-\end{aligned}$$
+\end{aligned}
+$$
 
 > [!success] Result
 > In a planar three-limbed core, the central limb experiences significantly lower magnetic reluctance than the outer limbs:
@@ -378,11 +384,13 @@ Subtracting phasor $\vec{\phi}_b / 2$ is equivalent to adding its reversed vecto
 $$180^\circ - 120^\circ = 60^\circ$$
 
 Using the parallelogram law of vector addition, the magnitude of the resultant flux is:
-$$\begin{aligned}
+$$
+\begin{aligned}
 \phi_{\text{inner}} &= \sqrt{\left(\frac{\phi}{2}\right)^2 + \left(\frac{\phi}{2}\right)^2 + 2\left(\frac{\phi}{2}\right)\left(\frac{\phi}{2}\right)\cos 60^\circ} \\
 &= \frac{\phi}{2} \sqrt{1 + 1 + 2(0.5)} \\
 &= \frac{\phi}{2} \sqrt{3} = \frac{\sqrt{3}}{2}\phi \approx 0.866\phi
-\end{aligned}$$
+\end{aligned}
+$$
 
 > [!success] Result
 > In a three-phase shell-type transformer, the flux in the intermediate core sections is $\frac{\sqrt{3}}{2} \approx 86.6\%$ of the main phase flux:

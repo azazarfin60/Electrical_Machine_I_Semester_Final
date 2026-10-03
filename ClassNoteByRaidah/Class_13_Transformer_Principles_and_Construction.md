@@ -108,7 +108,8 @@ $$\text{Transferring electrical energy from one circuit to another without any p
 
 ## 5. Parallels Between Induction Motor and Transformer
 
-$$\begin{array}{|l|c|c|}
+$$
+\begin{array}{|l|c|c|}
 \hline
 \textbf{Feature} & \textbf{Transformer} & \textbf{Induction Motor} \\
 \hline
@@ -119,7 +120,8 @@ $$\begin{array}{|l|c|c|}
 \text{No-Load Power Factor} & \approx 0.3 - 0.4 \text{ lagging} & \approx 0.1 - 0.2 \text{ lagging} \\
 \text{Basic Tests} & \text{Open Circuit (OC), Short Circuit (SC)} & \text{No-Load, Blocked Rotor, DC Test} \\
 \hline
-\end{array}$$
+\end{array}
+$$
 
 ---
 

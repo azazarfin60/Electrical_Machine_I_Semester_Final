@@ -51,13 +51,15 @@ $$\frac{T_{\text{st}}}{T_{\text{fl}}} = x^2 \left(\frac{I_{\text{sc}}}{I_{\text{
 
 Substitute the given numerical parameters into this torque ratio:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 1.5 &= x^2 (7)^2 (0.05) \\
 1.5 &= x^2 \times 49 \times 0.05 \\
 1.5 &= 2.45 x^2 \\
 x^2 &= \frac{1.5}{2.45} \approx 0.6122 \\
 x &= \sqrt{0.6122} \approx 0.7824
-\end{aligned}$$
+\end{aligned}
+$$
 
 ![Auto-transformer tapping calculation](frames/150/frame_0007_04m08s.jpg)
 
@@ -130,11 +132,13 @@ $$T_{\text{st}} \propto x^2 \implies \frac{T_2}{T_1} = \left(\frac{x_2}{x_1}\rig
 
 Substitute $x_1 = 0.30$, $x_2 = 0.60$, and $T_1 = 80\text{ N}\cdot\text{m}$:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 T_2 &= 80 \times \left(\frac{0.60}{0.30}\right)^2 \\
 &= 80 \times (2)^2 \\
 &= 80 \times 4 = 320\text{ N}\cdot\text{m}
-\end{aligned}$$
+\end{aligned}
+$$
 
 ![Auto-transformer torque scaling](frames/150/frame_0030_12m57s.jpg)
 
@@ -201,10 +205,12 @@ $$V_{\text{ph, star}} = \frac{V_L}{\sqrt{3}}$$
 
 This reduction causes both line current and starting torque to decrease by a factor of 3:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 I_{\text{st, } Y\text{-}\Delta} &= \frac{1}{3} I_{\text{st, DOL}} = \frac{30}{3} = 10\text{ A} \\
 T_{\text{st, } Y\text{-}\Delta} &= \frac{1}{3} T_{\text{st, DOL}} = \frac{300}{3} = 100\text{ N}\cdot\text{m}
-\end{aligned}$$
+\end{aligned}
+$$
 
 > [!success] Result
 > Under star-delta starting, the starting current is $10\text{ A}$ and the starting torque is $100\text{ N}\cdot\text{m}$. Both quantities are exactly one-third of their direct-switching values.
@@ -251,11 +257,13 @@ $$R_1 = R_1'(1 - \alpha) = 0.6667 \times (1 - 0.4162) = 0.6667 \times 0.5838 \ap
 
 Compute the remaining sections using $R_k = \alpha^{k-1} R_1$:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 R_2 &= \alpha R_1 \approx 0.4162 \times 0.2919 \approx 0.1215\ \Omega \\
 R_3 &= \alpha R_2 \approx 0.4162 \times 0.1215 \approx 0.0506\ \Omega \\
 R_4 &= \alpha R_3 \approx 0.4162 \times 0.0506 \approx 0.0210\ \Omega
-\end{aligned}$$
+\end{aligned}
+$$
 
 ![Four-step starter calculation](frames/150/frame_0055_25m08s.jpg)
 
@@ -297,12 +305,14 @@ $$R_1 = R_1'(1 - \alpha) = 0.75 \times (1 - 0.5253) = 0.75 \times 0.4747 \approx
 
 Compute the remaining four sections using $R_k = \alpha R_{k-1}$:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 R_2 &= \alpha R_1 = 0.5253 \times 0.3560 \approx 0.1870\ \Omega \\
 R_3 &= \alpha R_2 = 0.5253 \times 0.1870 \approx 0.0982\ \Omega \\
 R_4 &= \alpha R_3 = 0.5253 \times 0.0982 \approx 0.0516\ \Omega \\
 R_5 &= \alpha R_4 = 0.5253 \times 0.0516 \approx 0.0271\ \Omega
-\end{aligned}$$
+\end{aligned}
+$$
 
 ![Five-section starter calculation](frames/150/frame_0063_29m31s.jpg)
 

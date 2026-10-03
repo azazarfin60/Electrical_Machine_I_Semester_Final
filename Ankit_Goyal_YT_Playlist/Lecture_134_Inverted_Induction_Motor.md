@@ -193,13 +193,15 @@ $$s = \frac{N_s - N_r}{N_s} \implies N_s - N_r = s N_s$$
 
 The frequency induced in the stationary stator conductors depends on this relative cutting speed:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 f_{\text{stator}} &= \frac{P}{120} (N_{\text{rel}}) \\
 &= \frac{P}{120} (N_s - N_r) \\
 &= \frac{P}{120} (s N_s) \\
 &= s \left(\frac{P N_s}{120}\right) \\
 &= s f
-\end{aligned}$$
+\end{aligned}
+$$
 
 > [!success] Frequency Duality
 > - **Normal Induction Motor**: Stator supply frequency is $f$, rotor induced frequency is $f_r = s f$.
@@ -355,20 +357,24 @@ $$N_r = N_s (1 - s)$$
 Now evaluate $N_r$ for the two slip values found earlier:
 
 **Case 1: Subsynchronous Speed ($s = +0.4$)**
-$$\begin{aligned}
+$$
+\begin{aligned}
 N_{r1} &= 1500 \times (1 - 0.4) \\
 &= 1500 \times 0.6 \\
 &= 900\text{ rpm}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Here the prime mover drives the rotor forward at 900 rpm. The rotor rotates in the same direction as the stator rotating field.
 
 **Case 2: Supersynchronous Speed ($s = -0.4$)**
-$$\begin{aligned}
+$$
+\begin{aligned}
 N_{r2} &= 1500 \times [1 - (-0.4)] \\
 &= 1500 \times 1.4 \\
 &= 2100\text{ rpm}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Here the prime mover drives the rotor forward at 2100 rpm. The rotor runs faster than the stator rotating field in the same direction.
 

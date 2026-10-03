@@ -62,10 +62,12 @@ $$f(\theta, t) = F_m \cos\theta \cos\omega t$$
 
 Using the trigonometric identity $\cos A \cos B = \frac{1}{2}[\cos(A - B) + \cos(A + B)]$, we expand the MMF expression:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 f(\theta, t) &= \frac{F_m}{2} \cos(\theta - \omega t) + \frac{F_m}{2} \cos(\theta + \omega t) \\
 &= f_f(\theta, t) + f_b(\theta, t)
-\end{aligned}$$
+\end{aligned}
+$$
 
 The pulsating single-phase field resolves into two revolving magnetic fields:
 1. **Forward rotating field ($f_f$)**: Amplitude $F_m / 2$, rotating at synchronous speed $+N_s$ in the positive $\theta$ direction.
@@ -89,12 +91,14 @@ $$N = N_s (1 - s)$$
 
 Now evaluate the backward slip $s_b$ relative to the backward rotating stator field, which rotates at $-N_s$:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 s_b &= \frac{-N_s - N}{-N_s} \\
 &= \frac{N_s + N}{N_s} \\
 &= \frac{N_s + N_s (1 - s)}{N_s} \\
 &= 2 - s
-\end{aligned}$$
+\end{aligned}
+$$
 
 > [!success] Result
 > When the rotor rotates in the forward direction at speed $N$, its slip with respect to the forward field is $s$. Its slip with respect to the backward field is $2 - s$.
@@ -114,10 +118,12 @@ First, consider the forward rotating field. The slip with respect to this field 
 
 The forward rotor current $I_{2f}$ flows through rotor resistance $R_2$ and reactance $s X_2$:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 I_{2f} &= \frac{s E_2}{R_2 + j s X_2} \\
 &= \frac{s E_2}{\sqrt{R_2^2 + (s X_2)^2}} \angle -\tan^{-1}\left(\frac{s X_2}{R_2}\right)
-\end{aligned}$$
+\end{aligned}
+$$
 
 Dividing the numerator and denominator by $s$ gives the standard referred representation:
 
@@ -139,10 +145,12 @@ The frequency of the backward rotor current is $(2 - s) f$. Hence, the rotor ind
 
 The backward rotor current $I_{2b}$ is:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 I_{2b} &= \frac{(2 - s) E_2}{R_2 + j (2 - s) X_2} \\
 &= \frac{(2 - s) E_2}{\sqrt{R_2^2 + ((2 - s) X_2)^2}} \angle -\tan^{-1}\left(\frac{(2 - s) X_2}{R_2}\right)
-\end{aligned}$$
+\end{aligned}
+$$
 
 Dividing through by $2 - s$ gives:
 
@@ -182,10 +190,12 @@ For the forward rotating field:
 
 The angle between stator MMF and rotor MMF is $\delta_f = 90^\circ + \theta_{2f}$. The forward torque is:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 T_f &= k \left(\frac{F_m}{2}\right) F_{2f} \sin(90^\circ + \theta_{2f}) \\
 &= k \frac{F_m F_{2f}}{2} \cos\theta_{2f}
-\end{aligned}$$
+\end{aligned}
+$$
 
 For the backward rotating field:
 - Stator MMF amplitude is also $F_m / 2$.
@@ -194,10 +204,12 @@ For the backward rotating field:
 
 The backward torque is:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 T_b &= k \left(\frac{F_m}{2}\right) F_{2b} \sin(90^\circ + \theta_{2b}) \\
 &= k \frac{F_m F_{2b}}{2} \cos\theta_{2b}
-\end{aligned}$$
+\end{aligned}
+$$
 
 The forward field pulls the rotor forward. The backward field pulls the rotor backward. The net electromagnetic torque is the difference between them:
 
@@ -209,17 +221,21 @@ $$T_{\text{net}} = T_f - T_b$$
 
 At standstill, the rotor speed is zero ($N = 0$).
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 s &= \frac{N_s - 0}{N_s} = 1 \\
 s_b &= 2 - s = 2 - 1 = 1
-\end{aligned}$$
+\end{aligned}
+$$
 
 Substituting $s = 1$ and $2 - s = 1$ into the rotor expressions:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 I_{2f} &= \frac{E_2}{\sqrt{R_2^2 + X_2^2}} = I_{2b} \\
 \theta_{2f} &= \tan^{-1}\left(\frac{X_2}{R_2}\right) = \theta_{2b}
-\end{aligned}$$
+\end{aligned}
+$$
 
 ![Evaluation of starting torque at standstill showing equal and opposite torques](frames/160/frame_0026_18m45s.jpg)
 
@@ -258,10 +274,12 @@ Suppose the rotor receives an initial mechanical push in the forward direction.
 
 To see how the developed torque responds, inspect the torque component proportional to $I_2 \cos\theta_2$.
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 I_{2f} \cos\theta_{2f} &= \frac{E_2}{\sqrt{(R_2 / s)^2 + X_2^2}} \times \frac{R_2 / s}{\sqrt{(R_2 / s)^2 + X_2^2}} \\
 &= \frac{E_2 (R_2 / s)}{(R_2 / s)^2 + X_2^2}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Similarly, for the backward field:
 
@@ -271,10 +289,12 @@ $$I_{2b} \cos\theta_{2b} = \frac{E_2 [R_2 / (2 - s)]}{[R_2 / (2 - s)]^2 + X_2^2}
 
 Near starting, $s$ is close to 1, so $R_2 / s \ll X_2$. We neglect the resistance term in the denominator:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 I_{2f} \cos\theta_{2f} &\approx \frac{E_2 R_2}{s X_2^2} \\
 I_{2b} \cos\theta_{2b} &\approx \frac{E_2 R_2}{(2 - s) X_2^2}
-\end{aligned}$$
+\end{aligned}
+$$
 
 As the rotor accelerates forward:
 - $s$ decreases, so $1 / s$ increases. Thus $I_{2f} \cos\theta_{2f}$ increases.

@@ -436,11 +436,13 @@ $$s = \frac{N_s - N_r}{N_s}$$
 
 Air gap power ($P_g$) crosses from stator to rotor across the air gap. It divides in a fixed ratio:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 P_g &: \text{Air gap power} \\
 P_{cu} &= s P_g : \text{Rotor copper loss} \\
 P_{mech} &= (1 - s) P_g : \text{Internal mechanical power developed}
-\end{aligned}$$
+\end{aligned}
+$$
 
 This yields the fundamental power ratio:
 

@@ -199,12 +199,14 @@ $$X_m = \frac{V_1}{I_\mu}$$
 
 > [!success] Summary of Shunt Parameter Formulas
 > From open-circuit test measurements $(V_1, I_0, W_0)$ on the LV winding:
-> $$\begin{aligned}
+> $$
+> \begin{aligned}
 > R_c &= \frac{V_1^2}{W_0} \\
 > I_w &= \frac{W_0}{V_1} \\
 > I_\mu &= \sqrt{I_0^2 - I_w^2} \\
 > X_m &= \frac{V_1}{I_\mu}
-> \end{aligned}$$
+> \end{aligned}
+> $$
 > All four quantities are directly referred to the low-voltage winding.
 
 ### Consequence of the Approximate Model on Core Loss
@@ -291,13 +293,15 @@ Reactive power pulls down the operating power factor. Therefore, the no-load pow
 $$\cos \phi_0 \downarrow$$
 
 > [!example] Summary of Reduced Frequency Effects ($V = \text{constant}, f \downarrow$)
-> $$\begin{aligned}
+> $$
+> \begin{aligned}
 > \Phi_m &\propto \frac{V}{f} \uparrow \\
 > \text{Core Loss } P_{\text{core}} &\propto \Phi_m^2 \uparrow \implies \text{Wattmeter reading } W_0 \uparrow \\
 > I_\mu &\uparrow \text{ and } I_w \uparrow \implies \text{Ammeter reading } I_0 \uparrow \\
 > \text{Power Factor } \cos \phi_0 &\downarrow \\
 > \text{Voltmeter reading } V_1 &= \text{Constant}
-> \end{aligned}$$
+> \end{aligned}
+> $$
 
 ## Principles and Experimental Setup of the Short-Circuit Test
 _(26:42 - 31:44)_
@@ -412,10 +416,12 @@ The equivalent circuit simplifies to a single series loop:
 $$Z_{01} = R_{01} + j X_{01}$$
 
 Where:
-$$\begin{aligned}
+$$
+\begin{aligned}
 R_{01} &= R_1 + R_2' \\
 X_{01} &= X_1 + X_2'
-\end{aligned}$$
+\end{aligned}
+$$
 
 > [!info] Comparison of Circuit Approximations
 > - **Open-Circuit Test**: The series winding branch is neglected. Only the shunt exciting branch ($R_c, X_m$) is considered.
@@ -485,12 +491,14 @@ Because leakage reactance is several times larger than winding resistance, this 
 
 > [!success] Series Parameter Formulas
 > When instruments are connected to the HV winding:
-> $$\begin{aligned}
+> $$
+> \begin{aligned}
 > Z_{01} &= \frac{V_{\text{sc}}}{I_{\text{sc}}} \\
 > R_{01} &= \frac{W_{\text{sc}}}{I_{\text{sc}}^2} \\
 > X_{01} &= \sqrt{Z_{01}^2 - R_{01}^2} \\
 > \cos \theta_{\text{sc}} &= \frac{R_{01}}{Z_{01}}
-> \end{aligned}$$
+> \end{aligned}
+> $$
 > All values are referred to the high-voltage side.
 
 ### Individual Winding Parameter Separation
@@ -498,10 +506,12 @@ Because leakage reactance is several times larger than winding resistance, this 
 The short-circuit test yields only lumped equivalent values ($R_{01}$ and $X_{01}$). It cannot distinguish primary from secondary leakage parameters directly.
 
 If separate DC resistance measurements are not available, standard engineering practice splits the parameters equally:
-$$\begin{aligned}
+$$
+\begin{aligned}
 R_1 &\approx R_2' \approx \frac{R_{01}}{2} \\
 X_1 &\approx X_2' \approx \frac{X_{01}}{2}
-\end{aligned}$$
+\end{aligned}
+$$
 
 This equal division provides a close approximation for practical analysis.
 
@@ -545,11 +555,13 @@ Conductor resistance depends on geometry and material resistivity. It does not d
 Leakage reactance depends on leakage flux paths. Because leakage flux travels mostly through air and insulation, the leakage path does not saturate. Leakage inductance remains strictly linear with current.
 
 Therefore, the equivalent series parameters remain constant regardless of the test current:
-$$\begin{aligned}
+$$
+\begin{aligned}
 Z_{01} &= \frac{V_{\text{sc}}}{I_{\text{sc}}} \\
 R_{01} &= \frac{W_{\text{sc}}}{I_{\text{sc}}^2} \\
 X_{01} &= \sqrt{Z_{01}^2 - R_{01}^2}
-\end{aligned}$$
+\end{aligned}
+$$
 
 ![Invariance of Resistance and Reactance Regardless of Test Current](frames/021/frame_0056_47m24s.jpg)
 
@@ -606,14 +618,16 @@ $$\cos \theta_{\text{sc}} \uparrow$$
 ![Summary of Frequency Reduction Effects During Short-Circuit Test](frames/021/frame_0060_49m36s.jpg)
 
 > [!example] Summary of Short-Circuit Frequency Reduction ($I = \text{constant}, f \downarrow$)
-> $$\begin{aligned}
+> $$
+> \begin{aligned}
 > I_{\text{sc}} &= \text{Constant (Ammeter reading unchanged)} \\
 > W_{\text{sc}} &= I_{\text{sc}}^2 R_{01} = \text{Constant (Wattmeter reading unchanged)} \\
 > X_{01} &\propto f \downarrow \\
 > Z_{01} &= \sqrt{R_{01}^2 + X_{01}^2} \downarrow \\
 > V_{\text{sc}} &= I_{\text{sc}} Z_{01} \downarrow \text{ (Voltmeter reading decreases)} \\
 > \cos \theta_{\text{sc}} &= \frac{R_{01}}{Z_{01}} \uparrow \text{ (Power factor improves)}
-> \end{aligned}$$
+> \end{aligned}
+> $$
 
 ---
 
@@ -670,11 +684,13 @@ $$X_{01} = \sqrt{Z_{01}^2 - R_{01}^2} = \sqrt{13^2 - 5^2} = \sqrt{169 - 25} = \s
 The question requires all parameters referred to the LV side (side 2). 
 
 Impedance transfers from HV to LV by dividing by $a^2$:
-$$\begin{aligned}
+$$
+\begin{aligned}
 R_{02} &= \frac{R_{01}}{a^2} = \frac{5}{10^2} = 0.05\ \Omega \\
 X_{02} &= \frac{X_{01}}{a^2} = \frac{12}{10^2} = 0.12\ \Omega \\
 Z_{02} &= \frac{Z_{01}}{a^2} = \frac{13}{10^2} = 0.13\ \Omega
-\end{aligned}$$
+\end{aligned}
+$$
 
 > [!success] Final Equivalent Circuit Parameters (Referred to LV Side)
 > - **Core loss resistance**: $R_c = 595.24\ \Omega$

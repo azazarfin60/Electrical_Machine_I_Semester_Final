@@ -138,11 +138,13 @@ Because the rotor accelerates and slip drops across stages, later slips are smal
 ### Determination of Alpha from Running Slip
 Express consecutive slips in terms of $\alpha$:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 s_2 &= \alpha s_1 \\
 s_3 &= \alpha s_2 = \alpha^2 s_1 \\
 s_m &= \alpha^n s_1
-\end{aligned}$$
+\end{aligned}
+$$
 
 At the instant of starting, the initial slip is $s_1 = 1$. Therefore:
 
@@ -173,12 +175,14 @@ $$r_2 = R_{n+1}' = \alpha^n R_1' = s_m R_1' \implies R_1' = \frac{r_2}{s_m}$$
 ### Evaluation of Individual Resistance Sections
 The individual resistance sections connected between adjacent contact studs are obtained from the differences between remaining circuit resistances:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 R_1 &= R_1' - R_2' = R_1'(1 - \alpha) \\
 R_2 &= R_2' - R_3' = \alpha R_1'(1 - \alpha) = \alpha R_1 \\
 R_3 &= R_3' - R_4' = \alpha^2 R_1'(1 - \alpha) = \alpha^2 R_1 \\
 R_k &= \alpha^{k-1} R_1
-\end{aligned}$$
+\end{aligned}
+$$
 
 The individual resistance sections themselves form a geometric progression with common ratio $\alpha$.
 
@@ -239,12 +243,14 @@ $$R_1 = R_1'(1 - \alpha) = 0.75 \times (1 - 0.5253) = 0.75 \times 0.4747 \approx
 
 Now calculate the remaining sections using $R_k = \alpha^{k-1} R_1$:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 R_2 &= \alpha R_1 = 0.5253 \times 0.3560 \approx 0.1870\ \Omega \\
 R_3 &= \alpha R_2 = 0.5253 \times 0.1870 \approx 0.0982\ \Omega \\
 R_4 &= \alpha R_3 = 0.5253 \times 0.0982 \approx 0.0516\ \Omega \\
 R_5 &= \alpha R_4 = 0.5253 \times 0.0516 \approx 0.0271\ \Omega
-\end{aligned}$$
+\end{aligned}
+$$
 
 Verify the sum of all sections:
 

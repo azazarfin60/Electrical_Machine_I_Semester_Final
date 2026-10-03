@@ -747,10 +747,12 @@ $$\frac{d\phi}{dt} = 0.05 \times 377 \cos(377 t) \text{ Wb/s}$$
 
 Multiply by the number of turns:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 e(t) &= 100 \times [0.05 \times 377 \cos(377 t)] \\
 &= 1885 \cos(377 t) \text{ V}
-\end{aligned}$$
+\end{aligned}
+$$
 
 The peak voltage induced across the terminals reaches $1885\text{ V}$. The terminal polarity alternates at the source frequency of $60\text{ Hz}$ ($\omega = 377\text{ rad/s}$). 
 

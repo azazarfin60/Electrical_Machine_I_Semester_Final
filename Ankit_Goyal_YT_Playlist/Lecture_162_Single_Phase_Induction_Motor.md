@@ -98,18 +98,22 @@ $$Z_b = \frac{j120 \times (3 + j6)}{3 + j(120 + 6)} = \frac{-720 + j360}{3 + j12
 
 Since $3 \ll 126$, we approximate the denominator as $j126$:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 Z_b &\approx \frac{-720 + j360}{j126} \\
 &= \frac{360}{126} + j\frac{720}{126} \\
 &= 2.857 + j5.714\,\Omega
-\end{aligned}$$
+\end{aligned}
+$$
 
 Add this to the series stator and forward magnetizing components:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 Z_{\text{in}} &= (12 + 2.857) + j(132 + 5.714) \\
 &= 14.857 + j137.714\,\Omega
-\end{aligned}$$
+\end{aligned}
+$$
 
 ![Impedance computation and approximation steps](frames/162/frame_0013_06m07s.jpg)
 
@@ -277,11 +281,13 @@ $$R_{2b} = \frac{R_2'}{2(2 - s)}$$
 
 For $R_2' = 7.8\,\Omega$ and synchronous speed $N_s = 1500\,\text{rpm}$ with running speed $N_r = 1425\,\text{rpm}$:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 s &= \frac{1500 - 1425}{1500} = \frac{75}{1500} = 0.05 = \frac{1}{20} \\
 2 - s &= 2 - 0.05 = 1.95 \\
 R_{2b} &= \frac{7.8}{2 \times 1.95} = \frac{7.8}{3.9} = 2.0\,\Omega
-\end{aligned}$$
+\end{aligned}
+$$
 
 ![Calculation of backward rotor branch resistance](frames/162/frame_0058_20m26s.jpg)
 
@@ -400,10 +406,12 @@ $$N_s = \frac{120 f}{P} = \frac{120 \times 50}{4} = 1500\,\text{rpm}$$
 
 The operating forward slip is:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 s &= \frac{N_s - N_r}{N_s} \\
 &= \frac{1500 - 940}{1500} = \frac{560}{1500} = 0.3733
-\end{aligned}$$
+\end{aligned}
+$$
 
 The backward slip is:
 
@@ -433,19 +441,23 @@ _(32:03 - 36:34)_
 
 The forward branch impedance $Z_f$ consists of the forward magnetizing reactance in parallel with the forward rotor branch:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 Z_f &= j48 \parallel (1.8 + j3.4) \\
 &= \frac{j48 \times (1.8 + j3.4)}{1.8 + j(48 + 3.4)} \\
 &= 11.32\angle 46.62^\circ\,\Omega
-\end{aligned}$$
+\end{aligned}
+$$
 
 The backward branch impedance $Z_b$ consists of the backward magnetizing reactance in parallel with the backward rotor branch:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 Z_b &= j48 \parallel (10.907 + j3.4) \\
 &= \frac{j48 \times (10.907 + j3.4)}{10.907 + j(48 + 3.4)} \\
 &= 7.48\angle 67.48^\circ\,\Omega
-\end{aligned}$$
+\end{aligned}
+$$
 
 ![Parallel branch calculations on whiteboard](frames/162/frame_0122_33m51s.jpg)
 
@@ -455,13 +467,15 @@ Z_b &= j48 \parallel (10.907 + j3.4) \\
 
 Neglecting stator series impedance for this calculation, the total input impedance seen from the supply is:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 Z_{\text{total}} &= Z_f + Z_b \\
 &= 11.32\angle 46.62^\circ + 7.48\angle 67.48^\circ \\
 &= (7.78 + j8.23) + (2.86 + j6.91) \\
 &= 10.64 + j15.14 \\
 &= 18.5\angle 54.89^\circ\,\Omega
-\end{aligned}$$
+\end{aligned}
+$$
 
 The supply current magnitude is:
 
@@ -580,11 +594,13 @@ $$\tan\phi_a = \frac{X_c - X_a}{R_a} \implies X_c = X_a + R_a \tan\phi_a$$
 
 Substitute the numerical values:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 X_c &= 62.45 + 50 \times \tan(5.768^\circ) \\
 &= 62.45 + 50 \times 0.10105 \\
 &= 62.45 + 5.052 = 67.502\,\Omega
-\end{aligned}$$
+\end{aligned}
+$$
 
 With supply frequency $f = 50\,\text{Hz}$:
 

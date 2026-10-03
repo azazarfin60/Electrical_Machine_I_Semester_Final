@@ -174,10 +174,12 @@ $$\mathcal{F} = \Phi \mathcal{R}$$
 
 We compare electrical resistance and magnetic reluctance using geometry:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 R &= \frac{\rho l}{A} = \frac{l}{\sigma A} \\
 \mathcal{R} &= \frac{l}{\mu A}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Here $\sigma$ is electrical conductivity and $\mu$ is magnetic permeability. This establishes exact dual pairs:
 - Magnetic flux $\Phi$ corresponds to electric current $I$.
@@ -241,10 +243,12 @@ $$H l = N I$$
 
 Substitute the given numbers:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 N I &= 150 \times 2 = 300\text{ AT} \\
 H &= \frac{N I}{l} = \frac{300}{25 \times 10^{-2}} = 1200\text{ AT/m}
-\end{aligned}$$
+\end{aligned}
+$$
 
 > [!success] Result
 > The magnetic field intensity inside the core is $H = 1200\text{ AT/m}$.
@@ -599,11 +603,13 @@ $$3(V + 4.0) + 6V + 2(V - 2.0) = 0$$
 
 Expand and group terms:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 3V + 12.0 + 6V + 2V - 4.0 &= 0 \\
 11V + 8.0 &= 0 \\
 V &= -\frac{8.0}{11}\text{ mV} \approx -0.727\text{ mV}
-\end{aligned}$$
+\end{aligned}
+$$
 
 ![Load Current Calculation](frames/006/frame_0076_48m20s.jpg)
 
@@ -631,10 +637,12 @@ $$W = \frac{1}{2} L I^2$$
 
 Substitute values and solve for $L$:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 3.6 \times 10^6 &= \frac{1}{2} L (200)^2 = 20000 L \\
 L &= \frac{3.6 \times 10^6}{20000} = 180\text{ H}
-\end{aligned}$$
+\end{aligned}
+$$
 
 > [!success] Result
 > The required inductance is $180\text{ H}$.

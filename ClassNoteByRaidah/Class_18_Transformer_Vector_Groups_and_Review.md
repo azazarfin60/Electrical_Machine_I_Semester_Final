@@ -76,7 +76,8 @@ In three-phase transformers, the phase displacement between the primary and seco
 ### Clock Numbers & Angular Displacement:
 Each hour on the clock dial corresponds to a $30^\circ$ angular phase displacement ($1\text{ hour} = \frac{360^\circ}{12} = 30^\circ$):
 
-$$\begin{array}{|l|c|l|}
+$$
+\begin{array}{|l|c|l|}
 \hline
 \textbf{Clock Number} & \textbf{Phase Displacement} & \textbf{Description} \\
 \hline
@@ -85,7 +86,8 @@ $$\begin{array}{|l|c|l|}
 \mathbf{6} & 180^\circ & \text{L.V. and H.V. in complete phase opposition (e.g. Yyn6)} \\
 \mathbf{11} & +30^\circ \text{ (lead)} & \text{L.V. leads H.V. by } 30^\circ \text{ (at 11 o'clock)} \\
 \hline
-\end{array}$$
+\end{array}
+$$
 
 ### Example Case: $\text{Yyn6}$
 - **$Y$**: High-voltage side star connection.

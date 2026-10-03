@@ -163,14 +163,16 @@ $$\Phi_3 = \Phi_m \sin(\theta - 240^\circ) = \Phi_m \sin(\theta + 120^\circ)$$
 
 ## 5. Summary & Exam-Ready Conclusions
 
-$$\begin{array}{|l|c|c|}
+$$
+\begin{array}{|l|c|c|}
 \hline
 \textbf{Supply System} & \textbf{Magnitude of Resultant Flux } (\Phi_r) & \textbf{Rotational Speed} \\
 \hline
 \text{2-Phase System} & \Phi_r = \Phi_m & \text{Synchronous Speed } N_s = \frac{120 f}{P} \\
 \text{3-Phase System} & \Phi_r = \frac{3}{2}\Phi_m = 1.5\,\Phi_m & \text{Synchronous Speed } N_s = \frac{120 f}{P} \\
 \hline
-\end{array}$$
+\end{array}
+$$
 
 > [!IMPORTANT]
 > **Exam Key Takeaways**

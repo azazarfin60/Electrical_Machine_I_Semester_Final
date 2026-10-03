@@ -107,19 +107,23 @@ To see how the stationary field forms, consider three stator phases placed $120^
 
 Suppose a DC current $I$ enters phase $A$ and returns equally through phases $B$ and $C$ in parallel:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 I_A &= I \\
 I_B &= -\frac{I}{2} \\
 I_C &= -\frac{I}{2}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Each phase winding has an effective turns count $N$. The individual MMF magnitudes are:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 F_A &= N I \\
 F_B &= \frac{1}{2} N I \\
 F_C &= \frac{1}{2} N I
-\end{aligned}$$
+\end{aligned}
+$$
 
 Phase $A$ produces an MMF directed along its positive magnetic axis. Phases $B$ and $C$ carry negative currents. Their MMF vectors point in the reverse directions of their spatial axes. 
 
@@ -127,13 +131,15 @@ Phase $A$ produces an MMF directed along its positive magnetic axis. Phases $B$ 
 
 Resolving these components along the axis of phase $A$ and its perpendicular axis:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 F_{\text{horizontal}} &= F_B \sin(60^\circ) - F_C \sin(60^\circ) = 0 \\
 F_{\text{vertical}} &= F_A + F_B \cos(60^\circ) + F_C \cos(60^\circ) \\
 &= N I + 2 \left( \frac{1}{2} N I \cos(60^\circ) \right) \\
 &= N I + N I \left(\frac{1}{2}\right) \\
 &= \frac{3}{2} N I
-\end{aligned}$$
+\end{aligned}
+$$
 
 > [!success] Result
 > The resultant stator MMF has a constant magnitude of $\frac{3}{2} N I$ fixed along the phase $A$ axis:
@@ -212,11 +218,13 @@ Before plugging, the motor runs forward at speed $N_r \approx N_s$, so slip $s \
 
 Immediately after interchanging the stator leads, synchronous speed becomes $-N_s$. The new operating slip $s_p$ is:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 s_p &= \frac{(-N_s) - N_r}{-N_s} \\
 &= \frac{N_s + N_r}{N_s} \\
 &= 1 + \frac{N_r}{N_s}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Since $N_r / N_s = 1 - s$, where $s$ is the normal motoring slip:
 

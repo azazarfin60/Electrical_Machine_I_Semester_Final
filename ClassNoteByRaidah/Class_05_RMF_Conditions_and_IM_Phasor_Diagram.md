@@ -41,14 +41,16 @@ topics:
 
 ![Working principle: RMF cutting rotor conductors and initiating motion](diagrams/class05_fig01_im_working_principle.jpg)
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \text{Stator AC Supply} &\longrightarrow \text{Rotating Magnetic Field (RMF) generated} \\
 &\longrightarrow \text{RMF cuts stationary rotor conductors} \\
 \text{\textbf{[Generator Action]}} &\longrightarrow \text{Voltage is induced in rotor conductors } (E_r) \\
 &\longrightarrow \text{Rotor circuit is closed/shorted, hence current flows } (I_r) \\
 \text{\textbf{[Motor Action]}} &\longrightarrow \text{Current-carrying conductors in magnetic field experience Lorentz force } (\mathbf{F} = I(\mathbf{l} \times \mathbf{B})) \\
 &\longrightarrow \text{Rotor develops mechanical torque and rotates in the direction of RMF!}
-\end{aligned}$$
+\end{aligned}
+$$
 
 - **Frequency Synchronism**: The supply electrical frequency and the rotational frequency of the RMF are identical.
 - **Back EMF & Terminal Voltage**:

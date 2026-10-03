@@ -130,12 +130,14 @@ $$\frac{d\phi}{dt} = A \frac{dB}{dt}$$
 ### Core Power and Volume Relation
 
 Now substitute $v(t)$ and $i(t)$ into the power equation:
-$$\begin{aligned}
+$$
+\begin{aligned}
 p(t) &= \left(N \frac{d\phi}{dt}\right) i(t) \\
 &= [N \cdot i(t)] \frac{d\phi}{dt} \\
 &= (H \cdot l) \left(A \frac{dB}{dt}\right) \\
 &= (l \cdot A) H \frac{dB}{dt}
-\end{aligned}$$
+\end{aligned}
+$$
 
 The product of path length $l$ and area $A$ is the volume of the core. So the instantaneous power is:
 $$p(t) = \text{Volume} \cdot H \frac{dB}{dt}$$
@@ -143,11 +145,13 @@ $$p(t) = \text{Volume} \cdot H \frac{dB}{dt}$$
 ### Energy Loss per Cycle and Energy Density
 
 Energy is the time integral of power. For one cycle of duration $T$, the energy consumed is:
-$$\begin{aligned}
+$$
+\begin{aligned}
 W &= \int_0^T p(t) \, dt \\
 &= \text{Volume} \int_0^T H \frac{dB}{dt} \, dt \\
 &= \text{Volume} \oint H \, dB
-\end{aligned}$$
+\end{aligned}
+$$
 
 ![Geometric representation of H dB as the area with the B-axis](frames/024/frame_0020_17m43s.jpg)
 
@@ -350,19 +354,23 @@ We now integrate the differential power across the thickness of the lamination.
 ### Spatial Integration Across Lamination Thickness
 
 The power dissipated in the elementary loop of thickness $dx$ is:
-$$\begin{aligned}
+$$
+\begin{aligned}
 dP_e &= \frac{e(t)^2}{dR} \\
 &= \frac{\omega^2 B_m^2 (4h^2 x^2) \cos^2(\omega t)}{\frac{\rho(2h)}{w \, dx}} \\
 &= \frac{2\omega^2 B_m^2 hw}{\rho} x^2 \cos^2(\omega t) \, dx
-\end{aligned}$$
+\end{aligned}
+$$
 
 To find the total power in one lamination, integrate $x$ from the center $x = 0$ to the outer edge $x = \tau/2$:
-$$\begin{aligned}
+$$
+\begin{aligned}
 P_e(t) &= \frac{2\omega^2 B_m^2 hw}{\rho} \cos^2(\omega t) \int_0^{\tau/2} x^2 \, dx \\
 &= \frac{2\omega^2 B_m^2 hw}{\rho} \cos^2(\omega t) \left[ \frac{x^3}{3} \right]_0^{\tau/2} \\
 &= \frac{2\omega^2 B_m^2 hw}{\rho} \cos^2(\omega t) \left( \frac{\tau^3}{24} \right) \\
 &= \frac{\omega^2 B_m^2 \tau^3 hw}{12\rho} \cos^2(\omega t)
-\end{aligned}$$
+\end{aligned}
+$$
 
 ![Board derivation of instantaneous eddy current power](frames/024/frame_0058_50m00s.jpg)
 
@@ -372,12 +380,14 @@ The instantaneous power varies with time through $\cos^2(\omega t)$. We need the
 $$P_{e(\text{avg})} = \frac{1}{2\pi} \int_0^{2\pi} P_e(t) \, d(\omega t)$$
 
 We evaluate the trigonometric integral:
-$$\begin{aligned}
+$$
+\begin{aligned}
 \frac{1}{2\pi} \int_0^{2\pi} \cos^2(\omega t) \, d(\omega t) &= \frac{1}{2\pi} \int_0^{2\pi} \frac{1 + \cos(2\omega t)}{2} \, d(\omega t) \\
 &= \frac{1}{4\pi} \left[ \omega t + \frac{\sin(2\omega t)}{2} \right]_0^{2\pi} \\
 &= \frac{1}{4\pi} (2\pi + 0) \\
 &= \frac{1}{2}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Substituting this average factor of $1/2$ yields:
 $$P_{e(\text{avg})} = \frac{\omega^2 B_m^2 \tau^3 hw}{24\rho}$$
@@ -390,11 +400,13 @@ Now write angular frequency as $\omega = 2\pi f$. Notice that the product of hei
 $$\text{Volume} = h \cdot w \cdot \tau$$
 
 Substitute these terms into the average power equation:
-$$\begin{aligned}
+$$
+\begin{aligned}
 P_e &= \frac{(2\pi f)^2 B_m^2 \tau^2 (\tau hw)}{24\rho} \\
 &= \frac{4\pi^2 f^2 B_m^2 \tau^2 \cdot \text{Volume}}{24\rho} \\
 &= \frac{\pi^2 f^2 B_m^2 \tau^2}{6\rho} \times \text{Volume}
-\end{aligned}$$
+\end{aligned}
+$$
 
 ![Average eddy current power loss and coefficient definition](frames/024/frame_0063_53m47s.jpg)
 
@@ -446,10 +458,12 @@ To separate the losses, conduct the open-circuit test at several different frequ
 For example, apply $200\text{ V}$ at $50\text{ Hz}$, $100\text{ V}$ at $25\text{ Hz}$, and $40\text{ V}$ at $10\text{ Hz}$. In each test, the ratio $\frac{V}{f} = 4$ remains fixed. 
 
 Because $\frac{V}{f}$ is constant, peak flux density $B_m$ is constant. We can express the losses as:
-$$\begin{aligned}
+$$
+\begin{aligned}
 P_h &= K_1 f \\
 P_e &= K_2 f^2
-\end{aligned}$$
+\end{aligned}
+$$
 
 The wattmeter reading $W$ equals total iron loss:
 $$W = K_1 f + K_2 f^2$$

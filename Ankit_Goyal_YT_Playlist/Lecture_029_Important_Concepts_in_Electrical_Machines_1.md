@@ -529,10 +529,12 @@ $$P_c = P_h + P_e$$
 
 Recall the physical expressions for both losses:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 P_h &= \eta_s B_m^n f \times \text{Volume} \\
 P_e &= \frac{\pi^2 f^2 B_m^2 t^2}{6 \rho} \times \text{Volume}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Here $t$ is lamination thickness, $\rho$ is resistivity, and $\eta_s$ is the Steinmetz coefficient.
 

@@ -388,12 +388,14 @@ $$\frac{d\eta}{d\phi_L} = 0$$
 
 Using the quotient rule on $\eta = u/v$:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 u &= x \cdot \text{kVA} \cdot \cos\phi_L \\
 \frac{du}{d\phi_L} &= -x \cdot \text{kVA} \cdot \sin\phi_L \\
 v &= x \cdot \text{kVA} \cdot \cos\phi_L + P_{\text{core}} + x^2 P_{\text{cu,fl}} \\
 \frac{dv}{d\phi_L} &= -x \cdot \text{kVA} \cdot \sin\phi_L
-\end{aligned}$$
+\end{aligned}
+$$
 
 The derivative of $\eta$ is:
 
@@ -401,10 +403,12 @@ $$\frac{d\eta}{d\phi_L} = \frac{v \frac{du}{d\phi_L} - u \frac{dv}{d\phi_L}}{v^2
 
 Setting the numerator to zero:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 &(-x \cdot \text{kVA} \sin\phi_L)(x \cdot \text{kVA} \cos\phi_L + P_{\text{core}} + x^2 P_{\text{cu,fl}}) \\
 &\quad - (x \cdot \text{kVA} \cos\phi_L)(-x \cdot \text{kVA} \sin\phi_L) = 0
-\end{aligned}$$
+\end{aligned}
+$$
 
 The product terms $-(x \cdot \text{kVA})^2 \sin\phi_L \cos\phi_L$ and $+(x \cdot \text{kVA})^2 \sin\phi_L \cos\phi_L$ cancel out. This leaves:
 
@@ -461,11 +465,13 @@ $$\frac{d D(x)}{dx} = 0$$
 
 Differentiating term by term:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \frac{d}{dx}(\text{kVA} \cos\phi_L) &= 0 \\
 \frac{d}{dx}\left(\frac{P_{\text{core}}}{x}\right) &= -\frac{P_{\text{core}}}{x^2} \\
 \frac{d}{dx}(x P_{\text{cu,fl}}) &= P_{\text{cu,fl}}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Setting the sum to zero:
 

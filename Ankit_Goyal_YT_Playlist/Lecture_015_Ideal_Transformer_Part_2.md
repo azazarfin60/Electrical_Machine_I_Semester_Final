@@ -84,10 +84,12 @@ $$\frac{220}{N_2} = 13$$
 
 Solving for secondary turn count $N_2$:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 N_2 &= \frac{220}{13} \\
 &= 16.923\text{ turns}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Because physical windings require integer turns, fractional turn counts are physically impossible. As a first trial, we round $N_2$ to the nearest integer:
 
@@ -125,10 +127,12 @@ When the calculated high-voltage turns result in a fraction, adjust the low-volt
 
 Let us select $N_2 = 18$:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 N_1 &= 10.5 \times 18 \\
 &= 189\text{ turns}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Both $N_1 = 189$ and $N_2 = 18$ are exact integers. This selection satisfies all physical and electromagnetic constraints.
 
@@ -146,11 +150,13 @@ $$\frac{E}{N} = 4.44 f B_m A_n$$
 
 Substitute the given numerical parameters ($E/N = 13\text{ V}, f = 50\text{ Hz}, B_m = 1.4\text{ T}$):
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 13 &= 4.44 \times 50 \times 1.4 \times A_n \\
 13 &= 310.8 \times A_n \\
 A_n &= \frac{13}{310.8} \approx 0.04183\text{ m}^2
-\end{aligned}$$
+\end{aligned}
+$$
 
 In textbook calculations, slight rounding of constants yields approximately $393\text{ cm}^2$ to $418\text{ cm}^2$.
 
@@ -424,11 +430,13 @@ $$I_1 = \left(\frac{N_2}{N_1}\right) I_2$$
 
 Substitute these relations into the expression for $Z_1$:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 Z_1 &= \frac{\left(\frac{N_1}{N_2}\right) V_2}{\left(\frac{N_2}{N_1}\right) I_2} \\
 &= \left(\frac{N_1}{N_2}\right) \left(\frac{N_1}{N_2}\right) \left(\frac{V_2}{I_2}\right) \\
 &= \left(\frac{N_1}{N_2}\right)^2 Z_L
-\end{aligned}$$
+\end{aligned}
+$$
 
 The load impedance transferred to the primary scales with the square of the turns ratio.
 
@@ -450,11 +458,13 @@ $$I_2 = \left(\frac{N_1}{N_2}\right) I_1$$
 
 Substitute these values into $Z_2$:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 Z_2 &= \frac{\left(\frac{N_2}{N_1}\right) V_1}{\left(\frac{N_1}{N_2}\right) I_1} \\
 &= \left(\frac{N_2}{N_1}\right)^2 \left(\frac{V_1}{I_1}\right) \\
 &= \left(\frac{N_2}{N_1}\right)^2 Z_1
-\end{aligned}$$
+\end{aligned}
+$$
 
 > [!success] Result: Impedance Transformation Relations
 > 1. Secondary impedance referred to primary:
@@ -541,11 +551,13 @@ First, refer the $480\text{ V}$ generator across transformer $T_1$ ($1:10$ step-
 
 The intermediate transmission line voltage $V_2$ becomes:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 V_2 &= V_1 \left(\frac{N_2}{N_1}\right) \\
 &= 480 \times \left(\frac{10}{1}\right) \\
 &= 4800\text{ V}
-\end{aligned}$$
+\end{aligned}
+$$
 
 The circuit now contains only the transmission line, transformer $T_2$, and the load.
 
@@ -559,12 +571,14 @@ $$V_3 = 4800 \times \left(\frac{1}{10}\right) = 480\text{ V}$$
 
 Apply the general destination-over-source squared rule to the line impedance:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 Z_{\text{line}}' &= Z_{\text{line}} \times \left(\frac{N_{\text{dest}}}{N_{\text{src}}}\right)^2 \\
 &= (0.18 + j0.24) \times \left(\frac{1}{10}\right)^2 \\
 &= \frac{0.18 + j0.24}{100} \\
 &= (0.0018 + j0.0024)\,\Omega
-\end{aligned}$$
+\end{aligned}
+$$
 
 Both transformers are now eliminated from the network.
 
@@ -577,11 +591,13 @@ The simplified network consists of a single loop:
 
 Calculate the total series impedance of the circuit:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 Z_{\text{total}} &= Z_{\text{line}}' + Z_{\text{load}} \\
 &= (0.0018 + j0.0024) + (4 + j3) \\
 &= (4.0018 + j3.0024)\,\Omega
-\end{aligned}$$
+\end{aligned}
+$$
 
 ### Step 4: Voltage Division and Load Voltage Calculation
 
@@ -595,18 +611,22 @@ $$|4 + j3| = \sqrt{4^2 + 3^2} = 5\,\Omega$$
 
 Evaluate the magnitude of the total series impedance:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 |4.0018 + j3.0024| &= \sqrt{4.0018^2 + 3.0024^2} \\
 &= \sqrt{16.0144 + 9.0144} \\
 &= \sqrt{25.0288} \approx 5.00288\,\Omega
-\end{aligned}$$
+\end{aligned}
+$$
 
 Compute the magnitude of the load voltage:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 |V_L| &= 480 \times \frac{5}{5.00288} \\
 &\approx 479.72\text{ V}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Rounding to one decimal place gives:
 

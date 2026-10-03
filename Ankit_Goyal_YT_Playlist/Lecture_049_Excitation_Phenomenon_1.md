@@ -240,10 +240,12 @@ $$a_0 = \frac{1}{T} \int_0^T i(t) \, dt$$
 
 The harmonic coefficients are:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 a_n &= \frac{2}{T} \int_0^T i(t) \cos(n\omega_0 t) \, dt \\
 b_n &= \frac{2}{T} \int_0^T i(t) \sin(n\omega_0 t) \, dt
-\end{aligned}$$
+\end{aligned}
+$$
 
 Waveform symmetries eliminate certain coefficient sets:
 1. **Even symmetry**: If $i(-t) = i(t)$, then $b_n = 0$. The series contains only cosine terms.
@@ -279,10 +281,12 @@ Half-wave symmetry places a strict mathematical constraint on the Fourier series
 
 The Fourier coefficients satisfy:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 a_n &= \frac{2}{T} \int_0^T i(t) \cos(n\omega_0 t) \, dt \\
 &= \frac{2}{T} \left[ \int_0^{T/2} i(t) \cos(n\omega_0 t) \, dt + \int_{T/2}^T i(t) \cos(n\omega_0 t) \, dt \right]
-\end{aligned}$$
+\end{aligned}
+$$
 
 Substitute $\tau = t - \frac{T}{2}$ in the second integral. Using $i(\tau + T/2) = -i(\tau)$:
 

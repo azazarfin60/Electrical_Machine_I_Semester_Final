@@ -281,11 +281,13 @@ In transformers, both conditions are satisfied. The per-unit series impedance is
 
 Neglecting $DF$, the scalar voltage difference simplifies to the sum of projections:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 |V_1'| - |V_2| &\approx BC + MN \\
 &= I_2 R_{02} \cos\phi + I_2 X_{02} \sin\phi \\
 &= I_2 (R_{02} \cos\phi + X_{02} \sin\phi)
-\end{aligned}$$
+\end{aligned}
+$$
 
 This provides the scalar voltage drop under lagging power factor.
 
@@ -326,10 +328,12 @@ $$R_{02,\text{pu}} = R_{01,\text{pu}} = R_{\text{pu}}, \quad X_{02,\text{pu}} = 
 
 The derivation assumed a lagging power factor where current lags terminal voltage. For a leading power factor, current leads voltage, so replace $\phi$ with $-\phi$:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \cos(-\phi) &= \cos\phi \\
 \sin(-\phi) &= -\sin\phi
-\end{aligned}$$
+\end{aligned}
+$$
 
 > [!success] General Approximate Formula
 > $$\text{VR} = x (R_{\text{pu}} \cos\phi \pm X_{\text{pu}} \sin\phi)$$
@@ -399,10 +403,12 @@ Standard textbooks often express the voltage regulation formula using per-unit v
 
 Define the per-unit voltage drops across the series elements at fractional load $x$:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \epsilon_R &= x R_{\text{pu}} = \text{per-unit voltage drop due to resistance} \\
 \epsilon_X &= x X_{\text{pu}} = \text{per-unit voltage drop due to reactance}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Using these definitions, the voltage regulation formula becomes:
 
@@ -425,11 +431,13 @@ Because terms add for lagging power factor and subtract for leading power factor
 
 To find the condition for maximum regulation, differentiate with respect to $\phi$ and set the derivative to zero:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \frac{d}{d\phi} [x (R_{\text{pu}} \cos\phi + X_{\text{pu}} \sin\phi)] &= 0 \\
 x (-R_{\text{pu}} \sin\phi + X_{\text{pu}} \cos\phi) &= 0 \\
 R_{\text{pu}} \sin\phi &= X_{\text{pu}} \cos\phi
-\end{aligned}$$
+\end{aligned}
+$$
 
 Dividing gives:
 
@@ -469,13 +477,15 @@ After finding the condition for maximum regulation, evaluate its numerical magni
 
 Substitute $\cos\phi = R/Z$ and $\sin\phi = X/Z$ into the lagging regulation formula:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \text{VR}_{\max} &= x (R_{\text{pu}} \cos\phi + X_{\text{pu}} \sin\phi) \\
 &= x \left( R_{\text{pu}} \frac{R}{Z} + X_{\text{pu}} \frac{X}{Z} \right) \\
 &= x \left( \frac{R^2 + X^2}{Z \cdot Z_{\text{base}}} \right) \\
 &= x \frac{Z^2}{Z \cdot Z_{\text{base}}} = x \frac{Z}{Z_{\text{base}}} \\
 &= x Z_{\text{pu}}
-\end{aligned}$$
+\end{aligned}
+$$
 
 At full rated load ($x = 1$), the maximum voltage regulation equals the per-unit impedance:
 
@@ -496,10 +506,12 @@ For lagging power factor, the resistive and reactive drops add. Two positive ter
 
 Zero voltage regulation can only occur at a leading power factor where the terms subtract:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \text{VR} &= x (R_{\text{pu}} \cos\phi - X_{\text{pu}} \sin\phi) = 0 \\
 R_{\text{pu}} \cos\phi &= X_{\text{pu}} \sin\phi
-\end{aligned}$$
+\end{aligned}
+$$
 
 Dividing gives the tangent of the load angle:
 

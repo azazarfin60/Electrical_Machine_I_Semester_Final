@@ -343,11 +343,13 @@ $$\frac{r_2}{s_{FL}} = \frac{0.05}{0.05} = 1.0\,\Omega$$
 
 Substitute into the torque formula:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 T_{FL} &= \frac{3}{\omega_s} \frac{V_2^2 \left(\frac{r_2}{s_{FL}}\right)}{\left(\frac{r_2}{s_{FL}}\right)^2 + x_2^2} \\
 &= \frac{3}{50 \pi} \frac{\left(\frac{200}{\sqrt{3}}\right)^2 \times 1.0}{(1.0)^2 + (0.25)^2} = \frac{40000}{50 \pi \times (1 + 0.0625)} \\
 &= \frac{40000}{50 \pi \times 1.0625} \approx \frac{40000}{166.897} \approx 239.67\text{ N}\cdot\text{m}
-\end{aligned}$$
+\end{aligned}
+$$
 
 ### Maximum Breakdown Torque
 
@@ -655,10 +657,12 @@ $$0.40 + \frac{s_2^2}{0.40} = 5.2 s_2 \implies s_2^2 - 2.08 s_2 + 0.16 = 0$$
 
 Solving this quadratic gives:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 s_2 &= \frac{2.08 \pm \sqrt{(2.08)^2 - 4(0.16)}}{2} = \frac{2.08 \pm \sqrt{3.6864}}{2} \\
 &= \frac{2.08 - 1.92}{2} = \frac{0.16}{2} = 0.08
-\end{aligned}$$
+\end{aligned}
+$$
 
 The exact quadratic formula yields precisely $s_2 = 0.08$. This confirms that the linear approximation is highly accurate in the normal operating range.
 

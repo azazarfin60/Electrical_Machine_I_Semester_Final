@@ -270,10 +270,12 @@ $$\Phi_m = \Phi_{m1} - \Phi_{m2}$$
 
 The total flux linking each winding is the sum of mutual core flux and leakage flux:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \Phi_1 &= \Phi_m + \Phi_{l1} \\
 \Phi_2 &= \Phi_m + \Phi_{l2}
-\end{aligned}$$
+\end{aligned}
+$$
 
 > [!info] Definition: Leakage Flux
 > Leakage flux is that portion of the total magnetic flux that closes through non-magnetic paths (air, insulation, tank walls) and links only one winding without contributing to mutual energy transfer.
@@ -399,26 +401,32 @@ Here, $X_{l2} = \omega L_{l2}$ is the secondary leakage reactance.
 
 Substituting these reactance drops into the KVL equations:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \mathbf{V}_1 &= -\mathbf{E}_1 + \mathbf{I}_1 R_1 + j \mathbf{I}_1 X_{l1} = -\mathbf{E}_1 + \mathbf{I}_1 \left(R_1 + j X_{l1}\right) \\
 \mathbf{V}_2 &= \mathbf{E}_2 - \mathbf{I}_2 R_2 - j \mathbf{I}_2 X_{l2} = \mathbf{E}_2 - \mathbf{I}_2 \left(R_2 + j X_{l2}\right)
-\end{aligned}$$
+\end{aligned}
+$$
 
 ![Updated KVL equations with leakage reactance](frames/018/frame_0052_43m58s.jpg)
 
 We define the series winding impedances:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \mathbf{Z}_1 &= R_1 + j X_{l1} \\
 \mathbf{Z}_2 &= R_2 + j X_{l2}
-\end{aligned}$$
+\end{aligned}
+$$
 
 The loop equations simplify to standard network form:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \mathbf{V}_1 &= -\mathbf{E}_1 + \mathbf{I}_1 \mathbf{Z}_1 \\
 \mathbf{V}_2 &= \mathbf{E}_2 - \mathbf{I}_2 \mathbf{Z}_2
-\end{aligned}$$
+\end{aligned}
+$$
 
 > [!info] Definition: Leakage Reactance
 > Leakage reactance is a fictitious linear circuit parameter that models the voltage drop caused by physical leakage flux. It does not exist as a physical coiled inductor inside the transformer.

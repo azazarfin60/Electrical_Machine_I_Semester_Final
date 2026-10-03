@@ -226,11 +226,13 @@ $$\frac{R_2'}{s} = \frac{0.3}{0.05} = 6.0\,\Omega$$
 
 The total equivalent impedance per phase is:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 Z_{\text{in}} &= \left(R_1 + \frac{R_2'}{s}\right) + j(X_1 + X_2') \\
 &= (0.5 + 6.0) + j(1.2 + 1.0) \\
 &= 6.5 + j2.2\,\Omega
-\end{aligned}$$
+\end{aligned}
+$$
 
 The magnitude squared of impedance is:
 
@@ -238,12 +240,14 @@ $$|Z_{\text{in}}|^2 = (6.5)^2 + (2.2)^2 = 42.25 + 4.84 = 47.09\,\Omega^2$$
 
 The steady motoring torque matches the load torque $T_L$:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 T_L &= \frac{3}{\omega_s} \frac{V_1^2 \left(\frac{R_2'}{s}\right)}{|Z_{\text{in}}|^2} \\
 &= \frac{3}{157.08} \frac{(230.94)^2 \times 6.0}{47.09} \\
 &= 0.0191 \times \frac{53333.33 \times 6.0}{47.09} \\
 &= 129.78\text{ N}\cdot\text{m}
-\end{aligned}$$
+\end{aligned}
+$$
 
 ![Derivation of initial load torque on whiteboard](frames/156/frame_0104_17m54s.jpg)
 
@@ -259,10 +263,12 @@ $$\frac{R_2'}{s_p} = \frac{0.3}{1.95} = 0.1538\,\Omega$$
 
 The new equivalent impedance is:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 Z_{\text{plug}} &= (0.5 + 0.1538) + j(1.2 + 1.0) \\
 &= 0.6538 + j2.2\,\Omega
-\end{aligned}$$
+\end{aligned}
+$$
 
 Its magnitude squared is:
 
@@ -270,11 +276,13 @@ $$|Z_{\text{plug}}|^2 = (0.6538)^2 + (2.2)^2 = 0.4275 + 4.84 = 5.2675\,\Omega^2$
 
 The electromagnetic counter-torque developed during plugging is:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 T_{\text{plugging}} &= \frac{3}{\omega_s} \frac{V_1^2 \left(\frac{R_2'}{s_p}\right)}{|Z_{\text{plug}}|^2} \\
 &= \frac{3}{157.08} \frac{(230.94)^2 \times 0.1538}{5.2675} \\
 &= 29.75\text{ N}\cdot\text{m}
-\end{aligned}$$
+\end{aligned}
+$$
 
 ![Evaluation of plugging torque on whiteboard](frames/156/frame_0108_19m55s.jpg)
 
@@ -286,11 +294,13 @@ $$J \frac{d\omega}{dt} = -T_{\text{plugging}} - T_L$$
 
 The total instantaneous retarding torque acting on the rotor shaft is:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 T_{\text{braking}} &= T_L + T_{\text{plugging}} \\
 &= 129.78 + 29.75 \\
 &= 159.53\text{ N}\cdot\text{m}
-\end{aligned}$$
+\end{aligned}
+$$
 
 > [!success] Result
 > At the instant of plugging, the shaft experiences a total decelerating torque of:

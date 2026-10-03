@@ -54,7 +54,8 @@ Course Architecture & Testing Parallels
      └── Transformer: Short Circuit (SC) ──> Low voltage applied, Core loss negligible, Cu loss dominates
 ```
 
-$$\begin{array}{|l|l|l|}
+$$
+\begin{array}{|l|l|l|}
 \hline
 \textbf{Feature} & \textbf{Induction Motor (Part B)} & \textbf{Transformer (Part A)} \\
 \hline
@@ -68,7 +69,8 @@ $$\begin{array}{|l|l|l|}
 \text{Voltage Applied} & \text{Reduced voltage (10--15\% of rated)} & \text{Reduced voltage (5--10\% through Variac)} \\
 \text{Core Loss} & \text{Negligible (due to very low voltage)} & \text{Negligible (due to very low voltage)} \\
 \hline
-\end{array}$$
+\end{array}
+$$
 
 > [!WARNING]
 > **Short Circuit Test Safety Precaution**
