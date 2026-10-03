@@ -3,12 +3,12 @@
 ---
 
 # T-16: Power Flow & Rotor Power Division
-> **Section:** B | **Priority:** 🟡 MEDIUM | **Exam Frequency:** 2/7 years
+> **Section:** B | **Priority:** 🟡 MEDIUM | **Exam Frequency:** 3/7 years
 > **Sources:** Theraja Ch-34 (Art. 34.33-34.38), VK Mehta Ch-8, Slides L-06
 
 ## Why This Topic Matters
 
-The power flow proof ($P_g : P_{Cu,r} : P_m = 1 : s : (1-s)$) appeared in 3 out of 7 papers (2018, 2023, 2024). The rotor efficiency proof ($\eta_r = 1-s$) appeared in 2021 and 2023. The synchronous watt definition appeared in 2021. These are short, high-scoring proofs (3-4 marks each). The power flow numerical appeared in 2020.
+The power flow proof ($P_g : P_{Cu,r} : P_m = 1 : s : (1-s)$) appeared in 3 out of 7 papers (2018, 2020, 2023). The rotor efficiency proof ($\eta_r = 1-s$) appeared in 2021 and 2023. The synchronous watt definition appeared in 2021. These are short, high-scoring proofs (3-4 marks each). The power flow numerical appeared in 2020.
 
 ---
 
@@ -115,7 +115,7 @@ Per phase: $P_{Cu,r}/3 = \boxed{833.3 \text{ W}}$
 ## 🏆 Golden Questions (Past Exam Archive)
 
 ### 🎯 Q1: Show that rotor copper loss = $s \times$ air-gap power. Also show $P_m : P_{Cu,r} : P_g = (1-s) : s : 1$.
-> **Appeared:** 2018 Q5(b), 2023 Q6(a), 2024 Q5(b) — (4 marks)
+> **Appeared:** 2018 Q5(b) — 4 marks; 2023 Q6(a) — 4 marks (framed as "Define synchronous watt. Derive an expression of rotor efficiency")
 
 **Full Answer:**
 
@@ -132,7 +132,7 @@ $$P_m : P_{Cu,r} : P_g = (1-s)P_g : sP_g : P_g = \boxed{(1-s) : s : 1}$$
 ---
 
 ### 🎯 Q2: What is rotor efficiency? Show that $\eta_{\text{rotor}} = (1-s)$.
-> **Appeared:** 2021 Q6(c), 2023 Q6(c) — (3-4 marks)
+> **Appeared:** 2021 Q6(c) — 4 marks
 
 **Full Answer:**
 

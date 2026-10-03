@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 010: Problems Based on Per Unit Systems](Lecture_010_Problems_Based_on_Per_Unit_Systems.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 012: Transformer Construction Part 2 →](Lecture_012_Transformer_Construction_Part_2.md)
+
+---
+
 # Transformer Construction - 1 | Electrical Machines | Lec 8 | | GATE & ESE | Ankit Goyal
 
 - **Source**: https://www.youtube.com/watch?v=n1r4cOF2zW4
@@ -572,3 +577,6 @@ This lecture establishes the engineering principles of transformer construction:
 - Shell-type transformers operate as parallel magnetic circuits with sandwiched coils on the central limb, where outer limbs carry $\Phi / 2$ through cross-sectional area $A / 2$.
 - Due to opposing currents dictated by Lenz's law, windings experience radial repulsive forces ($F \propto I_1 I_2$) that peak severely during short-circuit faults.
 
+---
+
+[← Lec 010: Problems Based on Per Unit Systems](Lecture_010_Problems_Based_on_Per_Unit_Systems.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 012: Transformer Construction Part 2 →](Lecture_012_Transformer_Construction_Part_2.md)

@@ -13,7 +13,7 @@
 
 ### IM-03: Double-Field Revolving Theory: Why 1-Phase IM is Not Self-Starting
 
-*Appears in: 2018 Q8a, 2019 Q8b, 2020 Q8c, 2021 Q7a, 2023 Q8a, 2024 Q8a*
+*Appears in: 2018 Q8a, 2019 Q8b, 2020 Q8c, 2021 Q7a, 2023 Q7c, 2024 Q6b*
 
 #### The problem with single-phase
 
@@ -90,6 +90,65 @@ $$T_b(2-s) = \frac{k_1(2-s)}{R_2^2 + (2-s)^2X_2^2} \cdot R_2$$
 At $s = 1$: these two are equal. At $s < 1$ (forward rotation): $T_f > T_b$ in typical motors.
 
 ![Torque-speed characteristic of 1-phase induction motor based on double revolving field theory](../Books/VK_Mehta/diagrams/VK_Mehta_Fig_9_04.jpeg)
+
+---
+
+### [2024 Q6(b)]: Step-by-Step Construction and Description of 1-$\varphi$ IM Vector Diagram
+
+> 📋 **Appeared in:** 2024 Q6(b)
+
+**(b) Following step by step process, draw and describe the vector diagram of a 1-$\varphi$ IM. [Marks: 04, CO: 1]**
+
+#### Step-by-Step Construction of the Vector Diagram
+
+Unlike a polyphase induction motor which produces a single steadily rotating magnetic field, a single-phase induction motor with a single stator winding establishes a pulsating stationary magnetic field $\Phi(t) = \Phi_m \cos\omega t$. 
+
+In accordance with the **Double-Field Revolving Theory (DFRT)**, this pulsating field is resolved into two rotating vectors:
+$$\Phi_f = \frac{\Phi_m}{2}\angle +\omega t \quad \text{(Forward rotating field at } +N_s\text{)}$$
+$$\Phi_b = \frac{\Phi_m}{2}\angle -\omega t \quad \text{(Backward rotating field at } -N_s\text{)}$$
+
+![Resolution of an alternating pulsating flux into two equal flux components rotating in opposite directions](../Books/VK_Mehta/diagrams/VK_Mehta_Fig_9_03.jpeg)
+
+#### Step-by-Step Process:
+
+1. **Step 1: Reference Axis & Flux Resolution:**
+   - Draw horizontal reference axis representing the physical winding axis.
+   - At time $t = 0$, both forward vector $\vec{\Phi}_f$ and backward vector $\vec{\Phi}_b$ coincide along the positive horizontal axis, each having a constant magnitude of $\Phi_m / 2$.
+   - At any time $t$, $\vec{\Phi}_f$ has rotated by an electrical angle $+\theta = +\omega t$ counter-clockwise, while $\vec{\Phi}_b$ has rotated by $-\theta = -\omega t$ clockwise.
+   - The vertical quadrature components $(\frac{\Phi_m}{2}\sin\omega t - \frac{\Phi_m}{2}\sin\omega t)$ identically cancel to zero at every instant.
+   - The horizontal components add arithmetically: $2 \times (\frac{\Phi_m}{2}\cos\omega t) = \Phi_m \cos\omega t$, perfectly reproducing the pulsating stator flux.
+
+2. **Step 2: Slip Seen by the Two Rotating Fields:**
+   - When the rotor runs at speed $N$ rpm in the forward direction:
+     - **Forward Slip ($s_f$):** $s_f = \frac{N_s - N}{N_s} = s$
+     - **Backward Slip ($s_b$):** Relative speed between backward field (turning at $-N_s$) and forward rotor (turning at $+N$) is $N_s - (-N) = N_s + N$. Thus:
+       $$s_b = \frac{N_s + N}{N_s} = \frac{N_s + N_s(1 - s)}{N_s} = 2 - s$$
+
+3. **Step 3: Induced Rotor EMFs and Currents:**
+   - Each field independently cuts the squirrel-cage rotor bars and induces rotor currents:
+     - Forward rotor current: $I_{2f} = \frac{s E_2}{\sqrt{R_2^2 + (s X_2)^2}}$
+     - Backward rotor current: $I_{2b} = \frac{(2 - s) E_2}{\sqrt{R_2^2 + (2 - s)^2 X_2^2}}$
+
+4. **Step 4: Developed Torques:**
+   - Each field develops torque in its own direction of rotation:
+     $$T_f = k \frac{s E_2^2 R_2}{R_2^2 + s^2 X_2^2} \quad \text{(Forward driving torque)}$$
+     $$T_b = k \frac{(2 - s) E_2^2 R_2}{R_2^2 + (2 - s)^2 X_2^2} \quad \text{(Opposing backward torque)}$$
+   - The resultant electromagnetic torque acting on the shaft is the algebraic difference:
+     $$T_{\text{net}} = T_f - T_b$$
+
+5. **Step 5: Standstill Condition ($N = 0 \implies s = 1$):**
+   - At rest, $s_f = 1$ and $s_b = 2 - 1 = 1$.
+   - Both forward and backward fields see identical slip ($s=1$), identical rotor impedance, and induce identical currents.
+   - Therefore, $T_f = T_b \implies T_{\text{net}} = 0$.
+   - **Conclusion:** The vector diagram rigorously demonstrates that a single-phase induction motor develops **zero starting torque** and is inherently not self-starting.
+
+6. **Step 6: Running Condition ($N > 0 \implies s \ll 1$):**
+   - Once given an initial mechanical push in the forward direction, $s \approx 0.03\text{–}0.05$.
+   - Forward slip is tiny ($s_f = 0.04$), placing the forward operating point in the high-torque, predominantly resistive region ($T_f$ is large).
+   - Backward slip is large ($s_b = 1.96$), placing the backward operating point far past the breakdown knee where high rotor inductive reactance suppresses current and power factor ($T_b$ is very small).
+   - Consequently, $T_f \gg T_b$, yielding a strong positive net torque $T_{\text{net}} > 0$ that accelerates the motor to normal running speed.
+
+![Torque-speed curves of the forward field and the backward field, with the resultant curve showing zero net torque at standstill](../Books/VK_Mehta/diagrams/VK_Mehta_Fig_9_04.jpeg)
 
 ---
 

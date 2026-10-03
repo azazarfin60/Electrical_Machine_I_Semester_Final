@@ -3,12 +3,12 @@
 ---
 
 # T-06c: Transformer Efficiency
-> **Section:** A | **Priority:** 🟠 HIGH | **Exam Frequency:** 4/7 years
+> **Section:** A | **Priority:** 🟠 HIGH | **Exam Frequency:** 5/7 years
 > **Sources:** Theraja Ch-32 (Art. 32.29–32.34), VK Mehta Ch-7 (Art. 7.22–7.24), Slides L-10 S19
 
 ## Why This Topic Matters
 
-Efficiency calculations appeared in 4/7 papers (2017, 2018, 2019, 2023). The question types include: (1) calculate efficiency at full-load and half-load for different power factors, (2) prove the condition for maximum efficiency, and (3) calculate all-day efficiency with a load schedule. All-day efficiency appeared in 3/7 papers (2018, 2019, 2023). These are pure formula-plugging questions. Free marks.
+Efficiency calculations appeared in 5/7 papers (2017, 2018, 2019, 2023, 2024). The question types include: (1) calculate efficiency at full-load and half-load for different power factors, (2) prove the condition for maximum efficiency, and (3) calculate all-day efficiency with a load schedule. All-day efficiency appeared in 3/7 papers (2018, 2019, 2023). These are pure formula-plugging questions. Free marks.
 
 ---
 
@@ -71,7 +71,7 @@ $$\boxed{\eta_{\text{all-day}} = \frac{\text{Total kWh output}}{\text{Total kWh 
 ## 🏆 Golden Questions (Past Exam Archive)
 
 ### 🎯 Q1: Prove that maximum efficiency occurs when copper loss = iron loss.
-> **Appeared:** 2019 Q3(a) — 4 marks
+> **Appeared:** 2019 Q3(a) — 4 marks, 2023 Q2(a) — 3 marks
 
 **Full Answer:**
 
@@ -135,38 +135,55 @@ Given: $S = 25$ kVA = 25000 W, $P_{Fe} = 350$ W, $P_{Cu,FL} = 400$ W.
 
 ---
 
-### 🎯 Q3: 100 kVA transformer, $P_{Fe}$ = 1 kW, $P_{Cu,FL}$ = 1 kW. Load profile: 4h no-load, 12h half-load, 8h full-load. Find all-day efficiency.
-> **Appeared:** 2023 Q2(a) — 6 marks
+### 🎯 Q3: A 100-kVA lighting transformer has a full-load loss of 3 kW, the losses being equally divided between iron and copper. During a day, the transformer operates on full load for 3 hours, one-half load for 4 hours, the output being negligible for the remainder of the day. Calculate the all-day efficiency.
+> **Appeared:** 2023 Q3(b) — 4 marks
 
 **Full Answer:**
 
-Given: $S = 100$ kVA, $P_{Fe} = 1$ kW, $P_{Cu,FL} = 1$ kW, unity pf assumed.
+Given: $S = 100$ kVA, full-load loss $= 3$ kW shared equally, so $P_{Fe} = P_{Cu,FL} = 1.5$ kW. A lighting load is taken at unity power factor, so 100 kVA gives 100 kW.
+
+**Definition to quote:** "The all-day efficiency (or energy efficiency) is defined as the ratio of total energy output (kWh) to total energy input (kWh) over a 24-hour period." — VK Mehta, Art. 7.24
 
 **Energy output:**
 
-| Period | Load fraction $x$ | kW Output | Hours | kWh |
-|:---|:---:|:---:|:---:|:---:|
-| No-load | 0 | 0 | 4 | 0 |
-| Half-load | 0.5 | 50 | 12 | 600 |
-| Full-load | 1.0 | 100 | 8 | 800 |
-| **Total** | | | 24 | **1400** |
+| Period | Load | Output (kW) | Hours | kWh |
+|:---|:---|---:|---:|---:|
+| Full load | 100% | 100 | 3 | 300 |
+| Half load | 50% | 50 | 4 | 200 |
+| Rest | negligible | 0 | 17 | 0 |
+| **Total** | | | **24** | **500** |
 
-**Iron loss energy** (runs 24 hours, always, even at no-load): $1 \times 24 = 24$ kWh
+**Iron loss energy** (runs the full 24 hours, the transformer stays energised):
+$$1.5 \times 24 = \boxed{36\text{ kWh}}$$
 
-**Copper loss energy:**
+**Copper loss energy** (follows the square of load, and is zero when the load is zero):
+$$1.5 \times 3 + (0.5)^2 \times 1.5 \times 4 = 4.5 + 1.5 = \boxed{6\text{ kWh}}$$
 
-| Period | $x^2 \times P_{Cu,FL}$ (kW) | Hours | kWh |
-|:---|:---:|:---:|:---:|
-| No-load | $0^2 \times 1 = 0$ | 4 | 0 |
-| Half-load | $0.25 \times 1 = 0.25$ | 12 | 3 |
-| Full-load | $1 \times 1 = 1$ | 8 | 8 |
-| **Total Cu** | | | **11** |
+**Total losses** $= 36 + 6 = 42$ kWh
 
-**Total losses** = $24 + 11 = 35$ kWh
+$$\eta_{\text{all-day}} = \frac{500}{500 + 42} = \frac{500}{542} = \boxed{92.25\%}$$
 
-$$\eta_{\text{all-day}} = \frac{1400}{1400 + 35} = \frac{1400}{1435} = \boxed{97.6\%}$$
+**Why it is so much lower than full-load efficiency.** At full load, $\eta = 100/(100+1.5+1.5) = 97.1\%$. Over the day the 36 kWh of iron loss dominates, because the transformer is magnetised for 24 hours but delivers useful output for only 7 of them. This is exactly why a lighting transformer is designed with a low iron loss.
 
-**Why is all-day efficiency less than full-load efficiency?** During the 4 hours of no-load, the transformer still consumes 4 kWh of iron losses for zero output. These are "wasted" hours from the efficiency perspective. Distribution transformers are designed with low iron loss for this reason.
+---
+
+### 🎯 Q3b: Define power transformer. Prove that efficiency is maximum when copper loss equals iron loss.
+> **Appeared:** 2023 Q2(a) — 3 marks
+
+**Full Answer:**
+
+**Power transformer.** A large, high-rating static transformer used in generating stations and transmission substations to step voltage up or down at bulk power levels. It runs near full load for most of the day, is designed for the highest possible full-load efficiency, and is usually oil-immersed with forced cooling.
+
+**Proof.** Let the secondary carry current $I_2$ at terminal voltage $V_2$ and power factor $\cos\phi$. Let $P_i$ be the iron loss and $R_{02}$ the total resistance referred to the secondary.
+
+$$\eta = \frac{V_2 I_2 \cos\phi}{V_2 I_2 \cos\phi + P_i + I_2^2 R_{02}} = \frac{V_2 \cos\phi}{V_2 \cos\phi + \dfrac{P_i}{I_2} + I_2 R_{02}}$$
+
+$V_2$ and $\cos\phi$ are held constant, so $\eta$ is maximum when the denominator is minimum:
+$$\frac{d}{dI_2}\left(\frac{P_i}{I_2} + I_2 R_{02}\right) = 0 \implies -\frac{P_i}{I_2^2} + R_{02} = 0 \implies I_2^2 R_{02} = P_i$$
+
+$$\boxed{\text{Copper loss} = \text{Iron loss at maximum efficiency}}$$
+
+The second derivative is $2P_i/I_2^3 > 0$, so this is a true minimum of the loss term and a maximum of $\eta$. Load fraction at maximum efficiency: $x = \sqrt{P_i/P_{Cu,FL}}$.
 
 ---
 

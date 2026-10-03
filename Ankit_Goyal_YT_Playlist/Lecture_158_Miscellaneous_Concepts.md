@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 157: High Torque Cage Rotor](Lecture_157_High_Torque_Cage_Rotor.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 159: High Torque Cage Rotor and Induction Generator →](Lecture_159_High_Torque_Cage_Rotor_and_Induction_Generator.md)
+
+---
+
 # Electrical Machines | Lec 111 | Miscellaneous Concepts | GATE/ESE Electrical Engineering
 
 - **Source**: https://www.youtube.com/watch?v=WXQujFXTUl8
@@ -412,3 +417,6 @@ These distinct operating and construction characteristics govern the selection o
 - An induction generator delivers active power to the grid but always absorbs reactive power for core magnetization.
 - A standalone self-excited induction generator requires residual rotor magnetism and a shunt capacitor bank to supply lagging reactive magnetization.
 
+---
+
+[← Lec 157: High Torque Cage Rotor](Lecture_157_High_Torque_Cage_Rotor.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 159: High Torque Cage Rotor and Induction Generator →](Lecture_159_High_Torque_Cage_Rotor_and_Induction_Generator.md)

@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 007: Magnetic Circuits](Lecture_007_Magnetic_Circuits.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 009: Per Unit System →](Lecture_009_Per_Unit_System.md)
+
+---
+
 # Problems based on Magnetic Circuits | L2 | Electrical Machines | GATE 2022 | #AnkitGoyal
 
 - **Source**: https://www.youtube.com/watch?v=6cdNWXRMhvo
@@ -769,3 +774,6 @@ Even with a high relative permeability of $\mu_r = 1000$, finite core reluctance
 - For an air-gapped core with infinite iron permeability, coil inductance simplifies directly to $L = \frac{\mu_0 N^2 A}{g}$.
 - Finite core permeability introduces series reluctance that attenuates air gap magnetic flux density under constant applied MMF.
 
+---
+
+[← Lec 007: Magnetic Circuits](Lecture_007_Magnetic_Circuits.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 009: Per Unit System →](Lecture_009_Per_Unit_System.md)

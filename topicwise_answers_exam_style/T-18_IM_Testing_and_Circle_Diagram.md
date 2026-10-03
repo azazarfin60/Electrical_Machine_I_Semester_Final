@@ -38,22 +38,38 @@ $$\cos\phi_{sc} = \frac{W_{sc}}{\sqrt{3} \times 100 \times 45} = \frac{2730}{779
 
 $\phi_{sc} = \cos^{-1}(0.35) = 69.5°$
 
-**Step 3: Diameter of circle:**
+**Step 3: Equivalent circuit constants from the two tests**
 
-Total rotor copper loss = stator copper loss (given: equal at standstill). So rotor copper loss line bisects the short-circuit point.
+Motor is **Δ**, so $V_{ph} = V_L$ and $I_{ph} = I_L/\sqrt3$:
 
-**Step 4: Rated output:**
+$$I_{0,ph} = \frac{21}{\sqrt3} = 12.124\ \text{A},\quad I_c = 12.124 \times 0.0828 = 1.004\ \text{A},\quad I_m = \sqrt{12.124^2 - 1.004^2} = 12.083\ \text{A}$$
+$$R_c = \frac{3V_{ph}^2}{W_0} = 413.3\ \Omega,\qquad X_m = \frac{V_{ph}}{I_m} = 34.35\ \Omega$$
 
-Rated output $= 29.84$ kW. Use circle diagram scale to read off line current and power factor at this output.
+Blocked rotor at 100 V: $I_{ph} = 45/\sqrt3 = 25.98$ A
+$$Z_{sc} = \frac{100}{25.98} = 3.849\ \Omega,\qquad R_{sc} = \frac{2730}{3 \times 25.98^2} = 1.348\ \Omega,\qquad X_{sc} = \sqrt{3.849^2 - 1.348^2} = 3.605\ \Omega$$
 
-$$P_{\text{output}} = \sqrt{3} \times 415 \times I_L \times \cos\phi \implies \text{read from diagram}$$
+Stator and rotor copper losses equal at standstill (given) $\Rightarrow$ even split:
+$$R_1 = R_2' = 0.674\ \Omega,\qquad X_1 = X_2' = 1.803\ \Omega$$
 
-**(i) Line current at rated output:** Read from circle diagram ≈ 58 A
-**(ii) Power factor at rated output:** ≈ 0.714 lagging
+**Step 4: Rated-load point**
 
-**Maximum torque:**
-$$T_{\max} = \frac{3}{2\pi N_s} \times \frac{E_2^2}{2X_2}$$
-Read from circle diagram: the maximum torque line is the longest vertical intercept below the no-load line.
+From $P_{ag} = \dfrac{3V_{ph}^2 (R_2'/s)}{(R_1 + R_2'/s)^2 + (X_1+X_2')^2}$ and $P_{out} = P_{ag}(1-s) = 29.84$ kW:
+$$s_f = 0.0475,\quad |I_2'| = \frac{415}{\sqrt{14.865^2 + 3.605^2}} = 27.12\ \text{A},\quad \varphi_2 = 13.63^\circ$$
+$$\vec{I}_1 = (1.004 - j12.083) + 27.12\angle -13.63^\circ = (27.38 - j18.48)\ \text{A},\quad |I_{1,ph}| = 33.01\ \text{A}$$
+
+**(i) Line current at rated output:** $\boxed{I_L = \sqrt3 \times 33.01 = 57.2\ \text{A}}$
+
+**(ii) Power factor at rated output:** $\cos\varphi = \dfrac{27.38}{33.01} = \boxed{0.829 \text{ lagging}}$
+
+*Check:* $P_{in} = 3 \times 415 \times 27.38 = 34.06$ kW, and $29.84 + 1.25 + 1.49 + 1.49 = 34.07$ kW ✓ $\Rightarrow \eta = 87.6\%$
+
+**Step 5: Maximum torque**
+
+$$s_m = \frac{0.674}{\sqrt{0.674^2 + 3.605^2}} = \frac{0.674}{3.667} = 0.184$$
+$$P_{ag,max} = \frac{3 \times 415^2 \times 3.667}{4.341^2 + 3.605^2} = 59.5\ \text{kW}$$
+$$\boxed{\frac{T_{max}}{T_{fl}} = \frac{59.5}{31.33} = 1.9}$$
+
+> **The paper gives no pole count**, so $T_{max}$ in N·m is not uniquely determined — it needs $N_s = 120f/P$. The ratio is fixed at 1.9; for 6 poles ($N_s = 1000$ rpm): $T_{fl} = 299$ N·m and $T_{max} = 568$ N·m.
 
 ![Construction of Circle Diagram for Induction Motor](../Books/Theraja/Ch-35/diagrams/ch35_p06_fig35_09.jpg)
 
@@ -94,13 +110,15 @@ Ratio of rotor to total Cu loss $= 6889/11520 = 0.598$. The rotor copper loss li
 
 Rated output $= 5.6$ kW.
 
-**(i) Full load line current:** ≈ 10.5 A
+**(i) Full load line current:** ≈ 11.5 A
 
-**(ii) Full load slip:** $s \approx 0.062$ (6.2%)
+**(ii) Full load slip:** $s \approx 0.047$ (4.7%)
 
-**(iii) Full load power factor:** $\approx 0.78$ lagging
+**(iii) Full load power factor:** $\approx 0.8$ lagging
 
-**(iv) Maximum power:** Longest intercept below the output line ≈ 8.2 kW (estimated from circle diagram geometry).
+**(iv) Maximum power:** Longest intercept below the output line ≈ 10.8 kW.
+
+Check: $P_{\text{input}} = \sqrt{3} \times 400 \times 11.5 \times 0.8 \approx 6.37$ kW. So $\eta = 5.6/6.37 \approx 88\%$.
 
 ![Circle diagram for induction motor showing operating point and output line](../Books/Theraja/Ch-35/diagrams/ch35_p08_fig35_11.jpg)
 
@@ -156,10 +174,10 @@ Power per amp of active component $= \sqrt{3} \times 400 = 692.8$ W/A.
 For 14.92 kW output, find the point on the circle where the vertical height above the output line equals the output power.
 
 **(i) From circle diagram (estimated):**
-- Full load line current: ≈ 30 A
-- Full load slip: ≈ 5%
-- Full load efficiency: ≈ 84%
-- Full load power factor: ≈ 0.76 lagging
+- Full load line current: ≈ 32.5 A
+- Full load slip: ≈ 5.6%
+- Full load efficiency: ≈ 80%
+- Full load power factor: ≈ 0.84 lagging
 
 **(ii) Maximum torque:**
 Maximum torque corresponds to the longest vertical distance from the circle to the torque line (line from $O'$ to the point where rotor Cu loss line meets the base line).
@@ -172,10 +190,10 @@ $T_{\max}$ in synchronous watts $\approx$ read from circle diagram.
 
 ---
 
-### [2023 Q7(b)]
-> 📋 **Appeared in:** 2023 Q7(b)
+### [Practice: Parameters from the SC Test]
+> **Practice problem (not from a past paper)**
 
-**(b) A 3-phase star-connected IM, SC test gives: $V = 75$ V, $I = 38$ A, $P = 4$ kW. Stator resistance per phase = $0.5\,\Omega$. Find: $R_2'$, $X_1$, $X_2'$. [04, CO3]**
+**A 3-phase star-connected IM, SC test gives: $V = 75$ V, $I = 38$ A, $P = 4$ kW. Stator resistance per phase = $0.5\,\Omega$. Find: $R_2'$, $X_1$, $X_2'$.**
 
 **From SC test (star-connected, 3-phase):**
 
@@ -194,9 +212,31 @@ $$X_1 = X_2' = \frac{X_{01}}{2} = \frac{0.669}{2} = \boxed{0.335\,\Omega}$$
 ---
 
 ### [2024 Q7(a)]
-> 📋 **Appeared in:** 2023 Q7(a), 2024 Q7(a) (Years: 2023, 2024)
+> 📋 **Appeared in:** 2024 Q7(a)
 
-**(a) Explain the no-load and blocked rotor tests for a 3-phase IM. From these tests, determine the equivalent circuit parameters. [09, CO3]**
+**(a) Enlist the test's name used for determining circuit model parameters of an IM. [Marks: 02, CO: 1]**
+
+Two laboratory tests on a 3-phase induction motor give the equivalent circuit parameters:
+
+| Test | Full name | What is measured | Parameters obtained |
+|:---|:---|:---|:---|
+| **No-load test** | Running-light test | $V_0, I_0, P_0$ at rated voltage, shaft uncoupled | Shunt branch $R_c$, $X_m$; friction and windage loss |
+| **Blocked rotor test** | Locked-rotor test (short-circuit test, equivalent test) | $V_{sc}, I_{sc}, P_{sc}$ at reduced voltage, rotor held | Series branch $Z_{01}, R_{01}, X_{01}$ |
+
+A third, low-current test is needed to split the series branch:
+
+| Test | Full name | What is measured | Parameter obtained |
+|:---|:---|:---|:---|
+| **DC test** | Winding resistance (ohmic) test | $V_{DC}, I_{DC}$ between stator terminals | $R_1$, hence $R_2' = R_{01} - R_1$ |
+
+So the standard answer is: **no-load test, blocked-rotor (locked-rotor) test, and the DC resistance test.**
+
+---
+
+### [Practice: No-Load and Blocked Rotor Tests in Full]
+> **Practice problem (not from a past paper)**
+
+**Explain the no-load and blocked rotor tests for a 3-phase IM. From these tests, determine the equivalent circuit parameters.**
 
 **No-Load Test:**
 Motor runs uncoupled at rated voltage and frequency. Since slip $s \approx 0$, the rotor branch is effectively an open circuit. The motor draws a small no-load current $I_0$ to supply core loss and friction/windage loss.

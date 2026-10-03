@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 160: Single Phase Induction Motor 1](Lecture_160_Single_Phase_Induction_Motor_1.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 162: Single Phase Induction Motor →](Lecture_162_Single_Phase_Induction_Motor.md)
+
+---
+
 # Electrical Machines | Lec 113 | Single Phase Induction Motor-2 | GATE/ESE Electrical Engineering
 
 - **Source**: https://www.youtube.com/watch?v=68N1xTckLjU
@@ -586,3 +591,6 @@ To reverse the direction of rotation in any split-phase or capacitor motor:
 - In space, the rotor rotates from the axis of the leading current winding toward the axis of the lagging current winding along the shortest angle.
 - Reversing the terminal connections of either the main winding or the auxiliary winding reverses the direction of rotor rotation.
 
+---
+
+[← Lec 160: Single Phase Induction Motor 1](Lecture_160_Single_Phase_Induction_Motor_1.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 162: Single Phase Induction Motor →](Lecture_162_Single_Phase_Induction_Motor.md)

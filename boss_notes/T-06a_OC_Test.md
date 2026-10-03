@@ -8,7 +8,7 @@
 
 ## Why This Topic Matters
 
-The OC/SC test is the **single most certain question in the entire exam.** It appeared in ALL 7 papers (2017–2024). The format is always the same: given OC and SC test data, find the equivalent circuit parameters, then calculate efficiency and/or voltage regulation. This is your guaranteed 5–10 marks if you know the procedure. The OC test finds the shunt branch parameters ($R_c$, $X_m$) and the iron loss.
+The OC/SC test ties with Open-Delta as the **most certain question in the entire exam** — both appeared in ALL 7 papers (2017–2024). The format is always the same: given OC and SC test data, find the equivalent circuit parameters, then calculate efficiency and/or voltage regulation. This is your guaranteed 5–10 marks if you know the procedure. The OC test finds the shunt branch parameters ($R_c$, $X_m$) and the iron loss.
 
 ---
 
@@ -109,7 +109,7 @@ $$\boxed{X_m = \frac{V_0}{I_\mu}}$$
 ---
 
 ### 🎯 Q3: Why are OC and SC tests preferred over direct load test?
-> **Appeared:** 2024 Q3(a) — 4 marks
+> **Appeared:** 2019 Q2(a) — 3 marks (OC/SC tests in brief)
 
 **Full Answer:**
 

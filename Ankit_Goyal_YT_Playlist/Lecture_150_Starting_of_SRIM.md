@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 149: Starting of SRIM](Lecture_149_Starting_of_SRIM.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 151: Speed Control of Induction Motor 1 →](Lecture_151_Speed_Control_of_Induction_Motor_1.md)
+
+---
+
 # Starting of SRIM | L 43 | Electrical Machines | GATE 2022 | Ankit Goyal
 
 - **Source**: https://www.youtube.com/watch?v=qr2pRtv3hSI
@@ -360,3 +365,6 @@ This concludes our comprehensive problem-solving coverage of starting methods fo
 - Total initial rotor circuit resistance per phase is given by $R_1' = \frac{r_2}{s_m}$, and the individual resistance sections satisfy $R_k = \alpha^{k-1} R_1$.
 - Star-delta starters protect against winding overheating and limit utility line disturbances, but they do not provide smooth acceleration due to the abrupt transition at star-to-delta changeover.
 
+---
+
+[← Lec 149: Starting of SRIM](Lecture_149_Starting_of_SRIM.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 151: Speed Control of Induction Motor 1 →](Lecture_151_Speed_Control_of_Induction_Motor_1.md)

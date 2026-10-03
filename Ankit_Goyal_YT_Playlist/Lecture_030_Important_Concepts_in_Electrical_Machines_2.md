@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 029: Important Concepts in Electrical Machines 1](Lecture_029_Important_Concepts_in_Electrical_Machines_1.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 031: Transformer and Magnetically Coupled Circuits →](Lecture_031_Transformer_and_Magnetically_Coupled_Circuits.md)
+
+---
+
 # Electrical Machines | Lec 21 | Important Concepts in Electrical Machines - 2| GATE Electrical Engg
 
 - **Source**: https://www.youtube.com/watch?v=lMFoAAAXK_o
@@ -758,3 +763,6 @@ $$I_1 = \left(\frac{1}{4}\right)\left(\frac{4}{30}\right) + \left(\frac{2}{4}\ri
 - Operating at a leading power factor increases internal core flux density, which raises iron losses $P_c \propto B_m^2$ and yields lower efficiency than operating at the same numerical lagging power factor.
 - Multi-winding transformer circuits can be solved via power conservation, primary impedance referral, or ampere-turn balance, with power conservation providing the fastest calculation.
 
+---
+
+[← Lec 029: Important Concepts in Electrical Machines 1](Lecture_029_Important_Concepts_in_Electrical_Machines_1.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 031: Transformer and Magnetically Coupled Circuits →](Lecture_031_Transformer_and_Magnetically_Coupled_Circuits.md)

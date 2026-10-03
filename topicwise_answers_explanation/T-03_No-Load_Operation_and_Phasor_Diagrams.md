@@ -43,51 +43,92 @@ As $I_2$ increases (more load), $I_1$ increases proportionally (larger primary c
 
 ---
 
-### Q1(b): No-load operation of a 1-phase transformer
+---
+
+### [2024 Q1(b)]: Induced Voltage Phenomena upon Transformer Excitation
 
 > 📋 **Appeared in:** 2024 Q1(b)
 
-#### What happens physically before the load is connected
+**(b) When a power transformer is excited as a manner shown in following figure, then describe the induced voltage phenomena — [Marks: 04, CO: 2]**
 
-When you first switch on the transformer with the secondary open, the circuit looks like a simple RL series circuit (primary winding resistance $R_1$ and inductance $L_1$) connected to the supply.
+![Transformer Excitation and Induced Voltage Phenomena](../PrevYearQuestions/diagrams/2024_q1b_transformer.png)
 
-But it is not quite simple, because the inductance $L_1$ is strongly coupled to the iron core, which is a non-linear magnetic material. The actual no-load current that flows is slightly non-sinusoidal (due to the non-linear B-H curve). However, for exam purposes, we treat it as sinusoidal.
+#### Comprehensive Physical Analysis of Induced Voltage Phenomena
 
-**The no-load current has two physical roles:**
+The provided schematic illustrates a two-limb closed rectangular ferromagnetic core. Coil 1 ($N_1$ turns) is wound on the left limb and connected to a DC source $v$ through a series control switch. Coil 2 ($N_2$ turns) is wound on the right limb and connected across a passive resistive load $R$. Both coils share the common closed magnetic circuit carrying mutual flux $\Phi_{\text{mutual}}$.
 
-**Role 1: Magnetic:** A fraction of the current ($I_m$) is responsible for establishing the alternating core flux. This current is in quadrature with the applied voltage (90° lagging). It does no real work: it simply oscillates back and forth as the field grows and collapses. This is the magnetizing component.
+Because the excitation source is DC, this circuit demonstrates **transient electromagnetic induction** during circuit switching:
 
-**Role 2: Thermal:** The core heats up due to hysteresis and eddy current losses. These losses require real power input. A small active current component ($I_c$) in phase with the voltage supplies this power.
+1. **Switch Closure and Current Build-Up ($t = 0^+$):**
+   - At the instant the switch is closed, an electric current $i_1(t)$ begins to circulate into the upper terminal of Coil 1.
+   - The primary current produces an excitation magnetomotive force ($\mathcal{F}_1 = N_1 i_1$) around the core.
 
-The total no-load current is the phasor sum: $I_0 = I_c - jI_m$ (taking $V_1$ as reference, $I_c$ is in phase, $I_m$ lags by 90°).
+2. **Establishment of Time-Varying Mutual Flux ($\Phi_{\text{mutual}}$):**
+   - The MMF drives magnetic flux through the closed ferromagnetic path. The core flux rises from its initial residual value according to the core reluctance $\mathcal{R}$:
+     $$\Phi_{\text{mutual}}(t) = \frac{N_1 i_1(t)}{\mathcal{R}}$$
+   - As long as the current is growing, a positive time rate of change of flux exists: $\frac{d\Phi_{\text{mutual}}}{dt} > 0$.
 
-![No load transformer circuit with magnetizing and core loss components](../Books/Theraja/Ch-32/diagrams/Ch-32_p21_fig29.jpg)
+3. **Self-Induction in Primary (Coil 1 — Counter-EMF $e_1$):**
+   - In accordance with **Faraday's Law of Electromagnetic Induction**, the changing flux threading through the $N_1$ turns of Coil 1 induces a self-induced electromotive force:
+     $$e_1(t) = -N_1 \frac{d\Phi_{\text{mutual}}}{dt}$$
+   - By **Lenz's Law**, the polarity of $e_1$ acts in opposition to the applied voltage $v$ (counter-EMF), limiting the rate of rise of $i_1(t)$ according to the loop equation:
+     $$v(t) - e_1(t) = i_1(t) R_1 \implies v = i_1 R_1 + N_1 \frac{d\Phi_{\text{mutual}}}{dt}$$
 
-#### The phasor diagram at no-load: step by step
+4. **Mutual Induction in Secondary (Coil 2 — Induced Voltage $e_2$):**
+   - Since both coils are linked by the shared ferromagnetic core, the identical mutual flux $\Phi_{\text{mutual}}(t)$ threads through all $N_2$ turns of Coil 2 on the right limb.
+   - A mutually induced electromotive force $e_2(t)$ is established across Coil 2:
+     $$e_2(t) = -N_2 \frac{d\Phi_{\text{mutual}}}{dt}$$
+   - The ratio of instantaneous induced voltages equals the turns ratio:
+     $$\frac{e_1(t)}{e_2(t)} = \frac{N_1}{N_2}$$
 
-1. Draw $\vec{\Phi}_m$ as horizontal reference. (Flux is the physically fundamental quantity: everything else derives from it.)
+5. **Load Current and Secondary Reaction Flux (Lenz's Law):**
+   - The induced EMF $e_2(t)$ drives secondary load current $i_2(t) = e_2(t)/R$ out from the upper terminal into the resistive load.
+   - This secondary current establishes a secondary demagnetizing MMF ($\mathcal{F}_2 = N_2 i_2$) which produces a reaction flux $\Phi_2$ directed in opposition to the primary-established flux build-up $\frac{d\Phi}{dt}$. This represents the fundamental principle of transformer action and energy transfer across magnetic coupling.
 
-2. Induced EMF lags flux by 90°: $\vec{E}_1$ is 90° clockwise from $\vec{\Phi}_m$.
-
-3. Applied voltage must balance $E_1$: $\vec{V}_1 = -\vec{E}_1$ (upward, if $E_1$ is downward). Angle between $V_1$ and $\Phi_m$ = 90° (voltage leads flux by 90°).
-
-4. $I_c$ is in phase with $-E_1$ (i.e., in phase with $V_1$). It is the "real" component.
-
-5. $I_m$ lags $V_1$ by 90°. It points in the same direction as $\Phi_m$.
-
-6. $I_0 = I_c + I_m$ (phasor sum: at angle $\phi_0$ from $V_1$).
-
-7. Secondary: $\vec{E}_2 = \vec{E}_1 \times (N_2/N_1)$. Since secondary is open, $V_2 = E_2$.
-
-![Transformer no load phasor diagram](../Books/Theraja/Ch-32/diagrams/Ch-32_p29_fig39.jpg)
-
-**Important observation:** The secondary open-circuit voltage $V_2 = E_2 = 4.44 f N_2 \Phi_m$ is in phase with $E_1$ and hence lags the primary applied voltage $V_1$ by 180°. This is expected: the secondary and primary EMFs are both induced by the same core flux and are in the same direction relative to their respective winding directions (but since the secondary winding direction is defined from the output terminal, conventionally $V_2$ is taken as positive when it drives current into a load, which gives it the right polarity).
+6. **Steady-State DC Saturation ($t \to \infty$):**
+   - Eventually, the primary current reaches its constant Ohm's law limit: $I_1 = V / R_1$.
+   - Once current is constant, $\frac{d\Phi_{\text{mutual}}}{dt} = 0$.
+   - Consequently, **both induced voltages drop to zero** ($e_1 = 0$, $e_2 = 0$) and secondary current ceases ($i_2 = 0$). This proves why steady-state DC cannot maintain continuous transformer action.
 
 ---
 
-### [2018 Q1(c)] Equivalent Circuit and Complete Vector Diagram for Lagging Power Factor
+### [2024 Q2(a)]: Non-Sinusoidal Nature of Transformer Magnetizing Current
 
-> 📋 **Appeared in:** 2018 Q1(c)
+> 📋 **Appeared in:** 2024 Q2(a)
+
+**(a) "The magnetizing current of power transformer is not fully sinusoidal" — justify it. [Marks: 02, CO: 1]**
+
+#### Physical Justification
+
+When a power transformer is connected to a pure sinusoidal AC supply voltage $v_1(t) = V_m \sin(\omega t)$:
+
+1. **Constraint of Sinusoidal Core Flux:**
+   - Under no-load conditions, the winding resistance drop is negligible ($I_0 R_1 \approx 0$), meaning the induced back-EMF must balance the sinusoidal supply voltage: $e_1(t) \approx -v_1(t)$.
+   - Since $e_1 = -N_1 \frac{d\Phi}{dt}$, the core flux $\Phi(t)$ must strictly be a sinusoidal waveform lagging the voltage by $90^\circ$:
+     $$\Phi(t) = \Phi_m \sin(\omega t - 90^\circ) = -\Phi_m \cos(\omega t)$$
+
+2. **Non-Linear B-H Characteristic of Ferromagnetic Core:**
+   - The relationship between core flux density ($B = \Phi/A$) and magnetic field intensity ($H = N_1 i_m / l_c$) is dictated by the ferromagnetic core's **non-linear $B\text{-}H$ magnetization curve** and saturation characteristics.
+   - In modern power transformers, economic design requires operating the core near the "knee" of the saturation curve ($B_m \approx 1.5\text{–}1.7\text{ T}$).
+
+3. **Distortion of Magnetizing Current ($i_m$):**
+   - In the linear region (low flux values), $i_m$ is proportional to flux.
+   - As the sinusoidal flux approaches its peak $\Phi_m$, the iron enters magnetic saturation, where core permeability ($\mu = B/H$) drops sharply.
+   - To force the flux along its prescribed sinusoidal peak, the core demands an enormous, disproportionate spike in magnetizing MMF ($N_1 i_m$).
+   - As a result, the required magnetizing current waveform $i_m(t)$ is **sharply peaked** (non-sinusoidal), despite the core flux being purely sinusoidal.
+
+4. **Harmonic Content (Fourier Analysis):**
+   - Because the $B\text{-}H$ curve is symmetrical in positive and negative half-cycles, no even harmonics exist.
+   - Fourier decomposition reveals that the peaked magnetizing current contains a strong **third harmonic component** (typically $30\%\text{–}40\%$ of the fundamental), along with smaller 5th and 7th harmonics.
+   - **Conclusion:** Due to ferromagnetic saturation and non-linear permeability of the steel core, the magnetizing current is inherently non-sinusoidal.
+
+---
+
+### [2018 Q1(c) / 2024 Q2(b)]: Complete Vector Diagram and Equivalent Circuit on Load (R-L Load)
+
+> 📋 **Appeared in:** 2018 Q1(c), 2024 Q2(b) (Years: 2018, 2024)
+
+**(b) Draw and explain the phasor diagram of a power transformer, when the transformer is loaded with "R-L" load. [Marks: 04, CO: 1]**
 
 #### 1. Exact Equivalent Circuit of a Practical Transformer
 A practical two-winding transformer deviates from the ideal model due to finite copper conductivity ($R_1, R_2$), leakage fluxes ($\Phi_{l1}, \Phi_{l2} \to X_1, X_2$), and finite core permeability with iron losses ($R_c \parallel jX_m$). The complete exact equivalent circuit is:
@@ -139,6 +180,38 @@ For an inductive load with lagging power factor $\cos\phi_2$, the secondary curr
    - The angle between $\vec{V}_1$ and $\vec{I}_1$ is the primary operating phase angle $\phi_1$, giving input power factor $\cos\phi_1$ (lagging).
 
 > **Sources:** [Books/Ch-32_02_Phasor_and_Equivalent_Circuit.md](../Books/Theraja/Ch-32/Ch-32_02_Equivalent_Circuit_and_Drop.md) · [ClassNoteByRaidah/Class_14.md](../ClassNoteByRaidah/Class_14_Equivalent_Circuit_and_Parameter_Shifting.md) · [SlidesByMaam/L-02_ECE-2207.md](../SlidesByMaam/L-02_ECE-2207.md)
+
+---
+
+### [2024 Q1(c)]: Worked Numerical Problem — Magnetizing and Working Components of No-Load Current
+
+> 📋 **Appeared in:** 2024 Q1(c)
+
+**Problem:** A 2,200/200 — V transformer draws a no-load primary current of 0.6A and absorbs 400W. Find the magnetizing and iron loss currents.  
+Now, consider a 2,200/250 — V transformer takes 0.5A at a p.f. of 0.3 on open circuit. Find magnetizing and working components of no-load primary current.
+
+#### Step-by-Step Solution
+
+#### Part 1: 2,200/200 V Transformer ($I_0 = 0.6\text{ A}, W_0 = 400\text{ W}$)
+- Given: $V_1 = 2200\text{ V}$, $I_0 = 0.6\text{ A}$, $W_0 = 400\text{ W}$.
+- No-load power factor:
+  $$\cos\phi_0 = \frac{W_0}{V_1 I_0} = \frac{400}{2200 \times 0.6} = \frac{400}{1320} = \mathbf{0.30303}$$
+- Working (iron-loss) current component:
+  $$I_w = I_0 \cos\phi_0 = \frac{W_0}{V_1} = \frac{400}{2200} = \mathbf{0.1818\text{ A}} \approx \mathbf{0.182\text{ A}}$$
+- Magnetizing current component:
+  $$I_m = \sqrt{I_0^2 - I_w^2} = \sqrt{0.6^2 - 0.18182^2} = \sqrt{0.36 - 0.033058} = \sqrt{0.32694} = \mathbf{0.5718\text{ A}} \approx \mathbf{0.572\text{ A}}$$
+
+$$\boxed{I_m = 0.572\text{ A (magnetizing)}, \qquad I_w = 0.182\text{ A (iron loss)}}$$
+
+#### Part 2: 2,200/250 V Transformer ($I_0 = 0.5\text{ A}, \cos\phi_0 = 0.3$)
+- Given: $V_1 = 2200\text{ V}$, $I_0 = 0.5\text{ A}$, $\cos\phi_0 = 0.3$.
+- Working (core-loss) component:
+  $$I_w = I_0 \cos\phi_0 = 0.5 \times 0.3 = \mathbf{0.15\text{ A}}$$
+- Magnetizing component:
+  $$\sin\phi_0 = \sqrt{1 - 0.3^2} = \sqrt{0.91} = 0.95394$$
+  $$I_m = I_0 \sin\phi_0 = \sqrt{0.5^2 - 0.15^2} = \sqrt{0.25 - 0.0225} = \sqrt{0.2275} = \mathbf{0.4770\text{ A}} \approx \mathbf{0.477\text{ A}}$$
+
+$$\boxed{I_m = 0.477\text{ A (magnetizing)}, \qquad I_w = 0.15\text{ A (working / iron loss)}}$$
 
 ---
 

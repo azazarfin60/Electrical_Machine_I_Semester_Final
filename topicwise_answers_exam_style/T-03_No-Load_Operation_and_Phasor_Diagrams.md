@@ -134,73 +134,91 @@ The angle between $\vec{V}_1$ and $\vec{I}_1$ gives the primary power factor ang
 ### [2024 Q1(b)]
 > 📋 **Appeared in:** 2024 Q1(b)
 
-**(b) Explain the no-load operation of a 1-phase transformer with a neat phasor diagram. [06, CO1]**
+**(b) When a power transformer is excited as a manner shown in the figure, describe the induced voltage phenomena. [Marks: 04, CO: 2]**
 
-**Operation at no-load ($I_2 = 0$):**
+![Transformer Excitation and Induced Voltage Phenomena](../PrevYearQuestions/diagrams/2024_q1b_transformer.png)
 
-When primary voltage $V_1$ is applied and the secondary is open, a small no-load current $I_0$ flows in the primary. This current has two components:
+The figure shows a rectangular closed ferromagnetic core with two limbs. Coil1 ($N_1$ turns) sits on the left limb and is fed from a **DC source through a single-pole switch**; coil2 ($N_2$ turns) sits on the right limb and drives a resistive load $R$. Both windings are linked by the mutual flux $\Phi_{mutual}$.
 
-1. **Magnetizing component $I_m$:** In quadrature with $V_1$ (lagging by 90°). Creates the alternating core flux $\Phi_m$.
+**Because the source is DC, this is a switching transient, not steady-state AC.** The chain of events on closing the switch:
 
-2. **Core-loss component $I_c$:** In phase with $V_1$. Supplies hysteresis and eddy current losses in the core.
+1. **Closing the switch** applies $v$ to coil1 and starts the primary current $i_1$ flowing.
+2. **Flux builds up.** $i_1$ magnetises the core, so $\Phi_{mutual}$ rises from its residual value. Rate of change is $d\Phi/dt$ per second.
+3. **Self-induction in coil1.** By Faraday's law the primary itself develops a counter-EMF opposing the applied voltage:
+   $$e_1 = -N_1 \frac{d\Phi}{dt}$$
+4. **Mutual induction in coil2.** The same $\Phi_{mutual}$ links all $N_2$ turns of coil2, so it too develops an EMF:
+   $$e_2 = -N_2 \frac{d\Phi}{dt}$$
+5. **Load current.** $e_2$ drives $i_2$ out of the upper terminal into the load $R$.
+6. **Secondary reaction flux opposes $d\Phi/dt$.** By Lenz's law the secondary current creates a flux that opposes the build-up of core flux. This is exactly the m.m.f. balance that later keeps the core flux constant in a working transformer.
 
-$$I_0 = \sqrt{I_c^2 + I_m^2}, \qquad \cos\phi_0 = \frac{I_c}{I_0} = \frac{W_0}{V_1 I_0}$$
+**Ratio to state at the end:** $E_2/E_1 = N_2/N_1$, and both induced EMFs lag the flux by $90°$.
 
-The core flux $\Phi_m$ induces:
-$$E_1 = 4.44fN_1\Phi_m \approx V_1, \qquad E_2 = 4.44fN_2\Phi_m = V_2 \text{ (open secondary)}$$
+---
 
-**Phasor diagram (no-load):**
+### [2024 Q1(c)]
+> 📋 **Appeared in:** 2024 Q1(c)
 
-![No-load phasor diagram of single-phase transformer](../Books/Theraja/Ch-32/diagrams/Ch-32_p12_fig16.jpg)
+**(c) Find the magnetizing and iron-loss components of no-load current. [Marks: 04, CO: 2]**
 
-- Reference $\vec{\Phi}_m$ horizontal (+X axis).
-- $\vec{E}_1$ and $\vec{E}_2$ pointing downward (lagging $\Phi_m$ by 90°).
-- $\vec{I}_c$ in phase with $-\vec{E}_1$ (upward, opposing $E_1$ to balance $V_1$).
-- $\vec{I}_m$ lagging $-\vec{E}_1$ by 90°.
-- $\vec{I}_0 = \vec{I}_c + \vec{I}_m$ at angle $\phi_0$ from $\vec{V}_1$.
-- $\vec{V}_1 = -\vec{E}_1$ (upward), $\vec{V}_2 = \vec{E}_2$ (downward).
+The no-load current $I_0$ resolves into $I_w$ (working / iron-loss component, in phase with $V_1$) and $I_m$ (magnetizing component, lagging $V_1$ by 90°):
+$$I_0 = \sqrt{I_w^2 + I_m^2}, \qquad I_w = I_0 \cos\phi_0, \qquad I_m = I_0 \sin\phi_0$$
 
-Key relationships:
-- $V_1 \approx E_1$ (small $I_0R_1$ drop neglected for ideal core)
-- $V_2 = E_2$ (secondary open, no drop)
-- $V_2/V_1 = N_2/N_1 = K$
+**(i) 2,200/200 V transformer, $I_0 = 0.6$ A, 400 W absorbed.**
+$$\cos\phi_0 = \frac{400}{2200 \times 0.6} = 0.30303$$
+$$I_w = 0.6 \times 0.30303 = \boxed{0.182\text{ A}}, \qquad I_m = \sqrt{0.6^2 - 0.1818^2} = \boxed{0.572\text{ A}}$$
+
+**(ii) 2,200/250 V transformer, 0.5 A at 0.3 pf on open circuit.**
+$$I_w = 0.5 \times 0.3 = \boxed{0.15\text{ A}}, \qquad I_m = \sqrt{0.5^2 - 0.15^2} = \boxed{0.477\text{ A}}$$
+
+> [!NOTE] Label clearly which is which
+> The paper asks for magnetizing first in part (i) and "magnetizing and working" in part (ii). Both parts need the same pair, so state which value is $I_m$ and which is $I_w$ every time.
 
 ---
 
 ### [2024 Q2(a)]
 > 📋 **Appeared in:** 2024 Q2(a)
 
-**(a) Draw the phasor diagram of a R-L loaded ideal transformer, stating each step. [06, CO1]**
+**(a) "The magnetizing current of power transformer is not fully sinusoidal" — justify it. [Marks: 02, CO: 1]**
+
+**Justification.** The core flux $\Phi_m$ is forced to be nearly sinusoidal because it is linked to a sinusoidal applied voltage through the emf equation $V_1 \approx 4.44 f N_1 \Phi_m$. The magnetizing current $I_m$ is whatever current the core needs to sustain that flux.
+
+**A saturating core is a non-linear element.** Its flux-current relation $\Phi = f(I_m)$ is not linear, so the current that produces a sinusoidal flux must itself be **peaked and distorted**, with a third-harmonic component. The sharper the saturation knee, the more pronounced the peak.
+
+**Where the harmonic goes.** Three-phase core-type transformers are built so the third-harmonic magnetizing currents circulate in the delta of the three limbs, which suppresses third-harmonic voltages in the phase windings. Star-connected windings without a delta path cannot carry them, and the third-harmonic flux then appears as a third-harmonic voltage. That is the standard reason a power transformer uses a delta tertiary.
+
+---
+
+### [2024 Q2(b)]
+> 📋 **Appeared in:** 2024 Q2(b)
+
+**(b) Draw and explain the phasor diagram of a power transformer, when the transformer is loaded with "R-L" load. [Marks: 04, CO: 1]**
 
 ![Phasor diagram of transformer on inductive lagging load](../Books/Theraja/Ch-32/diagrams/Ch-32_p15_fig18.jpg)
 
-**Ideal transformer assumptions:** $R_1 = R_2 = X_1 = X_2 = 0$, $I_0 = 0$, so $V_2 = E_2$ and $V_1 = -E_1$.
+For an R-L load the secondary current lags the secondary terminal voltage by
+$$\phi_2 = \tan^{-1}\frac{X_L}{R_L}$$
 
-For R-L load: secondary current lags secondary voltage by $\theta_2 = \tan^{-1}(X_L/R_L)$.
+**Step 1.** Draw the mutual flux $\vec{\Phi}_m$ along the horizontal axis as reference.
 
-**Step 1:** Draw reference $\vec{\Phi}_m$ horizontal (along +X axis).
+**Step 2.** Draw $\vec{E}_1$ and $\vec{E}_2$ vertically downward. Both lag $\vec{\Phi}_m$ by $90°$ because an induced emf lags the flux that produces it.
 
-**Step 2:** Draw $\vec{E}_1$ and $\vec{E}_2$ vertically downward (lagging $\vec{\Phi}_m$ by 90°).
+**Step 3.** With no winding drops (ideal transformer): $\vec{V}_2 = \vec{E}_2$ (downward) and $\vec{V}_1 = -\vec{E}_1$ (upward).
 
-**Step 3:** Since ideal: $\vec{V}_2 = \vec{E}_2$ (downward).
+**Step 4.** The load is R-L, so $\vec{I}_2$ lags $\vec{V}_2$ by $\phi_2$. Draw it clockwise from $\vec{E}_2$.
 
-**Step 4:** R-L load: $\vec{I}_2$ lags $\vec{V}_2$ by $\theta_2$. Draw $\vec{I}_2$ clockwise from $\vec{E}_2$ by $\theta_2$.
+**Step 5.** For an ideal transformer $I_0 = 0$, so the ampere-turn balance $N_1\vec{I}_1 = -N_2\vec{I}_2$ gives $\vec{I}_1 = -(N_2/N_1)\vec{I}_2$, that is $\vec{I}_1$ points $180°$ opposite to $\vec{I}_2$.
 
-**Step 5:** Ampere-turn balance: $N_1\vec{I}_1 = -N_2\vec{I}_2 \Rightarrow \vec{I}_1 = -(N_2/N_1)\vec{I}_2$. So $\vec{I}_1$ is $180°$ opposite to $\vec{I}_2$.
+**Step 6.** The angle between $\vec{V}_1$ (upward) and $\vec{I}_1$ equals $\phi_2$. **An ideal transformer reflects the load power factor to the primary: $\phi_1 = \phi_2$.**
 
-**Step 6:** $\vec{V}_1 = -\vec{E}_1$ (vertically upward, +Y direction).
+**Phasor summary:**
 
-**Step 7:** Angle between $\vec{V}_1$ and $\vec{I}_1$ is $\theta_1 = \theta_2$. Primary power factor equals load power factor.
-
-**Phasor summary table:**
-
-| Phasor | Angle |
+| Phasor | Angle from $\vec{\Phi}_m$ |
 |:---:|:---:|
-| $\vec{\Phi}_m$ | 0° |
-| $\vec{E}_1, \vec{E}_2, \vec{V}_2$ | −90° |
-| $\vec{V}_1$ | +90° |
-| $\vec{I}_2$ | $-90° - \theta_2$ |
-| $\vec{I}_1$ | $+90° - \theta_1$ |
+| $\vec{\Phi}_m$ | $0°$ |
+| $\vec{E}_1, \vec{E}_2, \vec{V}_2$ | $-90°$ |
+| $\vec{V}_1$ | $+90°$ |
+| $\vec{I}_2$ | $-90° - \phi_2$ |
+| $\vec{I}_1$ | $+90° - \phi_2$ |
 
 ---
 

@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 161: Single Phase Induction Motor 2](Lecture_161_Single_Phase_Induction_Motor_2.md) | [🏠 Index](00_yt_study_guide.md)
+
+---
+
 # Single Phase Induction Motor | L 48 | Electrical Machines | GATE 2022 | Ankit Goyal
 
 - **Source**: https://www.youtube.com/watch?v=cOLfgO5qF9U
@@ -647,3 +652,6 @@ In a two-value capacitor motor, a run capacitor remains permanently in series wi
 - Series capacitance required for maximum starting torque is governed by the distinct condition $\phi_a = \frac{90^\circ - \phi_m}{2}$.
 - Two-value capacitor motors retain a run capacitor under continuous operation, maintaining balanced two-phase running conditions with high efficiency and power factor.
 
+---
+
+[← Lec 161: Single Phase Induction Motor 2](Lecture_161_Single_Phase_Induction_Motor_2.md) | [🏠 Index](00_yt_study_guide.md)

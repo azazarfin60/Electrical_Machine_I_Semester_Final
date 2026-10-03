@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 133: Induction Machine Construction 2](Lecture_133_Induction_Machine_Construction_2.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 135: Rotating Magnetic Field →](Lecture_135_Rotating_Magnetic_Field.md)
+
+---
+
 # Electrical Machines | Lec 97 | Inverted Induction Motor | GATE Electrical Engineering
 
 - **Source**: https://www.youtube.com/watch?v=C8qkMm6eEaI
@@ -423,3 +428,6 @@ When analyzing induction machine questions in examinations, always check which w
 - An induction machine operates as an electromechanical frequency changer where slip-ring frequency is continuously regulated by prime mover speed via $f_r = |s| f$.
 - For any desired output frequency, two prime mover operating speeds exist: subsynchronous speed $N_{r1} = N_s(1 - |s|)$ and supersynchronous speed $N_{r2} = N_s(1 + |s|)$.
 
+---
+
+[← Lec 133: Induction Machine Construction 2](Lecture_133_Induction_Machine_Construction_2.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 135: Rotating Magnetic Field →](Lecture_135_Rotating_Magnetic_Field.md)

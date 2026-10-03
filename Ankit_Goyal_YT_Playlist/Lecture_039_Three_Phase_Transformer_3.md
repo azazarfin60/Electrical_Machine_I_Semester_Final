@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 038: Three Phase Transformer 2](Lecture_038_Three_Phase_Transformer_2.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 040: Three Phase Transformer 4 →](Lecture_040_Three_Phase_Transformer_4.md)
+
+---
+
 # Electrical Machines | Lec 27 | Three Phase Transformer - 3 | GATE/ESE Electrical Engineering Lecture
 
 - **Source**: https://www.youtube.com/watch?v=QE2YCIbpFvU
@@ -567,3 +572,6 @@ The secondary star winding provides an accessible neutral terminal. This allows 
 - A primary delta winding provides a closed circulating loop for third harmonic currents, keeping core flux and induced EMF sinusoidal.
 - Accessible secondary neutral terminals in star connections enable simultaneous supply of three-phase and single-phase loads in distribution networks.
 
+---
+
+[← Lec 038: Three Phase Transformer 2](Lecture_038_Three_Phase_Transformer_2.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 040: Three Phase Transformer 4 →](Lecture_040_Three_Phase_Transformer_4.md)

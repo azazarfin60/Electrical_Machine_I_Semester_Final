@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 048: Problems based on Parallel Operation of Transformer](Lecture_048_Problems_based_on_Parallel_Operation_of_Transformer.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 050: Excitation Phenomenon 2 →](Lecture_050_Excitation_Phenomenon_2.md)
+
+---
+
 # Electrical Machines | Lec 33 | Excitation Phenomenon - 1 | GATE/ESE Electrical Engineering
 
 - **Source**: https://www.youtube.com/watch?v=rBRZW_8Meng
@@ -989,3 +994,6 @@ In three-phase transformers, winding connections (star without neutral, delta, s
 - Time differentiation $e = -N d\phi/dt$ multiplies each $n$-th harmonic in flat-topped flux by order $n$, producing a spiky induced EMF that causes severe heating and torque pulsations in connected loads.
 - Power systems strictly enforce sinusoidal flux operation because harmonic currents remain confined to transformer windings without entering load circuits.
 
+---
+
+[← Lec 048: Problems based on Parallel Operation of Transformer](Lecture_048_Problems_based_on_Parallel_Operation_of_Transformer.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 050: Excitation Phenomenon 2 →](Lecture_050_Excitation_Phenomenon_2.md)

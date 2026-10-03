@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 032: Auto Transformer 1](Lecture_032_Auto_Transformer_1.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 034: Auto Transformer in Hindi 3 →](Lecture_034_Auto_Transformer_in_Hindi_3.md)
+
+---
+
 # Electrical Machines | Lec 23 | Auto Transformer in Hindi - 2| GATE Electrical Engineering Lecture
 
 - **Source**: https://www.youtube.com/watch?v=KBen4Tojy80
@@ -630,3 +635,6 @@ We can now summarize all parameter scaling relations for the autotransformer.
 - In additive polarity, per-unit impedance, voltage regulation, per-unit copper loss, and per-unit core loss all scale by the factor $(1 - 1/a_{\text{auto}})$.
 - Per-unit short-circuit current increases by the factor $\frac{1}{1 - 1/a_{\text{auto}}}$, which increases fault severity and mechanical stress during short circuits.
 
+---
+
+[← Lec 032: Auto Transformer 1](Lecture_032_Auto_Transformer_1.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 034: Auto Transformer in Hindi 3 →](Lecture_034_Auto_Transformer_in_Hindi_3.md)

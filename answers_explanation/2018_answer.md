@@ -81,7 +81,21 @@ In short-circuit test calculations, series impedance parameters are extracted:
 - Voltage Regulation at power factor $\cos\phi$:
   $$\text{VR\%} = \frac{I_1 (R_{01}\cos\phi + X_{01}\sin\phi)}{V_1} \times 100\%$$
 
-*(Note on 2018 Paper Data: The numerical values stated on the original 11kV question sheet contain a typographical mismatch where $W_{sc}/I_{sc}^2 > V_{sc}/I_{sc}$, which is physically impossible. Solving with the standard corrected 20 kVA benchmark yields $Z_{01} = 8.64\,\Omega, R_{01} = 3.96\,\Omega, X_{01} = 7.68\,\Omega$, and full-load voltage regulation of $\mathbf{2.70\%}$ at 0.8 lagging pf).*
+#### The Stated 11 kV Data Cannot Be Solved:
+$$I_{1,\text{rated}} = \frac{20{,}000}{11{,}000} = 1.818\text{ A}$$
+$$Z_{01} = \frac{V_{sc}}{I_{sc}} = \frac{72}{1.818} = 39.6\,\Omega, \qquad R_{01} = \frac{W_{sc}}{I_{sc}^2} = \frac{300}{(1.818)^2} = 90.8\,\Omega$$
+$R_{01} > Z_{01}$, so $X_{01}^2 = Z_{01}^2 - R_{01}^2$ comes out negative. That is impossible for any real winding, since $Z_{01}$ is the hypotenuse of the $R$-$X$ triangle. Put another way: pushing 1.818 A through 90.8 Ω needs 165 V, not the 72 V printed. One of the two readings is a misprint, so this transformer has no answer.
+
+$$\boxed{\text{The 11 kV/230 V data in the 2018 paper is self-contradictory}}$$
+
+#### Worked with the 2021 Paper's Data for Illustration:
+The 2021 paper repeats this question with consistent figures: 20 kVA, 2400/240 V, $V_{sc} = 72\text{ V}$, $W_{sc} = 275\text{ W}$.
+$$I_{1,\text{rated}} = \frac{20{,}000}{2400} = 8.33\text{ A}$$
+$$Z_{01} = \frac{72}{8.33} = 8.64\,\Omega, \quad R_{01} = \frac{275}{(8.33)^2} = 3.96\,\Omega, \quad X_{01} = \sqrt{8.64^2 - 3.96^2} = 7.68\,\Omega$$
+Full-load copper loss equals $W_{sc} = 275\text{ W}$, because the SC test is run at rated current.
+$$\text{VR\%} = \frac{8.33(3.96 \times 0.8 + 7.68 \times 0.6)}{2400} \times 100 = 2.70\%$$
+
+*(Read 2.70% as belonging to the 2400/240 V transformer. It is not the answer to the 11 kV question. In the exam, flag the bad data first, then show the method on numbers that work.)*
 
 ---
 
@@ -184,7 +198,7 @@ $$S_{\text{each}} = \frac{S_{\text{total}}}{3} = \frac{10{,}000}{3} = \mathbf{33
   $$V_{2,\text{coil}} = V_{2,L} = \mathbf{230\text{ V}}$$
 - Current per secondary coil (phase current):
   $$I_{2,\text{coil}} = \frac{S_{\text{each}}}{V_{2,\text{coil}}} = \frac{3{,}333{,}333\text{ VA}}{230\text{ V}} = \mathbf{14{,}492.75\text{ A}}$$
-  *(Secondary external line current is $I_{2,L} = \sqrt{3} \times 14{,}492.75 = 25{,}095\text{ A}$)*.
+  *(Secondary external line current is $I_{2,L} = \sqrt{3} \times 14{,}492.75 = 25{,}102\text{ A}$)*.
 
 ---
 
@@ -212,27 +226,42 @@ $$S_{\text{each}} = \frac{S_{\text{total}}}{3} = \frac{10{,}000}{3} = \mathbf{33
 
 ---
 
-#### Q4(b): Numerical Scott Connection (3300V to 440V, 33 kVA Load)
+#### Q4(b): Numerical T-Connected Transformers (3300V to 440V, 33 kVA Load)
 
-#### Given Data:
-- 3-Phase Line Voltage: $V_{1,L} = 3300\text{ V}$
-- 2-Phase Load: $S_{\text{load}} = 33\text{ kVA}, V_2 = 440\text{ V}$ balanced across two phases.
+#### The T-T (3-Phase to 3-Phase) Transformation:
+When two transformers in T (Scott connection) supply a balanced 3-phase load from a balanced 3-phase supply:
+- **Main Transformer ($T_1$)**: Connected across two lines on both primary (3300 V) and secondary (440 V), with a 50% midpoint tap ($M$).
+- **Teaser Transformer ($T_2$)**: Connected between the third line terminal and the 50% midpoint tap $M$ of the main transformer on both primary and secondary.
 
-#### 1. Secondary Quantities:
-- Apparent power per phase: $S_2 = \frac{33{,}000}{2} = 16{,}500\text{ VA}$
-- Secondary voltage per phase: $V_{2,\text{main}} = V_{2,\text{teaser}} = \mathbf{440\text{ V}}$
-- Secondary current per phase:
-  $$I_{2,\text{main}} = I_{2,\text{teaser}} = \frac{16{,}500}{440} = \mathbf{37.50\text{ A}}$$
+#### 1. System Line Currents:
+- Primary line current:
+  $$I_{1L} = \frac{S}{\sqrt{3} V_{1L}} = \frac{33{,}000}{\sqrt{3} \times 3300} = \frac{10}{\sqrt{3}} = \mathbf{5.77\text{ A}}$$
+- Secondary line current:
+  $$I_{2L} = \frac{S}{\sqrt{3} V_{2L}} = \frac{33{,}000}{\sqrt{3} \times 440} = \frac{75}{\sqrt{3}} = \mathbf{43.30\text{ A}}$$
 
-#### 2. Primary Quantities:
-- **Main Transformer Primary**:
-  - Voltage: $V_{1,\text{main}} = V_{AB} = \mathbf{3300\text{ V}}$
-  - Current: $I_{1,\text{main}} = \frac{16{,}500}{3300} = \mathbf{5.00\text{ A}}$
-  - kVA Rating: $3300\text{ V} \times 5\text{ A} = \mathbf{16.50\text{ kVA}}$
-- **Teaser Transformer Primary**:
-  - Voltage: $V_{1,\text{teaser}} = \frac{\sqrt{3}}{2} \times 3300 = 0.8660 \times 3300 = \mathbf{2857.9\text{ V} \approx 2858\text{ V}}$
-  - Current: Line current from phase C is $I_C = \frac{16{,}500}{2858} = \mathbf{5.77\text{ A}}$
-  - kVA Rating: $2858\text{ V} \times 5.77\text{ A} = \mathbf{16.50\text{ kVA}}$
+#### 2. Voltage and Current Rating of Each Coil:
+- **Main Transformer ($T_1$)**:
+  - Primary coil: $V_{1,\text{main}} = V_{1L} = \mathbf{3300\text{ V}}, \quad I_{1,\text{main}} = I_{1L} = \mathbf{5.77\text{ A}}$
+  - Secondary coil: $V_{2,\text{main}} = V_{2L} = \mathbf{440\text{ V}}, \quad I_{2,\text{main}} = I_{2L} = \mathbf{43.30\text{ A}}$
+- **Teaser Transformer ($T_2$)**:
+  - Primary coil connects between line C and the 50% tap of main primary ($V = \frac{\sqrt{3}}{2} V_{1L}$):
+    $$V_{1,\text{teaser}} = \frac{\sqrt{3}}{2} \times 3300 = 0.86603 \times 3300 = \mathbf{2858\text{ V}} \quad (2857.9\text{ V}), \quad I_{1,\text{teaser}} = I_{1L} = \mathbf{5.77\text{ A}}$$
+  - Secondary coil connects between load line c and 50% tap of main secondary:
+    $$V_{2,\text{teaser}} = \frac{\sqrt{3}}{2} \times 440 = 0.86603 \times 440 = \mathbf{381\text{ V}} \quad (381.05\text{ V}), \quad I_{2,\text{teaser}} = I_{2L} = \mathbf{43.30\text{ A}}$$
+
+| Transformer | Coil | Voltage Rating | Current Rating |
+|:---|:---|:---:|:---:|
+| **Main ($T_1$)** | Primary | $3300\text{ V}$ | $5.77\text{ A}$ |
+| | Secondary | $440\text{ V}$ | $43.30\text{ A}$ |
+| **Teaser ($T_2$)** | Primary | $\frac{\sqrt{3}}{2} \times 3300 = 2858\text{ V}$ | $5.77\text{ A}$ |
+| | Secondary | $\frac{\sqrt{3}}{2} \times 440 = 381\text{ V}$ | $43.30\text{ A}$ |
+
+#### 3. kVA Ratings:
+$$\text{kVA}_{\text{main}} = \frac{3300 \times 5.7735}{1000} = \frac{440 \times 43.301}{1000} = \mathbf{19.05\text{ kVA}}$$
+$$\text{kVA}_{\text{teaser}} = \frac{2857.9 \times 5.7735}{1000} = \frac{381.05 \times 43.301}{1000} = \mathbf{16.50\text{ kVA}}$$
+
+> **Commercial identical units:** If two identical interchangeable transformers are used, both are sized for the larger requirement of **19.05 kVA** each (total installed $= 38.10\text{ kVA}$, giving $\frac{38.10}{33} = 1.155$, i.e. 15.5% oversize).  
+> **Alternative 2-phase load interpretation:** If interpreted as 3-phase to 2-phase conversion with a 2-phase load ($16.5\text{ kVA}$ each at 440 V), $I_2 = 37.5\text{ A}$ and nominal ratings are $16.5\text{ kVA}$ for both units. The 3-phase T-T solution above is the standard RUET course derivation (matching 2024 Q4(c)).
 
 ---
 
@@ -382,7 +411,7 @@ $$s_{mT} = \frac{R_2}{X_2} = \frac{0.12}{0.85} = 0.1412 \implies N_{mT} = 1000 \
 
 #### Q8(a): Double-Field Revolving Theory of Single-Phase IM
 
-> See comprehensive derivation in [IM-03: Single-Phase Induction Motor: Double Revolving Field Theory](2018_2024_answer.md#im-03-single-phase-induction-motor-double-revolving-field-theory).
+> See comprehensive derivation in [IM-03: Single-Phase Induction Motor: Double Revolving Field Theory](2018_2024_answer.md#im-03-double-field-revolving-theory-why-1-phase-im-is-not-self-starting).
 
 - Forward field $\Phi_f = \Phi_m/2$ at $+N_s$ with slip $s_f = s$.
 - Backward field $\Phi_b = \Phi_m/2$ at $-N_s$ with slip $s_b = 2 - s$.
@@ -408,13 +437,12 @@ In a resistance split-phase motor, the auxiliary winding is wound with finer wir
   $$\phi_m = \cos^{-1}\left(\frac{10}{50}\right) = 78.46°\text{ lagging}$$
 - Auxiliary winding: $V = 80\text{ V}, I = 1\text{ A}, P = 50\text{ W} \implies Z_a = 80\,\Omega, R_a = \frac{50}{1^2} = 50\,\Omega, X_a = \sqrt{80^2 - 50^2} = 62.45\,\Omega$
 
-#### Condition for 90° Quadrature:
-For auxiliary current to lead main current by 90°, it must lead the supply voltage by:
-$$\phi_a = 90° - 78.46° = 11.54°\text{ leading}$$
-$$\tan(11.54°) = \frac{X_C - X_a}{R_a} = \frac{X_C - 62.45}{50} = 0.20416$$
-$$X_C - 62.45 = 50 \times 0.20416 = 10.21\,\Omega$$
-$$X_C = 62.45 + 10.21 = \mathbf{72.66\,\Omega}$$
-$$C = \frac{1}{2\pi f X_C} = \frac{1}{2\pi \times 50 \times 72.66} = \frac{1}{22{,}826.9} = \mathbf{43.8\,\mu\text{F}}$$
+#### Condition for Maximum Starting Torque:
+Starting torque is proportional to $I_m I_a \sin\alpha$, with $\alpha$ the angle between the two winding currents. A series capacitor changes the magnitude $|I_a|$ at the same time as it changes $\alpha$. So the common shortcut of forcing $\alpha = 90°$ is wrong here. Maximising the product $I_a \sin\alpha$ puts the auxiliary branch at:
+$$\phi_a = \frac{90° - \phi_m}{2} = \frac{90° - 78.46°}{2} = 5.77°\text{ leading}$$
+$$\tan\phi_a = \frac{X_C - X_a}{R_a} \implies X_C = X_a + R_a\tan\phi_a = X_a + \frac{R_a R_m}{Z_m + X_m}$$
+$$X_C = 62.45 + \frac{50 \times 10}{50 + 48.99} = 62.45 + \frac{500}{98.99} = 62.45 + 5.05 = \mathbf{67.50\,\Omega}$$
+$$C = \frac{1}{2\pi f X_C} = \frac{1}{2\pi \times 50 \times 67.50} = \mathbf{47.1\,\mu\text{F}}$$
 
 ---
 

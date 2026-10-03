@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 036: Problems based on Three Winding Transformer](Lecture_036_Problems_based_on_Three_Winding_Transformer.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 038: Three Phase Transformer 2 →](Lecture_038_Three_Phase_Transformer_2.md)
+
+---
+
 # Electrical Machines | Lec 25 | Three Phase Transformer - 1 | GATE/ESE Electrical Engineering Lecture
 
 - **Source**: https://www.youtube.com/watch?v=KhApv0b7zLw
@@ -515,3 +520,6 @@ Subsequent lectures analyze the phasor diagrams, phase shifts, and vector groups
 - Five-limbed cores provide dedicated return paths through unwound outer limbs, allowing reduced yoke height for transport in large high-voltage units.
 - A three-phase transformer bank offers higher reliability and lower spare capacity costs, whereas an integrated three-phase unit saves $15\%$ in cost and weight.
 
+---
+
+[← Lec 036: Problems based on Three Winding Transformer](Lecture_036_Problems_based_on_Three_Winding_Transformer.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 038: Three Phase Transformer 2 →](Lecture_038_Three_Phase_Transformer_2.md)

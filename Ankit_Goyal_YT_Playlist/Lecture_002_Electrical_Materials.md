@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 001: Introduction to Electrical Machines](Lecture_001_Introduction_to_Electrical_Machines.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 003: Electrical Materials 2 →](Lecture_003_Electrical_Materials_2.md)
+
+---
+
 # Electrical Materials | Electrical Machines | Lec 2 | GATE & ESE (EE, ECE) | Ankit Goyal
 
 - **Source**: https://www.youtube.com/watch?v=xtUKUj3Fd8w
@@ -684,3 +689,6 @@ This lecture covered the practical materials used in constructing electrical mac
 - Paramagnetic materials possess permanent dipoles from unpaired electron spins, yielding positive susceptibility ($\chi_m > 0$) and relative permeability $\mu_r > 1$, causing magnetic field lines to converge.
 - Both diamagnets and paramagnets have $|\chi_m| \approx 10^{-5}$ and $\mu_r \approx 1$, making neither suitable for machine magnetic cores.
 
+---
+
+[← Lec 001: Introduction to Electrical Machines](Lecture_001_Introduction_to_Electrical_Machines.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 003: Electrical Materials 2 →](Lecture_003_Electrical_Materials_2.md)

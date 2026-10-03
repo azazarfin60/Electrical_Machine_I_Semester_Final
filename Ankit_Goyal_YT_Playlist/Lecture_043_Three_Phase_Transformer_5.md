@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 042: Problems Based on Three Phase Transformers 2](Lecture_042_Problems_Based_on_Three_Phase_Transformers_2.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 044: Three Phase Transformer 6 →](Lecture_044_Three_Phase_Transformer_6.md)
+
+---
+
 # Electrical Machines | Lec 29 | Three Phase Transformer - 5 | GATE/ESE Electrical Engineering Lecture
 
 - **Source**: https://www.youtube.com/watch?v=nKhhMbYe6LY
@@ -844,3 +849,6 @@ Open-delta connections serve two primary engineering applications:
 - For a general inductive load of impedance angle $\phi$, the two units operate at power factors of $\cos(30^\circ - \phi)$ leading and $\cos(30^\circ + \phi)$ lagging.
 - When the load power factor angle exceeds $30^\circ$ ($\phi > 30^\circ$, or $\text{pf} < 0.866$ lag), both transformers operate at lagging power factors.
 
+---
+
+[← Lec 042: Problems Based on Three Phase Transformers 2](Lecture_042_Problems_Based_on_Three_Phase_Transformers_2.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 044: Three Phase Transformer 6 →](Lecture_044_Three_Phase_Transformer_6.md)

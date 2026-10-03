@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 159: High Torque Cage Rotor and Induction Generator](Lecture_159_High_Torque_Cage_Rotor_and_Induction_Generator.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 161: Single Phase Induction Motor 2 →](Lecture_161_Single_Phase_Induction_Motor_2.md)
+
+---
+
 # Single Phase Induction Motor-1 | Induction Machine | Lec 112 | GATE & ESE | Ankit Goyal
 
 - **Source**: https://www.youtube.com/watch?v=FvAqndJj0ok
@@ -392,3 +397,6 @@ $$Z_{\text{in}} = (R_1 + j X_1) + Z_f + Z_b$$
 - The net torque-speed curve is symmetric in the first and third quadrants, passing through zero at $N = 0$.
 - The complete running equivalent circuit places the stator impedance in series with the forward parallel branch $Z_f$ and the backward parallel branch $Z_b$.
 
+---
+
+[← Lec 159: High Torque Cage Rotor and Induction Generator](Lecture_159_High_Torque_Cage_Rotor_and_Induction_Generator.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 161: Single Phase Induction Motor 2 →](Lecture_161_Single_Phase_Induction_Motor_2.md)

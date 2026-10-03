@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 040: Three Phase Transformer 4](Lecture_040_Three_Phase_Transformer_4.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 042: Problems Based on Three Phase Transformers 2 →](Lecture_042_Problems_Based_on_Three_Phase_Transformers_2.md)
+
+---
+
 # Problems Based on Three Phase Transformers - 1 | L 13 | Electrical Machines | GATE 2022
 
 - **Source**: https://www.youtube.com/watch?v=03_-5LoPPrc
@@ -994,3 +999,6 @@ The next session continues with advanced three-phase transformer problems, focus
 - Nameplate voltage ratings for three-phase banks always specify line-to-line voltages, requiring a factor of $\sqrt{3}$ conversion for star-connected windings.
 - Phase displacement between primary and secondary line voltages in star-delta configurations is determined by drawing winding phasor diagrams relative to standard clock hour positions.
 
+---
+
+[← Lec 040: Three Phase Transformer 4](Lecture_040_Three_Phase_Transformer_4.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 042: Problems Based on Three Phase Transformers 2 →](Lecture_042_Problems_Based_on_Three_Phase_Transformers_2.md)

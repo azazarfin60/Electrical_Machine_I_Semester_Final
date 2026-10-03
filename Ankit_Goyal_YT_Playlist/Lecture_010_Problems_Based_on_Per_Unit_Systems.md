@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 009: Per Unit System](Lecture_009_Per_Unit_System.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 011: Transformer Construction 1 →](Lecture_011_Transformer_Construction_1.md)
+
+---
+
 # Problems Based on Per Unit Systems | L3 | Electrical Machines | GATE 2022 | #AnkitGoyal
 
 - **Source**: https://www.youtube.com/watch?v=0CPOzcYBTX8
@@ -633,3 +638,6 @@ $$E = 4.44 f N \Phi_m$$
 - For a fixed physical impedance, per-unit impedances on different bases vary inversely with base impedances: $Z_{\text{pu, 1}} / Z_{\text{pu, 2}} = Z_{\text{base, 2}} / Z_{\text{base, 1}}$.
 - Primary and secondary winding per-unit impedances add directly in series as $Z_{\text{pu, eq}} = z_{\text{pu, 1}} + z_{\text{pu, 2}}$ without turns ratios.
 
+---
+
+[← Lec 009: Per Unit System](Lecture_009_Per_Unit_System.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 011: Transformer Construction 1 →](Lecture_011_Transformer_Construction_1.md)

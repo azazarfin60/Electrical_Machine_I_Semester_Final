@@ -11,11 +11,13 @@
 
 ---
 
-### T-04: Open-Delta Connection: Why 57.7% and When to Use It
+### [2018 Q4(c) / 2024 Q4(b)]: Open-Delta (V-V) Connection and Continuity of Supply
 
-*Appears in: 2018 Q4c, 2019 Q3b, 2020 Q4b, 2021 Q3b, 2023 Q4a*
+> 📋 **Appeared in:** 2018 Q4(c), 2019 Q3(b), 2020 Q4(b), 2021 Q3(b), 2023 Q3(a), 2024 Q4(b)
 
-#### The scenario
+**(b) Is it possible to maintain 3-$\varphi$ power supply when one phase of a 3-$\varphi$ transformer is burned out? If 'Yes', justify the answer. If 'Not', then also justify your answer. [Marks: 04, CO: 1]**
+
+#### The scenario & Answer: YES
 
 You have a 3-phase Δ-Δ transformer bank with three single-phase units. One fails overnight. You cannot shut down the system. Can you continue serving the 3-phase load? Yes: using open-delta.
 
@@ -69,7 +71,57 @@ Each transformer is rated $S$ kVA but works at $0.866 S$ kW useful power. The tr
 
 ---
 
-## Induction Motor Topics (2018–2024)
+### [2024 Q3(b)]: Designing a Three-Phase Transformer Using Three Single-Phase Units
+
+> 📋 **Appeared in:** 2024 Q3(b)
+
+**(b) Explain with the help of vector diagram, how three 1-$\varphi$ transformers can be used to design a 3-$\varphi$ transformer. [Marks: 04, CO: 2]**
+
+#### 1. Concept of a Three-Phase Transformer Bank
+Instead of building a single 3-phase three-limbed core unit, three identical single-phase transformers can be interconnected (banked) on both primary and secondary sides to handle three-phase power.
+
+![The four standard three-phase transformer connections: Y-Y, delta-delta, Y-delta and delta-Y](../Books/VK_Mehta/diagrams/VK_Mehta_Fig_7_51.jpeg)
+
+#### 2. The Four Standard Winding Configurations
+Three identical single-phase transformers ($T_A, T_B, T_C$), each with transformation ratio $a = N_1 / N_2$, can be interconnected in four primary/secondary arrangements:
+
+1. **Star-Star (Y-Y) Connection:**
+   - Primaries are star-connected to supply lines $A, B, C$ with neutral $N$. Secondaries are star-connected to load lines $a, b, c$ with neutral $n$.
+   - Phase voltages: $V_{1,ph} = V_{1,L}/\sqrt{3}$, $V_{2,ph} = V_{2,L}/\sqrt{3}$.
+   - Line current equals phase winding current: $I_L = I_{ph}$.
+   - **Phase shift:** Primary and secondary line voltages are in phase ($0^\circ$ phase shift).
+
+2. **Delta-Delta ($\Delta$-$\Delta$) Connection:**
+   - Primaries and secondaries are connected in closed loops.
+   - Winding voltages equal full line voltages: $V_{1,ph} = V_{1,L}$, $V_{2,ph} = V_{2,L}$.
+   - Line currents are $\sqrt{3}$ times phase winding currents: $I_L = \sqrt{3} I_{ph}$ and lag phase currents by $30^\circ$.
+   - **Phase shift:** $0^\circ$ between primary and secondary line voltages.
+
+3. **Star-Delta (Y-$\Delta$) Connection:**
+   - Primary in star ($V_{1,ph} = V_{1,L}/\sqrt{3}$); secondary in delta ($V_{2,ph} = V_{2,L}$).
+   - Overall voltage transformation ratio:
+     $$\frac{V_{1,L}}{V_{2,L}} = \frac{\sqrt{3} V_{1,ph}}{V_{2,ph}} = \sqrt{3} a$$
+   - **Vector diagram phase shift:** Secondary line voltage lags (or leads) primary line voltage by $30^\circ$ (clock group Yd1 or Yd11).
+
+4. **Delta-Star ($\Delta$-Y) Connection:**
+   - Primary in delta ($V_{1,ph} = V_{1,L}$); secondary in star ($V_{2,L} = \sqrt{3} V_{2,ph}$).
+   - Overall voltage transformation ratio:
+     $$\frac{V_{1,L}}{V_{2,L}} = \frac{V_{1,ph}}{\sqrt{3} V_{2,ph}} = \frac{a}{\sqrt{3}}$$
+   - **Vector diagram phase shift:** Secondary line voltage leads (or lags) primary line voltage by $30^\circ$ (clock group Dy11 or Dy1). Extensively used for step-up generation and 4-wire secondary distribution.
+
+#### 3. Summary of Vector Relationships
+
+| Connection | Primary Line Voltage | Secondary Line Voltage | Line Voltage Ratio ($V_{1,L}/V_{2,L}$) | Phase Shift ($\theta_{L2} - \theta_{L1}$) |
+|:---|:---:|:---:|:---:|:---:|
+| **Y - Y** | $\sqrt{3} V_{1,ph}$ | $\sqrt{3} V_{2,ph}$ | $a$ | $0^\circ$ |
+| **$\Delta$ - $\Delta$** | $V_{1,ph}$ | $V_{2,ph}$ | $a$ | $0^\circ$ |
+| **Y - $\Delta$** | $\sqrt{3} V_{1,ph}$ | $V_{2,ph}$ | $\sqrt{3} a$ | $\pm 30^\circ$ |
+| **$\Delta$ - Y** | $V_{1,ph}$ | $\sqrt{3} V_{2,ph}$ | $a / \sqrt{3}$ | $\pm 30^\circ$ |
+
+#### 4. Engineering Trade-offs: Single 3-$\varphi$ Unit vs. Bank of Three 1-$\varphi$ Units
+- **Transportation and Weight:** For very large ratings (e.g., hundreds of MVA), three single-phase units are significantly easier to transport over bridges and mountainous roads than one massive 3-phase unit.
+- **Spare Unit Economy:** A substation requires only one single-phase spare unit (33% capital reserve) instead of an entire duplicate three-phase transformer (100% reserve).
+- **Service Continuity:** If one unit in a $\Delta$-$\Delta$ bank burns out, the bank can immediately operate in **Open-Delta (V-V)** at $57.7\%$ capacity without interrupting power supply.
 
 ---
 

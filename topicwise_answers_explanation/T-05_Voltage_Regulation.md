@@ -11,9 +11,40 @@
 
 ---
 
-### Q2(b): Voltage regulation for lagging, unity, and leading loads
+---
 
-> 📋 **Appeared in:** 2019 Q2(b), 2023 Q3(a)
+### [2024 Q3(a)]: Definition of Voltage Regulation
+
+> 📋 **Appeared in:** 2024 Q3(a)
+
+**(a) Define voltage regulation of transformer. [Marks: 02, CO: 1]**
+
+#### Precise Definition & Formulas
+
+The **voltage regulation** of a transformer is defined as the arithmetic change in secondary terminal voltage magnitude when rated full load at a given power factor is reduced to zero (removed), expressed as a fraction or percentage of rated terminal voltage, with the primary applied voltage kept strictly constant.
+
+1. **Regulation Down (IEEE / Commercial Convention):**
+   Expressed with respect to the rated full-load terminal voltage $V_{2,FL}$:
+   $$\% \text{VR} = \frac{V_{2,NL} - V_{2,FL}}{V_{2,FL}} \times 100\% = \frac{E_2 - V_2}{V_2} \times 100\%$$
+
+2. **Regulation Up (IEC / Scientific Convention):**
+   Expressed with respect to the no-load secondary terminal voltage $V_{2,NL}$:
+   $$\% \text{VR} = \frac{V_{2,NL} - V_{2,FL}}{V_{2,NL}} \times 100\% = \frac{E_2 - V_2}{E_2} \times 100\%$$
+
+3. **Approximate Analytical Expression (Referred to Secondary):**
+   $$\% \text{VR} \approx \frac{I_2 R_{02}\cos\phi_2 \pm I_2 X_{02}\sin\phi_2}{V_{2}} \times 100\%$$
+   - **$+$ sign:** For lagging (inductive) power factor loads.
+   - **$-$ sign:** For leading (capacitive) power factor loads.
+   - Where $R_{02} = R_2 + a^{-2}R_1$ and $X_{02} = X_2 + a^{-2}X_1$.
+
+4. **Physical Significance:**
+   Voltage regulation is a figure of merit indicating the transformer's ability to maintain a steady output voltage under variable loading. An ideal transformer has zero regulation ($0\%$), meaning terminal voltage remains invariant from zero load to rated load.
+
+---
+
+### [2019 Q2(b) / 2023 Q4(c)]: Voltage Regulation Under Lagging, Unity, and Leading Power Factor Loads
+
+> 📋 **Appeared in:** 2019 Q2(b), 2023 Q4(c)
 
 #### Physical understanding of each case
 

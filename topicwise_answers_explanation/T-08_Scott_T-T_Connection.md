@@ -13,7 +13,7 @@
 
 ### T-08: Scott (T-T) Connection: Conversion Between 3-Phase and 2-Phase
 
-*Appears in: 2018 Q4(a), 2018 Q4(b), 2019 Q4(b)*
+*Appears in: 2018 Q4(a), 2018 Q4(b), 2019 Q4(b), 2024 Q4(c)*
 
 #### Why phase conversion is needed
 
@@ -72,13 +72,13 @@ This constitutes a true, balanced 2-phase electrical supply.
 
 ---
 
-### [2018 Q4(b)]: Worked Numerical Problem
+### [2018 Q4(b)]: Worked Numerical Problem (Two-Phase Load Interpretation)
 
 > 📋 **Appeared in:** 2018 Q4(b)
 
 **Problem:** Two T-connected transformers supply a 440V, 33 kVA balanced load from a 3300V balanced 3-phase supply. Find: (i) voltage and current rating of each coil, (ii) kVA rating of main and teaser.
 
-#### Step-by-step physical solution
+#### Step-by-step physical solution (2-phase load)
 
 **Given:**
 - 3-phase supply line voltage: $V_L = 3300\text{ V}$.
@@ -106,7 +106,69 @@ This constitutes a true, balanced 2-phase electrical supply.
 $$\text{kVA}_{\text{main}} = V_{1,\text{main}} \times I_{1,\text{main}} = 3300\text{ V} \times 5.0\text{ A} = \boxed{16.5\text{ kVA}}$$
 $$\text{kVA}_{\text{teaser}} = V_{1,\text{teaser}} \times I_{1,\text{teaser}} = 2857.8\text{ V} \times 5.77\text{ A} = \boxed{16.5\text{ kVA}}$$
 
-**Conclusion:** Both transformers operate at identical apparent power ratings ($16.5\text{ kVA}$ each), perfectly sharing the total $33\text{ kVA}$ load.
+**Conclusion:** Under 2-phase loading, both transformers operate at identical apparent power ratings ($16.5\text{ kVA}$ each), perfectly sharing the total $33\text{ kVA}$ load.
+
+---
+
+### [2024 Q4(c)]: Worked Numerical Problem — Three-Phase to Three-Phase (T-T Connection)
+
+> 📋 **Appeared in:** 2024 Q4(c)
+
+**Problem:** Two T-connected transformers are used to supply a 440 V, 33KVA balanced load from a balanced 3-$\varphi$ supply of 3300 V. Calculate:
+(i) voltage and current rating of each coil.
+(ii) KVA rating of the main and teaser transformer.
+
+#### Step-by-step physical solution (3-phase balanced load)
+
+When two T-connected transformers supply a **balanced 3-phase load** from a **balanced 3-phase supply** (the T-T connection):
+- Main transformer primary is across lines A–B ($V_{1L} = 3300\text{ V}$), and secondary is across load lines a–b ($V_{2L} = 440\text{ V}$).
+- Teaser primary connects between supply line C and the 50% midpoint of main primary ($V_{1,\text{teaser}} = \frac{\sqrt{3}}{2} V_{1L}$).
+- Teaser secondary connects between load line c and the 50% midpoint of main secondary ($V_{2,\text{teaser}} = \frac{\sqrt{3}}{2} V_{2L}$).
+
+**Step 1: System line currents:**
+- Secondary (load) line current:
+  $$I_{2L} = \frac{S}{\sqrt{3}\,V_{2L}} = \frac{33000}{\sqrt{3}\times440} = \frac{33000}{762.10} = \mathbf{43.30\text{ A}}$$
+- Primary (supply) line current:
+  $$I_{1L} = \frac{S}{\sqrt{3}\,V_{1L}} = \frac{33000}{\sqrt{3}\times3300} = \frac{10}{\sqrt{3}} = \mathbf{5.77\text{ A}}$$
+
+#### (i) Voltage and current rating of each coil
+
+**1. Main transformer ($T_1$):**
+- Primary coil: connects across full line voltage $V_{AB}$:
+  $$V_{1,\text{main}} = 3300\text{ V}, \qquad I_{1,\text{main}} = I_{1L} = 5.77\text{ A}$$
+- Secondary coil: connects across full load line voltage $V_{ab}$:
+  $$V_{2,\text{main}} = 440\text{ V}, \qquad I_{2,\text{main}} = I_{2L} = 43.30\text{ A}$$
+
+**2. Teaser transformer ($T_2$):**
+- The teaser is connected between the third line and the center tap of the main winding. In an equilateral voltage triangle of side $V_L$, the altitude is $\frac{\sqrt{3}}{2} V_L \approx 0.866 V_L$ (not $V_L/\sqrt{3}$):
+  $$V_{1,\text{teaser}} = \frac{\sqrt{3}}{2} V_{1L} = \frac{\sqrt{3}}{2} \times 3300 = \mathbf{2858\text{ V}} \quad (\approx 2857.9\text{ V})$$
+  $$V_{2,\text{teaser}} = \frac{\sqrt{3}}{2} V_{2L} = \frac{\sqrt{3}}{2} \times 440 = \mathbf{381\text{ V}} \quad (\approx 381.05\text{ V})$$
+- The outer ends of the teaser coils connect directly in series with phase C of supply and phase c of load, so they carry the line currents:
+  $$I_{1,\text{teaser}} = I_{1L} = \mathbf{5.77\text{ A}}$$
+  $$I_{2,\text{teaser}} = I_{2L} = \mathbf{43.30\text{ A}}$$
+
+| Transformer | Coil | Voltage Rating | Current Rating |
+|:---|:---|:---:|:---:|
+| **Main ($T_1$)** | Primary | $3300\text{ V}$ | $5.77\text{ A}$ |
+| | Secondary | $440\text{ V}$ | $43.30\text{ A}$ |
+| **Teaser ($T_2$)** | Primary | $\dfrac{\sqrt{3}}{2} \times 3300 = 2858\text{ V}$ | $5.77\text{ A}$ |
+| | Secondary | $\dfrac{\sqrt{3}}{2} \times 440 = 381\text{ V}$ | $43.30\text{ A}$ |
+
+#### (ii) kVA rating of main and teaser transformers
+
+**Operating (calculated) ratings:**
+$$\text{kVA}_{\text{main}} = \frac{3300 \times 5.7735}{1000} = \mathbf{19.05\text{ kVA}} \quad\left(= \frac{440 \times 43.301}{1000}\right)$$
+$$\text{kVA}_{\text{teaser}} = \frac{2857.9 \times 5.7735}{1000} = \mathbf{16.50\text{ kVA}} \quad\left(= \frac{381.05 \times 43.301}{1000}\right)$$
+
+Notice that $\text{kVA}_{\text{teaser}} = \frac{\sqrt{3}}{2}\,\text{kVA}_{\text{main}} = 0.866 \times 19.05 = \mathbf{16.50\text{ kVA}}$.
+
+$$\boxed{\text{Main } (T_1) = 19.05\text{ kVA}, \qquad \text{Teaser } (T_2) = 16.50\text{ kVA}}$$
+
+> [!IMPORTANT] Commercial Identical Units Rating (15.5 % Oversize)
+> In practice, both transformers are built identically so they can be interchanged:
+> - Each unit is rated for the full main transformer capacity: **$19.05\text{ kVA}$ each** (with an 86.6% tap provided on the teaser).
+> - Total installed capacity $= 19.05 + 19.05 = \mathbf{38.10\text{ kVA}}$.
+> - Ratio of installed capacity to load $= \dfrac{38.10}{33} = \dfrac{2}{\sqrt{3}} = \mathbf{1.155}$ (the classic **15.5 % oversize** of the T-connection).
 
 ---
 

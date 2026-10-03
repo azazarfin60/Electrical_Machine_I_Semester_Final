@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 014: Ideal Transformer Part 1](Lecture_014_Ideal_Transformer_Part_1.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 016: Problems Based on Ideal Transformer →](Lecture_016_Problems_Based_on_Ideal_Transformer.md)
+
+---
+
 # Electrical Machines | Lec 11 | Ideal Transformer (Part 2) | GATE Electrical Engineering
 
 - **Source**: https://www.youtube.com/watch?v=zLFJN6WhM10
@@ -655,3 +660,6 @@ This completes the comprehensive study of the ideal transformer. We covered indu
 - Any electrical impedance transfers across windings according to the general destination-over-source squared rule: $Z_{\text{dest}} = Z_{\text{source}} \times (N_{\text{destination}} / N_{\text{source}})^2$.
 - Multi-transformer transmission circuits reduce to a single-mesh network by referring sources and line impedances directly to the load terminals.
 
+---
+
+[← Lec 014: Ideal Transformer Part 1](Lecture_014_Ideal_Transformer_Part_1.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 016: Problems Based on Ideal Transformer →](Lecture_016_Problems_Based_on_Ideal_Transformer.md)

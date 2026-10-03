@@ -123,10 +123,54 @@ Expressing the torque as 5000 synchronous watts captures both the power and spee
 
 ---
 
-### [2023 Q6(c)]
-> 📋 **Appeared in:** 2023 Q6(c)
+### [2023 Q6(a)]
+> 📋 **Appeared in:** 2018 Q5(b), 2023 Q6(a) (Years: 2018, 2023)
 
-**(c) What is rotor efficiency? Show that rotor efficiency = $(1-s)$. [03, CO2]**
+**(a) Define synchronous watt. Derive an expression of rotor efficiency of a $3-\varphi$ induction motor. [CO2, Marks: 04]**
+
+**Synchronous watt.** One synchronous watt is that torque which, acting at synchronous speed, would develop a power of one watt. Torque expressed in synchronous watts is numerically equal to the rotor input power:
+$$T_g \ (\text{in synchronous watts}) = P_2 \ (\text{in watts})$$
+$$T_g \ (\text{N-m}) = \frac{\text{torque in synchronous watts}}{2\pi N_s / 60} = \frac{P_2}{\omega_s}$$
+
+It is a handy unit because torque and rotor input are then the same number.
+
+**Rotor efficiency.**
+
+![Block diagram of induction motor power stages: stator input, rotor input across the air gap, mechanical power developed, and rotor output](../Books/Theraja/Ch-34/diagrams/Ch-34_p38_power_stages_block.jpg)
+
+Let $P_2$ be the rotor input (power crossing the air gap), $P_{cu2}$ the rotor copper loss and $P_m$ the gross mechanical power developed.
+
+**Step 1. Rotor copper loss in terms of slip.** The rotor emf per phase when running is $sE_2$, and the rotor current is $I_{2r}$:
+$$P_{cu2} = 3 I_{2r}^2 R_2 = 3 (s E_2) I_{2r} \cos\phi_2$$
+
+The rotor input is the product of the standstill emf and the in-phase current:
+$$P_2 = 3 E_2 I_{2r} \cos\phi_2$$
+
+Dividing:
+$$\boxed{P_{cu2} = s P_2}$$
+
+**Step 2. Mechanical power developed.** By energy balance,
+$$P_m = P_2 - P_{cu2} = P_2 - s P_2 = (1 - s) P_2$$
+
+**Step 3. Power ratio.**
+$$P_2 : P_m : P_{cu2} = 1 : (1 - s) : s$$
+
+**Step 4. Rotor efficiency.**
+$$\eta_{\text{rotor}} = \frac{P_m}{P_2} = \frac{(1-s)P_2}{P_2} = 1 - s$$
+
+Since $s = (N_s - N)/N_s$, we also have $1 - s = N/N_s$:
+
+$$\boxed{\eta_{\text{rotor}} = 1 - s = \frac{N}{N_s}}$$
+
+> [!example] Quick use
+> At 4% slip the rotor efficiency is 96%. The remaining 4% of the air-gap power is lost as rotor copper loss. This is why an induction motor cannot be run at large slip for long.
+
+---
+
+### [Practice: Rotor Efficiency Summary]
+> **Practice problem (not from a past paper)**
+
+**(c) What is rotor efficiency? Show that rotor efficiency = $(1-s)$.**
 
 **Rotor efficiency:** Ratio of mechanical power developed to electrical power input to the rotor (air-gap power).
 
@@ -141,27 +185,19 @@ At $s = 0.04$ (full load, typical): $\eta_{\text{rotor}} = 96\%$. High rotor eff
 ---
 
 ### [2024 Q5(b)]
-> 📋 **Appeared in:** 2018 Q5(b), 2023 Q6(a), 2024 Q5(b) (Years: 2018, 2023, 2024)
+> 📋 **Appeared in:** 2024 Q5(b)
 
-**(b) Show that the rotor copper loss = $s \times$ air gap power. Also show $P_m : P_{r,Cu} : P_g = (1-s) : s : 1$. [04, CO2]**
+**(b) Define slip. Prove that an induction motor cannot run at synchronous speed. [Marks: 03, CO: 3]**
 
-From equivalent circuit, air-gap power:
-$$P_g = 3 I_2^2 \cdot \frac{R_2}{s}$$
+The full treatment of this question is in [T-13: Slip, Synchronous Speed & Basics](T-13_Slip_Synchronous_Speed_and_Basics.md), which files it jointly under 2023 Q5(b) and 2024 Q5(b). In power-flow terms the proof is one line:
 
-Rotor copper loss:
-$$P_{r,Cu} = 3 I_2^2 R_2 = s \cdot 3 I_2^2 \cdot \frac{R_2}{s} = s \cdot P_g$$
+| Slip | Rotor emf | Rotor current | Air-gap power | Torque |
+|:---:|:---:|:---:|:---:|:---:|
+| $s = 0$ | $sE_2 = 0$ | $I_{2r} = 0$ | $P_g = 0$ | $T = 0$ |
 
-$$\boxed{P_{r,Cu} = s P_g}$$
+Zero slip means zero relative motion between the rotating field and the rotor. Nothing is induced, no current flows, the air-gap power is zero and so is the torque. Since friction and windage always need torque, the rotor must fall back below synchronous speed.
 
-Mechanical power:
-$$P_m = P_g - P_{r,Cu} = P_g - sP_g = (1-s)P_g$$
-
-**Ratio:**
-$$P_m : P_{r,Cu} : P_g = (1-s)P_g : sP_g : P_g = \boxed{(1-s) : s : 1}$$
-
-![Power Stages block diagram of an Induction Motor](../Books/Theraja/Ch-34/diagrams/Ch-34_p38_power_stages_block.jpg)
-
-*(Proved)*
+$$\boxed{N < N_s \text{ always} \implies \text{the induction motor is asynchronous}}$$
 
 ---
 

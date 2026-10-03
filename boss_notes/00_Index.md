@@ -15,42 +15,42 @@
 
 | # | Sub-Topic | Priority | Exam Freq |
 |---|---|:---:|:---:|
-| [T-01](T-01_Transformer_Fundamentals.md) | Transformer Fundamentals & EMF Equation | 🟠 HIGH | 4/7 |
-| [T-02](T-02_Construction.md) | Transformer Construction & Core | 🟢 LOW | 1/7 |
+| [T-01](T-01_Transformer_Fundamentals.md) | Transformer Fundamentals & EMF Equation | 🟠 HIGH | 2/7 |
+| [T-02](T-02_Construction.md) | Transformer Construction & Core | 🟢 LOW | 1–2/7 |
 | [T-03a](T-03a_No-Load_Operation.md) | No-Load Operation | 🟠 HIGH | 3/7 |
 | [T-03b](T-03b_Phasor_Diagrams_Under_Load.md) | Phasor Diagrams Under Load | 🟠 HIGH | 4/7 |
 | [T-04](T-04_Equivalent_Circuit.md) | Equivalent Circuit | 🟠 HIGH | 4/7 |
 | [T-05](T-05_Voltage_Regulation.md) | Voltage Regulation | 🔴 MUST | 5/7 |
 | [T-06a](T-06a_OC_Test.md) | Open-Circuit (OC) Test | 🔴 MUST | 7/7 |
 | [T-06b](T-06b_SC_Test.md) | Short-Circuit (SC) Test | 🔴 MUST | 7/7 |
-| [T-06c](T-06c_Efficiency.md) | Transformer Efficiency | 🟠 HIGH | 4/7 |
+| [T-06c](T-06c_Efficiency.md) | Transformer Efficiency | 🟠 HIGH | 5/7 |
 | [T-07a](T-07a_3Phase_Connections.md) | Three-Phase Connections (Y-Y, Y-Δ, Δ-Y, Δ-Δ) | 🟡 MEDIUM | 2/7 |
-| [T-07b](T-07b_Open_Delta.md) | Open-Δ (V-V) Connection | 🔴 MUST | 6/7 |
-| [T-08](T-08_Scott_Connection.md) | Scott (T-T) Connection | 🟡 MEDIUM | 3/7 |
+| [T-07b](T-07b_Open_Delta.md) | Open-Δ (V-V) Connection | 🔴 MUST | 7/7 |
+| [T-08](T-08_Scott_Connection.md) | Scott / T-connection | 🟡 MEDIUM | 1/7 Scott, 2/7 T |
 | [T-09](T-09_Vector_Groups.md) | Vector Groups & Parallel Operation | 🟡 MEDIUM | 3/7 |
-| [T-10](T-10_Auto_Transformer.md) | Auto-Transformer | 🟡 MEDIUM | 2/7 |
-| [T-11](T-11_Miscellaneous_Transformer.md) | Miscellaneous Transformer Topics | 🟢 LOW | 1/7 |
+| [T-10](T-10_Auto_Transformer.md) | Auto-Transformer | 🟡 MEDIUM | 3/7 |
+| [T-11](T-11_Miscellaneous_Transformer.md) | Miscellaneous Transformer Topics | 🟢 LOW | Various |
 
 ### Section B — Induction Motor (Q5–Q8)
 
 | # | Sub-Topic | Priority | Exam Freq |
 |---|---|:---:|:---:|
 | [T-12](T-12_Rotating_Magnetic_Field.md) | Rotating Magnetic Field (RMF) | 🔴 MUST | 5/7 |
-| [T-13](T-13_Slip_and_Basics.md) | Slip, Synchronous Speed & Basics | 🔴 MUST | 4/7 |
-| [T-14](T-14_IM_Equivalent_Circuit.md) | IM Equivalent Circuit | 🟠 HIGH | 3/7 |
+| [T-13](T-13_Slip_and_Basics.md) | Slip, Synchronous Speed & Basics | 🟠 HIGH | 4/7 |
+| [T-14](T-14_IM_Equivalent_Circuit.md) | IM Equivalent Circuit | 🟠 HIGH | 4/7 |
 | [T-15a](T-15a_Torque_Starting.md) | Starting Torque & Max Starting Torque | 🟠 HIGH | 4/7 |
 | [T-15b](T-15b_Torque_Running_and_Max.md) | Running Torque & Breakdown Torque | 🟠 HIGH | 4/7 |
 | [T-15c](T-15c_Torque_Speed_Curves.md) | Torque-Speed Characteristics | 🟠 HIGH | 4/7 |
-| [T-16](T-16_Power_Flow.md) | Power Flow & Rotor Power Division | 🟡 MEDIUM | 2/7 |
+| [T-16](T-16_Power_Flow.md) | Power Flow & Rotor Power Division | 🟡 MEDIUM | 3/7 |
 | [T-17a](T-17a_No_Load_Test.md) | No-Load Test (IM) | 🟠 HIGH | 4/7 |
 | [T-17b](T-17b_Blocked_Rotor_Test.md) | Blocked Rotor Test | 🟠 HIGH | 4/7 |
 | [T-18](T-18_Circle_Diagram.md) | Circle Diagram | 🟠 HIGH | 4/7 |
 | [T-19](T-19_Starting_Methods_3Phase.md) | Starting Methods (3-φ IM) | 🟡 MEDIUM | 3/7 |
-| [T-20](T-20_Speed_Control_and_Braking.md) | Speed Control & Braking | 🟡 MEDIUM | 4/7 |
+| [T-20](T-20_Speed_Control_and_Braking.md) | Speed Control & Braking | 🟠 HIGH | 4/7 |
 | [T-21](T-21_Induction_Generator.md) | Induction Generator | 🟡 MEDIUM | 3/7 |
-| [T-22](T-22_DFRT_and_1Phase_IM.md) | Double Field Revolving Theory & 1-φ IM | 🔴 MUST | 7/7 |
+| [T-22](T-22_DFRT_and_1Phase_IM.md) | Double Field Revolving Theory & 1-φ IM | 🔴 MUST | 5/7 |
 | [T-23](T-23_1Phase_Starting_Methods.md) | 1-φ IM Starting Methods | 🔴 MUST | 6/7 |
-| [T-24](T-24_Miscellaneous_IM.md) | Miscellaneous IM Topics | 🟡 MEDIUM | 4/7 |
+| [T-24](T-24_Miscellaneous_IM.md) | Miscellaneous IM Topics | 🟠 HIGH | 4/7 |
 
 ### 📋 Quick Reference
 

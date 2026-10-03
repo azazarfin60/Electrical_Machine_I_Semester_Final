@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[🏠 Index](00_yt_study_guide.md) | [Lec 002: Electrical Materials →](Lecture_002_Electrical_Materials.md)
+
+---
+
 # Introduction to Electrical Machines | Lec 1 | Electrical Machines | GATE & ESE | Ankit Goyal
 
 - **Source**: https://www.youtube.com/watch?v=PmBqB-4hgW4
@@ -506,3 +511,6 @@ Master the basics in Chapter 1 first. Then every subsequent machine chapter will
 - Polyphase induction motors operate at slip $s = \frac{N_s - N_r}{N_s}$, dividing air-gap power into rotor copper loss and developed mechanical power in the strict ratio $P_g : P_{cu} : P_{mech} = 1 : s : (1 - s)$.
 - Electric motor study rests on three operational pillars: controlled starting, speed regulation, and electric braking.
 
+---
+
+[🏠 Index](00_yt_study_guide.md) | [Lec 002: Electrical Materials →](Lecture_002_Electrical_Materials.md)

@@ -75,7 +75,7 @@ $$\vec{V}_1 = \vec{V}_2' + \vec{I}_2'(R_{01} + jX_{01})$$
 ## 🏆 Golden Questions (Past Exam Archive)
 
 ### 🎯 Q1: Derive the equivalent circuit of a single-phase two-winding transformer referred to the primary side (step by step).
-> **Appeared:** 2020 Q1(b) — 4 marks, 2020 Q3(c) — 5 marks, 2024 Q4(c) — 3 marks
+> **Appeared:** 2018 Q1(c) — 2 marks, 2020 Q1(b) — 4 marks, 2020 Q3(c) — 5 marks
 
 **Full Answer:**
 
@@ -110,23 +110,29 @@ Given: 200/400V step-up, $R_{eq} = 0.15\,\Omega$, $X_{eq} = 0.37\,\Omega$, $R_c 
 
 $$\vec{I}_2' = 20(0.8 - j0.6) = 16 - j12 \text{ A}$$
 
-**Primary voltage** (taking $V_2' = 200\angle 0°$ V as reference):
+**No-load current.** Here 200 V is the given rated primary voltage, so take $\vec{V}_1 = 200\angle 0°$ V as the reference:
 
-$$\vec{V}_1 = \vec{V}_2' + \vec{I}_2'(R_{01} + jX_{01})$$
+$$I_c = \frac{V_1}{R_c} = \frac{200}{600} = 0.333 \text{ A}, \qquad I_\mu = \frac{V_1}{X_m} = \frac{200}{300} = 0.667 \text{ A}$$
 
-$$(16 - j12)(0.15 + j0.37) = 2.4 + j5.92 - j1.8 + 4.44 = 6.84 + j4.12$$
+$$\vec{I}_0 = 0.333 - j0.667 \text{ A}$$
 
-$$\vec{V}_1 = 206.84 + j4.12, \qquad |V_1| = \boxed{206.9 \text{ V}}$$
+**Total primary current:**
 
-**No-load current:** $I_c = 206.9/600 = 0.345$ A, $I_\mu = 206.9/300 = 0.690$ A
+$$\vec{I}_1 = \vec{I}_0 + \vec{I}_2' = (0.333 - j0.667) + (16 - j12) = 16.333 - j12.667 \text{ A}$$
 
-$$\vec{I}_0 = 0.345 - j0.690 \text{ A}$$
+$$|I_1| = \sqrt{16.333^2 + 12.667^2} = \boxed{20.67 \text{ A}}$$
 
-**Total primary current:** $\vec{I}_1 = (16.345 - j12.69)$ A
+Primary power factor: $\cos\phi_1 = 16.333/20.67 = 0.79$ lagging.
 
-$$|I_1| = \sqrt{16.345^2 + 12.69^2} = \boxed{20.7 \text{ A}}$$
+**Secondary terminal voltage.** Approximate voltage drop referred to the primary:
 
-**Secondary terminal voltage:** $V_2 = V_2'/a = 200/0.5 = \boxed{400 \text{ V}}$
+$$\Delta V = I_2'(R_{01}\cos\phi_2 + X_{01}\sin\phi_2) = 20(0.15 \times 0.8 + 0.37 \times 0.6) = 6.84 \text{ V}$$
+
+$$V_2' = V_1 - \Delta V = 200 - 6.84 = 193.16 \text{ V}$$
+
+$$V_2 = \frac{V_2'}{a} = \frac{193.16}{0.5} = \boxed{386.3 \text{ V}}$$
+
+(Theraja Example 32.40 gives 386.32 V.)
 
 ---
 

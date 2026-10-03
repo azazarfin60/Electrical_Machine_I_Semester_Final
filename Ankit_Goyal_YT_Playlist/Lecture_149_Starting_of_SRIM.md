@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 148: Starting of SCIM](Lecture_148_Starting_of_SCIM.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 150: Starting of SRIM →](Lecture_150_Starting_of_SRIM.md)
+
+---
+
 # Electrical Machines | Lec 106 | Starting of SRIM | GATE/ESE Electrical Engineering
 
 - **Source**: https://www.youtube.com/watch?v=vro0fzqEfzk
@@ -275,3 +280,6 @@ Total resistance matches: $R_{\text{ext}} + r_2 = 0.7199 + 0.03 \approx 0.75\ \O
 - Individual resistance sections connected between adjacent studs satisfy $R_k = \alpha^{k-1} R_1$, where the first section is $R_1 = R_1'(1 - \alpha)$.
 - When designing starter sections, the minimum operating slip $s_m$ must be calculated from operating current bounds and should not be assumed equal to full-load slip.
 
+---
+
+[← Lec 148: Starting of SCIM](Lecture_148_Starting_of_SCIM.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 150: Starting of SRIM →](Lecture_150_Starting_of_SRIM.md)

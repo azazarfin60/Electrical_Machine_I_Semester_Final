@@ -42,7 +42,7 @@ $$V_{2,\text{coil}} = V_{2,\text{line}} = \boxed{230 \text{ V}}$$
 
 $$I_{2,\text{coil}} = \frac{S_{\text{each}} \times 1000}{V_{2,\text{coil}}} = \frac{3333300}{230} = \boxed{14492 \text{ A}}$$
 
-(Line current on secondary $= \sqrt{3} \times 14492 = 25095$ A total)
+(Line current on secondary $= \sqrt{3} \times 14492.75 = 25102\text{ A}$ total)
 
 ---
 
@@ -122,41 +122,124 @@ $$\boxed{\text{Total load with closed-Δ} = 75 \text{ kVA}}$$
 
 ---
 
-### [2023 Q4(a)]
-> 📋 **Appeared in:** 2017 Q7(a), 2018 Q3(c), 2019 Q4(a), 2020 Q4(b), 2021 Q3(b), 2023 Q4(a) (Years: 2017, 2018, 2019, 2020, 2021, 2023)
+### [2023 Q3(a)]
+> 📋 **Appeared in:** 2023 Q3(a), 2024 Q4(b) (Years: 2023, 2024)
 
-**(a) Explain what happens to a 3-phase Δ-Δ transformer bank when one transformer is damaged. Show 3-phase power can still be served. Also prove the capacity reduces to 57.7%. [08, CO1]**
+**(a) Is it possible to continue $3-\varphi$ power supply when one phase is burn out? If "yes" then explain one method. [CO1, Marks: 04]**
 
-![The open-Delta (or V-V) connection schematic](../SlidesByMaam/diagrams/L-11_ECE-2107_p16_fig01.jpg)
-![Open-Delta (V-V) Connection Circuit and Phasor Diagram](../Books/VK_Mehta/diagrams/VK_Mehta_Fig_7_52.jpeg)
+**Yes, it is possible.** The method is the **open-delta (V-V) connection**.
 
-**Event:** One transformer (say $T_{CA}$) in the Δ-Δ bank fails.
+![Open-delta (V-V) connection circuit with two transformers, and the phasor diagram showing that the third line voltage is still produced](../Books/VK_Mehta/diagrams/VK_Mehta_Fig_7_52.jpeg)
 
-**Why 3-phase power still reaches the load:**
+**How it works.** Start from a $\Delta$–$\Delta$ bank of three single-phase transformers. If one unit burns out, disconnect and remove it. The remaining two are left connected in a "V" shape on both sides.
 
-The primary and secondary delta loops still have two active transformers: $T_{AB}$ and $T_{BC}$.
+The two healthy transformers still produce two line voltages directly. The third line voltage appears across the open corner, because in a balanced 3-phase system the three line voltages sum to zero:
+$$\vec{V}_{CA} = -(\vec{V}_{AB} + \vec{V}_{BC})$$
 
-On the primary delta: The 3-phase supply maintains $V_{AB}$ and $V_{BC}$. KVL in the delta loop demands $V_{CA} = -(V_{AB} + V_{BC})$. Even without $T_{CA}$, this voltage is present at the open terminal.
+So the load still sees three balanced line voltages, $120°$ apart. Supply continues without interruption.
 
-On the secondary delta: $T_{AB}$ produces $V_{ab} = K\cdot V_{AB}$. $T_{BC}$ produces $V_{bc} = K\cdot V_{BC}$. By KVL: $V_{ca} = -(V_{ab} + V_{bc}) = K\cdot V_{CA}$. All three secondary line voltages exist and are balanced.
+**Capacity.** Let $V$ and $I$ be the rated winding voltage and current of one transformer.
 
-**Three-phase balanced power is delivered by two transformers.** This configuration is called the open-delta (V-V) connection.
+Closed $\Delta$–$\Delta$ bank:
+$$S_{\Delta\Delta} = 3 V I$$
 
-**Capacity proof:**
+In open delta the line current is limited to the winding current of one transformer, so $I_L = I$ and $V_L = V$:
+$$S_{VV} = \sqrt{3}\, V_L I_L = \sqrt{3}\, V I$$
 
-Let each single transformer be rated $S = VI$ kVA.
+$$\frac{S_{VV}}{S_{\Delta\Delta}} = \frac{\sqrt{3} V I}{3 V I} = \frac{1}{\sqrt{3}} = 0.577$$
 
-In closed-Δ (3 transformers): Total $= 3S$ kVA.
+$$\boxed{\text{Open-delta capacity} = 57.7\%\ \text{of the original } \Delta\text{--}\Delta \text{ bank}}$$
 
-In open-Δ (2 transformers):
-Each transformer still carries rated current $I$ at rated voltage $V$.
-For a balanced 3-phase unity pf load, each transformer operates at power factor $\cos 30° = \sqrt{3}/2$.
+The two surviving units are each loaded to
+$$\frac{\sqrt{3} V I}{2 V I} = \frac{\sqrt{3}}{2} = 86.6\%\ \text{of their own rating}$$
 
-$$S_{\text{open}} = 2 \times V \times I \times \cos 30° = 2VI \times \frac{\sqrt{3}}{2} = \sqrt{3}VI = \sqrt{3}S$$
+**Limitations.** The two transformers work at unequal power factors, $\cos(30° - \phi)$ and $\cos(30° + \phi)$. Secondary voltages fall slightly out of balance on load. It is an emergency or light-load arrangement only.
 
-$$\frac{S_{\text{open}}}{S_{\text{closed}}} = \frac{\sqrt{3}S}{3S} = \frac{1}{\sqrt{3}} = 0.577 = \boxed{57.7\%}$$
+---
 
-**Utilization factor of each transformer** in open-Δ: The transformer is rated $S = VI$ kVA but works at power factor $\cos 30° = 0.866$, delivering only $0.866 S$ kW. So the utilization is 86.6% instead of 100%.
+### [2023 Q3(c)]
+> 📋 **Appeared in:** 2021 Q3(a), 2023 Q3(c) (Years: 2021, 2023)
+
+**(c) Mention the limitations of a Y-Y connected transformer. [CO1, Marks: 02]**
+
+![The four standard three-phase transformer connections: Y-Y, delta-delta, Y-delta and delta-Y](../Books/VK_Mehta/diagrams/VK_Mehta_Fig_7_51.jpeg)
+
+1. **Third-harmonic trouble.** The magnetising current needs a third-harmonic component. In Y-Y with isolated neutrals there is no closed path for it, so the flux wave is distorted and a large third-harmonic voltage (up to about 5 times normal) appears in each phase voltage.
+
+2. **Neutral shifting on unbalanced load.** With an unbalanced or single-phase load and no neutral wire, the star point moves. Phase voltages become unequal, so some loads see over-voltage and others see under-voltage.
+
+3. **Needs a neutral or a tertiary winding.** Both faults above are cured only by solidly earthing the neutrals or by adding a third delta (tertiary) winding. That adds cost.
+
+4. **No emergency open-delta operation.** If one unit fails, a Y-Y bank cannot run as open delta. Supply is lost.
+
+5. **Insulation cost.** Each winding must be insulated for $V_L/\sqrt{3}$, which is an advantage, but surge and harmonic stresses offset it.
+
+> [!success] Exam line
+> Y-Y is rarely used in practice. $\Delta$-Y, Y-$\Delta$ and $\Delta$-$\Delta$ are preferred.
+
+---
+
+### [2023 Q4(b)]
+> 📋 **Appeared in:** 2023 Q4(b)
+
+**(b) Prove that closed-$\Delta$ kVA is $\sqrt{3}$ times higher than that open-$\Delta$ kVA. [CO1, Marks: 03]**
+
+Let each single-phase transformer be rated at winding voltage $V$ and winding current $I$.
+
+**Closed $\Delta$–$\Delta$ (three transformers).**
+
+In delta, $V_L = V_{ph} = V$ and $I_L = \sqrt{3} I_{ph} = \sqrt{3} I$. So
+$$S_{\Delta} = \sqrt{3}\, V_L I_L = \sqrt{3} \times V \times \sqrt{3} I = 3 V I$$
+
+This is simply three times the rating of one transformer, as expected.
+
+**Open $\Delta$ (V-V, two transformers).**
+
+Here each winding sits directly in a line, so the line current cannot exceed the winding rating:
+$$I_L = I, \qquad V_L = V$$
+$$S_{V} = \sqrt{3}\, V_L I_L = \sqrt{3}\, V I$$
+
+**Ratio.**
+$$\frac{S_{\Delta}}{S_{V}} = \frac{3 V I}{\sqrt{3} V I} = \frac{3}{\sqrt{3}} = \sqrt{3}$$
+
+$$\boxed{S_{\Delta} = \sqrt{3}\, S_{V} \qquad \text{or} \qquad S_{V} = 0.577\, S_{\Delta}}$$
+
+![Open-delta (V-V) bank of two transformers with its phasor diagram](../Books/VK_Mehta/diagrams/VK_Mehta_Fig_7_52.jpeg)
+
+> [!example] Numerical feel
+> Three 10 kVA units in $\Delta$-$\Delta$ give 30 kVA. Remove one and the two left give $\sqrt{3} \times 10 = 17.32$ kVA, which is $57.7\%$ of 30 kVA. Each of the two is then loaded to $17.32/2 = 8.66$ kVA, that is $86.6\%$ of its own 10 kVA.
+
+---
+
+### [2024 Q3(b)]
+> 📋 **Appeared in:** 2024 Q3(b)
+
+**(b) Explain with the help of vector diagram, how three 1-$\varphi$ transformers can be used to design a 3-$\varphi$ transformer. [Marks: 04, CO: 2]**
+
+A three-phase transformer cannot always be bought as a single unit. Three single-phase transformers can be banked to do the same job.
+
+**1. Y-Y (star-star) connection.** Put all three primaries in star and all three secondaries in star. Each primary phase winding takes $V_L/\sqrt{3}$ and each secondary takes $V_L/\sqrt{3}$. The phase shift is $0°$.
+
+**2. $\Delta$-$\Delta$ (delta-delta) connection.** Put both windings in delta. Each winding takes the full $V_L$. The phase shift is also $0°$.
+
+![The four standard three-phase transformer connections: Y-Y, delta-delta, Y-delta and delta-Y](../Books/VK_Mehta/diagrams/VK_Mehta_Fig_7_51.jpeg)
+
+**3. Mixed connections (Y-$\Delta$ and $\Delta$-Y).** One side star, the other delta. The phase shift is $30°$.
+
+**Vector-diagram facts to state:**
+
+- For a **star** connection the line voltage leads the phase voltage by $30°$: $V_L = \sqrt{3} V_{ph}$. Line current equals phase current.
+- For a **delta** connection the phase voltage equals the line voltage, and the line current lags the phase current by $30°$: $I_L = \sqrt{3} I_{ph}$.
+- Adding a phase shift of $30°$ on one winding alone gives the clock-notation numbers 1 or 11.
+
+| Connection | $V_{ph}/V_L$ | $I_L/I_{ph}$ | Phase shift |
+|:---|:---:|:---:|:---:|
+| Y-Y | $1/\sqrt{3}$ | 1 | $0°$ |
+| $\Delta$-$\Delta$ | 1 | $\sqrt{3}$ | $0°$ |
+| Y-$\Delta$ | $V_{1,ph} = V_{1,L}/\sqrt3$, $V_{2,ph} = V_{2,L}$ | $\sqrt{3}$ on secondary | $30°$ |
+| $\Delta$-Y | $V_{ph} = V_L$ | 1 on secondary | $30°$ |
+
+**When to bank three single-phase transformers:** for large ratings, for easy transport and erection (a 3-phase unit must be shipped as one piece), and for maintenance, since one unit can be taken out and the remaining two can run in open-delta at 57.7% capacity.
 
 ---
 

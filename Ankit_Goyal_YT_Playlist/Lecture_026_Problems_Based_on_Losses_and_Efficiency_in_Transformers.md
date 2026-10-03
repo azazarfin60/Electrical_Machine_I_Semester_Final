@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 025: Losses and Efficiency Part 2](Lecture_025_Losses_and_Efficiency_Part_2.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 027: Voltage Regulation →](Lecture_027_Voltage_Regulation.md)
+
+---
+
 # Problems Based on Losses and Efficiency in Transformers | L 8 | Electrical Machines | GATE 2022
 
 - **Source**: https://www.youtube.com/watch?v=EnBlUwhov4A
@@ -1136,3 +1141,6 @@ The next sequence of lectures covers advanced transformer topics:
 - Air-core transformers have zero hysteresis loss because air has a linear $B\text{-}H$ characteristic with zero loop area.
 - Referring open-circuit and short-circuit tests to target winding sides allows direct frequency scaling of losses using constant $V/f$ relations.
 
+---
+
+[← Lec 025: Losses and Efficiency Part 2](Lecture_025_Losses_and_Efficiency_Part_2.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 027: Voltage Regulation →](Lecture_027_Voltage_Regulation.md)

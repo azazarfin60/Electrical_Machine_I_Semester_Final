@@ -3,12 +3,12 @@
 ---
 
 # T-14: IM Equivalent Circuit
-> **Section:** B | **Priority:** 🟠 HIGH | **Exam Frequency:** 3/7 years
+> **Section:** B | **Priority:** 🟠 HIGH | **Exam Frequency:** 4/7 years
 > **Sources:** Theraja Ch-34 (Art. 34.47), VK Mehta Ch-8 (Art. 8.8-8.9), Chapman Ch-7, Slides L-03
 
 ## Why This Topic Matters
 
-The equivalent circuit question appeared in 3 out of 7 papers (2017, 2020, 2023). It is worth 3-6 marks per appearance. More importantly, every torque and power calculation in Section B relies on this circuit. If you can draw the 6-step equivalent circuit development, you can answer any IM analysis question.
+The IM equivalent circuit question appeared in **4 of 7** papers (2017 Q(a), 2020 Q(c), 2023 Q5(a) and Q6(b) — the latter twice). It is worth 3-6 marks per appearance. More importantly, every torque and power calculation in Section B relies on this circuit. If you can draw the 6-step equivalent circuit development, you can answer any IM analysis question.
 
 ---
 
@@ -40,7 +40,7 @@ $$E_{2s} = sE_2, \qquad X_{2s} = sX_2$$
 
 Rotor current:
 
-$$I_2 = \frac{sE_2}{R_2 + jsX_2} = \frac{sE_2}{\sqrt{R_2^2 + (sX_2)^2}}$$
+$$\text{Phasor: } \vec{I}_2 = \frac{s\vec{E}_2}{R_2 + jsX_2}, \qquad \text{Magnitude: } I_2 = \frac{sE_2}{|Z_r|} = \frac{sE_2}{\sqrt{R_2^2 + (sX_2)^2}}$$
 
 ![Step 2: Rotor circuit at slip s](diagrams/im_step2_rotor_slip_frequency.png)
 
@@ -133,6 +133,70 @@ The equivalent circuit of an IM is obtained by treating it as a rotating transfo
 **Key trick:** The rotor current equation $I_2 = sE_2/\sqrt{R_2^2 + (sX_2)^2}$ can be rewritten as $I_2 = E_2/\sqrt{(R_2/s)^2 + X_2^2}$ by dividing top and bottom by $s$. This transforms the rotor circuit to stator frequency. The resistance $R_2/s$ splits as $R_2 + R_2(1-s)/s$, where $R_2$ accounts for copper loss and $R_2(1-s)/s$ represents mechanical power.
 
 **Final step:** Refer all rotor quantities to the stator using $a^2$ scaling. Move shunt branch to input for the approximate circuit.
+
+### 🎯 Q3: Draw the equivalent circuit of an induction motor as a generalized transformer.
+> **Appeared:** 2023 Q6(b) — 3 marks
+
+**Full Answer:**
+
+![Induction motor represented as a generalized transformer, stator acting as the primary and the short-circuited rotor as the secondary](../topicwise_answers_exam_style/diagrams/im_step1_transformer_model.png)
+
+An induction motor is a transformer whose secondary is free to rotate and is short-circuited on itself.
+
+| Transformer | Induction motor |
+|:---|:---|
+| Primary winding | Stator winding |
+| Secondary winding | Rotor winding |
+| Secondary load impedance | Mechanical load on the shaft |
+| Secondary open ($I_2 = 0$) | Rotor at synchronous speed ($s = 0$) |
+| Secondary shorted | Rotor at standstill ($s = 1$) |
+
+**The one difference.** In a transformer both windings see the same frequency. In an induction motor the rotor sees slip frequency $f_2 = sf$, so the rotor quantities become
+$$E_{2r} = s E_2, \qquad X_{2r} = s X_2, \qquad R_2 \text{ unchanged}$$
+$$I_{2r} = \frac{s E_2}{\sqrt{R_2^2 + (s X_2)^2}}$$
+
+**Removing the frequency difference.** Divide numerator and denominator by $s$:
+$$I_{2r} = \frac{E_2}{\sqrt{(R_2/s)^2 + X_2^2}}$$
+
+The current is unchanged, but now every quantity is at supply frequency. The rotating machine has become an ordinary static transformer with its secondary resistance changed from $R_2$ to $R_2/s$.
+
+**Splitting the rotor resistance shows where the power goes:**
+$$\frac{R_2}{s} = \underbrace{R_2}_{\text{rotor copper loss}} + \underbrace{R_2\left(\frac{1-s}{s}\right)}_{\text{gross mechanical power}}$$
+
+---
+
+### 🎯 Q4: Draw the electrical equivalent circuit of an induction motor. Also draw the complete torque-speed curve of a 3-phase induction motor.
+> **Appeared:** 2023 Q5(a) — 3 marks
+
+**Full Answer:**
+
+**Equivalent circuit (per phase, referred to the stator).**
+
+| Element | Meaning |
+|:---|:---|
+| $R_1, X_1$ | Stator resistance and leakage reactance |
+| $R_0, X_0$ | Core loss resistance and magnetising reactance |
+| $R_2', X_2'$ | Rotor resistance and standstill reactance, referred to stator |
+| $R_2'/s$ | Rotor branch resistance under running conditions |
+| $R_2'\left(\dfrac{1-s}{s}\right)$ | Fictitious resistance that carries the mechanical power |
+
+The whole slip dependence sits in the single term $R_2'/s$. Splitting it as
+$$\frac{R_2'}{s} = R_2' + R_2'\left(\frac{1-s}{s}\right)$$
+separates the rotor copper loss from the gross mechanical power.
+
+**Complete torque-speed curve.**
+
+![Complete torque-speed characteristic of a three-phase induction machine covering the braking, motoring and generating regions](../Books/Theraja/Ch-34/diagrams/Ch-34_p34_fig32.jpg)
+
+| Region | Speed | Slip | Machine action |
+|:---|:---|:---|:---|
+| Braking (plugging) | $-N_s < N < 0$ | $1 < s < 2$ | Brake |
+| Motoring | $0 < N < N_s$ | $0 < s < 1$ | Motor |
+| Generating | $N > N_s$ | $s < 0$ | Induction generator |
+
+Key points on the motoring part: starting torque at $s = 1$, breakdown (maximum) torque at $s = s_{maxT} = R_2/X_2$, then a steep, nearly straight stable run from $T_{max}$ down to zero torque at $N_s$.
+
+---
 
 ---
 

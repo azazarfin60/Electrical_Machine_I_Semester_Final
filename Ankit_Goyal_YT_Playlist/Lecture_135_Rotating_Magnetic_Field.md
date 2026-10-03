@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 134: Inverted Induction Motor](Lecture_134_Inverted_Induction_Motor.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 136: Equivalent Circuit 1 →](Lecture_136_Equivalent_Circuit_1.md)
+
+---
+
 # Rotating Magnetic Field | L 37 | Electrical Machines | GATE 2022 | Ankit Sir
 
 - **Source**: https://www.youtube.com/watch?v=IwTwlQdb3ME
@@ -653,3 +658,6 @@ $$s_b = 2 - 0.05 = 1.95$$
 - Cogging or magnetic locking occurs when stator slots equal an integral multiple of rotor slots ($S_s = k S_r$), causing teeth alignment into a minimum reluctance path.
 - In mechanically coupled machine sets operating at different frequencies, the machine running above its synchronous speed operates as a generator delivering power to its local grid.
 
+---
+
+[← Lec 134: Inverted Induction Motor](Lecture_134_Inverted_Induction_Motor.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 136: Equivalent Circuit 1 →](Lecture_136_Equivalent_Circuit_1.md)

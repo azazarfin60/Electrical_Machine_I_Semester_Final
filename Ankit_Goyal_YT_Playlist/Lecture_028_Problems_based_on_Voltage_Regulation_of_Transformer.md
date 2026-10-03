@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 027: Voltage Regulation](Lecture_027_Voltage_Regulation.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 029: Important Concepts in Electrical Machines 1 →](Lecture_029_Important_Concepts_in_Electrical_Machines_1.md)
+
+---
+
 # Problems based on Voltage Regulation of Transformer | L 9 | Electrical Machines | GATE 2022
 
 - **Source**: https://www.youtube.com/watch?v=6T2k7FLsffw
@@ -990,3 +995,6 @@ Knowing the load voltage and load power factor allows direct computation of the 
 - Zero voltage regulation occurs at a leading power factor when $\tan\phi = R/X$, which corresponds to $\cos\phi = X/Z$.
 - An ideal transformer has $100\%$ efficiency and $0\%$ voltage regulation because it possesses zero internal impedance and zero losses.
 
+---
+
+[← Lec 027: Voltage Regulation](Lecture_027_Voltage_Regulation.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 029: Important Concepts in Electrical Machines 1 →](Lecture_029_Important_Concepts_in_Electrical_Machines_1.md)

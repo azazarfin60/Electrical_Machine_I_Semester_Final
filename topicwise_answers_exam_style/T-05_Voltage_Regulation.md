@@ -11,52 +11,74 @@
 
 ---
 
-### [2023 Q3(a)]
-> 📋 **Appeared in:** 2019 Q2(b), 2023 Q3(a) (Years: 2019, 2023)
+### [2024 Q3(a)]
+> 📋 **Appeared in:** 2019 Q2(b), 2024 Q3(a) (Years: 2019, 2024)
 
-**(a) What is voltage regulation? Derive the expression for VR with neat phasor diagrams for lagging, unity, and leading pf loads. [08, CO1]**
+**(a) Define voltage regulation of transformer. [Marks: 02, CO: 1]**
 
-**Voltage Regulation (VR):** The change in secondary terminal voltage from no-load to full-load, as a percentage of the rated full-load secondary voltage, with primary voltage held constant.
+**Voltage regulation (VR):** The change in secondary terminal voltage from no-load to full-load, expressed as a percentage of the full-load secondary terminal voltage, with the primary voltage held constant.
 
 $$\text{VR\%} = \frac{V_{2,NL} - V_{2,FL}}{V_{2,FL}} \times 100\%$$
 
-**Derivation (approximate formula):**
+On open circuit $I_2 = 0$, so there are no winding drops and $V_{2,NL} = E_2$. Therefore
+$$\text{VR\%} = \frac{E_2 - V_2}{V_2} \times 100\%$$
 
-From the equivalent circuit, secondary terminal voltage referred to primary:
-$$V_1 = V_2' + I_2'R_{01}\cos\phi_2 + I_2'X_{01}\sin\phi_2 + j(\ldots) \approx V_2' + I_2'(R_{01}\cos\phi_2 \pm X_{01}\sin\phi_2)$$
+**Sign by load type:**
 
-where $+$ for lagging, $-$ for leading.
+- **Lagging pf** (inductive): both $I_2R$ and $I_2X$ drops reduce $V_2$, so VR is positive and largest.
+- **Unity pf**: only the resistive drop counts, so VR is small and positive.
+- **Leading pf** (capacitive): the reactive drop boosts $V_2$ and can overcome $IR$. VR can be negative, meaning the terminal voltage rises on load. Capacitor banks exploit this.
 
-No-load voltage: $V_{2,NL} \approx V_1/a = V_2'$
-
-Full-load voltage: $V_{2,FL} = V_2'$
-
-Using phasor:
-$$\text{VR\%} \approx \frac{I_2(R_{01}\cos\phi + X_{01}\sin\phi)}{V_{2,\text{rated}}} \times 100 \quad \text{(lagging, positive)}$$
-
-$$\text{VR\%} \approx \frac{I_2(R_{01}\cos\phi - X_{01}\sin\phi)}{V_{2,\text{rated}}} \times 100 \quad \text{(leading, can be negative)}$$
-
-**Phasor diagrams for Voltage Regulation:**
-
-![Phasor diagram for approximate voltage drop derivation on lagging load](../Books/Theraja/Ch-32/diagrams/Ch-32_p26_fig35.jpg)
-![Voltage drop phasor diagrams at (a) Unity power factor and (b) Leading power factor](../Books/Theraja/Ch-32/diagrams/Ch-32_p26_fig36.jpg)
-
-- **Lagging pf:** $V_2$ reference. $I_2$ lags $V_2$ by $\phi$. $V_1' = V_2 + I_2R_{02}\cos\phi + I_2X_{02}\sin\phi$. Here $|V_1'| > |V_2|$, so VR > 0.
-- **Unity pf:** $I_2$ in phase with $V_2$. Drop is primarily $I_2R_{02}$. Small positive VR.
-- **Leading pf:** $I_2$ leads $V_2$ by $\phi$. Reactive drop subtracts from resistive drop: $I_2R_{02}\cos\phi - I_2X_{02}\sin\phi$. Terminal voltage can rise with load (negative VR).
+**Physical cause.** Load current flows through the winding resistance and leakage reactance, producing an internal voltage drop. Supply voltage is fixed, so the terminal voltage must fall by that amount.
 
 ---
 
-### [2023 Q3(b)]
-> 📋 **Appeared in:** 2023 Q3(b)
+### [2023 Q4(c)]
+> 📋 **Appeared in:** 2023 Q4(c)
 
-**(b) 3300/220V, 50Hz, 50 kVA transformer. Winding resistance: primary = $3.96\,\Omega$, secondary = $0.0176\,\Omega$. Leakage reactance: primary = $15.8\,\Omega$, secondary = $0.07\,\Omega$. Find VR at 0.8 pf lagging. [04, CO1]**
+**(c) A $3-\varphi$ transformer, ratio $33/6.6\text{ kV}$, $\Delta/\text{Y}$, 2-MVA has a primary resistance of $8\ \Omega$ per phase and a secondary resistance of $0.08\ \Omega$ per phase. The percentage impedance is 7%. Calculate the secondary voltage with rated primary voltage for full-load 0.75 p.f. lagging conditions. [CO1, Marks: 04]**
+
+![Simplified series equivalent circuit used for the voltage drop calculation](diagrams/tx_step6_simplified_series_circuit.png)
+
+**Step 1. Per-phase quantities.**
+Primary is delta at 33 kV, so $V_{1,ph} = 33000\text{ V}$. Secondary is star at 6.6 kV line, so $V_{2,ph} = 6600/\sqrt{3} = 3810.5\text{ V}$. Full-load secondary current (star, line $=$ phase):
+$$I_2 = \frac{2 \times 10^6}{\sqrt{3} \times 6600} = 174.95\text{ A}$$
+
+**Step 2. Per-phase transformation ratio.**
+$$K = \frac{3810.5}{33000} = 0.11547, \qquad K^2 = 0.013333$$
+
+**Step 3. Total resistance referred to the secondary.**
+$$R_{02} = R_2 + K^2 R_1 = 0.08 + 0.013333 \times 8 = 0.08 + 0.10667 = 0.1867\ \Omega$$
+
+**Step 4. Total impedance from the 7% figure.**
+$$Z_{02} = \frac{0.07 \times 3810.5}{174.95} = 1.5246\ \Omega$$
+
+**Step 5. Leakage reactance.**
+$$X_{02} = \sqrt{1.5246^2 - 0.1867^2} = \sqrt{2.3244 - 0.0348} = 1.5131\ \Omega$$
+
+**Step 6. Voltage drop at 0.75 p.f. lagging.** $\cos\phi = 0.75$, $\sin\phi = \sqrt{1 - 0.5625} = 0.6614$:
+$$\Delta V = 174.95\,(0.1867 \times 0.75 + 1.5131 \times 0.6614) = 174.95 \times 1.1409 = 199.6\text{ V per phase}$$
+
+**Step 7. Secondary voltage on load.**
+$$V_{2,ph} = 3810.5 - 199.6 = 3610.9\text{ V}, \qquad V_{2,\text{line}} = \sqrt{3} \times 3610.9 = 6254\text{ V}$$
+
+$$\boxed{V_2 = 6254\text{ V} \approx 6.25\text{ kV (line)}, \quad \text{regulation} = 5.24\%}$$
+
+> [!info] Percentage cross-check
+> $\%R = (174.95 \times 0.1867/3810.5) \times 100 = 0.857\%$, so $\%X = \sqrt{7^2 - 0.857^2} = 6.947\%$.
+> $\%\text{Reg} = 0.857 \times 0.75 + 6.947 \times 0.6614 = 5.24\%$, giving $V_2 = 6600(1 - 0.0524) = 6254\text{ V}$. Same answer.
+
+---
+
+### [Practice: VR Numerical from Windings]
+> **Practice problem (not from a past paper)**
+
+**(b) 3300/220V, 50Hz, 50 kVA transformer. Winding resistance: primary = $3.96\,\Omega$, secondary = $0.0176\,\Omega$. Leakage reactance: primary = $15.8\,\Omega$, secondary = $0.07\,\Omega$. Find VR at 0.8 pf lagging.**
 
 **Turns ratio:** $a = 3300/220 = 15$
 
 **Refer to primary:**
 $$R_{01} = R_1 + a^2 R_2 = 3.96 + 225 \times 0.0176 = 3.96 + 3.96 = 7.92\,\Omega$$
-
 $$X_{01} = X_1 + a^2 X_2 = 15.8 + 225 \times 0.07 = 15.8 + 15.75 = 31.55\,\Omega$$
 
 **Rated primary current:**
@@ -64,12 +86,8 @@ $$I_1 = \frac{50000}{3300} = 15.15 \text{ A}$$
 
 **VR at 0.8 pf lag ($\cos\phi = 0.8$, $\sin\phi = 0.6$):**
 $$\text{VR\%} = \frac{I_1(R_{01}\cos\phi + X_{01}\sin\phi)}{V_1} \times 100$$
-
 $$= \frac{15.15(7.92 \times 0.8 + 31.55 \times 0.6)}{3300} \times 100$$
-
-$$= \frac{15.15(6.336 + 18.93)}{3300} \times 100 = \frac{15.15 \times 25.266}{3300} \times 100$$
-
-$$= \frac{382.78}{3300} \times 100 = \boxed{11.6\%}$$
+$$= \frac{15.15 \times 25.266}{3300} \times 100 = \boxed{11.6\%}$$
 
 ---
 

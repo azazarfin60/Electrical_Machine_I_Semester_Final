@@ -18,8 +18,8 @@
 
 **Vector group numbers:** Each unit represents a 30° phase shift (clock notation: 12 = 0°, 11 = 330° = −30°, 1 = 30°).
 
-- Yd11: Phase displacement = 11 × 30° = 330° (= −30°): secondary lags primary by 30°.
-- Dy1: Phase displacement = 1 × 30° = 30°: secondary leads primary by 30°.
+- Yd11: Phase displacement = 11 × 30° = 330° lag (= −30°): secondary leads primary by 30°.
+- Dy1: Phase displacement = 1 × 30° = 30° lag: secondary lags primary by 30°.
 
 The difference in secondary voltage phase angles: $330° - 30° = 300°$ (or equivalently $60°$ lag). This is a 60° phase displacement between their secondary voltages.
 
@@ -33,23 +33,28 @@ Two transformers can only be paralleled if their secondary voltages are exactly 
 
 ---
 
-### [2021 Q4(a)]
-> 📋 **Appeared in:** 2017 Q7(b), 2021 Q4(a), 2023 Q4(b) (Years: 2017, 2021, 2023)
+### [2023 Q4(a)]
+> 📋 **Appeared in:** 2023 Q4(a)
 
-**(a) Conditions for parallel operation of two 3-phase transformers. [04]**
+**(a) Write down the conditions of parallel operation of two $3-\varphi$ transformers. [CO1, Marks: 03]**
 
-![Parallel operation of transformers and terminal polarity](../Books/Theraja/Ch-32/diagrams/Ch-32_p79_fig68.jpg)
+![Two transformers connected in parallel, primaries on a common supply and secondaries on a common load](../Books/Theraja/Ch-32/diagrams/Ch-32_p79_fig68.jpg)
+
+**Essential conditions (must be met, or the bank cannot be paralleled):**
+
+1. **Same line voltage ratio.** The no-load secondary line voltages must match in magnitude, so no circulating current flows on no load.
+2. **Same polarity.** Wrong polarity puts the two secondaries in series across each other. That is a dead short circuit and destroys the windings.
+3. **Same phase sequence.** Both banks must give the same rotation, $R$-$Y$-$B$ for example.
+4. **Zero relative phase displacement.** The secondary line voltages must be in phase, which means both units must belong to the same vector group. A $\Delta$-Y bank ($30°$ shift) cannot be paralleled with a $\Delta$-$\Delta$ bank ($0°$ shift).
+
+**Desirable conditions (needed for correct load sharing):**
+
+5. **Equal per-unit (percentage) impedance.** Then each transformer picks up load in proportion to its own kVA rating.
+6. **Equal $X/R$ ratio.** Then both units work at the same power factor, so their currents add arithmetically instead of vectorially and there is no needless extra heating.
+
+$$\text{Load sharing: } \quad \frac{S_A}{S_B} = \frac{Z_B}{Z_A} \quad \text{(in ohms, same base)}$$
+
 ![Equivalent circuit of two transformers operating in parallel](../Books/Theraja/Ch-32/diagrams/Ch-32_p81_fig71.jpg)
-
-1. **Same voltage ratio:** Primary and secondary rated voltages must be equal. Otherwise a circulating current flows in the secondary loop even at no load.
-
-2. **Same per-unit (or percentage) impedance:** Ensures load sharing is proportional to rated kVA. If impedances differ, the transformer with lower impedance takes a disproportionate share and may overload.
-
-3. **Same polarity:** Corresponding terminals must have the same instantaneous polarity. For 3-phase, this means the same phase sequence of secondary voltages.
-
-4. **Same phase sequence:** Both transformers must be connected to the same phase sequence (A-B-C). A reversed sequence causes a voltage difference and large circulating currents.
-
-5. **Same vector group (zero phase displacement):** Both transformers must have the same vector group or have zero phase angle between their secondary voltages. A 30° phase difference (e.g., Yy0 with Yd11) causes very large circulating currents.
 
 ---
 

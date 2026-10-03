@@ -27,7 +27,7 @@ The no-load test explanation appeared in 4 out of 7 papers (2019, 2021, 2023, 20
 **What happens at no-load:**
 - Slip $s \approx 0$ (typically 0.001 to 0.005)
 - Since $s \approx 0$: $R_2/s \to \infty$. The rotor branch is effectively open-circuited.
-- The motor draws only no-load current $I_0$ (5-10% of rated current).
+- The motor draws only no-load current $I_0$ (25-40% of rated current). This is much higher than a transformer's 2-5% because of the air gap.
 - Input power $P_0$ covers: stator core loss + friction and windage + small stator $I^2R$ loss.
 
 ![No-load test equivalent circuit showing open rotor branch](diagrams/im_no_load_equivalent_circuit.png)
@@ -54,44 +54,30 @@ where $V_\phi = V_0/\sqrt{3}$ for star connection and $V_\phi = V_0$ for delta.
 
 **Rotational losses:**
 
-$$P_{\text{rot}} = P_0 - 3I_0^2R_1$$
+$$P_{\text{rot}} = P_0 - 3I_{0,\text{ph}}^2R_1$$
 
-where $R_1$ is the stator resistance per phase (from DC test). The term $3I_0^2R_1$ is the small stator copper loss at no-load.
+where $R_1$ is the stator resistance per phase (from DC test), and $I_{0,\text{ph}}$ is the no-load phase current ($I_0$ for star, $I_0/\sqrt{3}$ for delta). The term $3I_{0,\text{ph}}^2R_1$ is the small stator copper loss at no-load.
 
 ---
 
 ## 🏆 Golden Questions (Past Exam Archive)
 
-### 🎯 Q1: Explain the no-load and blocked rotor tests for a 3-phase IM. Determine the equivalent circuit parameters.
-> **Appeared:** 2023 Q7(a), 2024 Q7(a) — (9 marks)
+### 🎯 Q1: Enlist the test's name used for determining circuit model parameters of an IM.
+> **Appeared:** 2024 Q7(a) — 2 marks
 
 **Full Answer:**
 
-**No-Load Test:**
+Two laboratory tests give the equivalent circuit parameters, plus a third low-current test to split the series branch:
 
-Motor runs uncoupled at rated voltage and frequency. Since $s \approx 0$, the rotor branch is effectively open. The motor draws a small no-load current $I_0$.
+| Test | Full name | What is measured | Parameters obtained |
+|:---|:---|:---|:---|
+| **No-load test** | Running-light test | $V_0, I_0, P_0$ at rated voltage, shaft uncoupled | Shunt branch $R_c$, $X_m$; friction and windage loss |
+| **Blocked rotor test** | Locked-rotor test (short-circuit test, equivalent test) | $V_{sc}, I_{sc}, P_{sc}$ at reduced voltage, rotor held | Series branch $Z_{01}, R_{01}, X_{01}$ |
+| **DC test** | Winding resistance (ohmic) test | $V_{DC}, I_{DC}$ between stator terminals | $R_1$, hence $R_2' = R_{01} - R_1$ |
 
-**Measurements:** $V_0$ (line voltage), $I_0$ (line current), $P_0$ (3-phase power).
+So the standard one-line answer is: **no-load test, blocked-rotor (locked-rotor) test, and the DC resistance test.**
 
-**Parameters found:** Shunt branch ($R_c$, $X_m$).
-
-$$\cos\phi_0 = \frac{P_0}{\sqrt{3}V_0I_0}$$
-
-$$I_c = I_0\cos\phi_0, \quad I_m = I_0\sin\phi_0$$
-
-$$R_c = V_\phi/I_c, \quad X_m = V_\phi/I_m$$
-
-Rotational losses: $P_{\text{rot}} = P_0 - 3I_0^2R_1$
-
-**Blocked-Rotor Test:** (See [T-17b](T-17b_Blocked_Rotor_Test.md) for full details)
-
-Rotor locked ($s = 1$). Reduced voltage applied until rated current flows. Measure $V_{sc}$, $I_{sc}$, $P_{sc}$.
-
-$$Z_{01} = \frac{V_{sc}/\sqrt{3}}{I_{sc}}, \quad R_{01} = \frac{P_{sc}}{3I_{sc}^2}, \quad X_{01} = \sqrt{Z_{01}^2 - R_{01}^2}$$
-
-$$R_2' = R_{01} - R_1, \quad X_1 = X_2' = X_{01}/2$$
-
-**DC Test** (for $R_1$): Apply DC between two stator terminals. For star: $R_1 = R_{DC}/2$. For delta: $R_1 = 1.5R_{DC}$.
+Note the mark budget: 2 marks. Name the tests and give the one-line purpose of each. Do not write out the full derivations here; they are asked separately.
 
 ---
 
@@ -112,9 +98,10 @@ Parameters: $R_c = V_\phi/I_c$ and $X_m = V_\phi/I_m$.
 
 | Year | Question | Marks | Paired With |
 |:---|:---|:---|:---|
-| 2019 Q7(a) | Describe NL test + define plugging | 4 | Plugging definition |
-| 2023 Q7(a) | Explain NL + BR tests, find parameters | 9 | Blocked rotor test |
-| 2024 Q7(a) | Explain NL + BR tests, find parameters | 9 | Blocked rotor test |
+| 2019 Q7(a) | Describe no-load test + define plugging | 4 | Plugging definition |
+| 2024 Q7(a) | Enlist the tests used for circuit model parameters | 2 | Blocked rotor test |
+
+> Note: 2023 Q7(a) was not a testing question. It was the Y-Δ starter, which sits in [T-19](T-19_Starting_Methods_3Phase.md).
 
 ---
 

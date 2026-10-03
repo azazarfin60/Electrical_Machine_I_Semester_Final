@@ -54,9 +54,9 @@ $$P_e = K_e f^2 B_m^2 t^2 V$$
 
 If you replace one solid block of thickness $T$ with $n$ laminations of thickness $T/n$:
 
-$$P_{e,\text{laminated}} = \frac{P_{e,\text{solid}}}{n}$$
+$$P_{e,\text{laminated}} = \frac{P_{e,\text{solid}}}{n^2}$$
 
-Using 100 laminations cuts eddy current loss to 1/100 of the solid core value.
+Using 100 laminations cuts eddy current loss to 1/10,000 of the solid core value.
 
 ---
 
@@ -97,7 +97,7 @@ When the core is subjected to alternating flux, EMFs are induced in the core its
 
 Eddy current loss formula: $P_e = K_e f^2 B_m^2 t^2 V$
 
-where $t$ is the thickness of the conducting path. Since $P_e \propto t^2$, if we divide one solid block into $n$ thin insulated laminations, each of thickness $T/n$, eddy current loss reduces by a factor of $n$.
+where $t$ is the thickness of the conducting path. Since $P_e \propto t^2$, if we divide one solid block into $n$ thin insulated laminations, each of thickness $T/n$, eddy current loss reduces by a factor of $n^2$.
 
 "The eddy current loss is minimised by laminating the core, the laminations being insulated from each other by a light coat of core-plate varnish or by an oxide layer on the surface." — Theraja
 

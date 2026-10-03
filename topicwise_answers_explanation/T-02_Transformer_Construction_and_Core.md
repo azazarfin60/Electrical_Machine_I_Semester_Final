@@ -13,7 +13,9 @@
 
 ### T-02: Leakage Flux: Physical Picture and All Effects
 
-*Appears in: 2024 Q2b, CT-04 Q1*
+*Appears in: CT-04 Q1*
+>
+> Note: 2024 Q2(b) was the R-L load phasor diagram, which sits in [T-03](T-03_No-Load_Operation_and_Phasor_Diagrams.md).
 
 #### The ideal vs. real transformer
 

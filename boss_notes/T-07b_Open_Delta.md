@@ -3,12 +3,12 @@
 ---
 
 # T-07b: Open-Delta (V-V) Connection
-> **Section:** A | **Priority:** 🔴 MUST | **Exam Frequency:** 6/7 years
+> **Section:** A | **Priority:** 🔴 MUST | **Exam Frequency:** 7/7 years
 > **Sources:** Theraja Ch-33 (Art. 33.8), VK Mehta Ch-7 (Art. 7.36), Slides L-11 S15–S18
 
 ## Why This Topic Matters
 
-Open-Delta appeared in 6 out of 7 papers (2017, 2018, 2019, 2020, 2021, 2023). It is the single most repeated question in the 3-phase transformer section. The question is almost always the same: "One transformer in a Δ-Δ bank fails. Show that 3-phase power can still be supplied. Prove the capacity reduces to 57.7%." This is a guaranteed 4-8 marks.
+Open-Delta appeared in all 7 papers (2017, 2018, 2019, 2020, 2021, 2023, 2024). It ties with OC/SC test as the most repeated question in the entire exam. The question is almost always the same: "One transformer in a Δ-Δ bank fails. Show that 3-phase power can still be supplied. Prove the capacity reduces to 57.7%." This is a guaranteed 4-8 marks.
 
 ---
 
@@ -51,7 +51,7 @@ $$\frac{S_{\text{open}}}{S_{\text{closed}}} = \frac{\sqrt{3}S}{3S} = \frac{1}{\s
 ## 🏆 Golden Questions (Past Exam Archive)
 
 ### 🎯 Q1: One transformer in a Δ-Δ bank is damaged. Show that 3-phase power can still be supplied and prove the capacity reduces to 57.7%.
-> **Appeared:** 2017 Q7(a), 2018 Q3(c), 2019 Q4(a), 2020 Q4(b), 2021 Q3(b), 2023 Q4(a) — (4–8 marks)
+> **Appeared:** 2023 Q3(a) — 4 marks, 2024 Q4(b) — 4 marks (plus 2017 Q7(a), 2018 Q3(c), 2019 Q4(a), 2020 Q4(b), 2021 Q3(b) in earlier papers)
 
 **Full Answer:**
 
@@ -97,6 +97,30 @@ Check: Each transformer handles 25 kVA. Two transformers at $\cos 30°$: $2 \tim
 $$S_{\text{closed}} = 3 \times S_{\text{each}} = 3 \times 25 = \boxed{75 \text{ kVA}}$$
 
 Ratio: $43.3/75 = 0.577$ (confirms 57.7%).
+
+### 🎯 Q3: Prove that closed-Δ kVA is $\sqrt{3}$ times higher than open-Δ kVA.
+> **Appeared:** 2023 Q4(b) — 3 marks
+
+**Full Answer:**
+
+Let each single-phase transformer be rated at winding voltage $V$ and winding current $I$.
+
+**Closed $\Delta$-Δ (three transformers).** In delta, $V_L = V_{ph} = V$ and $I_L = \sqrt{3} I_{ph} = \sqrt{3} I$:
+$$S_{\Delta} = \sqrt{3}\, V_L I_L = \sqrt{3} \times V \times \sqrt{3} I = 3 V I$$
+
+This is simply three times the rating of one transformer, as expected.
+
+**Open $\Delta$ (V-V, two transformers).** Each winding sits directly in a line, so the line current cannot exceed the winding rating: $I_L = I$, $V_L = V$:
+$$S_{V} = \sqrt{3}\, V_L I_L = \sqrt{3}\, V I$$
+
+**Ratio.**
+$$\frac{S_{\Delta}}{S_{V}} = \frac{3 V I}{\sqrt{3} V I} = \frac{3}{\sqrt{3}} = \sqrt{3}$$
+
+$$\boxed{S_{\Delta} = \sqrt{3}\, S_{V} \qquad \text{or} \qquad S_{V} = 0.577\, S_{\Delta}}$$
+
+**Numerical feel:** three 10 kVA units in $\Delta$-$\Delta$ give 30 kVA. Remove one and the two left give $\sqrt{3} \times 10 = 17.32$ kVA, which is $57.7\%$ of 30 kVA. Each of the two is then loaded to $17.32/2 = 8.66$ kVA, that is $86.6\%$ of its own 10 kVA.
+
+---
 
 ---
 

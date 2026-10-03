@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 026: Problems Based on Losses and Efficiency in Transformers](Lecture_026_Problems_Based_on_Losses_and_Efficiency_in_Transformers.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 028: Problems based on Voltage Regulation of Transformer →](Lecture_028_Problems_based_on_Voltage_Regulation_of_Transformer.md)
+
+---
+
 # Voltage Regulation | Electrical Machines | Lec 19 | GATE/ESE (EE, ECE) | Ankit Goyal
 
 - **Source**: https://www.youtube.com/watch?v=rnehcEm07Fk
@@ -691,3 +696,6 @@ These construction methods ensure that transformer voltage regulation remains wi
 - Leakage reactance dominates voltage regulation, so regulation is reduced by increasing window height at constant window area with $H/W \le 4$.
 - Concentric windings with split turns, interleaved sandwich windings, and shell-type core geometries reduce leakage flux and minimize voltage regulation.
 
+---
+
+[← Lec 026: Problems Based on Losses and Efficiency in Transformers](Lecture_026_Problems_Based_on_Losses_and_Efficiency_in_Transformers.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 028: Problems based on Voltage Regulation of Transformer →](Lecture_028_Problems_based_on_Voltage_Regulation_of_Transformer.md)

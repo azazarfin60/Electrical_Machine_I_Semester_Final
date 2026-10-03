@@ -258,10 +258,10 @@ Cu losses increase by about 23.5% when voltage drops to 90% of rated, for consta
 
 ---
 
-### [2023 Q5(a)]
-> 📋 **Appeared in:** 2023 Q5(a)
+### [Practice: Torque Expression Derivation]
+> **Practice problem (not from a past paper)**
 
-**(a) For a 3-phase induction motor, derive the torque expression and show that the torque-slip relationship is: $T = \frac{ksE_2^2 R_2}{R_2^2 + s^2X_2^2}$ where $k = \frac{3}{2\pi n_s}$. [08, CO2]**
+**(a) For a 3-phase induction motor, derive the torque expression and show that the torque-slip relationship is: $T = \frac{ksE_2^2 R_2}{R_2^2 + s^2X_2^2}$ where $k = \frac{3}{2\pi n_s}$.**
 
 **At running slip $s$, per-phase rotor quantities:**
 
@@ -272,9 +272,11 @@ Cu losses increase by about 23.5% when voltage drops to 90% of rated, for consta
 
 **Air-gap power (power transferred to rotor):**
 
-$$P_g = 3 E_{2s} I_2 \cos\phi_2 = 3 \cdot sE_2 \cdot \frac{sE_2}{\sqrt{R_2^2 + s^2X_2^2}} \cdot \frac{R_2}{\sqrt{R_2^2 + s^2X_2^2}}$$
+The power transferred across the air gap corresponds to the rotating field (standstill EMF $E_2$):
 
-$$P_g = \frac{3s^2E_2^2 R_2}{R_2^2 + s^2X_2^2}$$
+$$P_g = 3 E_2 I_2 \cos\phi_2 = 3 E_2 \cdot \frac{sE_2}{\sqrt{R_2^2 + s^2X_2^2}} \cdot \frac{R_2}{\sqrt{R_2^2 + s^2X_2^2}} = \frac{3sE_2^2 R_2}{R_2^2 + s^2X_2^2}$$
+
+*(Note: $3 E_{2s} I_2 \cos\phi_2 = 3(sE_2) I_2 \cos\phi_2 = s P_g = P_{r,Cu}$ is the rotor copper loss).*
 
 Alternatively, using the equivalent circuit representation $R_2/s$:
 
@@ -292,10 +294,10 @@ $$\boxed{T = \frac{ksE_2^2 R_2}{R_2^2 + s^2X_2^2}, \qquad k = \frac{3}{2\pi n_s}
 
 ---
 
-### [2023 Q5(b)]
-> 📋 **Appeared in:** 2023 Q5(b)
+### [Practice: 8-Pole Torque Ratio Numerical]
+> **Practice problem (not from a past paper)**
 
-**(b) 8-pole, 50 Hz, 3-phase IM. Full-load slip = 2.5%. $R_2 = 0.4\,\Omega$, $X_2 = 2.0\,\Omega$ (standstill). Find: slip and speed at maximum torque, ratio $T_{\max}/T_{FL}$. [04, CO2]**
+**(b) 8-pole, 50 Hz, 3-phase IM. Full-load slip = 2.5%. $R_2 = 0.4\,\Omega$, $X_2 = 2.0\,\Omega$ (standstill). Find: slip and speed at maximum torque, ratio $T_{\max}/T_{FL}$.**
 
 $$N_s = \frac{120 \times 50}{8} = 750 \text{ rpm}$$
 
@@ -313,10 +315,10 @@ $$\boxed{\frac{T_{\max}}{T_f} = \frac{1}{0.246} = 4.07}$$
 
 ---
 
-### [2024 Q6(a)]
-> 📋 **Appeared in:** 2024 Q6(a)
+### [2024 Q7(b)]
+> 📋 **Appeared in:** 2024 Q7(b)
 
-**(a) Derive the expression for maximum torque of a 3-phase IM and show it is independent of rotor resistance. [07, CO2]**
+**(b) Prove that $T_{\max} = \frac{3}{2\pi N_s} \frac{E_2^2}{2X_2}$ N-m. Variables having their usual meanings. [Marks: 04, CO: 1]**
 
 Torque equation:
 $$T = \frac{ksE_2^2 R_2}{R_2^2 + s^2 X_2^2}, \qquad k = \frac{3}{2\pi n_s}$$
@@ -336,23 +338,25 @@ Numerator: $s_{mT} E_2^2 R_2 = \frac{R_2}{X_2} E_2^2 R_2 = \frac{R_2^2 E_2^2}{X_
 
 Denominator: $R_2^2 + s_{mT}^2 X_2^2 = R_2^2 + \frac{R_2^2}{X_2^2} X_2^2 = 2R_2^2$
 
-$$T_{\max} = k \cdot \frac{R_2^2 E_2^2 / X_2}{2R_2^2} = \boxed{\frac{kE_2^2}{2X_2}}$$
+$$T_{\max} = k \cdot \frac{R_2^2 E_2^2 / X_2}{2R_2^2} = \frac{kE_2^2}{2X_2}$$
 
-$R_2$ cancels completely. $T_{\max}$ depends only on $E_2$ (supply voltage) and $X_2$ (standstill reactance).
+Now substitute $k = \frac{3}{2\pi n_s}$, with $n_s = N_s$ in rps:
+
+$$\boxed{T_{\max} = \frac{3}{2\pi N_s}\,\frac{E_2^2}{2X_2}\ \text{N-m}}$$
 
 **Conclusion:**
 - Rotor resistance determines where max torque occurs: $s_{mT} = R_2/X_2$.
-- Rotor resistance has no effect on the value of max torque: $T_{\max} = kE_2^2/(2X_2)$.
-- Adding rotor resistance in a wound-rotor motor shifts torque peak to higher slip without reducing it.
+- Rotor resistance has no effect on the value of max torque: $R_2$ cancels completely. $T_{\max}$ depends only on $E_2$ (supply voltage) and $X_2$ (standstill reactance).
+- Adding rotor resistance in a wound-rotor motor shifts the torque peak to higher slip without reducing it.
 
 *(Proved)*
 
 ---
 
-### [2024 Q6(b)]
-> 📋 **Appeared in:** 2024 Q6(b)
+### [Practice: 6-Pole Torque and Efficiency Numerical]
+> **Practice problem (not from a past paper)**
 
-**(b) 6-pole, 400V, 50 Hz, star-connected IM. $R_2' = 0.5\,\Omega$, $X_2' = 2.0\,\Omega$ (standstill, referred to stator). Full-load slip = 4%. Find: starting torque, full-load torque, max torque, efficiency if mechanical losses = 500 W. [05, CO2]**
+**(b) 6-pole, 400V, 50 Hz, star-connected IM. $R_2' = 0.5\,\Omega$, $X_2' = 2.0\,\Omega$ (standstill, referred to stator). Full-load slip = 4%. Find: starting torque, full-load torque, max torque, efficiency if mechanical losses = 500 W.**
 
 $$N_s = \frac{120 \times 50}{6} = 1000 \text{ rpm} = \frac{50}{3} \text{ rps}$$
 
@@ -387,10 +391,10 @@ $$\eta = \frac{P_{out}}{P_{input}} \times 100 \approx \frac{11483}{12483} \times
 
 ---
 
-### [2024 Q7(b)]
-> 📋 **Appeared in:** 2024 Q7(b)
+### [Effect of Rotor Resistance on the T-s Curve]
+> **Practice problem (not from a past paper)**
 
-**(b) Explain the effect of rotor resistance on the torque-speed characteristic curve. [03, CO3]**
+**Explain the effect of rotor resistance on the torque-speed characteristic curve.**
 
 From $s_{mT} = R_2/X_2$ and $T_{\max} = kE_2^2/(2X_2)$:
 
@@ -403,6 +407,153 @@ From $s_{mT} = R_2/X_2$ and $T_{\max} = kE_2^2/(2X_2)$:
 ![Family of torque-slip curves for varying rotor resistance showing constant Tmax shifting toward lower speeds](../Books/Theraja/Ch-34/diagrams/Ch-34_p22_fig21.jpg)
 
 **Practical use:** By selecting appropriate external resistance, the wound-rotor motor can develop maximum torque at any desired speed. This is used for step-speed control and smooth starting of heavy loads.
+
+---
+
+
+---
+
+### [2023 Q6(c)]
+> 📋 **Appeared in:** 2023 Q6(c)
+
+**(c) Determine the average torque of an induction motor if the rotor is assumed to be fully inductive. [CO3, Marks: 03]**
+
+**Torque relation.** For an induction motor,
+$$T \propto \Phi\, I_2 \cos\phi_2 \qquad \text{or} \qquad T = k\, \Phi\, I_2 \cos\phi_2$$
+
+where $\phi_2$ is the angle between the rotor emf and the rotor current, and
+$$\phi_2 = \tan^{-1}\frac{X_2}{R_2}$$
+
+**Fully inductive rotor means $R_2 = 0$, so $\phi_2 = 90°$.**
+
+**Point-by-point proof.** Let the stator flux density wave be sinusoidal in space:
+$$B(\theta) = B_m \sin\theta$$
+
+The rotor emf follows the flux density, and with a purely inductive rotor the current lags that emf by $90°$:
+$$i(\theta) = I_m \sin(\theta - 90°) = -I_m \cos\theta$$
+
+The force on a conductor is $F \propto B\, i\, l$, so the torque contribution at angle $\theta$ is
+$$t(\theta) \propto B_m I_m \sin\theta \cdot (-\cos\theta) = -\frac{B_m I_m}{2} \sin 2\theta$$
+
+Average over one pole pitch ($0$ to $\pi$):
+$$T_{av} \propto -\frac{B_m I_m}{2} \cdot \frac{1}{\pi}\int_0^{\pi} \sin 2\theta \; d\theta = -\frac{B_m I_m}{2\pi}\left[\frac{-\cos 2\theta}{2}\right]_0^{\pi} = 0$$
+
+**Same result from the torque formula:**
+$$T = k \Phi I_2 \cos 90° = 0$$
+
+$$\boxed{T_{av} = 0 \ \text{when the rotor is fully inductive } (\phi_2 = 90°)}$$
+
+![Torque curve when the rotor circuit is purely non-inductive, with phi2 equal to zero, showing torque always positive and unidirectional](../Books/Theraja/Ch-34/diagrams/Ch-34_p14_fig17.jpg)
+
+![Torque curve when the rotor is inductive, showing the reversed negative torque portion ab over part of the pole pitch, together with the standstill rotor impedance triangle](../Books/Theraja/Ch-34/diagrams/Ch-34_p15_fig18_19.jpg)
+
+**Physical reading of the figures.**
+
+| Case | $\phi_2$ | Torque over a pole pitch | Average torque |
+|:---|:---:|:---|:---|
+| Non-inductive | $0°$ | Always positive | Maximum |
+| Partly inductive | $0 < \phi_2 < 90°$ | Mostly positive, small reversed band $ab$ | Reduced |
+| Fully inductive | $90°$ | Forward half exactly cancels reverse half | **Zero** |
+
+So an induction motor must have resistance in the rotor circuit. A rotor with zero resistance would produce no net torque at all.
+
+> [!success] Exam takeaway
+> The rotor power factor, not just the rotor current, decides torque. This is why $\cos\phi_2$ appears in $T = k\Phi I_2 \cos\phi_2$ while a d.c. motor needs only $T \propto \Phi I_a$.
+
+---
+
+### [2024 Q6(a)]
+> 📋 **Appeared in:** 2024 Q6(a)
+
+**(a) Define starting and running torque of an induction motor (IM). [Marks: 02, CO: 1]**
+
+**Starting torque ($T_{st}$):** The torque developed by an induction motor at the instant of starting, when the rotor is stationary, so $s = 1$.
+$$T_{st} = \frac{k E_2^2 R_2}{R_2^2 + X_2^2}$$
+It depends on rotor resistance, so it can be raised in a wound-rotor motor by adding external resistance through the slip rings. It is usually $1.5$ to $2.5$ times the full-load torque.
+
+**Running torque ($T_r$):** The torque developed by the motor at any speed after it has started, that is at $0 < s < 1$. In the low-slip region
+$$T_r \approx \frac{k E_2^2}{R_2}\, s$$
+so running torque is very nearly proportional to slip. The motor settles where running torque equals load torque.
+
+**Contrast to state in the answer:** starting torque is fixed by $s = 1$ and depends strongly on $R_2$, while running torque varies continuously with slip and, at small slip, is inversely proportional to $R_2$ ($T_r \propto s/R_2$), whereas the breakdown torque $T_{\max}$ is independent of $R_2$.
+
+---
+
+### [2024 Q6(c)]
+> 📋 **Appeared in:** 2024 Q6(c)
+
+**(c) A 3-$\varphi$, slip-ring IM with star-connected rotor has an induced emf of 120 volts between slip-rings at standstill with normal voltage applied to the stator. The rotor winding has a resistance per phase of $0.3\ \Omega$ and stand-still leakage reactance per phase of $1.5\ \Omega$. Determine — [Marks: 04, CO: 2]**
+> **(i)** Rotor current/phase when running short circuited with 4% slip.
+> **(ii)** The slip and rotor current per phase when the rotor is developing maximum torque.
+
+**First, convert the slip-ring voltage to a phase voltage.** 120 V is measured **between** the rings, so it is a line voltage. The rotor is star connected, so
+$$E_{2,\text{ph at standstill}} = \frac{120}{\sqrt{3}} = 69.28\text{ V}$$
+
+At slip $s$ the rotor phase emf is $sE_2$ and the rotor phase reactance is $sX_2$.
+
+**(i) Rotor current per phase at $s = 0.04$**
+
+$$E_{2s} = 0.04 \times 69.28 = 2.771\text{ V}$$
+$$|Z_r| = \sqrt{R_2^2 + (sX_2)^2} = \sqrt{0.3^2 + (0.04 \times 1.5)^2} = \sqrt{0.09 + 0.0036} = 0.30594\ \Omega$$
+$$I_{2r} = \frac{2.771}{0.30594} = \boxed{9.06\text{ A per phase}}$$
+
+**(ii) Slip and rotor current per phase at maximum torque**
+
+Maximum torque occurs at
+$$s_{mT} = \frac{R_2}{X_2} = \frac{0.3}{1.5} = \boxed{0.2 \ (20\%)}$$
+
+At that slip:
+$$|Z_r| = \sqrt{R_2^2 + (s_{mT} X_2)^2} = \sqrt{0.09 + 0.09} = 0.42426\ \Omega$$
+$$E_{2s} = 0.2 \times 69.28 = 13.856\text{ V}$$
+$$I_{2r} = \frac{13.856}{0.42426} = \boxed{32.7\text{ A per phase}}$$
+
+> [!IMPORTANT] The trap in this question
+> 120 V is the voltage **between slip rings**, that is a line voltage. Using 120 V directly as the phase voltage gives the wrong rotor current by a factor of $\sqrt{3}$.
+
+---
+
+### [2024 Q7(c)]
+> 📋 **Appeared in:** 2024 Q7(c)
+
+**(c) A 50 Hz, 8 pole induction motor has F.L. slip of 4%. The rotor resistance/phase $= 0.01\ \Omega$ and stand still reactance/phase $= 0.1\ \Omega$. Find the ratio of maximum to full-load torque and the speed at which the maximum torque occurs. [Marks: 04, CO: 3]**
+
+**Step 1. Speeds.**
+$$N_s = \frac{120 \times 50}{8} = 750\text{ rpm}, \qquad N_{FL} = 750 \times (1 - 0.04) = 720\text{ rpm}$$
+
+**Step 2. Slip at maximum torque.**
+$$s_{max} = \frac{R_2}{X_2} = \frac{0.01}{0.1} = 0.1$$
+
+**Step 3. Torque ratio.** Using
+$$\frac{T}{T_{\max}} = \frac{2}{s/s_{max} + s_{max}/s}$$
+at $s = s_f = 0.04$:
+$$\frac{T_{FL}}{T_{\max}} = \frac{2}{0.04/0.1 + 0.1/0.04} = \frac{2}{0.4 + 2.5} = \frac{2}{2.9} = 0.6897$$
+
+$$\boxed{\frac{T_{\max}}{T_{FL}} = 1.45}$$
+
+**Step 4. Speed at maximum torque.**
+$$N = N_s (1 - s_{max}) = 750 (1 - 0.1) = \boxed{675\text{ rpm}}$$
+
+> [!NOTE] Interpretation to add
+> The full-load point sits well below the peak (only 0.69 of $T_{\max}$). Here $s_f = 0.04 < s_{max} = 0.1$, so the motor runs on the stable low-slip side of the peak. The maximum torque occurs at 675 rpm, below the 720 rpm full-load speed, so there is a healthy margin of torque available throughout acceleration.
+
+---
+
+### [2024 Q8(a)]
+> 📋 **Appeared in:** 2024 Q8(a)
+
+**(a) Draw the torque ~ slip of 3-$\varphi$ induction machine. [Marks: 02, CO: 1]**
+
+![Complete torque-speed characteristic of a three-phase induction machine covering the braking, motoring and generating regions](../Books/Theraja/Ch-34/diagrams/Ch-34_p34_fig32.jpg)
+
+From $T = \frac{ksE_2^2 R_2}{R_2^2 + s^2X_2^2}$:
+
+- At $s = 0$: $T = 0$ (synchronous speed, no relative motion).
+- For small $s$, $T \approx \frac{kE_2^2 s}{R_2} \propto s$: a straight, rising line.
+- At $s = s_{maxT} = R_2/X_2$: the peak, $T_{\max}$.
+- For $s > s_{maxT}$: $T \propto 1/s$, so the curve falls.
+- At $s = 1$: the starting torque $T_{st}$.
+
+Label on the sketch: $s = 0$, $s_f$, $s_{maxT}$, $s = 1$; $T_{st}$, $T_f$, $T_{max}$. Say that only the region $0 < s < s_{maxT}$ is stable.
 
 ---
 

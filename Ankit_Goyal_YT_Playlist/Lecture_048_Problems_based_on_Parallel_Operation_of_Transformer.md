@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 047: Parallel Operation of Transformers](Lecture_047_Parallel_Operation_of_Transformers.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 049: Excitation Phenomenon 1 →](Lecture_049_Excitation_Phenomenon_1.md)
+
+---
+
 # Problems based on Parallel Operation of Transformer | L 16 | Electrical Machines | GATE 2022
 
 - **Source**: https://www.youtube.com/watch?v=7f8Er86vHCM
@@ -727,3 +732,6 @@ Upcoming sessions will cover transformer harmonics, electromechanical energy con
 - Three-phase transformers can operate in parallel only if they belong to the same phasor group with matching phase displacement.
 - Load current is shared equally in magnitude between two parallel units with identical no-load EMFs when their total branch impedance magnitudes are equal: $|Z_A| = |Z_B + jX|$.
 
+---
+
+[← Lec 047: Parallel Operation of Transformers](Lecture_047_Parallel_Operation_of_Transformers.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 049: Excitation Phenomenon 1 →](Lecture_049_Excitation_Phenomenon_1.md)

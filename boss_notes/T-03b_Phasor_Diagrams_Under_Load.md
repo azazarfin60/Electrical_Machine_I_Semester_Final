@@ -105,7 +105,7 @@ From the tip of $-\vec{E}_1$: add $\vec{I}_1 R_1$ parallel to $\vec{I}_1$, then 
 ---
 
 ### 🎯 Q2: Draw the phasor diagram of an R-L loaded ideal transformer, stating each step.
-> **Appeared:** 2024 Q2(a) — 6 marks
+> **Appeared:** 2024 Q2(b) — 4 marks (phrasing: "Draw and explain the phasor diagram of a power transformer, when the transformer is loaded with R-L load")
 
 **Full Answer:**
 
@@ -119,7 +119,7 @@ For an ideal transformer: $R_1 = R_2 = 0$, $X_1 = X_2 = 0$, $I_0 = 0$.
 
 **Step 4:** The load is R-L (inductive). Secondary current $\vec{I}_2$ lags $\vec{V}_2$ by load angle $\phi_2$.
 
-**Step 5:** Since $I_0 = 0$ (ideal), the primary current $\vec{I}_1 = \vec{I}_2' = (N_2/N_1)\vec{I}_2$. The direction of $\vec{I}_1$ is such that $\vec{I}_1$ is in antiphase with $\vec{I}_2$ (to satisfy $N_1 I_1 = N_2 I_2$ with opposing MMFs).
+**Step 5:** Since $I_0 = 0$ (ideal), the primary current $\vec{I}_1 = \vec{I}_2' = (N_2/N_1)\vec{I}_2$. $\vec{I}_1$ is in phase with $\vec{I}_2$ (and with $\vec{I}_2'$), since $\vec{I}_2'$ is the component of primary current that balances the secondary MMF: $N_1 I_1 = N_2 I_2$.
 
 **Step 6:** The angle between $\vec{V}_1$ and $\vec{I}_1$ equals $\phi_2$. Primary power factor = load power factor. This is true only for ideal transformers.
 

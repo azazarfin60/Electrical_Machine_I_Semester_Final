@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 023: Problems Based on Testing of Transformer](Lecture_023_Problems_Based_on_Testing_of_Transformer.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 025: Losses and Efficiency Part 2 →](Lecture_025_Losses_and_Efficiency_Part_2.md)
+
+---
+
 # Electrical Machines | Lec 17 | Losses & Efficiency (Part 1) | GATE Electrical Engineering
 
 - **Source**: https://www.youtube.com/watch?v=qv9uu6GFCP4
@@ -519,3 +524,6 @@ For competitive examinations, keep these core formulas ready:
 - When supply voltage $V$ is held constant while frequency $f$ varies, peak flux density varies as $B_m \propto 1/f$, resulting in $P_h \propto f^{1-x}$ and constant eddy loss $P_e \propto V^2$.
 - Core losses can be separated experimentally at constant $V/f$ by plotting $P_i/f$ against frequency $f$, where the vertical intercept yields the hysteresis coefficient $A$ and the slope yields the eddy coefficient $B$ in $P_i/f = A + B f$.
 
+---
+
+[← Lec 023: Problems Based on Testing of Transformer](Lecture_023_Problems_Based_on_Testing_of_Transformer.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 025: Losses and Efficiency Part 2 →](Lecture_025_Losses_and_Efficiency_Part_2.md)

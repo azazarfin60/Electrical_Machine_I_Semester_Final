@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 037: Three Phase Transformer 1](Lecture_037_Three_Phase_Transformer_1.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 039: Three Phase Transformer 3 →](Lecture_039_Three_Phase_Transformer_3.md)
+
+---
+
 # Electrical Machines | Lec 26 | Three Phase Transformer - 2 | GATE/ESE Electrical Engineering Lecture
 
 - **Source**: https://www.youtube.com/watch?v=5n-ERhNlN38
@@ -487,3 +492,6 @@ These relationships guide winding selection in power networks:
 - For identical line voltage, a delta winding requires $\sqrt{3}$ times ($73.2\%$) more turns per phase than a star winding.
 - For identical line current, a delta conductor requires only $57.7\%$ ($1/\sqrt{3}$) of the cross-sectional area of a star conductor.
 
+---
+
+[← Lec 037: Three Phase Transformer 1](Lecture_037_Three_Phase_Transformer_1.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 039: Three Phase Transformer 3 →](Lecture_039_Three_Phase_Transformer_3.md)

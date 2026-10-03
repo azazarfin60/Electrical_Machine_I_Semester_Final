@@ -3,7 +3,7 @@
 ---
 
 # T-13: Slip, Synchronous Speed & Basics
-> **Section:** B | **Priority:** 🔴 MUST | **Exam Frequency:** 4/7 years
+> **Section:** B | **Priority:** 🟠 HIGH | **Exam Frequency:** 4/7 years
 > **Sources:** Theraja Ch-34 (Art. 34.9-34.15), VK Mehta Ch-8 (Art. 8.5-8.9), Slides L-03
 
 ## Why This Topic Matters
@@ -189,6 +189,52 @@ An IM is called a rotating transformer because power transfers from the stator t
 2. Poor power factor at light loads (draws high reactive current)
 3. Starting current is high (5-8 times rated)
 4. Speed drops with load (not constant-speed like synchronous motor)
+
+### 🎯 Q5: Define slip. Prove that an induction motor cannot run at synchronous speed.
+> **Appeared:** 2023 Q5(b) — 3 marks, 2024 Q5(b) — 3 marks
+
+**Full Answer:**
+
+**Slip.** The fractional difference between synchronous speed and rotor speed:
+$$s = \frac{N_s - N}{N_s}, \qquad N_s = \frac{120 f}{P}$$
+
+The difference $(N_s - N)$ is the slip speed: the speed at which the rotating field slips past the rotor.
+
+**Proof that $N = N_s$ is impossible.** Assume $N = N_s$, so $s = 0$:
+
+1. Relative speed between rotating field and rotor is $N_s - N = 0$.
+2. No flux cuts the rotor conductors, so the rotor emf vanishes: $E_{2r} = sE_2 = 0$.
+3. With zero emf the rotor current is zero: $I_{2r} = \frac{sE_2}{\sqrt{R_2^2 + (sX_2)^2}} = 0$.
+4. Torque needs rotor current: $T = k\Phi I_{2r}\cos\phi_2 = 0$.
+
+So at synchronous speed the motor develops **no torque at all**. But friction and windage always demand some torque. With zero torque the rotor must slow down. As soon as it slows, $s > 0$, emf and current reappear, and torque is produced again.
+
+$$\boxed{N < N_s \text{ always, so } s > 0. \text{ An induction motor is an asynchronous machine.}}$$
+
+One-line answer: zero slip means zero relative motion, zero induced emf, zero rotor current and therefore zero torque. The rotor cannot sustain synchronous speed.
+
+---
+
+### 🎯 Q6: A 12 pole, 3-φ alternator driven at 500 rpm supplies an 8-pole, 3-φ IM. If the full-load slip of the motor is 3%, find the full-load speed.
+> **Appeared:** 2024 Q5(c) — 4 marks
+
+**Full Answer:**
+
+**Step 1. Frequency from the alternator.** An alternator driven at 500 rpm with 12 poles generates
+$$f = \frac{P \times N}{120} = \frac{12 \times 500}{120} = \boxed{50\text{ Hz}}$$
+
+**Step 2. Synchronous speed of the 8-pole motor.**
+$$N_s = \frac{120 \times 50}{8} = \boxed{750\text{ rpm}}$$
+
+**Step 3. Full-load speed.**
+$$N_{FL} = N_s (1 - s) = 750 \times 0.97$$
+
+$$\boxed{N_{FL} = 727.5\text{ rpm}}$$
+
+> [!NOTE] What the question is really testing
+> The motor is fed from an alternator, so the frequency is not 50 Hz by assumption. Find it from the alternator's pole count and speed first. Assuming 50 Hz happens to give the right $N_s$ here, but on any other pole/speed pair the assumption breaks.
+
+---
 
 ---
 

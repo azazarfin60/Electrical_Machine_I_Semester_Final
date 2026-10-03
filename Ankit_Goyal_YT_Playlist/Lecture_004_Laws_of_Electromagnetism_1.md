@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 003: Electrical Materials 2](Lecture_003_Electrical_Materials_2.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 005: Laws of Electromagnetism 2 →](Lecture_005_Laws_of_Electromagnetism_2.md)
+
+---
+
 # Electrical Machines | Lec 4 | Laws of Electromagnetism-1 | GATE Electrical Engineering | CRACK GATE
 
 - **Source**: https://www.youtube.com/watch?v=ojBqv1t5Wvc
@@ -787,3 +792,6 @@ The subsequent lecture extends these laws to motional EMF and electromechanical 
 - Statically induced transformer EMF satisfies $e = N A \frac{dB}{dt}$, whereas dynamically induced rotational EMF satisfies $e = N B \frac{dA}{dt}$.
 - The standard induction equation assumes zero magnetic leakage, which requires tightly wound turns where equal flux links every turn.
 
+---
+
+[← Lec 003: Electrical Materials 2](Lecture_003_Electrical_Materials_2.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 005: Laws of Electromagnetism 2 →](Lecture_005_Laws_of_Electromagnetism_2.md)

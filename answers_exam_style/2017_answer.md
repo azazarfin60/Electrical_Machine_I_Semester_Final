@@ -203,23 +203,48 @@ $$\cos\phi_{sc} = \frac{W_{sc}}{\sqrt{3} \times 100 \times 45} = \frac{2730}{779
 
 $\phi_{sc} = \cos^{-1}(0.35) = 69.5°$
 
-**Step 3: Diameter of circle:**
+**Step 3: Equivalent circuit constants from the two tests**
 
-Total rotor copper loss = stator copper loss (given: equal at standstill). So rotor copper loss line bisects the short-circuit point.
+No-load branch at rated voltage. The motor is **Δ**, so $V_{ph} = V_L$ and $I_{ph} = I_L/\sqrt3$:
+$$I_{0,ph} = \frac{21}{\sqrt3} = 12.124\ \text{A},\quad I_c = I_{0,ph}\cos\phi_0 = 1.004\ \text{A},\quad I_m = \sqrt{I_{0,ph}^2 - I_c^2} = 12.083\ \text{A}$$
+$$R_c = \frac{3V_{ph}^2}{W_0} = \frac{3 \times 415^2}{1250} = 413.3\ \Omega,\qquad X_m = \frac{V_{ph}}{I_m} = \frac{415}{12.083} = 34.35\ \Omega$$
 
-**Step 4: Rated output:**
+Blocked-rotor branch. Again Δ, so at 100 V the per-phase current is $I_{ph} = 45/\sqrt3 = 25.98$ A:
+$$Z_{sc} = \frac{100}{25.98} = 3.849\ \Omega$$
+$$R_{sc} = \frac{W_{sc}}{3I_{ph}^2} = \frac{2730}{3 \times 25.98^2} = \frac{2730}{2025} = 1.348\ \Omega$$
+$$X_{sc} = \sqrt{3.849^2 - 1.348^2} = 3.605\ \Omega$$
 
-Rated output $= 29.84$ kW. Use circle diagram scale to read off line current and power factor at this output.
+*(Check: $3 \times 25.98^2 \times 1.348 = 2730$ W ✓)*
 
-$$P_{\text{output}} = \sqrt{3} \times 415 \times I_L \times \cos\phi \implies \text{read from diagram}$$
+Stator and rotor copper losses are **equal at standstill** (given), so $P_{cu1} = P_{cu2} = 1365$ W and the series impedance splits evenly:
+$$R_1 = R_2' = 0.674\ \Omega,\qquad X_1 = X_2' = 1.803\ \Omega$$
 
-**(i) Line current at rated output:** Read from circle diagram ≈ 58 A
+**Step 4: Locate the rated-load point**
 
-**(ii) Power factor at rated output:** ≈ 0.714 lagging
+Rated output is 29.84 kW. With $P_{ag} = \dfrac{3V_{ph}^2 (R_2'/s)}{(R_1 + R_2'/s)^2 + (X_1 + X_2')^2}$ and $P_{out} = P_{ag}(1-s)$, solving gives
+$$s_f = 0.0475,\qquad |I_2'| = \frac{415}{\sqrt{14.865^2 + 3.605^2}} = \frac{415}{15.296} = 27.12\ \text{A},\qquad \varphi_2 = \tan^{-1}\frac{3.605}{14.865} = 13.63^\circ$$
 
-**Maximum torque:**
-$$T_{\max} = \frac{3}{2\pi N_s} \times \frac{E_2^2}{2X_2}$$
-Read from circle diagram: the maximum torque line is the longest vertical intercept below the no-load line.
+$$\vec{I}_1 = \vec{I}_0 + \vec{I}_2' = (1.004 - j12.083) + 27.12\angle -13.63^\circ = (27.38 - j18.48)\ \text{A}$$
+
+**(i) Line current and power factor at rated output:**
+$$|I_{1,ph}| = 33.01\ \text{A} \implies \boxed{I_L = \sqrt3 \times 33.01 = 57.2\ \text{A}}$$
+$$\cos\varphi = \frac{27.38}{33.01} = \boxed{0.83\ \text{lagging}}$$
+
+*Power balance check:* $P_{in} = 3 \times 415 \times 27.38 = 34.06$ kW, and
+$P_{out} + P_{fe} + P_{cu1} + P_{cu2} = 29.84 + 1.25 + 1.49 + 1.49 = 34.07$ kW ✓
+so $\eta = 29840/34065 = 87.6\%$ — reasonable for a 40 hp machine, which confirms the operating point.
+
+**Step 5: Maximum torque**
+
+Slip at maximum torque:
+$$s_m = \frac{R_2'}{\sqrt{R_1^2 + (X_1 + X_2')^2}} = \frac{0.674}{\sqrt{0.454 + 13.00}} = \frac{0.674}{3.667} = 0.184$$
+
+$$P_{ag,max} = \frac{3V_{ph}^2 \sqrt{R_1^2 + X^2}}{(R_1 + \sqrt{R_1^2 + X^2})^2 + X^2} = \frac{516\,675 \times 3.667}{4.341^2 + 3.605^2} = \frac{1\,894\,647}{31.85} = 59.5\ \text{kW}$$
+
+Since torque is proportional to air-gap power at fixed frequency,
+$$\boxed{\frac{T_{max}}{T_{fl}} = \frac{P_{ag,max}}{P_{ag,fl}} = \frac{59.5}{31.33} = 1.9}$$
+
+> **The paper does not state the number of poles**, so $T_{max}$ cannot be reduced to a unique value in N·m — that needs $N_s = 120f/P$. What the data *does* fix is the ratio $T_{max} \approx 1.9\,T_{fl}$. For the usual 6-pole reading ($N_s = 1000$ rpm, $\omega_s = 104.7$ rad/s): $T_{fl} = 31\,327/104.7 = 299$ N·m and $T_{max} = 59\,501/104.7 = \mathbf{568}$ N·m.
 
 ---
 
@@ -360,21 +385,22 @@ $$X_{m2} = \frac{V_0}{I_m} = \frac{208}{84.52} = 2.46\,\Omega$$
 
 **SC Test (HV side = primary):**
 
-Turns ratio: $a = 2300/208 = 11.06$
+Turns ratio: $a = 2300/208 = 11.058 \implies a^2 = 122.27$
 
-$$R_{01} = \frac{W_{sc}}{I_{sc}^2} = \frac{8200}{217.4^2} = 0.173\,\Omega$$
+$$R_{01} = \frac{W_{sc}}{I_{sc}^2} = \frac{8200}{217.4^2} = 0.1735\,\Omega$$
 
-$$Z_{01} = \frac{V_{sc}}{I_{sc}} = \frac{95}{217.4} = 0.437\,\Omega$$
+$$Z_{01} = \frac{V_{sc}}{I_{sc}} = \frac{95}{217.4} = 0.4370\,\Omega$$
 
-$$X_{01} = \sqrt{Z_{01}^2 - R_{01}^2} = \sqrt{0.437^2 - 0.173^2} = \sqrt{0.191 - 0.030} = 0.401\,\Omega$$
+$$X_{01} = \sqrt{Z_{01}^2 - R_{01}^2} = \sqrt{0.4370^2 - 0.1735^2} = \sqrt{0.1910 - 0.0301} = 0.4011\,\Omega$$
 
-Referring to LV side (divide by $a^2 = 122.3$):
+Referring to LV side (divide by $a^2 = 122.27$):
 
-$$\boxed{R_{02} = \frac{R_{01}}{a^2} = \frac{0.173}{122.3} = 1.414 \times 10^{-3}\,\Omega}$$
+$$\boxed{R_{02} = \frac{R_{01}}{a^2} = \frac{0.1735}{122.27} = \mathbf{1.419 \times 10^{-3}\,\Omega}}$$
+*(or $1.414 \times 10^{-3}\,\Omega$ if rounded as $0.173 / 122.3$)*
 
-$$X_{02} = \frac{X_{01}}{a^2} = \frac{0.401}{122.3} = 3.28 \times 10^{-3}\,\Omega$$
+$$X_{02} = \frac{X_{01}}{a^2} = \frac{0.4011}{122.27} = 3.28 \times 10^{-3}\,\Omega$$
 
-$$Z_{02} = \frac{Z_{01}}{a^2} = \frac{0.437}{122.3} = 3.57 \times 10^{-3}\,\Omega$$
+$$Z_{02} = \frac{Z_{01}}{a^2} = \frac{0.4370}{122.27} = 3.57 \times 10^{-3}\,\Omega$$
 
 ---
 
@@ -416,13 +442,24 @@ $$\Phi_m \propto \frac{V}{f}$$
 
 At 50 Hz: $\Phi_{m,50} = \Phi_{m,60} \times \frac{60}{50} = 1.2 \times \Phi_{m,60}$
 
-The flux increases by 20%. This pushes the core deeper into saturation, increasing magnetizing current and core losses (hysteresis loss increases with $B_m^{1.6}$, eddy loss with $B_m^2$).
+The flux increases by 20%. This pushes the core deeper into saturation, so the magnetizing current rises sharply. The core losses behave differently at constant applied voltage:
 
-**Secondary voltage at 50 Hz:** $V_2 = 4.44 \times 50 \times N_2 \times \Phi_m = 480 \times \frac{50}{60} = 400$ V ≈ 415 V. So secondary voltage is close.
+$$P_h \propto f B_m^{1.6} \implies \frac{50 \times 1.2^{1.6}}{60 \times 1} = 1.11 \quad\Rightarrow\ \text{increases by } 11\%$$
+$$P_e \propto f^2 B_m^2 \implies \frac{50^2 \times 1.2^2}{60^2 \times 1} = 1.00 \quad\Rightarrow\ \text{unchanged (eddy loss is independent of } f \text{ at constant } V)$$
 
-**kVA rating:** The winding insulation and conductor current ratings are unchanged by frequency. So 18 kVA can still be carried thermally.
+So hysteresis loss worsens, while eddy-current loss stays exactly where it was — the extra heating comes from saturation current, not from the eddy term.
 
-**Conclusion:** The transformer **can** supply the 15 kVA load (well below 18 kVA rating) at roughly 415 V secondary. But core losses will be higher due to increased flux. Monitor temperature carefully. **Yes, it can supply 15 kVA safely, but core losses will be elevated.**
+**To hold the flux at its rated value at 50 Hz, the applied voltage must drop in the same ratio:**
+$$V_{1,50} = 20000 \times \frac{50}{60} = 16{,}667 \text{ V}, \qquad V_{2,50} = 480 \times \frac{50}{60} = 400 \text{ V}$$
+
+**But the load needs 415 V, not 400 V.** To put 415 V on the secondary the primary must be raised to
+$$V_1 = 415 \times \frac{20000}{480} = 17{,}292 \text{ V}$$
+which gives a flux $17\,292/50$ against the rated $20\,000/60$ — only **3.75 % over-flux**. That is a mild excursion (the core is not deeply saturated), so it is acceptable.
+
+**kVA available at 50 Hz:** the windings still carry their rated current, so capacity is limited by voltage:
+$$S = V_2 \times I_{2,\text{rated}} = 415 \times \frac{18\,000}{480} = 15.6\ \text{kVA}$$
+
+**Conclusion:** $\boxed{\text{Yes}}$ — the transformer can supply 15 kVA at 415 V, 50 Hz. Note that the exact-fit figure in the question comes from the textbook derating: $18 \times \frac{50}{60} = 15$ kVA is the capacity *at the fully derated 400 V*. At the 415 V the load actually wants, there is slightly more headroom (15.6 kVA) at the cost of 3.75 % over-flux.
 
 ---
 
@@ -462,41 +499,34 @@ Load referred to primary side:
 
 Wait: parameters are referred to LV side. Secondary current (HV side) = 10 A. Referred to LV (primary): $I_2' = 10 \times (N_2/N_1) = 10 \times 2 = 20$ A at pf $= 0.8$ lag.
 
-**Taking $V_2'$ as reference on primary side:**
+**Taking the applied primary voltage as reference:** $V_1 = 200$ V is the voltage given in the question, so $\vec{V}_1 = 200\angle 0°$ V.
 
-Secondary terminal voltage referred to primary: $V_2' = 200$ V (at rated voltage the secondary is 400V, referred to primary = 400 × 0.5 = 200V).
+$$\vec{I}_2' = 20\angle -36.87° = 20(0.8 - j0.6) = 16 - j12 \text{ A}$$
 
-Let $\vec{V}_2' = 200\angle 0°$ V, $\vec{I}_2' = 20\angle -36.87°$ A
+**(i) Primary current (including magnetizing branch):**
 
-**Approximate primary voltage (neglecting shunt branch for initial calc):**
-$$\vec{V}_1 = \vec{V}_2' + \vec{I}_2'(R_{eq} + jX_{eq})$$
-$$= 200\angle 0° + 20\angle -36.87° \times (0.15 + j0.37)$$
+$$I_c = \frac{V_1}{R_c} = \frac{200}{600} = 0.333 \text{ A (in phase with }V_1)$$
+$$I_m = \frac{V_1}{X_m} = \frac{200}{300} = 0.667 \text{ A (lagging }V_1\text{ by 90°)}$$
 
-$\vec{I}_2' = 20(0.8 - j0.6) = 16 - j12$
+No-load current: $\vec{I}_0 = I_c - jI_m = 0.333 - j0.667$
 
-$\vec{I}_2'(R_{eq} + jX_{eq}) = (16 - j12)(0.15 + j0.37)$
-$= 16(0.15) + 16(j0.37) + (-j12)(0.15) + (-j12)(j0.37)$
-$= 2.4 + j5.92 - j1.8 + 4.44$
-$= 6.84 + j4.12$
+$$\vec{I}_1 = \vec{I}_0 + \vec{I}_2' = (0.333 - j0.667) + (16 - j12) = 16.333 - j12.667$$
 
-$$\vec{V}_1 = (200 + 6.84) + j4.12 = 206.84 + j4.12$$
-$$|V_1| = \sqrt{206.84^2 + 4.12^2} \approx \boxed{206.88 \text{ V}}$$
+$$|I_1| = \sqrt{16.333^2 + 12.667^2} = \sqrt{266.8 + 160.5} = \sqrt{427.3} \approx \boxed{20.67 \text{ A}}$$
 
-**Primary current (including magnetizing branch):**
+Primary pf $= 16.333/20.67 = 0.79$ lag.
 
-$$I_c = \frac{V_1}{R_c} = \frac{206.88}{600} = 0.345 \text{ A (in phase with }V_1)$$
-$$I_m = \frac{V_1}{X_m} = \frac{206.88}{300} = 0.690 \text{ A (lagging }V_1\text{ by 90°)}$$
+**(ii) Secondary terminal voltage:**
 
-No-load current: $\vec{I}_0 = I_c - jI_m = 0.345 - j0.690$
+The series drop referred to the primary side, at $\cos\phi_2 = 0.8$ lag:
+$$\Delta V_1 = I_2'(R_{eq}\cos\phi_2 + X_{eq}\sin\phi_2) = 20(0.15 \times 0.8 + 0.37 \times 0.6) = 20(0.12 + 0.222) = 6.84 \text{ V}$$
 
-$$\vec{I}_1 = \vec{I}_0 + \vec{I}_2' = (0.345 - j0.690) + (16 - j12) = 16.345 - j12.69$$
+$$V_2' = V_1 - \Delta V_1 = 200 - 6.84 = 193.2 \text{ V}$$
 
-$$|I_1| = \sqrt{16.345^2 + 12.69^2} = \sqrt{267.2 + 161.1} = \sqrt{428.3} \approx \boxed{20.70 \text{ A}}$$
+Referred back to the secondary ($K = N_2/N_1 = 2$):
+$$V_2 = K V_2' = 2 \times 193.2 = \boxed{386.3 \text{ V}}$$
 
-**Secondary terminal voltage (actual):** Referred back to secondary side:
-$$V_{2,\text{actual}} = |V_2'| \times (N_2/N_1) = 200 \times 2 = 400 \text{ V}$$
-
-(In this simplified case, since we set $V_2' = 200$ V as reference, actual secondary $= 400$ V with the given load conditions.)
+Note the load terminal voltage sits below the 400 V no-load value. The 200 V is the applied primary voltage, not the on-load secondary referred value.
 
 ---
 

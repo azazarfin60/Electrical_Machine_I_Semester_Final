@@ -8,7 +8,7 @@
 
 ## Why This Topic Matters
 
-No-load operation is tested in 3/7 papers (2019, 2020, 2024). It appears as "explain no-load operation with phasor diagram" (3–6 marks) or as a numerical where you decompose $I_0$ into its components. Understanding no-load current is also the foundation for the OC test (T-06a) and the shunt branch of the equivalent circuit (T-04). A near-identical numerical (220V/110V, 0.5A, 30W) was repeated in 2020 and 2024.
+No-load operation is tested in 4/7 papers (2019, 2020, 2023, 2024). It appears as "explain no-load operation with phasor diagram" (3-6 marks) or as a numerical where you decompose $I_0$ into its components. Understanding no-load current is also the foundation for the OC test (T-06a) and the shunt branch of the equivalent circuit (T-04). The 2024 paper used the 220V/110V, 0.5 A, 30 W data again in Q3(c), but this time it also gave $R_1 = 0.6\ \Omega$ and asked for four things, so the iron loss came out as 29.85 W rather than 30 W.
 
 ---
 
@@ -94,7 +94,7 @@ $$I_1 = I_0 + \frac{N_2}{N_1} I_2 = I_0 + I_2'$$
 ## 🏆 Golden Questions (Past Exam Archive)
 
 ### 🎯 Q1: Explain the no-load operation of a 1-phase transformer with a neat phasor diagram.
-> **Appeared:** 2020 Q1(c) — 3 marks, 2024 Q1(b) — 6 marks
+> **Appeared:** 2020 Q1(c) — 3 marks
 
 **Full Answer:**
 
@@ -126,32 +126,93 @@ No-load power input: $W_0 = V_1 I_0 \cos\phi_0 = V_1 I_w = P_{\text{iron}}$ (cop
 
 ---
 
-### 🎯 Q2: No-load test data: 220V/110V, 0.5 A, 30 W. Find magnetizing and core-loss components.
-> **Appeared:** 2020 Q2(d), 2024 Q3(c) — identical data in both years
+### 🎯 Q2: When a power transformer is excited as shown in the figure, describe the induced voltage phenomena.
+> **Appeared:** 2024 Q1(b) — 4 marks
 
 **Full Answer:**
 
-Given: $V_1 = 220$ V, $V_2 = 110$ V, $I_0 = 0.5$ A, $W_0 = 30$ W.
+![Transformer Excitation and Induced Voltage Phenomena](../PrevYearQuestions/diagrams/2024_q1b_transformer.png)
+
+**Read the figure first.** A rectangular closed ferromagnetic core has two limbs. Coil1 ($N_1$ turns) sits on the left limb and is fed from a **DC source through a single-pole switch**. Coil2 ($N_2$ turns) sits on the right limb and drives a resistive load $R$. Both windings are linked by the mutual flux $\Phi_{mutual}$.
+
+**Because the source is DC, this is a switching transient, not steady-state AC.** That is why Faraday's and Lenz's laws in their raw differential form are the right tool here rather than the phasor emf equation.
+
+**The chain of events on closing the switch:**
+
+1. **Closing the switch** applies $v$ to coil1 and starts the primary current $i_1$ flowing into the upper winding terminal.
+2. **Flux builds up.** $i_1$ magnetises the core, so $\Phi_{mutual}$ rises from its residual value.
+3. **Self-induction in coil1.** The primary itself develops a counter-EMF opposing the applied voltage:
+   $$e_1 = -N_1 \frac{d\Phi}{dt}$$
+4. **Mutual induction in coil2.** The same $\Phi_{mutual}$ links all $N_2$ turns of coil2, so it too develops an EMF:
+   $$e_2 = -N_2 \frac{d\Phi}{dt}$$
+5. **Load current.** $e_2$ drives $i_2$ out of the upper terminal into the load $R$.
+6. **Secondary reaction flux opposes $d\Phi/dt$.** By Lenz's law the secondary current creates a flux that opposes the build-up of core flux. This is the same m.m.f. balance that later keeps the core flux constant in a working transformer.
+
+**Ratio to state at the end:** $E_2/E_1 = N_2/N_1$, and both induced EMFs lag the flux by $90°$.
+
+---
+
+### 🎯 Q3: No-load test data: 220V/110V, $I_0$ = 0.5 A, 30 W, primary resistance $R_1 = 0.6\ \Omega$. Find the turn ratio, magnetizing and working components, and the iron loss.
+> **Appeared:** 2020 Q2(d) — 3 marks; 2024 Q3(c) — 4 marks
+
+**Full Answer:**
+
+Given: $R_1 = 0.6\ \Omega$; $V_1 = 220$ V; $V_2 = 110$ V; $I_0 = 0.5$ A; $W_0 = 30$ W.
+
+**(i) Turn ratio**
+$$a = \frac{V_1}{V_2} = \frac{220}{110} = \boxed{2}$$
 
 **No-load power factor:**
-
 $$\cos\phi_0 = \frac{W_0}{V_1 I_0} = \frac{30}{220 \times 0.5} = \frac{30}{110} = 0.2727$$
-
 $$\phi_0 = \cos^{-1}(0.2727) = 74.17°$$
 
-**Core-loss (active) current:**
+**(ii) Magnetizing (reactive) component:**
+$$I_\mu = I_0 \sin\phi_0 = 0.5 \times \sin(74.17°) = 0.5 \times 0.9621 = \boxed{0.481\text{ A}}$$
 
-$$I_w = I_0 \cos\phi_0 = 0.5 \times 0.2727 = \boxed{0.136 \text{ A}}$$
+**(iii) Working (core-loss) component:**
+$$I_w = I_0 \cos\phi_0 = 0.5 \times 0.2727 = \boxed{0.1364\text{ A}}$$
 
-**Magnetizing (reactive) current:**
+**(iv) Iron loss.** The wattmeter reads power **input**, which is the iron loss plus the small primary copper loss. This is why the 2024 paper supplies $R_1$:
+$$P_{core} = W_0 - I_0^2 R_1 = 30 - (0.5^2 \times 0.6) = 30 - 0.15 = \boxed{29.85\text{ W}}$$
 
-$$I_\mu = I_0 \sin\phi_0 = 0.5 \times \sin(74.17°) = 0.5 \times 0.9621 = \boxed{0.481 \text{ A}}$$
+> [!NOTE] 30 W vs 29.85 W
+> If the question does not give $R_1$ (as in 2020 Q2(d)), the answer is simply 30 W. When $R_1$ is given, the intended answer is 29.85 W. State the correction and mention that 30 W is the usual approximation.
 
-**Iron loss:** $P_{Fe} = W_0 = 30$ W (copper loss at no-load is negligible since $I_0$ is very small)
-
-**Check:** $I_0 = \sqrt{0.136^2 + 0.481^2} = \sqrt{0.0185 + 0.2314} = \sqrt{0.2499} = 0.5$ A ✓
+**Check:** $I_0 = \sqrt{0.1364^2 + 0.481^2} = \sqrt{0.0186 + 0.2314} = 0.5$ A ✓
 
 Note that $I_\mu \gg I_w$. The no-load current is mostly magnetizing.
+
+---
+
+### 🎯 Q4: Magnetizing and iron-loss components of no-load current: (i) 2200/200 V, $I_0 = 0.6$ A, 400 W; (ii) 2200/250 V, 0.5 A at 0.3 pf on open circuit.
+> **Appeared:** 2024 Q1(c) — 4 marks
+
+**Full Answer:**
+
+$I_0 = \sqrt{I_w^2 + I_\mu^2}$, with $I_w = I_0\cos\phi_0$ and $I_\mu = I_0\sin\phi_0$.
+
+**(i) 2200/200 V, $I_0 = 0.6$ A, 400 W absorbed**
+$$\cos\phi_0 = \frac{400}{2200 \times 0.6} = 0.30303$$
+$$I_w = 0.6 \times 0.30303 = \boxed{0.182\text{ A}}, \qquad I_\mu = \sqrt{0.6^2 - 0.1818^2} = \boxed{0.572\text{ A}}$$
+
+**(ii) 2200/250 V, 0.5 A at 0.3 pf**
+$$I_w = 0.5 \times 0.3 = \boxed{0.15\text{ A}}, \qquad I_\mu = \sqrt{0.5^2 - 0.15^2} = \boxed{0.477\text{ A}}$$
+
+> [!NOTE] Label clearly which is which
+> The paper asks for magnetizing first in part (i) and "magnetizing and working" in part (ii). Both parts need the same pair, so state which value is $I_\mu$ and which is $I_w$ every time.
+
+---
+
+### 🎯 Q5: Justify: "The magnetizing current of power transformer is not fully sinusoidal."
+> **Appeared:** 2024 Q2(a) — 2 marks
+
+**Full Answer:**
+
+The core flux $\Phi_m$ is forced to be nearly sinusoidal because it is linked to a sinusoidal applied voltage through the emf equation $V_1 \approx 4.44 f N_1 \Phi_m$. But the magnetizing current $I_m$ is whatever current the core needs to sustain that flux.
+
+**A saturating core is a non-linear element.** Its flux-current relation $\Phi = f(I_m)$ is not linear, so the current that produces a sinusoidal flux must itself be **peaked and distorted**, with a third-harmonic component. The sharper the saturation knee, the more pronounced the peak.
+
+**Where the harmonic goes.** Three-phase core-type transformers are built so the third-harmonic magnetizing currents circulate in the delta of the three limbs, which suppresses third-harmonic voltages in the phase windings. Star-connected windings without a delta path cannot carry them, and the third-harmonic flux then appears as a third-harmonic voltage. That is the standard reason a power transformer uses a delta tertiary.
 
 ---
 
@@ -182,11 +243,13 @@ As $I_2$ increases (more load), $I_1$ increases proportionally. The increased pr
 
 | Year | Question | Data Given | Key Answer |
 |:---|:---|:---|:---|
-| 2020 Q2(d) | Find $I_\mu$, $I_w$ | 220V/110V, $I_0 = 0.5$ A, $W_0 = 30$ W | $I_w = 0.136$ A, $I_\mu = 0.481$ A |
-| 2024 Q3(c) | Same problem | Identical data | Same answers |
-| 2019 Q1(c) | Why does $I_1$ increase with load? | Conceptual | MMF balance argument |
 | 2020 Q1(c) | Explain no-load with sketch | Conceptual | Phasor diagram + components |
-| 2024 Q1(b) | No-load with phasor diagram | Conceptual, 6 marks | Full phasor construction |
+| 2020 Q2(d) | Find $I_\mu$, $I_w$ | 220V/110V, $I_0 = 0.5$ A, $W_0 = 30$ W | $I_w = 0.136$ A, $I_\mu = 0.481$ A |
+| 2024 Q1(b) | Induced voltage on switching the DC-excited figure | Conceptual, 4 marks | Faraday/Lenz transient chain |
+| 2024 Q1(c) | $I_m$, $I_w$ from watt data | 2200/200 V, 0.6 A, 400 W; and 2200/250 V, 0.5 A, 0.3 pf | 0.572/0.182 A and 0.477/0.15 A |
+| 2024 Q2(a) | Magnetizing current non-sinusoidal | Conceptual, 2 marks | Core saturation is non-linear |
+| 2024 Q3(c) | OC test, 4 quantities | 220V/110V, 0.5 A, 30 W, $R_1 = 0.6\,\Omega$ | $a = 2$, $I_m = 0.481$ A, $I_w = 0.1364$ A, $P_{core} = 29.85$ W |
+| 2019 Q1(c) | Why does $I_1$ increase with load? | Conceptual | MMF balance argument |
 
 ---
 

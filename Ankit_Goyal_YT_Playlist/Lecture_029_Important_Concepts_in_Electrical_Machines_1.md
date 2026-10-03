@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 028: Problems based on Voltage Regulation of Transformer](Lecture_028_Problems_based_on_Voltage_Regulation_of_Transformer.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 030: Important Concepts in Electrical Machines 2 →](Lecture_030_Important_Concepts_in_Electrical_Machines_2.md)
+
+---
+
 # Electrical Machines | Lec 20 | Important Concepts in Electrical Machines - 1| GATE Electrical Engg
 
 - **Source**: https://www.youtube.com/watch?v=qEpFybbOpvo
@@ -644,3 +649,6 @@ The table below summarizes how parameters scale with linear dimension factor $x$
 - Transformer apparent power rating scales as the fourth power of linear dimensions ($\text{kVA} \propto x^4$), while total losses scale as $x^3$.
 - Because losses scale as $x^3$ while heat dissipation area scales as $x^2$, temperature rise increases linearly with size ($\Delta \theta \propto x$).
 
+---
+
+[← Lec 028: Problems based on Voltage Regulation of Transformer](Lecture_028_Problems_based_on_Voltage_Regulation_of_Transformer.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 030: Important Concepts in Electrical Machines 2 →](Lecture_030_Important_Concepts_in_Electrical_Machines_2.md)

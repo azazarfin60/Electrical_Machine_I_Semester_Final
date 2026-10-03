@@ -1,3 +1,5 @@
+
+
 [← T-09: Vector Groups & Parallel](T-09_Vector_Groups_and_Parallel_Operation.md) | [🏠 Index](README.md) | [T-11: Misc Transformer Topics →](T-11_Miscellaneous_Transformer_Topics.md)
 
 ---
@@ -20,7 +22,7 @@
 |:---|:---|:---|
 | Windings | Two separate windings | Single winding with a tap |
 | Isolation | Primary and secondary are electrically isolated | No galvanic isolation |
-| Copper used | More | Less (saving = $1 - k$ fraction) |
+| Copper used | More | Less (copper used = $(1-k)$ of ordinary; saving = $k$ fraction) |
 | Efficiency | Slightly lower | Higher (part of power conducted directly) |
 | Size/Weight | Larger | Smaller and lighter |
 | Cost | Higher | Lower |
@@ -77,6 +79,38 @@ Or equivalently: copper in auto-transformer is $(1-k)$ fraction of ordinary tran
 4. **Railway traction:** 25kV/12.5kV boosters along the track.
 5. **Voltage stabilizers:** Automatic voltage regulators for small consumers.
 6. **Fluorescent lamp ballasts and dimmers:** Voltage adjustment.
+
+
+---
+
+### [2023 Q2(c)]
+> 📋 **Appeared in:** 2020 Q2(b), 2023 Q2(c) (Years: 2020, 2023)
+
+**(c) Prove that less copper is used in auto-transformer than in an ordinary transformer. [CO2, Marks: 03]**
+
+![Auto-transformer winding currents: the common section carries the difference of primary and secondary currents](../Books/Theraja/Ch-32/diagrams/Ch-32_p74_fig61.jpg)
+
+**Basis.** The weight of copper in a winding is proportional to (number of turns) $\times$ (current it carries), since turns fix the length and current fixes the cross-section:
+$$W \propto N I$$
+
+**Two-winding transformer.** It has two separate windings:
+$$W_o \propto N_1 I_1 + N_2 I_2$$
+
+**Auto-transformer (step-down, $N_1$ total turns, tapped at $N_2$).** It has one winding in two sections:
+- Series section $AB$: $(N_1 - N_2)$ turns carrying $I_1$
+- Common section $BC$: $N_2$ turns carrying $(I_2 - I_1)$
+
+$$W_a \propto (N_1 - N_2) I_1 + N_2 (I_2 - I_1)$$
+
+**Take the ratio.**
+$$\frac{W_a}{W_o} = \frac{(N_1 - N_2)I_1 + N_2(I_2 - I_1)}{N_1 I_1 + N_2 I_2} = \frac{N_1 I_1 + N_2 I_2 - 2 N_2 I_1}{N_1 I_1 + N_2 I_2}$$
+
+Now use the m.m.f. balance $N_1 I_1 = N_2 I_2$. The denominator becomes $2 N_1 I_1$ and the numerator becomes $2N_1 I_1 - 2 N_2 I_1$:
+$$\frac{W_a}{W_o} = \frac{2 I_1 (N_1 - N_2)}{2 N_1 I_1} = 1 - \frac{N_2}{N_1} = 1 - K$$
+
+$$\boxed{W_a = (1 - K)\,W_o \qquad \text{Saving of copper} = K \, W_o}$$
+
+Since $0 < K < 1$ always, $W_a < W_o$. So an auto-transformer always uses less copper. The saving grows as $K \to 1$. For $K = 0.9$ the saving is 90%.
 
 ---
 

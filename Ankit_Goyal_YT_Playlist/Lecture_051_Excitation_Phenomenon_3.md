@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 050: Excitation Phenomenon 2](Lecture_050_Excitation_Phenomenon_2.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 052: Switching Transients →](Lecture_052_Switching_Transients.md)
+
+---
+
 # Electrical Machines | Lec 35 | Excitation Phenomenon - 3 | GATE/ESE Electrical Engineering
 
 - **Source**: https://www.youtube.com/watch?v=gqVpwEHk3nA
@@ -987,3 +992,6 @@ This transient flux drives the iron core deep into saturation, drawing enormous 
 - Third-harmonic currents trapped within delta meshes cannot enter external lines ($I_{L3} = 0$), completely eliminating communication line noise.
 - Delta tertiary windings in three-winding transformers ($Y-Y-\Delta$) stabilize the neutral potential, improve station power factor, and allow single-phase phase-to-neutral loading.
 
+---
+
+[← Lec 050: Excitation Phenomenon 2](Lecture_050_Excitation_Phenomenon_2.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 052: Switching Transients →](Lecture_052_Switching_Transients.md)

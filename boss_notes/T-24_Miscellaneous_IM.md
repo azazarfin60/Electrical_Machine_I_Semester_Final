@@ -3,7 +3,7 @@
 ---
 
 # T-24: Miscellaneous IM Topics
-> **Section:** B | **Priority:** 🟡 MEDIUM | **Exam Frequency:** 4/7 years
+> **Section:** B | **Priority:** 🟠 HIGH | **Exam Frequency:** 4/7 years
 > **Sources:** Theraja Ch-34, VK Mehta Ch-8, Slides L-02
 
 ## Why This Topic Matters
@@ -140,7 +140,7 @@ The stator RMF rotates at $N_s$ instantly. The rotor, at rest, has inertia. The 
 ---
 
 ### 🎯 Q6: How to improve poor power factor of IM at light loads?
-> **Appeared:** 2023 Q6(b) — (3 marks)
+> **Practice problem (not from a past paper)**
 
 **Full Answer:**
 

@@ -13,7 +13,9 @@
 
 ### T-04: Development of the Transformer Equivalent Circuit
 
-*Appears in: 2020 Q1(b), 2020 Q3(c), 2024 Q4(c)*
+*Appears in: 2020 Q1(b), 2020 Q3(c), 2024 Q2(c)*
+>
+> Note: 2024 Q4(c) was the two T-connected transformers problem, which sits in [T-08](T-08_Scott_T-T_Connection.md).
 
 #### Why an equivalent circuit is needed
 A real transformer consists of two electrically isolated circuits coupled only by an alternating magnetic field. To calculate currents, voltages, power loss, and regulation using standard circuit analysis techniques (KVL, KCL, Thevenin theorem), we must convert the magnetically coupled physical device into a purely electrical, single-mesh or two-mesh circuit model.
@@ -154,26 +156,100 @@ $$\mathbf{V}_1 = \mathbf{V}_2' + \mathbf{I}_2'(R_{01} + jX_{01})$$
   $$I_2' = \frac{I_2}{a} = \frac{10}{0.5} = 20\text{ A}$$
   $$\vec{I}_2' = 20(0.8 - j0.6) = 16 - j12\text{ A}$$
 
-**Step 3: Calculate primary terminal voltage for rated secondary voltage.**
-Taking referred secondary voltage $\vec{V}_2' = 200\angle 0°\text{ V}$ as reference:
-$$\vec{V}_1 = \vec{V}_2' + \vec{I}_2'(R_{01} + jX_{01})$$
-$$\vec{I}_2'(R_{01} + jX_{01}) = (16 - j12)(0.15 + j0.37) = 2.4 + j5.92 - j1.8 + 4.44 = 6.84 + j4.12\text{ V}$$
-$$\vec{V}_1 = (200 + 6.84) + j4.12 = 206.84 + j4.12\text{ V}$$
-$$|V_1| = \sqrt{206.84^2 + 4.12^2} \approx 206.88\text{ V}$$
+**Step 3: Establish applied voltage reference.**
+The nameplate rating specifies that the primary winding is supplied at rated voltage:
+$$\vec{V}_1 = 200\angle 0°\text{ V}$$
 
-**Step 4: Calculate no-load excitation current.**
-The shunt branch is connected across $V_1$:
-$$I_c = \frac{V_1}{R_c} = \frac{206.88}{600} \approx 0.345\text{ A}$$
-$$I_m = \frac{V_1}{X_m} = \frac{206.88}{300} \approx 0.690\text{ A}$$
-$$\vec{I}_0 = 0.345 - j0.690\text{ A}$$
+**Step 4: Calculate no-load excitation current $\vec{I}_0$.**
+The shunt branch is connected across the primary supply $V_1$:
+$$I_c = \frac{V_1}{R_c} = \frac{200}{600} = 0.333\text{ A (in phase with }V_1)$$
+$$I_m = \frac{V_1}{X_m} = \frac{200}{300} = 0.667\text{ A (lagging }V_1\text{ by 90°)}$$
+$$\vec{I}_0 = I_c - jI_m = (0.333 - j0.667)\text{ A}$$
 
-**Step 5: Total primary current.**
-$$\vec{I}_1 = \vec{I}_0 + \vec{I}_2' = (0.345 - j0.690) + (16 - j12) = 16.345 - j12.69\text{ A}$$
-$$|I_1| = \sqrt{16.345^2 + (-12.69)^2} = \sqrt{267.16 + 161.04} = \sqrt{428.2} \approx \boxed{20.70\text{ A}}$$
+**Step 5: Total primary current $\vec{I}_1$.**
+$$\vec{I}_1 = \vec{I}_0 + \vec{I}_2' = (0.333 - j0.667) + (16 - j12) = (16.333 - j12.667)\text{ A}$$
+$$|I_1| = \sqrt{16.333^2 + (-12.667)^2} = \sqrt{266.77 + 160.45} = \sqrt{427.22} \approx \boxed{20.67\text{ A}}$$
+$$\cos\phi_1 = \frac{16.333}{20.67} = 0.79\text{ lag}$$
 
 **Step 6: Secondary terminal voltage.**
-Referred back to secondary side:
-$$V_2 = \frac{V_2'}{a} = \frac{200}{0.5} = \boxed{400\text{ V}}$$
+The internal series impedance drop referred to the primary side at $\cos\phi_2 = 0.8\text{ lag}$ is:
+$$\Delta V_1 = I_2'(R_{eq}\cos\phi_2 + X_{eq}\sin\phi_2) = 20(0.15 \times 0.8 + 0.37 \times 0.6) = 20(0.12 + 0.222) = 6.84\text{ V}$$
+
+The referred secondary terminal voltage on load is:
+$$V_2' = V_1 - \Delta V_1 = 200 - 6.84 = 193.16\text{ V}$$
+
+Referred back to the secondary (HV) side ($K = 1/a = 2$):
+$$V_2 = \frac{V_2'}{a} = 2 \times 193.16 = \boxed{386.3\text{ V}}$$
+
+> [!WARNING] The Classic Exam Trap
+> The loaded secondary terminal voltage reads **386.3 V**, which is 13.7 V below the no-load rating (400 V). Writing $V_2 = 400\text{ V}$ is a classic exam slip that mistakenly assumes the *load* receives 400 V (which would require boosting the input supply $V_1$ to 206.9 V). The problem specifies the supply voltage as 200 V.
+
+---
+
+### [2024 Q2(c)]: Determination of Equivalent Circuit Parameters from O.C. and S.C. Tests
+
+> 📋 **Appeared in:** 2024 Q2(c)
+
+**Problem:** A 50 KVA, 2200/110 V transformer when tested gave the following results:
+- **O.C. test (L. V. side):** 400W, 10A, 110V
+- **S. C. test (H. V. side):** 808W, 20.5A, 90V
+
+Compute all the parameters of the equivalent circuit referred to the H. V. side and draw the resultant circuit.
+
+#### Step-by-Step Solution
+
+**Given:**
+- Rating: $S = 50\text{ kVA} = 50,000\text{ VA}$
+- High-voltage (HV) rated: $V_1 = 2200\text{ V}$
+- Low-voltage (LV) rated: $V_2 = 110\text{ V}$
+- Transformation ratio:
+  $$a = \frac{V_1}{V_2} = \frac{2200}{110} = \mathbf{20}, \qquad a^2 = \mathbf{400}$$
+- Rated currents:
+  $$I_{1,\text{rated}} = \frac{50,000}{2200} = \mathbf{22.727\text{ A}}, \qquad I_{2,\text{rated}} = \frac{50,000}{110} = \mathbf{454.55\text{ A}}$$
+
+#### 1. Excitation (Shunt) Branch Parameters from O.C. Test (LV side)
+The O.C. test is carried out on the LV side at rated voltage: $V_0 = 110\text{ V}$, $I_0 = 10\text{ A}$, $W_0 = 400\text{ W}$.
+
+- No-load power factor:
+  $$\cos\phi_0 = \frac{W_0}{V_0 I_0} = \frac{400}{110 \times 10} = 0.36364$$
+- Working (core-loss) component:
+  $$I_w = I_0 \cos\phi_0 = \frac{W_0}{V_0} = \frac{400}{110} = \mathbf{3.6364\text{ A}}$$
+- Magnetizing component:
+  $$I_m = \sqrt{I_0^2 - I_w^2} = \sqrt{10^2 - 3.6364^2} = \sqrt{86.777} = \mathbf{9.3154\text{ A}}$$
+- Shunt branch parameters on the LV side:
+  $$R_0(\text{LV}) = \frac{V_0}{I_w} = \frac{110}{3.6364} = \mathbf{30.25\ \Omega} \quad\left(= \frac{V_0^2}{W_0} = \frac{110^2}{400}\right)$$
+  $$X_0(\text{LV}) = \frac{V_0}{I_m} = \frac{110}{9.3154} = \mathbf{11.808\ \Omega}$$
+
+- **Referred to the HV side ($\times a^2 = 400$):**
+  $$R_0(\text{HV}) = R_0(\text{LV}) \times a^2 = 30.25 \times 400 = \mathbf{12,100\ \Omega}$$
+  $$X_0(\text{HV}) = X_0(\text{LV}) \times a^2 = 11.808 \times 400 = \mathbf{4,723\ \Omega}$$
+
+#### 2. Series Branch Parameters from S.C. Test (HV side)
+The S.C. test is performed with meters on the HV side: $V_{sc} = 90\text{ V}$, $I_{sc} = 20.5\text{ A}$, $W_{sc} = 808\text{ W}$.
+
+- Equivalent impedance referred to HV side:
+  $$Z_{eq} = Z_{01} = \frac{V_{sc}}{I_{sc}} = \frac{90}{20.5} = \mathbf{4.3902\ \Omega}$$
+- Equivalent resistance referred to HV side:
+  $$R_{eq} = R_{01} = \frac{W_{sc}}{I_{sc}^2} = \frac{808}{20.5^2} = \frac{808}{420.25} = \mathbf{1.9227\ \Omega}$$
+- Equivalent leakage reactance referred to HV side:
+  $$X_{eq} = X_{01} = \sqrt{Z_{eq}^2 - R_{eq}^2} = \sqrt{4.3902^2 - 1.9227^2} = \sqrt{15.577} = \mathbf{3.9468\ \Omega}$$
+
+#### 3. Full-Load Copper Loss Scaling (Important Trap)
+The S.C. test was conducted at $I_{sc} = 20.5\text{ A}$, which is less than the rated HV current of $22.727\text{ A}$. Since copper loss varies as $I^2$:
+$$P_{Cu,FL} = W_{sc} \times \left(\frac{I_{1,\text{rated}}}{I_{sc}}\right)^2 = 808 \times \left(\frac{22.727}{20.5}\right)^2 = 808 \times 1.2287 = \mathbf{993\text{ W}}$$
+$$P_{\text{total},FL} = P_{Fe} + P_{Cu,FL} = 400\text{ W} + 993\text{ W} = \mathbf{1393\text{ W}}$$
+
+#### Summary of Equivalent Circuit Parameters (HV Side)
+
+| Branch | Parameter | Value |
+|:---|:---:|:---:|
+| **Core loss shunt resistance** | $R_0$ | $\mathbf{12,100\ \Omega}$ |
+| **Magnetizing shunt reactance** | $X_0$ | $\mathbf{4,723\ \Omega}$ |
+| **Equivalent series resistance** | $R_{eq} = R_{01}$ | $\mathbf{1.923\ \Omega}$ |
+| **Equivalent series reactance** | $X_{eq} = X_{01}$ | $\mathbf{3.947\ \Omega}$ |
+| **Equivalent series impedance** | $Z_{eq} = Z_{01}$ | $\mathbf{4.390\ \Omega}$ |
+
+![Approximate equivalent circuit referred to primary](../Books/Theraja/Ch-32/diagrams/Ch-32_p15_fig18.jpg)
 
 ---
 

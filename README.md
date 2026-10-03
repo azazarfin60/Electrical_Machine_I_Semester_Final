@@ -30,7 +30,7 @@ These appeared in **5+ out of 7 papers**. Expect them on your exam:
 | Topic | Appearances | Section |
 |:------|:-----------:|:-------:|
 | **OC & SC Test** → parameters, efficiency, regulation | **7/7** | A |
-| **Open-Δ** → prove 57.7% capacity | 6/7 | A |
+| **Open-Δ** → prove 57.7% capacity | 7/7 | A |
 | **Voltage Regulation** derivation (lag / lead / unity) | 5/7 | A |
 | **Rotating Magnetic Field** proof ($\Phi_R = 1.5\Phi_m$) | 5/7 | B |
 | **DFRT** (Double Field Revolving Theory) for 1-φ IM | 5/7 | B |
@@ -59,10 +59,13 @@ The examiner recycles data. These **identical** problems appeared across papers:
 
 | Tier | What | Count |
 |:-----|:-----|:-----:|
-| 🔴 **MUST** | OC/SC, Open-Δ, DFRT, 1-φ starting, RMF, Slip | 6 |
-| 🟠 **HIGH** | EMF equation, VR, T-s curve, Tmax, eq. circuit, phasor, circle diagram, efficiency | 8 |
-| 🟡 **MEDIUM** | Scott, parallel operation, Y-Δ starter, IG, all-day η, auto-transformer, plugging, speed control | 9 |
-| 🟢 **BONUS** | Vector groups, 1-φ IM eq. circuit, crawling/cogging, R₂/X₂ effect | 6 |
+| 🔵 **FOUNDATION** | Core fundamentals — materials, EM laws, magnetic circuits, per-unit | 1 |
+| 🔴 **MUST** | OC test, SC test, Open-Δ, RMF, VR, DFRT, 1-φ starting methods | 7 |
+| 🟠 **HIGH** | EMF equation, no-load operation, phasor under load, eq. circuit, efficiency, slip, IM eq. circuit, starting torque, running torque, T-s curves, no-load test, blocked rotor, circle diagram, braking, misc. IM | 15 |
+| 🟡 **MEDIUM** | 3-φ connections, Scott/T, vector groups & parallel, auto-transformer, power flow, starting methods (3-φ), induction generator | 7 |
+| 🟢 **BONUS** | Construction & core, misc. transformer | 2 |
+
+> Counts are generated from [`boss_notes/00_Index.md`](boss_notes/00_Index.md) and sum to 32 topics.
 
 ---
 
@@ -96,7 +99,7 @@ The examiner recycles data. These **identical** problems appeared across papers:
 | [`Books/`](Books/README.md) | Digitized textbooks — Theraja (Ch-32, 34, 35), Chapman (Ch-1, 2, 4, 7, 10), V.K. Mehta (Ch-7, 8, 9). Each has a topic index. | 20+ files |
 | [`SlidesByMaam/`](SlidesByMaam/map.md) | Faculty lecture slides (L-01 to L-11) + [`map.md`](SlidesByMaam/map.md) with slide-by-slide breakdown | 11 lectures |
 | [`ClassNoteByRaidah/`](ClassNoteByRaidah/00_Index_and_Topic_Map.md) | Digitized handwritten class notes showing teacher emphasis + [`00_Index_and_Topic_Map.md`](ClassNoteByRaidah/00_Index_and_Topic_Map.md) | 18 classes |
-| [`Ankit_Goyal_YT_Playlist/`](Ankit_Goyal_YT_Playlist/yt_guide.md) | 85 YouTube lectures (GATE-style) with keyframes + [`yt_guide.md`](Ankit_Goyal_YT_Playlist/yt_guide.md) for topic lookup | 85 lectures |
+| [`Ankit_Goyal_YT_Playlist/`](Ankit_Goyal_YT_Playlist/00_yt_study_guide.md) | 85 YouTube lectures (GATE-style) with keyframes + [`00_yt_study_guide.md`](Ankit_Goyal_YT_Playlist/00_yt_study_guide.md) for topic lookup | 85 lectures |
 
 ### 📝 Exam Papers & Answers
 
@@ -117,7 +120,7 @@ The examiner recycles data. These **identical** problems appeared across papers:
 | What the teacher emphasized | `SlidesByMaam/map.md` or `ClassNoteByRaidah/00_Index_and_Topic_Map.md` |
 | Practice a specific past paper | `PrevYearQuestions/YYYY.md` → then `answers_exam_style/YYYY_answer.md` |
 | All past questions on OC/SC test | `topicwise_answers_exam_style/T-06_OC-SC_Tests_Efficiency_and_Losses.md` |
-| Intuitive explanation + worked problems | `Ankit_Goyal_YT_Playlist/yt_guide.md` → find the lecture |
+| Intuitive explanation + worked problems | `Ankit_Goyal_YT_Playlist/00_yt_study_guide.md` → find the lecture |
 | Exam pattern and predictions | `ECE_2207_Question_Analysis.md` → Sections 10–12 |
 | Topic priority before studying | `Topic_Subtopic_Master_List.md` → look at the 🔴/🟠/🟡/🟢 tags |
 | Class test questions & solutions | `CT_Questions/` → CT_01 through CT_04 |

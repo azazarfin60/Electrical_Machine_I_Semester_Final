@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 043: Three Phase Transformer 5](Lecture_043_Three_Phase_Transformer_5.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 045: Three Phase Transformer 7 →](Lecture_045_Three_Phase_Transformer_7.md)
+
+---
+
 # Electrical Machines | Lec 30 | Three Phase Transformer - 6 | GATE/ESE Electrical Engineering Lecture
 
 - **Source**: https://www.youtube.com/watch?v=3V5Xq4NJVGs
@@ -599,3 +604,6 @@ The next lecture covers the Scott connection for three-phase to two-phase transf
 - The line voltage ratio for star-zigzag star is $\frac{V_{LP}}{V_{LS}} = \frac{2}{\sqrt{3}}\left(\frac{N_P}{N_S}\right) \approx 1.155\left(\frac{N_P}{N_S}\right)$.
 - To produce the same secondary output voltage as standard connections, a zigzag secondary requires $15.5\%$ more copper turns.
 
+---
+
+[← Lec 043: Three Phase Transformer 5](Lecture_043_Three_Phase_Transformer_5.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 045: Three Phase Transformer 7 →](Lecture_045_Three_Phase_Transformer_7.md)

@@ -133,7 +133,7 @@ The complete curve covers three regions:
 ---
 
 ### 🎯 Q3: Explain the effect of rotor resistance on the torque-speed characteristic curve.
-> **Appeared:** 2024 Q7(b) — (3 marks)
+> **Practice problem (not from a past paper)**
 
 **Full Answer:**
 
@@ -150,7 +150,7 @@ By selecting appropriate external resistance, the wound-rotor motor can develop 
 ---
 
 ### 🎯 Q4: Derive the torque expression $T = ksE_2^2R_2/(R_2^2 + s^2X_2^2)$.
-> **Appeared:** 2023 Q5(a) — (8 marks)
+> **Practice problem (not from a past paper)**
 
 **Full Answer:**
 
@@ -196,7 +196,7 @@ This is why VFDs change $V$ and $f$ together (constant V/f ratio) to maintain co
 ---
 
 ### 🎯 Q6: 6-pole, 400V, 50 Hz, star. $R_2' = 0.5\,\Omega$, $X_2' = 2.0\,\Omega$. $s_f = 4\%$. Find $T_{st}$, $T_f$, $T_{\max}$, efficiency (mech losses = 500 W).
-> **Appeared:** 2024 Q6(b) — (5 marks)
+> **Practice problem (not from a past paper)**
 
 **Full Answer:**
 
@@ -221,6 +221,25 @@ $P_{out} = 11983 - 500 = 11483$ W
 
 $$\eta \approx \frac{11483}{12483} \times 100 = \boxed{92.0\%}$$
 
+### 🎯 Q7: Draw the torque ~ slip of a 3-φ induction machine.
+> **Appeared:** 2024 Q8(a) — 2 marks
+
+**Full Answer:**
+
+![Complete torque-speed characteristic of a three-phase induction machine covering the braking, motoring and generating regions](../Books/Theraja/Ch-34/diagrams/Ch-34_p34_fig32.jpg)
+
+From $T = \frac{ksE_2^2 R_2}{R_2^2 + s^2X_2^2}$:
+
+- At $s = 0$: $T = 0$ (synchronous speed, no relative motion).
+- For small $s$, $T \approx \frac{kE_2^2 s}{R_2} \propto s$: a straight, rising line.
+- At $s = s_{maxT} = R_2/X_2$: the peak, $T_{\max}$.
+- For $s > s_{maxT}$: $T \propto 1/s$, so the curve falls.
+- At $s = 1$: the starting torque $T_{st}$.
+
+Label on the sketch: $s = 0$, $s_f$, $s_{maxT}$, $s = 1$; and $T_{st}$, $T_f$, $T_{\max}$. State that only the region $0 < s < s_{maxT}$ is stable. That is the whole 2-mark answer.
+
+---
+
 ---
 
 ## Exam Variants
@@ -230,9 +249,9 @@ $$\eta \approx \frac{11483}{12483} \times 100 = \boxed{92.0\%}$$
 | 2020 Q8(b) | Derive and explain T-s characteristics | Theory |
 | 2021 Q3(c) | Draw complete T-speed curve (all 3 regions) | Drawing |
 | 2021 Q6(a) | Effect of frequency change on torque/speed | Conceptual |
-| 2023 Q5(a) | Derive torque expression (8 marks) | Full derivation |
-| 2024 Q6(b) | 6-pole numerical with efficiency | Numerical |
-| 2024 Q7(b) | Effect of $R_2$ on T-speed curve | Theory |
+| Practice (no past paper) | Torque expression derivation | Full derivation |
+| Practice (no past paper) | 6-pole numerical with efficiency | Numerical |
+| 2024 Q8(a) | Draw the torque ~ slip curve | Drawing |
 
 ---
 

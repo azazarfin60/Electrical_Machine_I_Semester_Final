@@ -26,7 +26,7 @@ At 50 Hz: $\Phi_{m,50} = \Phi_{m,60} \times \frac{60}{50} = 1.2 \times \Phi_{m,6
 
 The flux increases by 20%. This pushes the core deeper into saturation, increasing magnetizing current and core losses (hysteresis loss increases with $B_m^{1.6}$, eddy loss with $B_m^2$).
 
-**Secondary voltage at 50 Hz:** $V_2 = 4.44 \times 50 \times N_2 \times \Phi_m = 480 \times \frac{50}{60} = 400$ V ≈ 415 V. So secondary voltage is close.
+**Secondary voltage at 50 Hz:** $V_2$ remains 480 V; to keep rated flux at 50 Hz the primary must be derated to $20000 \times 50/60 = 16.7$ kV, which gives $V_2 = 400$ V.
 
 **kVA rating:** The winding insulation and conductor current ratings are unchanged by frequency. So 18 kVA can still be carried thermally.
 
@@ -121,6 +121,21 @@ Transformer losses are:
 2. **Copper loss:** Depends on current squared ($I^2R$). Depends on load current, not on load power factor.
 
 The total loss, and hence temperature rise and efficiency, depend on voltage and current: not on the power factor of the load. Since different loads connected to the same transformer have different power factors, the transformer can handle a given $V \times I$ product regardless of whether the load is resistive, inductive, or capacitive. So its rating is expressed in volt-amperes (VA or kVA), not in watts (kW).
+
+
+---
+
+### [2024 Q1(a)]
+> 📋 **Appeared in:** 2024 Q1(a)
+
+**(a) Enlist some practical applications of transformer. [Marks: 02, CO: 1]**
+
+1. **Step-up in generating stations:** raise generator voltage to a high value for economical transmission (lower $I^2R$ loss).
+2. **Step-down in receiving substations:** reduce the transmission voltage to distribution levels for consumer use.
+3. **Interconnecting two systems of different voltages** (e.g. 400 kV with 345 kV) using auto-transformers.
+4. **Voltage matching for instruments:** potential transformer for voltmeters, current transformer for ammeters and relays. They also give electrical isolation.
+5. **Furnace and welding supplies:** arc-furnace and spot-welding transformers give the large low-voltage, high-current supply needed.
+6. **Frequency/voltage control:** variacs in laboratories, and stabilizers for sensitive equipment.
 
 ---
 

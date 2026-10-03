@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 158: Miscellaneous Concepts](Lecture_158_Miscellaneous_Concepts.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 160: Single Phase Induction Motor 1 →](Lecture_160_Single_Phase_Induction_Motor_1.md)
+
+---
+
 # High Torque Cage Rotor and Induction Generator | L 47 | Electrical Machines | GATE 2022
 
 - **Source**: https://www.youtube.com/watch?v=9wT1vMX7Md8
@@ -628,3 +633,6 @@ Mastery of electrical machines for competitive examinations requires structured 
 - Increasing rotor slot depth increases leakage reactance, which reduces maximum pull-out torque and degrades the operating power factor.
 - A standalone self-excited induction generator requires residual rotor magnetism and terminal shunt capacitors to initiate and sustain voltage build-up.
 
+---
+
+[← Lec 158: Miscellaneous Concepts](Lecture_158_Miscellaneous_Concepts.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 160: Single Phase Induction Motor 1 →](Lecture_160_Single_Phase_Induction_Motor_1.md)

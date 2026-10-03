@@ -46,6 +46,12 @@ $$P_i = x^2 P_{Cu} \implies x = \sqrt{\frac{P_i}{P_{Cu}}}$$
 
 - [T-06c: Efficiency](T-06c_Efficiency.md)
 
+### All-Day (Energy) Efficiency
+
+$$\eta_{\text{all-day}} = \frac{\text{Total kWh output}}{\text{Total kWh output} + P_{Fe}\text{ (kW)} \times 24 + \sum \left(x_i^2 P_{Cu,FL}\text{ (kW)} \times t_i\right)} \times 100\%$$
+
+- [T-06c: Efficiency](T-06c_Efficiency.md)
+
 ### OC Test (Gives $R_c$, $X_m$, $P_i$)
 
 $$\cos\phi_0 = \frac{P_0}{V_1 I_0}, \quad I_c = I_0\cos\phi_0, \quad I_m = I_0\sin\phi_0$$
@@ -64,34 +70,34 @@ $$S_A = S \cdot \frac{Z_B}{Z_A + Z_B}, \qquad S_B = S \cdot \frac{Z_A}{Z_A + Z_B
 
 - [T-09: Vector Groups & Parallel Operation](T-09_Vector_Groups.md)
 
-### Auto-Transformer Savings
+### Auto-Transformer Formulas
 
-$$\text{Saving} = \left(1 - \frac{1}{a}\right) \times 100\%$$
+$$\text{Copper Saving} = K \times 100\% = \frac{1}{a} \times 100\% \quad \left(\text{where } K = \frac{V_{\text{low}}}{V_{\text{high}}} < 1, \; a = \frac{V_{\text{high}}}{V_{\text{low}}} > 1\right)$$
 
-$$\text{VA}_{\text{induction}} = \left(1 - \frac{1}{a}\right) \times \text{VA}_{\text{conduction}}$$
+$$\text{VA}_{\text{conduction}} = K \times \text{VA}_{\text{total}}, \qquad \text{VA}_{\text{induction}} = (1 - K) \times \text{VA}_{\text{total}}$$
 
 - [T-10: Auto-Transformer](T-10_Auto_Transformer.md)
 
 ### 3-Phase Transformer Connections
 
-| Connection | $V_2$ (ratio) | Phase Shift |
+| Connection | $V_2$ (Line Ratio) | Phase Shift |
 |:---|:---|:---|
-| Y-Y | $V_L/a$ | 0° |
-| $\Delta$-$\Delta$ | $V_L/a$ | 0° |
-| Y-$\Delta$ | $V_L/(a\sqrt{3})$ | -30° |
-| $\Delta$-Y | $V_L\sqrt{3}/a$ | +30° |
+| Y-Y | $V_L/a$ | 0° (or 180°) |
+| $\Delta$-$\Delta$ | $V_L/a$ | 0° (or 180°) |
+| Y-$\Delta$ | $V_L/(a\sqrt{3})$ | ±30° (Yd1: −30° lag, Yd11: +30° lead) |
+| $\Delta$-Y | $V_L\sqrt{3}/a$ | ±30° (Dy1: −30° lag, Dy11: +30° lead) |
 
 - [T-07a: Three-Phase Connections](T-07a_3Phase_Connections.md)
 
-### Scott Connection
+### Scott Connection (3-φ to 2-φ)
 
-$$V_{\text{teaser}} = V \times (\sqrt{3}/2) \times (N_2/N_1)$$
+$$V_{1,\text{teaser}} = \frac{\sqrt{3}}{2} V_L, \qquad N_{1,\text{teaser}} = \frac{\sqrt{3}}{2} N_{1,\text{main}}$$
 
-$$V_{\text{main}} = V \times (N_2/N_1)$$
+$$V_{2,\text{main}} = V_{2,\text{teaser}} = V_L \times \left(\frac{N_2}{N_1}\right) \quad \text{(equal secondary voltages displaced by 90°)}$$
 
 ### Open-Delta Power Rating
 
-$$S_{\text{open-}\Delta} = \frac{1}{\sqrt{3}} \times S_{\text{closed-}\Delta} = 57.7\% \text{ of V-V}$$
+$$S_{\text{open-}\Delta} = \frac{1}{\sqrt{3}} \times S_{\text{closed-}\Delta} = 57.7\% \text{ of } \Delta\text{-}\Delta$$
 
 - [T-07b: Open-Delta](T-07b_Open_Delta.md) | [T-08: Scott Connection](T-08_Scott_Connection.md)
 

@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 051: Excitation Phenomenon 3](Lecture_051_Excitation_Phenomenon_3.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 053: Problems based on Harmonics and Inrush Current →](Lecture_053_Problems_based_on_Harmonics_and_Inrush_Current.md)
+
+---
+
 # Electrical Machines | Lec 36 | Switching Transients | GATE/ESE Electrical Engineering
 
 - **Source**: https://www.youtube.com/watch?v=ZCa9PWbW3MQ
@@ -734,3 +739,6 @@ With stationary magnetic devices complete, subsequent lectures investigate rotat
 - Circuit resistance and core losses provide natural damping, causing the DC flux offset and inrush current to decay exponentially with time constant $\tau = L/R$.
 - Harmonic-restraint differential relays use second-harmonic current in their restraining coils to block false tripping during inrush while maintaining sensitivity to genuine faults.
 
+---
+
+[← Lec 051: Excitation Phenomenon 3](Lecture_051_Excitation_Phenomenon_3.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 053: Problems based on Harmonics and Inrush Current →](Lecture_053_Problems_based_on_Harmonics_and_Inrush_Current.md)

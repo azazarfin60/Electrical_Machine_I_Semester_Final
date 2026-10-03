@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 017: Practical Transformer Part 1](Lecture_017_Practical_Transformer_Part_1.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 019: Practical Transformer Part 3 →](Lecture_019_Practical_Transformer_Part_3.md)
+
+---
+
 # Electrical Machines | Lec 13 | Practical Transformer (Part 2) | GATE Electrical Engineering
 
 - **Source**: https://www.youtube.com/watch?v=7Hzdp0TXM5E
@@ -535,3 +540,6 @@ In the next lecture, we simplify this model:
 - The complete equivalent circuit combines series winding impedances $\mathbf{Z}_1 = R_1 + j X_{l1}$ and $\mathbf{Z}_2 = R_2 + j X_{l2}$ with the parallel exciting branch ($R_c \parallel j X_m$) and central ideal turns ratio.
 - In numerical network calculations, induced EMFs $\mathbf{E}_1$ and $\mathbf{E}_2$ share the same phase angle, and currents $\mathbf{I}_1'$ and $\mathbf{I}_2$ share the same phase angle.
 
+---
+
+[← Lec 017: Practical Transformer Part 1](Lecture_017_Practical_Transformer_Part_1.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 019: Practical Transformer Part 3 →](Lecture_019_Practical_Transformer_Part_3.md)

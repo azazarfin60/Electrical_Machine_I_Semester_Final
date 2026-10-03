@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 031: Transformer and Magnetically Coupled Circuits](Lecture_031_Transformer_and_Magnetically_Coupled_Circuits.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 033: Auto Transformer in Hindi 2 →](Lecture_033_Auto_Transformer_in_Hindi_2.md)
+
+---
+
 # Auto Transformer - 1 | Electrical Machines | Lec 22 | | GATE & ESE (EE, ECE) | Ankit Goyal
 
 - **Source**: https://www.youtube.com/watch?v=pOkxh0EH1qo
@@ -466,3 +471,6 @@ The next lecture analyzes how to connect two-winding transformers to realize ste
 - Total apparent power equals the sum of conducted and induced components: $S_{\text{auto}} = S_{\text{cond}} + S_{\text{ind}}$.
 - When the transformation ratio $a_{\text{auto}}$ is close to unity, conducted power dominates, allowing a much higher kVA rating for a given core size.
 
+---
+
+[← Lec 031: Transformer and Magnetically Coupled Circuits](Lecture_031_Transformer_and_Magnetically_Coupled_Circuits.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 033: Auto Transformer in Hindi 2 →](Lecture_033_Auto_Transformer_in_Hindi_2.md)

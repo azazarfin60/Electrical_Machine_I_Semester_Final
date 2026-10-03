@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 152: Speed Control of Induction Motor 2](Lecture_152_Speed_Control_of_Induction_Motor_2.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 154: Speed Control of IM 2 →](Lecture_154_Speed_Control_of_IM_2.md)
+
+---
+
 # Speed Control of IM - 1 | L 44 | Electrical Machines | GATE 2022 | Ankit Goyal
 
 - **Source**: https://www.youtube.com/watch?v=hoKWN0Yx7H8
@@ -662,3 +667,6 @@ This distinction is essential when calculating winding factors, induced electrom
 - Because maximum torque scales as $V^2$, halving the breakdown torque requires terminal voltage to remain at least $V_{\text{min}} = V_{\text{rated}} / \sqrt{2} \approx 0.707 V_{\text{rated}}$.
 - Magnetic poles form at junctions where adjacent conductors carry opposite currents, and reversing selected coil groups alters the active pole count through consequent pole action.
 
+---
+
+[← Lec 152: Speed Control of Induction Motor 2](Lecture_152_Speed_Control_of_Induction_Motor_2.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 154: Speed Control of IM 2 →](Lecture_154_Speed_Control_of_IM_2.md)

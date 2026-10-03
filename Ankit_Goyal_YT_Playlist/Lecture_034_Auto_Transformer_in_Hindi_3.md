@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 033: Auto Transformer in Hindi 2](Lecture_033_Auto_Transformer_in_Hindi_2.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 035: Problems based on Auto Transformer →](Lecture_035_Problems_based_on_Auto_Transformer.md)
+
+---
+
 # Electrical Machines | Lec 24 | Auto Transformer in Hindi - 3| GATE Electrical Engineering Lecture
 
 - **Source**: https://www.youtube.com/watch?v=zSCNNJFrVvA
@@ -380,3 +385,6 @@ Review these three-phase circuit concepts to build a solid foundation for the up
 - Lower per-unit leakage impedance causes significantly larger short-circuit currents under fault conditions.
 - An autotransformer is modeled as a two-winding unit by referring common winding impedance to the series winding through the factor $(a_{\text{auto}} - 1)^2$.
 
+---
+
+[← Lec 033: Auto Transformer in Hindi 2](Lecture_033_Auto_Transformer_in_Hindi_2.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 035: Problems based on Auto Transformer →](Lecture_035_Problems_based_on_Auto_Transformer.md)

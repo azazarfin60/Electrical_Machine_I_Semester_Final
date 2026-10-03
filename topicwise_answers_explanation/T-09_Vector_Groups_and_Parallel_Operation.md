@@ -13,7 +13,7 @@
 
 ### T-09: Parallel Operation of Three-Phase Transformers
 
-*Appears in: 2017 Q7(b), 2021 Q4(a), 2023 Q4(b)*
+*Appears in: 2017 Q7(b), 2021 Q4(a), 2023 Q4(a)*
 
 #### Why transformers are operated in parallel
 
@@ -77,7 +77,7 @@ A three-phase transformer vector group designates:
 - Each hour represents $360° / 12 = 30°$ of phase lag measured clockwise:
   - **Group 1 (0° phase shift):** Yy0, Dd0, Dz0 (Hour hand at 12 o'clock).
   - **Group 2 (180° phase shift):** Yy6, Dd6, Dz6 (Hour hand at 6 o'clock).
-  - **Group 3 (-30° or 330° phase shift):** Yd1, Dy1, Yz1 (Hour hand at 1 o'clock: LV leads HV by 30° or lags by 330°).
+  - **Group 3 (-30° or 330° phase shift):** Yd1, Dy1, Yz1 (Hour hand at 1 o'clock: LV lags HV by 30° or leads by 330°).
   - **Group 4 (+30° or 30° phase shift):** Yd11, Dy11, Yz11 (Hour hand at 11 o'clock: LV leads HV by 30° or lags by 330°).
 
 #### What "Dyn5" represents:

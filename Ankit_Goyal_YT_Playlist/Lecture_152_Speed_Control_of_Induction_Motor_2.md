@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 151: Speed Control of Induction Motor 1](Lecture_151_Speed_Control_of_Induction_Motor_1.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 153: Speed Control of IM 1 →](Lecture_153_Speed_Control_of_IM_1.md)
+
+---
+
 # Electrical Machines | Lec 108 | Speed Control of Induction Motor-2 | GATE/ESE Electrical Engineering
 
 - **Source**: https://www.youtube.com/watch?v=zF5WSpRLA_Q
@@ -579,3 +584,6 @@ For competitive examinations such as GATE and ESE:
 - Two mechanically coupled induction motors operating in cumulative cascading run at a set synchronous speed corresponding to total effective poles: $N_{\text{set}} = \frac{120 f_1}{P_1 + P_2}$.
 - When cascaded in differential mode with reversed phase sequence, the set synchronous speed corresponds to the pole difference: $N_{\text{set}} = \frac{120 f_1}{|P_1 - P_2|}$.
 
+---
+
+[← Lec 151: Speed Control of Induction Motor 1](Lecture_151_Speed_Control_of_Induction_Motor_1.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 153: Speed Control of IM 1 →](Lecture_153_Speed_Control_of_IM_1.md)

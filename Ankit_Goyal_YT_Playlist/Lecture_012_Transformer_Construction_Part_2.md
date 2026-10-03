@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 011: Transformer Construction 1](Lecture_011_Transformer_Construction_1.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 013: Problems based on Transformer Construction and Working →](Lecture_013_Problems_based_on_Transformer_Construction_and_Working.md)
+
+---
+
 # Electrical Machines | Lec 9 | Transformer Construction (Part 2) | GATE Electrical Engineering
 
 - **Source**: https://www.youtube.com/watch?v=3zpzzpEH940
@@ -567,3 +572,6 @@ The key components and design principles include:
 - Mineral transformer oil serves the dual function of convective heat removal and bulk dielectric insulation.
 - Conservator tanks accommodate thermal oil expansion while minimizing oil surface contact with air, and silica gel breathers extract atmospheric moisture to protect oil dielectric strength.
 
+---
+
+[← Lec 011: Transformer Construction 1](Lecture_011_Transformer_Construction_1.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 013: Problems based on Transformer Construction and Working →](Lecture_013_Problems_based_on_Transformer_Construction_and_Working.md)

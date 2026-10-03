@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 016: Problems Based on Ideal Transformer](Lecture_016_Problems_Based_on_Ideal_Transformer.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 018: Practical Transformer Part 2 →](Lecture_018_Practical_Transformer_Part_2.md)
+
+---
+
 # Electrical Machines | Lec 12 | Practical Transformer (Part 1) | GATE Electrical Engineering
 
 - **Source**: https://www.youtube.com/watch?v=u7nJUkUgWrs
@@ -765,3 +770,6 @@ In the next lecture, we will complete the transition to a fully practical transf
 - Under load, total primary current is $\mathbf{I}_1 = \mathbf{I}_0 + \mathbf{I}_1'$, satisfying both MMF balance $N_1 \mathbf{I}_1 = N_1 \mathbf{I}_0 + N_2 \mathbf{I}_2$ and power balance $\mathbf{S}_1 = \mathbf{S}_0 + \mathbf{S}_2$.
 - Adding the higher power factor load current $\mathbf{I}_1'$ reduces the net primary phase angle ($\phi_1 < \phi_0$), improving the operating power factor from its no-load value.
 
+---
+
+[← Lec 016: Problems Based on Ideal Transformer](Lecture_016_Problems_Based_on_Ideal_Transformer.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 018: Practical Transformer Part 2 →](Lecture_018_Practical_Transformer_Part_2.md)

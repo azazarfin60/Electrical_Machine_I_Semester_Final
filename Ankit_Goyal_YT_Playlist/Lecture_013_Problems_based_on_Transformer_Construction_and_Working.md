@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 012: Transformer Construction Part 2](Lecture_012_Transformer_Construction_Part_2.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 014: Ideal Transformer Part 1 →](Lecture_014_Ideal_Transformer_Part_1.md)
+
+---
+
 # Problems based on Transformer Construction & Working | L4 | Electrical Machines | GATE 2022
 
 - **Source**: https://www.youtube.com/watch?v=HwlgfqiNMvI
@@ -1344,3 +1349,6 @@ This problem-solving session established core transformer principles:
 - In shell-type sandwich windings, low-voltage turns must be a common multiple of section counts to prevent fractional turns.
 - Replacing a ferromagnetic core with an air core eliminates hysteresis loss because the $B\text{--}H$ curve of air is linear and encloses zero area.
 
+---
+
+[← Lec 012: Transformer Construction Part 2](Lecture_012_Transformer_Construction_Part_2.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 014: Ideal Transformer Part 1 →](Lecture_014_Ideal_Transformer_Part_1.md)

@@ -3,7 +3,7 @@
 ---
 
 # T-09: Vector Groups & Parallel Operation
-> **Section:** A | **Priority:** 🟡 MEDIUM | **Exam Frequency:** 4/7 years
+> **Section:** A | **Priority:** 🟡 MEDIUM | **Exam Frequency:** 3/7 years
 > **Sources:** Theraja Ch-33 (Art. 33.11–33.14), VK Mehta Ch-7 (Art. 7.34–7.35), Slides L-11 S25–S30
 
 ## Why This Topic Matters
@@ -75,7 +75,9 @@ In clock notation: 12 o'clock = 0°, 1 o'clock = 30°, 5 o'clock = 150°. So Dyn
 ---
 
 ### 🎯 Q2: State the conditions for parallel operation of two 3-phase transformers.
-> **Appeared:** 2017 Q7(b), 2021 Q4(a), 2023 Q4(b) — (3-4 marks)
+> **Appeared:** 2023 Q4(a) — 3 marks (plus 2017 Q7(b), 2021 Q4(a) in earlier papers)
+>
+> Note: 2023 Q4(b) was the closed-Δ vs open-Δ kVA proof, which sits in [T-07b](T-07b_Open_Delta.md).
 
 **Full Answer:**
 
@@ -100,8 +102,8 @@ For satisfactory parallel operation of two (or more) 3-phase transformers, **all
 
 **Vector group numbers:**
 
-- Yd11: Phase displacement = 11 × 30° = 330° (equivalent to -30°). Secondary lags primary by 30°.
-- Dy1: Phase displacement = 1 × 30° = 30°. Secondary leads primary by 30°.
+- Yd11: Clock number 11 = 11 × 30° = 330° of lag, which is the same as 30° of lead. Secondary (LV) **leads** primary by 30°.
+- Dy1: Clock number 1 = 1 × 30° = 30° of lag. Secondary (LV) **lags** primary by 30°.
 
 **Phase difference between their secondaries:**
 

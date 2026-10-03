@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 153: Speed Control of IM 1](Lecture_153_Speed_Control_of_IM_1.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 155: Braking of Induction Motor →](Lecture_155_Braking_of_Induction_Motor.md)
+
+---
+
 # Speed Control of IM - 2 | L 45 | Electrical Machines | GATE 2022 | Ankit Goyal
 
 - **Source**: https://www.youtube.com/watch?v=N7RmYwEDxh0
@@ -593,3 +598,6 @@ The lecture established that while stator voltage control and rotor resistance c
 - In constant $V/f$ drives driving constant torque loads, the absolute slip speed difference remains invariant across frequencies: $N_s - N_r = \text{constant}$.
 - Autotransformer starting reduces motor terminal current by tapping ratio $x$, while the current drawn from the supply scales by $x^2$.
 
+---
+
+[← Lec 153: Speed Control of IM 1](Lecture_153_Speed_Control_of_IM_1.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 155: Braking of Induction Motor →](Lecture_155_Braking_of_Induction_Motor.md)

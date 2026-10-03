@@ -92,7 +92,7 @@
 | 1.6.1 | **Open-circuit (OC) test** — procedure, LV side, find $R_0$, $X_0$, iron loss | 🔴 MUST | L-10 S17 | **ALL 7 papers** 🔥 |
 | 1.6.2 | **Short-circuit (SC) test** — procedure, HV side, find $R_{01}$, $X_{01}$, Cu loss | 🔴 MUST | L-10 S18 | **ALL 7 papers** 🔥 |
 | 1.6.3 | Why OC test on LV side, SC test on HV side | 🟢 LOW | L-10 S17–S18 | Asked in '24 — new pattern |
-| 1.6.4 | **OC/SC data → equivalent circuit parameters (numerical)** | 🔴 MUST | L-10 S19 | The single most certain question |
+| 1.6.4 | **OC/SC data → equivalent circuit parameters (numerical)** | 🔴 MUST | L-10 S19 | Ties with Open-Δ as the most certain question (both 7/7) |
 | 1.6.5 | Hysteresis & eddy current losses | 🟢 LOW | — | Asked once ('17) |
 | 1.6.6 | Inrush current when first connected | 🟢 LOW | — | Asked once ('17) |
 
@@ -117,8 +117,8 @@
 | 1.8.4 | Y-Δ connection — relations, step-down use | 🟡 MEDIUM | L-11 S11–S12 | Part of 3-φ connection questions |
 | 1.8.5 | Δ-Y connection — relations, step-up use, 30° phase shift | 🟡 MEDIUM | L-11 S13 | Part of 3-φ connection questions |
 | 1.8.6 | Δ-Δ connection — no phase shift, handles unbalance | 🟡 MEDIUM | L-11 S14 | Gateway to Open-Δ |
-| 1.8.7 | **Open-Δ (V-V) connection** — continuity of supply when one unit fails | 🔴 MUST | L-11 S16 | Asked 6/7 papers 🔥 |
-| 1.8.8 | **Open-Δ capacity = 57.7% of closed-Δ — proof** | 🔴 MUST | L-11 S17–S18 | The second most repeated question |
+| 1.8.7 | **Open-Δ (V-V) connection** — continuity of supply when one unit fails | 🔴 MUST | L-11 S16 | Asked 7/7 papers 🔥 |
+| 1.8.8 | **Open-Δ capacity = 57.7% of closed-Δ — proof** | 🔴 MUST | L-11 S17–S18 | Ties with OC/SC as the most repeated question (7/7) |
 | 1.8.9 | Open-Δ utilization factor = 86.6% | 🔴 MUST | L-11 S18 | Always paired with 57.7% proof |
 | 1.8.10 | **Parallel operation conditions** for 3-φ transformers | 🟡 MEDIUM | — | Asked in '17, '21, '23 (3/7) |
 
@@ -177,7 +177,7 @@
 | # | Subtopic | Priority | Slides | Notes |
 |:--|:---------|:--------:|:------:|:------|
 | 2.2.1 | Why rotor rotates — relative velocity, induced EMF, Lenz's law | 🟠 HIGH | L-03 S04–S05 | Foundation for slip |
-| 2.2.2 | **Slip definition** — $s = (N_s - N)/N_s$, $N = N_s(1-s)$ | 🔴 MUST | L-03 S06–S07 | Asked 4/7 papers |
+| 2.2.2 | **Slip definition** — $s = (N_s - N)/N_s$, $N = N_s(1-s)$ | 🟠 HIGH | L-03 S06–S07 | Asked 4/7 papers |
 | 2.2.3 | **Why IM can't run at $N_s$** — proof (no relative speed → no EMF → no torque) | 🔴 MUST | L-03 S05 | Asked in '20, '21, '23, '24 |
 | 2.2.4 | Rotor frequency: $f_r = sf$ | 🟠 HIGH | L-03 S08 | Tested in slip numericals |
 | 2.2.5 | **Why IM = rotating transformer** | 🟡 MEDIUM | L-03 S10 | Asked in '17, '19, '20 (3/7) |
@@ -250,7 +250,7 @@
 
 | # | Subtopic | Priority | Slides | Notes |
 |:--|:---------|:--------:|:------:|:------|
-| 2.8.1 | **Speed control methods** — stator side (voltage, V/f, pole changing, external impedance) | 🟡 MEDIUM | L-07 S03 | Asked in '17, '19, '23 (3/7) |
+| 2.8.1 | **Speed control methods** — stator side (voltage, V/f, pole changing, external impedance) | 🟠 HIGH | L-07 S03 | Asked in '17, '19, '23 (3/7) |
 | 2.8.2 | Speed control — rotor side (external resistance, cascade, slip-frequency injection) | 🟡 MEDIUM | L-07 S03 | |
 | 2.8.3 | Rotor resistance speed control — numerical (external $R$ for speed reduction) | 🟢 LOW | L-07 S05 | Asked once ('21) |
 
@@ -262,7 +262,7 @@
 | 2.9.1 | Dynamic braking — motor runs as loaded generator | 🟡 MEDIUM | L-07 S06 | Part of braking definitions |
 | 2.9.2 | DC injection braking — stator fed DC, stationary field | 🟡 MEDIUM | L-07 S07 | |
 | 2.9.3 | Capacitor braking — self-excited generator mode | 🟢 LOW | L-07 S08 | |
-| 2.9.4 | **Plugging** — reverse two stator leads, $s \approx 2$ | 🟡 MEDIUM | L-07 S09 | Asked 4/7 papers ('17–'20) |
+| 2.9.4 | **Plugging** — reverse two stator leads, $s \approx 2$ | 🟠 HIGH | L-07 S09 | Asked 4/7 papers ('17–'20) |
 
 #### 2.10 Induction Generator
 **Slides:** L-07 S10–S12 | **Books:** Theraja Ch-34 (Art. 34.47)

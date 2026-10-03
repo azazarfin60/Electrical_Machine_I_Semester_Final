@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 144: Stability and Testing of Induction Motor](Lecture_144_Stability_and_Testing_of_Induction_Motor.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 146: Circle Diagram of Induction Motor →](Lecture_146_Circle_Diagram_of_Induction_Motor.md)
+
+---
+
 # Stability and Testing of Induction Machines | L 41 | Electrical Machines | GATE 2022 | Ankit Goyal
 
 - **Source**: https://www.youtube.com/watch?v=ZEl2jJIuEhU
@@ -562,3 +567,6 @@ The next lecture examines starting methods for three-phase squirrel-cage inducti
 - An operating point on a torque-speed characteristic is stable if and only if $\frac{dT_L}{d\omega} > \frac{dT_m}{d\omega}$.
 - Exact calculation of external rotor resistance for speed control at constant torque requires solving a quadratic equation that accounts for stator impedance.
 
+---
+
+[← Lec 144: Stability and Testing of Induction Motor](Lecture_144_Stability_and_Testing_of_Induction_Motor.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 146: Circle Diagram of Induction Motor →](Lecture_146_Circle_Diagram_of_Induction_Motor.md)

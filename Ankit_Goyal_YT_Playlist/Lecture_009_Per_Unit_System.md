@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 008: Problems based on Magnetic Circuits](Lecture_008_Problems_based_on_Magnetic_Circuits.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 010: Problems Based on Per Unit Systems →](Lecture_010_Problems_Based_on_Per_Unit_Systems.md)
+
+---
+
 # Per Unit System | Electrical Machines | Lec 7 | GATE & ESE (EE, ECE) | Ankit Goyal
 
 - **Source**: https://www.youtube.com/watch?v=HI5xq0EdpeA
@@ -596,3 +601,6 @@ We will use this system throughout our study of electrical machines. We will app
 - The base impedance for a balanced star connection is $Z_{\text{base, } Y} = V_{\text{base}}^2 / S_{\text{base}}$, while for delta it is three times larger: $Z_{\text{base, } \Delta} = 3 V_{\text{base}}^2 / S_{\text{base}}$.
 - Physical quantities remain invariant under base changes, while per-unit impedance converts to a new base via $Z_{\text{pu, new}} = Z_{\text{pu, old}} (V_{\text{base, old}} / V_{\text{base, new}})^2 (S_{\text{base, new}} / S_{\text{base, old}})$.
 
+---
+
+[← Lec 008: Problems based on Magnetic Circuits](Lecture_008_Problems_based_on_Magnetic_Circuits.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 010: Problems Based on Per Unit Systems →](Lecture_010_Problems_Based_on_Per_Unit_Systems.md)

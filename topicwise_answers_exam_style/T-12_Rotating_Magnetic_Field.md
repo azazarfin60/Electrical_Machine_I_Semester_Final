@@ -65,45 +65,74 @@ Note: Magnitude is $\Phi_m$ (not $1.5\Phi_m$) because 2-phase has only 2 phases,
 ---
 
 ### [2024 Q5(a)]
-> 📋 **Appeared in:** 2017 Q1(b), 2018 Q6(b), 2024 Q5(a) (Years: 2017, 2018, 2024)
+> 📋 **Appeared in:** 2024 Q5(a)
 
-**(a) A 3-phase IM is connected to a balanced 3-phase supply. Prove that the resultant flux produced by the stator currents is constant in magnitude ($= 1.5\Phi_m$) and rotates at synchronous speed. [08, CO2]**
+**(a) Explain how a rotating field is produced when a balanced 3-$\varphi$ induction motor is connected to a balanced 3-$\varphi$ supply. [Marks: 03, CO: 3]**
 
 ![Three-phase sinusoidal flux waveforms and spatial flux axes](../Books/Theraja/Ch-34/diagrams/Ch-34_p09_fig12_13.jpg)
+
+**The physical picture.** Three identical stator windings are placed $120°$ apart in space. They are fed with three sinusoidal currents that are $120°$ apart in time:
+
+$$i_1 = I_m\sin\omega t, \qquad i_2 = I_m\sin(\omega t - 120°), \qquad i_3 = I_m\sin(\omega t - 240°)$$
+
+Each winding on its own produces a **pulsating** flux along its own axis. But the three together behave as a single field whose axis keeps moving.
+
+**Instant by instant.**
+
+1. At $\omega t = 0°$: phase 1 current is zero, phases 2 and 3 carry equal and opposite currents. Their resultants add along the axis of phase 1.
+2. At $\omega t = 60°$: the axis of the resultant has already turned through $60°$ toward phase 2.
+3. At $\omega t = 120°$: the resultant lies on the axis of phase 2.
+4. Over one cycle the axis sweeps through one full pole pair and returns to its start.
+
 ![Vector diagrams of resultant 3-phase flux at four instants showing rotation](../Books/Theraja/Ch-34/diagrams/Ch-34_p10_fig14.jpg)
 
-**Setup:** Stator windings 120° apart in space. Balanced 3-phase supply:
-$$\Phi_R = \Phi_m\sin\omega t, \quad \Phi_Y = \Phi_m\sin(\omega t - 120°), \quad \Phi_B = \Phi_m\sin(\omega t + 120°)$$
+**The magnitude is constant.** At every instant the resultant equals
 
-**Resolve into X (horizontal) and Y (vertical) components:**
+$$\boxed{\Phi_r = \frac{3}{2}\Phi_m = 1.5\,\Phi_m}$$
 
-Take R-phase axis as +X. Y-phase axis is at 120° from X. B-phase axis is at 240° from X.
+and it turns at $\omega = 2\pi f$, so
 
-**X-component:**
-$$\Phi_x = \Phi_R(1) + \Phi_Y\cos 120° + \Phi_B\cos 240°$$
-$$= \Phi_m\sin\omega t + \Phi_m\sin(\omega t - 120°)(-\tfrac{1}{2}) + \Phi_m\sin(\omega t + 120°)(-\tfrac{1}{2})$$
+$$N_s = \frac{120 f}{P}\ \text{rpm}$$
 
-Using $\sin(A-B) + \sin(A+B) = 2\sin A\cos B$:
-$$= \Phi_m\sin\omega t - \frac{1}{2}\Phi_m \cdot 2\sin\omega t\cos 120° = \Phi_m\sin\omega t - \frac{1}{2}\Phi_m \cdot 2\sin\omega t \cdot (-\frac{1}{2})$$
-$$= \Phi_m\sin\omega t + \frac{1}{2}\Phi_m\sin\omega t = \frac{3}{2}\Phi_m\sin\omega t$$
+**Consequences.** The field has constant magnitude, so a constant torque is available, unlike the pulsating field of a single-phase winding. The rotor is dragged round at a speed just below $N_s$ (slip $s > 0$), because at exactly $N_s$ the flux would no longer cut the rotor and no current, hence no torque, would be produced. Reversing any two supply leads reverses the phase sequence, so the field, and therefore the rotor, turns the other way.
 
-**Y-component:**
-$$\Phi_y = \Phi_Y\sin 120° + \Phi_B\sin 240°$$
-$$= \Phi_m\sin(\omega t - 120°)\cdot\frac{\sqrt{3}}{2} + \Phi_m\sin(\omega t + 120°)\cdot(-\frac{\sqrt{3}}{2})$$
-$$= \frac{\sqrt{3}}{2}\Phi_m[\sin(\omega t - 120°) - \sin(\omega t + 120°)]$$
+---
 
-Using $\sin(A-B) - \sin(A+B) = -2\cos A\sin B$:
-$$= \frac{\sqrt{3}}{2}\Phi_m \cdot (-2\cos\omega t\sin 120°) = \frac{\sqrt{3}}{2}\Phi_m \cdot (-2\cos\omega t \cdot \frac{\sqrt{3}}{2}) = -\frac{3}{2}\Phi_m\cos\omega t$$
+### [2023 Q5(c)]
+> 📋 **Appeared in:** 2023 Q5(c)
 
-**Magnitude:**
-$$\Phi_r = \sqrt{\Phi_x^2 + \Phi_y^2} = \sqrt{\left(\frac{3}{2}\Phi_m\right)^2(\sin^2\omega t + \cos^2\omega t)} = \boxed{\frac{3}{2}\Phi_m = 1.5\Phi_m = \text{constant}}$$
+**(c) Prove that, the magnitude of resultant flux is constant and equal to $\frac{3}{2}\Phi_m$, due to any phase in an induction motor of $3-\varphi$ stator supply system with necessary figures. [CO2, Marks: 04]**
 
-**Space angle:**
-$$\theta = \tan^{-1}\!\left(\frac{\Phi_y}{\Phi_x}\right) = \tan^{-1}\!\left(\frac{-\cos\omega t}{\sin\omega t}\right) = \omega t - 90°$$
+**Setup.** Three identical stator windings are spaced $120°$ apart in space. They carry currents $120°$ apart in time, so each produces a pulsating flux along its own axis:
 
-$$\frac{d\theta}{dt} = \omega = 2\pi f \implies N_s = \frac{120f}{P} \text{ rpm}$$
+$$\Phi_1 = \Phi_m \sin \omega t, \qquad \Phi_2 = \Phi_m \sin(\omega t - 120°), \qquad \Phi_3 = \Phi_m \sin(\omega t - 240°)$$
 
-**Conclusion:** Resultant flux = $1.5\Phi_m$ (constant magnitude), rotating at synchronous speed $N_s$. *(Proved)*
+![Three-phase stator layout, the sinusoidal phase flux waveforms, and the phasor positions at successive instants](../Books/VK_Mehta/diagrams/VK_Mehta_Fig_8_06.jpeg)
+
+**Phasor method, instant by instant.** Add the three flux phasors along their own space axes at four instants.
+
+**(i) At $\omega t = 0°$:**
+$$\Phi_1 = 0, \quad \Phi_2 = \Phi_m \sin(-120°) = -0.866\Phi_m, \quad \Phi_3 = \Phi_m \sin(-240°) = +0.866\Phi_m$$
+
+The two non-zero fluxes are $60°$ apart in space. Their resultant bisects that angle:
+$$\Phi_r = 2 \times 0.866 \Phi_m \cos\frac{60°}{2} = 2 \times 0.866 \times 0.866\, \Phi_m = \frac{3}{2}\Phi_m$$
+
+**(ii) At $\omega t = 60°$:**
+$$\Phi_1 = +0.866\Phi_m, \quad \Phi_2 = -0.866\Phi_m, \quad \Phi_3 = 0$$
+$$\Phi_r = 2 \times 0.866 \Phi_m \cos 30° = \frac{3}{2}\Phi_m$$
+
+The magnitude is unchanged, but the resultant has turned through $60°$.
+
+**(iii) At $\omega t = 120°$ and (iv) at $\omega t = 180°$:** the same arithmetic repeats, each time giving $\Phi_r = \frac{3}{2}\Phi_m$ turned a further $60°$.
+
+**Analytical proof.** Resolve all three along a reference axis and its quadrature:
+$$\Phi_x = \Phi_1 + \Phi_2 \cos 120° + \Phi_3 \cos 240° = \frac{3}{2}\Phi_m \sin\omega t$$
+$$\Phi_y = \Phi_2 \sin 120° + \Phi_3 \sin 240° = \frac{3}{2}\Phi_m \cos\omega t$$
+$$\therefore\ \Phi_r = \sqrt{\Phi_x^2 + \Phi_y^2} = \frac{3}{2}\Phi_m \sqrt{\sin^2\omega t + \cos^2\omega t}$$
+
+$$\boxed{\Phi_r = \frac{3}{2}\Phi_m = 1.5\,\Phi_m \ \text{(constant), rotating at } N_s = \frac{120f}{P}}$$
+
+The direction angle is $\tan^{-1}(\Phi_y/\Phi_x) = (90° - \omega t)$, which decreases steadily with time. So the resultant is a constant-magnitude flux rotating at a uniform angular speed $\omega$. One full electrical cycle turns it through one pole pair.
 
 ---
 

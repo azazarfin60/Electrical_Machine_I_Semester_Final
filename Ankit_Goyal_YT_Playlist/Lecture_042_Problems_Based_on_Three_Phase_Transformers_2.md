@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 041: Problems Based on Three Phase Transformers 1](Lecture_041_Problems_Based_on_Three_Phase_Transformers_1.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 043: Three Phase Transformer 5 →](Lecture_043_Three_Phase_Transformer_5.md)
+
+---
+
 # Problems Based on Three Phase Transformers - 2 | L 14 | Electrical Machines | GATE 2022
 
 - **Source**: https://www.youtube.com/watch?v=TvN4nAehGLg
@@ -735,3 +740,6 @@ The instructor summarizes key results from the problem session. Upcoming session
 - Before referring an impedance across a three-phase transformer, the load impedance connection must match the winding connection of that side.
 - Reconnecting a three-phase $Q\text{ kVA}, V_1 / V_2$ delta transformer with two windings in parallel and one in series yields a single-phase rating of $2V_1 / 2V_2$ and $\frac{2}{3}Q\text{ kVA}$.
 
+---
+
+[← Lec 041: Problems Based on Three Phase Transformers 1](Lecture_041_Problems_Based_on_Three_Phase_Transformers_1.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 043: Three Phase Transformer 5 →](Lecture_043_Three_Phase_Transformer_5.md)

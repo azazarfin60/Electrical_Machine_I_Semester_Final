@@ -16,50 +16,41 @@
 
 **(c) 200/400V step-up transformer, parameters referred to LV side: $R_{eq} = 0.15\,\Omega$, $X_{eq} = 0.37\,\Omega$, $R_c = 600\,\Omega$, $X_m = 300\,\Omega$. Load: 10A at 0.8 pf lag (secondary). Find: (i) primary current, (ii) secondary terminal voltage. [05]**
 
-**Given:** Turns ratio $a = N_1/N_2 = 200/400 = 0.5$ (step-up), all parameters on LV (primary) side.
+**Given:** Turns ratio $a = N_1/N_2 = 200/400 = 0.5$ (step-up), all parameters on LV (primary) side:
+$R_{eq} = 0.15\,\Omega, \quad X_{eq} = 0.37\,\Omega, \quad R_c = 600\,\Omega, \quad X_m = 300\,\Omega$
 
-Load referred to primary side:
-- Secondary current $I_2 = 10$ A. Referred to primary: $I_2' = I_2/a = 10/0.5 = 20$ A (but we need to be careful: referred secondary current to primary = $I_2 \times (N_2/N_1) = 10 \times 2 = 20$ A).
+Secondary load: $I_2 = 10\text{ A}$ at $\cos\phi_2 = 0.8\text{ lag}$ ($\sin\phi_2 = 0.6$).
 
-Wait: parameters are referred to LV side. Secondary current (HV side) = 10 A. Referred to LV (primary): $I_2' = 10 \times (N_2/N_1) = 10 \times 2 = 20$ A at pf $= 0.8$ lag.
+**Load current referred to primary side:**
+$$I_2' = \frac{I_2}{a} = \frac{10}{0.5} = 20\text{ A}$$
 
-**Taking $V_2'$ as reference on primary side:**
+**Taking applied primary voltage as reference:**
+The rating specifies applied primary voltage $V_1 = 200\text{ V}$, so $\vec{V}_1 = 200\angle 0°\text{ V}$.
+$$\vec{I}_2' = 20\angle -36.87° = 20(0.8 - j0.6) = (16 - j12)\text{ A}$$
 
-Secondary terminal voltage referred to primary: $V_2' = 200$ V (at rated voltage the secondary is 400V, referred to primary = 400 × 0.5 = 200V).
+**(i) Primary current (including magnetizing branch):**
+$$I_c = \frac{V_1}{R_c} = \frac{200}{600} = 0.333\text{ A (in phase with }V_1)$$
+$$I_m = \frac{V_1}{X_m} = \frac{200}{300} = 0.667\text{ A (lagging }V_1\text{ by 90°)}$$
 
-Let $\vec{V}_2' = 200\angle 0°$ V, $\vec{I}_2' = 20\angle -36.87°$ A
+No-load excitation current:
+$$\vec{I}_0 = I_c - jI_m = (0.333 - j0.667)\text{ A}$$
 
-**Approximate primary voltage (neglecting shunt branch for initial calc):**
-$$\vec{V}_1 = \vec{V}_2' + \vec{I}_2'(R_{eq} + jX_{eq})$$
-$$= 200\angle 0° + 20\angle -36.87° \times (0.15 + j0.37)$$
+Total primary input current:
+$$\vec{I}_1 = \vec{I}_0 + \vec{I}_2' = (0.333 - j0.667) + (16 - j12) = (16.333 - j12.667)\text{ A}$$
+$$|I_1| = \sqrt{16.333^2 + 12.667^2} = \sqrt{266.77 + 160.45} = \sqrt{427.22} \approx \boxed{20.67\text{ A}}$$
+$$\text{Primary pf} = \frac{16.333}{20.67} = 0.79\text{ lag}$$
 
-$\vec{I}_2' = 20(0.8 - j0.6) = 16 - j12$
+**(ii) Secondary terminal voltage:**
+The series impedance drop referred to the primary side at $\cos\phi_2 = 0.8\text{ lag}$:
+$$\Delta V_1 = I_2'(R_{eq}\cos\phi_2 + X_{eq}\sin\phi_2) = 20(0.15 \times 0.8 + 0.37 \times 0.6) = 20(0.12 + 0.222) = 6.84\text{ V}$$
 
-$\vec{I}_2'(R_{eq} + jX_{eq}) = (16 - j12)(0.15 + j0.37)$
-$= 16(0.15) + 16(j0.37) + (-j12)(0.15) + (-j12)(j0.37)$
-$= 2.4 + j5.92 - j1.8 + 4.44$
-$= 6.84 + j4.12$
+Referred secondary terminal voltage:
+$$V_2' = V_1 - \Delta V_1 = 200 - 6.84 = 193.16\text{ V}$$
 
-$$\vec{V}_1 = (200 + 6.84) + j4.12 = 206.84 + j4.12$$
-$$|V_1| = \sqrt{206.84^2 + 4.12^2} \approx \boxed{206.88 \text{ V}}$$
+Actual secondary terminal voltage ($K = N_2/N_1 = 1/a = 2$):
+$$V_2 = \frac{V_2'}{a} = 2 \times 193.16 = \boxed{386.3\text{ V}}$$
 
-**Primary current (including magnetizing branch):**
-
-$$I_c = \frac{V_1}{R_c} = \frac{206.88}{600} = 0.345 \text{ A (in phase with }V_1)$$
-$$I_m = \frac{V_1}{X_m} = \frac{206.88}{300} = 0.690 \text{ A (lagging }V_1\text{ by 90°)}$$
-
-No-load current: $\vec{I}_0 = I_c - jI_m = 0.345 - j0.690$
-
-$$\vec{I}_1 = \vec{I}_0 + \vec{I}_2' = (0.345 - j0.690) + (16 - j12) = 16.345 - j12.69$$
-
-$$|I_1| = \sqrt{16.345^2 + 12.69^2} = \sqrt{267.2 + 161.1} = \sqrt{428.3} \approx \boxed{20.70 \text{ A}}$$
-
-**Secondary terminal voltage (actual):** Referred back to secondary side:
-$$V_{2,\text{actual}} = |V_2'| \times (N_2/N_1) = 200 \times 2 = 400 \text{ V}$$
-
-(In this simplified case, since we set $V_2' = 200$ V as reference, actual secondary $= 400$ V with the given load conditions.)
-
----
+*(Note: On load, secondary terminal voltage drops to 386.3 V, about 13.7 V below the 400 V no-load rating. Setting $V_2 = 400\text{ V}$ would incorrectly assume an over-rated primary supply of 206.9 V).*
 
 ---
 
@@ -125,25 +116,22 @@ Since $I_0$ is small and the primary voltage drop $I_0(R_1+jX_1)$ is negligible,
 
 ---
 
-### [2024 Q4(c)]
-> 📋 **Appeared in:** 2024 Q4(c)
+### [Practice: Equivalent Circuit Referred to the Primary Side]
+> **Practice problem (not from a past paper)**
 
-**(c) Obtain the equivalent circuit of a transformer referred to the primary side. [03, CO1]**
+**Obtain the equivalent circuit of a transformer referred to the primary side.**
 
 **Referring secondary to primary:**
-
 Replace all secondary quantities with primary-referred (primed) values:
 $$R_2' = a^2 R_2, \quad X_2' = a^2 X_2, \quad E_2' = aE_2 = E_1, \quad Z_L' = a^2 Z_L$$
 
 **Final equivalent circuit referred to primary:**
-
 Series branch: $R_{01} = R_1 + R_2'$, $X_{01} = X_1 + X_2'$ (total series impedance).
-
-Shunt branch: $R_c \| jX_m$ (at primary terminals: approximate circuit).
+Shunt branch: $R_c \| jX_m$ (at the primary terminals in the approximate circuit).
 
 ![Exact and approximate equivalent circuit referred to primary](../Books/Theraja/Ch-32/diagrams/Ch-32_p29_fig40.jpg)
 
-In the approximate equivalent circuit, the shunt branch is moved to the primary input terminals (before $R_1$, $X_1$). This simplifies calculation without significant error for most power transformers.
+In the approximate equivalent circuit the shunt branch is moved to the primary input terminals (before $R_1$, $X_1$). This simplifies calculation without significant error for most power transformers.
 
 ---
 

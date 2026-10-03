@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 140: Torque Slip Characteristics 2](Lecture_140_Torque_Slip_Characteristics_2.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 142: Torque Slip Characteristics 1 →](Lecture_142_Torque_Slip_Characteristics_1.md)
+
+---
+
 # Electrical Machines | Lec 102 | Torque Slip Characteristics -3 | GATE Electrical Engineering
 
 - **Source**: https://www.youtube.com/watch?v=SPexadar380
@@ -778,3 +783,6 @@ We can plot all four major machine parameters on a normalized per-unit axis agai
 - At no-load, an induction motor draws a high magnetizing current through the air gap, resulting in a low power factor between 0.1 and 0.2 lagging.
 - Applying shaft load increases active stator current, which causes power factor to rise toward 0.85 to 0.90 lagging and causes efficiency to reach a peak where variable copper losses equal constant losses.
 
+---
+
+[← Lec 140: Torque Slip Characteristics 2](Lecture_140_Torque_Slip_Characteristics_2.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 142: Torque Slip Characteristics 1 →](Lecture_142_Torque_Slip_Characteristics_1.md)

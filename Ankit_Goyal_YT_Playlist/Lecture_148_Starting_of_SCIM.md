@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 147: Starting of SCIM](Lecture_147_Starting_of_SCIM.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 149: Starting of SRIM →](Lecture_149_Starting_of_SRIM.md)
+
+---
+
 # Starting of SCIM | L 42 | Electrical Machines | GATE 2022 | Ankit Goyal
 
 - **Source**: https://www.youtube.com/watch?v=J_FVNSGokD4
@@ -718,3 +723,6 @@ The ratio of phase voltage at starting to phase voltage during normal running is
 - In auto-transformer starting with tapping factor $, motor current scales as  I_{\text{sc}}$, line current drawn from supply scales as ^2 I_{\text{sc}}$, and torque scales as ^2 T_{\text{st, DOL}}$.
 - In star-delta starting, applied winding phase voltage drops by $\frac{1}{\sqrt{3}}$, while line current and starting torque drop by $\frac{1}{3}$.
 
+---
+
+[← Lec 147: Starting of SCIM](Lecture_147_Starting_of_SCIM.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 149: Starting of SRIM →](Lecture_149_Starting_of_SRIM.md)

@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 146: Circle Diagram of Induction Motor](Lecture_146_Circle_Diagram_of_Induction_Motor.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 148: Starting of SCIM →](Lecture_148_Starting_of_SCIM.md)
+
+---
+
 # Starting of SCIM | Electrical Machines | Lec 105 | GATE/ESE (EE, ECE) | Ankit Goyal
 
 - **Source**: https://www.youtube.com/watch?v=DlXAh9B10hI
@@ -503,3 +508,6 @@ The supply current and starting torque both drop to exactly one-third of their d
 - In star-delta starting, phase voltage drops by $\frac{1}{\sqrt{3}}$, reducing both supply line current and starting torque to $\frac{1}{3}$ of their delta DOL values.
 - Closed-transition star-delta starters use parallel transition resistors to maintain uninterrupted supply connections, preventing trapped rotor flux from inducing severe switching transients.
 
+---
+
+[← Lec 146: Circle Diagram of Induction Motor](Lecture_146_Circle_Diagram_of_Induction_Motor.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 148: Starting of SCIM →](Lecture_148_Starting_of_SCIM.md)

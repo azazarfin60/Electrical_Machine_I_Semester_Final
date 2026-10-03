@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 154: Speed Control of IM 2](Lecture_154_Speed_Control_of_IM_2.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 156: Braking of Induction Motor →](Lecture_156_Braking_of_Induction_Motor.md)
+
+---
+
 # Braking of Induction Motor | Electrical Machines | Lec 109 | GATE & ESE (EE, ECE) | Ankit Goyal
 
 - **Source**: https://www.youtube.com/watch?v=f-RBM0txOdc
@@ -337,3 +342,6 @@ Beyond the pull-up dip, rotor frequency is very small (typically 1 to 3 Hz). Rot
 - Skin effect at line frequency raises effective rotor resistance at stand-still, boosting starting torque.
 - Diminishing skin effect as the rotor accelerates creates a temporary dip in torque known as pull-up torque before reaching breakdown torque.
 
+---
+
+[← Lec 154: Speed Control of IM 2](Lecture_154_Speed_Control_of_IM_2.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 156: Braking of Induction Motor →](Lecture_156_Braking_of_Induction_Motor.md)

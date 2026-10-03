@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 045: Three Phase Transformer 7](Lecture_045_Three_Phase_Transformer_7.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 047: Parallel Operation of Transformers →](Lecture_047_Parallel_Operation_of_Transformers.md)
+
+---
+
 # Problems Based on Three Phase Transformers - 3 | L 15 | Electrical Machines | GATE 2022
 
 - **Source**: https://www.youtube.com/watch?v=OCxomfN3YHE
@@ -756,3 +761,6 @@ This problem session covered two major non-standard transformer connections:
 - The primary neutral tap on a Scott connection is located at one-third of the teaser winding turns ($0.288 N_1$) from the junction point.
 - Unequal single-phase loads or differing load power factors on the two-phase side cause unbalanced line currents on the primary three-phase side.
 
+---
+
+[← Lec 045: Three Phase Transformer 7](Lecture_045_Three_Phase_Transformer_7.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 047: Parallel Operation of Transformers →](Lecture_047_Parallel_Operation_of_Transformers.md)

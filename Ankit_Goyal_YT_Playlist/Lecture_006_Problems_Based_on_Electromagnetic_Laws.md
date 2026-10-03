@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 005: Laws of Electromagnetism 2](Lecture_005_Laws_of_Electromagnetism_2.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 007: Magnetic Circuits →](Lecture_007_Magnetic_Circuits.md)
+
+---
+
 # Problems Based on Electromagnetic Laws | L1 | Electrical Machines | GATE 2022 | Ankit Goyal
 
 - **Source**: https://www.youtube.com/watch?v=IvYftsFm3VM
@@ -975,3 +980,6 @@ Both methods yield the exact same answer.
 - An axial current produces azimuthal fields parallel to a coaxial circular loop, giving zero net interaction force.
 - In a uniform magnetic field, the net Lorentz force on a bent conductor satisfies $\vec{F} = I(\vec{L}_{net} \times \vec{B})$.
 
+---
+
+[← Lec 005: Laws of Electromagnetism 2](Lecture_005_Laws_of_Electromagnetism_2.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 007: Magnetic Circuits →](Lecture_007_Magnetic_Circuits.md)

@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 006: Problems Based on Electromagnetic Laws](Lecture_006_Problems_Based_on_Electromagnetic_Laws.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 008: Problems based on Magnetic Circuits →](Lecture_008_Problems_based_on_Magnetic_Circuits.md)
+
+---
+
 # Electrical Machines | Lec 6 | Magnetic Circuits | GATE Electrical Engineering | CRACK GATE Exam
 
 - **Source**: https://www.youtube.com/watch?v=nfBXR4X5p7Q
@@ -801,3 +806,6 @@ The per-unit system normalizes machine and power system calculations across volt
 - Mean magnetic path length must always be calculated along the geometric centerline of the core cross-section.
 - Because air permeability is thousands of times lower than iron, a tiny air gap dominates total circuit reluctance.
 
+---
+
+[← Lec 006: Problems Based on Electromagnetic Laws](Lecture_006_Problems_Based_on_Electromagnetic_Laws.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 008: Problems based on Magnetic Circuits →](Lecture_008_Problems_based_on_Magnetic_Circuits.md)

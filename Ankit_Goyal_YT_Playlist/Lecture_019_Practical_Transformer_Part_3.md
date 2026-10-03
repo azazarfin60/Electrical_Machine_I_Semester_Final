@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 018: Practical Transformer Part 2](Lecture_018_Practical_Transformer_Part_2.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 020: Problems based on Equivalent Circuit →](Lecture_020_Problems_based_on_Equivalent_Circuit.md)
+
+---
+
 # Electrical Machines | Lec 14 | Practical Transformer (Part 3) | GATE Electrical Engineering
 
 - **Source**: https://www.youtube.com/watch?v=fcMvjUicjtA
@@ -839,3 +844,6 @@ $$\eta = \frac{P_{\text{out}}}{P_{\text{in}}} \times 100\% = \frac{9500}{10125} 
 - The equivalent per-unit impedance is invariant to referral side, satisfying $Z_{01,\text{pu}} = Z_{02,\text{pu}} = Z_{\text{eq, pu}}$.
 - The full per-unit equivalent circuit is completely identical whether formulated from primary or secondary ratings, eliminating turns-ratio complexities in power network calculations.
 
+---
+
+[← Lec 018: Practical Transformer Part 2](Lecture_018_Practical_Transformer_Part_2.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 020: Problems based on Equivalent Circuit →](Lecture_020_Problems_based_on_Equivalent_Circuit.md)

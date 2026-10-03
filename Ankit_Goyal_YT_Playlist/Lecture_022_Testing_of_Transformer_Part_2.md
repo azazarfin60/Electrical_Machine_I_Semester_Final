@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 021: Testing of Transformer 1](Lecture_021_Testing_of_Transformer_1.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 023: Problems Based on Testing of Transformer →](Lecture_023_Problems_Based_on_Testing_of_Transformer.md)
+
+---
+
 # Electrical Machines | Lec 16 | Testing of Transformer (Part 2) | GATE Electrical Engineering
 
 - **Source**: https://www.youtube.com/watch?v=rW6b0dr-F3Y
@@ -590,3 +595,6 @@ Transformers undergo four standard tests to evaluate performance:
 - Primary wattmeter $W_1$ measures total core loss for both units ($2 P_{\text{core}}$), while auxiliary secondary wattmeter $W_2$ measures total full-load copper loss ($2 P_{\text{cu,fl}}$).
 - Reflected secondary current circulates within the closed primary loop without entering the main supply line, enabling phantom loading where total power drawn equals strictly internal losses.
 
+---
+
+[← Lec 021: Testing of Transformer 1](Lecture_021_Testing_of_Transformer_1.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 023: Problems Based on Testing of Transformer →](Lecture_023_Problems_Based_on_Testing_of_Transformer.md)

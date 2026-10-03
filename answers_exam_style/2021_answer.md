@@ -484,13 +484,15 @@ With capacitor in series, net reactance:
 $$X_{\text{net}} = X_C - X_a = X_C - 3.5$$
 
 For leading angle of $50.57°$:
-$$\tan(50.57°) = \frac{X_C - 3.5}{9.5} = 1.213$$
+$$\tan(50.57°) = \cot(39.43°) = \frac{R_m}{X_m} = \frac{4.5}{3.7} = 1.2162$$
 
-$$X_C - 3.5 = 1.213 \times 9.5 = 11.52$$
+$$\frac{X_C - 3.5}{9.5} = 1.2162 \implies X_C - 3.5 = 1.2162 \times 9.5 = 11.554\,\Omega$$
 
-$$X_C = 11.52 + 3.5 = 15.02\,\Omega$$
+$$X_C = 11.554 + 3.5 = \mathbf{15.054\,\Omega}$$
 
-$$C = \frac{1}{2\pi f X_C} = \frac{1}{2\pi \times 50 \times 15.02} = \frac{1}{4722} = \boxed{211.8\,\mu\text{F}}$$
+$$C = \frac{1}{2\pi f X_C} = \frac{1}{2\pi \times 50 \times 15.054} = \frac{1}{4729.4} = \boxed{\mathbf{211.4\,\mu\text{F}}}$$
+
+*(Note: If using the intermediate rounded $\tan 50.57° \approx 1.213$, $X_C = 15.02\,\Omega$ and $C \approx 211.8\,\mu\text{F}$.)*
 
 ---
 
@@ -554,29 +556,30 @@ $I_{scx} = 100 \times 0.4 = 40$ A, $I_{scy} = 100 \times 0.917 = 91.65$ A
 - The power base line is horizontal (active component axis).
 - Since rotor Cu loss = stator Cu loss at standstill: the rotor Cu line divides the SC intercept equally (at 50%).
 
-**At rated output 14.92 kW:**
+**Scales:**
 
-Input power at rated output (from circle diagram):
+$N_s = \frac{120 \times 50}{6} = 1000$ rpm, so $\omega_s = \frac{2\pi \times 1000}{60} = 104.72$ rad/s
 
-$N_s = \frac{120 \times 50}{6} = 1000$ rpm
+SC input power at full voltage $= \sqrt{3} \times 400 \times 100 \times 0.4 = 27{,}710$ W
 
-Scale: power scale depends on voltage scale. Using $\sqrt{3} \times 400 = 692.8$ V per unit current.
+Take the current scale as 1 cm = 5 A. Then $AF$ (the SC power ordinate) measures 8 cm, so the power scale is:
+$$1 \text{ cm} = \frac{27{,}710}{8} = 3465 \text{ W}$$
 
-Power per amp of active component $= \sqrt{3} \times 400 = 692.8$ W/A.
+**At rated output 14.92 kW:** the intercept between the semicircle and the output line $O'A$ must measure $14920/3465 = 4.31$ cm. That vertical line $PL$ fixes the full-load operating point $P$.
 
-For 14.92 kW output, find the point on the circle where the vertical height above the output line equals the output power.
+**(i) Read off at $P$:**
 
-**(i) From circle diagram (estimated):**
-
-- Full load line current: ≈ 30 A
-- Full load slip: ≈ 5%
-- Full load efficiency: ≈ 84%
-- Full load power factor: ≈ 0.76 lagging
+- Full load line current $= OP = 6.5$ cm $= 6.5 \times 5 = \boxed{32.5 \text{ A}}$
+- Full load power factor $= PL/OP = 5.4/6.5 = \boxed{0.84 \text{ lagging}}$ ($\phi = 32.9°$)
+- Full load slip $= EK/PK = 0.3/5.35 = \boxed{5.6\%}$
+- Full load efficiency $= PE/PL = 4.3/5.4 = \boxed{80\%}$
 
 **(ii) Maximum torque:**
-Maximum torque corresponds to the longest vertical distance from the circle to the torque line (line from $O'$ to the point where rotor Cu loss line meets the base line).
+Drop $CM \perp$ to the torque line $O'H$, where $H$ splits $AB$ in the ratio rotor Cu loss : stator Cu loss. Here the two are equal, so $H$ is the mid-point of $AB$. The vertical intercept $MT$ between the semicircle and the torque line is the maximum torque in synchronous watts:
 
-$T_{\max}$ in synchronous watts $\approx$ read from circle diagram.
+$$MT = 7.8 \text{ cm} \implies T_{\max} = 7.8 \times 3465 = \boxed{27{,}030 \text{ synchronous watts}}$$
+
+$$T_{\max} = \frac{27{,}030}{104.72} = \boxed{258 \text{ N-m}}$$
 
 ---
 

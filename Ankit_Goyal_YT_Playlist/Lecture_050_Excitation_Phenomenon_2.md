@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 049: Excitation Phenomenon 1](Lecture_049_Excitation_Phenomenon_1.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 051: Excitation Phenomenon 3 →](Lecture_051_Excitation_Phenomenon_3.md)
+
+---
+
 # Electrical Machines | Lec 34 | Excitation Phenomenon - 2 | GATE/ESE Electrical Engineering
 
 - **Source**: https://www.youtube.com/watch?v=jEL_42aqTmk
@@ -695,3 +700,6 @@ The analysis will determine the exact waveform shape, whether peaky or flat-topp
 - In a closed delta winding, third-harmonic currents circulate freely inside the mesh but cannot enter external line conductors ($I_{L3} = 0$).
 - Circulating delta currents produce an internal impedance drop that cancels the induced third-harmonic EMF at the terminals ($V_{AB3} = 0$).
 
+---
+
+[← Lec 049: Excitation Phenomenon 1](Lecture_049_Excitation_Phenomenon_1.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 051: Excitation Phenomenon 3 →](Lecture_051_Excitation_Phenomenon_3.md)

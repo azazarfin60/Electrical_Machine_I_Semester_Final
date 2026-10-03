@@ -23,12 +23,15 @@
 
 ---
 
-## 2. Section-to-Topic Mapping (Consistent Across All Years)
+## 2. Section-to-Topic Mapping (Generally Consistent)
 
 | Section | Syllabus Topics | Typical Question Nos. |
 |:---|:---|:---|
 | **Section A** | Transformers (ideal, actual, equivalent circuit, testing, 3-φ connections, vector groups, phase conversion, auto-transformer) | Q1–Q4 |
 | **Section B** | 3-φ Induction Motor + 1-φ Induction Motor (rotating field, equivalent circuit, torque-speed, testing, starting, braking, speed control, induction generator) | Q5–Q8 |
+
+> [!NOTE]
+> **Exceptions:** 2017 is fully reversed (Section A = IM, Section B = Transformer). 2021 is mixed — Q3(c) torque/speed curve and Q4(c) rotor resistance are IM questions placed in Section A, while Q8(b) vector groups/Dyn5 is a transformer topic in Section B. All other years follow the stated mapping.
 
 ---
 
@@ -39,7 +42,7 @@
 | Topic | '17 | '18 | '19 | '20 | '21 | '23 | '24 | **Total (out of 7)** |
 |:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | **EMF Equation / Induced EMF derivation** | | | ✅ | | ✅ | ✅ | ✅ | **4** |
-| **Equivalent circuit (step-by-step)** | ✅ | ✅ | | ✅ | | | ✅ | **4** |
+| **Equivalent circuit (step-by-step)** | | ✅ | | ✅ | | | ✅ | **3** |
 | **OC & SC Test (procedure / parameter finding)** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | **7 🔥** |
 | **Efficiency calculation** | ✅ | ✅ | ✅ | | | ✅ | | **4** |
 | **All-day efficiency** | | ✅ | ✅ | | | ✅ | | **3** |
@@ -47,9 +50,9 @@
 | **Voltage regulation** | | ✅ | ✅ | | ✅ | ✅ | ✅ | **5** |
 | **Phasor / Vector diagram** | ✅ | ✅ | | | ✅ | | ✅ | **4** |
 | **No-load operation / No-load current** | | | ✅ | ✅ | | | ✅ | **3** |
-| **Open-Δ (V-V) connection / 57.7% proof** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | | **6 🔥** |
+| **Open-Δ (V-V) connection / 57.7% proof** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | **7 🔥** |
 | **Y-Y limitations** | | | | | ✅ | ✅ | | **2** |
-| **Parallel operation conditions** | ✅ | | | | ✅ | ✅ | | **3** |
+| **Parallel operation conditions** | ✅ | | ✅ | | ✅ | ✅ | | **4** |
 | **Auto-transformer (copper saving proof)** | | | | ✅ | | ✅ | | **2** |
 | **Scott (T-T) connection** | | ✅ | ✅ | | | | ✅ | **3** |
 | **Vector groups / Dyn notation** | | | ✅ | | ✅ | | | **2** |
@@ -57,25 +60,26 @@
 | **Transformer breathing** | | | ✅ | | | | | **1** |
 | **Instrument transformer / PT** | ✅ | | | | | | | **1** |
 | **Inrush current (first connected to line)** | ✅ | | | | | | | **1** |
-| **Frequency/flux effects** | | ✅ | | | | | | **1** |
+| **Frequency/flux effects** | ✅ | ✅ | | | | | | **2** |
 | **Shell-type core economy (reverse winding)** | | | ✅ | | | | | **1** |
 | **Magnetizing current non-sinusoidal** | | | | | | | ✅ | **1** |
 | **Transformer classification** | | ✅ | | | | | | **1** |
 | **SC test on HV side — why?** | | | | | | | ✅ | **1** |
 | **3-φ to 2-φ conversion (general)** | | | ✅ | | | | | **1** |
-| **Ideal transformer properties** | | | | | ✅ | | ✅ | **2** |
+| **Ideal transformer properties** | ✅ | | | | ✅ | | ✅ | **3** |
 | **Laminating core purpose** | | | | ✅ | | | | **1** |
 | **Hysteresis & Eddy current losses** | ✅ | | | | | | | **1** |
+| **Transformer rated in kVA — why?** | | | | ✅ | | | | **1** |
 
 ### 3.2 SECTION B — Induction Motor Topics
 
 | Topic | '17 | '18 | '19 | '20 | '21 | '23 | '24 | **Total (out of 7)** |
 |:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | **Rotating magnetic field (3-φ or 2-φ) proof** | ✅ | ✅ | | | ✅ | ✅ | ✅ | **5 🔥** |
-| **Why IM = rotating transformer** | ✅ | | ✅ | ✅ | | | | **3** |
-| **Slip definition / IM can't run at Ns proof** | | | | ✅ | ✅ | ✅ | ✅ | **4** |
+| **Why IM = rotating transformer** | ✅ | | ✅ | ✅ | | ✅ | | **4** |
+| **Slip definition / IM can't run at Ns proof** | ✅ | | | ✅ | ✅ | ✅ | ✅ | **5 🔥** |
 | **Torque-speed / Torque-slip curve** | | | | ✅ | ✅ | ✅ | ✅ | **4** |
-| **Torque equation / Max torque derivation** | ✅ | | ✅ | | ✅ | | ✅ | **4** |
+| **Torque equation / Max torque derivation** | ✅ | | ✅ | ✅ | ✅ | ✅ | ✅ | **6 🔥** |
 | **Tf/Tmax ratio derivation** | ✅ | | | | | | | **1** |
 | **Max torque to full-load torque ratio (numerical)** | ✅ | | ✅ | | | | ✅ | **3** |
 | **Equivalent circuit of IM** | ✅ | | | ✅ | | ✅ | | **3** |
@@ -86,7 +90,7 @@
 | **Double field revolving theory (1-φ IM)** | | ✅ | ✅ | ✅ | ✅ | ✅ | | **5 🔥** |
 | **1-φ IM not self-starting — why?** | ✅ | | ✅ | | | | | **2** |
 | **1-φ IM starting methods (capacitor-start, split-phase, etc.)** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | | **6 🔥** |
-| **Capacitor value for max starting torque** | | ✅ | | | ✅ | | | **2** |
+| **Capacitor value for max starting torque** | | ✅ | ✅ | | ✅ | | | **3** |
 | **Power stages / rotor power division** | | ✅ | | ✅ | | | | **2** |
 | **Synchronous watt** | | | | | ✅ | ✅ | | **2** |
 | **Rotor efficiency** | | | | | ✅ | ✅ | | **2** |
@@ -97,8 +101,10 @@
 | **Crawling and Cogging** | | | | | | ✅ | | **1** |
 | **Asynchronous generator capacitance calc** | | ✅ | | | | | ✅ | **2** |
 | **Rotor resistance speed control (numerical)** | | | | | ✅ | | | **1** |
-| **1-φ IM vector/phasor diagram** | | | | | | | ✅ | **1** |
-| **IM tests for circuit model** | | | | | | | ✅ | **1** |
+| **1-φ IM vector/phasor diagram** | | ✅ | | | | | ✅ | **2** |
+| **IM tests for circuit model** | | | ✅ | | | | ✅ | **2** |
+| **Classify AC motors** | | | | ✅ | | | | **1** |
+| **Reverse direction of rotation** | | | | ✅ | | | | **1** |
 
 ---
 
@@ -111,15 +117,15 @@ These exact questions (or near-identical variants) have appeared **3+ times**. M
 | # | Question Pattern | Years Appeared | Priority |
 |:---|:---|:---|:---:|
 | 1 | **OC/SC test data → find equivalent circuit parameters, efficiency, voltage regulation** | '17, '18, '19, '20, '21, '23, '24 | 🔴 MUST |
-| 2 | **Open-Δ connection — prove 57.7% capacity / show continuity of supply when 1 phase burns** | '17, '18, '19, '20, '21, '23 | 🔴 MUST |
+| 2 | **Open-Δ connection — prove 57.7% capacity / show continuity of supply when 1 phase burns** | '17, '18, '19, '20, '21, '23, '24 | 🔴 MUST |
 | 3 | **Voltage regulation — derive for leading, lagging, unity pf** | '18, '19, '21, '23, '24 | 🔴 MUST |
 | 4 | **EMF equation derivation** $E = 4.44 f N \Phi_m$ | '19, '21, '23, '24 | 🟠 HIGH |
-| 5 | **Equivalent circuit — step-by-step derivation** | '17, '18, '20, '24 | 🟠 HIGH |
+| 5 | **Equivalent circuit — step-by-step derivation** | '18, '20, '24 | 🟡 MEDIUM |
 | 6 | **Transformer phasor/vector diagram (loaded, lagging pf)** | '17, '18, '21, '24 | 🟠 HIGH |
 | 7 | **Efficiency calculation — half load, full load, various pf** | '17, '18, '19, '23 | 🟠 HIGH |
 | 8 | **All-day efficiency (with load schedule)** | '18, '19, '23 | 🟡 MEDIUM |
 | 9 | **Scott (T-T) connection — voltage/current ratings, KVA calculation** | '18, '19, '24 | 🟡 MEDIUM |
-| 10 | **Parallel operation conditions for 3-φ transformers** | '17, '21, '23 | 🟡 MEDIUM |
+| 10 | **Parallel operation conditions for 3-φ transformers** | '17, '19, '21, '23 | 🟠 HIGH |
 | 11 | **Auto-transformer copper saving proof** | '20, '23 + partial in '20 | 🟡 MEDIUM |
 | 12 | **Max efficiency occurs when Cu loss = Fe loss — proof** | '19, '23 | 🟡 MEDIUM |
 
@@ -129,15 +135,15 @@ These exact questions (or near-identical variants) have appeared **3+ times**. M
 |:---|:---|:---|:---:|
 | 1 | **Double field revolving theory for 1-φ IM** | '18, '19, '20, '21, '23 | 🔴 MUST |
 | 2 | **1-φ IM starting methods (capacitor-start, split-phase, etc.)** | '17, '18, '19, '20, '21, '23 | 🔴 MUST |
-| 3 | **Rotating magnetic field proof** (resultant flux = 1.5Φ_m, constant magnitude, synchronous speed) | '17, '18, '21, '23, '24 | 🔴 MUST |
-| 4 | **Slip definition + IM cannot run at synchronous speed — proof** | '20, '21, '23, '24 | 🔴 MUST |
+| 3 | **Rotating magnetic field proof** (3-φ: resultant = 1.5Φ_m; 2-φ variant in '21: resultant = Φ_m) | '17, '18, '21, '23, '24 | 🔴 MUST |
+| 4 | **Slip definition + IM cannot run at synchronous speed — proof** | '17, '20, '21, '23, '24 | 🔴 MUST |
 | 5 | **Circle diagram construction from NL & BR test data** | '17, '18, '19, '21 | 🟠 HIGH |
 | 6 | **Torque-speed / Torque-slip characteristic curve** | '20, '21, '23, '24 | 🟠 HIGH |
-| 7 | **Max torque derivation / Tmax formula proof** | '17, '19, '21, '24 | 🟠 HIGH |
+| 7 | **Max torque derivation / Tmax formula proof** | '17, '19, '20, '21, '23, '24 | 🔴 MUST |
 | 8 | **Ratio of Tmax to Tf (numerical)** — nearly identical problem repeated | '17, '19, '24 | 🟠 HIGH |
 | 9 | **Star-delta starter explanation / proof** (equivalent to 1/√3 autotransformer) | '18, '20, '23 | 🟡 MEDIUM |
 | 10 | **Induction motor as induction generator** + capacitance calculation | '18, '23, '24 | 🟡 MEDIUM |
-| 11 | **Why IM is called rotating transformer** | '17, '19, '20 | 🟡 MEDIUM |
+| 11 | **Why IM is called rotating transformer** | '17, '19, '20, '23 | 🟠 HIGH |
 | 12 | **Plugging / braking definitions** | '17, '18, '19, '20 | 🟡 MEDIUM |
 
 ---
@@ -150,17 +156,17 @@ These numerical problems were repeated with **identical or near-identical data**
 
 | Problem | Appearances | Data |
 |:---|:---|:---|
-| **OC/SC test → parameters of 20 kVA, 2400/240V transformer** | [2018](PrevYearQuestions/2018.md) Q2, [2021](PrevYearQuestions/2021.md) Q2 | V=72V, W=275-300W, I=rated; regulation at 0.8 lag |
-| **No-load test: 220V/110V, 0.5A, 30W → magnetizing & loss current** | [2020](PrevYearQuestions/2020.md) Q2d, [2024](PrevYearQuestions/2024.md) Q3c | Identical data — 220V, 110V, 0.5A, 30W |
-| **Scott connection: 3300V→440V, 33 KVA** | [2018](PrevYearQuestions/2018.md) Q4b, [2024](PrevYearQuestions/2024.md) Q4c | Identical: 440V, 33KVA, 3300V supply |
-| **Circle diagram: 415V, 29.84 kW, delta motor** | [2017](PrevYearQuestions/2017.md) Q3b, [2019](PrevYearQuestions/2019.md) Q6a | Identical: NL(415V, 21A, 1250W), BR(100V, 45A, 2730W) |
+| **OC/SC test → parameters (V=72V, W≈275–300W, regulation at 0.8 lag)** | [2018](PrevYearQuestions/2018.md) Q1d (11kV/230V, 20kVA), [2021](PrevYearQuestions/2021.md) Q2c (2400/240V, 20kVA) | Same SC test data (V=72V, W≈275–300W, I=rated); different transformer ratings |
+| **No-load test: 220V/110V, 0.5A, 30W → magnetizing & loss current** | [2020](PrevYearQuestions/2020.md) Q2d, [2024](PrevYearQuestions/2024.md) Q3c | Same core data (220V, 110V, 0.5A, 30W). **2024 adds $R_1 = 0.6\,\Omega$**, so iron loss is $30 - 0.15 = 29.85$ W there, not 30 W |
+| **T-connection: 3300V supply → 440V, 33 kVA load, coil + kVA ratings** | [2018](PrevYearQuestions/2018.md) Q4b, [2024](PrevYearQuestions/2024.md) Q4c | Identical: 440V, 33 kVA, 3300V supply. Both transformers 19.05 kVA (15.5% oversize) |
+| **Circle diagram: 415V, 29.84 kW, delta motor** *(IM numerical, placed here for co-location with repeated data)* | [2017](PrevYearQuestions/2017.md) Q3b, [2019](PrevYearQuestions/2019.md) Q6a | Identical: NL(415V, 21A, 1250W), BR(100V, 45A, 2730W) |
 
 ### 5.2 Induction Motor Numericals
 
 | Problem | Appearances | Data |
 |:---|:---|:---|
 | **8-pole, 50Hz, 2% slip → Tmax/Tf ratio + speed at Tmax** | [2017](PrevYearQuestions/2017.md) Q2d, [2019](PrevYearQuestions/2019.md) Q8c | Identical: R₂=0.001Ω, X₂=0.005Ω |
-| **8-pole, 50Hz, 4% slip → Tmax/Tf ratio** | [2024](PrevYearQuestions/2024.md) Q7c | Variant: R₂=0.01Ω, X₂=0.1Ω (same ratio!) |
+| **8-pole, 50Hz, 4% slip → Tmax/Tf ratio** | [2024](PrevYearQuestions/2024.md) Q7c | Variant of the row above, but **not** the same ratio: $R_2/X_2 = 0.01/0.1 = 0.1$ here vs $0.001/0.005 = 0.2$ in 2017/2019. So $s_{max} = 0.1$ and $T_{max}/T_f = 1.45$, not the 2017/2019 figures |
 | **IM as IG: 440V, 4-pole, 1470rpm, 30kW, 40A, pf=85%** | [2018](PrevYearQuestions/2018.md) Q5c, [2024](PrevYearQuestions/2024.md) Q8c | Identical data in both papers |
 
 > [!TIP]
@@ -209,7 +215,7 @@ pie title IM Sub-topic Marks Weight (Averaged Across 7 Papers)
 | **Circle diagram declining** | Common in '17–'21 (appeared 4 times); **absent** in '23 and '24. May be de-emphasized or could return. |
 | **Induction generator rising** | Appeared only once in '18, then came back in both '23 and '24. Now a **hot topic**. |
 | **DFRT is evergreen** | Double field revolving theory appeared in 5 out of 7 papers. Only missing in '17 and '24. |
-| **OC/SC test is guaranteed** | Appeared in ALL 7 papers. The single most certain question in the exam. |
+| **OC/SC test is guaranteed** | Appeared in ALL 7 papers. Ties with Open-Δ (also 7/7) as the most certain question. |
 | **Auto-transformer** | Appeared in '20 and '23. Was not asked in '17, '18, '19, '21, '24. Could be due for a return. |
 | **Vector groups / Dyn notation** | Only '19 and '21. Niche but specifically in the [syllabus](Syllabus.md). |
 | **Crawling & Cogging** | Only '23. New addition — may return in future papers. |
@@ -244,7 +250,7 @@ pie title IM Sub-topic Marks Weight (Averaged Across 7 Papers)
 | Torque-speed characteristics | Well covered | ✅ Safe |
 | **Effect of changing R₂ and X₂ on T-s curves** | Rarely asked explicitly | ⚠️ Under-tested |
 | Motor torque & developed rotor power | Covered | ✅ Safe |
-| NL test / Blocked rotor test (IM) | Circle diagram covers this | ✅ Safe |
+| NL test / Blocked rotor test (IM) | Asked directly in '19 Q7a and '24 Q7a; also implicit in circle diagram | ✅ Safe |
 | Starting methods, braking, speed control | Well covered | ✅ Safe |
 | Induction generator | Rising trend | ✅ Safe |
 | **1-φ IM equivalent circuit** | Never asked explicitly! | 🔴 **Gap** |
@@ -316,7 +322,7 @@ pie title IM Sub-topic Marks Weight (Averaged Across 7 Papers)
 ## 11. Critical Numerical Bank — Practice These Specific Problems
 
 > [!TIP]
-> These are the **distinct numerical problem types** extracted from all 7 papers. Solving each of these once gives you coverage of every numerical pattern that has appeared.
+> These are the **major distinct numerical problem types** extracted from all 7 papers. Solving each gives coverage of nearly every numerical pattern. A few one-off variants (turns-ratio→flux, voltage-drop→Cu-loss-increase, alternator-feeding-IM, frequency-change kVA check) are not listed but are straightforward extensions.
 
 | # | Problem Type | Source (Example) |
 |:---|:---|:---|

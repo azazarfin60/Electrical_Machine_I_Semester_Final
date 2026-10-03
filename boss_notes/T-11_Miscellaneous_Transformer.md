@@ -25,7 +25,7 @@ This file collects short-answer transformer topics that appear as 2-3 mark fille
 ## 🏆 Golden Questions (Past Exam Archive)
 
 ### 🎯 Q1: Why are transformers rated in kVA (not kW)?
-> **Appeared:** 2020 Q3(a), 2023 Q1(c), 2024 Q1(c) — 2-3 marks
+> **Appeared:** 2020 Q3(a) — 2 marks
 
 **Full Answer:**
 
@@ -154,15 +154,38 @@ If frequency decreases (voltage constant):
 - Iron losses increase sharply
 - Magnetizing current rises
 
-**Numerical example (PYQ 2017):** An 18 kVA, 20000/480V, 60 Hz transformer used at 50 Hz:
+**Numerical example (PYQ 2017 Q7(c)):** An 18 kVA, 20000/480V, 60 Hz transformer used at 50 Hz to supply a 15 kVA, 415 V load.
 
-$$\Phi_{m,50} = \Phi_{m,60} \times \frac{60}{50} = 1.2 \times \Phi_{m,60}$$
+From the EMF equation, core flux is proportional to voltage over frequency:
+$$\Phi_m \propto \frac{V}{f}$$
 
-Flux increases by 20%. Core losses rise. But if the load is only 15 kVA (below rated 18 kVA), the winding current stays below rated, so the transformer can still operate safely. Monitor core temperature carefully.
+- **If operated at full rated voltage (20,000 V) at 50 Hz:**
+  $$\frac{\Phi_{m,50}}{\Phi_{m,60}} = \frac{60}{50} = 1.20$$
+  Core flux increases by 20%. This drives the core deep into magnetic saturation. Magnetizing current spikes dramatically, causing core overheating. It cannot operate safely at full rated voltage.
 
-Secondary voltage at 50 Hz: $V_2 = 480 \times 50/60 = 400$ V (close to the required 415V).
+- **To prevent saturation, voltage must be derated ($V/f = \text{constant}$):**
+  Scaling voltage by $50/60$ keeps core flux constant:
+  $$V_{1,50} = 20000 \times \frac{50}{60} = 16667\text{ V}, \qquad V_{2,50} = 480 \times \frac{50}{60} = 400\text{ V}$$
+  Rated current depends on conductor size, so it stays unchanged. The thermal kVA capacity drops with voltage:
+  $$S_{50} = S_{60} \times \frac{50}{60} = 18 \times \frac{50}{60} = \boxed{15\text{ kVA}}$$
 
-**Conclusion:** Yes, the transformer can supply 15 kVA safely, but with elevated core losses and slightly reduced secondary voltage.
+**Conclusion:** Yes, the transformer can safely supply 15 kVA, but only if the supply voltage is derated to 16.67 kV. This yields 400 V on the secondary (close to the 415 V load) at 100% of its derated thermal capacity.
+
+### 🎯 Q7: Enlist some practical applications of transformer.
+> **Appeared:** 2024 Q1(a) — 2 marks
+
+**Full Answer:**
+
+1. **Step-up in generating stations:** raise generator voltage to a high value for economical transmission (lower $I^2R$ loss).
+2. **Step-down in receiving substations:** reduce the transmission voltage to distribution levels for consumer use.
+3. **Interconnecting two systems of different voltages** (e.g. 400 kV with 345 kV) using auto-transformers.
+4. **Voltage matching for instruments:** potential transformer for voltmeters, current transformer for ammeters and relays. They also give electrical isolation.
+5. **Furnace and welding supplies:** arc-furnace and spot-welding transformers give the large low-voltage, high-current supply needed.
+6. **Frequency/voltage control:** variacs in laboratories, and stabilizers for sensitive equipment.
+
+Two marks means four or five clean one-liners. Do not write an essay.
+
+---
 
 ---
 

@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 002: Electrical Materials](Lecture_002_Electrical_Materials.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 004: Laws of Electromagnetism 1 →](Lecture_004_Laws_of_Electromagnetism_1.md)
+
+---
+
 # Electrical Machines | Lec 3 | Electrical Materials-2 | GATE Electrical Engineering | CRACK GATE Exam
 
 - **Source**: https://www.youtube.com/watch?v=nTmQHHvjjlU
@@ -622,3 +627,6 @@ The physical operation of electrical machines rests on two engineering subjects.
 - Cold-Rolled Grain-Oriented (CRGO) steel provides high magnetic permeability along the rolling direction ($\mu_{\text{rolling}} \gg \mu_{\text{transverse}}$), which benefits linear transformer flux paths rather than circular rotating machine paths.
 - Dielectric breakdown occurs when an external electric field exerts a separating force that exceeds the internal Coulomb attraction of bound atomic dipoles.
 
+---
+
+[← Lec 002: Electrical Materials](Lecture_002_Electrical_Materials.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 004: Laws of Electromagnetism 1 →](Lecture_004_Laws_of_Electromagnetism_1.md)

@@ -40,7 +40,7 @@ The field rotates at $\omega = 2\pi f$ rad/s, giving $N_s = 120f/P$ rpm.
 
 ### Q5(a): The RMF proof: 2024 version with emphasis on what each step means
 
-> 📋 **Appeared in:** 2017 Q1(b), 2018 Q6(b), 2021 Q5(c), 2024 Q5(a)
+> 📋 **Appeared in:** 2017 Q1(b), 2018 Q6(b), 2021 Q5(c), 2023 Q5(c), 2024 Q5(a)
 
 #### The complete physical story
 

@@ -316,7 +316,13 @@ The load fraction at max efficiency: $x = \sqrt{P_{Fe}/P_{Cu,FL}}$
 
 **Total input** $= 500 + 84 = 584$ kWh
 
-$$\boxed{\eta_{\text{commercial}} = \frac{500}{584} \times 100 = 85.62\%}$$
+**Commercial efficiency** is output watts over input watts at rated load (Theraja Art. 32.32). At full load the losses are 3 kW iron plus 3 kW copper:
+
+$$\boxed{\eta_{\text{commercial}} = \frac{100}{100 + 3 + 3} \times 100 = 94.34\%}$$
+
+The 24-hour energy ratio is the **all-day efficiency**, a different quantity:
+
+$$\eta_{\text{all-day}} = \frac{500}{584} \times 100 = 85.62\%$$
 
 ---
 
@@ -414,138 +420,212 @@ $$= \frac{64.81}{2400} \times 100 = \boxed{2.70\%}$$
 ### [2023 Q2(a)]
 > 📋 **Appeared in:** 2023 Q2(a)
 
-**(a) A 100 kVA transformer, iron loss = 1 kW, full-load Cu loss = 1 kW. Distribution transformer load profile: 4h no-load, 12h half load, 8h full load. Find all-day efficiency. [06, CO1]**
+**(a) Define power transformer. Prove that, the efficiency of a transformer will be maximum when copper loss is equal to iron loss. [CO2, Marks: 03]**
 
-**Energy output (kWh):**
+**Power transformer.** A large, high-rating static transformer used in generating stations and transmission substations to step voltage up or down at bulk power levels. It runs near full load for most of the day, is designed for the highest possible full-load efficiency, and is usually oil-immersed with forced cooling.
 
-| Period | Output | Hours | kWh |
-|:---|:---:|:---:|:---:|
-| No-load | 0 kW | 4 | 0 |
-| Half load (at upf) | 50 kW | 12 | 600 |
-| Full load (at upf) | 100 kW | 8 | 800 |
-| **Total** | | 24 | **1400 kWh** |
+![Transformer efficiency curve against load, peaking where copper loss equals iron loss](../Books/Theraja/Ch-32/diagrams/Ch-32_p56_fig56.jpg)
 
-**Iron loss (24 hours, constant):**
-$$W_{Fe} = 1 \times 24 = 24 \text{ kWh}$$
+**Proof.** Let the secondary carry current $I_2$ at terminal voltage $V_2$ and power factor $\cos\phi$. Let $P_i$ be the iron loss and $R_{02}$ the total resistance referred to the secondary.
 
-**Copper losses:**
+$$\eta = \frac{V_2 I_2 \cos\phi}{V_2 I_2 \cos\phi + P_i + I_2^2 R_{02}}$$
 
-| Period | Cu loss | Hours | kWh |
-|:---|:---:|:---:|:---:|
-| No-load | 0 | 4 | 0 |
-| Half load | $(0.5)^2 \times 1 = 0.25$ kW | 12 | 3 |
-| Full load | $1$ kW | 8 | 8 |
-| **Total Cu** | | | **11 kWh** |
+Divide numerator and denominator by $I_2$:
+$$\eta = \frac{V_2 \cos\phi}{V_2 \cos\phi + \dfrac{P_i}{I_2} + I_2 R_{02}}$$
 
-**Total losses** $= 24 + 11 = 35$ kWh
+$V_2$ and $\cos\phi$ are held constant, so $\eta$ is maximum when the denominator is minimum:
+$$\frac{d}{dI_2}\left(\frac{P_i}{I_2} + I_2 R_{02}\right) = 0 \implies -\frac{P_i}{I_2^2} + R_{02} = 0$$
+$$\therefore\ I_2^2 R_{02} = P_i$$
 
-**Total input** $= 1400 + 35 = 1435$ kWh
+$$\boxed{\text{Copper loss} = \text{Iron loss at maximum efficiency}}$$
 
-$$\boxed{\eta_{\text{all-day}} = \frac{1400}{1435} \times 100 = 97.56\%}$$
+The second derivative is $2P_i/I_2^3 > 0$, so this is a true minimum of the loss term and a maximum of $\eta$.
+
+**Load at which it happens.** If $P_{Cu,FL}$ is the full-load copper loss, the load fraction $x$ for maximum efficiency is $x = \sqrt{P_i/P_{Cu,FL}}$.
 
 ---
 
 ### [2023 Q2(b)]
 > 📋 **Appeared in:** 2023 Q2(b)
 
-**(b) OC test (secondary open): 220V, 0.8A, 80W. SC test (primary short): 12V, 10A, 40W. Transformer rated 2.2kV/220V. Find the equivalent circuit parameters referred to the secondary. [06, CO1]**
+**(b) The corrected instrument readings obtained from open and short-circuit tests on 10-kVA, 450/120 V, 50-Hz transformer are: [CO3, Marks: 04]**
+> **O.C. test:** $V_1 = 120\text{ V}; \ I_1 = 4.2\text{ A}; \ W_1 = 80\text{ W}$ (read on the low voltage side).
+> **S.C. test:** $V_1 = 9.65\text{ V}; \ I_1 = 22.2\text{ A}; \ W_1 = 120\text{ W}$ (with low-voltage winding short circuited).
+>
+> Compute **(i)** equivalent circuit constants, **(ii)** efficiency and voltage regulation for an 80% lagging p.f. load.
 
-**From OC test (secondary/LV side):**
+**Which side is which.** Rated HV current $= 10000/450 = 22.2\text{ A}$ and rated LV current $= 10000/120 = 83.3\text{ A}$. The S.C. reading of 22.2 A is therefore the HV (450 V, primary) side. The O.C. test is on the LV (120 V) side.
 
-$$\cos\phi_0 = \frac{W_0}{V_0 I_0} = \frac{80}{220 \times 0.8} = \frac{80}{176} = 0.4545$$
+![Open-circuit test circuit: low voltage winding energised at rated voltage with wattmeter, ammeter and voltmeter, high voltage winding left open](diagrams/transformer_oc_test_circuit.png)
 
-$$I_c = I_0\cos\phi_0 = 0.8 \times 0.4545 = 0.364 \text{ A}$$
+![Short-circuit test circuit: reduced voltage applied to the high voltage winding with the low voltage winding shorted, wattmeter reading full-load copper loss](diagrams/transformer_sc_test_circuit.png)
 
-$$I_m = I_0\sin\phi_0 = 0.8 \times \sqrt{1 - 0.4545^2} = 0.8 \times 0.8909 = 0.713 \text{ A}$$
+#### (i) Equivalent circuit constants
 
-Referred to secondary:
-$$R_{c2} = \frac{V_0}{I_c} = \frac{220}{0.364} = \boxed{604.4\,\Omega}$$
+**From the O.C. test (shunt branch, LV side):**
+$$\cos\phi_0 = \frac{80}{120 \times 4.2} = 0.159, \qquad \sin\phi_0 = 0.987$$
+$$I_w = 4.2 \times 0.159 = 0.667\text{ A}, \qquad I_\mu = 4.2 \times 0.987 = 4.147\text{ A}$$
+$$R_0' = \frac{120}{0.667} = 180\ \Omega, \qquad X_0' = \frac{120}{4.147} = 28.9\ \Omega \quad \text{(LV side)}$$
 
-$$X_{m2} = \frac{V_0}{I_m} = \frac{220}{0.713} = \boxed{308.6\,\Omega}$$
+Refer to the primary with $a = 450/120 = 3.75$, so $a^2 = 14.06$:
+$$\boxed{R_0 = 180 \times 14.06 = 2531\ \Omega \approx 2525\ \Omega, \qquad X_0 = 28.9 \times 14.06 = 407\ \Omega \approx 406\ \Omega}$$
 
-**From SC test (primary/HV side shorted):**
+Iron loss $P_i = 80\text{ W}$.
 
-Turns ratio: $a = 2200/220 = 10$
+**From the S.C. test (series branch, referred to primary):**
+$$Z_{01} = \frac{9.65}{22.2} = 0.435\ \Omega$$
+$$R_{01} = \frac{120}{22.2^2} = \frac{120}{492.8} = 0.243\ \Omega$$
+$$X_{01} = \sqrt{0.435^2 - 0.243^2} = \sqrt{0.1892 - 0.0590} = 0.361\ \Omega$$
 
-Rated secondary current: $I_2 = $ rated → from SC test, $I_{sc} = 10$ A on secondary.
+$$\boxed{R_{01} = 0.243\ \Omega, \quad X_{01} = 0.361\ \Omega, \quad Z_{01} = 0.435\ \Omega}$$
 
-$$R_{02,sec} = \frac{W_{sc}}{I_{sc}^2} = \frac{40}{10^2} = \boxed{0.4\,\Omega}$$
+Full-load copper loss $P_{Cu} = 120\text{ W}$.
 
-$$Z_{02} = \frac{V_{sc}}{I_{sc}} = \frac{12}{10} = 1.2\,\Omega$$
+![Approximate equivalent circuit referred to the primary, with the exciting branch at the input terminals and R01, X01 in series](diagrams/tx_step5_approximate_referred_to_primary.png)
 
-$$X_{02} = \sqrt{Z_{02}^2 - R_{02}^2} = \sqrt{1.44 - 0.16} = \sqrt{1.28} = \boxed{1.131\,\Omega}$$
+#### (ii) Efficiency and voltage regulation at 80% lagging p.f.
 
-**Equivalent circuit referred to secondary:**
-- Series: $R_{02} = 0.4\,\Omega$, $X_{02} = 1.131\,\Omega$
-- Shunt: $R_{c2} = 604.4\,\Omega$, $X_{m2} = 308.6\,\Omega$
+**Efficiency (full load):**
+$$\text{Output} = 10000 \times 0.8 = 8000\text{ W}, \qquad \text{Total loss} = 80 + 120 = 200\text{ W}$$
+$$\eta = \frac{8000}{8000 + 200} \times 100\%$$
+
+$$\boxed{\eta = 97.56\%}$$
+
+**Voltage regulation.** Full-load primary current $I_1 = 10000/450 = 22.2$ A, $\cos\phi = 0.8$, $\sin\phi = 0.6$:
+$$\text{Drop} = 22.2\,(0.243 \times 0.8 + 0.361 \times 0.6) = 22.2 \times 0.4112 = 9.13\text{ V}$$
+$$\%\text{Reg} = \frac{9.13}{450} \times 100\%$$
+
+$$\boxed{\text{Voltage regulation} = 2.03\% \ \text{(lagging, so it is a voltage drop)}}$$
+
+> [!info] Cross-check
+> Working on the LV side instead gives $R_{02} = 0.0173\ \Omega$, $X_{02} = 0.0256\ \Omega$, $I_2 = 83.3\text{ A}$, drop $= 2.43\text{ V}$ out of 120 V, which is the same 2.03%.
 
 ---
 
-### [2024 Q3(a)]
-> 📋 **Appeared in:** 2024 Q3(a)
+### [2023 Q3(b)]
+> 📋 **Appeared in:** 2023 Q3(b)
 
-**(a) Why are OC and SC tests preferred to direct load test for finding efficiency and voltage regulation of a transformer? [04, CO1]**
+**(b) Define all day efficiency of a transformer. A 100-kVA lighting transformer has a full-load loss of 3 kW, the losses being equally divided between iron and copper. During a day, the transformer operates on full load for 3 hours, one-half load for 4 hours, the output being negligible for the remainder of the day. Calculate the all day efficiency. [CO3, Marks: 04]**
 
-**Direct load test problems:**
-1. Requires a full-rated load (resistive, inductive, or capacitive): difficult to arrange and expensive for large transformers.
-2. The load must absorb the full kVA during the test.
-3. Full losses must be supplied continuously. For a 500 kVA transformer, maintaining a full test for hours is costly and wasteful.
-4. The test gives results only at one load condition.
+**Definition.** All-day (or energy) efficiency is the ratio of energy output in kWh to energy input in kWh over 24 hours:
+$$\eta_{\text{all-day}} = \frac{\text{kWh output in 24 h}}{\text{kWh output} + \text{kWh iron loss} + \text{kWh copper loss}}$$
 
-**OC and SC test advantages:**
-1. **Low power consumption:** OC test uses rated voltage but only no-load current (~2-10% of rated). SC test uses only ~5% of rated voltage. Power consumed is only the losses: orders of magnitude smaller.
-2. **Economical:** No large load needed.
-3. **Accurate:** Direct measurement of losses (core loss from OC, copper loss from SC). No estimation.
-4. **Multiple results:** Using these parameters, efficiency and VR can be calculated for any load and any power factor without repeating the test.
-5. **Safe:** No thermal stress from full-load currents sustained for long.
+It is used for distribution transformers, which stay energised all day but are loaded only part of the day. The iron loss then runs for 24 hours while the copper loss runs only while loaded.
+
+![Transformer losses plotted against load, showing constant iron loss and load-dependent copper loss](../Books/Theraja/Ch-32/diagrams/Ch-32_p54_losses_vs_load.jpg)
+
+**Given:** 100 kVA, full-load loss $= 3\text{ kW}$ shared equally, so $P_{Fe} = P_{Cu,FL} = 1.5\text{ kW}$. A lighting load is treated as unity power factor, so 100 kVA gives 100 kW.
+
+**Step 1. Energy output in 24 h.**
+
+| Period | Load | Output (kW) | Hours | kWh |
+|:---|:---|---:|---:|---:|
+| Full load | 100% | 100 | 3 | 300 |
+| Half load | 50% | 50 | 4 | 200 |
+| Rest | negligible | 0 | 17 | 0 |
+| **Total** | | | **24** | **500** |
+
+$$\text{Output} = 300 + 200 = 500\text{ kWh}$$
+
+**Step 2. Iron loss for the full 24 hours.** The transformer stays energised, so
+$$\text{kWh}_{Fe} = 1.5 \times 24 = 36\text{ kWh}$$
+
+**Step 3. Copper loss, which follows the square of load.**
+$$\text{kWh}_{Cu} = \underbrace{1.5 \times 3}_{\text{full load}} + \underbrace{1.5 (0.5)^2 \times 4}_{\text{half load}} = 4.5 + 0.375 \times 4 = 4.5 + 1.5 = 6\text{ kWh}$$
+
+**Step 4. All-day efficiency.**
+$$\eta_{\text{all-day}} = \frac{500}{500 + 36 + 6} = \frac{500}{542}$$
+
+$$\boxed{\eta_{\text{all-day}} = 92.25\%}$$
+
+> [!info] Why it is so much lower than full-load efficiency
+> At full load, $\eta = 100/(100+1.5+1.5) = 97.1\%$. Over the day the 36 kWh of iron loss dominates, because the transformer is magnetised for 24 hours but delivers useful output for only 7 of them.
 
 ---
 
-### [2024 Q3(b)]
-> 📋 **Appeared in:** 2024 Q3(b)
+### [2024 Q2(c)]
+> 📋 **Appeared in:** 2024 Q2(c)
 
-**(b) 20 kVA, 2000/400V, OC test (HV open): 400V, 1.5A, 160W. SC test (LV short): 60V, rated I, 300W. Find: (i) parameters of equivalent circuit referred to HV side, (ii) efficiency and VR at full-load 0.8 pf lag. [08, CO1]**
+**(c) A 50 KVA, 2200/110 V transformer when tested gave the following results: [Marks: 04, CO: 2]**
+> **O.C. test (L. V. side):** 400W, 10A, 110V
+> **S.C. test (H. V. side):** 808W, 20.5A, 90V
+>
+> Compute all the parameters of the equivalent circuit referred to the H. V. side.
 
-**Turns ratio:** $a = 2000/400 = 5$
+Ratio $a = 2200/110 = 20$.
 
-**Rated HV current:** $I_{1,\text{rated}} = 20000/2000 = 10$ A
+**O.C. test (excitation branch, LV side):**
+$$\cos\phi_0 = \frac{400}{110 \times 10} = 0.36364$$
+$$I_w = 10 \times 0.36364 = 3.636\text{ A}, \qquad I_m = \sqrt{10^2 - 3.636^2} = 9.3156\text{ A}$$
+$$R_0(\text{LV}) = \frac{110}{3.636} = 30.25\ \Omega, \qquad X_0(\text{LV}) = \frac{110}{9.3156} = 11.807\ \Omega$$
+Iron loss $= 400\text{ W}$
 
-**OC test (LV side = secondary, 400V):**
+**Referred to HV ($\times a^2 = 400$):**
+$$\boxed{R_0(\text{HV}) = 12100\ \Omega, \qquad X_0(\text{HV}) = 4723\ \Omega}$$
 
-$$\cos\phi_0 = \frac{W_0}{V_0 I_0} = \frac{160}{400 \times 1.5} = \frac{160}{600} = 0.2667$$
+**S.C. test (series branch, HV side):**
+$$Z_{eq}(\text{HV}) = \frac{90}{20.5} = 4.3902\ \Omega$$
+$$R_{eq}(\text{HV}) = \frac{808}{20.5^2} = \frac{808}{420.25} = 1.9227\ \Omega$$
+$$X_{eq}(\text{HV}) = \sqrt{4.3902^2 - 1.9227^2} = 3.9468\ \Omega$$
 
-$$I_c = 1.5 \times 0.2667 = 0.400 \text{ A}, \quad I_m = 1.5\sin(\cos^{-1}0.2667) = 1.5 \times 0.9638 = 1.446 \text{ A}$$
+Rated currents: $I_{\text{rated}}(\text{HV}) = 50000/2200 = 22.727$ A; $I_{\text{rated}}(\text{LV}) = 50000/110 = 454.55$ A.
 
-Referred to HV side ($\times a^2 = 25$):
-$$R_{c1} = \frac{V_{0,HV}^2}{W_0} = \frac{2000^2}{160} = 25000\,\Omega$$
+> [!IMPORTANT] The trap in this question
+> The S.C. reading is **20.5 A**, but rated HV current is **22.73 A**. So the full-load copper loss must be scaled:
+> $$P_{cu,FL} = 808 \times \left(\frac{22.727}{20.5}\right)^2 = 808 \times 1.2287 = \boxed{993\text{ W}}$$
+> $R_{eq}$ is still correct at 1.9227 $\Omega$, because it comes from the test's own $V$ and $I$. But any loss figure taken straight from 808 W is understated. Total loss at full load $= 400 + 993 = 1393$ W.
 
-$$X_{m1} = \frac{V_{0,HV}}{I_{m,HV}} = \frac{2000}{1.446/5} = \frac{2000}{0.289} = 6920\,\Omega$$
+---
 
-(Or: $R_{c1} = a^2 R_{c,LV} = 25 \times (400^2/160) = 25 \times 1000 = 25000\,\Omega$ ✓)
+### [2024 Q3(c)]
+> 📋 **Appeared in:** 2024 Q3(c)
 
-**SC test (HV side):**
+**(c) In no-load test of single-phase transformer, the following test data were obtained: [Marks: 04, CO: 2]**
+> Resistance of primary winding $= 0.6\ \Omega$; Primary voltage: 220 V; Secondary voltage: 110 V; Primary current: 0.5 A; Power input: 30 W
+>
+> Find: **(i)** turn ratio, **(ii)** magnetizing component of no-load current, **(iii)** working (or loss) component, **(iv)** iron loss.
 
-$$R_{01} = \frac{W_{sc}}{I_{sc}^2} = \frac{300}{10^2} = 3.0\,\Omega$$
+**(i) Turn ratio**
+$$a = \frac{V_1}{V_2} = \frac{220}{110} = \boxed{2}$$
 
-$$Z_{01} = \frac{V_{sc}}{I_{sc}} = \frac{60}{10} = 6.0\,\Omega$$
+**(ii) Magnetizing component of $I_0$**
 
-$$X_{01} = \sqrt{6.0^2 - 3.0^2} = \sqrt{36 - 9} = \sqrt{27} = 5.196\,\Omega$$
+The working component first (it is the one used to find $I_m$):
+$$\cos\phi_0 = \frac{W_0}{V_1 I_0} = \frac{30}{220 \times 0.5} = \frac{30}{110} = 0.2727, \qquad \phi_0 = 74.17°$$
+$$I_m = I_0 \sin\phi_0 = 0.5 \times 0.9621 = \boxed{0.481\text{ A}}$$
 
-**Equivalent circuit parameters (referred to HV):**
-- Shunt: $R_{c1} = 25000\,\Omega$, $X_{m1} = 6920\,\Omega$
-- Series: $R_{01} = 3.0\,\Omega$, $X_{01} = 5.196\,\Omega$
+**(iii) Working (loss) component**
+$$I_w = I_0 \cos\phi_0 = 0.5 \times 0.2727 = \boxed{0.1364\text{ A}}$$
 
-**Efficiency at full load, 0.8 pf lag:**
+**(iv) Iron loss**
 
-$$\eta = \frac{S\cos\phi}{S\cos\phi + P_{Fe} + P_{Cu,FL}} = \frac{20000 \times 0.8}{16000 + 160 + 300} = \frac{16000}{16460} = \boxed{97.20\%}$$
+The wattmeter reads power **input**, which is iron loss plus the small primary copper loss:
+$$P_{core} = W_0 - I_0^2 R_1 = 30 - (0.5^2 \times 0.6) = 30 - 0.15 = \boxed{29.85\text{ W}}$$
 
-**Voltage regulation at full load, 0.8 pf lag:**
+> [!NOTE] The intended answer for (iv)
+> The paper supplies $R_1 = 0.6\ \Omega$ precisely so that the answer is **29.85 W**, not the usual approximation 30 W. State 29.85 W as the answer and add that 30 W is the usual approximation.
 
-$$\text{VR\%} = \frac{I_1(R_{01}\cos\phi + X_{01}\sin\phi)}{V_1} \times 100$$
+Optional shunt branch: $R_0 = 220/0.13636 = 1613.3\ \Omega$, $X_0 = 220/0.48105 = 457.3\ \Omega$.
 
-$$= \frac{10(3.0 \times 0.8 + 5.196 \times 0.6)}{2000} \times 100 = \frac{10(2.4 + 3.118)}{2000} \times 100$$
+---
 
-$$= \frac{10 \times 5.518}{2000} \times 100 = \frac{55.18}{2000} \times 100 = \boxed{2.76\%}$$
+### [2024 Q4(a)]
+> 📋 **Appeared in:** 2024 Q4(a)
+
+**(a) In performing the short circuit test of a transformers, HV side is usually short circuited — explain it. [Marks: 02, CO: 2]**
+
+**Read the question carefully: it asks why the *other* winding is short-circuited during the SC test, and why the instruments are placed on the HV winding.**
+
+A transformer cannot be tested on open circuit at reduced voltage and still give useful results. In the SC test the secondary (LV) winding is **short-circuited** so that:
+1. The rated current is limited by the transformer's own small leakage impedance instead of being blocked. With the secondary open, almost no current could be made to flow at a safe voltage.
+2. The test then only has to raise the applied voltage to about 5-10% of rated to circulate full-load current.
+
+**Why the instruments go on the HV side:**
+1. **Lower current.** Rated current is much smaller on the HV winding, so the ammeter and the wattmeter current coil carry far less current.
+2. **Larger, more readable voltage.** $V_{sc}$ is 5-10% of a high rated voltage, easier to measure accurately than a few volts on the LV side.
+3. **Higher referred impedance.** The HV side impedance is $a^2$ times the LV side, giving a better signal-to-error ratio.
+
+**Why short-circuiting is safe.** The core flux at 5-10% of rated voltage is only a few percent of normal, so the iron loss is negligible and the core cannot saturate. All the wattmeter reading is copper loss.
 
 ---
 

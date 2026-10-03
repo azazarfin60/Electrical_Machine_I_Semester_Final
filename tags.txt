@@ -1,0 +1,129 @@
+Line 81: 🟡 | 1/7 | Ferromagnetic materials — hysteresis loop, residual magnetism, coercive force
+Line 82: 🟡 | 1/7 | Eddy current losses — lamination rationale
+Line 132: 🟢 | 1/7 | Core materials — CRGO silicon steel, laminations
+Line 133: 🟡 | 1/7 | Transformer classification
+Line 138: 🟡 | 1/7 | **Breathers and conservator tanks**
+Line 144: 🟢 | 4/7 | EMF equation practice — net core area, turns allocation
+Line 145: 🟡 | 1/7 | V/f control concept and frequency scaling
+Line 153: 🔴 | 4/7 | **EMF equation derivation**: $E = 4.44 f N \Phi_m$
+Line 154: 🟡 | 2/7 | **Ideal transformer assumptions / properties**
+Line 156: 🔴 | 4/7 | **No-load phasor diagram**
+Line 159: 🔴 | 4/7 | **Load phasor diagrams**
+Line 176: 🔴 | 3/7 | **No-load current components**: $I_\mu$ (magnetizing) and $I_w$ (core-loss)
+Line 178: 🔴 | 4/7 | **On-load phasor diagram** — demagnetization, reflected current
+Line 179: 🔴 | 3/7 | $I_0 = \sqrt{I_\mu^2 + I_w^2}$
+Line 184: 🔴 | 4/7 | **Phasor diagram with resistance and leakage**
+Line 188: 🔴 | 4/7 | **Exact equivalent circuit**
+Line 189: 🔴 | 4/7 | **Referred to primary / secondary**
+Line 208: 🔴 | 7/7 | **Open-circuit (OC) test** — LV side, HV open
+Line 209: 🔴 | 7/7 | Extraction of $R_0, X_0$ from OC data
+Line 210: 🔴 | 7/7 | **Short-circuit (SC) test** — HV side, LV shorted
+Line 211: 🔴 | 7/7 | Extraction of $R_{01}, X_{01}$ from SC data
+Line 212: 🟡 | 1/7 | **Why the SC test runs on the HV side**
+Line 220: 🔴 | 7/7 | OC/SC test parameter extraction problems
+Line 221: 🔴 | 5/7 | Terminal voltage and regulation calculations from test data
+Line 233: 🟡 | 1/7 | Hysteresis loss — Steinmetz formula, dipole reversal mechanism
+Line 234: 🟡 | 1/7 | Eddy current loss derivation — lamination thickness relationship
+Line 238: 🔴 | 4/7 | **Transformer efficiency formula**: $\eta = \frac{P_{out}}{P_{out} + P_i + P_{cu}}$
+Line 239: 🔴 | 2/7 | **Maximum efficiency condition**: $P_i = P_{cu}$
+Line 240: 🔴 | 3/7 | **All-day efficiency**
+Line 245: 🔴 | 3/7 | All-day efficiency by the tabular method
+Line 246: 🔴 | 4/7 | Efficiency at full load and half load, various power factors
+Line 248: 🟡 | 1/7 | Constant voltage-frequency change problems
+Line 255: 🔴 | 5/7 | **Voltage regulation definition**: $VR = \frac{V_{NL} - V_{FL}}{V_{FL}} \times 100\%$
+Line 256: 🔴 | 5/7 | **Approximate VR formula**: $VR \approx \frac{I_2(R_{02}\cos\varphi_2 \pm X_{02}\sin\varphi_2)}{V_{2,fl}}$
+Line 257: 🔴 | 5/7 | **Phasor diagram derivation of VR for lagging, leading, unity pf**
+Line 262: 🔴 | 5/7 | Voltage regulation calculations from test data
+Line 263: 🟢 | 1/7 | Three-phase transformer regulation
+Line 288: 🟡 | 2/7 | Auto-transformer construction and circuit model
+Line 297: 🟡 | 2/7 | **Conductor material saving derivation**
+Line 302: 🟡 | 2/7 | Auto-transformer numericals — upgraded kVA, winding currents, power split
+Line 314: 🟡 | 1/7 | **Three-limbed shell-type core economy**
+Line 318: 🟢 | 2/7 | **Clock notation** for phase displacement
+Line 319: 🟢 | 2/7 | **Delta-Delta ($\Delta$-$\Delta$) connection**
+Line 320: 🟢 | 2/7 | **Dd0 and Dd6** vector group phasor analysis
+Line 321: 🟡 | 3/7 | Parallel operation constraints
+Line 325: 🟡 | 2/7 | **Y-Y limitations**: floating neutral, 3rd harmonic voltage distortion
+Line 326: 🟢 | 2/7 | **Delta-Star ($\Delta$-Y) connection** — Dy11, Dy1 groups
+Line 330: 🟢 | 2/7 | **Star-Delta (Y-$\Delta$) connection** — Yd1, Yd11 groups
+Line 331: 🟡 | 2/7 | **Vector group nomenclature**: Y/D/y/d/n + clock hour
+Line 332: 🟡 | 2/7 | **Four standard groups**: Group 1 (0°), Group 2 (180°), Group 3 (−30°), Group 4 (+30°)
+Line 336: 🟢 | 2/7 | Three-phase connection problems — current calculations, voltage ratios
+Line 341: 🟡 | 2/7 | Clock group identification problems
+Line 342: 🟡 | 2/7 | Phase displacement derivation
+Line 350: 🔴 | 7/7 | **Open-Delta (V-V) connection**
+Line 351: 🔴 | 7/7 | **Capacity ratio**: $\frac{S_{V-V}}{S_\Delta} = \frac{1}{\sqrt{3}} \approx 57.7\%$
+Line 352: 🔴 | 7/7 | **Utilization factor**: $\frac{\sqrt{3}}{2} \approx 86.6\%$
+Line 353: 🟡 | 1/7 | **Supply continuity when one phase burns out**
+Line 361: 🟢 | 3/7 | **Scott-T connection** — 3-phase to 2-phase conversion
+Line 362: 🟢 | 3/7 | Main transformer (center-tapped at 50%) and Teaser transformer (tapped at 86.6%)
+Line 363: 🟢 | 3/7 | Mathematical proof of 90° phase shift
+Line 368: 🔴 | 7/7 | Open-Delta problems — rating, turns ratio, capacity derating
+Line 369: 🟢 | 3/7 | Scott-T connection problems — turns ratio, primary currents
+Line 385: 🟡 | 3/7 | **Necessary conditions** to stop circulating current: equal voltage ratios, same polarity, same phase sequence, same phase displacement
+Line 386: 🟡 | 3/7 | **Desirable conditions** for correct load sharing: equal per-unit impedance, matched X/R ratio
+Line 391: 🟡 | 3/7 | Load sharing numericals, circulating current, max loading
+Line 395: 🟡 | 1/7 | **Why magnetizing current cannot be sinusoidal under saturation**
+Line 396: 🟡 | 1/7 | **Third harmonic dominance** in magnetizing current
+Line 409: 🟡 | 1/7 | **Magnetizing inrush current** when a transformer is first switched on
+Line 413: 🟡 | 1/7 | Harmonic and inrush current numericals
+Line 427: 🟢 | 3/7 | **Working principle** — inductive energy transfer, no brushes
+Line 439: 🔴 | 4/7 | **Slip**: $s = (N_s - N)/N_s$ and why the rotor can never reach $N_s$
+Line 440: 🔴 | 4/7 | **Rotor frequency**: $f_r = sf$
+Line 451: 🔴 | 5/7 | **RMF proof** from 3-phase supply: resultant $\Phi_R = 1.5\Phi_m$, constant magnitude, rotates at $N_s$
+Line 452: 🔴 | 5/7 | Synchronous speed: $N_s = 120f/P$
+Line 453: 🔴 | 4/7 | Slip problems and rotor frequency calculations
+Line 455: 🟡 | 1/7 | Cogging and supersynchronous rotor field speeds
+Line 465: 🟢 | 1/7 | **Induction motor phasor diagram**
+Line 466: 🟢 | 3/7 | **Standstill rotor EMF** $E_2$ and running EMF $sE_2$
+Line 468: 🟢 | 4/7 | **Developed torque** formulation
+Line 471: 🟢 | 3/7 | **Complete per-phase equivalent circuit**
+Line 472: 🟢 | 3/7 | **$R_2/s$ decomposition**: $R_2/s = R_2 + R_2(1-s)/s$
+Line 473: 🟢 | 2/7 | **Power flow diagram** — $P_g : P_{cu} : P_{dev} = 1 : s : (1-s)$
+Line 474: 🟢 | 2/7 | Loss classification and rotor efficiency
+Line 481: 🟢 | 2/7 | **Motor torque and developed rotor power**
+Line 482: 🟢 | 2/7 | **Power flow cascade**: $P_{in} \to P_g \to P_{dev} \to P_{out}$
+Line 483: 🟢 | 2/7 | **Golden ratio**: $P_g : sP_g : (1-s)P_g$
+Line 484: 🟢 | 2/7 | **Synchronous watt**
+Line 485: 🟢 | 2/7 | **Rotor efficiency**
+Line 492: 🔴 | 4/7 | **Torque-speed characteristic** — motoring, generating, braking regions
+Line 493: 🔴 | 4/7 | **Starting torque** formula
+Line 494: 🔴 | 4/7 | Low-slip linear region ($T \propto s$) and high-slip region ($T \propto 1/s$)
+Line 499: 🔴 | 4/7 | **Maximum torque / breakdown torque**: $T_{max} = \frac{K_1 E_2^2}{2X_2}$
+Line 500: 🔴 | 4/7 | **Breakdown slip**: $s_b = R_2/X_2$
+Line 503: 🟡 | 1/7 | **$T_f/T_{max}$ ratio derivation**
+Line 508: 🟡 | 3/7 | **V/f control** fundamentals
+Line 516: 🔴 | 3/7 | **$T_{max}/T_f$ ratio problems**
+Line 517: 🟢 | 1/7 | External rotor resistance addition problems
+Line 522: 🔴 | 3/7 | Practice: $T_{FL}/T_{max}$ ratios, starting current ratios
+Line 531: 🟢 | 1/7 | **No-load test** — measurements, impedance calculations
+Line 532: 🟢 | 1/7 | **Blocked rotor test** — equivalent circuit, parameter extraction
+Line 534: 🟢 | 1/7 | Direct-on-line starting relations from blocked rotor data
+Line 555: 🔴 | 4/7 | **Construction from no-load and blocked-rotor test points**
+Line 556: 🔴 | 4/7 | **Graphical extraction of torque, power, efficiency, slip**
+Line 557: 🔴 | 4/7 | Torque line, output line, power line construction
+Line 568: 🟢 | 1/7 | **Starting problem**: $I_{st} \approx 5\text{–}8 \times I_{FL}$
+Line 569: 🟢 | 1/7 | **DOL starting** and why it is barred above 25 kW
+Line 572: 🟡 | 3/7 | **Star-Delta starting**: $I_{st} = \frac{1}{3}I_{sc,\Delta}$, $T_{st} = \frac{1}{3}T_{sc,\Delta}$
+Line 575: 🟡 | 3/7 | Starting torque to full-load torque ratio problems
+Line 593: 🟢 | 3/7 | **Stator voltage control**
+Line 594: 🟢 | 3/7 | **Rotor resistance control**
+Line 599: 🟢 | 3/7 | **Supply frequency control (V/f control)**
+Line 600: 🟢 | 3/7 | **Changing stator poles** — consequent poles
+Line 605: 🟡 | 1/7 | **External resistance for speed reduction at constant torque**
+Line 619: 🟡 | 4/7 | **Plugging** — reversing two stator leads, $s \approx 2$
+Line 620: 🟡 | 4/7 | **Regenerative braking** — motor driven above $N_s$
+Line 621: 🟡 | 4/7 | **DC injection braking** — stationary field
+Line 644: 🟢 | 3/7 | **Induction generator principles** — reactive power requirements
+Line 645: 🟢 | 3/7 | **Self-excited vs grid-connected induction generator**
+Line 646: 🟡 | 1/7 | **Crawling and cogging**
+Line 649: 🟢 | 3/7 | **Induction generator problems** — operating speeds, power flow
+Line 650: 🟡 | 2/7 | **Capacitance per phase for self-excitation**
+Line 667: 🔴 | 5/7 | **Double revolving field theory** — alternating flux splits into two opposing rotating fields
+Line 668: 🔴 | 2/7 | **Zero starting torque** at standstill ($T_f = T_b$)
+Line 670: 🟢 | 1/7 | **Torque-speed characteristics** of 1-φ IM
+Line 676: 🔴 | 6/7 | **Split-phase motor** — high R auxiliary winding, ~30° phase split
+Line 677: 🔴 | 6/7 | **Capacitor-start motor** — ~80° phase split, high starting torque
+Line 678: 🔴 | 6/7 | **Capacitor-start capacitor-run and PSC motors**
+Line 679: 🟡 | 2/7 | **Maximum starting torque derivation in capacitor motors**
+Line 683: 🟡 | 2/7 | **Maximum starting torque capacitance calculation**

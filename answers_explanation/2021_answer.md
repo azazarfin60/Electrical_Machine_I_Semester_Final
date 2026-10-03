@@ -273,9 +273,10 @@ When supply frequency jumps from $f_1$ to $f_2 > f_1$ with terminal voltage $V$ 
 1. **Synchronous Speed**: $N_s = \frac{120 f}{P}$ increases in direct proportion to $f$.
 2. **Magnetic Flux Attenuation**: Core flux is $\Phi_m \propto \frac{V}{f}$. With $V$ constant and $f$ higher, core flux weakens significantly.
 3. **Leakage Reactance**: Standstill reactance $X_2 = 2\pi f L_2$ increases proportionally with $f$.
-4. **Catastrophic Drop in Breakdown Torque**:
-   $$T_{\max} = \frac{k E_2^2}{2 X_2} \propto \frac{1}{\omega_s} \frac{(V/f)^2}{2 (2\pi f L_2)} \propto \frac{V^2}{f^3}$$
-   Maximum torque collapses inversely with the **cube of frequency ($1/f^3$)**! A 20% frequency increase slashes maximum torque capability by over 42%.
+4. **Drop in Breakdown Torque**:
+   Rotor standstill EMF tracks the applied voltage, not the flux. Since $\Phi_m \propto V/f$ and $E_2 = 4.44 f N_2 \Phi_m$, the two factors of $f$ cancel and $E_2 \propto V$. Also $X_2 = 2\pi f L_2 \propto f$ and the torque constant $k = 3/(2\pi N_s) \propto 1/f$. Putting the three together:
+   $$T_{\max} = \frac{k E_2^2}{2 X_2} \propto \frac{1}{f} \cdot \frac{V^2}{f} \propto \frac{V^2}{f^2}$$
+   Maximum torque falls with the **square of frequency ($1/f^2$)**. A 20% frequency rise leaves $(1/1.2)^2 = 0.69$ of the original breakdown torque, a cut of about 30.6%.
 5. **Why V/f Control is Mandatory**: To vary motor speed without sacrificing torque capability, variable frequency drives always adjust voltage and frequency simultaneously such that the ratio $V/f$ remains strictly constant.
 
 ---
@@ -321,7 +322,7 @@ $$\text{Percentage Increase in Cu Loss} = (1.2346 - 1) \times 100\% = \mathbf{23
 ![Resolution of alternating flux into two oppositely rotating fields](../Books/VK_Mehta/diagrams/VK_Mehta_Fig_9_03.jpeg)
 ![Torque-speed characteristic under double-field revolving theory showing zero starting torque](../Books/VK_Mehta/diagrams/VK_Mehta_Fig_9_04.jpeg)
 
-> See full details in [IM-03: Single-Phase Induction Motor: Double Revolving Field Theory](2018_2024_answer.md#im-03-single-phase-induction-motor-double-revolving-field-theory).
+> See full details in [IM-03: Single-Phase Induction Motor: Double Revolving Field Theory](2018_2024_answer.md#im-03-double-field-revolving-theory-why-1-phase-im-is-not-self-starting).
 
 - Forward field rotates at $+N_s$ with slip $s_f = s$.
 - Backward field rotates at $-N_s$ with slip $s_b = 2 - s$.
@@ -408,14 +409,25 @@ As the mechanical load on an induction motor varies from no-load to standstill, 
   1. No-Load Test ($V_0, I_0, \cos\phi_0$): Defines the origin $O'$ of the circle locus.
   2. Blocked-Rotor / SC Test scaled to rated voltage ($I_{sc}, \cos\phi_{sc}$): Defines the short-circuit point $S$.
   3. Stator Resistance $R_1$: Splits the vertical line representing standstill losses into stator copper loss and rotor copper loss.
+#### Setting the Scales:
+$$I_{SN} = 25 \times \frac{400}{100} = 100\text{ A}, \qquad \phi_0 = \cos^{-1}(0.2) = 78.5°, \qquad \phi_s = \cos^{-1}(0.4) = 66.4°$$
+$$\text{SC input at full voltage} = \sqrt{3} \times 400 \times 100 \times 0.4 = 27{,}710\text{ W}$$
+With a current scale of 1 cm = 5 A, the SC power ordinate $AF$ measures 8 cm. So the power scale is $1\text{ cm} = 27{,}710/8 = 3465\text{ W}$.
+
 - **Graphical Extraction at Rated Output (14.92 kW)**:
   - Vertical distance from the output line represents mechanical power output.
-  - At the point corresponding to $14.92\text{ kW}$, reading the vector from origin $O$ to that operating point yields:
-    - **Line Current $I_1$**: Length of the phasor vector $\approx 30\text{ A}$.
-    - **Operating Power Factor $\cos\phi_1$**: Cosine of the angle between voltage axis and current phasor $\approx 0.76\text{ lagging}$.
-    - **Slip $s$**: Ratio of vertical intercept of rotor Cu loss to air-gap power $\approx 5\%$.
-    - **Efficiency $\eta$**: Ratio of output power to total input power $\approx 84\%$.
-  - **Maximum Torque**: Maximum vertical distance from the circle circumference to the torque line.
+  - The output intercept must measure $14{,}920/3465 = 4.31\text{ cm}$. That vertical line $PL$ locates the full-load point $P$. Reading the vector from origin $O$ to $P$ yields:
+    - **Line Current $I_1$**: $OP = 6.5\text{ cm} = 6.5 \times 5 = \mathbf{32.5\text{ A}}$.
+    - **Operating Power Factor $\cos\phi_1$**: $PL/OP = 5.4/6.5 = \mathbf{0.84\text{ lagging}}$ (measured $\phi = 32.9°$).
+    - **Slip $s$**: rotor Cu loss intercept over air-gap power $= EK/PK = 0.3/5.35 = \mathbf{5.6\%}$.
+    - **Efficiency $\eta$**: output over input $= PE/PL = 4.3/5.4 = \mathbf{80\%}$.
+  - **Maximum Torque**: Drop $CM \perp O'H$, where $H$ divides $AB$ as rotor Cu loss : stator Cu loss. The two are equal here, so $H$ is the mid-point of $AB$. The intercept $MT$ reads the maximum torque in synchronous watts:
+    $$MT = 7.8\text{ cm} \implies T_{\max} = 7.8 \times 3465 = \mathbf{27{,}030\text{ synchronous watts}}$$
+    With $N_s = 1000\text{ rpm}$, $\omega_s = 104.72\text{ rad/s}$:
+    $$T_{\max} = \frac{27{,}030}{104.72} = \mathbf{258\text{ N-m}}$$
+
+> [!info] Sanity check
+> pf and efficiency are easy to swap when reading the diagram. Here pf (0.84) is higher than efficiency (0.80). Input $= \sqrt{3} \times 400 \times 32.5 \times 0.84 = 18.9\text{ kW}$, and $14.92/18.9 = 0.79$, which matches the 80% read off the diagram. Source: Theraja Ch-35 Example 35.5.
 
 ---
 

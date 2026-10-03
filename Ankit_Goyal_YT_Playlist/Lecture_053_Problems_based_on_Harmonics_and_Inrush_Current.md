@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 052: Switching Transients](Lecture_052_Switching_Transients.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 131: Induction Machines Introduction →](Lecture_131_Induction_Machines_Introduction.md)
+
+---
+
 # Problems based on Harmonics and Inrush Current | L 17 | Electrical Machines | GATE 2022
 
 - **Source**: https://www.youtube.com/watch?v=hwvRhuCKuEE
@@ -545,3 +550,6 @@ The next lectures transition to dynamic electromechanical energy conversion and 
 - Switching at voltage zero triggers the doubling effect, driving core flux up to $2\Phi_m$.
 - A voltmeter across a broken delta corner measures three times the third-harmonic phase voltage, $V_{\text{open}} = 3 E_3$.
 
+---
+
+[← Lec 052: Switching Transients](Lecture_052_Switching_Transients.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 131: Induction Machines Introduction →](Lecture_131_Induction_Machines_Introduction.md)

@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 024: Losses and Efficiency Part 1](Lecture_024_Losses_and_Efficiency_Part_1.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 026: Problems Based on Losses and Efficiency in Transformers →](Lecture_026_Problems_Based_on_Losses_and_Efficiency_in_Transformers.md)
+
+---
+
 # Electrical Machines | Lec 18 | Losses & Efficiency (Part 2)| GATE Electrical Engineering | Ankit Sir
 
 - **Source**: https://www.youtube.com/watch?v=zjYFMkBac0Y
@@ -667,3 +672,6 @@ This concludes our study of transformer losses and efficiency:
 - Maximum efficiency with respect to load occurs when variable copper loss equals constant core loss: $x^2 P_{\text{cu,fl}} = P_{\text{core}}$, yielding $x = \sqrt{P_{\text{core}}/P_{\text{cu,fl}}}$.
 - All-day efficiency evaluates distribution transformers over a 24-hour cycle using the ratio of energy output to energy input: $\eta_{\text{all-day}} = \frac{E_{\text{out}}}{E_{\text{out}} + 24 P_{\text{core}} + \sum x_i^2 P_{\text{cu,fl}} t_i}$.
 
+---
+
+[← Lec 024: Losses and Efficiency Part 1](Lecture_024_Losses_and_Efficiency_Part_1.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 026: Problems Based on Losses and Efficiency in Transformers →](Lecture_026_Problems_Based_on_Losses_and_Efficiency_in_Transformers.md)

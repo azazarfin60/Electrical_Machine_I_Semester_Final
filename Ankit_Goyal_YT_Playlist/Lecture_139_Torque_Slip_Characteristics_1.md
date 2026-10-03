@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 138: Losses and Efficiency of Induction Machines](Lecture_138_Losses_and_Efficiency_of_Induction_Machines.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 140: Torque Slip Characteristics 2 →](Lecture_140_Torque_Slip_Characteristics_2.md)
+
+---
+
 # Torque Slip Characteristics - 1 | Electrical Machines | Lec 100 | GATE & ESE (EE, ECE) | Ankit Goyal
 
 - **Source**: https://www.youtube.com/watch?v=OdA19ldXm7E
@@ -464,3 +469,6 @@ When solving numerical problems, check the given data carefully before picking a
 - In the low-slip region ($0 \le s \le s_{mT}$), $r_2'/s \gg x_2'$, resulting in a linear torque-slip relationship: $T_{\text{dev}} \approx \frac{3}{\omega_s} \frac{V_1^2}{r_2'} s$.
 - Starting torque ($s = 1$) is directly proportional to rotor circuit resistance: $T_{\text{st}} \propto r_2'$.
 
+---
+
+[← Lec 138: Losses and Efficiency of Induction Machines](Lecture_138_Losses_and_Efficiency_of_Induction_Machines.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 140: Torque Slip Characteristics 2 →](Lecture_140_Torque_Slip_Characteristics_2.md)

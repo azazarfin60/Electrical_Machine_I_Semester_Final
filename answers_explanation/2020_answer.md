@@ -492,7 +492,7 @@ The torque-slip curve exhibits two distinct behavioral regions:
 ![Resolution of alternating flux into two oppositely rotating fields](../Books/VK_Mehta/diagrams/VK_Mehta_Fig_9_03.jpeg)
 ![Torque-speed characteristic under double-field revolving theory showing zero starting torque](../Books/VK_Mehta/diagrams/VK_Mehta_Fig_9_04.jpeg)
 
-> See full details in [IM-03: Single-Phase Induction Motor: Double Revolving Field Theory](2018_2024_answer.md#im-03-single-phase-induction-motor-double-revolving-field-theory).
+> See full details in [IM-03: Single-Phase Induction Motor: Double Revolving Field Theory](2018_2024_answer.md#im-03-double-field-revolving-theory-why-1-phase-im-is-not-self-starting).
 
 - A pulsating flux $\Phi(t) = \Phi_m \sin\omega t$ resolves into two counter-rotating fields: forward field $\Phi_f = \Phi_m/2$ at $+N_s$ and backward field $\Phi_b = \Phi_m/2$ at $-N_s$.
 - At standstill ($s = 1$), forward and backward torques cancel ($T_f = T_b \implies T_{\text{net}} = 0$).

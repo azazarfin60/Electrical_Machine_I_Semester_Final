@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 150: Starting of SRIM](Lecture_150_Starting_of_SRIM.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 152: Speed Control of Induction Motor 2 →](Lecture_152_Speed_Control_of_Induction_Motor_2.md)
+
+---
+
 # Speed Control of Induction Motor-1 | Electrical Machines | Lec 107 | GATE/ESE Electrical Engineering
 
 - **Source**: https://www.youtube.com/watch?v=DdEmZwgmY6c
@@ -464,3 +469,6 @@ Unlike stator voltage control and rotor resistance control, this method can run 
 - The rotor EMF injection method requires the injected voltage frequency to strictly equal the rotor slip frequency ($f_{\text{inj}} = s f$).
 - Under rotor EMF injection with constant torque, the operating point satisfies $I_2 \cos\theta_2 = \text{constant}$, enabling sub-synchronous operation when injected in phase opposition and super-synchronous operation when injected in phase.
 
+---
+
+[← Lec 150: Starting of SRIM](Lecture_150_Starting_of_SRIM.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 152: Speed Control of Induction Motor 2 →](Lecture_152_Speed_Control_of_Induction_Motor_2.md)

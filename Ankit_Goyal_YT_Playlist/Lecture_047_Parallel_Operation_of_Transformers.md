@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 046: Problems Based on Three Phase Transformers 3](Lecture_046_Problems_Based_on_Three_Phase_Transformers_3.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 048: Problems based on Parallel Operation of Transformer →](Lecture_048_Problems_based_on_Parallel_Operation_of_Transformer.md)
+
+---
+
 # Parallel Operation of Transformers | Electrical Machines | Lec 32 | GATE/ESE (EE, ECE) | Ankit Goyal
 
 - **Source**: https://www.youtube.com/watch?v=oqgDQt9G2fo
@@ -807,3 +812,6 @@ Parallel operation problems fall into three main categories:
 - Identical $X/R$ ratios ensure both transformers operate at the load power factor, allowing their apparent powers to add algebraically to maximize total capacity.
 - The maximum load without overloading either unit is determined by setting the transformer with lower per-unit impedance on its own base to rated capacity and calculating total power by phasor sum.
 
+---
+
+[← Lec 046: Problems Based on Three Phase Transformers 3](Lecture_046_Problems_Based_on_Three_Phase_Transformers_3.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 048: Problems based on Parallel Operation of Transformer →](Lecture_048_Problems_based_on_Parallel_Operation_of_Transformer.md)

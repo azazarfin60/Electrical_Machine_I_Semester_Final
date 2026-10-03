@@ -13,7 +13,7 @@
 
 ### T-23: Physical Principle of Starting Single-Phase Induction Motors
 
-*Appears in: 2017 Q4(b), 2017 Q4(c), 2018 Q8(b), 2020 Q7(a), 2021 Q7(b), 2023 Q8(b), 2024 Q8(b)*
+*Appears in: 2017 Q4(b), 2017 Q4(c), 2018 Q8(b), 2020 Q7(a), 2021 Q7(b), 2023 Q8(c)*
 
 #### Why single-phase motors cannot self-start
 

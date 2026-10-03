@@ -13,7 +13,9 @@
 
 ### IM-04: Blocked Rotor Test: Full Procedure and Why It's Needed
 
-*Appears in: CT-02 Q2, 2019 Q7a, 2020 Q7c, 2021 Q8, 2023 Q7a, 2024 Q7a*
+*Appears in: CT-02 Q2, 2019 Q7a, 2020 Q7c, 2021 Q8, 2024 Q7a*
+>
+> Note: 2024 Q7(a) is a 2-mark question that only asks for the **names** of the tests. 2023 Q7(a) was the Y-Δ starter, not a testing question.
 
 #### What this test does
 
@@ -87,23 +89,37 @@ Separate stator and rotor components:
 
 ---
 
-### Q7: Blocked rotor test 2024: emphasis on what the parameters mean physically
+### [2024 Q7(a)]: Tests for Determining Equivalent Circuit Model Parameters of an Induction Motor
 
-> 📋 **Appeared in:** 2024 Q7
+> 📋 **Appeared in:** 2024 Q7(a)
 
-#### What each parameter tells you
+**(a) Enlist the test's name used for determining circuit model parameters of an IM. [Marks: 02, CO: 1]**
 
-**$R_{01}$** (total series resistance referred to stator):
-This represents all copper losses in both windings per unit current squared. If you multiply by the rated current squared and by 3 (three phases), you get the full-load copper loss in watts. This goes directly into efficiency calculation.
+#### Complete List of Tests and Parameters Determined
 
-**$X_{01}$** (total series leakage reactance):
-This is the reactance that limits current during a short circuit. During a fault: $I_{fault} = V/(Z_{01}) = V/\sqrt{R_{01}^2 + X_{01}^2}$. A motor with high $X_{01}$ (high leakage reactance) will have lower fault current: safer.
+To determine all five parameters of the per-phase equivalent circuit ($R_1, X_1, R_2', X_2', R_c, X_m$) of a three-phase induction motor, three standard laboratory tests are performed:
 
-**$R_2'$ vs $R_1$:**
-Separating rotor from stator resistance tells you where copper losses are concentrated. If $R_2' > R_1$, the rotor has higher resistance: perhaps by design (to improve starting torque, at the cost of running efficiency).
+1. **No-Load Test (Running Light Test):**
+   - **Procedure:** Rated balanced line voltage at rated frequency is applied to the stator with the motor running uncoupled from any mechanical load ($s \approx 0$).
+   - **Measurements:** No-load line voltage ($V_0$), no-load line current ($I_0$), and active input power ($W_0$).
+   - **Parameters Determined:**
+     - Shunt core-loss resistance ($R_c$ or $R_0$) and magnetizing reactance ($X_m$ or $X_0$).
+     - Constant rotational losses: core iron loss ($P_{Fe}$) and mechanical friction & windage loss ($P_{fw}$).
 
-**$X_1 = X_2'$:**
-The assumption that stator and rotor leakage reactance are equal is an approximation. For exact analysis, they can be separated by running the blocked rotor test at different frequencies (reducing frequency reduces $X$ effects and helps isolate $R$).
+2. **Blocked-Rotor Test (Locked-Rotor Test):**
+   - **Procedure:** The rotor is mechanically clamped/locked to prevent rotation ($N = 0$, slip $s = 1$). A reduced, variable voltage at rated frequency is applied to the stator and adjusted until rated full-load stator current circulates.
+   - **Measurements:** Blocked-rotor voltage ($V_{BR}$), rated current ($I_{BR}$), and power input ($W_{BR}$).
+   - **Parameters Determined:**
+     - Equivalent series resistance referred to stator: $R_{01} = R_1 + R_2' = W_{BR} / (3 I_{BR,ph}^2)$.
+     - Equivalent series leakage reactance referred to stator: $X_{01} = X_1 + X_2' = \sqrt{Z_{BR}^2 - R_{01}^2}$.
+     - Total full-load copper loss ($P_{Cu,FL}$).
+
+3. **Stator DC Resistance Test:**
+   - **Procedure:** A direct current (DC) source is applied across pairs of stator terminals using a Kelvin bridge or DC voltmeter-ammeter method to measure DC winding resistance.
+   - **Correction:** Multiplied by an empirical AC skin-effect factor ($R_{1,AC} \approx 1.2\text{–}1.25 \times R_{1,DC}$) and temperature-corrected to operating temperature ($75^\circ\text{C}$).
+   - **Parameter Determined:**
+     - Stator winding resistance per phase ($R_1$).
+     - Enables separating rotor resistance from total equivalent resistance: $R_2' = R_{01} - R_1$. (Reactance is typically split as $X_1 = X_2' = 0.5 X_{01}$ or per NEMA design classes).
 
 ---
 

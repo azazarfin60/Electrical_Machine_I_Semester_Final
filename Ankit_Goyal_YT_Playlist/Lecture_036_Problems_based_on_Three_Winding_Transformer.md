@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 035: Problems based on Auto Transformer](Lecture_035_Problems_based_on_Auto_Transformer.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 037: Three Phase Transformer 1 →](Lecture_037_Three_Phase_Transformer_1.md)
+
+---
+
 # Problems based on Three Winding Transformer | L 11 | Electrical Machines | GATE 2022 | #AnkitGoyal
 
 - **Source**: https://www.youtube.com/watch?v=ZALfIKb0YPk
@@ -794,3 +799,6 @@ Tertiary windings also assist in testing high-voltage transformers:
 - A closed delta tertiary winding allows co-phasal third-harmonic magnetizing currents to circulate locally, ensuring that the core magnetic flux and induced phase voltages remain purely sinusoidal.
 - Delta tertiary windings stabilize the neutral point in star-star systems under unbalanced loads and allow safe voltage measurements during open-circuit testing.
 
+---
+
+[← Lec 035: Problems based on Auto Transformer](Lecture_035_Problems_based_on_Auto_Transformer.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 037: Three Phase Transformer 1 →](Lecture_037_Three_Phase_Transformer_1.md)

@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 013: Problems based on Transformer Construction and Working](Lecture_013_Problems_based_on_Transformer_Construction_and_Working.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 015: Ideal Transformer Part 2 →](Lecture_015_Ideal_Transformer_Part_2.md)
+
+---
+
 # Electrical Machines | Lec 10 | Ideal Transformer (Part 1) | GATE Electrical Engineering
 
 - **Source**: https://www.youtube.com/watch?v=WMBJMfTAmO8
@@ -772,3 +777,6 @@ This lecture established the voltage and flux relationships in an ideal transfor
 - Operating peak flux density satisfies $B_m \propto \frac{V}{f}$, requiring a constant $V/f$ ratio to prevent magnetic saturation while minimizing core area ($A_n \propto \frac{1}{f}$).
 - At no-load, the primary applied voltage directly balances the induced back-EMF ($\vec{V}_1 = -\vec{E}_1$).
 
+---
+
+[← Lec 013: Problems based on Transformer Construction and Working](Lecture_013_Problems_based_on_Transformer_Construction_and_Working.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 015: Ideal Transformer Part 2 →](Lecture_015_Ideal_Transformer_Part_2.md)

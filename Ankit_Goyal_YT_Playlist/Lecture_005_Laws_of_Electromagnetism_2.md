@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 004: Laws of Electromagnetism 1](Lecture_004_Laws_of_Electromagnetism_1.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 006: Problems Based on Electromagnetic Laws →](Lecture_006_Problems_Based_on_Electromagnetic_Laws.md)
+
+---
+
 # Electrical Machines | Lec 5 | Laws of Electromagnetism-2 | GATE Electrical Engineering | CRACK GATE
 
 - **Source**: https://www.youtube.com/watch?v=Znplou_7ttw
@@ -800,3 +805,6 @@ The next lecture examines magnetic circuits, introducing magnetomotive force, re
 - Dot markings identify winding terminals that carry identical instantaneous voltage polarity.
 - Currents entering dotted terminals establish mutually aiding magnetic flux inside the shared core.
 
+---
+
+[← Lec 004: Laws of Electromagnetism 1](Lecture_004_Laws_of_Electromagnetism_1.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 006: Problems Based on Electromagnetic Laws →](Lecture_006_Problems_Based_on_Electromagnetic_Laws.md)

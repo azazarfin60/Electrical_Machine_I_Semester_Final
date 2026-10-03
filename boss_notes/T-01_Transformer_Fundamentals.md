@@ -3,12 +3,12 @@
 ---
 
 # T-01: Transformer Fundamentals & EMF Equation
-> **Section:** A | **Priority:** 🟠 HIGH | **Exam Frequency:** 4/7 years
+> **Section:** A | **Priority:** 🟠 HIGH | **Exam Frequency:** 2/7 years
 > **Sources:** Theraja Ch-32 (Art. 32.1–32.5), VK Mehta Ch-7 (Art. 7.1–7.3), Slides L-08
 
 ## Why This Topic Matters
 
-The EMF equation $E = 4.44 f N \Phi_m$ appeared in 4 out of 7 papers (2019, 2021, 2023, 2024). It is the foundation for every transformer calculation. Questions range from "derive the EMF equation" (3–6 marks) to numericals asking you to find turns, flux, or voltages. If you know this derivation cold, you also understand the working principle of every AC machine.
+The EMF equation $E = 4.44 f N \Phi_m$ appeared in 2 out of 7 papers (2019 Q1(b) "Derive an expression for the EMF induced in a transformer winding", 2023 Q1(a) "Show that $E_1 = 4.44 f N_1 B_m A$"). 2024 Q1(b) is about induced-voltage *phenomena* on switching a transformer onto a supply, not the derivation, so it is not counted here. It is the foundation for every transformer calculation. Questions range from "derive the EMF equation" (3–5 marks) to numericals asking you to find turns, flux, or voltages. If you know this derivation cold, you also understand the working principle of every AC machine.
 
 ---
 
@@ -155,7 +155,7 @@ $$\frac{I_1}{I_2} = \frac{V_2}{V_1} = K$$
 ## 🏆 Golden Questions (Past Exam Archive)
 
 ### 🎯 Q1: Derive the transformer EMF equation under assumptions of constant permeability and no leakage flux.
-> **Appeared:** 2019 Q1(b), 2021 Q1(b), 2023 Q1(b), 2024 Q4(a) — (3–6 marks)
+> **Appeared:** 2019 Q1(b) — 4 marks, 2021 Q1(b) — 5 marks, 2023 Q1(a) — 3 marks
 
 **Full Answer:**
 
@@ -177,12 +177,12 @@ Similarly: $\boxed{E_2 = 4.44 f N_2 \Phi_m}$
 
 The EMF per turn is the same in both windings: $E_1/N_1 = E_2/N_2 = 4.44 f \Phi_m$
 
-Also: $E_1/E_2 = N_1/N_2 = K$ (voltage transformation ratio).
+Also: $E_2/E_1 = N_2/N_1 = K$ (voltage transformation ratio); equivalently $E_1/E_2 = N_1/N_2 = a = 1/K$.
 
 ---
 
 ### 🎯 Q2: What are the characteristics of an ideal transformer?
-> **Appeared:** 2021 Q1(a), 2024 Q1(a) — (3–6 marks)
+> **Appeared:** 2017 Q5(b) — 4 marks (operating principle), 2021 Q1(a) — 3 marks (characteristics)
 
 **Full Answer:**
 
@@ -202,33 +202,29 @@ For such a transformer:
 
 ---
 
-### 🎯 Q3: Show the schematic of a 1-φ transformer. Identify and label all variables on both sides.
-> **Appeared:** 2023 Q1(a), 2024 Q1(a) — (6 marks)
+### 🎯 Q3: When a power transformer is excited as a manner shown in the figure, describe the induced voltage phenomena.
+> **Appeared:** 2024 Q1(b) — 4 marks
 
 **Full Answer:**
 
-Draw a transformer with a laminated iron core and two windings:
+![Transformer Excitation and Induced Voltage Phenomena](../PrevYearQuestions/diagrams/2024_q1b_transformer.png)
 
-**Primary side (left):**
-- Applied voltage $V_1$ from AC supply
-- Primary current $I_1$ entering the dot terminal
-- $N_1$ turns on the primary winding
-- Self-induced EMF $E_1$ (opposing $V_1$)
+**Read the figure first.** A rectangular closed ferromagnetic core has two limbs. Coil1 ($N_1$ turns) sits on the left limb and is fed from a **DC source through a single-pole switch**. Coil2 ($N_2$ turns) sits on the right limb and drives a resistive load $R$. Both windings are linked by the mutual flux $\Phi_{mutual}$.
 
-**Core (center):**
-- Alternating mutual flux $\Phi(t) = \Phi_m \sin\omega t$ flowing through the laminated iron core
+**Because the source is DC, this is a switching transient, not steady-state AC.** That is why Faraday's and Lenz's laws in their raw differential form are the right tool here rather than the phasor emf equation.
 
-**Secondary side (right):**
-- $N_2$ turns on the secondary winding
-- Mutually induced EMF $E_2$
-- Secondary current $I_2$ (flows when load $Z_L$ is connected)
-- Terminal voltage $V_2$ across the load
+**Chain of events on closing the switch:**
 
-**Key relationships to state:**
-- $E_1/E_2 = N_1/N_2$ (EMF ratio = turns ratio)
-- $V_1 I_1 = V_2 I_2$ (power conservation for ideal case)
-- $K = N_2/N_1$ (transformation ratio)
-- If $K > 1$: step-up; if $K < 1$: step-down
+1. **Closing the switch** applies $v$ to coil1 and starts the primary current $i_1$ flowing.
+2. **Flux builds up.** $i_1$ magnetises the core, so $\Phi_{mutual}$ rises from its residual value.
+3. **Self-induction in coil1.** The primary itself develops a counter-EMF opposing the applied voltage:
+   $$e_1 = -N_1 \frac{d\Phi}{dt}$$
+4. **Mutual induction in coil2.** The same $\Phi_{mutual}$ links all $N_2$ turns of coil2, so it too develops an EMF:
+   $$e_2 = -N_2 \frac{d\Phi}{dt}$$
+5. **Load current.** $e_2$ drives $i_2$ out of the upper terminal into the load $R$.
+6. **Secondary reaction flux opposes $d\Phi/dt$.** By Lenz's law the secondary current creates a flux that opposes the build-up of core flux. This is the same m.m.f. balance that later keeps the core flux constant in a working transformer.
+
+**Ratio to state at the end:** $E_2/E_1 = N_2/N_1$, and both induced EMFs lag the flux by $90^\circ$.
 
 ![Principle of transformer with labeled variables](diagrams/transformer_principle_mutual_induction.jpg)
 
@@ -260,7 +256,7 @@ Check: $E_2 = 4.44 \times 50 \times 50 \times 0.02703 = 300$ V ✓
 ---
 
 ### 🎯 Q5: 50 Hz, 6.6 kV/400V transformer. Core cross-section = 25 cm², max flux density = 1.2 T. Find number of turns on each side.
-> **Appeared:** 2024 Q4(b) — 3 marks
+> **Practice problem (not from a past paper)**
 
 **Full Answer:**
 
@@ -287,9 +283,50 @@ Check: $N_1/N_2 = 9910/600 = 16.5 = V_1/V_2 = 6600/400 = 16.5$ ✓
 | Year | Question | Data Given | Key Answer |
 |:---|:---|:---|:---|
 | 2021 Q1(c) | Find currents, EMF, flux | 25 kVA, 500/50 turns, 3000V/50Hz | $\Phi_m = 27.03$ mWb |
-| 2024 Q4(b) | Find number of turns | 50Hz, 6.6kV/400V, $A = 25$ cm², $B_m = 1.2$ T | $N_1 = 9910$, $N_2 = 600$ |
+| Practice | Find number of turns | 50Hz, 6.6kV/400V, $A = 25$ cm², $B_m = 1.2$ T | $N_1 = 9910$, $N_2 = 600$ |
 | 2019 Q1(b) | Derive EMF equation | — | $E = 4.44 f N \Phi_m$ |
-| 2023 Q1(b) | Derive EMF equation | — | Same derivation |
+| 2023 Q1(a) | Derive EMF equation | — | Same derivation |
+
+### 🎯 Q5: Briefly describe the effect of variation of load on core flux and primary current of a transformer.
+> **Appeared:** 2023 Q1(b) — 3 marks
+
+**Full Answer:**
+
+**1. Core flux stays practically constant at every load.** From the emf equation, $V_1 \approx E_1 = 4.44 f N_1 \Phi_m$. Both $V_1$ and $f$ are fixed by the supply, so $\Phi_m \approx V_1/(4.44 f N_1) = \text{constant}$. A transformer is a **constant-flux machine**.
+
+**2. The m.m.f. balance is what keeps it constant.** When $I_2$ flows, its m.m.f. $N_2 I_2$ opposes the core flux by Lenz's law. The flux dips slightly, $E_1$ dips, and the primary at once draws an extra current $I_2' = (N_2/N_1) I_2$ to cancel the secondary m.m.f. The net core m.m.f. returns to $N_1 I_0$, so the flux is restored.
+
+**3. Primary current rises almost in step with the load.** $\vec{I}_1 = \vec{I}_0 + \vec{I}_2'$. $I_0$ is small and fixed; $I_2'$ is proportional to load. So $I_1$ grows nearly linearly from $I_0$ at no load to rated value at full load, and the primary power factor improves from a very poor $\cos\phi_0$ toward the load power factor.
+
+| Quantity | Behaviour with load |
+|:---|:---|
+| Core flux $\Phi_m$ | Constant |
+| Iron loss $P_{Fe}$ | Constant (depends on $\Phi_m$ and $f$ only) |
+| Primary current $I_1$ | Rises with load |
+| Copper loss $P_{Cu}$ | Rises as $I_1^2$ |
+
+---
+
+### 🎯 Q6: Define voltage transformation ratio. $N_1 = 800$, $N_2 = 200$, $I_2 = 80$ A at 0.8 pf lag, $I_1 = 25$ A at 0.707 pf lag. Find the no-load current and its phase with respect to the voltage.
+> **Appeared:** 2023 Q1(c) — 4 marks
+
+**Full Answer:**
+
+**Definition.** $K = \dfrac{E_2}{E_1} = \dfrac{N_2}{N_1} = \dfrac{I_1}{I_2}$. $K > 1$ means step-up, $K < 1$ means step-down.
+
+**Step 1. Ratio and referred load component of primary current.**
+$$K = \frac{200}{800} = 0.25, \qquad I_2' = K I_2 = 0.25 \times 80 = 20\text{ A}$$
+
+**Step 2. Resolve both currents with $V_1$ as reference.** $\phi_2 = 36.87^\circ$ ($\sin\phi_2 = 0.6$), $\phi_1 = 45^\circ$:
+$$\vec{I}_2' = 20\angle{-36.87^\circ} = (16 - j12)\text{ A}, \qquad \vec{I}_1 = 25\angle{-45^\circ} = (17.68 - j17.68)\text{ A}$$
+
+**Step 3. Use $\vec{I}_1 = \vec{I}_0 + \vec{I}_2'$.**
+$$\vec{I}_0 = (17.68 - 16) + j(-17.68 + 12) = (1.675 - j5.680)\text{ A}$$
+
+**Step 4. Magnitude and phase.**
+$$\boxed{I_0 = 5.92\text{ A, lagging } V_1 \text{ by } 73.6^\circ \quad (\cos\phi_0 = 0.283)}$$
+
+---
 
 ---
 

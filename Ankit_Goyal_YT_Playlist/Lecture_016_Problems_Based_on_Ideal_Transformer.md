@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 015: Ideal Transformer Part 2](Lecture_015_Ideal_Transformer_Part_2.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 017: Practical Transformer Part 1 →](Lecture_017_Practical_Transformer_Part_1.md)
+
+---
+
 # Problems Based on Ideal Transformer | L5 | Electrical Machines | GATE 2022
 
 - **Source**: https://www.youtube.com/watch?v=6kjfz_rje-Y
@@ -748,3 +753,6 @@ Subsequent sessions build upon these principles to analyze practical transformer
 - Ideal transformers cannot operate on steady direct current because time-invariant flux ($d\Phi/dt = 0$) induces zero opposing back-emf, causing destructive overcurrent.
 - Under complex power conservation, the primary apparent power equals the vector sum of active and reactive powers absorbed by all secondary loads: $S_{\text{primary}} = \sum (P_k + jQ_k)$.
 
+---
+
+[← Lec 015: Ideal Transformer Part 2](Lecture_015_Ideal_Transformer_Part_2.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 017: Practical Transformer Part 1 →](Lecture_017_Practical_Transformer_Part_1.md)

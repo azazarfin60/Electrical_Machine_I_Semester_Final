@@ -87,35 +87,29 @@ $$Z_{01} = \frac{V_{sc}}{I_{sc}} = \frac{72}{1.818} = 39.60\,\Omega$$
 
 $$R_{01} = \frac{W_{sc}}{I_{sc}^2} = \frac{300}{1.818^2} = \frac{300}{3.305} = 90.77\,\Omega$$
 
-Wait: $R_{01}$ cannot exceed $Z_{01}$. Recheck: $I_{sc} = 1.818$ A, $R_{01} = 300/1.818^2 = 90.77\,\Omega$ and $Z_{01} = 39.60\,\Omega$. This is inconsistent. The actual rated current on the HV side:
+**The given data is inconsistent.** $R_{01}$ can never exceed $Z_{01}$, because $Z_{01} = \sqrt{R_{01}^2 + X_{01}^2}$. Here $R_{01} = 90.8\,\Omega$ but $Z_{01} = 39.6\,\Omega$, so $X_{01}^2 = 39.6^2 - 90.8^2 < 0$. No real transformer gives these three readings together.
 
-Actually the problem states $I =$ rated. Let me recompute: Rated HV current $= 20000/11000 = 1.818$ A. With $W = 300$ W and $I = 1.818$ A:
+The physical check: with $I_{sc} = 1.818$ A, a 300 W copper loss needs at least $300/1.818^2 = 90.8\,\Omega$ of resistance, which would need at least $90.8 \times 1.818 = 165$ V applied. The paper says 72 V. So either $W = 300$ W or $V = 72$ V is a misprint.
 
-$$R_{01} = \frac{W_{sc}}{I_{sc}^2} = \frac{300}{(1.818)^2} = 90.8\,\Omega$$
+$$\boxed{\text{No valid answer exists for 20 kVA, 11 kV/230 V with } V_{sc}=72\text{ V},\ W_{sc}=300\text{ W}}$$
 
-But $Z_{01} = V_{sc}/I_{sc} = 72/1.818 = 39.6\,\Omega$. Since $R_{01} > Z_{01}$ this is impossible. The input data appears inconsistent in the original problem (a common issue with this paper). Assuming the problem intends the LV side to be shorted and values are per the HV side:
+**Worked with the 2021 paper's data for illustration.** The 2021 paper asks the same question with consistent numbers (20 kVA, 2400/240 V, $V_{sc} = 72$ V, $W_{sc} = 275$ W). This shows the method:
 
-$$Z_{01} = \frac{V_{sc}}{I_{sc}} = \frac{72}{1.818} = 39.60\,\Omega$$
-
-$$R_{01} = \frac{P_{sc}}{I_{sc}^2} = \frac{300}{3.305} = 90.77\,\Omega$$
-
-This is geometrically impossible. Using the problem from the same data as it appears in 2021 (same question), the rated current calculation gives:
-
-Rated $I_{HV} = \frac{20000}{2400} = 8.33$ A (if it were a 2400V side). Let us proceed with the 2021 version (20kVA, 2400/240V):
-
-$$I_{1,\text{rated}} = \frac{20000}{2400} = 8.33 \text{ A}, \quad V_{sc} = 72 \text{ V}, \quad W_{sc} = 275 \text{ W (2021 version)}$$
+$$I_{1,\text{rated}} = \frac{20000}{2400} = 8.33 \text{ A}$$
 
 $$Z_{01} = \frac{72}{8.33} = 8.64\,\Omega, \quad R_{01} = \frac{275}{8.33^2} = \frac{275}{69.39} = 3.964\,\Omega$$
 
 $$X_{01} = \sqrt{8.64^2 - 3.964^2} = \sqrt{74.65 - 15.71} = \sqrt{58.94} = 7.677\,\Omega$$
 
-**Voltage regulation at 0.8 lagging pf:**
+Copper loss at full load $= W_{sc} = 275$ W (the SC test is run at rated current).
+
+Voltage regulation at 0.8 lagging pf:
 $$\epsilon_r = \frac{I_{sc}(R_{01}\cos\phi + X_{01}\sin\phi)}{V_{\text{rated}}} \times 100$$
 $$= \frac{8.33(3.964 \times 0.8 + 7.677 \times 0.6)}{2400} \times 100$$
 $$= \frac{8.33(3.171 + 4.606)}{2400} \times 100 = \frac{8.33 \times 7.777}{2400} \times 100$$
-$$= \frac{64.78}{2400} \times 100 = \boxed{2.70\%}$$
+$$= \frac{64.78}{2400} \times 100 = 2.70\%$$
 
-> **Note:** The original 2018 paper has inconsistent SC test data for the stated transformer. The calculation approach above is correct: use the same formula with whatever consistent data your exam paper provides.
+> **Note:** 2.70% belongs to the 2400/240 V transformer, not to the 11 kV/230 V one in this paper. In the exam, state the impossibility first, then show the method. Do not quote a number from a different transformer as the answer.
 
 ---
 
@@ -217,7 +211,7 @@ $$V_{2,\text{coil}} = V_{2,\text{line}} = \boxed{230 \text{ V}}$$
 
 $$I_{2,\text{coil}} = \frac{S_{\text{each}} \times 1000}{V_{2,\text{coil}}} = \frac{3333300}{230} = \boxed{14492 \text{ A}}$$
 
-(Line current on secondary $= \sqrt{3} \times 14492 = 25095$ A total)
+(Line current on secondary $= \sqrt{3} \times 14492.75 = 25102\text{ A}$ total)
 
 ---
 
@@ -266,29 +260,51 @@ The two secondary voltages are equal in magnitude and 90° apart in time: giving
 
 **(b) Two T-connected transformers supply a 440V, 33 kVA balanced load from a 3300V balanced 3-phase supply. Find: (i) voltage and current rating of each coil, (ii) kVA rating of main and teaser. [04]**
 
-**Supply:** $V_L = 3300$ V (3-phase), Load: 440V, 33 kVA (2-phase)
+**The T-T (Scott 3-φ to 3-φ) connection:**
+Two single-phase transformers interconnected in T (T-T connection) supply a balanced 3-phase 440 V load from a balanced 3-phase 3300 V supply:
+- **Main transformer ($T_1$):** Primary connects directly across lines A–B (3300 V); secondary connects across load lines a–b (440 V). Both windings have a 50% center tap ($M$).
+- **Teaser transformer ($T_2$):** Primary connects between line C and the center tap of $T_1$ primary; secondary connects between load line c and the center tap of $T_1$ secondary.
 
-**Secondary voltages (2-phase, equal):**
-$$V_{2,\text{each}} = 440 \text{ V per phase}$$
+**Step 1. System line currents:**
+- Primary line current:
+  $$I_{1L} = \frac{S}{\sqrt{3} V_{1L}} = \frac{33000}{\sqrt{3} \times 3300} = \frac{10}{\sqrt{3}} = \mathbf{5.77\text{ A}}$$
+- Secondary line current:
+  $$I_{2L} = \frac{S}{\sqrt{3} V_{2L}} = \frac{33000}{\sqrt{3} \times 440} = \frac{75}{\sqrt{3}} = \mathbf{43.30\text{ A}}$$
 
-**Secondary current:**
-$$I_{2} = \frac{S/2}{V_{2}} = \frac{33000/2}{440} = \frac{16500}{440} = 37.5 \text{ A per phase}$$
+#### (i) Voltage and current rating of each coil
 
-**Primary voltage of main transformer:** Connected across A-B: $V_{AB} = V_L = 3300$ V
+**1. Main Transformer ($T_1$):**
+- **Primary coil:** Connects across lines A–B:
+  $$V_{1,\text{main}} = V_{1L} = \mathbf{3300\text{ V}}, \qquad I_{1,\text{main}} = I_{1L} = \mathbf{5.77\text{ A}}$$
+- **Secondary coil:** Connects across load lines a–b:
+  $$V_{2,\text{main}} = V_{2L} = \mathbf{440\text{ V}}, \qquad I_{2,\text{main}} = I_{2L} = \mathbf{43.30\text{ A}}$$
 
-$$V_{1,\text{main}} = 3300 \text{ V}, \qquad I_{1,\text{main}} = \frac{S/2}{V_{1,\text{main}}} = \frac{16500}{3300} = 5 \text{ A}$$
+**2. Teaser Transformer ($T_2$):**
+- In an equilateral triangle of side $V_L$, the altitude from the midpoint of a side to the opposite vertex is $\frac{\sqrt{3}}{2} V_L \approx 0.866 V_L$:
+  $$V_{1,\text{teaser}} = \frac{\sqrt{3}}{2} V_{1L} = 0.86603 \times 3300 = \mathbf{2858\text{ V}} \quad (2857.9\text{ V})$$
+  $$V_{2,\text{teaser}} = \frac{\sqrt{3}}{2} V_{2L} = 0.86603 \times 440 = \mathbf{381\text{ V}} \quad (381.05\text{ V})$$
+- The teaser coils carry the full third line current on each side:
+  $$I_{1,\text{teaser}} = I_{1L} = \mathbf{5.77\text{ A}}$$
+  $$I_{2,\text{teaser}} = I_{2L} = \mathbf{43.30\text{ A}}$$
 
-**Primary voltage of teaser:** Connected from midpoint of AB to C. Length from midpoint of AB to C in an equilateral triangle:
-$$V_{1,\text{teaser}} = \frac{\sqrt{3}}{2} \times V_L = 0.866 \times 3300 = 2858 \text{ V}$$
+| Transformer | Coil | Voltage Rating | Current Rating |
+|:---|:---|:---:|:---:|
+| **Main ($T_1$)** | Primary | $3300\text{ V}$ | $5.77\text{ A}$ |
+| | Secondary | $440\text{ V}$ | $43.30\text{ A}$ |
+| **Teaser ($T_2$)** | Primary | $\frac{\sqrt{3}}{2} \times 3300 = 2858\text{ V}$ | $5.77\text{ A}$ |
+| | Secondary | $\frac{\sqrt{3}}{2} \times 440 = 381\text{ V}$ | $43.30\text{ A}$ |
 
-$$I_{1,\text{teaser}} = \frac{S/2}{V_{1,\text{teaser}}} = \frac{16500}{2858} = 5.77 \text{ A}$$
+#### (ii) kVA rating of the main and teaser transformer
 
-**kVA ratings:**
-$$\text{Main transformer kVA} = V_{1,\text{main}} \times I_{1,\text{main}} = 3300 \times 5 = \boxed{16.5 \text{ kVA}}$$
+**Operating (calculated) ratings:**
+$$\text{kVA}_{\text{main}} = \frac{V_{1,\text{main}} \times I_{1,\text{main}}}{1000} = \frac{3300 \times 5.7735}{1000} = \boxed{\mathbf{19.05\text{ kVA}}}$$
+$$\text{kVA}_{\text{teaser}} = \frac{V_{1,\text{teaser}} \times I_{1,\text{teaser}}}{1000} = \frac{2857.9 \times 5.7735}{1000} = \boxed{\mathbf{16.50\text{ kVA}}}$$
 
-$$\text{Teaser transformer kVA} = V_{1,\text{teaser}} \times I_{1,\text{teaser}} = 2858 \times 5.77 = \boxed{16.5 \text{ kVA}}$$
+Notice that $\text{kVA}_{\text{teaser}} = \frac{\sqrt{3}}{2}\,\text{kVA}_{\text{main}} = 0.866 \times 19.05 = 16.50\text{ kVA}$.
 
-Both transformers have the same kVA rating. Total = 33 kVA ✓
+> [!info] Commercial Identical Units & Alternative 2-Phase Reading
+> - **Commercial units (15.5% oversize):** If two identical interchangeable transformers are used, both are rated for the larger requirement of **19.05 kVA** each (total installed $= 38.10\text{ kVA}$, giving $\frac{38.10}{33} = 1.155$, the standard 15.5% oversize).
+> - **Alternative reading (3-φ to 2-phase conversion):** If the load is interpreted as a balanced 2-phase load ($16.5\text{ kVA}$ per phase at 440 V), then $I_2 = 16500/440 = 37.5\text{ A}$ each, $I_{1,\text{main}} = 5\text{ A}$ (nominal active component) and $I_{1,\text{teaser}} = 5.77\text{ A}$, yielding $16.5\text{ kVA}$ for both main and teaser. The 3-phase T-T solution above is the standard RUET course derivation (matching 2024 Q4(c)).
 
 ---
 
@@ -371,18 +387,18 @@ The reactive power drawn by the motor at rated conditions (which must be supplie
 
 $$Q = \sqrt{3} V_L I_L \sin\phi$$
 
-$\sin\phi = \sqrt{1 - 0.85^2} = \sqrt{1 - 0.7225} = \sqrt{0.2775} = 0.527$
+$\sin\phi = \sqrt{1 - 0.85^2} = \sqrt{1 - 0.7225} = \sqrt{0.2775} = 0.5268$
 
-$$Q = \sqrt{3} \times 440 \times 40 \times 0.527 = 1.732 \times 440 \times 40 \times 0.527 = 16082 \text{ VAR} \approx 16.08 \text{ kVAR}$$
+$$Q = \sqrt{3} \times 440 \times 40 \times 0.5268 = 1.732 \times 440 \times 40 \times 0.5268 = 16065 \text{ VAR} \approx 16.07 \text{ kVAR}$$
 
 For Δ-connected capacitors, reactive power per phase:
-$$Q_{\text{phase}} = \frac{Q}{3} = \frac{16082}{3} = 5361 \text{ VAR}$$
+$$Q_{\text{phase}} = \frac{Q}{3} = \frac{16065}{3} = 5355 \text{ VAR}$$
 
 Phase voltage for Δ-connected: $V_\text{phase} = V_L = 440$ V
 
-$$Q_\text{phase} = \frac{V_\text{phase}^2}{X_C} \implies X_C = \frac{V^2}{Q_\text{phase}} = \frac{440^2}{5361} = \frac{193600}{5361} = 36.11\,\Omega$$
+$$Q_\text{phase} = \frac{V_\text{phase}^2}{X_C} \implies X_C = \frac{V^2}{Q_\text{phase}} = \frac{440^2}{5355} = \frac{193600}{5355} = 36.15\,\Omega$$
 
-$$C = \frac{1}{2\pi f X_C} = \frac{1}{2\pi \times 50 \times 36.11} = \frac{1}{11344} = \boxed{88.2\,\mu\text{F per phase}}$$
+$$C = \frac{1}{2\pi f X_C} = \frac{1}{2\pi \times 50 \times 36.15} = \frac{1}{11357} = \boxed{88.1\text{--}88.2\,\mu\text{F per phase}}$$
 
 **(ii) Engine speed for 50 Hz generation:**
 
@@ -595,21 +611,15 @@ $$\phi_m = \cos^{-1}\!\left(\frac{R_m}{Z_m}\right) = \cos^{-1}(0.2) = 78.46°$$
 **Auxiliary winding parameters:**
 $$Z_a = \frac{80}{1} = 80\,\Omega, \quad R_a = \frac{50}{1^2} = 50\,\Omega, \quad X_a = \sqrt{80^2 - 50^2} = \sqrt{3900} = 62.45\,\Omega \text{ (inductive)}$$
 
-**For maximum starting torque:** $I_m$ and $I_a$ must be 90° apart. The auxiliary winding (with capacitor $C$) must have total angle:
-$$\phi_a = 90° - 78.46° = 11.54° \text{ leading from V}$$
+**For maximum starting torque:** starting torque is proportional to $I_m I_a \sin\alpha$, where $\alpha$ is the angle between the two currents. Adding $X_C$ changes $|I_a|$ as well as $\alpha$. So forcing $\alpha = 90°$ does not give the largest product. Maximising $I_a \sin\alpha$ gives the auxiliary branch angle:
 
-The net auxiliary circuit reactance must be capacitive:
-$$X_{\text{net}} = X_a - X_C = -\tan(11.54°) \times R_a = -0.2040 \times 50 = -10.20\,\Omega$$
+$$\phi_a = \frac{90° - \phi_m}{2} = \frac{90° - 78.46°}{2} = 5.77° \text{ leading}$$
 
-Wait: for $I_a$ to lead voltage by $\phi_a$, we need the circuit to be capacitive overall:
+$$\tan\phi_a = \frac{X_C - X_a}{R_a} \implies X_C = X_a + R_a\tan\phi_a = X_a + \frac{R_a R_m}{Z_m + X_m}$$
 
-Actually for 90° between $I_m$ (lagging by $\phi_m = 78.46°$) and $I_a$: $I_a$ should lead $V$ by $(90° - 78.46°) = 11.54°$, so the total impedance angle of auxiliary+capacitor circuit $= -11.54°$ (leading).
+$$X_C = 62.45 + \frac{50 \times 10}{50 + 48.99} = 62.45 + \frac{500}{98.99} = 62.45 + 5.05 = 67.50\,\Omega$$
 
-$$\tan(11.54°) = \frac{X_C - X_a}{R_a} \implies X_C - X_a = R_a\tan(11.54°) = 50 \times 0.2040 = 10.2\,\Omega$$
-
-$$X_C = X_a + 10.2 = 62.45 + 10.2 = 72.65\,\Omega$$
-
-$$C = \frac{1}{2\pi f X_C} = \frac{1}{2\pi \times 50 \times 72.65} = \frac{1}{22840} = \boxed{43.8\,\mu\text{F}}$$
+$$C = \frac{1}{2\pi f X_C} = \frac{1}{2\pi \times 50 \times 67.50} = \boxed{47.1\,\mu\text{F}}$$
 
 ---
 

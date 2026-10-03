@@ -39,10 +39,6 @@ For maximum starting torque, the two currents should be 90° apart in time. This
 
 ---
 
-## SECTION - B (Transformers: Q5 to Q8)
-
----
-
 ### [2018 Q8(b)]
 > 📋 **Appeared in:** 2018 Q8(b)
 
@@ -82,21 +78,17 @@ $$\phi_m = \cos^{-1}\!\left(\frac{R_m}{Z_m}\right) = \cos^{-1}(0.2) = 78.46°$$
 **Auxiliary winding parameters:**
 $$Z_a = \frac{80}{1} = 80\,\Omega, \quad R_a = \frac{50}{1^2} = 50\,\Omega, \quad X_a = \sqrt{80^2 - 50^2} = \sqrt{3900} = 62.45\,\Omega \text{ (inductive)}$$
 
-**For maximum starting torque:** $I_m$ and $I_a$ must be 90° apart. The auxiliary winding (with capacitor $C$) must have total angle:
-$$\phi_a = 90° - 78.46° = 11.54° \text{ leading from V}$$
+**For maximum starting torque:** starting torque is proportional to $I_m I_a \sin\alpha$, where $\alpha$ is the angle between the two currents. Adding $X_C$ changes $|I_a|$ as well as $\alpha$, so forcing $\alpha = 90°$ does **not** give the largest product.
 
-The net auxiliary circuit reactance must be capacitive:
-$$X_{\text{net}} = X_a - X_C = -\tan(11.54°) \times R_a = -0.2040 \times 50 = -10.20\,\Omega$$
+Maximising $I_a \sin\alpha$ gives the auxiliary branch angle:
+$$\phi_a = \frac{90° - \phi_m}{2} = \frac{90° - 78.46°}{2} = 5.77° \text{ leading}$$
 
-Wait: for $I_a$ to lead voltage by $\phi_a$, we need the circuit to be capacitive overall:
+The auxiliary branch must be net capacitive, so:
+$$\tan\phi_a = \frac{X_C - X_a}{R_a} \implies X_C = X_a + R_a\tan\phi_a = X_a + \frac{R_a R_m}{Z_m + X_m}$$
 
-Actually for 90° between $I_m$ (lagging by $\phi_m = 78.46°$) and $I_a$: $I_a$ should lead $V$ by $(90° - 78.46°) = 11.54°$, so the total impedance angle of auxiliary+capacitor circuit $= -11.54°$ (leading).
+$$X_C = 62.45 + \frac{50 \times 10}{50 + 48.99} = 62.45 + \frac{500}{98.99} = 62.45 + 5.05 = 67.50\,\Omega$$
 
-$$\tan(11.54°) = \frac{X_C - X_a}{R_a} \implies X_C - X_a = R_a\tan(11.54°) = 50 \times 0.2040 = 10.2\,\Omega$$
-
-$$X_C = X_a + 10.2 = 62.45 + 10.2 = 72.65\,\Omega$$
-
-$$C = \frac{1}{2\pi f X_C} = \frac{1}{2\pi \times 50 \times 72.65} = \frac{1}{22840} = \boxed{43.8\,\mu\text{F}}$$
+$$C = \frac{1}{2\pi f X_C} = \frac{1}{2\pi \times 50 \times 67.50} = \boxed{47.1\,\mu\text{F}}$$
 
 ---
 
@@ -184,20 +176,22 @@ With capacitor in series, net reactance:
 $$X_{\text{net}} = X_C - X_a = X_C - 3.5$$
 
 For leading angle of $50.57°$:
-$$\tan(50.57°) = \frac{X_C - 3.5}{9.5} = 1.213$$
+$$\tan(50.57°) = \cot(39.43°) = \frac{R_m}{X_m} = \frac{4.5}{3.7} = 1.2162$$
 
-$$X_C - 3.5 = 1.213 \times 9.5 = 11.52$$
+$$\frac{X_C - 3.5}{9.5} = 1.2162 \implies X_C - 3.5 = 1.2162 \times 9.5 = 11.554\,\Omega$$
 
-$$X_C = 11.52 + 3.5 = 15.02\,\Omega$$
+$$X_C = 11.554 + 3.5 = 15.054\,\Omega$$
 
-$$C = \frac{1}{2\pi f X_C} = \frac{1}{2\pi \times 50 \times 15.02} = \frac{1}{4722} = \boxed{211.8\,\mu\text{F}}$$
+$$C = \frac{1}{2\pi f X_C} = \frac{1}{2\pi \times 50 \times 15.054} = \frac{1}{4729.4} = \boxed{211.4\,\mu\text{F}}$$
+
+*(Note: If using intermediate rounded $\tan 50.57° \approx 1.213$: $X_C = 15.02\,\Omega$, and $C = \frac{1}{2\pi \times 50 \times 15.02} = \frac{1}{4718.7} \approx 211.9\,\mu\text{F}$.)*
 
 ---
 
 ### [2023 Q8(b)]
 > 📋 **Appeared in:** 2023 Q8(b)
 
-**(b) Describe any two methods of making a 1-phase IM self-starting. [06, CO4]**
+**(b) Describe any two methods of making a 1-phase IM self-starting. [Marks: 04, CO: 3]**
 
 **Method 1: Capacitor-Start Motor:**
 
@@ -231,10 +225,10 @@ The non-uniform, time-shifted flux produces a weak rotating effect across the po
 
 ---
 
-### [2024 Q8(b)]
-> 📋 **Appeared in:** 2024 Q8(b)
+### [Practice: Two Common 1-Phase Motor Types]
+> **Practice problem (not from a past paper)**
 
-**(b) Describe two types of single-phase induction motors commonly used in practice. [06, CO4]**
+**Describe two types of single-phase induction motors commonly used in practice.**
 
 **Type 1: Capacitor-Start, Capacitor-Run Motor (Two-Value Capacitor Motor):**
 
@@ -274,6 +268,71 @@ The rotor (squirrel-cage) follows this sweeping field from unshaded → shaded, 
 - Fixed rotation direction (cannot be reversed without mechanical modification)
 
 **Applications:** Small cooling fans, hair dryers, small exhaust fans, record turntables, display motors.
+
+---
+
+
+---
+
+### [2023 Q8(c)]
+> 📋 **Appeared in:** 2023 Q8(c)
+
+**(c) How is a single phase induction motor is made self-starting? Describe two methods of making a single phase induction motor self-starting. [CO3, Marks: 04]**
+
+**The core idea.** A single winding gives a pulsating field, which splits into two equal and opposite rotating fields, so the starting torque is zero. To get a starting torque, the field at standstill must be made to **rotate**, not pulsate.
+
+That needs two conditions together:
+1. **Two windings displaced in space**, ideally by $90°$ electrical.
+2. **Their currents displaced in time**, ideally by $90°$.
+
+A main winding plus an auxiliary (starting) winding, fed through a phase-splitting element, produces an unbalanced two-phase supply. That gives a rotating field and a real starting torque. The auxiliary winding is then cut out by a **centrifugal switch** at about 75% of full speed.
+
+![Main and auxiliary stator windings displaced in space on a single-phase induction motor](../Books/VK_Mehta/diagrams/VK_Mehta_Fig_9_07.jpeg)
+
+#### Method 1: Split-phase (resistance-start) motor
+
+![Split-phase induction motor circuit with main winding, high-resistance starting winding and centrifugal switch, together with its phasor diagram](../Books/VK_Mehta/diagrams/VK_Mehta_Fig_9_13.jpeg)
+
+**Construction.** The starting winding is wound with fewer turns of thin wire, so it has **high resistance and low reactance**. The main winding has many turns of thick wire, so it has **low resistance and high reactance**. Both are across the same supply, and a centrifugal switch is in series with the starting winding.
+
+**Working.**
+- $I_s$ in the high-resistance starting winding is nearly in phase with $V$.
+- $I_m$ in the highly inductive main winding lags $V$ by a large angle.
+- The phase split is about $25°$ to $30°$, which is enough to produce a rotating field.
+
+$$\alpha \approx 25°\text{--}30°, \qquad T_{st} \approx 1.5\text{ to } 2 \times T_{FL}$$
+
+At about 75% of full speed the centrifugal switch opens and the motor carries on with the main winding alone.
+
+**Uses.** Fans, blowers, small grinders, office machinery. Cheap, but low starting torque.
+
+#### Method 2: Capacitor-start motor
+
+![Capacitor-start induction motor circuit with a capacitor in series with the starting winding, together with its phasor diagram](../Books/VK_Mehta/diagrams/VK_Mehta_Fig_9_14.jpeg)
+
+**Construction.** A **capacitor** is put in series with the starting winding, along with the centrifugal switch. An electrolytic capacitor is used because it is needed only for a few seconds.
+
+**Working.** The capacitive branch makes $I_s$ **lead** the supply voltage, while $I_m$ still lags it. So the phase split is far larger:
+$$\alpha \approx 80°\text{--}90°$$
+
+With the split close to the ideal $90°$, the field at standstill is almost a true two-phase rotating field:
+$$T_{st} \approx 3\text{ to } 4.5 \times T_{FL}$$
+
+**Uses.** Compressors, pumps, refrigerators, air conditioners, conveyors. Anywhere a high starting torque is needed.
+
+#### Comparison
+
+| Feature | Split-phase | Capacitor-start |
+|:---|:---|:---|
+| Phase-splitting element | High-resistance winding | Series capacitor |
+| Phase split $\alpha$ | $25°$–$30°$ | $80°$–$90°$ |
+| Starting torque | $1.5$–$2\, T_{FL}$ | $3$–$4.5\, T_{FL}$ |
+| Starting current | High | Moderate |
+| Cost | Low | Higher |
+| Typical use | Fans, blowers | Compressors, pumps |
+
+> [!success] Other methods worth naming
+> Capacitor-start capacitor-run (two capacitors, better running power factor), permanent-split capacitor, and shaded-pole (a copper shading ring gives a weak sweeping field, used in tiny fans).
 
 ---
 

@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 044: Three Phase Transformer 6](Lecture_044_Three_Phase_Transformer_6.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 046: Problems Based on Three Phase Transformers 3 →](Lecture_046_Problems_Based_on_Three_Phase_Transformers_3.md)
+
+---
+
 # Electrical Machines | Lec 31 | Three Phase Transformer - 7 | GATE/ESE Electrical Engineering Lecture
 
 - **Source**: https://www.youtube.com/watch?v=VvIk1qmbf7E
@@ -837,3 +842,6 @@ For competitive exams like GATE and ESE, remember these core facts:
 - For a secondary load of power factor $\cos \phi$, the teaser operates at $\cos \phi$, while the main winding halves operate at $\cos(30^\circ + \phi)$ and $\cos(30^\circ - \phi)$.
 - The transformer utilization factor is $96.25\%$ with a custom teaser winding, and $92.8\%$ when using two identical transformers.
 
+---
+
+[← Lec 044: Three Phase Transformer 6](Lecture_044_Three_Phase_Transformer_6.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 046: Problems Based on Three Phase Transformers 3 →](Lecture_046_Problems_Based_on_Three_Phase_Transformers_3.md)

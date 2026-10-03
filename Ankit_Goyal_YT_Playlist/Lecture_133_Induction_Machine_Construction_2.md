@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 132: Induction Machine Construction 1](Lecture_132_Induction_Machine_Construction_1.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 134: Inverted Induction Motor →](Lecture_134_Inverted_Induction_Motor.md)
+
+---
+
 # Electrical Machines | Lec 96 | Induction Machine Construction - 2 | GATE Electrical Engineering
 
 - **Source**: https://www.youtube.com/watch?v=J3BjnWsuUL8
@@ -440,3 +445,6 @@ The two magnetic fields remain locked in synchronism. They maintain a constant s
 - The rotor rotating magnetic field moves at speed $s N_s$ relative to the rotor core and at speed $N_s$ relative to the stationary stator.
 - Steady electromagnetic torque requires both stator and rotor magnetic fields to be stationary relative to each other in space.
 
+---
+
+[← Lec 132: Induction Machine Construction 1](Lecture_132_Induction_Machine_Construction_1.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 134: Inverted Induction Motor →](Lecture_134_Inverted_Induction_Motor.md)

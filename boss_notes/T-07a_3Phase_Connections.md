@@ -8,7 +8,7 @@
 
 ## Why This Topic Matters
 
-Specific 3-phase connection questions appear in 2/7 papers (2018, 2024) as numericals and 2/7 papers (2021, 2023) as theory (Y-Y limitations). The real payoff is understanding context for Open-Delta (T-07b, 6/7 papers), vector groups (T-09), and parallel operation.
+Specific 3-phase connection questions appear in 2/7 papers (2018, 2024) as numericals and 2/7 papers (2021, 2023) as theory (Y-Y limitations). The real payoff is understanding context for Open-Delta (T-07b, 7/7 papers), vector groups (T-09), and parallel operation.
 
 ---
 
@@ -36,7 +36,7 @@ Specific 3-phase connection questions appear in 2/7 papers (2018, 2024) as numer
 ## 🏆 Golden Questions (Past Exam Archive)
 
 ### 🎯 Q1: What are the limitations of Y-Y connected transformers? How to overcome them?
-> **Appeared:** 2021 Q3(a) — 3 marks, 2023 Q4(b) — 4 marks
+> **Appeared:** 2021 Q3(a) — 3 marks, 2023 Q3(c) — 2 marks
 
 **Full Answer:**
 
@@ -85,7 +85,7 @@ $$V_{2,\text{coil}} = V_{2,\text{line}} = \boxed{230 \text{ V}}$$
 
 $$I_{2,\text{coil}} = \frac{S_{\text{each}} \times 1000}{V_{2,\text{coil}}} = \frac{3333300}{230} = \boxed{14492 \text{ A}}$$
 
-Line current on secondary: $I_{2,\text{line}} = \sqrt{3} \times 14492 = 25095$ A.
+Line current on secondary: $I_{2,\text{line}} = \sqrt{3} \times 14492.75 = 25102\text{ A}$.
 
 ---
 
@@ -109,6 +109,38 @@ Line current on secondary: $I_{2,\text{line}} = \sqrt{3} \times 14492 = 25095$ A
 | Δ-Y | 10:1 | $10:\sqrt{3}$ = 5.77:1 (step-up on secondary) |
 | Y-Δ | 10:1 | $\sqrt{3} \times 10:1$ = 17.32:1 |
 | Open-Δ | 10:1 | 10:1 (same as Δ-Δ but 57.7% capacity) |
+
+### 🎯 Q4: Explain with the help of vector diagram, how three 1-φ transformers can be used to design a 3-φ transformer.
+> **Appeared:** 2024 Q3(b) — 4 marks
+
+**Full Answer:**
+
+A three-phase transformer cannot always be bought as a single unit. Three single-phase transformers can be banked to do the same job.
+
+**1. Y-Y (star-star).** All three primaries in star, all three secondaries in star. Each primary phase winding takes $V_L/\sqrt{3}$ and each secondary takes $V_L/\sqrt{3}$. Phase shift $0^\circ$.
+
+**2. $\Delta$-$\Delta$ (delta-delta).** Both windings in delta. Each winding takes the full $V_L$. Phase shift also $0^\circ$.
+
+![The four standard three-phase transformer connections: Y-Y, delta-delta, Y-delta and delta-Y](../Books/VK_Mehta/diagrams/VK_Mehta_Fig_7_51.jpeg)
+
+**3. Mixed connections (Y-$\Delta$ and $\Delta$-Y).** One side star, the other delta. Phase shift $30^\circ$.
+
+**Vector-diagram facts to state:**
+
+- For a **star** connection the line voltage leads the phase voltage by $30^\circ$: $V_L = \sqrt{3} V_{ph}$. Line current equals phase current.
+- For a **delta** connection the phase voltage equals the line voltage, and the line current lags the phase current by $30^\circ$: $I_L = \sqrt{3} I_{ph}$.
+- Adding a phase shift of $30^\circ$ on one winding alone gives the clock-notation numbers 1 or 11.
+
+| Connection | $V_{ph}/V_L$ | $I_L/I_{ph}$ | Phase shift |
+|:---|:---:|:---:|:---:|
+| Y-Y | $1/\sqrt{3}$ | 1 | $0^\circ$ |
+| $\Delta$-$\Delta$ | 1 | $\sqrt{3}$ | $0^\circ$ |
+| Y-$\Delta$ | $V_{1,ph} = V_{1,L}/\sqrt3$, $V_{2,ph} = V_{2,L}$ | $\sqrt{3}$ on secondary | $30^\circ$ |
+| $\Delta$-Y | $V_{ph} = V_L$ | 1 on secondary | $30^\circ$ |
+
+**When to bank three single-phase transformers:** for large ratings, for easy transport and erection (a 3-phase unit must be shipped as one piece), and for maintenance, since one unit can be taken out and the remaining two can run in open-delta at 57.7% capacity.
+
+---
 
 ---
 

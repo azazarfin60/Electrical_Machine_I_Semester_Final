@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 030: Important Concepts in Electrical Machines 2](Lecture_030_Important_Concepts_in_Electrical_Machines_2.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 032: Auto Transformer 1 →](Lecture_032_Auto_Transformer_1.md)
+
+---
+
 # Transformer and Magnetically Coupled Circuits | L 10 | Electrical Machines | GATE 2022 | #AnkitGoyal
 
 - **Source**: https://www.youtube.com/watch?v=traXYvejLxE
@@ -676,3 +681,6 @@ $$L_m = a M$$
 - Two coupled coils with equal self-inductance $L$ have series inductances $2L \pm 2M$, from which $L$ and $M$ are directly calculated.
 - The equivalent input inductance of a two-port coupled network with shorted secondary is $L_{\text{sc}} = L_1 - M^2 / L_2$, which is strictly less than or equal to $L_1$.
 
+---
+
+[← Lec 030: Important Concepts in Electrical Machines 2](Lecture_030_Important_Concepts_in_Electrical_Machines_2.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 032: Auto Transformer 1 →](Lecture_032_Auto_Transformer_1.md)

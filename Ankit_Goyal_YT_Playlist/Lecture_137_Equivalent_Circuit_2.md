@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 136: Equivalent Circuit 1](Lecture_136_Equivalent_Circuit_1.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 138: Losses and Efficiency of Induction Machines →](Lecture_138_Losses_and_Efficiency_of_Induction_Machines.md)
+
+---
+
 # Electrical Machines | Lec 99 | Equivalent Circuit - 2 | GATE Electrical Engineering
 
 - **Source**: https://www.youtube.com/watch?v=K2QQi9ab4RE
@@ -340,3 +345,6 @@ Therefore, windage loss in a slip-ring motor is substantially higher than in an 
 - Core loss on the stationary stator and friction loss on the spinning rotor occur at different physical locations and must never be merged into a single rotational loss.
 - Maximum efficiency occurs when variable losses equal fixed losses: $P_{\text{variable}} = P_{\text{fixed}}$, with brush contact drop excluded from the condition.
 
+---
+
+[← Lec 136: Equivalent Circuit 1](Lecture_136_Equivalent_Circuit_1.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 138: Losses and Efficiency of Induction Machines →](Lecture_138_Losses_and_Efficiency_of_Induction_Machines.md)

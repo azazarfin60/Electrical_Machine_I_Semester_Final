@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 131: Induction Machines Introduction](Lecture_131_Induction_Machines_Introduction.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 133: Induction Machine Construction 2 →](Lecture_133_Induction_Machine_Construction_2.md)
+
+---
+
 # Electrical Machines | Lec 95 | Induction Machine Construction - 1 | GATE Electrical Engineering
 
 - **Source**: https://www.youtube.com/watch?v=Wk0b3yaoptg
@@ -453,3 +458,6 @@ Low rotor resistance results in a poor starting power factor.
 - A squirrel cage rotor automatically mirrors the number of magnetic poles established by the stator field.
 - Rotor conductors are skewed across the core to suppress tooth harmonics, prevent cogging, and eliminate acoustic magnetic hum.
 
+---
+
+[← Lec 131: Induction Machines Introduction](Lecture_131_Induction_Machines_Introduction.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 133: Induction Machine Construction 2 →](Lecture_133_Induction_Machine_Construction_2.md)

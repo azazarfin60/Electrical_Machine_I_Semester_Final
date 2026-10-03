@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 034: Auto Transformer in Hindi 3](Lecture_034_Auto_Transformer_in_Hindi_3.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 036: Problems based on Three Winding Transformer →](Lecture_036_Problems_based_on_Three_Winding_Transformer.md)
+
+---
+
 # Problems based on Auto-Transformer | L 12 | Electrical Machines | GATE 2022 | #AnkitGoyal
 
 - **Source**: https://www.youtube.com/watch?v=xx0hJsQWPRs
@@ -719,3 +724,6 @@ This completes our study of single-phase autotransformers. The subsequent lectur
 - Reconnecting a $1:1$ two-winding transformer in additive polarity doubles its continuous kVA rating.
 - Original winding ratings are retrieved from polarity measurements using $V_1 = (V_{\text{add}} + V_{\text{sub}}) / 2$ and $V_2 = (V_{\text{add}} - V_{\text{sub}}) / 2$.
 
+---
+
+[← Lec 034: Auto Transformer in Hindi 3](Lecture_034_Auto_Transformer_in_Hindi_3.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 036: Problems based on Three Winding Transformer →](Lecture_036_Problems_based_on_Three_Winding_Transformer.md)

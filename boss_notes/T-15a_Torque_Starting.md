@@ -127,6 +127,81 @@ $$T_{st,\max} = \frac{kE_2^2}{2X_2}$$
 
 In wound-rotor motors, external resistance is added to achieve $R_{\text{total}} = X_2$ for maximum starting torque with reduced starting current.
 
+### 🎯 Q3: Define starting and running torque of an induction motor (IM).
+> **Appeared:** 2024 Q6(a) — 2 marks
+
+**Full Answer:**
+
+**Starting torque ($T_{st}$):** The torque developed at the instant of starting, when the rotor is stationary, so $s = 1$.
+$$T_{st} = \frac{k E_2^2 R_2}{R_2^2 + X_2^2}$$
+It depends on rotor resistance, so a wound-rotor motor can raise it by adding external resistance through the slip rings. Usually $1.5$ to $2.5$ times full-load torque.
+
+**Running torque ($T_r$):** The torque developed at any speed after starting, that is at $0 < s < 1$. In the low-slip region
+$$T_r \approx \frac{k E_2^2}{R_2}\, s$$
+so running torque is very nearly proportional to slip. The motor settles where running torque equals load torque.
+
+**Contrast to state:** starting torque is fixed by $s = 1$ and depends strongly on $R_2$, while running torque varies continuously with slip and, at small slip, is inversely proportional to $R_2$ ($T_r \propto s/R_2$), whereas the breakdown torque $T_{\max}$ is independent of $R_2$.
+
+---
+
+### 🎯 Q4: Determine the average torque of an induction motor if the rotor is assumed to be fully inductive.
+> **Appeared:** 2023 Q6(c) — 3 marks
+
+**Full Answer:**
+
+$$T \propto \Phi\, I_2 \cos\phi_2, \qquad \phi_2 = \tan^{-1}\frac{X_2}{R_2}$$
+
+**Fully inductive rotor means $R_2 = 0$, so $\phi_2 = 90^\circ$ and the active component of rotor current is zero.**
+
+**Point-by-point proof.** Let the stator flux density wave be sinusoidal in space: $B(\theta) = B_m \sin\theta$. The rotor emf follows the flux density, and with a purely inductive rotor the current lags that emf by $90^\circ$:
+$$i(\theta) = I_m \sin(\theta - 90^\circ) = -I_m \cos\theta$$
+
+The force on a conductor is $F \propto B\, i\, l$, so
+$$t(\theta) \propto B_m I_m \sin\theta \cdot (-\cos\theta) = -\frac{B_m I_m}{2} \sin 2\theta$$
+
+Average over one pole pitch ($0$ to $\pi$):
+$$T_{av} \propto -\frac{B_m I_m}{2\pi}\int_0^{\pi} \sin 2\theta \, d\theta = 0$$
+
+**Same result from the torque formula:**
+$$T = k \Phi I_2 \cos 90^\circ = 0$$
+
+$$\boxed{T_{av} = 0 \ \text{when the rotor is fully inductive } (\phi_2 = 90^\circ)}$$
+
+| Case | $\phi_2$ | Torque over a pole pitch | Average torque |
+|:---|:---:|:---|:---|
+| Non-inductive | $0^\circ$ | Always positive | Maximum |
+| Partly inductive | $0 < \phi_2 < 90^\circ$ | Mostly positive, small reversed band | Reduced |
+| Fully inductive | $90^\circ$ | Forward half exactly cancels reverse half | **Zero** |
+
+So an induction motor must have resistance in the rotor circuit. A rotor with zero resistance would produce no net torque at all.
+
+---
+
+### 🎯 Q5: Slip-ring IM, star rotor, 120 V between slip-rings at standstill. $R_2 = 0.3\,\Omega/ph$, $X_2 = 1.5\,\Omega/ph$ at standstill. Find the rotor current/ph at 4% slip, and the slip and rotor current/ph at maximum torque.
+> **Appeared:** 2024 Q6(c) — 4 marks
+
+**Full Answer:**
+
+**First convert the slip-ring voltage to a phase voltage.** 120 V is measured **between** the rings, so it is a line voltage. The rotor is star connected:
+$$E_{2,\text{ph}} = \frac{120}{\sqrt{3}} = 69.28\text{ V}$$
+
+At slip $s$ the rotor phase emf is $sE_2$ and the rotor phase reactance is $sX_2$.
+
+**(i) Rotor current per phase at $s = 0.04$**
+$$E_{2s} = 0.04 \times 69.28 = 2.771\text{ V}$$
+$$|Z_r| = \sqrt{0.3^2 + (0.04 \times 1.5)^2} = \sqrt{0.09 + 0.0036} = 0.30594\ \Omega$$
+$$I_{2r} = \frac{2.771}{0.30594} = \boxed{9.06\text{ A per phase}}$$
+
+**(ii) Slip and rotor current per phase at maximum torque**
+$$s_{mT} = \frac{R_2}{X_2} = \frac{0.3}{1.5} = \boxed{0.2 \ (20\%)}$$
+$$|Z_r| = \sqrt{R_2^2 + (s_{mT} X_2)^2} = \sqrt{0.09 + 0.09} = 0.42426\ \Omega$$
+$$E_{2s} = 0.2 \times 69.28 = 13.856\text{ V}, \qquad I_{2r} = \frac{13.856}{0.42426} = \boxed{32.7\text{ A per phase}}$$
+
+> [!IMPORTANT] The trap in this question
+> 120 V is the voltage **between slip rings**, that is a line voltage. Using 120 V directly as the phase voltage gives the wrong rotor current by a factor of $\sqrt{3}$.
+
+---
+
 ---
 
 ## Exam Variants

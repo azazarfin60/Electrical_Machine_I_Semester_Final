@@ -13,7 +13,7 @@
 
 ### IM-01: Air-Gap Power Ratios: $P_g : P_{r,Cu} : P_m = 1 : s : (1-s)$
 
-*Appears in: 2018 Q5b, 2020 Q6b, 2021 Q6c, 2023 Q6a, 2024 Q5b*
+*Appears in: 2018 Q5b, 2020 Q6b, 2021 Q6c, 2023 Q6a*
 
 #### The power flow story
 

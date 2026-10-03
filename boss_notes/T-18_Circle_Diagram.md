@@ -117,7 +117,7 @@ $$\cos\phi_{sc} = \frac{2730}{\sqrt{3} \times 100 \times 45} = 0.35, \quad \phi_
 
 Power scale: $\sqrt{3} \times 415 = 718.7$ W per ampere of active component.
 
-**From diagram:** Line current at rated output $\approx 58$ A. Power factor $\approx 0.714$ lagging.
+**From diagram (Theraja Ex. 35.6):** Phase current $OP \approx 60$ A, so line current $= \sqrt{3} \times 60 \approx 104$ A. Power factor $= \cos 35° = 0.819$ lagging. Maximum torque $\approx 51{,}980$ synchronous watt.
 
 ---
 
@@ -142,7 +142,7 @@ Stator Cu loss $= 3 \times 48^2 \times 0.67 = 4631$ W. Rotor Cu loss $= 11520 - 
 
 Ratio: $6889/11520 = 0.598$. The rotor Cu loss line divides the SC intercept at 59.8% from the power line.
 
-**From diagram:** Full-load current $\approx 10.5$ A, slip $\approx 6.2\%$, pf $\approx 0.78$ lagging, max power $\approx 8.2$ kW.
+**From diagram (Theraja Ex. 35.7):** Full-load current $\approx 11.5$ A, slip $\approx 4.7\%$, pf $\approx 0.8$ lagging, max power $\approx 10.8$ kW.
 
 ---
 
@@ -163,9 +163,9 @@ $N_s = 120 \times 50/6 = 1000$ rpm. Power scale: $\sqrt{3} \times 400 = 692.8$ W
 
 For 14.92 kW rated output, locate operating point:
 
-**From diagram:** Line current $\approx 30$ A, slip $\approx 5\%$, efficiency $\approx 84\%$, pf $\approx 0.76$ lagging.
+**From diagram (Theraja Ex. 35.5):** Line current $\approx 32.5$ A, slip $\approx 5.6\%$, pf $\approx 0.84$ lagging, efficiency $\approx 80\%$.
 
-Maximum torque = longest vertical intercept below torque line (read from diagram in sync watts).
+Maximum torque = longest vertical intercept below the torque line. Theraja measures it as $\approx 27{,}030$ synchronous watt.
 
 ---
 

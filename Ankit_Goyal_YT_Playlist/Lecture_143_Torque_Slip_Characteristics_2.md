@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 142: Torque Slip Characteristics 1](Lecture_142_Torque_Slip_Characteristics_1.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 144: Stability and Testing of Induction Motor →](Lecture_144_Stability_and_Testing_of_Induction_Motor.md)
+
+---
+
 # Torque Slip Characteristics - 2 | L 40 | Electrical Machines | GATE 2022 | Ankit Sir
 
 - **Source**: https://www.youtube.com/watch?v=VxAbdLzfr1E
@@ -783,3 +788,6 @@ The problems solved in this session rely on a compact set of core relations:
 - Maximum breakdown torque magnitude is independent of rotor resistance, but the rotor speed at which maximum torque occurs depends directly on rotor resistance.
 - For maximum torque to occur right at standstill ($s = 1$), the supply frequency must be adjusted until standstill reactance matches rotor resistance ($X_2(f) = R_2$).
 
+---
+
+[← Lec 142: Torque Slip Characteristics 1](Lecture_142_Torque_Slip_Characteristics_1.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 144: Stability and Testing of Induction Motor →](Lecture_144_Stability_and_Testing_of_Induction_Motor.md)

@@ -129,4 +129,51 @@ $$R_{ext} = 0.90 - 0.30 = \boxed{0.60\,\Omega/\text{phase}}$$
 
 ---
 
+
+---
+
+### [2023 Q8(a)]
+> 📋 **Appeared in:** 2023 Q8(a)
+
+**(a) Briefly explain crawling and cogging of an induction motor. Also, mention one method of speed control of an induction motor. [CO3, Marks: 03]**
+
+#### Crawling
+
+![Torque-speed characteristics showing the dip caused by the 7th space harmonic, which makes the motor crawl near one seventh of synchronous speed](../Books/Theraja/Ch-35/diagrams/ch35_p31_fig35_25.jpg)
+
+A squirrel-cage motor sometimes settles down and runs stably at about **one seventh of synchronous speed** instead of accelerating to normal speed. This is called crawling.
+
+**Cause.** The stator m.m.f. wave is not a pure sine wave. It carries odd space harmonics. The $n$th harmonic sets up its own field rotating at $N_s/n$, and so develops its own harmonic torque of magnitude about $1/n^2$ of the fundamental.
+
+- Third harmonic: absent in a balanced 3-phase system, so no torque.
+- Fifth harmonic: rotates backward at $N_s/5$, acting as a braking torque.
+- Seventh harmonic: rotates **forward** at $N_s/7$ and is the troublemaker.
+
+The 7th harmonic torque falls to zero at $N = N_s/7$. The resultant torque curve therefore has a deep dip just below $N_s/7$. If the load torque line cuts the motor curve inside that dip, the motor locks on there and crawls.
+
+**Remedy.** Skew the rotor slots to suppress tooth-ripple harmonics.
+
+#### Cogging (magnetic locking)
+
+The rotor refuses to start at all, especially at reduced voltage. It happens when the number of rotor slots $S_2$ equals the number of stator slots $S_1$, or is an integral multiple of it.
+
+**Cause.** With $S_1 = S_2$ the air-gap reluctance is lowest when the rotor teeth face the stator teeth squarely. The rotor locks into that minimum-reluctance position. If the starting torque is less than this alignment torque, the motor cannot break free.
+
+**Remedies.**
+1. Make the number of rotor slots prime to the number of stator slots.
+2. **Skew the rotor slots**, so no two teeth can align over the full length.
+
+#### One method of speed control
+
+From $N = N_s(1 - s) = \dfrac{120f}{P}(1 - s)$, three handles exist: $f$, $P$ and $s$.
+
+**Rotor rheostat control (slip control, for slip-ring motors).** Add external resistance through the slip rings. Extra rotor resistance increases the slip needed to carry the same torque, so the motor slows down:
+$$T \propto \frac{s E_2^2 R_2}{R_2^2 + (s X_2)^2}$$
+
+Maximum torque is unchanged, because $T_{\max} = k E_2^2/(2X_2)$ does not contain $R_2$. Only the slip at which it occurs moves, since $s_{maxT} = R_2/X_2$.
+
+Speed control is simple and smooth and gives a high starting torque. But the extra $I_2^2R$ loss is wasted as heat, so efficiency falls as speed falls. Modern practice prefers **V/f (variable frequency) control**, which holds $V/f$ constant so the flux stays constant while frequency sets the speed.
+
+---
+
 [← T-19: 3-Phase Starting Methods](T-19_Starting_Methods_3-Phase_IM.md) | [🏠 Index](README.md) | [T-21: Induction Generator →](T-21_Induction_Generator.md)

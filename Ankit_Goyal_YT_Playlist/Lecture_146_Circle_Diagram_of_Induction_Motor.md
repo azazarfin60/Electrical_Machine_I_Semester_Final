@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 145: Stability and Testing of Induction Machines](Lecture_145_Stability_and_Testing_of_Induction_Machines.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 147: Starting of SCIM →](Lecture_147_Starting_of_SCIM.md)
+
+---
+
 # Circle Diagram of Induction Motor | Electrical Machines | Lec 104 | GATE/ESE (EE, ECE) | Ankit Goyal
 
 - **Source**: https://www.youtube.com/watch?v=vMY-IizxLFM
@@ -515,3 +520,6 @@ To locate the operating point of maximum torque:
 - Operating motor efficiency is given by the ratio of shaft output vertical segment to total input vertical segment: $\eta = \frac{FH}{FM}$.
 - Maximum output power and maximum electromagnetic torque occur at the intersection points of perpendiculars drawn from the semicircle center to the power line and torque line.
 
+---
+
+[← Lec 145: Stability and Testing of Induction Machines](Lecture_145_Stability_and_Testing_of_Induction_Machines.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 147: Starting of SCIM →](Lecture_147_Starting_of_SCIM.md)

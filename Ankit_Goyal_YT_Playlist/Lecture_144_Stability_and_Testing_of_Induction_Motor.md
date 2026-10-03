@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 143: Torque Slip Characteristics 2](Lecture_143_Torque_Slip_Characteristics_2.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 145: Stability and Testing of Induction Machines →](Lecture_145_Stability_and_Testing_of_Induction_Machines.md)
+
+---
+
 # Electrical Machines | Lec 103 | Stability & Testing of Induction Motor | GATE Electrical Engineering
 
 - **Source**: https://www.youtube.com/watch?v=ePsBUg-DBSs
@@ -466,3 +471,6 @@ This relation connects laboratory low-voltage test measurements directly to full
 - The magnetizing reactance is obtained by combining results from both tests: $X_m = X_{nl} - X_1$.
 - Direct-On-Line full-voltage starting current is directly proportional to blocked-rotor test current through the voltage ratio $I_{sc} = I_{br} \left(\frac{V_{\text{rated}}}{V_{br}}\right)$.
 
+---
+
+[← Lec 143: Torque Slip Characteristics 2](Lecture_143_Torque_Slip_Characteristics_2.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 145: Stability and Testing of Induction Machines →](Lecture_145_Stability_and_Testing_of_Induction_Machines.md)

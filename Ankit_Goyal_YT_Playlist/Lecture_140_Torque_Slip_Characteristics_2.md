@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 139: Torque Slip Characteristics 1](Lecture_139_Torque_Slip_Characteristics_1.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 141: Torque Slip Characteristics 3 →](Lecture_141_Torque_Slip_Characteristics_3.md)
+
+---
+
 # Electrical Machines | Lec 101 | Torque Slip Characteristics -2 | GATE Electrical Engineering
 
 - **Source**: https://www.youtube.com/watch?v=aBFWdvuxu7c
@@ -530,3 +535,6 @@ We summarize the key results established in this lecture:
 - The developed torque normalized to maximum torque is given by $\frac{T}{T_{\text{max}}} = \frac{2}{\dfrac{s_{mT}}{s} + \dfrac{s}{s_{mT}}}$.
 - The ratio of starting torque to full-load torque can be calculated from current as $\frac{T_{\text{st}}}{T_{FL}} = \left(\frac{I_{\text{st}}}{I_{FL}}\right)^2 s_{FL}$.
 
+---
+
+[← Lec 139: Torque Slip Characteristics 1](Lecture_139_Torque_Slip_Characteristics_1.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 141: Torque Slip Characteristics 3 →](Lecture_141_Torque_Slip_Characteristics_3.md)

@@ -41,7 +41,7 @@ Three-phase: three windings at 120°, three currents at 120° in time. Resultant
 
 ### Q6(b): Improving power factor of IM at light loads
 
-> 📋 **Appeared in:** 2023 Q6(b)
+> 📋 **Practice problem (not from a past paper)**
 
 #### Why power factor is poor at light loads
 

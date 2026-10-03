@@ -3,12 +3,12 @@
 ---
 
 # T-08: Scott (T-T) Connection
-> **Section:** A | **Priority:** 🟡 MEDIUM | **Exam Frequency:** 3/7 years
+> **Section:** A | **Priority:** 🟡 MEDIUM | **Exam Frequency:** 1/7 years (Scott) · 2/7 years (T-connection)
 > **Sources:** Theraja Ch-33 (Art. 33.10), VK Mehta Ch-7 (Art. 7.37), Slides L-11 S20–S24
 
 ## Why This Topic Matters
 
-The Scott connection appeared in 3/7 papers (2018, 2019, 2024). When asked, it carries 4-6 marks. The question is always: "Explain the Scott connection with a diagram" and sometimes includes a numerical.
+**Scott** and the **T-connection** are different topics and are easy to confuse. Scott proper appeared in only **1 of 7** papers (2018 Q4(a), 4 marks, "Explain Scott connections with the help of necessary diagrams"). The **T-connection** — two transformers in T supplying a balanced 3-φ load from a 3-φ supply — is a separate question and appeared **twice**: 2018 Q4(b) and again verbatim in 2024 Q4(c) (440 V, 33 kVA from 3300 V). Do not tag a T-connection numerical to Scott.
 
 ---
 
@@ -41,7 +41,7 @@ $V_{AB}$ is a line voltage. $V_{MC}$ is perpendicular to $V_{AB}$ in the phasor 
 ## 🏆 Golden Questions (Past Exam Archive)
 
 ### 🎯 Q1: Explain the Scott connection with necessary diagrams.
-> **Appeared:** 2018 Q4(a), 2024 Q4(d) — 4 marks
+> **Appeared:** 2018 Q4(a) — 4 marks
 
 **Full Answer:**
 
@@ -79,33 +79,46 @@ Two single-phase transformers are needed:
 ---
 
 ### 🎯 Q3: Two T-connected transformers supply 440V, 33 kVA balanced load from 3300V 3-phase. Find ratings.
-> **Appeared:** 2018 Q4(b) — 4 marks
+> **Appeared:** 2018 Q4(b) — 4 marks, **repeated verbatim as 2024 Q4(c) — 4 marks**
 
 **Full Answer:**
 
-Given: Supply $V_L = 3300$ V (3-phase). Load: 440V, 33 kVA (2-phase).
+The exam asks for two T-connected transformers supplying a balanced 3-phase load from a 3-phase supply (T-T connection):
+Given: Supply $V_{1L} = 3300\text{ V}$ (3-phase). Load: $V_{2L} = 440\text{ V}$, $S = 33\text{ kVA}$ (3-phase balanced).
 
-**Secondary voltages (2-phase, equal):** $V_{2} = 440$ V per phase.
+**Step 1: Primary and secondary line currents**
 
-**Secondary current per phase:** $I_2 = (S/2)/V_2 = (33000/2)/440 = \boxed{37.5 \text{ A}}$
+$$I_{1L} = \frac{S}{\sqrt{3} V_{1L}} = \frac{33000}{\sqrt{3} \times 3300} = \frac{10}{\sqrt{3}} = \boxed{5.77\text{ A}}$$
 
-**Main transformer primary:** Connected across A-B: $V_{1,\text{main}} = V_L = 3300$ V
+$$I_{2L} = \frac{S}{\sqrt{3} V_{2L}} = \frac{33000}{\sqrt{3} \times 440} = \boxed{43.30\text{ A}}$$
 
-$$I_{1,\text{main}} = \frac{S/2}{V_{1,\text{main}}} = \frac{16500}{3300} = \boxed{5.0 \text{ A}}$$
+**Step 2: Main transformer ratings**
+- The main transformer primary is connected across lines A and B:
+  $$V_{1,\text{main}} = V_{1L} = 3300\text{ V}$$
+- The primary carries full line current $I_{1L} = 5.77\text{ A}$.
+- Main transformer secondary voltage: $V_{2,\text{main}} = V_{2L} = 440\text{ V}$ carrying $I_{2L} = 43.30\text{ A}$.
+- Operating rating of Main transformer:
+  $$\text{Rating}_{\text{main}} = 3300\text{ V} \times 5.77\text{ A} = \boxed{19.05\text{ kVA}}$$
 
-**Teaser transformer primary:** Connected from midpoint of AB to C:
+**Step 3: Teaser transformer ratings**
+- The teaser transformer primary is connected from the midpoint of AB to line C:
+  $$V_{1,\text{teaser}} = \frac{\sqrt{3}}{2} V_{1L} = 0.866 \times 3300 = \boxed{2858\text{ V}}$$
+- The teaser primary carries line current $I_{1L} = 5.77\text{ A}$.
+- Teaser secondary voltage: $V_{2,\text{teaser}} = \frac{\sqrt{3}}{2} V_{2L} = 0.866 \times 440 = 381\text{ V}$ carrying $I_{2L} = 43.30\text{ A}$.
+- Operating rating of Teaser transformer:
+  $$\text{Rating}_{\text{teaser}} = 2858\text{ V} \times 5.77\text{ A} = \boxed{16.50\text{ kVA}}$$
 
-$$V_{1,\text{teaser}} = \frac{\sqrt{3}}{2} \times V_L = 0.866 \times 3300 = \boxed{2858 \text{ V}}$$
+**Step 4: Total installed capacity**
+- Combined operating capacity: $19.05 + 16.50 = 35.55\text{ kVA}$.
+- In practice, two identical interchangeable transformers are used. Each must be sized for the larger rating ($19.05\text{ kVA}$):
+  $$\text{Total installed capacity} = 2 \times 19.05 = \boxed{38.10\text{ kVA}}$$
+- Ratio of installed capacity to load: $38.10 / 33 = 1.155$ (giving the classic **15.5% oversize** of the T-T connection).
 
-$$I_{1,\text{teaser}} = \frac{S/2}{V_{1,\text{teaser}}} = \frac{16500}{2858} = \boxed{5.77 \text{ A}}$$
-
-**kVA ratings:**
-
-$$\text{Main} = 3300 \times 5.0 = \boxed{16.5 \text{ kVA}}$$
-
-$$\text{Teaser} = 2858 \times 5.77 = \boxed{16.5 \text{ kVA}}$$
-
-Both transformers have the same kVA rating. Total = 33 kVA ✓
+> [!WARNING] Common Exam Trap: Why Main is 19.05 kVA, Not 16.5 kVA
+> Do not divide total power simply as $33/2 = 16.5\text{ kVA}$ for the main transformer. 
+> The teaser current ($5.77\text{ A}$) enters the neutral tap of the main primary and splits equally ($2.885\text{ A}$ each way) in quadrature with the main load current ($5.0\text{ A}$). 
+> Phasor addition in each half of the main winding: $\sqrt{5.0^2 + 2.885^2} = 5.77\text{ A}$. 
+> Thus the main winding carries full line current $5.77\text{ A}$, making its required rating $3300 \times 5.77 = 19.05\text{ kVA}$.
 
 ---
 

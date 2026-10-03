@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 137: Equivalent Circuit 2](Lecture_137_Equivalent_Circuit_2.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 139: Torque Slip Characteristics 1 →](Lecture_139_Torque_Slip_Characteristics_1.md)
+
+---
+
 # Losses and Efficiency of Induction Machines | L 38 | Electrical Machines | GATE 2022 | Ankit Sir
 
 - **Source**: https://www.youtube.com/watch?v=pa30V1ocJvk
@@ -802,3 +807,6 @@ $$\eta = \frac{P_{\text{sh}}}{P_{\text{in}}} \times 100 = \frac{29.681}{33.755} 
 - Stator core loss in induction machines occurs almost entirely in the stator laminations because slip frequency in the rotor core is very low during normal operation.
 - In the exact T-equivalent circuit, total input impedance $Z_{\text{eq}} = Z_1 + (j X_m \parallel Z_2')$ determines stator current, after which current division yields the rotor branch current $I_2'$ for air gap power evaluation.
 
+---
+
+[← Lec 137: Equivalent Circuit 2](Lecture_137_Equivalent_Circuit_2.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 139: Torque Slip Characteristics 1 →](Lecture_139_Torque_Slip_Characteristics_1.md)

@@ -127,7 +127,7 @@ To reverse the direction of rotation of a 3-phase IM, interchange any two of the
 ## 🏆 Golden Questions (Past Exam Archive)
 
 ### 🎯 Q1: Prove that a 3-phase supply produces a rotating magnetic field of constant magnitude $1.5\Phi_m$ at synchronous speed.
-> **Appeared:** 2017 Q1(b), 2018 Q6(b), 2024 Q5(a) — (5-8 marks)
+> **Appeared:** 2017 Q1(b), 2018 Q6(b) — (5-8 marks); 2024 Q5(a) asked for the descriptive version, 3 marks
 
 **Full Answer:**
 
@@ -177,6 +177,60 @@ The 2-phase supply produces a rotating field of constant magnitude $\Phi_m$ (not
 5. The rotor spins in the direction of the RMF (Lenz's law: rotor tries to reduce relative motion).
 6. The motor always runs at $N < N_s$ (slip $s > 0$). If $N = N_s$, relative motion is zero, EMF is zero, current is zero, torque is zero. So the motor can never reach synchronous speed.
 
+### 🎯 Q4: Prove that the magnitude of resultant flux due to any phase is constant and equal to $\frac{3}{2}\Phi_m$ in a 3-φ stator supply system.
+> **Appeared:** 2023 Q5(c) — 4 marks
+
+**Full Answer:**
+
+**Setup.** Three identical stator windings spaced $120^\circ$ apart in space carry currents $120^\circ$ apart in time:
+$$\Phi_1 = \Phi_m \sin \omega t, \qquad \Phi_2 = \Phi_m \sin(\omega t - 120^\circ), \qquad \Phi_3 = \Phi_m \sin(\omega t - 240^\circ)$$
+
+![Three-phase stator layout, the sinusoidal phase flux waveforms, and the phasor positions at successive instants](../Books/VK_Mehta/diagrams/VK_Mehta_Fig_8_06.jpeg)
+
+**Phasor method, instant by instant.** At $\omega t = 0^\circ$: $\Phi_1 = 0$, $\Phi_2 = -0.866\Phi_m$, $\Phi_3 = +0.866\Phi_m$. The two non-zero fluxes are $60^\circ$ apart in space, so
+$$\Phi_r = 2 \times 0.866 \Phi_m \cos\frac{60^\circ}{2} = \frac{3}{2}\Phi_m$$
+
+At $\omega t = 60^\circ$: $\Phi_1 = +0.866\Phi_m$, $\Phi_2 = -0.866\Phi_m$, $\Phi_3 = 0$, giving the same $3\Phi_m/2$ turned a further $60^\circ$. The same arithmetic repeats at $120^\circ$ and $180^\circ$.
+
+![Vector diagrams of resultant three-phase flux at theta equal to 0, 60, 120 and 180 degrees, each giving a resultant of 1.5 times the maximum phase flux](../Books/Theraja/Ch-34/diagrams/Ch-34_p10_fig14.jpg)
+
+**Analytical proof.** Resolve all three along a reference axis and its quadrature:
+$$\Phi_x = \Phi_1 + \Phi_2 \cos 120^\circ + \Phi_3 \cos 240^\circ = \frac{3}{2}\Phi_m \sin\omega t$$
+$$\Phi_y = \Phi_2 \sin 120^\circ + \Phi_3 \sin 240^\circ = -\frac{3}{2}\Phi_m \cos\omega t$$
+$$\therefore\ \Phi_r = \sqrt{\Phi_x^2 + \Phi_y^2} = \frac{3}{2}\Phi_m \sqrt{\sin^2\omega t + \cos^2\omega t}$$
+
+$$\boxed{\Phi_r = \frac{3}{2}\Phi_m = 1.5\,\Phi_m \ \text{(constant), rotating at } N_s = \frac{120f}{P}}$$
+
+The direction angle is $\tan^{-1}(\Phi_y/\Phi_x) = (90^\circ - \omega t)$, which decreases steadily with time. So the resultant is a constant-magnitude flux rotating at a uniform angular speed $\omega$. One full electrical cycle turns it through one pole pair.
+
+---
+
+### 🎯 Q5: Explain how a rotating field is produced when a balanced 3-φ induction motor is connected to a balanced 3-φ supply.
+> **Appeared:** 2024 Q5(a) — 3 marks
+
+**Full Answer:**
+
+![Three-phase sinusoidal flux waveforms and spatial flux axes](../Books/Theraja/Ch-34/diagrams/Ch-34_p09_fig12_13.jpg)
+
+**The physical picture.** Three identical stator windings are placed $120^\circ$ apart in space and fed with three sinusoidal currents that are $120^\circ$ apart in time. Each winding on its own produces a **pulsating** flux along its own axis, but the three together behave as a single field whose axis keeps moving.
+
+**Instant by instant.**
+1. At $\omega t = 0^\circ$: phase 1 current is zero, phases 2 and 3 carry equal and opposite currents. Their resultants add along the axis of phase 1.
+2. At $\omega t = 60^\circ$: the axis of the resultant has already turned through $60^\circ$ toward phase 2.
+3. At $\omega t = 120^\circ$: the resultant lies on the axis of phase 2.
+4. Over one cycle the axis sweeps through one full pole pair and returns to its start.
+
+![Vector diagrams of resultant 3-phase flux at four instants showing rotation](../Books/Theraja/Ch-34/diagrams/Ch-34_p10_fig14.jpg)
+
+**The magnitude is constant:**
+$$\boxed{\Phi_r = \frac{3}{2}\Phi_m = 1.5\,\Phi_m}$$
+
+and it turns at $\omega = 2\pi f$, so $N_s = \dfrac{120 f}{P}$ rpm.
+
+**Consequences.** The field has constant magnitude, so a constant torque is available, unlike the pulsating field of a single-phase winding. The rotor is dragged round just below $N_s$ (slip $s > 0$), because at exactly $N_s$ the flux would no longer cut the rotor and no current, hence no torque, would be produced. Reversing any two supply leads reverses the phase sequence, so the field, and therefore the rotor, turns the other way.
+
+---
+
 ---
 
 ## Exam Variants
@@ -187,7 +241,8 @@ The 2-phase supply produces a rotating field of constant magnitude $\Phi_m$ (not
 | 2018 Q6(b) | Prove 3-phase RMF | Same proof |
 | 2019 Q5(a) | IM operating principle | RMF + Faraday + Lenz |
 | 2021 Q5(c) | Prove 2-phase RMF | $\Phi_r = \Phi_m$, rotates at $N_s$ |
-| 2024 Q5(a) | Prove 3-phase RMF (8 marks) | Full vector proof |
+| 2023 Q5(c) | Prove resultant flux $= \frac{3}{2}\Phi_m$, 4 marks | Point-by-point plus analytical proof |
+| 2024 Q5(a) | Explain how a balanced 3-\u03c6 supply makes a rotating field, 3 marks | Instant-by-instant argument plus the $1.5\Phi_m$ constant magnitude |
 
 ---
 

@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 156: Braking of Induction Motor](Lecture_156_Braking_of_Induction_Motor.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 158: Miscellaneous Concepts →](Lecture_158_Miscellaneous_Concepts.md)
+
+---
+
 # Electrical Machines | Lec 110 | High Torque Cage Rotor | GATE/ESE Electrical Engineering
 
 - **Source**: https://www.youtube.com/watch?v=EEnOc4EMEUo
@@ -233,3 +238,6 @@ This parallel branch model models deep bar and double cage machines accurately f
 - The inner cage has low resistance and high leakage reactance, carrying the bulk of the rotor current during running conditions to maintain high efficiency.
 - In the per-phase equivalent circuit, a double cage rotor is modeled as two parallel branches connected across the magnetizing reactance: $Z_2 = (R_2'/s + jX_2') \parallel (R_3'/s + jX_3')$.
 
+---
+
+[← Lec 156: Braking of Induction Motor](Lecture_156_Braking_of_Induction_Motor.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 158: Miscellaneous Concepts →](Lecture_158_Miscellaneous_Concepts.md)

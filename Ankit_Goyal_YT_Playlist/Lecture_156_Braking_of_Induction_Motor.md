@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 155: Braking of Induction Motor](Lecture_155_Braking_of_Induction_Motor.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 157: High Torque Cage Rotor →](Lecture_157_High_Torque_Cage_Rotor.md)
+
+---
+
 # Braking of Induction Motor | L 46 | Electrical Machines | GATE 2022 | Ankit Goyal
 
 - **Source**: https://www.youtube.com/watch?v=0m4pbxc7uwE
@@ -365,3 +370,6 @@ This systematic approach resolves both numerical computations and conceptual mul
 - In permanent magnet DC machines, dynamic braking requires an external series resistor to prevent damaging current spikes across the armature.
 - Dynamic braking in conventional DC machines is most effective with separately excited field connections to avoid flux collapse upon line disconnection.
 
+---
+
+[← Lec 155: Braking of Induction Motor](Lecture_155_Braking_of_Induction_Motor.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 157: High Torque Cage Rotor →](Lecture_157_High_Torque_Cage_Rotor.md)

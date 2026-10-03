@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 053: Problems based on Harmonics and Inrush Current](Lecture_053_Problems_based_on_Harmonics_and_Inrush_Current.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 132: Induction Machine Construction 1 →](Lecture_132_Induction_Machine_Construction_1.md)
+
+---
+
 # Induction Machines Introduction | Electrical Machines | Lec 94 | GATE & ESE | Ankit Goyal
 
 - **Source**: https://www.youtube.com/watch?v=UqgqYfsL-fs
@@ -625,3 +630,6 @@ This introductory lecture establishes the core principles for the study of induc
 - Armature reaction does not exist in an induction machine because the stator winding simultaneously produces the mutual flux and carries the load-balancing current.
 - A squirrel cage rotor automatically induces the exact number of magnetic poles present on the stator ($P_r = P_s$), whereas a wound rotor must be manufactured with matching pole numbers by design.
 
+---
+
+[← Lec 053: Problems based on Harmonics and Inrush Current](Lecture_053_Problems_based_on_Harmonics_and_Inrush_Current.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 132: Induction Machine Construction 1 →](Lecture_132_Induction_Machine_Construction_1.md)

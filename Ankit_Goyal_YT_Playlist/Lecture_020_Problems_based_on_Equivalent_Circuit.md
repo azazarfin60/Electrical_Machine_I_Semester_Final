@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 019: Practical Transformer Part 3](Lecture_019_Practical_Transformer_Part_3.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 021: Testing of Transformer 1 →](Lecture_021_Testing_of_Transformer_1.md)
+
+---
+
 # Problems based on Equivalent Circuit | L6 | Electrical Machines | GATE 2022
 
 - **Source**: https://www.youtube.com/watch?v=mJ3nL1tHAf0
@@ -1354,3 +1359,6 @@ The next lectures will cover experimental testing of transformers (Open-Circuit 
 - Transformer per-unit resistance and reactance are identical on both high-voltage and low-voltage sides ($R_{\text{pu, HV}} = R_{\text{pu, LV}}$ and $X_{\text{pu, HV}} = X_{\text{pu, LV}}$).
 - Total exciting current decomposes into orthogonal components satisfying $I_0 = \sqrt{I_w^2 + I_\mu^2}$, where $I_w$ supplies core losses and $I_\mu$ produces mutual flux.
 
+---
+
+[← Lec 019: Practical Transformer Part 3](Lecture_019_Practical_Transformer_Part_3.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 021: Testing of Transformer 1 →](Lecture_021_Testing_of_Transformer_1.md)

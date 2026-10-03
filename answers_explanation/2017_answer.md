@@ -109,22 +109,22 @@ where $a = \frac{R_2}{X_2} = s_{mT}$. *(Proved)*
 
 ---
 
-#### Q2(c): Numerical: 4-Pole, 50 Hz IM Torque Ratio and Speed
+#### Q2(d): Numerical: 8-Pole, 50 Hz IM Torque Ratio and Speed
 
 #### Given Data:
-- Poles $P = 4, f = 50\text{ Hz} \implies N_s = 1500\text{ rpm}$
-- Rotor parameters: $R_2 = 0.04\,\Omega, X_2 = 0.20\,\Omega$
-- Full-load speed $N = 1440\text{ rpm}$
+- Poles $P = 8, f = 50\text{ Hz} \implies N_s = \frac{120 \times 50}{8} = 750\text{ rpm}$
+- Rotor parameters: $R_2 = 0.001\,\Omega, X_2 = 0.005\,\Omega$ per phase
+- Full-load slip $s_f = 2\% = 0.02$
 
 #### Step-by-Step Solution:
-1. **Full-Load Operating Slip**:
-   $$s_f = \frac{1500 - 1440}{1500} = \frac{60}{1500} = \mathbf{0.04}$$
-2. **Slip and Speed at Maximum Torque**:
-   $$a = s_{mT} = \frac{R_2}{X_2} = \frac{0.04}{0.20} = \mathbf{0.20 \quad (20\% \text{ slip})}$$
-   $$N_{mT} = N_s (1 - s_{mT}) = 1500 \times (1 - 0.20) = \mathbf{1200\text{ rpm}}$$
-3. **Ratio of Maximum Torque to Full-Load Torque ($T_{\max}/T_{FL}$)**:
-   $$\frac{T_{FL}}{T_{\max}} = \frac{2 a s_f}{a^2 + s_f^2} = \frac{2 \times 0.20 \times 0.04}{(0.20)^2 + (0.04)^2} = \frac{0.016}{0.040 + 0.0016} = \frac{0.016}{0.0416} \approx 0.3846$$
-   $$\frac{T_{\max}}{T_{FL}} = \frac{1}{0.3846} = \mathbf{2.60}$$
+1. **Slip and Speed at Maximum Torque**:
+   $$a = s_{mT} = \frac{R_2}{X_2} = \frac{0.001}{0.005} = \mathbf{0.20 \quad (20\% \text{ slip})}$$
+   $$N_{mT} = N_s (1 - s_{mT}) = 750 \times (1 - 0.20) = \mathbf{600\text{ rpm}}$$
+2. **Ratio of Maximum Torque to Full-Load Torque ($T_{\max}/T_{FL}$)**:
+   Use the result proved in part (b) with $a = 0.20$ and $s_f = 0.02$:
+   $$\frac{T_{FL}}{T_{\max}} = \frac{2 a s_f}{a^2 + s_f^2} = \frac{2 \times 0.20 \times 0.02}{(0.20)^2 + (0.02)^2} = \frac{0.008}{0.040 + 0.0004} = \frac{0.008}{0.0404} \approx 0.1980$$
+   $$\frac{T_{\max}}{T_{FL}} = \frac{1}{0.1980} = \mathbf{5.05}$$
+   The ratio is large because full-load slip (2%) is far from the slip at maximum torque (20%). This motor has a very low rotor resistance, so it runs efficiently but pulls out well above its rated torque.
 
 ---
 
@@ -177,7 +177,7 @@ The circle diagram is a graphical circle locus representing the locus of the sta
 
 #### Q4(a): Why Single-Phase Induction Motors Inherently Produce No Starting Torque
 
-> See detailed breakdown in [IM-03: Single-Phase Induction Motor: Double Revolving Field Theory](2018_2024_answer.md#im-03-single-phase-induction-motor-double-revolving-field-theory).
+> See detailed breakdown in [IM-03: Single-Phase Induction Motor: Double Revolving Field Theory](2018_2024_answer.md#im-03-double-field-revolving-theory-why-1-phase-im-is-not-self-starting).
 
 - A single stator winding produces a pulsating flux $\Phi(t) = \Phi_m \sin\omega t$ along a single axis.
 - By Ferraris' theorem, this decomposes into two equal and opposite counter-rotating fields ($\Phi_f = \Phi_m/2$ at $+N_s$ and $\Phi_b = \Phi_m/2$ at $-N_s$).
@@ -342,10 +342,13 @@ $$\frac{\Phi_{m,50}}{\Phi_{m,60}} = \frac{60}{50} = \mathbf{1.20}$$
 1. Core flux increases by **20%**, pushing the silicon steel deep into **magnetic saturation**.
 2. Magnetizing current spikes dramatically, causing core overheating and humming noise.
 3. Hysteresis loss increases ($\propto f B_m^{1.6}$), but eddy current loss stays roughly constant ($\propto f^2 B_m^2 \propto f^2 (V/f)^2 = \text{const}$).
-4. **Feasibility of Supplying 15 kVA at 415 V**:
-   - The load of 15 kVA is below the 18 kVA rated capacity (83.3% load), leaving substantial thermal margin in the copper conductors.
-   - Operating at reduced secondary voltage (415 V vs rated 480 V) reduces excitation stress.
-   - **Conclusion**: The transformer can safely supply the 15 kVA load, provided core temperature is monitored to avoid thermal runaway from saturation heating.
+4. **Voltage Must Be Derated**:
+   Saturation is avoided only by dropping the applied voltage in step with the frequency, keeping $V/f$ fixed:
+   $$V_{1,50} = 20000 \times \frac{50}{60} = 16{,}667\text{ V}, \qquad V_{2,50} = 480 \times \frac{50}{60} = 400\text{ V} \approx 415\text{ V}$$
+5. **Feasibility of Supplying 15 kVA at 415 V**:
+   - The current rating is set by conductor cross-section and does not change with frequency. But the voltage is now only 5/6 of nameplate, so the apparent power capacity drops with it:
+     $$S_{50} = V_{50} I_{\text{rated}} = 18 \times \frac{50}{60} = \mathbf{15\text{ kVA}}$$
+   - **Conclusion**: 15 kVA is exactly the derated 50 Hz capacity. The load sits **at** the limit, not at 83% of it. The answer is yes, but with zero margin. Do not read the 18 kVA nameplate as still available: that figure belongs to 60 Hz operation at 20 kV.
 
 ---
 
@@ -383,22 +386,22 @@ $$\frac{\Phi_{m,50}}{\Phi_{m,60}} = \frac{60}{50} = \mathbf{1.20}$$
 #### Step-by-Step Solution:
 1. **Reflect Secondary Current to Primary (LV) Side**:
    $$I_2' = \frac{I_2}{a} = \frac{10}{0.5} = \mathbf{20\text{ A}}$$
-   With secondary terminal voltage referred to primary taken as reference:
-   $$\vec{V}_2' = V_2' \angle 0° = 200 \angle 0°\text{ V}$$
+   The 200 V in the nameplate is the **applied primary voltage**, so it is $V_1$, not the on-load $V_2'$. Take it as reference:
+   $$\vec{V}_1 = 200 \angle 0°\text{ V}$$
    $$\vec{I}_2' = 20 \angle -\cos^{-1}(0.8) = 20 (0.8 - j0.6) = \mathbf{16.0 - j12.0\text{ A}}$$
-2. **Primary Terminal Voltage ($\vec{V}_1$)**:
-   $$\vec{V}_1 = \vec{V}_2' + \vec{I}_2' (R_{eq} + jX_{eq})$$
-   $$\vec{I}_2' (R_{eq} + jX_{eq}) = (16 - j12)(0.15 + j0.37) = (2.40 + 4.44) + j(5.92 - 1.80) = \mathbf{6.84 + j4.12\text{ V}}$$
-   $$\vec{V}_1 = (200 + 6.84) + j4.12 = 206.84 + j4.12\text{ V}$$
-   $$V_1 = \sqrt{(206.84)^2 + (4.12)^2} = \mathbf{206.88\text{ V}}$$
-3. **Core Excitation Current ($\vec{I}_0$)**:
-   $$I_c = \frac{V_1}{R_c} = \frac{206.88}{600} = 0.3448\text{ A}, \qquad I_m = \frac{V_1}{X_m} = \frac{206.88}{300} = 0.6896\text{ A}$$
-   $$\vec{I}_0 = 0.3448 - j0.6896\text{ A}$$
-4. **Total Primary Input Current ($\vec{I}_1$)**:
-   $$\vec{I}_1 = \vec{I}_0 + \vec{I}_2' = (0.3448 - j0.6896) + (16.0 - j12.0) = \mathbf{16.3448 - j12.6896\text{ A}}$$
-   $$I_1 = \sqrt{(16.3448)^2 + (12.6896)^2} = \sqrt{267.15 + 161.03} = \sqrt{428.18} = \mathbf{20.69\text{ A}}$$
+2. **Core Excitation Current ($\vec{I}_0$)**:
+   $$I_c = \frac{V_1}{R_c} = \frac{200}{600} = 0.333\text{ A}, \qquad I_m = \frac{V_1}{X_m} = \frac{200}{300} = 0.667\text{ A}$$
+   $$\vec{I}_0 = 0.333 - j0.667\text{ A}$$
+3. **Total Primary Input Current ($\vec{I}_1$)**:
+   $$\vec{I}_1 = \vec{I}_0 + \vec{I}_2' = (0.333 - j0.667) + (16.0 - j12.0) = \mathbf{16.333 - j12.667\text{ A}}$$
+   $$I_1 = \sqrt{(16.333)^2 + (12.667)^2} = \sqrt{266.77 + 160.45} = \sqrt{427.22} = \mathbf{20.67\text{ A}}$$
+   $$\cos\phi_1 = \frac{16.333}{20.67} = \mathbf{0.79\text{ lag}}$$
+4. **Series Voltage Drop Referred to Primary**:
+   $$\Delta V_1 = I_2'(R_{eq}\cos\phi_2 + X_{eq}\sin\phi_2) = 20(0.15 \times 0.8 + 0.37 \times 0.6) = 20(0.12 + 0.222) = \mathbf{6.84\text{ V}}$$
+   $$V_2' = V_1 - \Delta V_1 = 200 - 6.84 = \mathbf{193.2\text{ V}}$$
 5. **Secondary Terminal Voltage**:
-   $$V_2 = \frac{V_2'}{a} = \frac{200}{0.5} = \mathbf{400.0\text{ V}}$$
+   $$V_2 = \frac{V_2'}{a} = \frac{193.2}{0.5} = 2 \times 193.2 = \mathbf{386.3\text{ V}}$$
+   The loaded secondary reads 386.3 V, about 13.7 V below the 400 V no-load figure. Writing 400 V here is the classic slip: it assumes $V_2' = 200$ V on load, but 200 V is what the source applies to the primary.
 
 ---
 

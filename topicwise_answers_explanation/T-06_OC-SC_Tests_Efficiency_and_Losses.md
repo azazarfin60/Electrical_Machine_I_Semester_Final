@@ -13,7 +13,7 @@
 
 ### T-03: Efficiency and All-Day Efficiency
 
-*Appears in: 2018 Q2, 2019 Q4c, 2020 Q3, 2021 Q2, 2023 Q2a*
+*Appears in: 2018 Q2, 2019 Q4c, 2020 Q3, 2021 Q2, 2023 Q2a, 2023 Q3b*
 
 #### Understanding the loss model
 
@@ -54,22 +54,25 @@ $$\text{Iron loss energy} = P_{Fe} \times 24 \text{ kWh}$$
 
 Iron loss energy is always 24 hours worth, because the transformer is energized all day. Copper loss energy varies with load.
 
-#### Worked example: 2023 Q2a
+#### Worked example: 2018 Q2(c)
 
-100 kVA transformer: $P_{Fe} = 1$ kW, $P_{Cu,FL} = 1$ kW. Profile: 4h no-load, 12h half-load, 8h full-load.
+100 kVA transformer: $P_{Fe} = 200$ W = 0.2 kW, $P_{Cu,FL} = 500$ W = 0.5 kW.
+Profile: 2 h at 5/4 load, 6 h at full load, 8 h at half load, 4 h at quarter load, 4 h at no load (24 h total).
 
-**Energy output:**
-$0 + 50 \times 12 + 100 \times 8 = 0 + 600 + 800 = 1400$ kWh
+**Energy output** (kW × h, on a 100 kVA base):
+$$1.25 \times 100 \times 2 + 1 \times 100 \times 6 + 0.5 \times 100 \times 8 + 0.25 \times 100 \times 4 + 0 = 250 + 600 + 400 + 100 + 0 = 1350 \text{ kWh}$$
 
-**Iron loss:** $1 \times 24 = 24$ kWh
+**Iron loss energy** — the core is energised throughout, so it is a flat 24 h:
+$$0.2 \times 24 = 4.8 \text{ kWh}$$
 
-**Copper loss:**
-$0 + (0.5)^2 \times 1 \times 12 + 1^2 \times 1 \times 8 = 0 + 3 + 8 = 11$ kWh
+**Copper loss energy** — scales as the *square* of the load fraction:
+$$0.5 \times \left[1.25^2 \times 2 + 1^2 \times 6 + 0.5^2 \times 8 + 0.25^2 \times 4 + 0 \times 4\right]$$
+$$= 0.5 \times \left[3.125 + 6 + 2 + 0.25 + 0\right] = 0.5 \times 11.375 = 5.6875 \text{ kWh}$$
 
 **All-day efficiency:**
-$$\eta = \frac{1400}{1400 + 24 + 11} \times 100 = \frac{1400}{1435} \times 100 = 97.56\%$$
+$$\eta_{all-day} = \frac{1350}{1350 + 4.8 + 5.6875} \times 100 = \frac{1350}{1360.4875} \times 100 = \boxed{99.23\%}$$
 
-**Why is all-day efficiency less than full-load efficiency?** Because during the 4 hours of no-load, the transformer still consumes 4 kWh of iron losses for zero output. These are wasted hours from the efficiency perspective. A transformer designed for a light-load profile should have lower iron loss (use higher-grade core material) even if it means slightly higher copper loss.
+**Why is all-day efficiency lower than full-load efficiency?** Because the transformer is energised for all 24 h but delivers nothing during the 4 no-load hours, and only part-load during 8 of them. The iron loss keeps accruing regardless of load, so a transformer on a light or intermittent duty should be built with low iron loss (higher-grade core) even at the cost of a little more copper.
 
 
 ---
@@ -157,9 +160,9 @@ For any all-day efficiency problem, the procedure is:
 
 ---
 
-### Q3(a): Why OC and SC tests are preferred over direct load test
+### Concept: Why OC and SC tests are preferred over a direct load test
 
-> 📋 **Appeared in:** 2023 Q3(a), 2024 Q3
+> 📋 **Not tagged to a paper question.** No paper in the set asks this directly, so it is filed as background concept rather than given an invented citation. The nearest real questions are 2021 Q1(b) (why the no-load test is performed), 2020 Q2(c) (draw the OC and SC test circuits) and 2024 Q3(c) (a no-load test numerical).
 
 #### The problem with direct load testing
 
@@ -189,6 +192,89 @@ For a 1000 MVA power station transformer, a direct load test would require a 100
 - Voltage regulation at any load and any power factor (by formula)
 
 The key insight: **efficiency and VR are calculated analytically using the measured parameters: you don't need to actually apply the loads.**
+
+---
+
+### [2024 Q3(c)]: Worked Numerical Problem — No-Load Test Analysis with Primary Winding Resistance
+
+> 📋 **Appeared in:** 2024 Q3(c)
+
+**Problem:** In no-load test of single-phase transformer, the following test data were obtained:
+- Resistance of primary winding $= 0.6\ \Omega$;
+- Primary voltage: 220 V;
+- Secondary voltage: 110 V;
+- Primary current: 0.5 A;
+- Power input: 30 W
+
+Find the followings:
+- **i)** The turn ratio
+- **ii)** The magnetizing component of no-load current
+- **iii)** Its working (or loss) component
+- **iv)** The iron loss
+
+#### Step-by-Step Solution
+
+**Given:**
+- Primary winding resistance: $R_1 = 0.6\ \Omega$
+- Primary voltage: $V_1 = 220\text{ V}$
+- Secondary open-circuit voltage: $V_2 = 110\text{ V}$
+- No-load primary current: $I_0 = 0.5\text{ A}$
+- No-load input power: $W_0 = 30\text{ W}$
+
+#### i) Turn Ratio
+$$a = \frac{N_1}{N_2} = \frac{V_1}{V_2} = \frac{220}{110} = \mathbf{2} \quad (2:1)$$
+
+#### iii) Working (or Loss) Component of No-Load Current
+Active power supplied at no-load is $W_0 = V_1 I_0 \cos\phi_0$:
+$$I_w = I_0 \cos\phi_0 = \frac{W_0}{V_1} = \frac{30}{220} = \mathbf{0.13636\text{ A}} \approx \mathbf{0.1364\text{ A}}$$
+
+$$\boxed{I_w = 0.1364\text{ A}}$$
+
+#### ii) Magnetizing Component of No-Load Current
+Since $\vec{I}_0 = \vec{I}_w + \vec{I}_m$ in quadrature:
+$$I_m = \sqrt{I_0^2 - I_w^2} = \sqrt{0.5^2 - 0.13636^2} = \sqrt{0.25 - 0.018595} = \sqrt{0.231405} = \mathbf{0.48105\text{ A}} \approx \mathbf{0.481\text{ A}}$$
+
+$$\boxed{I_m = 0.481\text{ A}}$$
+
+#### iv) Iron Loss
+Under no-load conditions, the wattmeter reading $W_0 = 30\text{ W}$ measures the sum of the core iron loss ($P_{Fe}$) and the small copper loss in the primary winding ($I_0^2 R_1$):
+$$P_{\text{input}} = P_{Fe} + I_0^2 R_1$$
+
+$$P_{Cu0} = I_0^2 R_1 = (0.5)^2 \times 0.6 = 0.25 \times 0.6 = \mathbf{0.15\text{ W}}$$
+
+$$P_{Fe} = W_0 - I_0^2 R_1 = 30 - 0.15 = \mathbf{29.85\text{ W}}$$
+
+$$\boxed{P_{Fe} = 29.85\text{ W}}$$
+
+> [!NOTE] Significance of $R_1$
+> Standard textbook problems often neglect the primary copper loss ($0.15\text{ W}$) and approximate the iron loss as the total wattmeter reading ($30\text{ W}$). However, because the question explicitly provides $R_1 = 0.6\ \Omega$, subtracting $I_0^2 R_1 = 0.15\text{ W}$ to obtain **$29.85\text{ W}$** is the exact and expected exam answer.
+
+---
+
+### [2024 Q4(a)]: Winding Selection and Meter Placement in the Short-Circuit (SC) Test
+
+> 📋 **Appeared in:** 2024 Q4(a)
+
+**(a) In performing the short circuit test of a transformers, HV side is usually short circuited — explain it. [Marks: 02, CO: 2]**
+
+#### Comprehensive Engineering Explanation
+
+In standard laboratory and industrial testing of transformers, there is a very deliberate division between which winding is energized and which winding is short-circuited:
+
+1. **Standard Laboratory Practice (LV Shorted, HV Energized):**
+   - The **LV winding is solidly short-circuited** using a thick copper strip of negligible resistance.
+   - The measuring instruments (ammeter, voltmeter, wattmeter) and variable low-voltage supply (variac) are connected to the **HV winding**.
+
+2. **Why Instruments and Power Supply are Placed on the HV Side:**
+   - **Low, Manageable Current:** The rated current on the HV winding is $a$ times smaller than on the LV winding ($I_{1,\text{rated}} = I_{2,\text{rated}} / a$). This allows the use of standard laboratory ammeters and wattmeter current coils ($5\text{ A}$ or $10\text{ A}$) without needing specialized high-current meters or heavy cables.
+   - **Accurately Measurable Voltage:** The short-circuit voltage required to circulate rated current is only about $5\%\text{–}10\%$ of rated winding voltage ($V_{sc} = I_{sc} Z_{eq}$). Applying this to the HV side yields a voltage of typically $50\text{–}200\text{ V}$, which falls squarely in the high-accuracy range of standard voltmeters. If applied on the LV side, $V_{sc}$ would be only a few volts, where meter calibration errors and lead contact drops dominate.
+   - **Lower Variac Rating:** A variac supplying smaller current at moderate voltage is much more compact, cheaper, and safer to operate.
+
+3. **Analysis of the Question Phrasing ("HV side short-circuited"):**
+   - If the test is performed with the **HV winding short-circuited** and meters on the LV winding (occasionally done in large utility transformers when an HV test source is unavailable on-site):
+     - The shorting bar on the HV side carries a very small rated current, so contact resistance at the short-circuit terminals has virtually zero effect on the measured loss.
+     - However, the LV supply must then provide the full rated LV current (which can be hundreds of amperes), requiring very thick test leads and heavy-duty current measuring equipment.
+   - **Conclusion:** By convention, **LV is shorted and HV is energized** for meter convenience and accuracy; whichever arrangement is selected, the primary objective is to circulate rated current with only $5\%\text{–}10\%$ rated voltage so that core flux is negligible, ensuring all input power represents winding copper loss ($P_{sc} \approx P_{Cu,FL}$).
 
 ---
 

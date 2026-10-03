@@ -8,7 +8,7 @@
 
 ## Why This Topic Matters
 
-The auto-transformer appeared in 3/7 papers (2020 three times). When it appears, it carries 3-4 marks per sub-question. The three standard question types are: (1) compare with 2-winding transformer, (2) prove copper saving = $(1-K)$, (3) list applications. The 2020 paper devoted 10 marks to auto-transformers alone.
+The auto-transformer appeared in 3/7 papers (2020 three times). When it appears, it carries 3-4 marks per sub-question. The three standard question types are: (1) compare with 2-winding transformer, (2) prove copper saving = $K$ (copper used = $(1-K)$), (3) list applications. The 2020 paper devoted 10 marks to auto-transformers alone.
 
 ---
 
@@ -16,7 +16,20 @@ The auto-transformer appeared in 3/7 papers (2020 three times). When it appears,
 
 > **Auto-transformer:** "An auto-transformer is a transformer with one winding only, part of the winding being common to both primary and secondary. Obviously, in an auto-transformer, the primary and secondary are not electrically isolated from each other as is the case with a 2-winding transformer. However, its theory and operation are similar to those of a two-winding transformer." — VK Mehta, Art. 7.25
 
-> **Transformation ratio ($K$):** "$K = V_2/V_1 = N_2/N_1$. For step-down: $K < 1$. The closer $K$ is to 1, the greater the copper saving." — VK Mehta
+> **Transformation ratio ($K$):** For an auto-transformer, always define $K = V_{\text{low}}/V_{\text{high}} = N_{\text{low}}/N_{\text{high}} < 1$ (or $a = 1/K > 1$). The closer $K$ is to 1, the greater the copper saving.
+
+---
+
+## Power Division: Conduction vs Induction
+
+Total power transferred from primary to secondary consists of two parts:
+
+1. **Power transferred conductively** (by direct electrical connection):
+   $$\text{VA}_{\text{conduction}} = K \times \text{VA}_{\text{total}}$$
+2. **Power transferred inductively** (by magnetic field action):
+   $$\text{VA}_{\text{induction}} = (1 - K) \times \text{VA}_{\text{total}}$$
+
+The transformer core only needs to be sized for the **inductive** power $\text{VA}_{\text{induction}} = (1-K)\text{VA}_{\text{total}}$. When $K \approx 1$, the core size is tiny compared to a two-winding transformer of the same throughput rating.
 
 ---
 
@@ -36,7 +49,7 @@ In a regular 2-winding transformer, primary and secondary are electrically isola
 |:---|:---|:---|
 | Windings | Two separate, isolated | Single winding with tap |
 | Electrical isolation | Yes | No |
-| Copper required | More | Less (saving = $1-K$) |
+| Copper required | More | Less (uses $(1-K)$, saves $K$) |
 | Efficiency | Slightly lower | Higher (direct conduction) |
 | Size and weight | Larger | Smaller, lighter |
 | Cost | Higher | Lower |
@@ -56,7 +69,7 @@ In a regular 2-winding transformer, primary and secondary are electrically isola
 |:---|:---|:---|
 | **Construction** | Two separate, electrically isolated windings wound on a common core | Single winding with a tapping point, part common to both primary and secondary |
 | **Electrical isolation** | Complete galvanic isolation between primary and secondary | No isolation. Primary and secondary are electrically connected. A fault on one side affects the other. |
-| **Copper requirement** | Higher. Both windings need full copper for their respective currents. | Lower. Copper saving = $(1-K)$ fraction. For close ratios ($K \approx 1$), the saving is huge. |
+| **Copper requirement** | Higher. Both windings need full copper for their respective currents. | Lower. Copper used = $(1-K)$ fraction, so the saving is $K$. For close ratios ($K \approx 1$), the saving is huge. |
 | **Efficiency** | Slightly lower. All power transfers magnetically. | Higher. Part of the power transfers by direct electrical conduction (not through the magnetic field), reducing losses. |
 | **Size and weight** | Larger (more copper, more core) | Smaller and lighter for the same VA rating |
 | **Cost** | Higher | Lower |
@@ -66,8 +79,8 @@ In a regular 2-winding transformer, primary and secondary are electrically isola
 
 ---
 
-### 🎯 Q2: Prove: copper saved in auto-transformer = $(1-K)$ times that of an ordinary transformer.
-> **Appeared:** 2020 Q2(b), 2020 Q3(b) — 4 marks
+### 🎯 Q2: Prove: copper used in auto-transformer = $(1-K)$ times that of an ordinary transformer.
+> **Appeared:** 2020 Q2(b), 2020 Q3(b) — 4 marks, 2023 Q2(c) — 3 marks
 
 **Full Answer:**
 
@@ -103,6 +116,8 @@ Therefore: **Copper in auto-transformer = $(1-K)$ × copper in ordinary transfor
 $$\boxed{\text{Copper saving} = K \times W_{\text{ordinary}}}$$
 
 **Example:** For $K = 0.9$ (10% step-down): auto-transformer uses only $(1-0.9) = 10\%$ of the copper. Saves 90%. For $K = 0.5$ (50% step-down): saves only 50%.
+
+**2023 Q2(c) wording:** "Prove that less copper is used in auto-transformer than in an ordinary transformer." The 2023 paper asks it as a one-sided statement with no numbers, so the punchline is $\boxed{W_a = (1-K)\,W_o}$ with $0 < K < 1$. For $K = 0.9$ the saving is 90%. State that an auto-transformer always uses less copper, and that the saving grows as $K \to 1$.
 
 ---
 

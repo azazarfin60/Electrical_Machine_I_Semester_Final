@@ -8,7 +8,9 @@
 
 ## Why This Topic Matters
 
-The blocked rotor test is always tested together with the no-load test. The pair appeared in 4 out of 7 papers. The blocked rotor test determines the series impedance ($R_{01}$, $X_{01}$) of the equivalent circuit. A standalone SC test numerical (given $V_{sc}$, $I_{sc}$, $P_{sc}$, find $R_2'$, $X_1$, $X_2'$) appeared in 2023 Q7(b) for 4 marks.
+The blocked rotor test is always tested together with the no-load test. The pair appeared in 4 out of 7 papers. The blocked rotor test determines the series impedance ($R_{01}$, $X_{01}$) of the equivalent circuit. A standalone SC test numerical (given $V_{sc}$, $I_{sc}$, $P_{sc}$, find $R_2'$, $X_1$, $X_2'$) is a likely 4-mark variant.
+
+2024 asked only for the **names** of the tests (2 marks), not the derivations. Do not over-write here. When the paper asks for parameters, the working is given below.
 
 ---
 
@@ -37,9 +39,9 @@ The blocked rotor test is always tested together with the no-load test. The pair
 
 **Equivalent impedance referred to stator (per phase):**
 
-$$Z_{01} = \frac{V_{sc}/\sqrt{3}}{I_{sc}} \quad \text{(star connection)}$$
+$$Z_{01} = \frac{V_{sc,\phi}}{I_{sc,\phi}} = \frac{V_{sc}/\sqrt{3}}{I_{sc}} \quad \text{(for star connection)}$$
 
-$$R_{01} = \frac{P_{sc}}{3I_{sc}^2}$$
+$$R_{01} = \frac{P_{sc}}{3I_{sc,\phi}^2} = \frac{P_{sc}}{3I_{sc}^2} \quad \text{(for star connection)}$$
 
 $$X_{01} = \sqrt{Z_{01}^2 - R_{01}^2}$$
 
@@ -67,9 +69,11 @@ For **delta** connection: $R_1 = 1.5 \times R_{DC}$ (parallel-series combination
 
 ---
 
-## Worked Example (PYQ 2023)
+## Worked Example
 
-**2023 Q7(b): Star-connected IM, SC test: $V = 75$ V, $I = 38$ A, $P = 4$ kW. $R_1 = 0.5\,\Omega$/phase. Find $R_2'$, $X_1$, $X_2'$.**
+> **Practice problem (not from a past paper)**
+
+**Star-connected IM, SC test: $V = 75$ V, $I = 38$ A, $P = 4$ kW. $R_1 = 0.5\,\Omega$/phase. Find $R_2'$, $X_1$, $X_2'$.**
 
 **Per-phase voltage:** $V_{sc,\phi} = 75/\sqrt{3} = 43.30$ V
 
@@ -87,35 +91,43 @@ $$X_1 = X_2' = X_{01}/2 = 0.669/2 = \boxed{0.335\,\Omega}$$
 
 ## 🏆 Golden Questions (Past Exam Archive)
 
-### 🎯 Q1: Explain the no-load and blocked rotor tests. Determine equivalent circuit parameters.
-> **Appeared:** 2023 Q7(a), 2024 Q7(a) — (9 marks)
+### 🎯 Q1: Enlist the test's name used for determining circuit model parameters of an IM.
+> **Appeared:** 2024 Q7(a) — 2 marks
 
 **Full Answer:**
 
-See [T-17a: No-Load Test](T-17a_No_Load_Test.md) for the no-load test portion.
+Two laboratory tests give the equivalent circuit parameters, plus a third low-current test to split the series branch:
 
-**Blocked-Rotor Test:**
+| Test | Full name | What is measured | Parameters obtained |
+|:---|:---|:---|:---|
+| **No-load test** | Running-light test | $V_0, I_0, P_0$ at rated voltage, shaft uncoupled | Shunt branch $R_c$, $X_m$; friction and windage loss |
+| **Blocked rotor test** | Locked-rotor test (short-circuit test, equivalent test) | $V_{sc}, I_{sc}, P_{sc}$ at reduced voltage, rotor held | Series branch $Z_{01}, R_{01}, X_{01}$ |
+| **DC test** | Winding resistance (ohmic) test | $V_{DC}, I_{DC}$ between stator terminals | $R_1$, hence $R_2' = R_{01} - R_1$ |
 
-Rotor mechanically locked ($s = 1$). Reduced voltage (10-15% of rated) applied until rated current flows. At low voltage, core loss is negligible. Input power = full-load copper loss.
+One-line answer: **no-load test, blocked-rotor (locked-rotor) test, and the DC resistance test.**
 
-Measurements: $V_{sc}$ (line voltage), $I_{sc}$ (line current), $P_{sc}$ (3-phase power).
+For the 2-mark version, that is enough. The derivations below are worth their own question if the paper asks for the parameters.
 
-Parameters:
+**Full derivations, for reference.**
 
+*No-load test.* Motor runs uncoupled at rated voltage and frequency. Since $s \approx 0$, the rotor branch is effectively open.
+$$\cos\phi_0 = \frac{P_0}{\sqrt{3}V_0I_0}, \qquad I_c = I_0\cos\phi_0, \quad I_m = I_0\sin\phi_0$$
+$$R_c = V_\phi/I_c, \quad X_m = V_\phi/I_m, \qquad P_{\text{rot}} = P_0 - 3I_0^2R_1$$
+
+*Blocked-rotor test.* Rotor locked ($s = 1$). Reduced voltage applied until rated current flows. At low voltage core loss is negligible, so input power = full-load copper loss.
 $$Z_{01} = \frac{V_{sc}/\sqrt{3}}{I_{sc}}, \quad R_{01} = \frac{P_{sc}}{3I_{sc}^2}, \quad X_{01} = \sqrt{Z_{01}^2 - R_{01}^2}$$
+$$R_2' = R_{01} - R_1, \quad X_1 = X_2' = X_{01}/2$$
 
-Split: $R_2' = R_{01} - R_1$, and $X_1 = X_2' = X_{01}/2$.
-
-**DC Test** for $R_1$: Apply DC between two stator terminals. Star: $R_1 = R_{DC}/2$. Delta: $R_1 = 1.5R_{DC}$.
+*DC test* for $R_1$: apply DC between two stator terminals. Star: $R_1 = R_{DC}/2$. Delta: $R_1 = 1.5R_{DC}$.
 
 ---
 
 ### 🎯 Q2: SC test numerical: $V = 75$ V, $I = 38$ A, $P = 4$ kW, $R_1 = 0.5\,\Omega$. Find $R_2'$, $X_1$, $X_2'$.
-> **Appeared:** 2023 Q7(b) — (4 marks)
+> **Practice problem (not from a past paper)**
 
 **Full Answer:**
 
-See [Worked Example](#worked-example-pyq-2023) above. Results: $R_2' = 0.423\,\Omega$, $X_1 = X_2' = 0.335\,\Omega$.
+See [Worked Example](#worked-example) above. Results: $R_2' = 0.423\,\Omega$, $X_1 = X_2' = 0.335\,\Omega$.
 
 ---
 
@@ -124,9 +136,10 @@ See [Worked Example](#worked-example-pyq-2023) above. Results: $R_2' = 0.423\,\O
 | Year | Question | Marks | Type |
 |:---|:---|:---|:---|
 | 2019 Q7(a) | Describe blocked rotor test | 4 | Theory |
-| 2023 Q7(a) | Explain NL + BR tests | 9 | Theory + formulas |
-| 2023 Q7(b) | SC test numerical | 4 | Numerical |
-| 2024 Q7(a) | NL + BR tests + parameters | 9 | Theory + formulas |
+| 2024 Q7(a) | Enlist the tests used for circuit model parameters | 2 | Names only |
+| Practice (no past paper) | SC test numerical | — | Numerical |
+
+> Note: 2023 Q7(a) was not a testing question. It was the Y-Δ starter, which sits in [T-19](T-19_Starting_Methods_3Phase.md).
 
 ---
 

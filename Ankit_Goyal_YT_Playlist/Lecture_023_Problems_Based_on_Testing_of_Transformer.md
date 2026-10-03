@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 022: Testing of Transformer Part 2](Lecture_022_Testing_of_Transformer_Part_2.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 024: Losses and Efficiency Part 1 →](Lecture_024_Losses_and_Efficiency_Part_1.md)
+
+---
+
 # Problems Based on Testing of Transformer | L7 | Electrical Machines | GATE 2022
 
 - **Source**: https://www.youtube.com/watch?v=K-6LaXFVYBI
@@ -1065,3 +1070,6 @@ The next practice lecture focuses on transformer losses and efficiency. That ses
 - For three-phase transformers, circuit parameters must be derived on a per-phase basis using appropriate star or delta winding relations.
 - The open-circuit test is conducted on the low-voltage side to minimize voltage requirements, while the short-circuit test is conducted on the high-voltage side to minimize test current.
 
+---
+
+[← Lec 022: Testing of Transformer Part 2](Lecture_022_Testing_of_Transformer_Part_2.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 024: Losses and Efficiency Part 1 →](Lecture_024_Losses_and_Efficiency_Part_1.md)

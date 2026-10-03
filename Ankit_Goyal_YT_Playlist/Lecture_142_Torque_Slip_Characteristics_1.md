@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 141: Torque Slip Characteristics 3](Lecture_141_Torque_Slip_Characteristics_3.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 143: Torque Slip Characteristics 2 →](Lecture_143_Torque_Slip_Characteristics_2.md)
+
+---
+
 # Torque Slip Characteristics - 1 | L 39 | Electrical Machines | GATE 2022 | Ankit Sir
 
 - **Source**: https://www.youtube.com/watch?v=jhmeR1x2eco
@@ -1070,3 +1075,6 @@ $$P_g : P_{\text{cu2}} : P_{\text{dev}} = 1 : s : (1 - s)$$
 - In inverter drives, the 5th time harmonic rotates backwards at $-5 N_s$, resulting in a high harmonic slip $s_5 = \frac{-5 N_s - N_r}{-5 N_s} > 1$ that produces parasitic braking.
 - Complete power flow in an induction motor strictly obeys the fundamental ratio $P_g : P_{\text{cu2}} : P_{\text{dev}} = 1 : s : (1 - s)$.
 
+---
+
+[← Lec 141: Torque Slip Characteristics 3](Lecture_141_Torque_Slip_Characteristics_3.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 143: Torque Slip Characteristics 2 →](Lecture_143_Torque_Slip_Characteristics_2.md)

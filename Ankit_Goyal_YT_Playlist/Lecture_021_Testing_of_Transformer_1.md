@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 020: Problems based on Equivalent Circuit](Lecture_020_Problems_based_on_Equivalent_Circuit.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 022: Testing of Transformer Part 2 →](Lecture_022_Testing_of_Transformer_Part_2.md)
+
+---
+
 # Testing of Transformer - 1 | Electrical Machines | Lec 15 | GATE/ESE (EE, ECE) | Ankit Goyal
 
 - **Source**: https://www.youtube.com/watch?v=-DVEz0hhAdY
@@ -713,3 +718,6 @@ $$
 - If the short-circuit test is run at a non-rated current $I_{\text{sc}}$, series parameters $R_{01}$ and $X_{01}$ remain unchanged, but full-load copper loss must be scaled by $P_{\text{cu,fl}} = P_{\text{cu,sc}} (I_{\text{rated}} / I_{\text{sc}})^2$.
 - In the short-circuit test at rated current, reducing frequency lowers leakage reactance $X_{01}$ and applied voltage $V_{\text{sc}}$ while improving the short-circuit power factor.
 
+---
+
+[← Lec 020: Problems based on Equivalent Circuit](Lecture_020_Problems_based_on_Equivalent_Circuit.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 022: Testing of Transformer Part 2 →](Lecture_022_Testing_of_Transformer_Part_2.md)

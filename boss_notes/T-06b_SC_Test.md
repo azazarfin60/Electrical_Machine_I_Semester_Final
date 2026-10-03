@@ -8,7 +8,7 @@
 
 ## Why This Topic Matters
 
-The SC test always appears together with the OC test. ALL 7 papers include an OC/SC numerical. The SC test determines the series branch parameters ($R_{01}$, $X_{01}$, $Z_{01}$) and the full-load copper loss. These parameters are then used to calculate voltage regulation and efficiency. In 2024, a new conceptual question appeared: "Why is the SC test done on the HV side?"
+The SC test always appears together with the OC test. ALL 7 papers include an OC/SC numerical. The SC test determines the series branch parameters ($R_{01}$, $X_{01}$, $Z_{01}$) and the full-load copper loss. These parameters are then used to calculate voltage regulation and efficiency. In 2024 a new conceptual question appeared: "In performing the short circuit test of a transformer, HV side is usually short circuited — explain it." (2024 Q4(a), 2 marks)
 
 ---
 
@@ -70,55 +70,73 @@ $$R_{02} = R_{01}/a^2, \qquad X_{02} = X_{01}/a^2, \qquad Z_{02} = Z_{01}/a^2$$
 
 ## Combined OC + SC Test: Complete Worked Example (PYQ 2024)
 
-**Problem:** 20 kVA, 2000/400V transformer. OC test (HV open): 400V, 1.5A, 160W. SC test (LV short): 60V, rated I, 300W. Find: (i) equivalent circuit parameters referred to HV, (ii) efficiency at full-load 0.8 pf lag, (iii) voltage regulation.
+**Problem:** A 50 KVA, 2200/110 V transformer when tested gave the following results:
+> **O.C. test (L. V. side):** 400W, 10A, 110V
+> **S.C. test (H. V. side):** 808W, 20.5A, 90V
 
-> **Appeared:** 2024 Q3(b) — 8 marks
+Compute all the parameters of the equivalent circuit referred to the H. V. side.
+
+> **Appeared:** 2024 Q2(c) — 4 marks
 
 ### Step 1: Identify Sides
 
-- Turns ratio: $a = 2000/400 = 5$
-- OC test was done on LV (400V) side
-- SC test was done on HV (2000V) side
+- Turns ratio: $a = 2200/110 = 20$
+- OC test was done on LV (110 V) side
+- SC test was done on HV (2200 V) side
 
 ### Step 2: OC Test → Shunt Parameters
 
-$$\cos\phi_0 = \frac{W_0}{V_0 I_0} = \frac{160}{400 \times 1.5} = 0.2667$$
+$$\cos\phi_0 = \frac{W_0}{V_0 I_0} = \frac{400}{110 \times 10} = 0.36364$$
 
-$$I_w = 1.5 \times 0.2667 = 0.400 \text{ A}$$
+$$I_w = 10 \times 0.36364 = 3.636 \text{ A}$$
 
-$$I_\mu = 1.5 \times \sin(\cos^{-1}0.2667) = 1.5 \times 0.964 = 1.446 \text{ A}$$
+$$I_m = \sqrt{10^2 - 3.636^2} = 9.3156 \text{ A}$$
 
 Referred to LV side:
 
-$$R_{c,LV} = \frac{400}{0.400} = 1000\,\Omega, \qquad X_{m,LV} = \frac{400}{1.446} = 276.6\,\Omega$$
+$$R_{0,LV} = \frac{110}{3.636} = \boxed{30.25\,\Omega}, \qquad X_{0,LV} = \frac{110}{9.3156} = \boxed{11.807\,\Omega}$$
 
-Referred to HV side ($\times a^2 = 25$):
+Iron loss: $P_{Fe} = W_0 = 400$ W
 
-$$\boxed{R_{c,HV} = 25000\,\Omega}, \qquad \boxed{X_{m,HV} = 6915\,\Omega}$$
+### Step 3: Refer the Shunt Branch to HV ($\times a^2 = 400$)
 
-Iron loss: $P_{Fe} = W_0 = 160$ W
+$$\boxed{R_0 = 12100\,\Omega}, \qquad \boxed{X_0 = 4723\,\Omega}$$
 
-### Step 3: SC Test → Series Parameters
+### Step 4: SC Test → Series Parameters (already on the HV side)
 
-Rated HV current: $I_{1,rated} = 20000/2000 = 10$ A
+$$Z_{eq} = \frac{V_{sc}}{I_{sc}} = \frac{90}{20.5} = \boxed{4.3902\,\Omega}$$
 
-$$R_{01} = \frac{W_{sc}}{I_{sc}^2} = \frac{300}{100} = \boxed{3.0\,\Omega}$$
+$$R_{eq} = \frac{W_{sc}}{I_{sc}^2} = \frac{808}{20.5^2} = \frac{808}{420.25} = \boxed{1.9227\,\Omega}$$
 
-$$Z_{01} = \frac{V_{sc}}{I_{sc}} = \frac{60}{10} = 6.0\,\Omega$$
+$$X_{eq} = \sqrt{4.3902^2 - 1.9227^2} = \sqrt{19.28 - 3.70} = \boxed{3.9468\,\Omega}$$
 
-$$X_{01} = \sqrt{6.0^2 - 3.0^2} = \sqrt{27} = \boxed{5.196\,\Omega}$$
+### Step 5: The Trap — scale the copper loss to full load
 
-Copper loss: $P_{Cu,FL} = W_{sc} = 300$ W
+Rated currents: $I_{rated,HV} = 50000/2200 = 22.727$ A and $I_{rated,LV} = 50000/110 = 454.55$ A.
 
-### Step 4: Efficiency at Full-Load, 0.8 pf Lag
+The S.C. test ran at only 20.5 A, not at rated current, so 808 W is **not** the full-load copper loss:
 
-$$\eta = \frac{S\cos\phi}{S\cos\phi + P_{Fe} + P_{Cu,FL}} = \frac{20000 \times 0.8}{16000 + 160 + 300} = \frac{16000}{16460} = \boxed{97.2\%}$$
+$$P_{Cu,FL} = 808 \times \left(\frac{22.727}{20.5}\right)^2 = 808 \times 1.2287 = \boxed{993\text{ W}}$$
 
-### Step 5: Voltage Regulation at 0.8 pf Lag
+Total loss at full load:
+$$P_{loss,FL} = P_{Fe} + P_{Cu,FL} = 400 + 993 = 1393\text{ W}$$
 
-$$\text{VR\%} = \frac{I_1(R_{01}\cos\phi + X_{01}\sin\phi)}{V_1} \times 100$$
+> [!IMPORTANT] Say this out loud in the exam
+> $R_{eq} = 1.9227\,\Omega$ is still correct, because it comes from the test's own $V$ and $I$. But any **loss** figure taken straight from 808 W is understated. Examiners look for the scaling.
 
-$$= \frac{10(3.0 \times 0.8 + 5.196 \times 0.6)}{2000} \times 100 = \frac{10 \times 5.518}{2000} \times 100 = \boxed{2.76\%}$$
+### Step 6: Final Answer
+
+Equivalent circuit referred to the HV side:
+
+| Branch | Parameter | Value |
+|:---|:---|---:|
+| Shunt (excitation) | $R_0$ | $12100\,\Omega$ |
+| Shunt (excitation) | $X_0$ | $4723\,\Omega$ |
+| Series | $R_{eq}$ | $1.9227\,\Omega$ |
+| Series | $X_{eq}$ | $3.9468\,\Omega$ |
+| Series | $Z_{eq}$ | $4.3902\,\Omega$ |
+| Loss | $P_{Fe}$ | $400$ W |
+| Loss | $P_{Cu,FL}$ | $993$ W |
 
 ---
 
@@ -131,8 +149,8 @@ $$= \frac{10(3.0 \times 0.8 + 5.196 \times 0.6)}{2000} \times 100 = \frac{10 \ti
 | 2019 Q2(c) | 10 kVA, 2200/220V | 220V, 1.5A, 153W | 115V, rated I, 224W | η at FL/HL |
 | 2020 Q2(c) | Draw circuits | — | — | Circuit diagrams |
 | 2021 Q2(c) | 20 kVA, 2400/240V | — | 72V, rated I, 275W | $R_{01}$, $X_{01}$, VR |
-| 2023 Q2(b) | 2.2kV/220V | 220V, 0.8A, 80W | 12V, 10A, 40W | Eq. circuit to secondary |
-| 2024 Q3(b) | 20 kVA, 2000/400V | 400V, 1.5A, 160W | 60V, rated I, 300W | Eq. circuit + η + VR |
+| 2023 Q2(b) | 10 kVA, 450/120 V | 120V, 4.2A, 80W (LV) | 9.65V, 22.2A, 120W (LV shorted) | Eq. constants + η + VR |
+| 2024 Q2(c) | 50 kVA, 2200/110 V | 400W, 10A, 110V (LV) | 808W, 20.5A, 90V (HV) | Eq. circuit referred to HV |
 
 > [!IMPORTANT]
 > **Memorize this procedure. It is worth 5–10 marks in EVERY exam.** The data changes but the steps are identical every time.
@@ -142,11 +160,11 @@ $$= \frac{10(3.0 \times 0.8 + 5.196 \times 0.6)}{2000} \times 100 = \frac{10 \ti
 ## 🏆 Golden Questions (Past Exam Archive)
 
 ### 🎯 Q1: Given OC and SC test data, find equivalent circuit parameters, efficiency, and voltage regulation.
-> **Appeared:** 2017 Q6(c), 2018 Q2(b), 2019 Q2(c), 2021 Q2(c), 2023 Q2(b), 2024 Q3(b) — (4–8 marks)
+> **Appeared:** 2017 Q6(c) — 5 marks, 2018 Q2(b) — 6 marks, 2019 Q2(c) — 5 marks, 2021 Q2(c) — 4 marks, 2023 Q2(b) — 4 marks, 2024 Q2(c) — 4 marks
 
 **Full Answer:**
 
-The procedure is always the same 5-step method. See the [Complete Worked Example above](#combined-oc--sc-test-complete-worked-example-pyq-2024) for the full solution template (2024 data). For any other year's data, simply substitute the numbers into the same formulas:
+The procedure is always the same 5-step method. See the [Complete Worked Example above](#combined-oc--sc-test-complete-worked-example-pyq-2024) for the full solution template using the 2024 data. For any other year's data, substitute the numbers into the same formulas. **Note:** 2023 Q2(b) also asks for efficiency and voltage regulation, so add those two final steps.
 
 **Step 1:** Identify which side each test was done on. OC test is usually on LV. SC test is usually on HV. Compute $a = V_1/V_2$.
 
@@ -160,49 +178,68 @@ The procedure is always the same 5-step method. See the [Complete Worked Example
 
 ---
 
-### 🎯 Q2: Why is the SC test performed on the HV side?
-> **Appeared:** 2024 Q2(b) — new pattern
+### 🎯 Q2: In performing the short circuit test of a transformer, HV side is usually short circuited — explain it.
+> **Appeared:** 2024 Q4(a) — 2 marks
 
 **Full Answer:**
 
-The SC test is performed on the HV side for three reasons:
+**Read the question carefully: it asks why the *other* winding is short-circuited during the SC test, and why the instruments are placed on the HV winding.**
 
-**(1) Lower current:** The rated current on the HV side is smaller than on the LV side (since $I \propto 1/V$ for the same kVA). Smaller current is easier and cheaper to supply from a variable AC source, and the ammeter can be lower-rated.
+**Why short-circuit the secondary:** a transformer cannot be tested on open circuit at reduced voltage and still give useful results. With the secondary shorted, the rated current is limited by the transformer's own small leakage impedance instead of being blocked, so only 5–10% of rated voltage is needed to circulate full-load current. With the secondary open, almost no current would flow at a safe voltage.
 
-**(2) Higher impedance, easier measurement:** The HV winding has more turns, so its impedance ($R_{01}$, $X_{01}$) is larger. The short-circuit voltage $V_{sc}$ needed to force rated current through the referred impedance is larger and more easily measured. If the test were done on the LV side, $V_{sc}$ would be very small (perhaps only a few volts) and measurement accuracy would suffer.
+**Why put the instruments on the HV side:**
 
-**(3) Safety:** The voltage applied during the SC test is only 5–10% of rated HV voltage. This is a safe, low voltage. If the test were done on the LV side, even the small required voltage could be awkward to control precisely.
+1. **Lower current.** Rated current is much smaller on the HV winding, so the ammeter and the wattmeter current coil carry far less current.
+2. **Larger, more readable voltage.** $V_{sc}$ is 5–10% of a high rated voltage, easier to measure accurately than a few volts on the LV side.
+3. **Higher referred impedance.** The HV side impedance is $a^2$ times the LV side, giving a better signal-to-error ratio.
+
+**Why short-circuiting is safe.** The core flux at 5–10% of rated voltage is only a few percent of normal, so the iron loss is negligible and the core cannot saturate. All the wattmeter reading is copper loss.
 
 ---
 
-### 🎯 Q3: 2023 variant — OC: 220V, 0.8A, 80W; SC: 12V, 10A, 40W. Find equivalent circuit referred to secondary.
-> **Appeared:** 2023 Q2(b) — 6 marks
+### 🎯 Q3: 2023 variant — 10-kVA, 450/120 V transformer, OC on LV and SC on LV-shorted side. Compute equivalent circuit constants, efficiency and voltage regulation at 0.8 pf lag.
+> **Appeared:** 2023 Q2(b) — 4 marks
 
 **Full Answer:**
 
-Given: 2.2 kV/220V transformer.
+Given: **O.C. test** $V_1 = 120$ V, $I_1 = 4.2$ A, $W_1 = 80$ W (read on the LV side).
+**S.C. test** $V_1 = 9.65$ V, $I_1 = 22.2$ A, $W_1 = 120$ W (LV winding short circuited).
 
-**OC test (done on LV = 220V side):**
+**Which side is which.** Rated HV current $= 10000/450 = 22.2$ A and rated LV current $= 10000/120 = 83.3$ A. The S.C. reading of 22.2 A is therefore the HV (450 V, primary) side. The O.C. test is on the LV (120 V) side.
 
-$P_{Fe} = 80$ W
+**(i) Equivalent circuit constants**
 
-$\cos\phi_0 = 80/(220 \times 0.8) = 0.4545$
+O.C. test (shunt branch, LV side):
+$$\cos\phi_0 = \frac{80}{120 \times 4.2} = 0.159, \qquad I_w = 0.667\text{ A}, \qquad I_\mu = 4.147\text{ A}$$
+$$R_0' = \frac{120}{0.667} = 180\ \Omega, \qquad X_0' = \frac{120}{4.147} = 28.9\ \Omega$$
 
-$I_w = 0.8 \times 0.4545 = 0.3636$ A, $I_\mu = 0.8 \times \sin(\cos^{-1}0.4545) = 0.8 \times 0.8908 = 0.7127$ A
+Refer to the primary with $a = 450/120 = 3.75$, $a^2 = 14.06$:
+$$R_0 = 180 \times 14.06 = \boxed{2525\ \Omega}, \qquad X_0 = 28.9 \times 14.06 = \boxed{406\ \Omega}$$
+Iron loss $P_i = 80$ W.
 
-$R_{c,LV} = 220/0.3636 = \boxed{605\,\Omega}$, $X_{m,LV} = 220/0.7127 = \boxed{308.6\,\Omega}$
+S.C. test (series branch, referred to primary):
+$$Z_{01} = \frac{9.65}{22.2} = \boxed{0.435\ \Omega}, \qquad R_{01} = \frac{120}{22.2^2} = \boxed{0.243\ \Omega}, \qquad X_{01} = \sqrt{0.435^2 - 0.243^2} = \boxed{0.361\ \Omega}$$
+Full-load copper loss $P_{Cu} = 120$ W.
 
-(Already on the secondary/LV side since OC test was done there.)
+**(ii) Efficiency and voltage regulation at 0.8 pf lag**
 
-**SC test (done on HV = 2200V side):**
+$$\text{Output} = 10000 \times 0.8 = 8000\text{ W}, \qquad \eta = \frac{8000}{8000 + 80 + 120} = \boxed{97.56\%}$$
 
-$a = 2200/220 = 10$
+$$\text{Drop} = 22.2\,(0.243 \times 0.8 + 0.361 \times 0.6) = 22.2 \times 0.4112 = 9.13\text{ V}, \qquad \%\text{Reg} = \frac{9.13}{450} \times 100 = \boxed{2.03\%}$$
 
-$I_{sc} = 10$ A. $R_{01} = 40/100 = 0.4\,\Omega$, $Z_{01} = 12/10 = 1.2\,\Omega$, $X_{01} = \sqrt{1.44 - 0.16} = 1.131\,\Omega$
+---
 
-Referred to secondary (divide by $a^2 = 100$):
+### 🎯 Q4: 2024 variant — 50 kVA, 2200/110 V. OC on LV (400 W, 10 A, 110 V), SC on HV (808 W, 20.5 A, 90 V). All equivalent circuit parameters referred to the HV side.
+> **Appeared:** 2024 Q2(c) — 4 marks
 
-$R_{02} = 0.4/100 = \boxed{0.004\,\Omega}$, $X_{02} = 1.131/100 = \boxed{0.01131\,\Omega}$
+**Full Answer:**
+
+See [the complete worked example above](#combined-oc--sc-test-complete-worked-example-pyq-2024). Summary:
+
+$$R_0 = 12100\ \Omega, \quad X_0 = 4723\ \Omega, \quad R_{eq} = 1.9227\ \Omega, \quad X_{eq} = 3.9468\ \Omega$$
+
+And the mark-winning step, the copper-loss scaling:
+$$P_{Cu,FL} = 808 \times \left(\frac{22.727}{20.5}\right)^2 = \boxed{993\text{ W}} \quad \text{(not 808 W)}$$
 
 ---
 

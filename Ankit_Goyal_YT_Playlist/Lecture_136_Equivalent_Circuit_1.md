@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 135: Rotating Magnetic Field](Lecture_135_Rotating_Magnetic_Field.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 137: Equivalent Circuit 2 →](Lecture_137_Equivalent_Circuit_2.md)
+
+---
+
 # Equivalent Circuit - 1 | Electrical Machines | Lec 98 | GATE/ESE (EE, ECE) | Ankit Goyal
 
 - **Source**: https://www.youtube.com/watch?v=DyAQgR3A1fY
@@ -348,3 +353,6 @@ Friction and windage losses subtract from $P_m$ to give useful shaft power $P_{s
 - Developed torque can be computed as $T_d = P_m / \omega_r = P_{\text{ag}} / \omega_s$, using total three-phase power.
 - Shaft torque delivered to the mechanical load is $T_{sh} = (P_m - P_{fw}) / \omega_r$, where friction and windage losses reduce net torque by $T_{loss}$.
 
+---
+
+[← Lec 135: Rotating Magnetic Field](Lecture_135_Rotating_Magnetic_Field.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 137: Equivalent Circuit 2 →](Lecture_137_Equivalent_Circuit_2.md)

@@ -45,15 +45,15 @@ Typical lamination thickness: 0.3–0.5 mm for power frequency (50/60 Hz) transf
 
 ---
 
-### [2024 Q2(b)]
-> 📋 **Appeared in:** 2024 Q2(b)
+### [Practice: Leakage Flux and Its Effect]
+> **Practice problem (not from a past paper)**
 
-**(b) Explain leakage flux and its effect on transformer operation. Include a schematic. [06, CO1]**
+**Explain leakage flux and its effect on transformer operation. Include a schematic.**
 
 **Three types of flux:**
 - $\Phi_M$ (or $\Phi_m$): Mutual flux through the iron core linking both primary and secondary windings. Transfers power.
-- $\Phi_{\ell p}$ (or $\Phi_{l1}$): Primary leakage flux, linking only primary turns $N_1$, completing path through air.
-- $\Phi_{\ell s}$ (or $\Phi_{l2}$): Secondary leakage flux, linking only secondary turns $N_2$, completing path through air.
+- $\Phi_{\ell p}$ (or $\Phi_{l1}$): Primary leakage flux, linking only primary turns $N_1$, completing its path through air.
+- $\Phi_{\ell s}$ (or $\Phi_{l2}$): Secondary leakage flux, linking only secondary turns $N_2$, completing its path through air.
 
 **Schematic:**
 
@@ -61,16 +61,13 @@ Typical lamination thickness: 0.3–0.5 mm for power frequency (50/60 Hz) transf
 
 **Effects on operation:**
 
-1. **Leakage reactances:** Leakage flux $\Phi_{l1} \propto I_1$ (air path, constant permeability). Induces self-EMF lagging current by 90°. Appears as series reactance:
+1. **Leakage reactances:** Leakage flux $\Phi_{l1} \propto I_1$ (air path, constant permeability). It induces a self-EMF lagging the current by 90°. It appears as a series reactance:
    $$X_1 = 2\pi f L_{l1}, \quad X_2 = 2\pi f L_{l2}$$
-
 2. **Voltage equations with leakage:**
    $$V_1 = E_1 + I_1 R_1 + jI_1 X_1$$
-   $$V_2 = E_2 - I_2 R_2 - jI_2 X_2$$
-
-3. **Worsened voltage regulation:** Under lagging pf load, reactive drop $jI_2X_2$ reduces $V_2$.
-
-4. **Fault current limiting (beneficial):** Short circuit fault current is limited by $X_{01} = X_1 + X_2'$.
+   $$E_2 = V_2 + I_2 R_2 + jI_2 X_2$$
+3. **Worsened voltage regulation:** under lagging pf load, the reactive drop $jI_2X_2$ reduces $V_2$.
+4. **Fault current limiting (beneficial):** the short-circuit fault current is limited by $X_{01} = X_1 + X_2'$.
 
 ---
 

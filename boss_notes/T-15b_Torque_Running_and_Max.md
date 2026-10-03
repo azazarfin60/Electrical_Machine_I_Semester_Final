@@ -8,7 +8,7 @@
 
 ## Why This Topic Matters
 
-The running torque derivation and the $T_f/T_{\max}$ ratio formula appeared in 4 out of 7 papers. The maximum torque derivation (proving independence from $R_2$) appeared in 2024 for 7 marks. The $T_f/T_{\max}$ numerical with given $R_2$, $X_2$, $s_f$ is a near-guaranteed question. Master this derivation cold.
+The running torque derivation and the $T_f/T_{\max}$ ratio formula appeared in 4 out of 7 papers. The maximum torque derivation appeared in 2024 Q7(b) for 4 marks, and the $T_{\max}/T_f$ numerical in 2024 Q7(c) for another 4 marks. The $T_f/T_{\max}$ numerical with given $R_2$, $X_2$, $s_f$ is a near-guaranteed question. Master this derivation cold.
 
 ---
 
@@ -89,9 +89,11 @@ $$\boxed{\frac{T_f}{T_{\max}} = \frac{2as_f}{a^2 + s_f^2}}$$
 
 ---
 
-## Worked Example (PYQ 2023)
+## Worked Example
 
-**2023 Q5(b): 8-pole, 50 Hz IM. $s_f = 2.5\%$, $R_2 = 0.4\,\Omega$, $X_2 = 2.0\,\Omega$. Find $s_{mT}$, speed at $T_{\max}$, and $T_{\max}/T_f$.**
+> **Practice problem (not from a past paper)**
+
+**8-pole, 50 Hz IM. $s_f = 2.5\%$, $R_2 = 0.4\,\Omega$, $X_2 = 2.0\,\Omega$. Find $s_{mT}$, speed at $T_{\max}$, and $T_{\max}/T_f$.**
 
 $$N_s = \frac{120 \times 50}{8} = 750 \text{ rpm}$$
 
@@ -107,7 +109,7 @@ $$N_{mT} = N_s(1 - s_{mT}) = 750(1 - 0.2) = \boxed{600 \text{ rpm}}$$
 
 $$\frac{T_f}{T_{\max}} = \frac{2 \times 0.2 \times 0.025}{0.04 + 0.000625} = \frac{0.010}{0.040625} = 0.246$$
 
-$$\boxed{\frac{T_{\max}}{T_f} = \frac{1}{0.246} = 4.07}$$
+$$\boxed{\frac{T_{\max}}{T_f} = \frac{0.040625}{0.010} = 4.06}$$
 
 ---
 
@@ -130,8 +132,8 @@ $$\frac{T_f}{T_{\max}} = \frac{s_fR_2 \cdot 2X_2}{R_2^2 + s_f^2X_2^2} = \frac{2s
 
 ---
 
-### 🎯 Q2: Derive the expression for maximum torque and show it is independent of rotor resistance.
-> **Appeared:** 2024 Q6(a) — (7 marks)
+### 🎯 Q2: Prove that $T_{\max} = \frac{3}{2\pi N_s}\frac{E_2^2}{2X_2}$ N-m. Variables having their usual meanings.
+> **Appeared:** 2024 Q7(b) — 4 marks
 
 **Full Answer:**
 
@@ -147,7 +149,7 @@ Numerator: $s_{mT}E_2^2R_2 = R_2^2E_2^2/X_2$
 
 Denominator: $R_2^2 + s_{mT}^2X_2^2 = 2R_2^2$
 
-$$T_{\max} = k \cdot \frac{R_2^2E_2^2/X_2}{2R_2^2} = \boxed{\frac{kE_2^2}{2X_2}}$$
+$$T_{\max} = k \cdot \frac{R_2^2E_2^2/X_2}{2R_2^2} = \frac{kE_2^2}{2X_2} = \boxed{\frac{3}{2\pi N_s}\,\frac{E_2^2}{2X_2}\ \text{N-m}}$$
 
 $R_2$ cancels completely. $T_{\max}$ depends only on $E_2$ and $X_2$.
 
@@ -212,6 +214,31 @@ $$T_{\max} = \frac{kE_2^2}{2X_2} = \frac{0.02865 \times 5926}{1.7} = \boxed{99.9
 
 $$N_{mT} = 1000(1 - 0.1412) = \boxed{858.8 \text{ rpm}}$$
 
+### 🎯 Q6: 50 Hz, 8-pole IM has F.L. slip of 4%. $R_2/ph = 0.01\,\Omega$, standstill reactance/ph $= 0.1\,\Omega$. Find the ratio of maximum to full-load torque and the speed at which the maximum torque occurs.
+> **Appeared:** 2024 Q7(c) — 4 marks
+
+**Full Answer:**
+
+**Step 1. Speeds.**
+$$N_s = \frac{120 \times 50}{8} = 750\text{ rpm}, \qquad N_{FL} = 750 \times (1 - 0.04) = 720\text{ rpm}$$
+
+**Step 2. Slip at maximum torque.**
+$$s_{max} = \frac{R_2}{X_2} = \frac{0.01}{0.1} = 0.1$$
+
+**Step 3. Torque ratio.** Using
+$$\frac{T}{T_{\max}} = \frac{2}{s/s_{max} + s_{max}/s}$$
+at $s = s_f = 0.04$:
+$$\frac{T_{FL}}{T_{\max}} = \frac{2}{0.04/0.1 + 0.1/0.04} = \frac{2}{0.4 + 2.5} = \frac{2}{2.9} = 0.6897$$
+
+$$\boxed{\frac{T_{\max}}{T_{FL}} = 1.45}$$
+
+**Step 4. Speed at maximum torque.**
+$$N = N_s (1 - s_{max}) = 750 (1 - 0.1) = \boxed{675\text{ rpm}}$$
+
+**Interpretation to add.** The full-load point sits well below the peak (only 0.69 of $T_{\max}$). Here $s_f = 0.04 < s_{max} = 0.1$, so the motor runs on the stable low-slip side of the peak. Maximum torque occurs at 675 rpm, below the 720 rpm full-load speed, so there is a healthy margin of torque available throughout acceleration.
+
+---
+
 ---
 
 ## Exam Variants
@@ -223,8 +250,8 @@ $$N_{mT} = 1000(1 - 0.1412) = \boxed{858.8 \text{ rpm}}$$
 | 2018 Q6(c) | 6-pole numerical | 240V, $R_2=0.12$, $X_2=0.85$ | $T_f=52.4$, $T_{\max}=99.9$ |
 | 2019 Q8(c) | Same as 2017 Q2(d) | Nearly identical | Same method |
 | 2020 Q7(b) | $T_{\max} \propto V^2$ | Theory | Proof |
-| 2023 Q5(b) | 8-pole numerical | $R_2=0.4$, $X_2=2.0$ | $T_{\max}/T_f = 4.07$ |
-| 2024 Q6(a) | Derive $T_{\max}$, show independent of $R_2$ | 7-mark derivation | $kE_2^2/(2X_2)$ |
+| Practice (no past paper) | 8-pole numerical | $R_2=0.4$, $X_2=2.0$ | $T_{\max}/T_f = 4.06$ |
+| 2024 Q7(b) | Prove $T_{\max} = \frac{3}{2\pi N_s}\frac{E_2^2}{2X_2}$ | 4-mark derivation | $\frac{3}{2\pi N_s}\frac{E_2^2}{2X_2}$ |
 
 ---
 

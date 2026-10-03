@@ -9,6 +9,11 @@ tags:
   - electrical-machines
   - gate
 ---
+
+[← Lec 039: Three Phase Transformer 3](Lecture_039_Three_Phase_Transformer_3.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 041: Problems Based on Three Phase Transformers 1 →](Lecture_041_Problems_Based_on_Three_Phase_Transformers_1.md)
+
+---
+
 # Electrical Machines | Lec 28 | Three Phase Transformer - 4 | GATE/ESE Electrical Engineering Lecture
 
 - **Source**: https://www.youtube.com/watch?v=Sg2qwYC0SKY
@@ -525,3 +530,6 @@ This method provides a fast and reliable way to solve competitive examination qu
 - Reversing the supply sequence from positive to negative preserves the angular magnitude of phase shift but flips its nature from leading to lagging.
 - The direct shortcut method computes line voltage displacement directly via $V_{XY} = V_X - V_Y$ without requiring closed delta phasor polygons.
 
+---
+
+[← Lec 039: Three Phase Transformer 3](Lecture_039_Three_Phase_Transformer_3.md) | [🏠 Index](00_yt_study_guide.md) | [Lec 041: Problems Based on Three Phase Transformers 1 →](Lecture_041_Problems_Based_on_Three_Phase_Transformers_1.md)
